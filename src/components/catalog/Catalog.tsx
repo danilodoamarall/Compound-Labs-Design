@@ -34,7 +34,7 @@ export function Catalog({ items, groups, groupLabels, allLabel, filterLabel, dra
       </div>
       <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((i) => (
-          <li key={i.key} className="min-w-0">
+          <li key={i.key} id={i.key} className="min-w-0 scroll-mt-20">
             <SpotlightCard className="h-full !rounded-lg !border-border !bg-card !p-5 text-card-foreground" spotlightColor="rgba(11, 138, 116, 0.18)">
               <div className="flex items-start gap-2">
                 <h3 className="text-lg font-semibold leading-snug">{i.name}</h3>

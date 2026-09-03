@@ -176,5 +176,26 @@
     "visit": "Open site",
     "count": "{count} tools",
     "sourceNote": "Same list as my personal site. The staging and the descriptions are this hub own."
+  },
+  "Browse": {
+    "heading": "Browse",
+    "headingAccent": "Resources:",
+    "searchPlaceholder": "Search here...",
+    "clearAll": "Clear All",
+    "tags": {
+      "read": "Read",
+      "watch": "Watch",
+      "listen": "Listen",
+      "browse": "Browse",
+      "use": "Use",
+      "build": "Build",
+      "learn": "Learn",
+      "join": "Join",
+      "follow": "Follow",
+      "apply": "Apply"
+    },
+    "empty": "Nothing matches those filters. Try clearing one.",
+    "countAll": "{total} items",
+    "countFiltered": "{n} of {total} items"
   }
 }

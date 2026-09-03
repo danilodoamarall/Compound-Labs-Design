@@ -1,0 +1,188 @@
+{
+  "_note": "Tags de cada item do indice, na taxonomia do desengs.com. Editavel a mao. Depois de mudar, rode: node scripts/build-resources.mjs",
+  "_vocabulary": [
+    "read",
+    "watch",
+    "listen",
+    "browse",
+    "use",
+    "build",
+    "learn",
+    "join",
+    "follow",
+    "apply"
+  ],
+  "tags": {
+    "artigo-as-tres-tribos-do-vibe-coding": [
+      "read"
+    ],
+    "artigo-design-system-e-a-nova-api": [
+      "read"
+    ],
+    "artigo-o-centro-ansioso": [
+      "read"
+    ],
+    "artigo-prototipar-nao-e-entregar": [
+      "read"
+    ],
+    "artigo-reclamam-do-excesso-planejam-mais": [
+      "read"
+    ],
+    "easing-dev": [
+      "browse"
+    ],
+    "figma": [
+      "use"
+    ],
+    "oklch-fyi": [
+      "use"
+    ],
+    "central-icons": [
+      "build"
+    ],
+    "paper": [
+      "use"
+    ],
+    "cleanshot": [
+      "use"
+    ],
+    "compresto": [
+      "use"
+    ],
+    "motion": [
+      "build"
+    ],
+    "dia": [
+      "use"
+    ],
+    "cursor": [
+      "use"
+    ],
+    "ghostty": [
+      "use"
+    ],
+    "easing-gradients": [
+      "build"
+    ],
+    "cmux": [
+      "use"
+    ],
+    "claude-code": [
+      "use"
+    ],
+    "agentation": [
+      "use"
+    ],
+    "loops": [
+      "build"
+    ],
+    "vercel": [
+      "build"
+    ],
+    "resend": [
+      "build"
+    ],
+    "polar": [
+      "build"
+    ],
+    "supabase": [
+      "build"
+    ],
+    "stripe": [
+      "build"
+    ],
+    "interfere": [
+      "build"
+    ],
+    "notion-calendar": [
+      "use"
+    ],
+    "things": [
+      "use"
+    ],
+    "claude": [
+      "use"
+    ],
+    "chatgpt": [
+      "use"
+    ],
+    "gemini": [
+      "use"
+    ],
+    "figma-make": [
+      "use"
+    ],
+    "v0": [
+      "use"
+    ],
+    "lovable": [
+      "use"
+    ],
+    "github-copilot": [
+      "use"
+    ],
+    "perplexity": [
+      "use"
+    ],
+    "notebooklm": [
+      "use"
+    ],
+    "midjourney": [
+      "use"
+    ],
+    "elevenlabs": [
+      "use"
+    ],
+    "runway": [
+      "use"
+    ],
+    "figjam": [
+      "use"
+    ],
+    "framer": [
+      "use"
+    ],
+    "penpot": [
+      "use"
+    ],
+    "sketch": [
+      "use"
+    ],
+    "slack": [
+      "use"
+    ],
+    "google-meet": [
+      "use"
+    ],
+    "notion": [
+      "use"
+    ],
+    "storybook": [
+      "build"
+    ],
+    "tokens-studio": [
+      "build"
+    ],
+    "miro": [
+      "use"
+    ],
+    "zeroheight": [
+      "use"
+    ],
+    "find-docs": [
+      "build"
+    ],
+    "context7-mcp": [
+      "build"
+    ],
+    "context7-server": [
+      "build"
+    ],
+    "survey-deep-dive": [
+      "build"
+    ],
+    "agent-template": [
+      "build"
+    ]
+  }
+}

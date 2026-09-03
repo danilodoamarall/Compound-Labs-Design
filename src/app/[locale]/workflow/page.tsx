@@ -47,7 +47,7 @@ export default async function WorkflowPage({ params }: PageProps<"/[locale]/work
 
             <ul className="mt-1 divide-y divide-border/70">
               {items.map((tool) => (
-                <li key={tool.key}>
+                <li key={tool.key} id={tool.key} className="scroll-mt-20">
                   <a
                     href={tool.url}
                     target="_blank"

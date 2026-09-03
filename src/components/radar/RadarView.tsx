@@ -110,7 +110,7 @@ export function RadarView({ items, labels, locale }: { items: RadarPoint[]; labe
               </h3>
               <ul className="mt-3 divide-y divide-border border-y border-border">
                 {group.map((p) => (
-                  <li key={p.key} className={`py-3 ${active === p.key ? "bg-wash" : ""}`} onMouseEnter={() => setActive(p.key)} onMouseLeave={() => setActive(null)}>
+                  <li key={p.key} id={p.key} className={`py-3 ${active === p.key ? "bg-wash" : ""}`} onMouseEnter={() => setActive(p.key)} onMouseLeave={() => setActive(null)}>
                     <div className="flex items-baseline gap-3">
                       <span className="w-6 shrink-0 font-mono text-xs text-muted-foreground tabular">{p.idx}</span>
                       <a href={p.url} target="_blank" rel="noreferrer" className="font-medium hover:underline">{p.name}</a>

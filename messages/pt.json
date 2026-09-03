@@ -176,5 +176,26 @@
     "visit": "Abrir site",
     "count": "{count} ferramentas",
     "sourceNote": "Mesma lista do meu site pessoal. A ordem por etapa e as descrições são deste hub."
+  },
+  "Browse": {
+    "heading": "Explore o",
+    "headingAccent": "conteúdo:",
+    "searchPlaceholder": "Buscar aqui...",
+    "clearAll": "Limpar tudo",
+    "tags": {
+      "read": "Read",
+      "watch": "Watch",
+      "listen": "Listen",
+      "browse": "Browse",
+      "use": "Use",
+      "build": "Build",
+      "learn": "Learn",
+      "join": "Join",
+      "follow": "Follow",
+      "apply": "Apply"
+    },
+    "empty": "Nada com esses filtros. Tente limpar um deles.",
+    "countAll": "{total} itens",
+    "countFiltered": "{n} de {total} itens"
   }
 }
