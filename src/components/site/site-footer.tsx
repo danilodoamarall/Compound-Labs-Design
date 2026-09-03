@@ -21,6 +21,8 @@ export async function SiteFooter() {
             <li><Link href="/radar" className="text-muted-foreground hover:text-foreground">{t("Nav.radar")}</Link></li>
             <li><Link href="/ai-tools" className="text-muted-foreground hover:text-foreground">{t("Nav.aiTools")}</Link></li>
             <li><Link href="/skills-agents" className="text-muted-foreground hover:text-foreground">{t("Nav.skillsAgents")}</Link></li>
+            <li><Link href="/docs" className="text-muted-foreground hover:text-foreground">{t("Nav.docs")}</Link></li>
+            <li><Link href="/faq" className="text-muted-foreground hover:text-foreground">{t("Nav.faq")}</Link></li>
             <li><Link href="/sobre" className="text-muted-foreground hover:text-foreground">{t("Nav.about")}</Link></li>
           </ul>
         </nav>

@@ -69,7 +69,7 @@ export function listArticles(locale: Locale): ArticleMeta[] {
     .map((slug) => parse(slug, locale) ?? parse(slug, "pt"))
     .filter((a): a is Article => a !== null)
     .sort((a, b) => a.order - b.order)
-    .map(({ body: _body, ...meta }) => meta);
+    .map((a) => { const { body, ...meta } = a; void body; return meta; });
 }
 
 export function getArticle(slug: string, locale: Locale): Article | null {

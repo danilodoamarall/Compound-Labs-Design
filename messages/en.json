@@ -14,36 +14,37 @@
   "Nav": {
     "home": "Home",
     "articles": "Articles",
-    "radar": "Tools Radar",
+    "radar": "Radar",
     "aiTools": "AI Tools",
-    "skillsAgents": "AI Skills & Agents",
+    "skillsAgents": "Skills & Agents",
+    "docs": "Docs",
+    "faq": "FAQ",
     "about": "About"
   },
   "Home": {
-    "eyebrow": "Knowledge hub · Labs",
-    "title": "What we are learning about design, AI and prototyping",
-    "dek": "Articles in presentation format, a tools radar and catalogs of AI tools, skills and agents. Everything that goes through our internal tech talks lives here, in the open.",
-    "ctaArticles": "Read the articles",
-    "ctaRadar": "See the radar",
-    "sectionsTitle": "Four sections",
+    "title": "A public AI radar for design.",
+    "dek": "What I learn building with AI at Labs, in the open. Pick where to start.",
+    "coverHint": "Click the centered cover to open · Drag · Arrow keys",
     "sections": {
-      "articles": { "title": "Articles in presentation format", "desc": "Every article has a reading mode and a slides mode. Opening series: State of Design 2026, built on the State of Prototyping survey." },
-      "radar": { "title": "Tools Radar", "desc": "What to adopt, trial, assess and hold, with weekly usage measured by the survey and Labs curation." },
-      "aiTools": { "title": "AI Tools", "desc": "Catalog of the AI tools we use, what they are for and what they cost." },
-      "skillsAgents": { "title": "AI Skills & Agents", "desc": "Claude skills and agents we build, with usage notes and code." }
-    },
-    "numbersTitle": "The survey in numbers",
-    "numbersSource": "State of Prototyping Spring 2026 · UX Tools · n=1,478 · CC BY 4.0",
-    "numbers": {
-      "vibe50": "generate half or more of their output with vibe coding",
-      "built": "built a custom tool with AI-generated code",
-      "claude": "use Claude every week, the #2 tool after Figma",
-      "fullTrust": "fully trust AI output with no review"
-    },
-    "latestTitle": "Start with the series",
-    "seriesName": "State of Design 2026",
-    "authorTitle": "Who makes this hub",
-    "authorBio": "I am Danilo do Amaral, Design Engineer and AI Builder at Labs. This hub is where what I learn building prototypes, tools and agents becomes knowledge shared with the company. Everything here is open."
+      "articles": {
+        "short": "State of Design 2026 series"
+      },
+      "radar": {
+        "short": "Adopt, trial, assess, hold"
+      },
+      "aiTools": {
+        "short": "What we use and why"
+      },
+      "skillsAgents": {
+        "short": "Claude skills and agents"
+      },
+      "docs": {
+        "short": "How the hub works"
+      },
+      "faq": {
+        "short": "Questions about the data"
+      }
+    }
   },
   "Articles": {
     "title": "Articles",
@@ -70,14 +71,24 @@
   "Radar": {
     "title": "Tools Radar",
     "dek": "Design, AI and delivery tools organized by ring and quadrant. The percentage is weekly usage measured by State of Prototyping 2026; the ring position is Labs curation.",
-    "rings": { "adopt": "Adopt", "trial": "Trial", "assess": "Assess", "hold": "Hold" },
+    "rings": {
+      "adopt": "Adopt",
+      "trial": "Trial",
+      "assess": "Assess",
+      "hold": "Hold"
+    },
     "ringHints": {
       "adopt": "Default at Labs. Use without asking.",
       "trial": "Worth using on a real project to learn.",
       "assess": "Worth understanding. Not yet worth team time.",
       "hold": "Do not start anything new with it."
     },
-    "quadrants": { "canvas": "Canvas & Design", "assistants": "AI Assistants", "coding": "AI for Code", "delivery": "Collaboration & Delivery" },
+    "quadrants": {
+      "canvas": "Canvas & Design",
+      "assistants": "AI Assistants",
+      "coding": "AI for Code",
+      "delivery": "Collaboration & Delivery"
+    },
     "weeklyUse": "weekly use",
     "all": "All",
     "filterQuadrant": "Filter by quadrant",
@@ -96,7 +107,11 @@
   "Skills": {
     "title": "AI Skills & Agents",
     "dek": "Claude skills and agents we build and use. Each card says when to use it, how to install it and shows the code.",
-    "types": { "skill": "Skill", "agent": "Agent", "mcp": "MCP" },
+    "types": {
+      "skill": "Skill",
+      "agent": "Agent",
+      "mcp": "MCP"
+    },
     "whenToUse": "When to use",
     "install": "How to install",
     "source": "Code",
@@ -124,5 +139,14 @@
     "title": "Page not found",
     "desc": "This address does not exist or has moved.",
     "home": "Back to home"
+  },
+  "Docs": {
+    "title": "Docs",
+    "dek": "How this hub works, where the data comes from and how to use the articles in a talk.",
+    "onThisPage": "On this page"
+  },
+  "Faq": {
+    "title": "FAQ",
+    "dek": "What people ask about the data, the curation and reusing the content."
   }
 }

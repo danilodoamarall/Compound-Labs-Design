@@ -13,6 +13,8 @@ export const routing = defineRouting({
     "/ai-tools": "/ai-tools",
     "/skills-agents": "/skills-agents",
     "/sobre": { pt: "/sobre", en: "/about" },
+    "/docs": "/docs",
+    "/faq": "/faq",
   },
 });
 

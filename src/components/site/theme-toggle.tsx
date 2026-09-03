@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 
+const subscribeNothing = () => () => {};
+
 export function ThemeToggle({ label }: { label: string }) {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  // O tema só é conhecido no cliente. useSyncExternalStore devolve false no
+  // servidor e na primeira renderização, evitando divergência de hidratação
+  // sem precisar de setState dentro de um efeito.
+  const mounted = useSyncExternalStore(subscribeNothing, () => true, () => false);
   const dark = mounted && resolvedTheme === "dark";
   return (
     <button

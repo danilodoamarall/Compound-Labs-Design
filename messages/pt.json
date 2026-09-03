@@ -14,36 +14,37 @@
   "Nav": {
     "home": "Início",
     "articles": "Artigos",
-    "radar": "Radar de Ferramentas",
+    "radar": "Radar",
     "aiTools": "AI Tools",
-    "skillsAgents": "AI Skills & Agents",
+    "skillsAgents": "Skills & Agents",
+    "docs": "Docs",
+    "faq": "FAQ",
     "about": "Sobre"
   },
   "Home": {
-    "eyebrow": "Hub de conhecimento · Labs",
-    "title": "O que estamos aprendendo sobre design, IA e prototipagem",
-    "dek": "Artigos em formato de apresentação, um radar de ferramentas e catálogos de AI tools, skills e agents. Tudo o que passa pelo Intervalo Técnico fica aqui, aberto.",
-    "ctaArticles": "Ler os artigos",
-    "ctaRadar": "Ver o radar",
-    "sectionsTitle": "Quatro seções",
+    "title": "Um radar público de IA para design.",
+    "dek": "O que aprendo construindo com IA no Labs, em aberto. Escolha por onde começar.",
+    "coverHint": "Clique na capa central para abrir · Arraste · Setas do teclado",
     "sections": {
-      "articles": { "title": "Artigos em formato de apresentação", "desc": "Cada artigo tem modo leitura e modo slides. Série inicial: Estado do Design 2026, a partir da pesquisa State of Prototyping." },
-      "radar": { "title": "Radar de Ferramentas", "desc": "O que adotar, testar, avaliar e evitar, com o uso semanal medido pela pesquisa e a curadoria do Labs." },
-      "aiTools": { "title": "AI Tools", "desc": "Catálogo das ferramentas de IA que usamos, para que servem e quanto custam." },
-      "skillsAgents": { "title": "AI Skills & Agents", "desc": "Skills e agents do Claude que construímos, com instruções de uso e código." }
-    },
-    "numbersTitle": "A pesquisa em números",
-    "numbersSource": "State of Prototyping Spring 2026 · UX Tools · n=1.478 · CC BY 4.0",
-    "numbers": {
-      "vibe50": "geram metade ou mais da produção com vibe coding",
-      "built": "construíram uma ferramenta própria com código de IA",
-      "claude": "usam Claude toda semana, a ferramenta nº 2 depois do Figma",
-      "fullTrust": "confiam totalmente na saída da IA sem revisão"
-    },
-    "latestTitle": "Comece pela série",
-    "seriesName": "Estado do Design 2026",
-    "authorTitle": "Quem faz este hub",
-    "authorBio": "Sou Danilo do Amaral, Design Engineer e AI Builder no Labs. Este hub é onde o que eu aprendo construindo protótipos, ferramentas e agents vira conhecimento compartilhado com a empresa. Tudo aqui é aberto."
+      "articles": {
+        "short": "Série Estado do Design 2026"
+      },
+      "radar": {
+        "short": "Adotar, testar, avaliar, evitar"
+      },
+      "aiTools": {
+        "short": "O que usamos e para quê"
+      },
+      "skillsAgents": {
+        "short": "Skills e agents do Claude"
+      },
+      "docs": {
+        "short": "Como o hub funciona"
+      },
+      "faq": {
+        "short": "Perguntas sobre os dados"
+      }
+    }
   },
   "Articles": {
     "title": "Artigos",
@@ -70,14 +71,24 @@
   "Radar": {
     "title": "Radar de Ferramentas",
     "dek": "Ferramentas de design, IA e entrega organizadas por anel e quadrante. O percentual é o uso semanal medido pela State of Prototyping 2026; a posição no anel é curadoria do Labs.",
-    "rings": { "adopt": "Adotar", "trial": "Testar", "assess": "Avaliar", "hold": "Evitar" },
+    "rings": {
+      "adopt": "Adotar",
+      "trial": "Testar",
+      "assess": "Avaliar",
+      "hold": "Evitar"
+    },
     "ringHints": {
       "adopt": "Padrão no Labs. Use sem pedir permissão.",
       "trial": "Vale usar em um projeto real para aprender.",
       "assess": "Vale entender. Ainda não vale investir tempo de time.",
       "hold": "Não comece nada novo com isso."
     },
-    "quadrants": { "canvas": "Canvas & Design", "assistants": "Assistentes de IA", "coding": "IA para código", "delivery": "Colaboração & Entrega" },
+    "quadrants": {
+      "canvas": "Canvas & Design",
+      "assistants": "Assistentes de IA",
+      "coding": "IA para código",
+      "delivery": "Colaboração & Entrega"
+    },
     "weeklyUse": "uso semanal",
     "all": "Todos",
     "filterQuadrant": "Filtrar por quadrante",
@@ -96,7 +107,11 @@
   "Skills": {
     "title": "AI Skills & Agents",
     "dek": "Skills e agents do Claude que construímos e usamos. Cada card diz quando usar, como instalar e mostra o código.",
-    "types": { "skill": "Skill", "agent": "Agent", "mcp": "MCP" },
+    "types": {
+      "skill": "Skill",
+      "agent": "Agent",
+      "mcp": "MCP"
+    },
     "whenToUse": "Quando usar",
     "install": "Como instalar",
     "source": "Código",
@@ -124,5 +139,14 @@
     "title": "Página não encontrada",
     "desc": "O endereço não existe ou mudou.",
     "home": "Voltar ao início"
+  },
+  "Docs": {
+    "title": "Docs",
+    "dek": "Como este hub funciona, de onde vêm os dados e como usar os artigos numa apresentação.",
+    "onThisPage": "Nesta página"
+  },
+  "Faq": {
+    "title": "FAQ",
+    "dek": "O que perguntam sobre os dados, a curadoria e o uso do conteúdo."
   }
 }

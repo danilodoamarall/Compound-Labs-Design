@@ -1,0 +1,218 @@
+{
+  "docs": {
+    "pt": [
+      {
+        "id": "o-que-e",
+        "title": "O que é este hub",
+        "body": [
+          "Um radar público de IA para design. Reúne o que aprendo construindo protótipos, ferramentas internas e agents, em quatro formatos: artigos que também são apresentação, um radar de ferramentas, um catálogo de AI tools e um catálogo de skills e agents.",
+          "Tudo é aberto. Qualquer pessoa da empresa, ou de fora, pode ler, citar e reaproveitar."
+        ]
+      },
+      {
+        "id": "artigos",
+        "title": "Artigos que também são slides",
+        "body": [
+          "Cada artigo abre em dois modos. Em Leitura, é um texto corrido. Em Apresentação, o mesmo conteúdo vira slides em tela cheia, sem duplicar arquivo nenhum.",
+          "No modo apresentação: setas ou espaço navegam, F entra em tela cheia, N mostra as notas do apresentador e Esc volta para a leitura. O endereço guarda o número do slide, então dá para abrir direto em um ponto e recarregar sem perder o lugar."
+        ]
+      },
+      {
+        "id": "dados",
+        "title": "De onde vêm os dados",
+        "body": [
+          "A série inicial usa a State of Prototyping Spring 2026, pesquisa da UX Tools com 1.478 designers e builders, coletada entre 14 de março e 6 de abril de 2026 em 18 regiões, sob licença CC BY 4.0.",
+          "O CSV agregado da pesquisa fica versionado no repositório. Um script o converte em JSON e calcula os valores derivados, como os três grupos de vibe coding e os saldos de sentimento por papel. Os gráficos leem esse JSON, então nenhum número é digitado à mão dentro de um artigo.",
+          "Uma segunda verificação compara todo percentual citado nos textos com o dataset. Hoje são 204 números conferidos, com zero divergências."
+        ]
+      },
+      {
+        "id": "graficos",
+        "title": "Como ler os gráficos",
+        "body": [
+          "Os gráficos são SVG renderizado no servidor, então funcionam sem JavaScript e imprimem bem. Cada um traz o nome da tabela de origem e o n da amostra logo abaixo do título.",
+          "Todo gráfico tem uma tabela equivalente atrás de \"Ver tabela\", porque cor sozinha nunca deve carregar informação. A paleta foi validada para os tipos comuns de daltonismo, nos temas claro e escuro."
+        ]
+      },
+      {
+        "id": "curadoria",
+        "title": "Radar e catálogos",
+        "body": [
+          "No radar, o percentual ao lado de cada ferramenta é o uso semanal medido pela pesquisa. A posição no anel, entre adotar, testar, avaliar e evitar, é curadoria do Labs, não um dado da pesquisa. Os dois nunca se misturam.",
+          "Itens marcados como rascunho aparecem com etiqueta. Significa que a posição é inicial e está aberta a discussão."
+        ]
+      },
+      {
+        "id": "contribuir",
+        "title": "Como contribuir",
+        "body": [
+          "Comente nas apresentações, mande ferramentas para o radar ou proponha um artigo. O conteúdo com etiqueta de rascunho é justamente o que está esperando revisão.",
+          "O conteúdo mora em arquivos de texto no repositório: artigos em MDX, radar e catálogos em JSON. Editar não exige mexer em código."
+        ]
+      },
+      {
+        "id": "licenca",
+        "title": "Licenças",
+        "body": [
+          "Os dados da State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Citação sugerida: UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co",
+          "Os textos, gráficos e a curadoria deste hub são de Danilo do Amaral."
+        ]
+      }
+    ],
+    "en": [
+      {
+        "id": "o-que-e",
+        "title": "What this hub is",
+        "body": [
+          "A public AI radar for design. It gathers what I learn building prototypes, internal tools and agents, in four formats: articles that double as presentations, a tools radar, an AI tools catalog and a catalog of skills and agents.",
+          "Everything is open. Anyone in the company, or outside it, can read, cite and reuse it."
+        ]
+      },
+      {
+        "id": "artigos",
+        "title": "Articles that are also slides",
+        "body": [
+          "Every article opens in two modes. In Reading, it is flowing text. In Presentation, the same content becomes full-screen slides, with no duplicated file.",
+          "In presentation mode: arrows or space navigate, F goes full screen, N shows the speaker notes and Esc returns to reading. The address keeps the slide number, so you can open at a specific point and reload without losing your place."
+        ]
+      },
+      {
+        "id": "dados",
+        "title": "Where the data comes from",
+        "body": [
+          "The opening series uses State of Prototyping Spring 2026, a UX Tools survey of 1,478 designers and builders, collected between March 14 and April 6, 2026 across 18 regions, under CC BY 4.0.",
+          "The survey's aggregate CSV is versioned in the repository. A script converts it to JSON and computes the derived values, such as the three vibe-coding groups and the sentiment net per role. The charts read that JSON, so no number is typed by hand inside an article.",
+          "A second check compares every percentage cited in the texts against the dataset. Today that is 204 numbers verified, with zero divergences."
+        ]
+      },
+      {
+        "id": "graficos",
+        "title": "How to read the charts",
+        "body": [
+          "Charts are server-rendered SVG, so they work without JavaScript and print well. Each one carries its source table name and the sample n right under the title.",
+          "Every chart has an equivalent table behind \"View table\", because color alone should never carry information. The palette was validated for the common types of color blindness, in both light and dark themes."
+        ]
+      },
+      {
+        "id": "curadoria",
+        "title": "Radar and catalogs",
+        "body": [
+          "On the radar, the percentage beside each tool is the weekly usage measured by the survey. The ring position, among adopt, trial, assess and hold, is Labs curation, not survey data. The two never mix.",
+          "Items marked as draft carry a label. It means the position is a starting point and open to discussion."
+        ]
+      },
+      {
+        "id": "contribuir",
+        "title": "How to contribute",
+        "body": [
+          "Comment on the presentations, send tools for the radar or propose an article. Content with a draft label is exactly what is waiting for review.",
+          "Content lives in text files in the repository: articles in MDX, radar and catalogs in JSON. Editing does not require touching code."
+        ]
+      },
+      {
+        "id": "licenca",
+        "title": "Licenses",
+        "body": [
+          "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. Suggested citation: UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co",
+          "The texts, charts and curation in this hub are by Danilo do Amaral."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "pt": [
+      {
+        "id": "radar-publico",
+        "q": "O que quer dizer \"radar público de IA\"?",
+        "a": "Público porque qualquer pessoa acessa, sem login. Radar porque a proposta não é listar tudo que existe, é dizer o que vale adotar agora, o que vale testar, o que só vale acompanhar e o que é melhor evitar. É uma posição, não um inventário."
+      },
+      {
+        "id": "quem-escreve",
+        "q": "Quem escreve isto?",
+        "a": "Danilo do Amaral, Design Engineer e AI Builder no Labs. Os artigos são em primeira pessoa e assumem uma tese. Os dados sustentam o argumento, mas a leitura é minha e está aberta a discordância."
+      },
+      {
+        "id": "numeros",
+        "q": "Os números são confiáveis?",
+        "a": "Eles vêm da State of Prototyping Spring 2026, da UX Tools, com 1.478 respostas. Um script confere cada percentual citado nos artigos contra o dataset, e o build para se algum não bater. Isso garante fidelidade à fonte, não que a fonte represente toda a profissão."
+      },
+      {
+        "id": "amostra",
+        "q": "A pesquisa representa o Brasil?",
+        "a": "Não. A América Latina inteira é 3,9% da amostra, 58 pessoas. Dá para dizer que a região participou, não para descrever o mercado brasileiro. Por isso o último artigo da série propõe uma pesquisa-pulso local com as mesmas perguntas."
+      },
+      {
+        "id": "vies",
+        "q": "A amostra tem viés?",
+        "a": "Tem, e isso está dito em todo artigo. A pesquisa foi distribuída pela newsletter e pelas redes da UX Tools e de patrocinadores, então quem responde já acompanha ferramentas de perto. Leia os percentuais de adoção como teto da profissão, não como média."
+      },
+      {
+        "id": "apresentar",
+        "q": "Como uso um artigo numa apresentação?",
+        "a": "Abra o artigo e clique em Apresentação, ou acrescente /apresentar ao endereço. Navegue com as setas, use F para tela cheia e N para ver as notas do apresentador. Para imprimir em PDF, use o modo leitura e a impressão do navegador."
+      },
+      {
+        "id": "rascunho",
+        "q": "Por que alguns itens dizem \"rascunho\"?",
+        "a": "Porque foram propostos como ponto de partida e ainda não passaram por revisão. A etiqueta é honestidade sobre o estado do conteúdo, e um convite para discordar."
+      },
+      {
+        "id": "atualizacao",
+        "q": "Com que frequência isto muda?",
+        "a": "A série de artigos tem data de publicação em cada peça. O radar e os catálogos mudam quando a curadoria muda, e trazem a data da última revisão no topo. Ranking de ferramenta é a parte que envelhece mais rápido."
+      },
+      {
+        "id": "reusar",
+        "q": "Posso reusar o conteúdo?",
+        "a": "Os dados da pesquisa são CC BY 4.0 e pedem citação à UX Tools. Os textos e gráficos daqui são meus; use à vontade internamente, e cite quando for para fora."
+      }
+    ],
+    "en": [
+      {
+        "id": "radar-publico",
+        "q": "What does \"public AI radar\" mean?",
+        "a": "Public because anyone can open it, with no login. Radar because the goal is not to list everything that exists, it is to say what is worth adopting now, what is worth trialing, what is worth only watching and what is better avoided. It is a position, not an inventory."
+      },
+      {
+        "id": "quem-escreve",
+        "q": "Who writes this?",
+        "a": "Danilo do Amaral, Design Engineer and AI Builder at Labs. The articles are first person and take a position. Data supports the argument, but the reading is mine and open to disagreement."
+      },
+      {
+        "id": "numeros",
+        "q": "Are the numbers reliable?",
+        "a": "They come from UX Tools' State of Prototyping Spring 2026, with 1,478 responses. A script checks every percentage cited in the articles against the dataset, and the build stops if one does not match. That guarantees fidelity to the source, not that the source represents the whole profession."
+      },
+      {
+        "id": "amostra",
+        "q": "Does the survey represent Brazil?",
+        "a": "No. All of Latin America is 3.9% of the sample, 58 people. Enough to say the region took part, not to describe the Brazilian market. That is why the last article in the series proposes a local pulse survey with the same questions."
+      },
+      {
+        "id": "vies",
+        "q": "Is the sample biased?",
+        "a": "It is, and every article says so. The survey was distributed through the UX Tools newsletter and social channels and through sponsor networks, so respondents already follow tools closely. Read the adoption percentages as a ceiling for the profession, not an average."
+      },
+      {
+        "id": "apresentar",
+        "q": "How do I use an article in a talk?",
+        "a": "Open the article and click Presentation, or add /present to the address. Navigate with the arrows, use F for full screen and N for speaker notes. To print a PDF, use reading mode and the browser's print dialog."
+      },
+      {
+        "id": "rascunho",
+        "q": "Why do some items say \"draft\"?",
+        "a": "Because they were proposed as a starting point and have not been reviewed yet. The label is honesty about the state of the content, and an invitation to disagree."
+      },
+      {
+        "id": "atualizacao",
+        "q": "How often does this change?",
+        "a": "The article series carries a publication date on each piece. The radar and catalogs change when the curation changes, and show the last revision date at the top. Tool rankings are the part that ages fastest."
+      },
+      {
+        "id": "reusar",
+        "q": "Can I reuse the content?",
+        "a": "The survey data is CC BY 4.0 and asks for attribution to UX Tools. The texts and charts here are mine; use them freely inside the company, and cite them when they go outside."
+      }
+    ]
+  }
+}

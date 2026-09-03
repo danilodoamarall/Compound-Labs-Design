@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Código de terceiros instalado por registry (shadcn e React Bits). É
+    // vendorizado como está para poder ser reinstalado ou atualizado sem
+    // conflito, então não passa pelo nosso lint.
+    "src/components/ui/**",
+    "src/components/reactbits/**",
   ]),
 ]);
 

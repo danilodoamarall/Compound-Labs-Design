@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, htmlLang, type Locale } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/site/theme-provider";
 import { SiteHeader } from "@/components/site/site-header";
+import { GithubStar } from "@/components/site/github-star";
 import { SiteFooter } from "@/components/site/site-footer";
 import "../globals.css";
 
@@ -60,7 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <NextIntlClientProvider>
-            <SiteHeader />
+            <SiteHeader githubSlot={<GithubStar label="GitHub" />} />
             <div id="conteudo" className="flex flex-1 flex-col">{children}</div>
             <SiteFooter />
           </NextIntlClientProvider>

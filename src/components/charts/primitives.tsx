@@ -82,13 +82,12 @@ export function BandChart({ segments, groups, locale, ariaLabel }: { segments: B
   const bandH = 56, gap = 2, top = 4;
   const total = segments.reduce((a, s) => a + s.value, 0);
   const usable = W - gap * (segments.length - 1);
-  let x = 0;
-  const placed = segments.map((s) => {
+  const placed = segments.reduce<((typeof segments)[number] & { x: number; w: number })[]>((acc, s) => {
     const w = (s.value / total) * usable;
-    const out = { ...s, x, w };
-    x += w + gap;
-    return out;
-  });
+    const prev = acc[acc.length - 1];
+    const x = prev ? prev.x + prev.w + gap : 0;
+    return [...acc, { ...s, x, w }];
+  }, []);
   const tierY = top + bandH + 18;
   const groupY = tierY + 30;
   const H = groupY + 46;
