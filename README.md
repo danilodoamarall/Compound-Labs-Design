@@ -1,4 +1,4 @@
-# Labs Knowledge Hub
+# Labs Radar
 
 Hub público de conhecimento do Labs. Artigos em formato de apresentação, radar de
 ferramentas e catálogos de AI tools, skills e agents. Conteúdo por Danilo do Amaral,

@@ -1,7 +1,7 @@
 {
   "Site": {
-    "name": "Labs Knowledge Hub",
-    "tagline": "Labs knowledge, open to the company and to the web.",
+    "name": "Labs Radar",
+    "tagline": "What to adopt, trial and ignore in AI for design.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer & AI Builder · Labs",
     "madeBy": "Made by",
@@ -22,7 +22,7 @@
     "about": "About"
   },
   "Home": {
-    "title": "A public AI radar for design.",
+    "title": "What is worth adopting in AI for design.",
     "dek": "What I learn building with AI at Labs, in the open. Pick where to start.",
     "coverHint": "Click the centered cover to open · Drag · Arrow keys",
     "sections": {
@@ -131,7 +131,7 @@
     "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral."
   },
   "Footer": {
-    "rights": "Labs Knowledge Hub · content by Danilo do Amaral",
+    "rights": "Labs Radar · content by Danilo do Amaral",
     "source": "Data: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Built with Next.js and React Bits"
   },
