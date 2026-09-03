@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { LabsMark } from "./logo";
 
 export async function SiteFooter() {
   const t = await getTranslations();
@@ -7,7 +8,10 @@ export async function SiteFooter() {
     <footer className="mt-24 border-t border-border">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-xl font-semibold">{t("Site.name")}</p>
+          <p className="flex items-center gap-2 font-display text-xl font-semibold">
+            <LabsMark size={24} idPrefix="ftr" />
+            {t("Site.name")}
+          </p>
           <p className="mt-2 max-w-sm text-sm text-muted-foreground">{t("Site.tagline")}</p>
           <p className="mt-4 text-sm">
             <span className="text-muted-foreground">{t("Site.madeBy")} </span>

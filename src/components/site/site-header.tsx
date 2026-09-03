@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { sections } from "@/lib/site";
+import { LabsMark } from "./logo";
 import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -21,8 +22,8 @@ export function SiteHeader({ githubSlot }: { githubSlot?: ReactNode }) {
         {t("Site.skipToContent")}
       </a>
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-5">
-        <Link href="/" className="flex shrink-0 items-baseline gap-2 font-display text-[17px] font-semibold tracking-tight" onClick={() => setOpen(false)}>
-          <span aria-hidden className="inline-block size-2.5 translate-y-[-1px] rounded-sm bg-teal" />
+        <Link href="/" className="flex shrink-0 items-center gap-2 font-display text-[17px] font-semibold tracking-tight" onClick={() => setOpen(false)}>
+          <LabsMark size={22} idPrefix="hdr" />
           {t("Site.name")}
         </Link>
 

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Labs">
+  <title>Labs</title>
+  <defs>
+    <linearGradient id="base" x1="0.06" y1="0.1" x2="0.95" y2="0.9">
+      <stop offset="0" stop-color="#8fb7ea"/>
+      <stop offset="0.22" stop-color="#4cc4b4"/>
+      <stop offset="0.45" stop-color="#e9dfc6"/>
+      <stop offset="0.66" stop-color="#f2b45f"/>
+      <stop offset="0.85" stop-color="#e87f6d"/>
+      <stop offset="1" stop-color="#cf6499"/>
+    </linearGradient>
+    <radialGradient id="violet" cx="0.14" cy="0.18" r="0.5">
+      <stop offset="0" stop-color="#7b62dd" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#7b62dd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="teal" cx="0.2" cy="0.74" r="0.55">
+      <stop offset="0" stop-color="#16a98c" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#16a98c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="magenta" cx="0.88" cy="0.84" r="0.5">
+      <stop offset="0" stop-color="#d63c8a" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#d63c8a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.48" cy="0.4" r="0.34">
+      <stop offset="0" stop-color="#fffaf0" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#fffaf0" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sem tile: o canal entre as lobas é um vão de verdade, para a marca
+         funcionar sobre fundo claro e escuro. -->
+    <mask id="split">
+      <path fill="#fff" d="M512 168 C 646 168 856 306 856 512 C 856 702 698 856 512 856 C 322 856 168 694 168 512 C 168 314 378 168 512 168 Z"/>
+      <path fill="none" stroke="#000" stroke-width="74" stroke-linecap="round"
+            d="M520 112 C 706 300 660 424 512 512 C 364 600 318 726 504 912"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#split)">
+    <rect width="1024" height="1024" fill="url(#base)"/>
+    <rect width="1024" height="1024" fill="url(#violet)"/>
+    <rect width="1024" height="1024" fill="url(#teal)"/>
+    <rect width="1024" height="1024" fill="url(#magenta)"/>
+    <rect width="1024" height="1024" fill="url(#glow)"/>
+  </g>
+</svg>
