@@ -9,7 +9,8 @@
     "toggleTheme": "Alternar tema",
     "language": "Idioma",
     "draft": "Rascunho",
-    "draftHint": "Conteúdo inicial gerado para revisão. Vai mudar."
+    "draftHint": "Conteúdo inicial gerado para revisão. Vai mudar.",
+    "github": "Ver o projeto no GitHub e dar uma estrela"
   },
   "Nav": {
     "home": "Início",

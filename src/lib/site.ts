@@ -1,9 +1,9 @@
 import type { Locale } from "@/i18n/routing";
 
-/** Repositório usado pelo botão de estrela do GitHub.
- *  Defina NEXT_PUBLIC_GITHUB_REPO como "owner/repo" para ligar a contagem ao vivo.
- *  Sem isso, o botão vira só um link e não mostra número. */
-export const githubRepo = process.env.NEXT_PUBLIC_GITHUB_REPO ?? "";
+/** Repositório do projeto: é onde mora o código do hub, o MCP e as estrelas.
+ *  A variável NEXT_PUBLIC_GITHUB_REPO sobrescreve, para apontar um fork em
+ *  ambiente de teste sem mexer no código. */
+export const githubRepo = process.env.NEXT_PUBLIC_GITHUB_REPO ?? "danilodoamarall/Compound-Labs-Design";
 export const githubUrl = githubRepo ? `https://github.com/${githubRepo}` : "https://github.com";
 
 /** As seções do hub. Uma fonte só, consumida pelo menu, pelo carrossel da home e

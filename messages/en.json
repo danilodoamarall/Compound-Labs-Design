@@ -9,7 +9,8 @@
     "toggleTheme": "Toggle theme",
     "language": "Language",
     "draft": "Draft",
-    "draftHint": "Initial content generated for review. It will change."
+    "draftHint": "Initial content generated for review. It will change.",
+    "github": "See the project on GitHub and star it"
   },
   "Nav": {
     "home": "Home",

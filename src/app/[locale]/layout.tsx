@@ -51,6 +51,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "Site" });
 
   return (
     <html
@@ -61,7 +62,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <NextIntlClientProvider>
-            <SiteHeader githubSlot={<GithubStar label="GitHub" />} />
+            <SiteHeader githubSlot={<GithubStar label={t("github")} />} />
             <div id="conteudo" className="flex flex-1 flex-col">{children}</div>
             <SiteFooter />
           </NextIntlClientProvider>
