@@ -2,18 +2,26 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath } from "@/lib/site";
 import { listArticles } from "@/lib/articles";
-import { HeroStage } from "@/components/site/hero-stage";
+import { HeroCard } from "@/components/site/hero-card";
+import { GlassNav } from "@/components/site/glass-nav";
 import { StageSection } from "@/components/site/stage-section";
 import { StageResources, type StageCard } from "@/components/site/stage-resources";
-import { StageArticles, StageMarquee } from "@/components/site/stage-articles";
-import { StageResearch } from "@/components/site/stage-research";
+import { StageArticles } from "@/components/site/stage-articles";
 import { StageSubscribe } from "@/components/site/stage-subscribe";
-import survey from "../../../content/data/state-of-prototyping-2026.json";
 import index from "../../../content/resources.json";
 
 const ICON: Record<string, string> = {
   articles: "A", radar: "R", aiTools: "AI", skillsAgents: "S",
   workflow: "W", docs: "D", faq: "?",
+};
+
+/** Os spans somam 12 em cada linha, então nenhuma seção sobra sozinha no fim:
+ *  5+3+4, depois 4+4+4. Artigos e Radar ficam maiores por serem a porta de
+ *  entrada do hub. */
+const SPAN: Record<string, number> = {
+  articles: 5, radar: 3, aiTools: 4,
+  skillsAgents: 4, workflow: 4, docs: 4,
+  faq: 6, browse: 6,
 };
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
@@ -34,8 +42,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     privacy: tsub("privacy"),
   };
 
-  // Os cards saem da mesma fonte de seções que alimenta o menu e o rodapé, mais
-  // um card final para a busca, que agora mora em página própria.
   const cards: StageCard[] = [
     ...sections.map((s) => ({
       key: s.key,
@@ -44,6 +50,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       path: sectionPath(s.href, locale),
       cover: [...s.cover] as [string, string],
       icon: ICON[s.key] ?? "•",
+      span: SPAN[s.key] ?? 4,
     })),
     {
       key: "browse",
@@ -53,88 +60,41 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       cover: ["#3f4a52", "#171c1b"] as [string, string],
       icon: "∗",
       count: String(index.resources.length),
+      span: SPAN.browse,
     },
   ];
-
-  const camps = survey.derived.camps.map((c) => ({
-    key: c.key,
-    label: locale === "pt" ? c.pt : c.en,
-    pct: c.pct,
-    n: c.n,
-  }));
-
-  const tools = survey.tools.slice(0, 8).map((tool) => ({
-    key: tool.key,
-    label: locale === "pt" ? tool.pt : tool.en,
-    pct: tool.pct,
-    ai: tool.ai,
-  }));
 
   const nav = [
     { id: "inicio", label: t("navHome") },
     { id: "resources", label: t("navResources") },
     { id: "artigos", label: t("navArticles") },
-    { id: "research", label: t("navResearch") },
+    { id: "inscricao", label: t("navSubscribe") },
   ];
 
   return (
-    <main id="conteudo" className="stage flex w-full flex-col">
+    <main className="stage flex w-full flex-col">
       <div id="inicio" className="stage-anchor">
-        <HeroStage
-          line1={t("line1")}
-          outlined={t("outlined")}
-          middle={t("middle")}
-          blurred={t("blurred")}
-          tail={t("tail")}
-          measureLabel={t("measure")}
+        <HeroCard
+          badge={t("badge")}
+          title={t("heroTitle")}
           subtitle={t("subtitle")}
           curator={t("curator")}
-          curatorRole={t("curatorRole")}
-          nav={nav}
-          navLabel={t("navLabel")}
+          primary={{ label: t("ctaPrimary"), href: `/${locale}/${locale === "pt" ? "explorar" : "browse"}` }}
+          secondary={{ label: t("ctaSecondary"), href: `/${locale}/${locale === "pt" ? "artigos" : "articles"}` }}
         />
       </div>
+
+      <GlassNav items={nav} label={t("navLabel")} />
 
       <StageSection id="resources" title={t("resourcesTitle")} dek={t("resourcesDek")}>
         <StageResources cards={cards} />
       </StageSection>
 
-      <StageSection
-        id="artigos"
-        title={t("articlesTitle")}
-        dek={t("articlesDek")}
-        headingExtra={<StageMarquee words={articles.map((a) => a.title)} />}
-      >
+      <StageSection id="artigos" title={t("articlesTitle")} dek={t("articlesDek")}>
         <StageArticles
           articles={articles}
           locale={locale}
           labels={{ of: t("of"), slides: t("of"), minutes: t("minutes"), article: t("articleWord") }}
-        />
-      </StageSection>
-
-      <StageSection id="research" title={t("researchTitle")} dek={t("researchDek")}>
-        <StageResearch
-          responses={survey.headline.total_responses}
-          builtTool={survey.headline.built_tool_with_ai}
-          investing={survey.headline.ai_invest_next_12mo}
-          camps={camps}
-          tools={tools}
-          collected={`${survey.meta.collected.from} → ${survey.meta.collected.to}`}
-          license={survey.meta.license}
-          csvHref="/data/state-of-prototyping-2026.csv"
-          sourceHref={survey.meta.url}
-          locale={locale}
-          labels={{
-            responses: t("researchResponses"),
-            builtTool: t("researchBuilt"),
-            investing: t("researchInvesting"),
-            campsTitle: t("researchCamps"),
-            toolsTitle: t("researchTools"),
-            collected: t("researchCollected"),
-            license: t("researchLicense"),
-            csv: t("researchCsv"),
-            source: t("researchSource"),
-          }}
         />
       </StageSection>
 

@@ -57,7 +57,14 @@
       "sections": [
         "artigos"
       ],
-      "order": 1
+      "order": 1,
+      "notes": {
+        "artigos": {
+          "pt": "A profissão não migrou para a IA em bloco. Ela se dividiu em três grupos que convivem nas mesmas equipes, e a adoção sobe com a senioridade, não com a juventude.",
+          "en": "The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth."
+        }
+      },
+      "facts": {}
     },
     {
       "key": "artigo-prototipar-nao-e-entregar",
@@ -74,7 +81,14 @@
       "sections": [
         "artigos"
       ],
-      "order": 2
+      "order": 2,
+      "notes": {
+        "artigos": {
+          "pt": "Quase metade dos designers gera metade ou mais da produção com IA, e só 1,4% confiam nessa saída sem revisar. Isso não é contradição. É a definição de protótipo.",
+          "en": "Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype."
+        }
+      },
+      "facts": {}
     },
     {
       "key": "artigo-o-centro-ansioso",
@@ -91,7 +105,14 @@
       "sections": [
         "artigos"
       ],
-      "order": 3
+      "order": 3,
+      "notes": {
+        "artigos": {
+          "pt": "Quem mais codifica com IA se sente mais valioso. IC Designers, 58% da profissão, são o único grupo entre designers com mais medo do que confiança. Isso é um problema de gestão, não de indivíduo.",
+          "en": "The people who code most with AI feel more valuable. IC Designers, 58% of the profession, are the only group among designers with more fear than confidence. That's a management problem, not an individual one."
+        }
+      },
+      "facts": {}
     },
     {
       "key": "artigo-design-system-e-a-nova-api",
@@ -108,7 +129,14 @@
       "sections": [
         "artigos"
       ],
-      "order": 4
+      "order": 4,
+      "notes": {
+        "artigos": {
+          "pt": "Designers planejam investir mais em design systems e tokens do que em ferramentas de canvas. Faz sentido. Tokens são a interface entre a intenção de design e o código que a IA gera.",
+          "en": "Designers plan to invest more in design systems and tokens than in canvas tools. That makes sense. Tokens are the interface between design intent and the code the AI generates."
+        }
+      },
+      "facts": {}
     },
     {
       "key": "artigo-reclamam-do-excesso-planejam-mais",
@@ -125,7 +153,14 @@
       "sections": [
         "artigos"
       ],
-      "order": 5
+      "order": 5,
+      "notes": {
+        "artigos": {
+          "pt": "O gargalo do workflow de design em 2026 é cognitivo, não orçamentário. E a profissão que reclama de ferramentas demais é a mesma que planeja adicionar mais.",
+          "en": "The bottleneck in the 2026 design workflow is cognitive, not budgetary. And the profession complaining about too many tools is the same one planning to add more."
+        }
+      },
+      "facts": {}
     },
     {
       "key": "agentation",
@@ -142,7 +177,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Marca o elemento na tela, escreve a nota e o agente de código recebe seletor e caminho exatos.",
+          "en": "Click an element on screen, add a note, and your coding agent gets the exact selector and file."
+        }
+      },
+      "facts": {
+        "url": "https://www.agentation.com/",
+        "stage": "agents",
+        "category": "AI"
+      }
     },
     {
       "key": "central-icons",
@@ -159,7 +205,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Ícones com peso e raio de canto ajustáveis, disponíveis no Figma e como pacotes React.",
+          "en": "Icons with adjustable weight and corner radius, available in Figma and as React packages."
+        }
+      },
+      "facts": {
+        "url": "https://centralicons.com/",
+        "stage": "design",
+        "category": "Icons"
+      }
     },
     {
       "key": "chatgpt",
@@ -177,7 +234,26 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Segunda opinião, geração de imagem e tarefas rápidas.",
+          "en": "Second opinion, image generation and quick tasks."
+        },
+        "radar": {
+          "pt": "2,6 pontos atrás do Claude entre designers. Útil como segunda opinião e para imagem.",
+          "en": "2.6 points behind Claude among designers. Useful as a second opinion and for images."
+        }
+      },
+      "facts": {
+        "url": "https://chatgpt.com",
+        "category": "assistant",
+        "pricing": "freemium",
+        "surveyPct": 48.2,
+        "draft": true,
+        "ring": "trial",
+        "quadrant": "assistants"
+      }
     },
     {
       "key": "claude",
@@ -195,7 +271,26 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Escrever, analisar dados, revisar textos e pensar junto. Assistente padrão do Labs.",
+          "en": "Writing, data analysis, text review and thinking partner. Labs' default assistant."
+        },
+        "radar": {
+          "pt": "Ferramenta nº 2 da pesquisa, atrás só do Figma. Assistente padrão do Labs para escrita, análise e raciocínio.",
+          "en": "The survey's #2 tool, behind only Figma. Labs' default assistant for writing, analysis and reasoning."
+        }
+      },
+      "facts": {
+        "url": "https://claude.ai",
+        "category": "assistant",
+        "pricing": "freemium",
+        "surveyPct": 50.8,
+        "draft": true,
+        "ring": "adopt",
+        "quadrant": "assistants"
+      }
     },
     {
       "key": "claude-code",
@@ -214,7 +309,31 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Agente de codificação da Anthropic que roda no terminal, entende o repositório inteiro, edita arquivos e executa comandos.",
+          "en": "Anthropic's coding agent that lives in the terminal, understands the whole codebase, edits files and runs commands."
+        },
+        "ai-tools": {
+          "pt": "Construir protótipos, ferramentas internas e este hub a partir do terminal, com skills e agents.",
+          "en": "Building prototypes, internal tools and this hub from the terminal, with skills and agents."
+        },
+        "radar": {
+          "pt": "Um terminal com agente mais presente no dia a dia do designer do que FigJam e Figma Make. Este hub foi construído com ele.",
+          "en": "An agentic terminal more present in designers' weeks than FigJam or Figma Make. This hub was built with it."
+        }
+      },
+      "facts": {
+        "url": "https://claude.com/product/claude-code",
+        "stage": "agents",
+        "category": "Agent",
+        "pricing": "paid",
+        "surveyPct": 38.4,
+        "draft": true,
+        "ring": "adopt",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "cleanshot",
@@ -231,7 +350,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Captura, anota e grava a tela no Mac, com link na nuvem para mostrar o que já funciona.",
+          "en": "Captures, annotates and records the Mac screen, with cloud links for showing what already works to others."
+        }
+      },
+      "facts": {
+        "url": "https://cleanshot.com/",
+        "stage": "prototype",
+        "category": "Screenshots"
+      }
     },
     {
       "key": "cmux",
@@ -248,7 +378,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Terminal nativo do macOS com abas verticais e navegador embutido para rodar vários agentes de código em paralelo.",
+          "en": "Native macOS terminal with vertical tabs and a built-in browser for running several coding agents in parallel."
+        }
+      },
+      "facts": {
+        "url": "https://cmux.com/",
+        "stage": "agents",
+        "category": "Terminal built for agents"
+      }
     },
     {
       "key": "compresto",
@@ -265,7 +406,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Compressor nativo de macOS que reduz vídeos, imagens, GIFs e PDFs, deixando gravações de tela leves para compartilhar.",
+          "en": "Native macOS compressor that shrinks videos, images, GIFs and PDFs offline, keeping screen recordings light enough to share."
+        }
+      },
+      "facts": {
+        "url": "https://compresto.app/",
+        "stage": "prototype",
+        "category": "File compression"
+      }
     },
     {
       "key": "context7-server",
@@ -282,7 +434,26 @@
       "sections": [
         "skills-agents"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "skills-agents": {
+          "pt": "Servidor MCP que entrega documentação versionada de milhares de bibliotecas direto no contexto do agente.",
+          "en": "MCP server that delivers versioned documentation for thousands of libraries straight into the agent's context."
+        }
+      },
+      "facts": {
+        "type": "mcp",
+        "whenToUse": {
+          "pt": "Em qualquer projeto de código. Reduz alucinação de API e acelera setup de bibliotecas novas.",
+          "en": "In any coding project. Cuts API hallucination and speeds up setup of new libraries."
+        },
+        "install": {
+          "pt": "`claude mcp add context7 -- npx -y @upstash/context7-mcp`. Para limites maiores, defina CONTEXT7_API_KEY.",
+          "en": "`claude mcp add context7 -- npx -y @upstash/context7-mcp`. For higher limits, set CONTEXT7_API_KEY."
+        },
+        "code": "{\n  \"mcpServers\": {\n    \"context7\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@upstash/context7-mcp\"]\n    }\n  }\n}",
+        "draft": true
+      }
     },
     {
       "key": "context7-mcp",
@@ -299,7 +470,26 @@
       "sections": [
         "skills-agents"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "skills-agents": {
+          "pt": "Versão do find-docs que usa as ferramentas MCP do Context7 (resolve-library-id e query-docs) em vez da CLI.",
+          "en": "The MCP-tools variant of find-docs, using Context7's resolve-library-id and query-docs instead of the CLI."
+        }
+      },
+      "facts": {
+        "type": "skill",
+        "whenToUse": {
+          "pt": "Quando o servidor MCP do Context7 estiver conectado à sessão. Mesmos gatilhos do find-docs: perguntas de setup, geração de código com bibliotecas, referências de API.",
+          "en": "When the Context7 MCP server is connected to the session. Same triggers as find-docs: setup questions, library code generation, API references."
+        },
+        "install": {
+          "pt": "Adicione o servidor MCP do Context7 (`claude mcp add context7 -- npx -y @upstash/context7-mcp`) e copie o skill para ~/.claude/skills/context7-mcp/.",
+          "en": "Add the Context7 MCP server (`claude mcp add context7 -- npx -y @upstash/context7-mcp`) and copy the skill to ~/.claude/skills/context7-mcp/."
+        },
+        "code": "---\nname: context7-mcp\ndescription: Use when the user asks about libraries, frameworks, API references, or needs code examples.\n---\n\n## Step 1: Resolve the Library ID\nCall `resolve-library-id` with `libraryName` and `query`.\n\n## Step 2: Select the Best Match\nExact name, description relevance, snippet count, source reputation.\n\n## Step 3: Fetch the docs\nCall `query-docs` with the chosen ID and a specific question.",
+        "draft": true
+      }
     },
     {
       "key": "cursor",
@@ -318,7 +508,30 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Editor baseado no VS Code, com autocomplete, edições em vários arquivos e agentes que leem o repositório.",
+          "en": "AI-native editor built on VS Code: completion, multi-file edits, and agents that read the whole codebase."
+        },
+        "ai-tools": {
+          "pt": "Editar código com IA quando o fluxo pede um editor em vez de terminal.",
+          "en": "AI-assisted code editing when the flow calls for an editor rather than a terminal."
+        },
+        "radar": {
+          "pt": "IDE com IA. Alternativa quando o time prefere editor a terminal.",
+          "en": "AI IDE. The alternative when the team prefers an editor over a terminal."
+        }
+      },
+      "facts": {
+        "url": "https://cursor.com/",
+        "stage": "build",
+        "category": "IDE",
+        "pricing": "freemium",
+        "draft": true,
+        "ring": "trial",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "dia",
@@ -335,7 +548,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Navegador com IA na barra lateral: conversa com as abas abertas, resume páginas e acelera a pesquisa.",
+          "en": "Chromium browser with AI in the sidebar: chat with open tabs, summarize pages, speed up research."
+        }
+      },
+      "facts": {
+        "url": "https://www.diabrowser.com/",
+        "stage": "build",
+        "category": "Browser"
+      }
     },
     {
       "key": "easing-gradients",
@@ -352,7 +576,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Plugin do Tailwind que aplica easing aos stops do gradiente, suavizando bordas duras em fades e overlays.",
+          "en": "Tailwind plugin that eases gradient stop distribution, softening the hard edges in fades and overlays."
+        }
+      },
+      "facts": {
+        "url": "https://easing-gradients.ibelick.com/",
+        "stage": "build",
+        "category": "Gradients"
+      }
     },
     {
       "key": "easing-dev",
@@ -369,7 +604,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Catálogo visual de curvas de easing: você compara o ritmo da animação e copia o código pronto.",
+          "en": "Visual catalog of easing curves for comparing animation timing and copying ready-made code for CSS, Motion, SwiftUI."
+        }
+      },
+      "facts": {
+        "url": "https://easing.dev/",
+        "stage": "design",
+        "category": "Easing curves"
+      }
     },
     {
       "key": "elevenlabs",
@@ -386,7 +632,19 @@
       "sections": [
         "ai-tools"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Voz sintética para protótipos com áudio e demos.",
+          "en": "Synthetic voice for audio prototypes and demos."
+        }
+      },
+      "facts": {
+        "url": "https://elevenlabs.io",
+        "category": "media",
+        "pricing": "freemium",
+        "draft": true
+      }
     },
     {
       "key": "figjam",
@@ -403,7 +661,20 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Whiteboard padrão para descoberta e workshops. Perdeu para o Claude Code em uso semanal.",
+          "en": "Default whiteboard for discovery and workshops. Now below Claude Code in weekly use."
+        }
+      },
+      "facts": {
+        "url": "https://www.figma.com/figjam/",
+        "ring": "adopt",
+        "quadrant": "canvas",
+        "surveyPct": 34,
+        "draft": true
+      }
     },
     {
       "key": "figma",
@@ -421,7 +692,26 @@
         "workflow",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Editor colaborativo de interface no navegador: é onde layout, tipografia e cor são decididos antes de existir código.",
+          "en": "Collaborative interface editor in the browser, where layout, type, and color get decided before any code exists."
+        },
+        "radar": {
+          "pt": "Hegemônico: 82,6% usam toda semana. Continua sendo a fonte de verdade visual, mesmo com a IA gerando código.",
+          "en": "Hegemonic: 82.6% use it weekly. Still the visual source of truth even as AI generates the code."
+        }
+      },
+      "facts": {
+        "url": "https://www.figma.com/",
+        "stage": "design",
+        "category": "Design",
+        "ring": "adopt",
+        "quadrant": "canvas",
+        "surveyPct": 82.6,
+        "draft": true
+      }
     },
     {
       "key": "figma-make",
@@ -439,7 +729,26 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Protótipos interativos a partir de designs no Figma, para testar fluxo antes de codar.",
+          "en": "Interactive prototypes from Figma designs, to test flows before coding."
+        },
+        "radar": {
+          "pt": "Prototipagem com IA dentro do Figma. Bom para protótipos descartáveis a partir de designs existentes.",
+          "en": "AI prototyping inside Figma. Good for throwaway prototypes from existing designs."
+        }
+      },
+      "facts": {
+        "url": "https://www.figma.com/make/",
+        "category": "prototyping",
+        "pricing": "paid",
+        "surveyPct": 34.8,
+        "draft": true,
+        "ring": "trial",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "find-docs",
@@ -456,7 +765,26 @@
       "sections": [
         "skills-agents"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "skills-agents": {
+          "pt": "Busca documentação atualizada, referências de API e exemplos de código de qualquer biblioteca, framework, SDK ou CLI usando o Context7.",
+          "en": "Fetches current documentation, API references and code examples for any library, framework, SDK or CLI using Context7."
+        }
+      },
+      "facts": {
+        "type": "skill",
+        "whenToUse": {
+          "pt": "Sempre que a tarefa envolver uma biblioteca específica, mesmo conhecida (React, Next.js, Tailwind). O modelo não deve confiar na memória para sintaxe de API, opções de configuração ou migração de versão.",
+          "en": "Whenever the task involves a specific library, even a well-known one (React, Next.js, Tailwind). The model should not rely on memory for API syntax, config options or version migrations."
+        },
+        "install": {
+          "pt": "Copie a pasta para ~/.claude/skills/find-docs/ (global) ou .claude/skills/find-docs/ (por projeto). O skill roda `npx ctx7@latest` sem instalação global.",
+          "en": "Copy the folder to ~/.claude/skills/find-docs/ (global) or .claude/skills/find-docs/ (per project). The skill runs `npx ctx7@latest` with no global install."
+        },
+        "code": "---\nname: find-docs\ndescription: Retrieves up-to-date documentation, API references, and code examples for any developer technology. Use whenever the user asks about a specific library, framework, SDK, CLI tool, or cloud service.\n---\n\n# Documentation Lookup\n\nRun commands with `npx ctx7@latest`:\n\n```bash\nnpx ctx7@latest library <name> \"<query>\"\nnpx ctx7@latest docs <libraryId> \"<query>\"\n```\n\n1. Resolve the library ID first.\n2. Pick the best match (exact name, reputation, snippet count).\n3. Fetch docs with a specific, single-concept query.\n4. Answer from the fetched documentation.",
+        "draft": true
+      }
     },
     {
       "key": "framer",
@@ -473,7 +801,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Bom para sites de marketing publicáveis. Vale entender antes de escolher para landing pages.",
+          "en": "Good for publishable marketing sites. Worth understanding before picking it for landing pages."
+        }
+      },
+      "facts": {
+        "url": "https://www.framer.com",
+        "ring": "assess",
+        "quadrant": "canvas",
+        "draft": true
+      }
     },
     {
       "key": "gemini",
@@ -491,7 +831,26 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Contexto longo e integração com documentos do Google Workspace.",
+          "en": "Long context and integration with Google Workspace documents."
+        },
+        "radar": {
+          "pt": "Forte em contexto longo e integração com o Google Workspace. Avaliar caso a caso.",
+          "en": "Strong on long context and Google Workspace integration. Assess case by case."
+        }
+      },
+      "facts": {
+        "url": "https://gemini.google.com",
+        "category": "assistant",
+        "pricing": "freemium",
+        "surveyPct": 32.3,
+        "draft": true,
+        "ring": "assess",
+        "quadrant": "assistants"
+      }
     },
     {
       "key": "ghostty",
@@ -508,7 +867,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Emulador de terminal nativo e acelerado por GPU: onde rodam comandos, builds e as CLIs de agentes.",
+          "en": "Fast, GPU-accelerated terminal emulator with native UI on each platform, where commands, builds and agent CLIs run."
+        }
+      },
+      "facts": {
+        "url": "https://ghostty.org/",
+        "stage": "build",
+        "category": "Terminal"
+      }
     },
     {
       "key": "github-copilot",
@@ -526,7 +896,25 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Autocomplete e revisão de PR dentro do GitHub.",
+          "en": "Autocomplete and PR review inside GitHub."
+        },
+        "radar": {
+          "pt": "Autocomplete e agente no GitHub. Depende do stack do time de engenharia.",
+          "en": "Autocomplete and agent inside GitHub. Depends on the engineering team's stack."
+        }
+      },
+      "facts": {
+        "url": "https://github.com/features/copilot",
+        "category": "coding",
+        "pricing": "paid",
+        "draft": true,
+        "ring": "assess",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "google-meet",
@@ -543,7 +931,20 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Reuniões. Sem discussão.",
+          "en": "Meetings. No debate."
+        }
+      },
+      "facts": {
+        "url": "https://meet.google.com",
+        "ring": "adopt",
+        "quadrant": "delivery",
+        "surveyPct": 24.8,
+        "draft": true
+      }
     },
     {
       "key": "interfere",
@@ -560,7 +961,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Monitora o app em produção, detecta comportamentos quebrados antes dos usuários reclamarem e aponta a causa no código.",
+          "en": "Watches the app in production, catching broken behavior before users report it and tracing the cause to code."
+        }
+      },
+      "facts": {
+        "url": "https://interfere.com/",
+        "stage": "run",
+        "category": "Observability"
+      }
     },
     {
       "key": "loops",
@@ -577,7 +989,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Plataforma de e-mail para SaaS: transacional, marketing e fluxos de ciclo de vida na mesma base e API.",
+          "en": "Email platform for SaaS: transactional, marketing and lifecycle sequences on one audience and one API."
+        }
+      },
+      "facts": {
+        "url": "https://loops.so/",
+        "stage": "ship",
+        "category": "Email"
+      }
     },
     {
       "key": "lovable",
@@ -595,7 +1018,25 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Validar uma ideia de produto com um app funcional em uma tarde.",
+          "en": "Validating a product idea with a working app in an afternoon."
+        },
+        "radar": {
+          "pt": "App completo a partir de prompt. Bom para validar ideia; frágil para manter.",
+          "en": "Full app from a prompt. Good to validate an idea; fragile to maintain."
+        }
+      },
+      "facts": {
+        "url": "https://lovable.dev",
+        "category": "prototyping",
+        "pricing": "freemium",
+        "draft": true,
+        "ring": "assess",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "midjourney",
@@ -612,7 +1053,19 @@
       "sections": [
         "ai-tools"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Imagens de referência e moodboards. Só 14,7% dos designers planejam investir em geração de imagem.",
+          "en": "Reference imagery and moodboards. Only 14.7% of designers plan to invest in image generation."
+        }
+      },
+      "facts": {
+        "url": "https://www.midjourney.com",
+        "category": "media",
+        "pricing": "paid",
+        "draft": true
+      }
     },
     {
       "key": "miro",
@@ -629,7 +1082,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Sobrepõe o FigJam. Só vale se o cliente já usa.",
+          "en": "Overlaps with FigJam. Only worth it if the client already uses it."
+        }
+      },
+      "facts": {
+        "url": "https://miro.com",
+        "ring": "assess",
+        "quadrant": "delivery",
+        "draft": true
+      }
     },
     {
       "key": "motion",
@@ -646,7 +1111,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Biblioteca de animação para React, JavaScript e Vue: springs, gestos, layout e scroll direto no código da interface.",
+          "en": "Animation library for React, JavaScript and Vue: springs, gestures, layout and scroll transitions written directly in interface code."
+        }
+      },
+      "facts": {
+        "url": "https://motion.dev/",
+        "stage": "build",
+        "category": "Animation library"
+      }
     },
     {
       "key": "notebooklm",
@@ -664,7 +1140,25 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Sintetizar entrevistas, relatórios e PDFs em um corpus fechado.",
+          "en": "Synthesizing interviews, reports and PDFs in a closed corpus."
+        },
+        "radar": {
+          "pt": "Sintetiza um corpus fechado de documentos. Útil para síntese de pesquisa.",
+          "en": "Synthesizes a closed corpus of documents. Useful for research synthesis."
+        }
+      },
+      "facts": {
+        "url": "https://notebooklm.google",
+        "category": "research",
+        "pricing": "free",
+        "draft": true,
+        "ring": "trial",
+        "quadrant": "assistants"
+      }
     },
     {
       "key": "notion",
@@ -681,7 +1175,20 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Documentação e wikis. Vale testar como base de conhecimento de time.",
+          "en": "Docs and wikis. Worth trialing as a team knowledge base."
+        }
+      },
+      "facts": {
+        "url": "https://www.notion.so",
+        "ring": "trial",
+        "quadrant": "delivery",
+        "surveyPct": 24.5,
+        "draft": true
+      }
     },
     {
       "key": "notion-calendar",
@@ -698,7 +1205,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Calendário rápido e todo navegável por teclado; reúne Google, Outlook e bases do Notion na mesma agenda.",
+          "en": "Fast, fully keyboard-navigable calendar that gathers Google, Outlook and Notion databases into the same agenda."
+        }
+      },
+      "facts": {
+        "url": "https://www.notion.com/product/calendar",
+        "stage": "run",
+        "category": "Calendar"
+      }
     },
     {
       "key": "oklch-fyi",
@@ -715,7 +1233,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Escolhe, converte e gera cores em OKLCH, montando paletas de luminosidade uniforme para exportar em CSS ou Tailwind.",
+          "en": "Picks, converts and generates OKLCH colors, building palettes with even lightness that export straight to CSS or Tailwind."
+        }
+      },
+      "facts": {
+        "url": "https://oklch.fyi/",
+        "stage": "design",
+        "category": "Colors"
+      }
     },
     {
       "key": "paper",
@@ -732,7 +1261,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Canvas de design feito de HTML e CSS reais, que exporta código e conversa com agentes via MCP.",
+          "en": "Design canvas built on real HTML and CSS, exporting as code and connecting to agents through MCP."
+        }
+      },
+      "facts": {
+        "url": "https://paper.design/",
+        "stage": "prototype",
+        "category": "Prototyping"
+      }
     },
     {
       "key": "penpot",
@@ -749,7 +1289,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Alternativa open source ao Figma com tokens nativos. Acompanhar.",
+          "en": "Open-source Figma alternative with native tokens. Keep an eye on it."
+        }
+      },
+      "facts": {
+        "url": "https://penpot.app",
+        "ring": "assess",
+        "quadrant": "canvas",
+        "draft": true
+      }
     },
     {
       "key": "perplexity",
@@ -767,7 +1319,25 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Desk research com fontes citadas.",
+          "en": "Desk research with cited sources."
+        },
+        "radar": {
+          "pt": "Pesquisa com fontes citadas. Bom para desk research rápido.",
+          "en": "Search with cited sources. Good for quick desk research."
+        }
+      },
+      "facts": {
+        "url": "https://www.perplexity.ai",
+        "category": "research",
+        "pricing": "freemium",
+        "draft": true,
+        "ring": "trial",
+        "quadrant": "assistants"
+      }
     },
     {
       "key": "polar",
@@ -784,7 +1354,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Plataforma de cobrança e merchant of record: checkout, assinaturas e cobrança por uso, com impostos resolvidos.",
+          "en": "Billing platform and merchant of record: checkout, subscriptions and usage-based pricing, with sales tax handled."
+        }
+      },
+      "facts": {
+        "url": "https://polar.sh/",
+        "stage": "ship",
+        "category": "Billing"
+      }
     },
     {
       "key": "resend",
@@ -801,7 +1382,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "API de e-mail para quem programa: dispara transacionais e marketing do produto, com templates escritos em React.",
+          "en": "Email API for developers: sends a product's transactional and marketing mail, with templates written in React."
+        }
+      },
+      "facts": {
+        "url": "https://resend.com/",
+        "stage": "ship",
+        "category": "Email"
+      }
     },
     {
       "key": "runway",
@@ -818,7 +1410,19 @@
       "sections": [
         "ai-tools"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Vídeo gerado para conceitos e apresentações.",
+          "en": "Generated video for concepts and presentations."
+        }
+      },
+      "facts": {
+        "url": "https://runwayml.com",
+        "category": "media",
+        "pricing": "freemium",
+        "draft": true
+      }
     },
     {
       "key": "agent-template",
@@ -835,7 +1439,26 @@
       "sections": [
         "skills-agents"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "skills-agents": {
+          "pt": "Espaço reservado para os agents do Labs. Substitua este card pelo primeiro agent real: nome, quando usar, ferramentas permitidas e prompt.",
+          "en": "Placeholder for Labs agents. Replace this card with the first real agent: name, when to use, allowed tools and prompt."
+        }
+      },
+      "facts": {
+        "type": "agent",
+        "whenToUse": {
+          "pt": "Um agent vale a pena quando a tarefa é repetível, tem escopo claro e pode rodar em paralelo com o trabalho principal.",
+          "en": "An agent is worth it when the task is repeatable, clearly scoped and can run in parallel with the main work."
+        },
+        "install": {
+          "pt": "Crie .claude/agents/<nome>.md com frontmatter name, description, tools e o prompt do sistema no corpo.",
+          "en": "Create .claude/agents/<name>.md with frontmatter name, description, tools and the system prompt in the body."
+        },
+        "code": "---\nname: exemplo\ndescription: Quando usar este agent, em uma frase que o modelo consiga casar com a tarefa.\ntools: Read, Grep, Glob\n---\n\nVocê é um agente focado em <tarefa>. Regras:\n- Leia antes de concluir.\n- Reporte com caminhos de arquivo e linhas.\n- Não edite nada.",
+        "draft": true
+      }
     },
     {
       "key": "sketch",
@@ -852,7 +1475,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Sem motivo para começar projeto novo nele em 2026.",
+          "en": "No reason to start a new project on it in 2026."
+        }
+      },
+      "facts": {
+        "url": "https://www.sketch.com",
+        "ring": "hold",
+        "quadrant": "canvas",
+        "draft": true
+      }
     },
     {
       "key": "slack",
@@ -869,7 +1504,20 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Comunicação do dia a dia. Abaixo de três assistentes de IA em uso semanal.",
+          "en": "Day-to-day communication. Below three AI assistants in weekly use."
+        }
+      },
+      "facts": {
+        "url": "https://slack.com",
+        "ring": "adopt",
+        "quadrant": "delivery",
+        "surveyPct": 32.7,
+        "draft": true
+      }
     },
     {
       "key": "storybook",
@@ -886,7 +1534,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Vitrine viva de componentes. Onde design system e código gerado se encontram.",
+          "en": "Living component showcase. Where design system and generated code meet."
+        }
+      },
+      "facts": {
+        "url": "https://storybook.js.org",
+        "ring": "adopt",
+        "quadrant": "delivery",
+        "draft": true
+      }
     },
     {
       "key": "stripe",
@@ -903,7 +1563,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Infraestrutura de pagamentos via API: é como um produto lançado passa a cobrar assinaturas e vendas avulsas.",
+          "en": "Payment infrastructure behind an API: how a shipped product starts charging for subscriptions and one-off sales."
+        }
+      },
+      "facts": {
+        "url": "https://stripe.com/",
+        "stage": "ship",
+        "category": "Payments"
+      }
     },
     {
       "key": "supabase",
@@ -920,7 +1591,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Backend em cima do Postgres: banco, autenticação, storage e funções serverless para o produto ir ao ar.",
+          "en": "Postgres-based backend giving each project a database, auth, file storage and serverless functions without managing infrastructure."
+        }
+      },
+      "facts": {
+        "url": "https://supabase.com/",
+        "stage": "ship",
+        "category": "Database"
+      }
     },
     {
       "key": "survey-deep-dive",
@@ -937,7 +1619,26 @@
       "sections": [
         "skills-agents"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "skills-agents": {
+          "pt": "Rascunho de skill: transforma um CSV agregado de pesquisa em um relatório HTML com gráficos validados para daltonismo, tensões e limitações metodológicas. Foi o processo usado para o deep dive da State of Prototyping 2026.",
+          "en": "Draft skill: turns an aggregate survey CSV into an HTML report with colorblind-validated charts, tensions and methodological caveats. This is the process used for the State of Prototyping 2026 deep dive."
+        }
+      },
+      "facts": {
+        "type": "skill",
+        "whenToUse": {
+          "pt": "Quando chegar uma pesquisa de mercado ou de usuários em CSV e a pergunta for “o que isso realmente diz?”.",
+          "en": "When a market or user survey arrives as a CSV and the question is “what does this actually say?”."
+        },
+        "install": {
+          "pt": "Ainda não empacotado. O passo a passo está no artigo 1 da série e no repositório deste hub (scripts/csv-to-json.mjs).",
+          "en": "Not packaged yet. The step-by-step is in article 1 of the series and in this hub's repository (scripts/csv-to-json.mjs)."
+        },
+        "code": "# survey-deep-dive (rascunho)\n\n1. Ler o CSV e checar consistência interna (somas, médias ponderadas).\n2. Separar: distribuição da amostra, adoção, confiança, sentimento, bloqueios, investimento.\n3. Para cada tabela, escolher a forma (barras, banda, butterfly, dot plot).\n4. Validar a paleta com o validador do skill dataviz.\n5. Escrever tensões (o que contradiz o quê) antes de escrever conclusões.\n6. Listar limitações: amostra, n pequenos, múltipla escolha, ausência de série histórica.",
+        "draft": true
+      }
     },
     {
       "key": "things",
@@ -954,7 +1655,18 @@
       "sections": [
         "workflow"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Gerenciador de tarefas para Mac, iPhone e iPad: mantém ideias, entregas e prazos organizados por projeto.",
+          "en": "Task manager for Mac, iPhone, and iPad: keeps ideas, deliverables, and deadlines organized by project."
+        }
+      },
+      "facts": {
+        "url": "https://culturedcode.com/things/",
+        "stage": "run",
+        "category": "Tasks"
+      }
     },
     {
       "key": "tokens-studio",
@@ -971,7 +1683,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Tokens de design do Figma para código. Peça central para IA gerar telas com a cara do produto.",
+          "en": "Design tokens from Figma to code. Central piece for AI to generate on-brand screens."
+        }
+      },
+      "facts": {
+        "url": "https://tokens.studio",
+        "ring": "trial",
+        "quadrant": "delivery",
+        "draft": true
+      }
     },
     {
       "key": "v0",
@@ -989,7 +1713,25 @@
         "ai-tools",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "ai-tools": {
+          "pt": "Telas React geradas por prompt para exploração rápida de UI.",
+          "en": "Prompt-generated React screens for quick UI exploration."
+        },
+        "radar": {
+          "pt": "UI gerada a partir de prompt, com deploy na Vercel. Avaliar para telas de exploração.",
+          "en": "Prompt-to-UI with Vercel deploys. Assess for exploratory screens."
+        }
+      },
+      "facts": {
+        "url": "https://v0.app",
+        "category": "prototyping",
+        "pricing": "freemium",
+        "draft": true,
+        "ring": "assess",
+        "quadrant": "coding"
+      }
     },
     {
       "key": "vercel",
@@ -1007,7 +1749,25 @@
         "workflow",
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "workflow": {
+          "pt": "Hospedagem conectada ao Git: cada push vira um deploy com URL de preview, domínio e CDN global.",
+          "en": "Git-connected hosting: every push becomes a deploy with a preview URL, custom domains, and a global CDN."
+        },
+        "radar": {
+          "pt": "Deploy de protótipos e sites em minutos. Este hub roda aqui.",
+          "en": "Prototype and site deploys in minutes. This hub runs here."
+        }
+      },
+      "facts": {
+        "url": "https://vercel.com/",
+        "stage": "ship",
+        "category": "Hosting",
+        "ring": "adopt",
+        "quadrant": "delivery",
+        "draft": true
+      }
     },
     {
       "key": "zeroheight",
@@ -1024,7 +1784,19 @@
       "sections": [
         "radar"
       ],
-      "order": null
+      "order": null,
+      "notes": {
+        "radar": {
+          "pt": "Documentação de design system. Avaliar contra Storybook + MDX.",
+          "en": "Design system documentation. Assess against Storybook + MDX."
+        }
+      },
+      "facts": {
+        "url": "https://zeroheight.com",
+        "ring": "assess",
+        "quadrant": "delivery",
+        "draft": true
+      }
     }
   ]
 }

@@ -15,6 +15,8 @@ export const routing = defineRouting({
     "/sobre": { pt: "/sobre", en: "/about" },
     "/workflow": "/workflow",
     "/explorar": { pt: "/explorar", en: "/browse" },
+    "/r/[key]": "/r/[key]",
+    "/research": "/research",
     "/docs": "/docs",
     "/faq": "/faq",
   },

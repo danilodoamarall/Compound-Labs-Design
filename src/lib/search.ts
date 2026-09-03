@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath } from "@/lib/site";
+import { resourceHref } from "@/lib/resources";
 import index from "../../content/resources.json";
 
 export type SearchItem = {
@@ -39,15 +40,12 @@ export function buildSearchIndex(
   for (const r of index.resources) {
     const home = r.sections[0] as keyof typeof index.sections;
     const section = index.sections[home];
-    const isArticle = r.kind === "article";
     items.push({
       id: r.key,
       group: labels.groups[home] ?? section[locale],
       label: locale === "pt" ? r.name : r.nameEn,
       desc: locale === "pt" ? r.desc.pt : r.desc.en,
-      href: isArticle
-        ? `/${locale}${section.path[locale]}/${r.key.replace(/^artigo-/, "")}`
-        : `/${locale}${section.path[locale]}#${r.key}`,
+      href: resourceHref(r, locale, index.sections as never, home),
       keywords: `${r.tags.join(" ")} ${r.sections.join(" ")}`,
     });
   }

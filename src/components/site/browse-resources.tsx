@@ -39,12 +39,8 @@ export function BrowseResources({ resources, labels }: { resources: Resource[]; 
   const dirty = active.length > 0 || query.length > 0;
 
   return (
-    <section className="mx-auto w-full max-w-5xl px-5">
-      <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-        {labels.heading} <em className="font-normal italic">{labels.headingAccent}</em>
-      </h2>
-
-      <div className="mt-6 flex flex-wrap items-center gap-2">
+    <section className="w-full">
+      <div className="flex flex-wrap items-center gap-2">
         <Input
           type="search"
           value={query}

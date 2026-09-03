@@ -217,18 +217,11 @@
     "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique."
   },
   "Stage": {
-    "line1": "IA para designers,",
-    "outlined": "engenheiros",
-    "middle": " e quem ",
-    "blurred": "cons",
-    "tail": "trói.",
-    "measure": "247 x 56",
     "subtitle": "Aprenda a construir com IA sem baixar o seu padrão. Artigos, ferramentas, skills e agents que eu testo, curo e explico.",
     "navLabel": "Seções desta página",
     "navHome": "Home",
     "navResources": "Resources",
     "navArticles": "Artigos",
-    "navResearch": "Research",
     "resourcesTitle": "Recursos que eu mantenho e uso todo dia.",
     "resourcesDek": "Cada seção é uma lista curta e opinativa, revisada quando muda de verdade. Sem catálogo por catálogo.",
     "articlesTitle": "Cinco artigos sobre o que a pesquisa mostrou.",
@@ -255,7 +248,12 @@
     "browseCard": "Todo o conteúdo",
     "browseCardDesc": "Busca e filtro por tag em tudo que está publicado no hub.",
     "curator": "Curado por Danilo do Amaral",
-    "curatorRole": "Design Engineer no Labs, Pitang"
+    "curatorRole": "Design Engineer no Labs, Pitang",
+    "badge": "Radar de IA do Labs",
+    "heroTitle": "IA para designers, engenheiros e quem constrói.",
+    "ctaPrimary": "Explorar recursos",
+    "ctaSecondary": "Ler a série",
+    "navSubscribe": "Receber"
   },
   "Search": {
     "trigger": "Buscar",
@@ -268,5 +266,44 @@
     "close": "Fechar a busca",
     "groupSections": "Seções",
     "resultsOne": "1 resultado"
+  },
+  "Resource": {
+    "draft": "Rascunho",
+    "visit": "Abrir o site",
+    "whenToUse": "Quando usar",
+    "install": "Como instalar",
+    "code": "O código",
+    "appearsIn": "Também aparece em",
+    "source": "Fonte:",
+    "updated": "atualizado em",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "facts": {
+      "ring": "No radar:",
+      "stage": "Etapa:",
+      "type": "Tipo:",
+      "pricing": "Preço:",
+      "category": "Categoria:",
+      "surveyPct": "Na pesquisa:"
+    },
+    "values": {
+      "adopt": "Adotar",
+      "trial": "Testar",
+      "assess": "Avaliar",
+      "hold": "Evitar",
+      "free": "Gratuito",
+      "freemium": "Freemium",
+      "paid": "Pago",
+      "skill": "Skill",
+      "agent": "Agente",
+      "mcp": "MCP",
+      "tool": "Ferramenta",
+      "design": "Desenhar",
+      "prototype": "Prototipar",
+      "build": "Construir",
+      "agents": "Agentes",
+      "ship": "Entregar",
+      "run": "Operar"
+    }
   }
 }

@@ -30,16 +30,35 @@ const SECTION = {
 
 const items = new Map();
 
-/** Funde pelo nome: o mesmo produto em duas seções vira uma entrada só. */
+/** Funde pelo nome: o mesmo produto em duas seções vira uma entrada só.
+ *
+ *  A versão anterior deixava o primeiro a chegar vencer e descartava o resto em
+ *  silêncio: o Figma ficava com a descrição do workflow e a nota do radar sumia.
+ *  Agora cada seção guarda a própria nota, e os fatos de todas se acumulam. */
 function add(name, entry) {
   const k = name.toLowerCase().trim();
+  const { section, desc, facts = {}, ...rest } = entry;
   const existing = items.get(k);
+
   if (existing) {
-    if (!existing.sections.includes(entry.section)) existing.sections.push(entry.section);
-    if (!existing.desc.pt && entry.desc.pt) existing.desc = entry.desc;
+    if (!existing.sections.includes(section)) existing.sections.push(section);
+    // A descrição de cada seção fica guardada por seção, sem sobrescrever.
+    existing.notes[section] = desc;
+    if (!existing.desc.pt && desc.pt) existing.desc = desc;
+    // Fatos só entram se ainda não existirem: nenhum é sobrescrito.
+    for (const [campo, valor] of Object.entries(facts)) {
+      if (valor === undefined || valor === null || valor === "") continue;
+      if (existing.facts[campo] === undefined) existing.facts[campo] = valor;
+    }
+    if (facts.draft) existing.facts.draft = true;
     return;
   }
-  items.set(k, { ...entry, name, sections: [entry.section] });
+
+  const limpos = {};
+  for (const [campo, valor] of Object.entries(facts)) {
+    if (valor !== undefined && valor !== null && valor !== "") limpos[campo] = valor;
+  }
+  items.set(k, { ...rest, name, desc, sections: [section], notes: { [section]: desc }, facts: limpos });
 }
 
 // Artigos: o slug e o frontmatter vêm do MDX em português, que é a fonte.
@@ -60,15 +79,36 @@ for (const file of readdirSync(join(root, "content/artigos")).filter((f) => f.en
   });
 }
 
+// As quatro fontes chamam a descrição de quatro nomes diferentes. A
+// normalização acontece aqui, uma vez, e o resto do site lê um campo só.
 const tools = [
-  ...workflow.tools.map((t) => ({ t, section: "workflow", desc: { pt: t.pt, en: t.en } })),
-  ...aiTools.items.map((t) => ({ t, section: "ai-tools", desc: t.usedFor })),
-  ...radar.items.map((t) => ({ t, section: "radar", desc: t.note })),
-  ...skills.items.map((t) => ({ t, section: "skills-agents", desc: t.summary })),
+  ...workflow.tools.map((t) => ({
+    t, section: "workflow", desc: { pt: t.pt, en: t.en },
+    facts: { url: t.url, stage: t.stage, category: t.category },
+  })),
+  ...aiTools.items.map((t) => ({
+    t, section: "ai-tools", desc: t.usedFor,
+    facts: { url: t.url, category: t.category, pricing: t.pricing, surveyPct: t.surveyPct, draft: t.draft },
+  })),
+  ...radar.items.map((t) => ({
+    t, section: "radar", desc: t.note,
+    facts: { url: t.url, ring: t.ring, quadrant: t.quadrant, surveyPct: t.surveyPct, draft: t.draft },
+  })),
+  ...skills.items.map((t) => ({
+    t, section: "skills-agents", desc: t.summary,
+    facts: { type: t.type, whenToUse: t.whenToUse, install: t.install, code: t.code, draft: t.draft },
+  })),
 ];
 
-for (const { t, section, desc } of tools) {
-  add(t.name, { key: t.key, kind: section === "skills-agents" ? "skill" : "tool", section, nameEn: t.name, desc });
+for (const { t, section, desc, facts } of tools) {
+  add(t.name, {
+    key: t.key,
+    kind: section === "skills-agents" ? "skill" : "tool",
+    section,
+    nameEn: t.name,
+    desc,
+    facts,
+  });
 }
 
 const missing = [];
@@ -84,6 +124,10 @@ const resources = [...items.values()].map((item) => {
     kind: item.kind,
     sections: item.sections,
     order: item.order ?? null,
+    // A nota de cada seção, para a página do recurso mostrar o ponto de vista
+    // de onde o leitor veio em vez de uma descrição só.
+    notes: item.notes ?? {},
+    facts: item.facts ?? {},
   };
 });
 

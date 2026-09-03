@@ -217,18 +217,11 @@
     "privacy": "Just the email, nothing else. Leave whenever you want, in one click."
   },
   "Stage": {
-    "line1": "AI for designers,",
-    "outlined": "engineers",
-    "middle": " and ",
-    "blurred": "peo",
-    "tail": "ple who build.",
-    "measure": "247 x 56",
     "subtitle": "Learn to build with AI without lowering your bar. Articles, tools, skills and agents I test, curate and explain.",
     "navLabel": "Sections on this page",
     "navHome": "Home",
     "navResources": "Resources",
     "navArticles": "Articles",
-    "navResearch": "Research",
     "resourcesTitle": "Resources I maintain and use every day.",
     "resourcesDek": "Each section is a short, opinionated list, revised only when something actually changes. No catalogue for its own sake.",
     "articlesTitle": "Five articles on what the survey showed.",
@@ -255,7 +248,12 @@
     "browseCard": "Everything published",
     "browseCardDesc": "Search and filter by tag across everything on the hub.",
     "curator": "Curated by Danilo do Amaral",
-    "curatorRole": "Design Engineer at Labs, Pitang"
+    "curatorRole": "Design Engineer at Labs, Pitang",
+    "badge": "Labs AI radar",
+    "heroTitle": "AI for designers, engineers and people who build.",
+    "ctaPrimary": "Explore resources",
+    "ctaSecondary": "Read the series",
+    "navSubscribe": "Subscribe"
   },
   "Search": {
     "trigger": "Search",
@@ -268,5 +266,44 @@
     "close": "Close search",
     "groupSections": "Sections",
     "resultsOne": "1 result"
+  },
+  "Resource": {
+    "draft": "Draft",
+    "visit": "Open the site",
+    "whenToUse": "When to use it",
+    "install": "How to install",
+    "code": "The code",
+    "appearsIn": "Also appears in",
+    "source": "Source:",
+    "updated": "updated",
+    "previous": "Previous",
+    "next": "Next",
+    "facts": {
+      "ring": "On the radar:",
+      "stage": "Stage:",
+      "type": "Type:",
+      "pricing": "Pricing:",
+      "category": "Category:",
+      "surveyPct": "In the survey:"
+    },
+    "values": {
+      "adopt": "Adopt",
+      "trial": "Trial",
+      "assess": "Assess",
+      "hold": "Hold",
+      "free": "Free",
+      "freemium": "Freemium",
+      "paid": "Paid",
+      "skill": "Skill",
+      "agent": "Agent",
+      "mcp": "MCP",
+      "tool": "Tool",
+      "design": "Design",
+      "prototype": "Prototype",
+      "build": "Build",
+      "agents": "Agents",
+      "ship": "Ship",
+      "run": "Run"
+    }
   }
 }
