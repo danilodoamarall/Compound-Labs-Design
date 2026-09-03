@@ -24,7 +24,9 @@ export function SiteHeader({ githubSlot }: { githubSlot?: ReactNode }) {
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-5">
         <Link href="/" className="flex shrink-0 items-center gap-2 font-display text-[17px] font-semibold tracking-tight" onClick={() => setOpen(false)}>
           <LabsMark size={22} idPrefix="hdr" />
-          {t("Site.name")}
+          {/* Abaixo de 420px a marca sozinha carrega a identidade: o nome inteiro
+              mais o bloco da direita não cabem na mesma linha num telefone. */}
+          <span className="max-[419px]:sr-only">{t("Site.name")}</span>
         </Link>
 
         <nav className="ml-auto hidden items-center md:flex" aria-label="Principal">

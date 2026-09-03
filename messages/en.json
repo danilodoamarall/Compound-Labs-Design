@@ -1,7 +1,7 @@
 {
   "Site": {
-    "name": "Labs Radar",
-    "tagline": "What to adopt, trial and ignore in AI for design.",
+    "name": "Compound Labs Design",
+    "tagline": "What to adopt, trial and ignore in AI.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer & AI Builder · Labs",
     "madeBy": "Made by",
@@ -131,7 +131,7 @@
     "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral."
   },
   "Footer": {
-    "rights": "Labs Radar · content by Danilo do Amaral",
+    "rights": "Compound Labs Design · content by Danilo do Amaral",
     "source": "Data: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Built with Next.js and React Bits"
   },
