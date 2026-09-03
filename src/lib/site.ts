@@ -11,7 +11,7 @@ export const githubUrl = githubRepo ? `https://github.com/${githubRepo}` : "http
 export type Section = {
   key: string;
   href:
-    | "/artigos" | "/radar" | "/ai-tools" | "/skills-agents" | "/docs" | "/faq";
+    | "/artigos" | "/radar" | "/ai-tools" | "/skills-agents" | "/workflow" | "/docs" | "/faq";
   /** Par de cores da capa no carrossel: do topo à base. */
   cover: [string, string];
   inNav: boolean;
@@ -22,6 +22,7 @@ export const sections = [
   { key: "radar", href: "/radar", cover: ["#1f7a8c", "#123049"], inNav: true },
   { key: "aiTools", href: "/ai-tools", cover: ["#c9571c", "#7a2f14"], inNav: true },
   { key: "skillsAgents", href: "/skills-agents", cover: ["#5b4bb7", "#241f4d"], inNav: true },
+  { key: "workflow", href: "/workflow", cover: ["#a8802a", "#3a2a08"], inNav: true },
   { key: "docs", href: "/docs", cover: ["#3f4a52", "#171c1b"], inNav: true },
   { key: "faq", href: "/faq", cover: ["#a8456b", "#3d1a2c"], inNav: true },
 ] as const satisfies readonly Section[];
@@ -30,7 +31,7 @@ export type SectionKey = (typeof sections)[number]["key"];
 
 /** Ordem das capas no carrossel da home, diferente da ordem do menu: põe Artigos
  *  no centro, para o leque abrir dos dois lados como na referência. */
-export const coverOrder = ["docs", "radar", "articles", "aiTools", "skillsAgents", "faq"] as const;
+export const coverOrder = ["docs", "radar", "workflow", "articles", "aiTools", "skillsAgents", "faq"] as const;
 export const coverInitialIndex = coverOrder.indexOf("articles");
 
 /** Caminho já com o prefixo de idioma, para uso fora do <Link> tipado. */
@@ -40,6 +41,7 @@ export function sectionPath(href: Section["href"], locale: Locale) {
     "/radar": { pt: "/radar", en: "/radar" },
     "/ai-tools": { pt: "/ai-tools", en: "/ai-tools" },
     "/skills-agents": { pt: "/skills-agents", en: "/skills-agents" },
+    "/workflow": { pt: "/workflow", en: "/workflow" },
     "/docs": { pt: "/docs", en: "/docs" },
     "/faq": { pt: "/faq", en: "/faq" },
   };

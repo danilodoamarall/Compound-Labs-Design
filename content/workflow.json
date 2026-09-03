@@ -1,0 +1,227 @@
+{
+  "updated": "2026-09-03",
+  "source": {
+    "label": "danilodoamaral.vercel.app/tools",
+    "url": "https://danilodoamaral.vercel.app/tools",
+    "credit": "Lista original inspirada no catálogo da Interfaces.dev",
+    "creditUrl": "https://interfaces.dev/magazine/tools"
+  },
+  "tools": [
+    {
+      "key": "easing-dev",
+      "name": "easing.dev",
+      "category": "Easing curves",
+      "url": "https://easing.dev/",
+      "stage": "design",
+      "pt": "Catálogo visual de curvas de easing: você compara o ritmo da animação e copia o código pronto.",
+      "en": "Visual catalog of easing curves for comparing animation timing and copying ready-made code for CSS, Motion, SwiftUI."
+    },
+    {
+      "key": "figma",
+      "name": "Figma",
+      "category": "Design",
+      "url": "https://www.figma.com/",
+      "stage": "design",
+      "pt": "Editor colaborativo de interface no navegador: é onde layout, tipografia e cor são decididos antes de existir código.",
+      "en": "Collaborative interface editor in the browser, where layout, type, and color get decided before any code exists."
+    },
+    {
+      "key": "oklch-fyi",
+      "name": "oklch.fyi",
+      "category": "Colors",
+      "url": "https://oklch.fyi/",
+      "stage": "design",
+      "pt": "Escolhe, converte e gera cores em OKLCH, montando paletas de luminosidade uniforme para exportar em CSS ou Tailwind.",
+      "en": "Picks, converts and generates OKLCH colors, building palettes with even lightness that export straight to CSS or Tailwind."
+    },
+    {
+      "key": "central-icons",
+      "name": "Central Icons",
+      "category": "Icons",
+      "url": "https://centralicons.com/",
+      "stage": "design",
+      "pt": "Ícones com peso e raio de canto ajustáveis, disponíveis no Figma e como pacotes React.",
+      "en": "Icons with adjustable weight and corner radius, available in Figma and as React packages."
+    },
+    {
+      "key": "paper",
+      "name": "Paper",
+      "category": "Prototyping",
+      "url": "https://paper.design/",
+      "stage": "prototype",
+      "pt": "Canvas de design feito de HTML e CSS reais, que exporta código e conversa com agentes via MCP.",
+      "en": "Design canvas built on real HTML and CSS, exporting as code and connecting to agents through MCP."
+    },
+    {
+      "key": "cleanshot",
+      "name": "CleanShot X",
+      "category": "Screenshots",
+      "url": "https://cleanshot.com/",
+      "stage": "prototype",
+      "pt": "Captura, anota e grava a tela no Mac, com link na nuvem para mostrar o que já funciona.",
+      "en": "Captures, annotates and records the Mac screen, with cloud links for showing what already works to others."
+    },
+    {
+      "key": "compresto",
+      "name": "Compresto",
+      "category": "File compression",
+      "url": "https://compresto.app/",
+      "stage": "prototype",
+      "pt": "Compressor nativo de macOS que reduz vídeos, imagens, GIFs e PDFs, deixando gravações de tela leves para compartilhar.",
+      "en": "Native macOS compressor that shrinks videos, images, GIFs and PDFs offline, keeping screen recordings light enough to share."
+    },
+    {
+      "key": "motion",
+      "name": "Motion",
+      "category": "Animation library",
+      "url": "https://motion.dev/",
+      "stage": "build",
+      "pt": "Biblioteca de animação para React, JavaScript e Vue: springs, gestos, layout e scroll direto no código da interface.",
+      "en": "Animation library for React, JavaScript and Vue: springs, gestures, layout and scroll transitions written directly in interface code."
+    },
+    {
+      "key": "dia",
+      "name": "Dia",
+      "category": "Browser",
+      "url": "https://www.diabrowser.com/",
+      "stage": "build",
+      "pt": "Navegador com IA na barra lateral: conversa com as abas abertas, resume páginas e acelera a pesquisa.",
+      "en": "Chromium browser with AI in the sidebar: chat with open tabs, summarize pages, speed up research."
+    },
+    {
+      "key": "cursor",
+      "name": "Cursor",
+      "category": "IDE",
+      "url": "https://cursor.com/",
+      "stage": "build",
+      "pt": "Editor baseado no VS Code, com autocomplete, edições em vários arquivos e agentes que leem o repositório.",
+      "en": "AI-native editor built on VS Code: completion, multi-file edits, and agents that read the whole codebase."
+    },
+    {
+      "key": "ghostty",
+      "name": "Ghostty",
+      "category": "Terminal",
+      "url": "https://ghostty.org/",
+      "stage": "build",
+      "pt": "Emulador de terminal nativo e acelerado por GPU: onde rodam comandos, builds e as CLIs de agentes.",
+      "en": "Fast, GPU-accelerated terminal emulator with native UI on each platform, where commands, builds and agent CLIs run."
+    },
+    {
+      "key": "easing-gradients",
+      "name": "Easing Gradients",
+      "category": "Gradients",
+      "url": "https://easing-gradients.ibelick.com/",
+      "stage": "build",
+      "pt": "Plugin do Tailwind que aplica easing aos stops do gradiente, suavizando bordas duras em fades e overlays.",
+      "en": "Tailwind plugin that eases gradient stop distribution, softening the hard edges in fades and overlays."
+    },
+    {
+      "key": "cmux",
+      "name": "cmux",
+      "category": "Terminal built for agents",
+      "url": "https://cmux.com/",
+      "stage": "agents",
+      "pt": "Terminal nativo do macOS com abas verticais e navegador embutido para rodar vários agentes de código em paralelo.",
+      "en": "Native macOS terminal with vertical tabs and a built-in browser for running several coding agents in parallel."
+    },
+    {
+      "key": "claude-code",
+      "name": "Claude Code",
+      "category": "Agent",
+      "url": "https://claude.com/product/claude-code",
+      "stage": "agents",
+      "pt": "Agente de codificação da Anthropic que roda no terminal, entende o repositório inteiro, edita arquivos e executa comandos.",
+      "en": "Anthropic's coding agent that lives in the terminal, understands the whole codebase, edits files and runs commands."
+    },
+    {
+      "key": "agentation",
+      "name": "Agentation",
+      "category": "AI",
+      "url": "https://www.agentation.com/",
+      "stage": "agents",
+      "pt": "Marca o elemento na tela, escreve a nota e o agente de código recebe seletor e caminho exatos.",
+      "en": "Click an element on screen, add a note, and your coding agent gets the exact selector and file."
+    },
+    {
+      "key": "loops",
+      "name": "Loops",
+      "category": "Email",
+      "url": "https://loops.so/",
+      "stage": "ship",
+      "pt": "Plataforma de e-mail para SaaS: transacional, marketing e fluxos de ciclo de vida na mesma base e API.",
+      "en": "Email platform for SaaS: transactional, marketing and lifecycle sequences on one audience and one API."
+    },
+    {
+      "key": "vercel",
+      "name": "Vercel",
+      "category": "Hosting",
+      "url": "https://vercel.com/",
+      "stage": "ship",
+      "pt": "Hospedagem conectada ao Git: cada push vira um deploy com URL de preview, domínio e CDN global.",
+      "en": "Git-connected hosting: every push becomes a deploy with a preview URL, custom domains, and a global CDN."
+    },
+    {
+      "key": "resend",
+      "name": "Resend",
+      "category": "Email",
+      "url": "https://resend.com/",
+      "stage": "ship",
+      "pt": "API de e-mail para quem programa: dispara transacionais e marketing do produto, com templates escritos em React.",
+      "en": "Email API for developers: sends a product's transactional and marketing mail, with templates written in React."
+    },
+    {
+      "key": "polar",
+      "name": "Polar",
+      "category": "Billing",
+      "url": "https://polar.sh/",
+      "stage": "ship",
+      "pt": "Plataforma de cobrança e merchant of record: checkout, assinaturas e cobrança por uso, com impostos resolvidos.",
+      "en": "Billing platform and merchant of record: checkout, subscriptions and usage-based pricing, with sales tax handled."
+    },
+    {
+      "key": "supabase",
+      "name": "Supabase",
+      "category": "Database",
+      "url": "https://supabase.com/",
+      "stage": "ship",
+      "pt": "Backend em cima do Postgres: banco, autenticação, storage e funções serverless para o produto ir ao ar.",
+      "en": "Postgres-based backend giving each project a database, auth, file storage and serverless functions without managing infrastructure."
+    },
+    {
+      "key": "stripe",
+      "name": "Stripe",
+      "category": "Payments",
+      "url": "https://stripe.com/",
+      "stage": "ship",
+      "pt": "Infraestrutura de pagamentos via API: é como um produto lançado passa a cobrar assinaturas e vendas avulsas.",
+      "en": "Payment infrastructure behind an API: how a shipped product starts charging for subscriptions and one-off sales."
+    },
+    {
+      "key": "interfere",
+      "name": "Interfere",
+      "category": "Observability",
+      "url": "https://interfere.com/",
+      "stage": "run",
+      "pt": "Monitora o app em produção, detecta comportamentos quebrados antes dos usuários reclamarem e aponta a causa no código.",
+      "en": "Watches the app in production, catching broken behavior before users report it and tracing the cause to code."
+    },
+    {
+      "key": "notion-calendar",
+      "name": "Notion Calendar",
+      "category": "Calendar",
+      "url": "https://www.notion.com/product/calendar",
+      "stage": "run",
+      "pt": "Calendário rápido e todo navegável por teclado; reúne Google, Outlook e bases do Notion na mesma agenda.",
+      "en": "Fast, fully keyboard-navigable calendar that gathers Google, Outlook and Notion databases into the same agenda."
+    },
+    {
+      "key": "things",
+      "name": "Things",
+      "category": "Tasks",
+      "url": "https://culturedcode.com/things/",
+      "stage": "run",
+      "pt": "Gerenciador de tarefas para Mac, iPhone e iPad: mantém ideias, entregas e prazos organizados por projeto.",
+      "en": "Task manager for Mac, iPhone, and iPad: keeps ideas, deliverables, and deadlines organized by project."
+    }
+  ]
+}

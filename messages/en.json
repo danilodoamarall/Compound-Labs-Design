@@ -19,7 +19,8 @@
     "skillsAgents": "Skills & Agents",
     "docs": "Docs",
     "faq": "FAQ",
-    "about": "About"
+    "about": "About",
+    "workflow": "Workflow"
   },
   "Home": {
     "title": "What is worth adopting in AI for design.",
@@ -43,6 +44,9 @@
       },
       "faq": {
         "short": "Questions about the data"
+      },
+      "workflow": {
+        "short": "The tools in my day"
       }
     }
   },
@@ -148,5 +152,28 @@
   "Faq": {
     "title": "FAQ",
     "dek": "What people ask about the data, the curation and reusing the content."
+  },
+  "Workflow": {
+    "title": "Workflow",
+    "dek": "The tools I keep close for designing, prototyping, building and working with agents.",
+    "stages": {
+      "design": "Design",
+      "prototype": "Prototype",
+      "build": "Build",
+      "agents": "Agents",
+      "ship": "Ship",
+      "run": "Run the day"
+    },
+    "stageHints": {
+      "design": "Deciding the form: canvas, color, icon, curve.",
+      "prototype": "Proving it works before it counts.",
+      "build": "Writing and running the code.",
+      "agents": "Working with AI agents.",
+      "ship": "Putting it live and getting paid.",
+      "run": "Keeping the day standing."
+    },
+    "visit": "Open site",
+    "count": "{count} tools",
+    "sourceNote": "Same list as my personal site. The staging and the descriptions are this hub own."
   }
 }

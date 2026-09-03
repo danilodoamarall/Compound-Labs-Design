@@ -19,7 +19,8 @@
     "skillsAgents": "Skills & Agents",
     "docs": "Docs",
     "faq": "FAQ",
-    "about": "Sobre"
+    "about": "Sobre",
+    "workflow": "Workflow"
   },
   "Home": {
     "title": "O que vale adotar em IA para design.",
@@ -43,6 +44,9 @@
       },
       "faq": {
         "short": "Perguntas sobre os dados"
+      },
+      "workflow": {
+        "short": "As ferramentas do meu dia"
       }
     }
   },
@@ -148,5 +152,28 @@
   "Faq": {
     "title": "FAQ",
     "dek": "O que perguntam sobre os dados, a curadoria e o uso do conteúdo."
+  },
+  "Workflow": {
+    "title": "Workflow",
+    "dek": "As ferramentas que eu mantenho por perto para desenhar, prototipar, construir e trabalhar com agentes.",
+    "stages": {
+      "design": "Desenhar",
+      "prototype": "Prototipar",
+      "build": "Construir",
+      "agents": "Agentes",
+      "ship": "Publicar",
+      "run": "Tocar o dia"
+    },
+    "stageHints": {
+      "design": "Decidir a forma: canvas, cor, ícone, curva.",
+      "prototype": "Provar que funciona antes de valer.",
+      "build": "Escrever e rodar o código.",
+      "agents": "Trabalhar com agentes de IA.",
+      "ship": "Colocar no ar e cobrar.",
+      "run": "Manter o dia em pé."
+    },
+    "visit": "Abrir site",
+    "count": "{count} ferramentas",
+    "sourceNote": "Mesma lista do meu site pessoal. A ordem por etapa e as descrições são deste hub."
   }
 }
