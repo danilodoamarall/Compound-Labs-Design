@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { FaqPro } from "@/components/ui/faq-pro";
 import pages from "../../../../content/pages.json";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/faq">): Promise<Metadata> {
@@ -14,7 +15,12 @@ export default async function FaqPage({ params }: PageProps<"/[locale]/faq">) {
   const locale = l as Locale;
   setRequestLocale(locale);
   const t = await getTranslations("Faq");
-  const items = pages.faq[locale];
+
+  const items = pages.faq[locale].map((item) => ({
+    id: item.id,
+    question: item.q,
+    answer: item.a,
+  }));
 
   return (
     <main className="mx-auto w-full max-w-3xl px-5 pb-20 pt-14">
@@ -22,14 +28,14 @@ export default async function FaqPage({ params }: PageProps<"/[locale]/faq">) {
       <h1 className="font-display mt-3 text-4xl font-semibold sm:text-5xl">{t("title")}</h1>
       <p className="measure mt-5 text-lg text-muted-foreground">{t("dek")}</p>
 
-      <dl className="mt-12 border-t border-border">
-        {items.map((item) => (
-          <div key={item.id} className="border-b border-border py-7">
-            <dt id={item.id} className="scroll-mt-20 font-display text-xl font-medium leading-snug">{item.q}</dt>
-            <dd className="mt-3 leading-relaxed text-muted-foreground">{item.a}</dd>
-          </div>
-        ))}
-      </dl>
+      <div className="mt-12">
+        <FaqPro
+          items={items}
+          searchPlaceholder={t("searchPlaceholder")}
+          noResultsMessage={t("noResults")}
+          defaultOpenFirst
+        />
+      </div>
     </main>
   );
 }

@@ -152,7 +152,9 @@
   },
   "Faq": {
     "title": "FAQ",
-    "dek": "O que perguntam sobre os dados, a curadoria e o uso do conteúdo."
+    "dek": "O que perguntam sobre os dados, a curadoria e o uso do conteúdo.",
+    "searchPlaceholder": "Buscar nas perguntas...",
+    "noResults": "Nenhuma pergunta com esse termo."
   },
   "Workflow": {
     "title": "Workflow",

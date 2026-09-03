@@ -152,7 +152,9 @@
   },
   "Faq": {
     "title": "FAQ",
-    "dek": "What people ask about the data, the curation and reusing the content."
+    "dek": "What people ask about the data, the curation and reusing the content.",
+    "searchPlaceholder": "Search the questions...",
+    "noResults": "No question matches that term."
   },
   "Workflow": {
     "title": "Workflow",
