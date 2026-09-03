@@ -3,7 +3,6 @@ import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath } from "@/lib/site";
 import { listArticles } from "@/lib/articles";
 import { HeroCard } from "@/components/site/hero-card";
-import { GlassNav } from "@/components/site/glass-nav";
 import { StageSection } from "@/components/site/stage-section";
 import { StageResources, type StageCard } from "@/components/site/stage-resources";
 import { StageArticles } from "@/components/site/stage-articles";
@@ -64,13 +63,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     },
   ];
 
-  const nav = [
-    { id: "inicio", label: t("navHome") },
-    { id: "resources", label: t("navResources") },
-    { id: "artigos", label: t("navArticles") },
-    { id: "inscricao", label: t("navSubscribe") },
-  ];
-
   return (
     <main className="stage flex w-full flex-col">
       <div id="inicio" className="stage-anchor">
@@ -83,8 +75,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           secondary={{ label: t("ctaSecondary"), href: `/${locale}/${locale === "pt" ? "artigos" : "articles"}` }}
         />
       </div>
-
-      <GlassNav items={nav} label={t("navLabel")} />
 
       <StageSection id="resources" title={t("resourcesTitle")} dek={t("resourcesDek")}>
         <StageResources cards={cards} />

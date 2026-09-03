@@ -4,15 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-mdx.mjs && node scripts/build-csv.mjs && node scripts/check-scroll-spy.mjs",
+    "prebuild": "node scripts/check-mdx.mjs && node scripts/build-csv.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "check:mdx": "node scripts/check-mdx.mjs",
     "check:numbers": "node scripts/check-numbers.mjs",
     "data": "node scripts/csv-to-json.mjs",
-    "build:csv": "node scripts/build-csv.mjs",
-    "check:spy": "node scripts/check-scroll-spy.mjs"
+    "build:csv": "node scripts/build-csv.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

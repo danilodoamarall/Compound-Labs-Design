@@ -351,17 +351,10 @@
     .stage-h2 { font-size: 28px; line-height: 34px; letter-spacing: -0.6px; }
   }
 
-  /* A pilula gruda abaixo do cabecalho de 56px, com 12px de folga. z-30 fica
-     abaixo do cabecalho (z-40) para nao cobri-lo ao rolar. */
-  .stage-nav {
-    position: sticky;
-    top: 68px;
-    z-index: 30;
-  }
 
   /* O deslocamento do alvo da ancora impede que o titulo da secao pare
      escondido atras do cabecalho e da pilula. */
-  .stage-anchor { scroll-margin-top: 128px; }
+  .stage-anchor { scroll-margin-top: 80px; }
 
   .stage-rule { border-color: var(--stage-line); }
 
@@ -386,7 +379,6 @@
   .stage-fill[data-lit="true"] { background-position: 0 0; }
 
   @media (prefers-reduced-motion: reduce) {
-    .stage-nav { scroll-behavior: auto; }
     .stage-fill { transition: none; background-position: 0 0; }
   }
 

@@ -218,10 +218,6 @@
   },
   "Stage": {
     "subtitle": "Learn to build with AI without lowering your bar. Articles, tools, skills and agents I test, curate and explain.",
-    "navLabel": "Sections on this page",
-    "navHome": "Home",
-    "navResources": "Resources",
-    "navArticles": "Articles",
     "resourcesTitle": "Resources I maintain and use every day.",
     "resourcesDek": "Each section is a short, opinionated list, revised only when something actually changes. No catalogue for its own sake.",
     "articlesTitle": "Five articles on what the survey showed.",
@@ -252,8 +248,7 @@
     "badge": "Labs AI radar",
     "heroTitle": "AI for designers, engineers and people who build.",
     "ctaPrimary": "Explore resources",
-    "ctaSecondary": "Read the series",
-    "navSubscribe": "Subscribe"
+    "ctaSecondary": "Read the series"
   },
   "Search": {
     "trigger": "Search",

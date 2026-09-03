@@ -218,10 +218,6 @@
   },
   "Stage": {
     "subtitle": "Aprenda a construir com IA sem baixar o seu padrão. Artigos, ferramentas, skills e agents que eu testo, curo e explico.",
-    "navLabel": "Seções desta página",
-    "navHome": "Home",
-    "navResources": "Resources",
-    "navArticles": "Artigos",
     "resourcesTitle": "Recursos que eu mantenho e uso todo dia.",
     "resourcesDek": "Cada seção é uma lista curta e opinativa, revisada quando muda de verdade. Sem catálogo por catálogo.",
     "articlesTitle": "Cinco artigos sobre o que a pesquisa mostrou.",
@@ -252,8 +248,7 @@
     "badge": "Radar de IA do Labs",
     "heroTitle": "IA para designers, engenheiros e quem constrói.",
     "ctaPrimary": "Explorar recursos",
-    "ctaSecondary": "Ler a série",
-    "navSubscribe": "Receber"
+    "ctaSecondary": "Ler a série"
   },
   "Search": {
     "trigger": "Buscar",
