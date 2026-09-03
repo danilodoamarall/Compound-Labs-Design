@@ -11,13 +11,23 @@ import { ThemeToggle } from "./theme-toggle";
 
 const NAV = sections.filter((s) => s.inNav);
 
-export function SiteHeader({ githubSlot }: { githubSlot?: ReactNode }) {
+export function SiteHeader({ githubSlot, searchSlot }: { githubSlot?: ReactNode; searchSlot?: ReactNode }) {
   const t = useTranslations();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  // A home e um palco preto nos dois temas; o cabecalho se sobrepoe a ele em
+  // vez de trazer a propria superficie, senao fica uma emenda clara no topo.
+  const overStage = pathname === "/";
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/65">
+    <header
+      data-over-stage={overStage ? "" : undefined}
+      className={
+        overStage
+          ? "dark sticky top-0 z-40 border-b border-transparent bg-transparent text-[#EDEDED]"
+          : "sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/65"
+      }
+    >
       <a href="#conteudo" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground">
         {t("Site.skipToContent")}
       </a>
@@ -42,6 +52,7 @@ export function SiteHeader({ githubSlot }: { githubSlot?: ReactNode }) {
         </nav>
 
         <div className="ml-auto flex items-center gap-1.5 md:ml-3">
+          {searchSlot}
           {githubSlot}
           <LocaleSwitcher label={t("Site.language")} />
           <ThemeToggle label={t("Site.toggleTheme")} />

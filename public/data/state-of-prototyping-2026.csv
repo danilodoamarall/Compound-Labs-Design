@@ -1,0 +1,103 @@
+# State of Prototyping Spring 2026
+# fonte: https://survey.uxtools.co/spring-2026
+# licenca: CC BY 4.0
+# n=1478 coleta=2026-03-14 a 2026-04-06
+# tratamento: Compound Labs Design
+bloco,chave,rotulo_pt,rotulo_en,n,pct
+headline,total_responses,,,,1478
+headline,vibe_coding_50plus,,,,43.8
+headline,built_tool_with_ai,,,,59.1
+headline,generate_code_ai,,,,63.1
+headline,non_na_respondents,,,,61.4
+headline,ai_invest_next_12mo,,,,64
+headline,satisfaction_delta,,,,1.46
+camps,none,Não usa,Don't use,557,37.7
+camps,complement,Complementa,Complements,462,31.2
+camps,majority,Maioria da produção,Majority of output,459,31.1
+roles,ic-designer,IC Designer,IC Designer,862,58.3
+roles,lead-principal,Lead / Principal,Lead / Principal,280,18.9
+roles,manager-director,Manager / Director,Manager / Director,161,10.9
+roles,design-engineer,Design Engineer,Design Engineer,94,6.4
+roles,non-designer,Não designer,Non-designer,57,3.9
+roles,researcher,Researcher,Researcher,23,1.6
+regions,north-america,América do Norte,North America,569,38.6
+regions,western-europe,Europa Ocidental,Western Europe,239,16.2
+regions,south-asia,Sul da Ásia,South Asia,119,8.1
+regions,eastern-europe,Europa Oriental,Eastern Europe,104,7
+regions,northern-europe,Europa do Norte,Northern Europe,103,7
+regions,southeast-asia,Sudeste Asiático,Southeast Asia,56,3.8
+regions,southern-europe,Europa do Sul,Southern Europe,50,3.4
+regions,south-america,América do Sul,South America,49,3.3
+regions,anz,Austrália e Nova Zelândia,Australia & New Zealand,47,3.2
+regions,western-asia,Ásia Ocidental (Oriente Médio),Western Asia (Middle East),29,2
+regions,west-africa,África Ocidental,West Africa,28,1.9
+regions,northern-africa,Norte da África,Northern Africa,18,1.2
+regions,central-asia,Ásia Central,Central Asia,15,1
+regions,east-asia,Ásia Oriental,East Asia,13,0.9
+regions,east-africa,África Oriental,East Africa,12,0.8
+regions,southern-africa,África Austral,Southern Africa,12,0.8
+regions,central-america,América Central e Caribe,Central America & Caribbean,9,0.6
+regions,central-africa,África Central,Central Africa,4,0.3
+vibe,none,Nenhum (0%),None (0%),557,37.7
+vibe,occasionally,Ocasionalmente,Occasionally,274,18.5
+vibe,about-half,Cerca de metade,About half,188,12.7
+vibe,most,A maioria,Most of it,258,17.5
+vibe,nearly-all,Quase tudo,Nearly all,201,13.6
+satisfaction,none,Nenhum (0%),None (0%),557,
+satisfaction,occasionally,Ocasionalmente,Occasionally,274,
+satisfaction,about-half,Cerca de metade,About half,188,
+satisfaction,most,A maioria,Most of it,258,
+satisfaction,nearly-all,Quase tudo,Nearly all,201,
+outlook,ic-designer,IC Designer,IC Designer,862,
+outlook,lead-principal,Lead / Principal,Lead / Principal,280,
+outlook,manager-director,Manager / Director,Manager / Director,161,
+outlook,design-engineer,Design Engineer,Design Engineer,94,
+outlook,non-designer,Não designer,Non-designer,57,
+outlook,researcher,Researcher,Researcher,23,
+tools,figma,Figma,Figma,1221,82.6
+tools,claude,Claude,Claude,751,50.8
+tools,chatgpt,ChatGPT,ChatGPT,712,48.2
+tools,claude-code,Claude Code,Claude Code,568,38.4
+tools,figma-make,Figma Make,Figma Make,514,34.8
+tools,figjam,FigJam,FigJam,502,34
+tools,slack,Slack,Slack,483,32.7
+tools,gemini,Gemini,Gemini,478,32.3
+tools,google-meet,Google Meet,Google Meet,366,24.8
+tools,notion,Notion,Notion,362,24.5
+company,startup,Startup (2–100),Startup (2–100),,29.3
+company,independent,Independente / Freelance,Independent / Freelance,,17.9
+company,enterprise,Enterprise (1.000+),"Enterprise (1,000+)",,17.7
+company,mid-size,Média (101–999),Mid-size (101–999),,15.4
+company,agency,Agência / Consultoria,Agency / Consulting,,13.5
+company,student,Estudante / Entre empregos,Student / Between,,6.2
+builtTool,once-or-twice,"Sim, uma ou duas vezes","Yes, once or twice",,33.7
+builtTool,want-to,"Não, mas quero","No, but I want to",,30.5
+builtTool,regularly,"Sim, faço regularmente","Yes, I do it regularly",,25.3
+builtTool,no-plan,"Não, e não pretendo","No, don't plan to",,10.4
+trust,dont-use,Não uso saída de IA,Don't use AI output,,2.4
+trust,exploration,Só para exploração,Exploration only,,29.2
+trust,drafts,"Primeiro rascunho, edito muito","First drafts, edit heavily",,34.2
+trust,review,Reviso antes de enviar,Review before shipping,,24.7
+trust,minor-tweaks,Envia com pequenos ajustes,Ships with minor tweaks,,8.1
+trust,full-trust,"Confiança total, sem revisão","Full trust, no oversight",,1.4
+blockers,time-to-learn,Tempo para aprender ferramentas,Time to learn tools,,55.7
+blockers,too-many-tools,Ferramentas demais para avaliar,Too many tools,,53
+blockers,ai-quality,Qualidade da saída da IA,AI output quality,,52.2
+blockers,budget,Orçamento / procurement,Budget / procurement,,34.2
+blockers,security,Segurança / compliance,Security / compliance,,28.9
+blockers,engineering,Restrições de engenharia,Engineering constraints,,19.4
+workflowChange,added-ai,Adicionei ferramentas de IA,Added AI tools,,36.5
+workflowChange,ai-central,A IA agora é central,AI is now central,,34.6
+workflowChange,in-flux,Ainda em transição,Still in flux,,15.2
+workflowChange,same,Praticamente igual,Mostly the same,,9.9
+workflowChange,consolidated,Consolidei ferramentas,Consolidated tools,,3.8
+investing,ai-coding,Código gerado por IA,AI-generated coding,,64
+investing,agents,Workflows com agentes,Agent workflows,,46.3
+investing,design-systems,Design systems e tokens,Design systems & tokens,,40.2
+investing,canvas,Ferramentas de canvas,Canvas design tools,,21.3
+investing,video-motion-3d,"Vídeo, motion e 3D","Video, motion & 3D",,20.4
+investing,simplify,Simplificar meu stack,Simplifying my stack,,17.5
+investing,image-gen,Geração de imagem,Image generation,,14.7
+investing,no-code,No-code (sem IA),No-code (not AI),,13.7
+investing,manual-coding,Código manual,Manual coding,,9.5
+investing,no-changes,Sem grandes mudanças,No major changes,,6.1

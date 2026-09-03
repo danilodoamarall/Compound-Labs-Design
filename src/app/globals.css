@@ -11,6 +11,7 @@
   --font-serif: var(--font-serif);
   --font-mono: var(--font-mono);
   --font-heading: var(--font-serif);
+  --font-stage: var(--font-stage);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -254,4 +255,186 @@
   .prose-hub p { max-width: 68ch; margin: 0 0 1.1em; line-height: 1.65; }
   .prose-hub ul { max-width: 68ch; padding-left: 1.2em; margin: 0 0 1.1em; }
   .prose-hub li { margin: 0 0 0.5em; }
+}
+
+/* ===== Palco do topo, no modelo de vercel.com/design ===== */
+@layer components {
+  /* Contorno: preenchimento transparente com traço fino. O -webkit-text-stroke
+     é o único jeito com suporte amplo; sem ele o texto some, então há um
+     fallback por cor caso a propriedade não exista. */
+  .stage-outline {
+    color: rgba(250, 250, 250, 0.28);
+  }
+  @supports (-webkit-text-stroke: 1px white) {
+    .stage-outline {
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(250, 250, 250, 0.55);
+    }
+  }
+
+  .stage-blur {
+    filter: blur(0.1em);
+  }
+
+  /* A lente: disco que borra o que está atrás e some nas bordas. */
+  .stage-lens {
+    position: absolute;
+    left: -0.3em;
+    top: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    transform: translateY(-50%);
+    border-radius: 9999px;
+    backdrop-filter: blur(0.12em);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 70%);
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  /* Quem pediu menos movimento não ganha desfoque nem lente: são efeitos de
+     leitura, e sem eles o texto fica apenas mais nítido. */
+  @media (prefers-reduced-motion: reduce) {
+    .stage-blur { filter: none; }
+    .stage-lens { display: none; }
+  }
+
+  /* O palco herda a fonte da referencia e fixa a paleta neutra escura, para
+     nao depender do tema do resto do hub. */
+  .stage {
+    font-family: var(--font-stage), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    --stage-bg: #0A0A0A;
+    --stage-fg: #FAFAFA;
+    --stage-dim: #A1A1A1;
+    --stage-faint: #888888;
+    --stage-line: #333333;
+    --stage-surface: rgba(22, 22, 22, 0.3);
+    --stage-pill: #111111;
+    --stage-pill-active: #242424;
+    --stage-pill-idle: #8F8F8F;
+    background: var(--stage-bg);
+    color: var(--stage-fg);
+    color-scheme: dark;
+
+    /* Redefine os tokens do sistema dentro do palco. Sem isto, qualquer
+       componente tematico colocado aqui (o formulario de inscricao, o campo
+       de e-mail) resolve as cores do tema claro sobre fundo preto: foi assim
+       que a linha de privacidade caiu para 2,64:1 na auditoria. */
+    --background: #0A0A0A;
+    --foreground: #FAFAFA;
+    --card: #161616;
+    --card-foreground: #EDEDED;
+    --popover: #111111;
+    --popover-foreground: #EDEDED;
+    --muted: #161616;
+    --muted-foreground: #A1A1A1;
+    --accent: #1a1a1a;
+    --accent-foreground: #FAFAFA;
+    --border: #333333;
+    --input: #333333;
+    --ring: rgba(250, 250, 250, 0.4);
+    --primary: #EDEDED;
+    --primary-foreground: #0A0A0A;
+    --secondary: #1a1a1a;
+    --secondary-foreground: #EDEDED;
+  }
+
+  /* h1 e h2 com os valores medidos na referencia. Abaixo de 768px a escala
+     cai, senao 52px com -2px de tracking nao cabe num telefone. */
+  /* Escala medida em aiforui.dev: 40/44 com -1px e peso 575 no título. É mais
+     contida que a da Vercel e sobra mais ar em volta, que é o efeito que o
+     aiforui consegue. O h2 desce junto, senão empataria com o h1 em 40px e a
+     hierarquia se achataria. */
+  .stage-h1 { font-size: 1.875rem; line-height: 2.125rem; letter-spacing: -0.5px; font-weight: 575; }
+  .stage-h2 { font-size: 1.375rem; line-height: 1.75rem; letter-spacing: -0.4px; font-weight: 575; }
+  @media (min-width: 768px) {
+    .stage-h1 { font-size: 40px; line-height: 44px; letter-spacing: -1px; }
+    .stage-h2 { font-size: 28px; line-height: 34px; letter-spacing: -0.6px; }
+  }
+
+  /* A pilula gruda abaixo do cabecalho de 56px, com 12px de folga. z-30 fica
+     abaixo do cabecalho (z-40) para nao cobri-lo ao rolar. */
+  .stage-nav {
+    position: sticky;
+    top: 68px;
+    z-index: 30;
+  }
+
+  /* O deslocamento do alvo da ancora impede que o titulo da secao pare
+     escondido atras do cabecalho e da pilula. */
+  .stage-anchor { scroll-margin-top: 128px; }
+
+  .stage-rule { border-color: var(--stage-line); }
+
+  /* Cartao das secoes, com os valores medidos: raio 20, borda 0.67px. */
+  .stage-card {
+    background: var(--stage-surface);
+    border: 0.67px solid var(--stage-line);
+    border-radius: 20px;
+  }
+
+  /* Preenchimento em gradiente de corte duro: a palavra comeca apagada e
+     acende quando entra na tela. Sem movimento, entra ja acesa. */
+  .stage-fill {
+    background-image: linear-gradient(to left, var(--stage-fg) 50%, #999999 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: background-position 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .stage-fill[data-lit="true"] { background-position: 0 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stage-nav { scroll-behavior: auto; }
+    .stage-fill { transition: none; background-position: 0 0; }
+  }
+
+  /* As barras da pesquisa e os cartoes nao animam para quem pediu menos
+     movimento: chegam direto ao estado final. */
+  @media (prefers-reduced-motion: reduce) {
+    .stage [style*="width"],
+    .stage [class*="transition"] {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+
+  /* Quando a pagina traz o palco, a pagina inteira e escura. Usa :has() para
+     nao precisar saber a rota num layout de servidor, e redefine os tokens no
+     rodape para que as classes tematicas dele resolvam escuro sem duplicacao. */
+  body:has(main.stage) {
+    background: #0A0A0A;
+    color-scheme: dark;
+  }
+
+  body:has(main.stage) > footer {
+    --background: #0A0A0A;
+    --foreground: #FAFAFA;
+    --card: #111111;
+    --card-foreground: #EDEDED;
+    --muted: #161616;
+    --muted-foreground: #A1A1A1;
+    --border: #333333;
+    --accent: #1a1a1a;
+    --accent-foreground: #FAFAFA;
+    background: #0A0A0A;
+    color: #EDEDED;
+    border-top-color: #333333;
+  }
+
+  /* A barra ja nasce com a largura certa; a animacao so encolhe e solta, para
+     que o valor esteja correto mesmo sem JavaScript ou antes da hidratacao.
+     Anima transform, nao width, que e o que o compositor sabe fazer barato. */
+  @keyframes stage-bar-grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+  .stage-bar {
+    transform-origin: left center;
+    animation: stage-bar-grow 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .stage-bar { animation: none; transform: none; }
+  }
 }

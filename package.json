@@ -4,17 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-mdx.mjs",
+    "prebuild": "node scripts/check-mdx.mjs && node scripts/build-csv.mjs && node scripts/check-scroll-spy.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "check:mdx": "node scripts/check-mdx.mjs",
     "check:numbers": "node scripts/check-numbers.mjs",
-    "data": "node scripts/csv-to-json.mjs"
+    "data": "node scripts/csv-to-json.mjs",
+    "build:csv": "node scripts/build-csv.mjs",
+    "check:spy": "node scripts/check-scroll-spy.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@gsap/react": "^2.1.2",
+    "@radix-ui/react-dialog": "^1.1.23",
     "@radix-ui/react-slot": "^1.3.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

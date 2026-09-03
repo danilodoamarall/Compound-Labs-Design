@@ -23,7 +23,7 @@ export function ArticleIndex({ articles, labels }: { articles: ArticleMeta[]; la
       <ol className="mt-10 border-t border-border">
         {articles.map((a) => (
           <li key={a.slug} className="border-b border-border">
-            <div className="group grid grid-cols-[auto_1fr] items-baseline gap-x-5 gap-y-2 py-6 sm:grid-cols-[auto_1fr_auto]">
+            <div className="group relative grid grid-cols-[auto_1fr] items-baseline gap-x-5 gap-y-2 py-6 sm:grid-cols-[auto_1fr_auto]">
               <span className="font-mono text-[13px] text-muted-foreground tabular">
                 {String(a.order).padStart(2, "0")}
               </span>

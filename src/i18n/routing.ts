@@ -14,6 +14,7 @@ export const routing = defineRouting({
     "/skills-agents": "/skills-agents",
     "/sobre": { pt: "/sobre", en: "/about" },
     "/workflow": "/workflow",
+    "/explorar": { pt: "/explorar", en: "/browse" },
     "/docs": "/docs",
     "/faq": "/faq",
   },

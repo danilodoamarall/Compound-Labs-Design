@@ -1,36 +1,31 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { sections, sectionPath, coverOrder, coverInitialIndex } from "@/lib/site";
+import { sections, sectionPath } from "@/lib/site";
 import { listArticles } from "@/lib/articles";
-import { HomeCoverFlow, type HomeSection } from "@/components/site/home-coverflow";
-import { BrowseResources } from "@/components/site/browse-resources";
-import { RevealText } from "@/components/ui/reveal-text";
-import MoltenMetal from "@/components/reactbits/MoltenMetal";
-import BorderGlow from "@/components/reactbits/BorderGlow";
-import { HomeSections, type SectionCard } from "@/components/site/home-sections";
-import { Manifesto } from "@/components/site/manifesto";
-import { ArticleIndex } from "@/components/site/article-index";
-import { HowItWorks } from "@/components/site/how-it-works";
-import { AuthorCard } from "@/components/site/author-card";
-import home from "../../../content/home.json";
-import StatusDot from "@/components/ui/status-dot";
-import { TAG_ORDER, type Resource, type ResourceTag } from "@/lib/resources";
+import { HeroStage } from "@/components/site/hero-stage";
+import { StageSection } from "@/components/site/stage-section";
+import { StageResources, type StageCard } from "@/components/site/stage-resources";
+import { StageArticles, StageMarquee } from "@/components/site/stage-articles";
+import { StageResearch } from "@/components/site/stage-research";
+import { StageSubscribe } from "@/components/site/stage-subscribe";
+import survey from "../../../content/data/state-of-prototyping-2026.json";
 import index from "../../../content/resources.json";
+
+const ICON: Record<string, string> = {
+  articles: "A", radar: "R", aiTools: "AI", skillsAgents: "S",
+  workflow: "W", docs: "D", faq: "?",
+};
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale: l } = await params;
   const locale = l as Locale;
   setRequestLocale(locale);
-  const t = await getTranslations("Home");
-  const ts = await getTranslations("Site");
+
+  const t = await getTranslations("Stage");
+  const th = await getTranslations("Home");
   const tn = await getTranslations("Nav");
-  const tb = await getTranslations("Browse");
-  const ta = await getTranslations("Articles");
   const tsub = await getTranslations("Subscribe");
   const articles = listArticles(locale);
-  const hm = home.manifesto[locale];
-  const hw = home.howItWorks[locale];
-  const ha = home.author[locale];
 
   const subscribeLabels = {
     placeholder: tsub("placeholder"), cta: tsub("cta"), sending: tsub("sending"),
@@ -39,144 +34,119 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     privacy: tsub("privacy"),
   };
 
-  const covers: HomeSection[] = coverOrder.map((key) => {
-    const s = sections.find((x) => x.key === key)!;
-    return {
+  // Os cards saem da mesma fonte de seções que alimenta o menu e o rodapé, mais
+  // um card final para a busca, que agora mora em página própria.
+  const cards: StageCard[] = [
+    ...sections.map((s) => ({
       key: s.key,
-      path: sectionPath(s.href, locale),
       title: tn(s.key as "articles"),
-      subtitle: t(`sections.${s.key}.short` as "sections.articles.short"),
+      desc: th(`sections.${s.key}.short` as "sections.articles.short"),
+      path: sectionPath(s.href, locale),
       cover: [...s.cover] as [string, string],
-    };
-  });
+      icon: ICON[s.key] ?? "•",
+    })),
+    {
+      key: "browse",
+      title: t("browseCard"),
+      desc: t("browseCardDesc"),
+      path: `/${locale}/${locale === "pt" ? "explorar" : "browse"}`,
+      cover: ["#3f4a52", "#171c1b"] as [string, string],
+      icon: "∗",
+      count: String(index.resources.length),
+    },
+  ];
 
-  // O índice vem de scripts/build-resources.mjs, que junta as quatro seções de
-  // conteúdo e funde os itens que aparecem em mais de uma.
-  const resources: Resource[] = index.resources.map((r) => {
-    const home = r.sections[0] as keyof typeof index.sections;
-    const section = index.sections[home];
-    const isArticle = r.kind === "article";
-    return {
-      key: r.key,
-      name: locale === "pt" ? r.name : r.nameEn,
-      desc: locale === "pt" ? r.desc.pt : r.desc.en,
-      tags: r.tags as ResourceTag[],
-      href: isArticle
-        ? `/${locale}${section.path[locale]}/${r.key.replace(/^artigo-/, "")}`
-        : `/${locale}${section.path[locale]}#${r.key}`,
-      external: false,
-      meta: section[locale],
-    };
-  });
-
-  const ICON: Record<string, string> = {
-    articles: "A", radar: "R", aiTools: "AI", skillsAgents: "S",
-    workflow: "W", docs: "D", faq: "?",
-  };
-  const sectionCards: SectionCard[] = sections.map((s) => ({
-    key: s.key,
-    title: tn(s.key as "articles"),
-    description: t(`sections.${s.key}.short` as "sections.articles.short"),
-    label: tn(s.key as "articles"),
-    color: s.cover[1],
-    path: sectionPath(s.href, locale),
-    icon: ICON[s.key] ?? "•",
+  const camps = survey.derived.camps.map((c) => ({
+    key: c.key,
+    label: locale === "pt" ? c.pt : c.en,
+    pct: c.pct,
+    n: c.n,
   }));
 
-  const browseLabels = {
-    heading: tb("heading"),
-    headingAccent: tb("headingAccent"),
-    searchPlaceholder: tb("searchPlaceholder"),
-    clearAll: tb("clearAll"),
-    tags: Object.fromEntries(TAG_ORDER.map((k) => [k, tb(`tags.${k}` as "tags.read")])) as Record<ResourceTag, string>,
-    empty: tb("empty"),
-    items: tb("items"),
-    of: tb("of"),
-  };
+  const tools = survey.tools.slice(0, 8).map((tool) => ({
+    key: tool.key,
+    label: locale === "pt" ? tool.pt : tool.en,
+    pct: tool.pct,
+    ai: tool.ai,
+  }));
+
+  const nav = [
+    { id: "inicio", label: t("navHome") },
+    { id: "resources", label: t("navResources") },
+    { id: "artigos", label: t("navArticles") },
+    { id: "research", label: t("navResearch") },
+  ];
 
   return (
-    <main className="flex flex-1 flex-col items-center pt-16 pb-24 sm:pt-24 md:pb-32">
-      <div className="relative isolate flex w-full flex-col items-center px-5">
-        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-[440px] opacity-[0.28] dark:opacity-40">
-          <MoltenMetal color1="#0b8a74" color2="#c9571c" color3="#5b4bb7" speed={0.18} scale={1.6} glow={0.5} />
-        </div>
-        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-[440px] bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--background)_72%)]" />
-        <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-center text-[13px] leading-snug text-muted-foreground">
-          <StatusDot tone="active" size="sm" animate className="shrink-0" />
-          <span className="text-balance">
-            <span className="text-foreground">{ts("author")}</span>
-            <span className="mx-1.5 text-muted-foreground/50">·</span>
-            {ts("authorRole")}
-          </span>
-        </p>
-
-        <RevealText
-          text={t("title")}
-          as="h1"
-          split="word"
-          stagger={0.06}
-          className="font-display mt-9 max-w-4xl text-center text-[2.75rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl"
+    <main id="conteudo" className="stage flex w-full flex-col">
+      <div id="inicio" className="stage-anchor">
+        <HeroStage
+          line1={t("line1")}
+          outlined={t("outlined")}
+          middle={t("middle")}
+          blurred={t("blurred")}
+          tail={t("tail")}
+          measureLabel={t("measure")}
+          subtitle={t("subtitle")}
+          curator={t("curator")}
+          curatorRole={t("curatorRole")}
+          nav={nav}
+          navLabel={t("navLabel")}
         />
-
-        <p className="mt-7 max-w-xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          {t("dek")}
-        </p>
       </div>
 
-      <div className="mt-24 w-full sm:mt-28">
-        <Manifesto question={hm.question} paragraphs={hm.paragraphs} signature={hm.signature} role={ts("authorRole")} />
-      </div>
+      <StageSection id="resources" title={t("resourcesTitle")} dek={t("resourcesDek")}>
+        <StageResources cards={cards} />
+      </StageSection>
 
-      <div className="mt-24 w-full sm:mt-28">
-        <ArticleIndex
+      <StageSection
+        id="artigos"
+        title={t("articlesTitle")}
+        dek={t("articlesDek")}
+        headingExtra={<StageMarquee words={articles.map((a) => a.title)} />}
+      >
+        <StageArticles
           articles={articles}
+          locale={locale}
+          labels={{ of: t("of"), slides: t("of"), minutes: t("minutes"), article: t("articleWord") }}
+        />
+      </StageSection>
+
+      <StageSection id="research" title={t("researchTitle")} dek={t("researchDek")}>
+        <StageResearch
+          responses={survey.headline.total_responses}
+          builtTool={survey.headline.built_tool_with_ai}
+          investing={survey.headline.ai_invest_next_12mo}
+          camps={camps}
+          tools={tools}
+          collected={`${survey.meta.collected.from} → ${survey.meta.collected.to}`}
+          license={survey.meta.license}
+          csvHref="/data/state-of-prototyping-2026.csv"
+          sourceHref={survey.meta.url}
+          locale={locale}
           labels={{
-            title: ta("index"),
-            dek: ta("indexDek"),
-            slides: (count) => ta("slides", { count }),
-            minutes: (n) => ta("readingTime", { minutes: n }),
-            present: ta("present"),
+            responses: t("researchResponses"),
+            builtTool: t("researchBuilt"),
+            investing: t("researchInvesting"),
+            campsTitle: t("researchCamps"),
+            toolsTitle: t("researchTools"),
+            collected: t("researchCollected"),
+            license: t("researchLicense"),
+            csv: t("researchCsv"),
+            source: t("researchSource"),
           }}
         />
-      </div>
+      </StageSection>
 
-      <div className="mt-24 w-full px-5 sm:mt-28">
-        <BorderGlow
-          className="mx-auto w-full max-w-5xl"
-          glowColor="#22a18c"
-          borderRadius={14}
-          glowIntensity={0.6}
-          backgroundColor="transparent"
-        >
-          <div className="px-1 py-8 sm:px-2">
-            <BrowseResources resources={resources} labels={browseLabels} />
-          </div>
-        </BorderGlow>
-      </div>
-
-      <div className="mt-24 w-full sm:mt-28">
-        <HowItWorks
-          title={hw.title}
-          dek={hw.dek}
-          cadence={hw.cadence}
-          items={hw.items}
-          subscribeTitle={tsub("title")}
-          subscribeDek={tsub("dek")}
-          subscribeLabels={subscribeLabels}
-        />
-      </div>
-
-      <div className="mt-24 w-full max-w-6xl px-5 sm:mt-28">
-        <HomeSections cards={sectionCards} dockLabel={tn("home")} />
-      </div>
-
-      <div className="mt-24 w-full sm:mt-28">
-        <AuthorCard greeting={ha.greeting} paragraphs={ha.paragraphs} links={ha.links} role={ts("authorRole")} />
-      </div>
-
-      <div className="mt-24 w-full border-t border-border pt-16 sm:mt-28">
-        <HomeCoverFlow sections={covers} initialIndex={coverInitialIndex} label={ts("name")} hint={t("coverHint")} />
-      </div>
+      <StageSubscribe
+        id="inscricao"
+        titleBefore={t("subscribeBefore")}
+        titleMark={t("subscribeMark")}
+        titleAfter={t("subscribeAfter")}
+        dek={t("subscribeDek")}
+        cadence={t("subscribeCadence")}
+        labels={subscribeLabels}
+      />
     </main>
   );
 }
