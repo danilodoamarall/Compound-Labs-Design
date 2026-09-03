@@ -1,0 +1,128 @@
+{
+  "Site": {
+    "name": "Labs Knowledge Hub",
+    "tagline": "Labs knowledge, open to the company and to the web.",
+    "author": "Danilo do Amaral",
+    "authorRole": "Design Engineer & AI Builder · Labs",
+    "madeBy": "Made by",
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle theme",
+    "language": "Language",
+    "draft": "Draft",
+    "draftHint": "Initial content generated for review. It will change."
+  },
+  "Nav": {
+    "home": "Home",
+    "articles": "Articles",
+    "radar": "Tools Radar",
+    "aiTools": "AI Tools",
+    "skillsAgents": "AI Skills & Agents",
+    "about": "About"
+  },
+  "Home": {
+    "eyebrow": "Knowledge hub · Labs",
+    "title": "What we are learning about design, AI and prototyping",
+    "dek": "Articles in presentation format, a tools radar and catalogs of AI tools, skills and agents. Everything that goes through our internal tech talks lives here, in the open.",
+    "ctaArticles": "Read the articles",
+    "ctaRadar": "See the radar",
+    "sectionsTitle": "Four sections",
+    "sections": {
+      "articles": { "title": "Articles in presentation format", "desc": "Every article has a reading mode and a slides mode. Opening series: State of Design 2026, built on the State of Prototyping survey." },
+      "radar": { "title": "Tools Radar", "desc": "What to adopt, trial, assess and hold, with weekly usage measured by the survey and Labs curation." },
+      "aiTools": { "title": "AI Tools", "desc": "Catalog of the AI tools we use, what they are for and what they cost." },
+      "skillsAgents": { "title": "AI Skills & Agents", "desc": "Claude skills and agents we build, with usage notes and code." }
+    },
+    "numbersTitle": "The survey in numbers",
+    "numbersSource": "State of Prototyping Spring 2026 · UX Tools · n=1,478 · CC BY 4.0",
+    "numbers": {
+      "vibe50": "generate half or more of their output with vibe coding",
+      "built": "built a custom tool with AI-generated code",
+      "claude": "use Claude every week, the #2 tool after Figma",
+      "fullTrust": "fully trust AI output with no review"
+    },
+    "latestTitle": "Start with the series",
+    "seriesName": "State of Design 2026",
+    "authorTitle": "Who makes this hub",
+    "authorBio": "I am Danilo do Amaral, Design Engineer and AI Builder at Labs. This hub is where what I learn building prototypes, tools and agents becomes knowledge shared with the company. Everything here is open."
+  },
+  "Articles": {
+    "title": "Articles",
+    "dek": "Opinion with data, in the first person. Each article opens in reading mode or in presentation mode, for our internal tech talks.",
+    "series": "Series",
+    "readingTime": "{minutes} min read",
+    "slides": "{count} slides",
+    "read": "Read",
+    "present": "Present",
+    "readMode": "Reading",
+    "presentMode": "Presentation",
+    "part": "Part {n} of {total}",
+    "previous": "Previous",
+    "next": "Next",
+    "backToList": "All articles",
+    "methodologyTitle": "About the data",
+    "citationTitle": "Citation",
+    "keyboardHint": "Use ← → to navigate, F for fullscreen, Esc to exit",
+    "slideOf": "Slide {n} of {total}",
+    "speakerNotes": "Speaker notes",
+    "viewTable": "View table",
+    "publishedOn": "Published on {date}"
+  },
+  "Radar": {
+    "title": "Tools Radar",
+    "dek": "Design, AI and delivery tools organized by ring and quadrant. The percentage is weekly usage measured by State of Prototyping 2026; the ring position is Labs curation.",
+    "rings": { "adopt": "Adopt", "trial": "Trial", "assess": "Assess", "hold": "Hold" },
+    "ringHints": {
+      "adopt": "Default at Labs. Use without asking.",
+      "trial": "Worth using on a real project to learn.",
+      "assess": "Worth understanding. Not yet worth team time.",
+      "hold": "Do not start anything new with it."
+    },
+    "quadrants": { "canvas": "Canvas & Design", "assistants": "AI Assistants", "coding": "AI for Code", "delivery": "Collaboration & Delivery" },
+    "weeklyUse": "weekly use",
+    "all": "All",
+    "filterQuadrant": "Filter by quadrant",
+    "legend": "Legend",
+    "notInSurvey": "Not measured in the survey"
+  },
+  "AiTools": {
+    "title": "AI Tools",
+    "dek": "The AI tools we use at Labs, what they are for and what they cost. Work in progress.",
+    "filterCategory": "Category",
+    "all": "All",
+    "pricing": "Pricing",
+    "visit": "Open site",
+    "usedFor": "We use it for"
+  },
+  "Skills": {
+    "title": "AI Skills & Agents",
+    "dek": "Claude skills and agents we build and use. Each card says when to use it, how to install it and shows the code.",
+    "types": { "skill": "Skill", "agent": "Agent", "mcp": "MCP" },
+    "whenToUse": "When to use",
+    "install": "How to install",
+    "source": "Code",
+    "all": "All",
+    "filterType": "Type"
+  },
+  "About": {
+    "title": "About this hub",
+    "dek": "A place to move knowledge from Labs to the company, open to anyone who arrives from the web.",
+    "purposeTitle": "Why it exists",
+    "purpose": "Much of what we learn at Labs stays in conversations, prototypes and internal talks. This hub turns that into articles, radars and catalogs that anyone in the company, or outside it, can read, cite and reuse.",
+    "authorTitle": "Who makes it",
+    "authorBio": "Danilo do Amaral, Design Engineer and AI Builder at Labs. I design and build prototypes, internal tools and AI agents. I present what I learn at our internal tech talks and write it down here.",
+    "howTitle": "How to contribute",
+    "how": "Comment on the presentations, send tools for the radar or propose an article. Content marked as draft is open for review.",
+    "licenseTitle": "Licenses and sources",
+    "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral."
+  },
+  "Footer": {
+    "rights": "Labs Knowledge Hub · content by Danilo do Amaral",
+    "source": "Data: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
+    "builtWith": "Built with Next.js and React Bits"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "desc": "This address does not exist or has moved.",
+    "home": "Back to home"
+  }
+}

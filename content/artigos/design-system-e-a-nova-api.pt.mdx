@@ -1,0 +1,96 @@
+---
+title: Design system é a nova API
+dek: Designers planejam investir mais em design systems e tokens do que em ferramentas de canvas. Faz sentido. Tokens são a interface entre a intenção de design e o código que a IA gera.
+thesis: O design system deixou de ser documentação e virou a API que a IA consome. Sem tokens, a IA gera telas genéricas; com tokens, gera produto.
+series: Estado do Design 2026
+order: 4
+total: 5
+date: 2026-09-24
+chart: investing
+tags: [design systems, tokens, ferramentas]
+draft: false
+---
+
+<Slide layout="title" kicker="Estado do Design 2026 · Parte 4 de 5" title="Design system é a nova API" notes="Artigo mais prático da série. Se a plateia é de engenharia, este é o que mais conversa com ela.">
+
+Designers planejam investir mais em design systems e tokens do que em ferramentas de canvas. Este artigo é sobre por que isso é a decisão certa.
+
+</Slide>
+
+<Slide layout="chart" title="Onde você vai investir nos próximos 12 meses?" kicker="Prioridades" notes="Três escolhas por pessoa. Destaque o terceiro lugar e o quarto: design systems acima de canvas.">
+
+<Chart name="investing" />
+
+**Código gerado por IA em 64,0%.** **Agentes em 46,3%.** **Design systems e tokens em 40,2%.** E só então, em quarto, as ferramentas de canvas, com **21,3%**. Código manual: **9,5%**, uma razão de quase 7 para 1 em relação ao código gerado.
+
+</Slide>
+
+<Slide title="Canvas virou commodity" kicker="Leitura" notes="Não é que o Figma perdeu. É que ele já está resolvido.">
+
+O Figma é usado por **82,6%** toda semana e continuará sendo. Mas só um quinto dos designers planeja investir mais em ferramentas de canvas. Isso não é declínio; é saturação. O canvas está resolvido. Ninguém precisa de mais uma ferramenta de desenhar retângulos.
+
+O dinheiro novo vai para o que ainda não está resolvido: fazer a IA gerar código que pareça, funcione e se comporte como o produto. E isso depende de uma coisa que muitos times tratam como documentação de segunda classe.
+
+</Slide>
+
+<Slide layout="chart" title="Um terminal à frente do FigJam" kicker="Ferramentas semanais" notes="Cinco das dez são IA. Claude Code acima de Figma Make e FigJam.">
+
+<Chart name="tools" />
+
+Cinco das dez ferramentas semanais são de IA. **Claude Code (38,4%)** está à frente de **Figma Make (34,8%)** e **FigJam (34,0%)**. A ferramenta de prototipagem com IA do próprio Figma perde para um terminal. E Slack e Notion ficam abaixo de três assistentes de IA.
+
+</Slide>
+
+<Slide title="O bloqueio que os tokens resolvem" kicker="Qualidade da saída" notes="Conecte o dado de bloqueio (52,2%) com a solução (tokens). É a ponte do artigo.">
+
+Entre os bloqueios de workflow, **52,2%** citam a qualidade da saída da IA. Quando peço a uma IA uma tela sem contexto, ela devolve uma tela genérica: cinza médio, cantos de 8 pixels, o botão azul de sempre. Não porque a IA seja ruim, mas porque ninguém disse a ela o que é *este* produto.
+
+Um design system com tokens em código diz. Cores, espaçamentos, tipografia, raios, sombras, estados: nomeados, versionados, consumíveis por máquina. A IA lê o token e gera a tela certa. **O design system deixa de ser documentação para humanos e vira a API que a IA consome.**
+
+</Slide>
+
+<Slide title="O que um design system pronto para IA tem" kicker="Prática" notes="Lista de verificação. Boa para foto de slide.">
+
+- **Tokens em código**, não só no Figma: JSON, CSS custom properties, tema do Tailwind. Se a IA não consegue importar, não existe.
+- **Nomes semânticos**, não literais: `color-surface-raised`, não `gray-100`. A IA acerta a intenção quando o nome carrega a intenção.
+- **Componentes com exemplos vivos**, em Storybook ou similar. Um exemplo funcional vale mais do que dez páginas de guideline.
+- **Regras de uso escritas para máquina**: quando usar cada variante, o que nunca combinar. Isso vira instrução de agente.
+- **Um ponto de entrada**: um arquivo ou servidor MCP que o agente consulte antes de gerar. Sem isso, cada prompt reinventa o produto.
+
+</Slide>
+
+<Slide title="Tokens como alavanca" kicker="Ideia" notes="A ideia central para levar para casa.">
+
+<Callout kind="idea" title="Ideia · a alavanca mais concreta">
+
+Dos três maiores bloqueios da pesquisa, o único que um time de design resolve sozinho é a qualidade da saída. E a alavanca mais concreta para isso não é um modelo melhor: é um design system que a IA consiga ler.
+
+Cada hora investida em tokens hoje é uma hora economizada em cada protótipo gerado depois. É o investimento com o melhor retorno da lista de 2026.
+
+</Callout>
+
+</Slide>
+
+<Slide title="O que a pesquisa não diz" kicker="Limites" notes="Ressalvas.">
+
+<Callout kind="caveat" title="Cuidado ao citar">
+
+A pesquisa mede intenção de investimento, não gasto. “Design systems e tokens” é uma categoria única no instrumento; não dá para separar quanto é design system tradicional e quanto é tokens para IA. A conexão entre os 40,2% e a qualidade da saída (52,2%) é uma leitura minha, não um cruzamento publicado.
+
+</Callout>
+
+</Slide>
+
+<Slide layout="question" title="Para a plateia" kicker="Pergunta" notes="Pergunta prática. A maioria vai responder não, e tudo bem.">
+
+<Question>O seu design system está pronto para ser consumido por uma IA? Se você pedisse uma tela nova agora, ela sairia com a cara do produto?</Question>
+
+**O que fazer na segunda-feira:** faça o teste. Peça a uma IA a mesma tela duas vezes: uma sem contexto, outra com os tokens e um componente de exemplo. Compare. Depois audite: quais tokens existem só no Figma? Quais nomes são literais? Qual é o ponto de entrada que um agente usaria? Comece pelo que aparece em toda tela: cor, espaçamento e tipografia.
+
+</Slide>
+
+<Slide title="No próximo artigo" kicker="Continua" notes="Gancho para o artigo 5: a contradição do stack.">
+
+53% dos designers dizem que há ferramentas demais. Nos últimos seis meses, 3,8% consolidaram o stack. Nos próximos doze, 64% pretendem adicionar mais IA. O último artigo é sobre essa contradição, e sobre o que a pesquisa não consegue dizer sobre o Brasil.
+
+</Slide>

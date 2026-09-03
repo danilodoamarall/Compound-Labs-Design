@@ -1,0 +1,113 @@
+---
+title: Prototyping is not shipping
+dek: Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype.
+thesis: Vibe coding is a medium for prototyping, not for production. Review has become the core craft of anyone who codes with AI.
+series: State of Design 2026
+order: 2
+total: 5
+date: 2026-09-10
+chart: trust
+tags: [trust, prototyping, review]
+draft: false
+---
+
+<Slide layout="title" kicker="State of Design 2026 · Part 2 of 5" title="Prototyping is not shipping" notes="Start with the apparent paradox: lots of adoption, little trust. Then take it apart: it isn't a paradox.">
+
+Almost half of designers generate half or more of their output with AI. Only 1.4% trust that output without reviewing it. This article is about why both things make sense together.
+
+</Slide>
+
+<Slide layout="number" kicker="The two numbers" title="High adoption. Low trust" notes="Leave the two numbers side by side for a few seconds before you say anything.">
+
+<Stats>
+  <Stat value={43.8} unit="%" label="generate half or more of their output with vibe coding" />
+  <Stat value={1.4} unit="%" label="fully trust the AI output, no review" />
+  <Stat value={63.4} unit="%" label="use the AI output only as a draft or exploration" />
+  <Stat value={34.2} unit="%" label="trust it enough to ship, with some degree of review" />
+</Stats>
+
+The first time I read these numbers, I thought contradiction. Today I think they describe, precisely, what a prototype is.
+
+</Slide>
+
+<Slide layout="chart" title="How much do you trust AI output for production?" kicker="The scale" notes="Read the scale from the bottom up. Color encodes the level of trust. Point out that the full-trust extreme is almost nonexistent.">
+
+<Chart name="trust" />
+
+The survey question is about **production**, and the most common answer is “first draft, I edit heavily” (34.2%). Add “exploration only” (29.2%) and **63.4%** treat what the AI generates as raw material, not as a deliverable.
+
+</Slide>
+
+<Slide title="Three trust groups" kicker="Grouping" notes="These three blocks will come back. Worth fixing them in the audience's head.">
+
+I grouped the six answers into three blocks:
+
+- **Draft or exploration, 63.4%.** The AI writes, the person rewrites or throws it away.
+- **Ship with review, 34.2%.** “I review before sending” (24.7%), “ship with small tweaks” (8.1%) and “full trust” (1.4%).
+- **Doesn't use it, 2.4%.** A smaller group than the anti-AI discourse suggests.
+
+The middle block is the interesting one. A third of the profession already operates in “the AI writes, I review and release” mode. That's where the conversation about quality and accountability needs to happen.
+
+</Slide>
+
+<Slide title="The survey's name is literal" kicker="Reading" notes="Cross with article 1: 31.1% generate the majority of their output with AI, but almost nobody trusts it without review. That only makes sense if the output is a prototype.">
+
+Cross this article with the previous one. A large group generates a lot of code and trusts it very little. That only makes sense if the generated code lives mostly in **prototypes, proofs of concept and internal tools**, not in production.
+
+The survey is called *State of Prototyping* and the name is literal. Vibe coding didn't replace engineering. It replaced the clickable prototype. What used to be a Figma screen pretending to work is now an app that actually works, and is still disposable.
+
+That's an enormous change for people who do design. The prototype now has real behavior, real data, real bugs. And the distance between prototype and product got, at the same time, shorter and more dangerous.
+
+</Slide>
+
+<Slide layout="chart" title="More than half built a tool of their own" kicker="Builders" notes="This is the most optimistic data point in the survey. Designers building for themselves.">
+
+<Chart name="built-tool" />
+
+**59.1%** built a tool of their own with AI-generated code in the last six months. Add the people who want to build one and it's **89.5%**. Only 10.4% dismiss the idea. The survey's own line: “more than half of designers are now builders. Not for the company. For themselves.”
+
+</Slide>
+
+<Slide title="Review became the craft" kicker="Consequence" notes="This is the central argument for practice. What changes in the work of someone who codes with AI.">
+
+If the AI writes and the person reviews, the skill that sets apart a designer who codes isn't writing code. It's **knowing what to accept, what to rewrite and what to throw away**.
+
+That demands things most design courses don't teach: reading code you didn't write, recognizing a fragile pattern, actually testing a flow, deciding when the prototype turned into debt. The good news is that designers critique other people's work all the time. Reviewing generated code is a design critique with a different material.
+
+</Slide>
+
+<Slide title="Is low trust healthy?" kicker="Tension" notes="Invite the audience to disagree. Some people think 1.4% is far too low and some think it's exactly right.">
+
+<Callout kind="tension" title="Tension · the right amount of trust">
+
+1.4% full trust can look like excessive skepticism or like maturity. I read it as maturity: AI output still fails in ways only a human with context catches.
+
+But there's a cost. If every line needs heavy review, the prototype's speed gain never reaches production. The challenge of the next few years is raising trust without lowering the bar, and that runs through design systems and tokens, the subject of the fourth article.
+
+</Callout>
+
+</Slide>
+
+<Slide title="What the survey doesn't say" kicker="Limits" notes="Caveats.">
+
+<Callout kind="caveat" title="Careful when citing">
+
+“Trust” here is self-reported and about production, not a defect measurement. The survey doesn't cross trust with vibe coding band in the aggregate extract; the reading that the groups overlap is my inference, consistent with the numbers, not a measured crosstab.
+
+</Callout>
+
+</Slide>
+
+<Slide layout="question" title="For the audience" kicker="Question" notes="Deliberately uncomfortable question. Let the silence sit.">
+
+<Question>What from your last prototype would you let go to production without a review?</Question>
+
+**What to do on Monday:** write down, on one page, your team's review criteria for AI-generated code: what always gets read line by line, what only needs to be tested, what never goes to production without an engineer. Then explicitly label every prototype as “disposable” or “product candidate.” Confusing the two is where the debt is born.
+
+</Slide>
+
+<Slide title="In the next article" kicker="Continues" notes="Hook into article 3: the people who code most feel more valuable; most of the profession is on the other side.">
+
+The people who generate the most code with AI feel more valuable. The people who generate the least feel less secure. The third article is about the group that is 58% of the profession and the only one, among designers, with more fear than confidence.
+
+</Slide>

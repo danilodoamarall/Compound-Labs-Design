@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Labs Knowledge Hub
 
-## Getting Started
+Hub público de conhecimento do Labs. Artigos em formato de apresentação, radar de
+ferramentas e catálogos de AI tools, skills e agents. Conteúdo por Danilo do Amaral,
+Design Engineer & AI Builder.
 
-First, run the development server:
+Bilíngue (pt-BR padrão, en). Next.js App Router + Tailwind + React Bits.
+
+## Rodar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## React Bits Pro
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Os blocks Pro exigem uma chave de licença. Copie `.env.example` para `.env.local` e
+preencha:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+REACTBITS_LICENSE_KEY=sua-chave
+```
 
-## Learn More
+Os registries já estão em `components.json`. Depois disso:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx shadcn@latest add @reactbits-pro/<block>     # blocks (planos Pro e Ultimate)
+npx shadcn@latest add @reactbits-starter/<nome>  # componentes
+npx shadcn@latest add @react-bits/<Nome>-TS-TW   # componentes gratuitos
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O código instalado fica versionado no repositório, então o deploy não precisa da chave.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Conteúdo
 
-## Deploy on Vercel
+| Onde | O quê |
+|---|---|
+| `content/artigos/<slug>.<locale>.mdx` | artigos; cada `<Slide>` vira um slide na apresentação |
+| `content/data/state-of-prototyping-2026.json` | dados da pesquisa, gerados do CSV |
+| `content/radar.json` | radar de ferramentas |
+| `content/ai-tools.json` | catálogo de AI tools |
+| `content/skills-agents.json` | catálogo de skills e agents |
+| `messages/pt.json`, `messages/en.json` | textos de interface |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Itens com `"draft": true` aparecem com a etiqueta de rascunho no site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Regenerar os dados da pesquisa a partir do CSV:
+
+```bash
+node scripts/csv-to-json.mjs
+```
+
+### Escrevendo um artigo
+
+O pipeline de MDX descarta atributos com expressão JSX, então **toda prop é string**:
+use `<Stat value="43.8" unit="%" label="..." />`, nunca `value={43.8}`. O ponto é o
+separador decimal no arquivo; o número é formatado por idioma na renderização.
+
+Componentes disponíveis no MDX: `Slide`, `Stats`, `Stat`, `Chart`, `Callout`,
+`Question`, `Two`. Os gráficos vêm de `src/components/charts/Chart.tsx`.
+
+## Verificar os números
+
+```bash
+node scripts/check-numbers.mjs
+```
+
+Compara todo percentual citado nos artigos com o JSON da pesquisa.
+
+## Fonte dos dados
+
+UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co — CC BY 4.0.

@@ -1,0 +1,106 @@
+{
+  "updated": "2026-09-03",
+  "types": ["skill", "agent", "mcp"],
+  "items": [
+    {
+      "key": "find-docs",
+      "name": "find-docs",
+      "type": "skill",
+      "draft": true,
+      "summary": {
+        "pt": "Busca documentação atualizada, referências de API e exemplos de código de qualquer biblioteca, framework, SDK ou CLI usando o Context7.",
+        "en": "Fetches current documentation, API references and code examples for any library, framework, SDK or CLI using Context7."
+      },
+      "whenToUse": {
+        "pt": "Sempre que a tarefa envolver uma biblioteca específica, mesmo conhecida (React, Next.js, Tailwind). O modelo não deve confiar na memória para sintaxe de API, opções de configuração ou migração de versão.",
+        "en": "Whenever the task involves a specific library, even a well-known one (React, Next.js, Tailwind). The model should not rely on memory for API syntax, config options or version migrations."
+      },
+      "install": {
+        "pt": "Copie a pasta para ~/.claude/skills/find-docs/ (global) ou .claude/skills/find-docs/ (por projeto). O skill roda `npx ctx7@latest` sem instalação global.",
+        "en": "Copy the folder to ~/.claude/skills/find-docs/ (global) or .claude/skills/find-docs/ (per project). The skill runs `npx ctx7@latest` with no global install."
+      },
+      "code": "---\nname: find-docs\ndescription: Retrieves up-to-date documentation, API references, and code examples for any developer technology. Use whenever the user asks about a specific library, framework, SDK, CLI tool, or cloud service.\n---\n\n# Documentation Lookup\n\nRun commands with `npx ctx7@latest`:\n\n```bash\nnpx ctx7@latest library <name> \"<query>\"\nnpx ctx7@latest docs <libraryId> \"<query>\"\n```\n\n1. Resolve the library ID first.\n2. Pick the best match (exact name, reputation, snippet count).\n3. Fetch docs with a specific, single-concept query.\n4. Answer from the fetched documentation.",
+      "tags": ["docs", "context7", "cli"]
+    },
+    {
+      "key": "context7-mcp",
+      "name": "context7-mcp",
+      "type": "skill",
+      "draft": true,
+      "summary": {
+        "pt": "Versão do find-docs que usa as ferramentas MCP do Context7 (resolve-library-id e query-docs) em vez da CLI.",
+        "en": "The MCP-tools variant of find-docs, using Context7's resolve-library-id and query-docs instead of the CLI."
+      },
+      "whenToUse": {
+        "pt": "Quando o servidor MCP do Context7 estiver conectado à sessão. Mesmos gatilhos do find-docs: perguntas de setup, geração de código com bibliotecas, referências de API.",
+        "en": "When the Context7 MCP server is connected to the session. Same triggers as find-docs: setup questions, library code generation, API references."
+      },
+      "install": {
+        "pt": "Adicione o servidor MCP do Context7 (`claude mcp add context7 -- npx -y @upstash/context7-mcp`) e copie o skill para ~/.claude/skills/context7-mcp/.",
+        "en": "Add the Context7 MCP server (`claude mcp add context7 -- npx -y @upstash/context7-mcp`) and copy the skill to ~/.claude/skills/context7-mcp/."
+      },
+      "code": "---\nname: context7-mcp\ndescription: Use when the user asks about libraries, frameworks, API references, or needs code examples.\n---\n\n## Step 1: Resolve the Library ID\nCall `resolve-library-id` with `libraryName` and `query`.\n\n## Step 2: Select the Best Match\nExact name, description relevance, snippet count, source reputation.\n\n## Step 3: Fetch the docs\nCall `query-docs` with the chosen ID and a specific question.",
+      "tags": ["docs", "context7", "mcp"]
+    },
+    {
+      "key": "context7-server",
+      "name": "Context7 MCP server",
+      "type": "mcp",
+      "draft": true,
+      "summary": {
+        "pt": "Servidor MCP que entrega documentação versionada de milhares de bibliotecas direto no contexto do agente.",
+        "en": "MCP server that delivers versioned documentation for thousands of libraries straight into the agent's context."
+      },
+      "whenToUse": {
+        "pt": "Em qualquer projeto de código. Reduz alucinação de API e acelera setup de bibliotecas novas.",
+        "en": "In any coding project. Cuts API hallucination and speeds up setup of new libraries."
+      },
+      "install": {
+        "pt": "`claude mcp add context7 -- npx -y @upstash/context7-mcp`. Para limites maiores, defina CONTEXT7_API_KEY.",
+        "en": "`claude mcp add context7 -- npx -y @upstash/context7-mcp`. For higher limits, set CONTEXT7_API_KEY."
+      },
+      "code": "{\n  \"mcpServers\": {\n    \"context7\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@upstash/context7-mcp\"]\n    }\n  }\n}",
+      "tags": ["docs", "mcp"]
+    },
+    {
+      "key": "survey-deep-dive",
+      "name": "survey-deep-dive",
+      "type": "skill",
+      "draft": true,
+      "summary": {
+        "pt": "Rascunho de skill: transforma um CSV agregado de pesquisa em um relatório HTML com gráficos validados para daltonismo, tensões e limitações metodológicas. Foi o processo usado para o deep dive da State of Prototyping 2026.",
+        "en": "Draft skill: turns an aggregate survey CSV into an HTML report with colorblind-validated charts, tensions and methodological caveats. This is the process used for the State of Prototyping 2026 deep dive."
+      },
+      "whenToUse": {
+        "pt": "Quando chegar uma pesquisa de mercado ou de usuários em CSV e a pergunta for “o que isso realmente diz?”.",
+        "en": "When a market or user survey arrives as a CSV and the question is “what does this actually say?”."
+      },
+      "install": {
+        "pt": "Ainda não empacotado. O passo a passo está no artigo 1 da série e no repositório deste hub (scripts/csv-to-json.mjs).",
+        "en": "Not packaged yet. The step-by-step is in article 1 of the series and in this hub's repository (scripts/csv-to-json.mjs)."
+      },
+      "code": "# survey-deep-dive (rascunho)\n\n1. Ler o CSV e checar consistência interna (somas, médias ponderadas).\n2. Separar: distribuição da amostra, adoção, confiança, sentimento, bloqueios, investimento.\n3. Para cada tabela, escolher a forma (barras, banda, butterfly, dot plot).\n4. Validar a paleta com o validador do skill dataviz.\n5. Escrever tensões (o que contradiz o quê) antes de escrever conclusões.\n6. Listar limitações: amostra, n pequenos, múltipla escolha, ausência de série histórica.",
+      "tags": ["research", "dataviz", "draft"]
+    },
+    {
+      "key": "agent-template",
+      "name": "Seu próximo agent",
+      "type": "agent",
+      "draft": true,
+      "summary": {
+        "pt": "Espaço reservado para os agents do Labs. Substitua este card pelo primeiro agent real: nome, quando usar, ferramentas permitidas e prompt.",
+        "en": "Placeholder for Labs agents. Replace this card with the first real agent: name, when to use, allowed tools and prompt."
+      },
+      "whenToUse": {
+        "pt": "Um agent vale a pena quando a tarefa é repetível, tem escopo claro e pode rodar em paralelo com o trabalho principal.",
+        "en": "An agent is worth it when the task is repeatable, clearly scoped and can run in parallel with the main work."
+      },
+      "install": {
+        "pt": "Crie .claude/agents/<nome>.md com frontmatter name, description, tools e o prompt do sistema no corpo.",
+        "en": "Create .claude/agents/<name>.md with frontmatter name, description, tools and the system prompt in the body."
+      },
+      "code": "---\nname: exemplo\ndescription: Quando usar este agent, em uma frase que o modelo consiga casar com a tarefa.\ntools: Read, Grep, Glob\n---\n\nVocê é um agente focado em <tarefa>. Regras:\n- Leia antes de concluir.\n- Reporte com caminhos de arquivo e linhas.\n- Não edite nada.",
+      "tags": ["template", "draft"]
+    }
+  ]
+}

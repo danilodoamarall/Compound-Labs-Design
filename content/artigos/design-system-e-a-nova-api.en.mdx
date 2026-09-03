@@ -1,0 +1,96 @@
+---
+title: Design system is the new API
+dek: Designers plan to invest more in design systems and tokens than in canvas tools. That makes sense. Tokens are the interface between design intent and the code the AI generates.
+thesis: The design system stopped being documentation and became the API the AI consumes. Without tokens, AI generates generic screens; with tokens, it generates product.
+series: State of Design 2026
+order: 4
+total: 5
+date: 2026-09-24
+chart: investing
+tags: [design systems, tokens, tools]
+draft: false
+---
+
+<Slide layout="title" kicker="State of Design 2026 · Part 4 of 5" title="Design system is the new API" notes="The most practical article in the series. If the audience is engineering, this is the one that speaks to them.">
+
+Designers plan to invest more in design systems and tokens than in canvas tools. This article is about why that's the right call.
+
+</Slide>
+
+<Slide layout="chart" title="Where will you invest over the next 12 months?" kicker="Priorities" notes="Three picks per person. Highlight third and fourth place: design systems above canvas.">
+
+<Chart name="investing" />
+
+**AI-generated code at 64.0%.** **Agents at 46.3%.** **Design systems and tokens at 40.2%.** And only then, in fourth, canvas tools, at **21.3%**. Hand-written code: **9.5%**, a ratio of almost 7 to 1 against generated code.
+
+</Slide>
+
+<Slide title="Canvas became a commodity" kicker="Reading" notes="It's not that Figma lost. It's that Figma is already solved.">
+
+Figma is used by **82.6%** every week and it will stay that way. But only a fifth of designers plan to invest more in canvas tools. That isn't decline; it's saturation. The canvas is solved. Nobody needs one more tool for drawing rectangles.
+
+The new money goes to what isn't solved yet: getting AI to generate code that looks, works and behaves like the product. And that depends on something many teams treat as second-class documentation.
+
+</Slide>
+
+<Slide layout="chart" title="A terminal ahead of FigJam" kicker="Weekly tools" notes="Five of the ten are AI. Claude Code above Figma Make and FigJam.">
+
+<Chart name="tools" />
+
+Five of the ten weekly tools are AI. **Claude Code (38.4%)** sits ahead of **Figma Make (34.8%)** and **FigJam (34.0%)**. Figma's own AI prototyping tool loses to a terminal. And Slack and Notion land below three AI assistants.
+
+</Slide>
+
+<Slide title="The blocker that tokens solve" kicker="Output quality" notes="Connect the blocker figure (52.2%) with the solution (tokens). This is the article's bridge.">
+
+Among workflow blockers, **52.2%** cite the quality of AI output. When I ask an AI for a screen with no context, it hands back a generic screen: mid-gray, 8-pixel corners, the same old blue button. Not because the AI is bad, but because nobody told it what *this* product is.
+
+A design system with tokens in code tells it. Colors, spacing, typography, radii, shadows, states: named, versioned, machine-consumable. The AI reads the token and generates the right screen. **The design system stops being documentation for humans and becomes the API the AI consumes.**
+
+</Slide>
+
+<Slide title="What an AI-ready design system has" kicker="Practice" notes="Checklist. Good slide to photograph.">
+
+- **Tokens in code**, not just in Figma: JSON, CSS custom properties, a Tailwind theme. If the AI can't import it, it doesn't exist.
+- **Semantic names**, not literal ones: `color-surface-raised`, not `gray-100`. The AI gets the intent right when the name carries the intent.
+- **Components with live examples**, in Storybook or similar. One working example is worth more than ten pages of guidelines.
+- **Usage rules written for machines**: when to use each variant, what never to combine. That becomes agent instructions.
+- **One entry point**: a file or MCP server the agent consults before generating. Without it, every prompt reinvents the product.
+
+</Slide>
+
+<Slide title="Tokens as leverage" kicker="Idea" notes="The core idea to take home.">
+
+<Callout kind="idea" title="Idea · the most concrete lever">
+
+Of the three biggest blockers in the survey, the only one a design team solves on its own is output quality. And the most concrete lever for it isn't a better model: it's a design system the AI can read.
+
+Every hour invested in tokens today is an hour saved on every prototype generated later. It's the best-returning investment on the 2026 list.
+
+</Callout>
+
+</Slide>
+
+<Slide title="What the survey doesn't say" kicker="Limits" notes="Caveats.">
+
+<Callout kind="caveat" title="Careful when citing">
+
+The survey measures investment intent, not spend. “Design systems and tokens” is a single category in the instrument; you can't separate how much is traditional design system work and how much is tokens for AI. The connection between the 40.2% and output quality (52.2%) is my reading, not a published crosstab.
+
+</Callout>
+
+</Slide>
+
+<Slide layout="question" title="For the audience" kicker="Question" notes="Practical question. Most will answer no, and that's fine.">
+
+<Question>Is your design system ready to be consumed by an AI? If you asked for a new screen right now, would it come out looking like the product?</Question>
+
+**What to do on Monday:** run the test. Ask an AI for the same screen twice: once with no context, once with your tokens and an example component. Compare. Then audit: which tokens exist only in Figma? Which names are literal? What's the entry point an agent would use? Start with what shows up on every screen: color, spacing and typography.
+
+</Slide>
+
+<Slide title="In the next article" kicker="Continues" notes="Hook into article 5: the stack contradiction.">
+
+53% of designers say there are too many tools. Over the last six months, 3.8% consolidated their stack. Over the next twelve, 64% plan to add more AI. The last article is about that contradiction, and about what the survey can't tell us about Brazil.
+
+</Slide>

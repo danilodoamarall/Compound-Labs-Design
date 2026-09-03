@@ -1,0 +1,123 @@
+table,dimension,value,n,pct,mean,note
+headline,total_responses,Total responses,1478,,
+headline,vibe_coding_50plus,Designers vibe coding 50%+ of their output,,43.8,
+headline,built_tool_with_ai,Built a custom tool with AI-generated code,,59.1,
+headline,generate_code_ai,Use AI or no-code to generate code in workflow,,63.1,
+headline,non_na_respondents,Respondents outside North America,,61.4,
+headline,ai_invest_next_12mo,Expect more AI investment in the next 12 months,,64,
+headline,satisfaction_delta,Satisfaction gap between zero and nearly all vibe coding,,,1.46
+role_distribution,role,IC Designer,862,58.3
+role_distribution,role,Lead / Principal,280,18.9
+role_distribution,role,Manager / Director,161,10.9
+role_distribution,role,Design Engineer,94,6.4
+role_distribution,role,Non-designer,57,3.9
+role_distribution,role,Researcher,23,1.6
+region_distribution,region,North America,569,38.6
+region_distribution,region,Western Europe,239,16.2
+region_distribution,region,South Asia,119,8.1
+region_distribution,region,Eastern Europe,104,7
+region_distribution,region,Northern Europe,103,7
+region_distribution,region,Southeast Asia,56,3.8
+region_distribution,region,Southern Europe,50,3.4
+region_distribution,region,South America,49,3.3
+region_distribution,region,Australia & New Zealand,47,3.2
+region_distribution,region,Western Asia (Middle East),29,2
+region_distribution,region,West Africa,28,1.9
+region_distribution,region,Northern Africa,18,1.2
+region_distribution,region,Central Asia,15,1
+region_distribution,region,East Asia,13,0.9
+region_distribution,region,East Africa,12,0.8
+region_distribution,region,Southern Africa,12,0.8
+region_distribution,region,Central America & Caribbean,9,0.6
+region_distribution,region,Central Africa,4,0.3
+region_distribution,outside_north_america,Outside North America,907,61.4
+vibe_distribution,tier,None (0%),557,37.7
+vibe_distribution,tier,Occasionally,274,18.5
+vibe_distribution,tier,About half,188,12.7
+vibe_distribution,tier,Most of it,258,17.5
+vibe_distribution,tier,Nearly all,201,13.6
+vibe_distribution,pct_50plus,50%+,647,43.8
+vibe_by_role,role,Design Engineer,94,80.9,,
+vibe_by_role,role,Lead / Principal,280,56.8,,
+vibe_by_role,role,Non-designer,57,50.9,,
+vibe_by_role,role,Manager / Director,161,46.6,,
+vibe_by_role,role,IC Designer,862,35,,
+vibe_by_role,role,Researcher,23,26.1,,directional — small n
+satisfaction,tier,None (0%),,,5.93
+satisfaction,tier,Occasionally,,,6.12
+satisfaction,tier,About half,,,6.83
+satisfaction,tier,Most of it,,,7.16
+satisfaction,tier,Nearly all,,,7.39
+satisfaction,overall_mean,Overall,,,6.49
+satisfaction,delta,None → Nearly all,,,1.46
+outlook_more_valuable,role,Design Engineer,,50
+outlook_less_secure,role,Design Engineer,,10.6
+outlook_about_same,role,Design Engineer,,10.6
+outlook_more_valuable,role,Lead / Principal,,43.2
+outlook_less_secure,role,Lead / Principal,,20
+outlook_about_same,role,Lead / Principal,,24.6
+outlook_more_valuable,role,Manager / Director,,35.4
+outlook_less_secure,role,Manager / Director,,23.6
+outlook_about_same,role,Manager / Director,,22.4
+outlook_more_valuable,role,Non-designer,,31.6
+outlook_less_secure,role,Non-designer,,24.6
+outlook_about_same,role,Non-designer,,24.6
+outlook_more_valuable,role,IC Designer,,24.8
+outlook_less_secure,role,IC Designer,,32.4
+outlook_about_same,role,IC Designer,,21.7
+outlook_more_valuable,role,Researcher,,17.4
+outlook_less_secure,role,Researcher,,39.1
+outlook_about_same,role,Researcher,,21.7
+tools,tool,Figma,1221,82.6
+tools,tool,Claude,751,50.8
+tools,tool,ChatGPT,712,48.2
+tools,tool,Claude Code,568,38.4
+tools,tool,Figma Make,514,34.8
+tools,tool,FigJam,502,34
+tools,tool,Slack,483,32.7
+tools,tool,Gemini,478,32.3
+tools,tool,Google Meet,366,24.8
+tools,tool,Notion,362,24.5
+company_context,label,Startup (2–100),,29.3
+company_context,label,Independent / Freelance,,17.9
+company_context,label,"Enterprise (1,000+)",,17.7
+company_context,label,Mid-size (101–999),,15.4
+company_context,label,Agency / Consulting,,13.5
+company_context,label,Student / Between,,6.2
+built_tool,label,"Yes, once or twice",,33.7
+built_tool,label,"No, but I want to",,30.5
+built_tool,label,"Yes, I do it regularly",,25.3
+built_tool,label,"No, don't plan to",,10.4
+trust_level,label,"First drafts, edit heavily",,34.2
+trust_level,label,Exploration only,,29.2
+trust_level,label,Review before shipping,,24.7
+trust_level,label,Ships with minor tweaks,,8.1
+trust_level,label,Don't use AI output,,2.4
+trust_level,label,"Full trust, no oversight",,1.4
+blockers,label,Time to learn tools,,55.7
+blockers,label,Too many tools,,53
+blockers,label,AI output quality,,52.2
+blockers,label,Budget / procurement,,34.2
+blockers,label,Security / compliance,,28.9
+blockers,label,Engineering constraints,,19.4
+workflow_change,label,Added AI tools,,36.5
+workflow_change,label,AI is now central,,34.6
+workflow_change,label,Still in flux,,15.2
+workflow_change,label,Mostly the same,,9.9
+workflow_change,label,Consolidated tools,,3.8
+workflow_change_by_company,context,Startup (2–100),433,38.8,,AI is now central — major shift
+workflow_change_by_company,context,Independent / Freelance,265,36.2,,AI is now central — major shift
+workflow_change_by_company,context,Mid-size (101–999),227,34.8,,AI is now central — major shift
+workflow_change_by_company,context,"Enterprise (1,000+)",262,34.7,,AI is now central — major shift
+workflow_change_by_company,context,Agency / Consulting,199,28.6,,AI is now central — major shift
+workflow_change_by_company,context,Student / Between,92,21.7,,AI is now central — major shift
+investing_next,label,AI-generated coding,,64
+investing_next,label,Agent workflows,,46.3
+investing_next,label,Design systems & tokens,,40.2
+investing_next,label,Canvas design tools,,21.3
+investing_next,label,"Video, motion & 3D",,20.4
+investing_next,label,Simplifying my stack,,17.5
+investing_next,label,Image generation,,14.7
+investing_next,label,No-code (not AI),,13.7
+investing_next,label,Manual coding,,9.5
+investing_next,label,No major changes,,6.1

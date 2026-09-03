@@ -1,0 +1,849 @@
+{
+  "meta": {
+    "title": "State of Prototyping Spring 2026",
+    "publisher": "UX Tools",
+    "url": "https://survey.uxtools.co/spring-2026",
+    "license": "CC BY 4.0",
+    "citation": "UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co",
+    "collected": {
+      "from": "2026-03-14",
+      "to": "2026-04-06"
+    },
+    "n": 1478,
+    "regions": 18,
+    "outsideNorthAmericaPct": 61.4,
+    "notes": {
+      "en": [
+        "Self-selected sample (UX Tools newsletter, social channels, sponsor networks).",
+        "Researcher (n=23) is directional only.",
+        "Region breakdown uses n=1,476.",
+        "Multi-select questions sum to more than 100%.",
+        "Outlook percentages per role do not sum to 100%; remaining categories are not in the aggregate extract."
+      ],
+      "pt": [
+        "Amostra auto-selecionada (newsletter da UX Tools, redes sociais e patrocinadores).",
+        "Researcher (n=23) é apenas direcional.",
+        "Distribuição regional usa n=1.476.",
+        "Perguntas de múltipla escolha somam mais de 100%.",
+        "Percentuais de sentimento por papel não somam 100%; categorias restantes não constam do extrato agregado."
+      ]
+    }
+  },
+  "headline": {
+    "total_responses": 1478,
+    "vibe_coding_50plus": 43.8,
+    "built_tool_with_ai": 59.1,
+    "generate_code_ai": 63.1,
+    "non_na_respondents": 61.4,
+    "ai_invest_next_12mo": 64,
+    "satisfaction_delta": 1.46
+  },
+  "roles": [
+    {
+      "key": "ic-designer",
+      "en": "IC Designer",
+      "pt": "IC Designer",
+      "n": 862,
+      "pct": 58.3
+    },
+    {
+      "key": "lead-principal",
+      "en": "Lead / Principal",
+      "pt": "Lead / Principal",
+      "n": 280,
+      "pct": 18.9
+    },
+    {
+      "key": "manager-director",
+      "en": "Manager / Director",
+      "pt": "Manager / Director",
+      "n": 161,
+      "pct": 10.9
+    },
+    {
+      "key": "design-engineer",
+      "en": "Design Engineer",
+      "pt": "Design Engineer",
+      "n": 94,
+      "pct": 6.4
+    },
+    {
+      "key": "non-designer",
+      "en": "Non-designer",
+      "pt": "Não designer",
+      "n": 57,
+      "pct": 3.9
+    },
+    {
+      "key": "researcher",
+      "en": "Researcher",
+      "pt": "Researcher",
+      "n": 23,
+      "pct": 1.6
+    }
+  ],
+  "regions": [
+    {
+      "key": "north-america",
+      "en": "North America",
+      "pt": "América do Norte",
+      "n": 569,
+      "pct": 38.6
+    },
+    {
+      "key": "western-europe",
+      "en": "Western Europe",
+      "pt": "Europa Ocidental",
+      "n": 239,
+      "pct": 16.2
+    },
+    {
+      "key": "south-asia",
+      "en": "South Asia",
+      "pt": "Sul da Ásia",
+      "n": 119,
+      "pct": 8.1
+    },
+    {
+      "key": "eastern-europe",
+      "en": "Eastern Europe",
+      "pt": "Europa Oriental",
+      "n": 104,
+      "pct": 7
+    },
+    {
+      "key": "northern-europe",
+      "en": "Northern Europe",
+      "pt": "Europa do Norte",
+      "n": 103,
+      "pct": 7
+    },
+    {
+      "key": "southeast-asia",
+      "en": "Southeast Asia",
+      "pt": "Sudeste Asiático",
+      "n": 56,
+      "pct": 3.8
+    },
+    {
+      "key": "southern-europe",
+      "en": "Southern Europe",
+      "pt": "Europa do Sul",
+      "n": 50,
+      "pct": 3.4
+    },
+    {
+      "key": "south-america",
+      "en": "South America",
+      "pt": "América do Sul",
+      "n": 49,
+      "pct": 3.3
+    },
+    {
+      "key": "anz",
+      "en": "Australia & New Zealand",
+      "pt": "Austrália e Nova Zelândia",
+      "n": 47,
+      "pct": 3.2
+    },
+    {
+      "key": "western-asia",
+      "en": "Western Asia (Middle East)",
+      "pt": "Ásia Ocidental (Oriente Médio)",
+      "n": 29,
+      "pct": 2
+    },
+    {
+      "key": "west-africa",
+      "en": "West Africa",
+      "pt": "África Ocidental",
+      "n": 28,
+      "pct": 1.9
+    },
+    {
+      "key": "northern-africa",
+      "en": "Northern Africa",
+      "pt": "Norte da África",
+      "n": 18,
+      "pct": 1.2
+    },
+    {
+      "key": "central-asia",
+      "en": "Central Asia",
+      "pt": "Ásia Central",
+      "n": 15,
+      "pct": 1
+    },
+    {
+      "key": "east-asia",
+      "en": "East Asia",
+      "pt": "Ásia Oriental",
+      "n": 13,
+      "pct": 0.9
+    },
+    {
+      "key": "east-africa",
+      "en": "East Africa",
+      "pt": "África Oriental",
+      "n": 12,
+      "pct": 0.8
+    },
+    {
+      "key": "southern-africa",
+      "en": "Southern Africa",
+      "pt": "África Austral",
+      "n": 12,
+      "pct": 0.8
+    },
+    {
+      "key": "central-america",
+      "en": "Central America & Caribbean",
+      "pt": "América Central e Caribe",
+      "n": 9,
+      "pct": 0.6
+    },
+    {
+      "key": "central-africa",
+      "en": "Central Africa",
+      "pt": "África Central",
+      "n": 4,
+      "pct": 0.3
+    }
+  ],
+  "vibe": [
+    {
+      "key": "none",
+      "en": "None (0%)",
+      "pt": "Nenhum (0%)",
+      "order": 0,
+      "n": 557,
+      "pct": 37.7
+    },
+    {
+      "key": "occasionally",
+      "en": "Occasionally",
+      "pt": "Ocasionalmente",
+      "order": 1,
+      "n": 274,
+      "pct": 18.5
+    },
+    {
+      "key": "about-half",
+      "en": "About half",
+      "pt": "Cerca de metade",
+      "order": 2,
+      "n": 188,
+      "pct": 12.7
+    },
+    {
+      "key": "most",
+      "en": "Most of it",
+      "pt": "A maioria",
+      "order": 3,
+      "n": 258,
+      "pct": 17.5
+    },
+    {
+      "key": "nearly-all",
+      "en": "Nearly all",
+      "pt": "Quase tudo",
+      "order": 4,
+      "n": 201,
+      "pct": 13.6
+    }
+  ],
+  "vibe50": {
+    "n": 647,
+    "pct": 43.8
+  },
+  "vibeByRole": [
+    {
+      "key": "design-engineer",
+      "en": "Design Engineer",
+      "pt": "Design Engineer",
+      "n": 94,
+      "pct": 80.9,
+      "directional": false
+    },
+    {
+      "key": "lead-principal",
+      "en": "Lead / Principal",
+      "pt": "Lead / Principal",
+      "n": 280,
+      "pct": 56.8,
+      "directional": false
+    },
+    {
+      "key": "non-designer",
+      "en": "Non-designer",
+      "pt": "Não designer",
+      "n": 57,
+      "pct": 50.9,
+      "directional": false
+    },
+    {
+      "key": "manager-director",
+      "en": "Manager / Director",
+      "pt": "Manager / Director",
+      "n": 161,
+      "pct": 46.6,
+      "directional": false
+    },
+    {
+      "key": "ic-designer",
+      "en": "IC Designer",
+      "pt": "IC Designer",
+      "n": 862,
+      "pct": 35,
+      "directional": false
+    },
+    {
+      "key": "researcher",
+      "en": "Researcher",
+      "pt": "Researcher",
+      "n": 23,
+      "pct": 26.1,
+      "directional": true
+    }
+  ],
+  "satisfaction": [
+    {
+      "key": "none",
+      "en": "None (0%)",
+      "pt": "Nenhum (0%)",
+      "order": 0,
+      "n": 557,
+      "mean": 5.93
+    },
+    {
+      "key": "occasionally",
+      "en": "Occasionally",
+      "pt": "Ocasionalmente",
+      "order": 1,
+      "n": 274,
+      "mean": 6.12
+    },
+    {
+      "key": "about-half",
+      "en": "About half",
+      "pt": "Cerca de metade",
+      "order": 2,
+      "n": 188,
+      "mean": 6.83
+    },
+    {
+      "key": "most",
+      "en": "Most of it",
+      "pt": "A maioria",
+      "order": 3,
+      "n": 258,
+      "mean": 7.16
+    },
+    {
+      "key": "nearly-all",
+      "en": "Nearly all",
+      "pt": "Quase tudo",
+      "order": 4,
+      "n": 201,
+      "mean": 7.39
+    }
+  ],
+  "satisfactionOverall": 6.49,
+  "satisfactionDelta": 1.46,
+  "outlook": [
+    {
+      "key": "ic-designer",
+      "en": "IC Designer",
+      "pt": "IC Designer",
+      "n": 862,
+      "moreValuable": 24.8,
+      "lessSecure": 32.4,
+      "aboutSame": 21.7,
+      "net": -7.6,
+      "unaccounted": 21.1,
+      "directional": false
+    },
+    {
+      "key": "lead-principal",
+      "en": "Lead / Principal",
+      "pt": "Lead / Principal",
+      "n": 280,
+      "moreValuable": 43.2,
+      "lessSecure": 20,
+      "aboutSame": 24.6,
+      "net": 23.2,
+      "unaccounted": 12.2,
+      "directional": false
+    },
+    {
+      "key": "manager-director",
+      "en": "Manager / Director",
+      "pt": "Manager / Director",
+      "n": 161,
+      "moreValuable": 35.4,
+      "lessSecure": 23.6,
+      "aboutSame": 22.4,
+      "net": 11.8,
+      "unaccounted": 18.6,
+      "directional": false
+    },
+    {
+      "key": "design-engineer",
+      "en": "Design Engineer",
+      "pt": "Design Engineer",
+      "n": 94,
+      "moreValuable": 50,
+      "lessSecure": 10.6,
+      "aboutSame": 10.6,
+      "net": 39.4,
+      "unaccounted": 28.8,
+      "directional": false
+    },
+    {
+      "key": "non-designer",
+      "en": "Non-designer",
+      "pt": "Não designer",
+      "n": 57,
+      "moreValuable": 31.6,
+      "lessSecure": 24.6,
+      "aboutSame": 24.6,
+      "net": 7,
+      "unaccounted": 19.2,
+      "directional": false
+    },
+    {
+      "key": "researcher",
+      "en": "Researcher",
+      "pt": "Researcher",
+      "n": 23,
+      "moreValuable": 17.4,
+      "lessSecure": 39.1,
+      "aboutSame": 21.7,
+      "net": -21.7,
+      "unaccounted": 21.8,
+      "directional": true
+    }
+  ],
+  "tools": [
+    {
+      "key": "figma",
+      "en": "Figma",
+      "pt": "Figma",
+      "n": 1221,
+      "pct": 82.6,
+      "ai": false
+    },
+    {
+      "key": "claude",
+      "en": "Claude",
+      "pt": "Claude",
+      "n": 751,
+      "pct": 50.8,
+      "ai": true
+    },
+    {
+      "key": "chatgpt",
+      "en": "ChatGPT",
+      "pt": "ChatGPT",
+      "n": 712,
+      "pct": 48.2,
+      "ai": true
+    },
+    {
+      "key": "claude-code",
+      "en": "Claude Code",
+      "pt": "Claude Code",
+      "n": 568,
+      "pct": 38.4,
+      "ai": true
+    },
+    {
+      "key": "figma-make",
+      "en": "Figma Make",
+      "pt": "Figma Make",
+      "n": 514,
+      "pct": 34.8,
+      "ai": true
+    },
+    {
+      "key": "figjam",
+      "en": "FigJam",
+      "pt": "FigJam",
+      "n": 502,
+      "pct": 34,
+      "ai": false
+    },
+    {
+      "key": "slack",
+      "en": "Slack",
+      "pt": "Slack",
+      "n": 483,
+      "pct": 32.7,
+      "ai": false
+    },
+    {
+      "key": "gemini",
+      "en": "Gemini",
+      "pt": "Gemini",
+      "n": 478,
+      "pct": 32.3,
+      "ai": true
+    },
+    {
+      "key": "google-meet",
+      "en": "Google Meet",
+      "pt": "Google Meet",
+      "n": 366,
+      "pct": 24.8,
+      "ai": false
+    },
+    {
+      "key": "notion",
+      "en": "Notion",
+      "pt": "Notion",
+      "n": 362,
+      "pct": 24.5,
+      "ai": false
+    }
+  ],
+  "company": [
+    {
+      "key": "startup",
+      "en": "Startup (2–100)",
+      "pt": "Startup (2–100)",
+      "pct": 29.3
+    },
+    {
+      "key": "independent",
+      "en": "Independent / Freelance",
+      "pt": "Independente / Freelance",
+      "pct": 17.9
+    },
+    {
+      "key": "enterprise",
+      "en": "Enterprise (1,000+)",
+      "pt": "Enterprise (1.000+)",
+      "pct": 17.7
+    },
+    {
+      "key": "mid-size",
+      "en": "Mid-size (101–999)",
+      "pt": "Média (101–999)",
+      "pct": 15.4
+    },
+    {
+      "key": "agency",
+      "en": "Agency / Consulting",
+      "pt": "Agência / Consultoria",
+      "pct": 13.5
+    },
+    {
+      "key": "student",
+      "en": "Student / Between",
+      "pt": "Estudante / Entre empregos",
+      "pct": 6.2
+    }
+  ],
+  "builtTool": [
+    {
+      "key": "once-or-twice",
+      "en": "Yes, once or twice",
+      "pt": "Sim, uma ou duas vezes",
+      "pct": 33.7
+    },
+    {
+      "key": "want-to",
+      "en": "No, but I want to",
+      "pt": "Não, mas quero",
+      "pct": 30.5
+    },
+    {
+      "key": "regularly",
+      "en": "Yes, I do it regularly",
+      "pt": "Sim, faço regularmente",
+      "pct": 25.3
+    },
+    {
+      "key": "no-plan",
+      "en": "No, don't plan to",
+      "pt": "Não, e não pretendo",
+      "pct": 10.4
+    }
+  ],
+  "trust": [
+    {
+      "key": "dont-use",
+      "en": "Don't use AI output",
+      "pt": "Não uso saída de IA",
+      "order": 0,
+      "pct": 2.4
+    },
+    {
+      "key": "exploration",
+      "en": "Exploration only",
+      "pt": "Só para exploração",
+      "order": 1,
+      "pct": 29.2
+    },
+    {
+      "key": "drafts",
+      "en": "First drafts, edit heavily",
+      "pt": "Primeiro rascunho, edito muito",
+      "order": 2,
+      "pct": 34.2
+    },
+    {
+      "key": "review",
+      "en": "Review before shipping",
+      "pt": "Reviso antes de enviar",
+      "order": 3,
+      "pct": 24.7
+    },
+    {
+      "key": "minor-tweaks",
+      "en": "Ships with minor tweaks",
+      "pt": "Envia com pequenos ajustes",
+      "order": 4,
+      "pct": 8.1
+    },
+    {
+      "key": "full-trust",
+      "en": "Full trust, no oversight",
+      "pt": "Confiança total, sem revisão",
+      "order": 5,
+      "pct": 1.4
+    }
+  ],
+  "blockers": [
+    {
+      "key": "time-to-learn",
+      "en": "Time to learn tools",
+      "pt": "Tempo para aprender ferramentas",
+      "pct": 55.7
+    },
+    {
+      "key": "too-many-tools",
+      "en": "Too many tools",
+      "pt": "Ferramentas demais para avaliar",
+      "pct": 53
+    },
+    {
+      "key": "ai-quality",
+      "en": "AI output quality",
+      "pt": "Qualidade da saída da IA",
+      "pct": 52.2
+    },
+    {
+      "key": "budget",
+      "en": "Budget / procurement",
+      "pt": "Orçamento / procurement",
+      "pct": 34.2
+    },
+    {
+      "key": "security",
+      "en": "Security / compliance",
+      "pt": "Segurança / compliance",
+      "pct": 28.9
+    },
+    {
+      "key": "engineering",
+      "en": "Engineering constraints",
+      "pt": "Restrições de engenharia",
+      "pct": 19.4
+    }
+  ],
+  "workflowChange": [
+    {
+      "key": "added-ai",
+      "en": "Added AI tools",
+      "pt": "Adicionei ferramentas de IA",
+      "pct": 36.5
+    },
+    {
+      "key": "ai-central",
+      "en": "AI is now central",
+      "pt": "A IA agora é central",
+      "pct": 34.6
+    },
+    {
+      "key": "in-flux",
+      "en": "Still in flux",
+      "pt": "Ainda em transição",
+      "pct": 15.2
+    },
+    {
+      "key": "same",
+      "en": "Mostly the same",
+      "pt": "Praticamente igual",
+      "pct": 9.9
+    },
+    {
+      "key": "consolidated",
+      "en": "Consolidated tools",
+      "pt": "Consolidei ferramentas",
+      "pct": 3.8
+    }
+  ],
+  "aiCentralByCompany": [
+    {
+      "key": "startup",
+      "en": "Startup (2–100)",
+      "pt": "Startup (2–100)",
+      "n": 433,
+      "pct": 38.8
+    },
+    {
+      "key": "independent",
+      "en": "Independent / Freelance",
+      "pt": "Independente / Freelance",
+      "n": 265,
+      "pct": 36.2
+    },
+    {
+      "key": "mid-size",
+      "en": "Mid-size (101–999)",
+      "pt": "Média (101–999)",
+      "n": 227,
+      "pct": 34.8
+    },
+    {
+      "key": "enterprise",
+      "en": "Enterprise (1,000+)",
+      "pt": "Enterprise (1.000+)",
+      "n": 262,
+      "pct": 34.7
+    },
+    {
+      "key": "agency",
+      "en": "Agency / Consulting",
+      "pt": "Agência / Consultoria",
+      "n": 199,
+      "pct": 28.6
+    },
+    {
+      "key": "student",
+      "en": "Student / Between",
+      "pt": "Estudante / Entre empregos",
+      "n": 92,
+      "pct": 21.7
+    }
+  ],
+  "investing": [
+    {
+      "key": "ai-coding",
+      "en": "AI-generated coding",
+      "pt": "Código gerado por IA",
+      "pct": 64
+    },
+    {
+      "key": "agents",
+      "en": "Agent workflows",
+      "pt": "Workflows com agentes",
+      "pct": 46.3
+    },
+    {
+      "key": "design-systems",
+      "en": "Design systems & tokens",
+      "pt": "Design systems e tokens",
+      "pct": 40.2
+    },
+    {
+      "key": "canvas",
+      "en": "Canvas design tools",
+      "pt": "Ferramentas de canvas",
+      "pct": 21.3
+    },
+    {
+      "key": "video-motion-3d",
+      "en": "Video, motion & 3D",
+      "pt": "Vídeo, motion e 3D",
+      "pct": 20.4
+    },
+    {
+      "key": "simplify",
+      "en": "Simplifying my stack",
+      "pt": "Simplificar meu stack",
+      "pct": 17.5
+    },
+    {
+      "key": "image-gen",
+      "en": "Image generation",
+      "pt": "Geração de imagem",
+      "pct": 14.7
+    },
+    {
+      "key": "no-code",
+      "en": "No-code (not AI)",
+      "pt": "No-code (sem IA)",
+      "pct": 13.7
+    },
+    {
+      "key": "manual-coding",
+      "en": "Manual coding",
+      "pt": "Código manual",
+      "pct": 9.5
+    },
+    {
+      "key": "no-changes",
+      "en": "No major changes",
+      "pt": "Sem grandes mudanças",
+      "pct": 6.1
+    }
+  ],
+  "derived": {
+    "camps": [
+      {
+        "key": "none",
+        "en": "Don't use",
+        "pt": "Não usa",
+        "tiers": [
+          "none"
+        ],
+        "pct": 37.7,
+        "n": 557
+      },
+      {
+        "key": "complement",
+        "en": "Complements",
+        "pt": "Complementa",
+        "tiers": [
+          "occasionally",
+          "about-half"
+        ],
+        "pct": 31.2,
+        "n": 462
+      },
+      {
+        "key": "majority",
+        "en": "Majority of output",
+        "pt": "Maioria da produção",
+        "tiers": [
+          "most",
+          "nearly-all"
+        ],
+        "pct": 31.1,
+        "n": 459
+      }
+    ],
+    "trustGroups": {
+      "draftOrExploration": 63.4,
+      "shipWithReview": 34.2,
+      "shipWithReviewPass": 32.8,
+      "dontUse": 2.4
+    },
+    "builtAny": 59,
+    "builtOrWant": 89.5,
+    "addedOrCentral": 71.1,
+    "blockerSpreadTop3": 3.5,
+    "aiVsManualCodingRatio": 6.7,
+    "startupEnterpriseGap": 4.1,
+    "latinAmericaPct": 3.9,
+    "latinAmericaN": 58,
+    "europePct": 33.6,
+    "aiToolsInTop10": 5,
+    "claudeVsChatgptPts": 2.6,
+    "deVsIcGapPts": 45.9,
+    "icShareOfHeavyVibeCoders": 46.6,
+    "satisfactionWeightedMean": 6.49
+  }
+}

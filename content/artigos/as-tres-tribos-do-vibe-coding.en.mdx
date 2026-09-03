@@ -1,0 +1,117 @@
+---
+title: The three tribes of vibe coding
+dek: The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth.
+thesis: Adoption of AI-generated code among designers is bimodal, not a diffusion curve. That changes how a team should organize itself.
+series: State of Design 2026
+order: 1
+total: 5
+date: 2026-09-03
+chart: vibe-band
+tags: [vibe coding, adoption, roles]
+draft: false
+---
+
+<Slide layout="title" kicker="State of Design 2026 · Part 1 of 5" title="The three tribes of vibe coding" notes="Opening of the series. Ask the audience before showing the number: who here generates code with AI every week? Then show the three-part bar and ask each person to place themselves.">
+
+The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams. This series starts with them.
+
+</Slide>
+
+<Slide layout="number" kicker="The hook" title="The second most used tool among designers is an AI" notes="Figma is still untouchable. The point is what comes right after: three AI assistants ahead of any other canvas or collaboration tool.">
+
+<Stats>
+  <Stat value={82.6} unit="%" label="use Figma every week" />
+  <Stat value={50.8} unit="%" label="use Claude every week, the number 2 tool" />
+  <Stat value={48.2} unit="%" label="use ChatGPT every week" />
+  <Stat value={38.4} unit="%" label="use Claude Code, more than FigJam and Figma Make" />
+</Stats>
+
+I expected to see Figma at the top. I did not expect to see an agentic coding terminal ahead of FigJam in the daily work of people who do design. That's the data point that made me read the whole survey, and it's why this series exists.
+
+</Slide>
+
+<Slide title="Where the numbers come from" kicker="The survey" notes="Be explicit about the sample. It protects every argument that follows.">
+
+**State of Prototyping Spring 2026** is a UX Tools survey of **1,478 designers and builders**, collected between March 14 and April 6, 2026 across 18 regions. The data is open, under a CC BY 4.0 license.
+
+The survey defines **vibe coding** honestly: “AI-generated code the designer may not fully understand, but that works.” It's not “using AI.” It's letting the AI write the code you wouldn't write yourself.
+
+One caveat I'll repeat in every article: the sample is self-selected, drawn from the UX Tools newsletter and sponsor networks. People who answer tend to like tools. Read the adoption percentages as the profession's **ceiling**, not its average.
+
+</Slide>
+
+<Slide layout="chart" title="It's not an adoption curve. It's a split" kicker="The core data" notes="Point at the two ends first, then the middle. The middle is the smallest group, the opposite of what a diffusion curve predicts.">
+
+<Chart name="vibe-band" />
+
+If this were a classic diffusion curve, the middle would be fat and the ends thin. It's the reverse. **37.7% generate nothing** with AI. **31.1% generate most or nearly all of it**. Only 31.2% sit somewhere between “occasionally” and “about half.”
+
+I gave the three groups names so I could talk about them: **don't use**, **complements** and **majority of output**.
+
+</Slide>
+
+<Slide title="Why the average hides what matters" kicker="Reading" notes="This is the conceptual argument of the article. If the audience takes one idea home, make it this one.">
+
+When someone says “43.8% of designers already vibe code on half or more of their work,” the number is right and the reading is incomplete. It suggests a profession halfway through a transition. That's not what the distribution shows.
+
+What the distribution shows is **two ways of working coexisting**, with a transition group between them. On the same team there are people who have never opened a terminal and people who ship a working prototype in an afternoon. The two look at each other strangely. Neither one is wrong.
+
+For anyone leading a team, that changes the question. It's not “where are we on the curve.” It's “which tribes do we have here, and what does each one need.”
+
+</Slide>
+
+<Slide layout="chart" title="Design Engineers at 80.9%. IC Designers at 35.0%" kicker="By role" notes="Show the top and the bottom. Then draw attention to Lead/Principal above IC, which is the counterintuitive data point.">
+
+<Chart name="vibe-by-role" />
+
+The gap between Design Engineers and IC Designers is **46 points**, inside the same organizations. That's not a difference in tooling. It's a difference in mandate.
+
+</Slide>
+
+<Slide title="The seniority paradox" kicker="Tension" notes="Invite hypotheses from the audience before offering yours. On real teams, the answer is usually autonomy.">
+
+<Callout kind="tension" title="Tension · who adopts first">
+
+Lead and Principal vibe code more (56.8%) than IC Designers (35.0%). Adoption rises with seniority, the opposite of the “juniors adopt the new technology first” pattern.
+
+My hypotheses: senior people have the autonomy to choose tools, less production pixel work, and more mandate to prototype and persuade. The IC, locked into the delivery pipeline, has less room to experiment, not less appetite.
+
+</Callout>
+
+If that reading is right, the barrier isn't technical competence. It's **permission and time**. And that's something a design leader controls.
+
+</Slide>
+
+<Slide title="Where the IC fits in the story" kicker="Proportion" notes="Absolute numbers versus share of the group. Both are right and they tell different stories.">
+
+IC Designers are **58.3% of the sample**. Even with the lowest adoption rate among designers, they account for roughly **47% of all heavy vibe coders** in absolute terms: about 302 of the 647 people who generate half or more with AI.
+
+In other words: most of the people already working this way are ICs. But as a share of their own group, the IC is the slowest tribe among designers. Both sentences are true at once, and the second one is the worrying one. I come back to it in the third article.
+
+</Slide>
+
+<Slide title="What the survey doesn't say" kicker="Limits" notes="Quick caveats. Don't skip them.">
+
+<Callout kind="caveat" title="Careful when citing">
+
+Self-selected sample: percentages are a ceiling, not an average. Researcher has n=23, directional reading only. All of Latin America is 3.9% of the sample (58 people): nothing here describes Brazil with any confidence.
+
+There is no time series in this dataset. You can't say “grew X%” based on it.
+
+</Callout>
+
+</Slide>
+
+<Slide layout="question" title="For the audience" kicker="Question" notes="Ask for a show of hands by tribe. Write down the split in the room and compare it to 37.7 / 31.2 / 31.1.">
+
+<Question>Which tribe are you in? And your whole team, if you drew its bar?</Question>
+
+**What to do on Monday:** draw your team's bar. Name the three tribes without judgment. Then pick one experiment per tribe: the people who don't use it get a small, safe task to try; the people who complement get a whole prototype to ship that way; the people generating the majority get responsibility for documenting how they review what the AI writes.
+
+</Slide>
+
+<Slide title="In the next article" kicker="Continues" notes="Hook into article 2: high adoption and low trust aren't a contradiction, they're the definition of prototyping.">
+
+If 43.8% already generate half or more of what they produce with AI, why do only **1.4%** trust that output without reviewing it? The second article is about that distance, and about why the survey's name, *State of Prototyping*, is literal.
+
+</Slide>
