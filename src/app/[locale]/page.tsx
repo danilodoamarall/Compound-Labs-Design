@@ -4,6 +4,9 @@ import { sections, sectionPath, coverOrder, coverInitialIndex } from "@/lib/site
 import { HomeCoverFlow, type HomeSection } from "@/components/site/home-coverflow";
 import { BrowseResources } from "@/components/site/browse-resources";
 import { RevealText } from "@/components/ui/reveal-text";
+import MoltenMetal from "@/components/reactbits/MoltenMetal";
+import BorderGlow from "@/components/reactbits/BorderGlow";
+import { HomeSections, type SectionCard } from "@/components/site/home-sections";
 import StatusDot from "@/components/ui/status-dot";
 import { TAG_ORDER, type Resource, type ResourceTag } from "@/lib/resources";
 import index from "../../../content/resources.json";
@@ -47,6 +50,20 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     };
   });
 
+  const ICON: Record<string, string> = {
+    articles: "A", radar: "R", aiTools: "AI", skillsAgents: "S",
+    workflow: "W", docs: "D", faq: "?",
+  };
+  const sectionCards: SectionCard[] = sections.map((s) => ({
+    key: s.key,
+    title: tn(s.key as "articles"),
+    description: t(`sections.${s.key}.short` as "sections.articles.short"),
+    label: tn(s.key as "articles"),
+    color: s.cover[1],
+    path: sectionPath(s.href, locale),
+    icon: ICON[s.key] ?? "•",
+  }));
+
   const browseLabels = {
     heading: tb("heading"),
     headingAccent: tb("headingAccent"),
@@ -59,8 +76,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   };
 
   return (
-    <main className="flex flex-1 flex-col items-center pb-24 pt-16 sm:pt-24">
-      <div className="flex flex-col items-center px-5">
+    <main className="flex flex-1 flex-col items-center pt-16 pb-24 sm:pt-24 md:pb-32">
+      <div className="relative isolate flex w-full flex-col items-center px-5">
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-[440px] opacity-[0.28] dark:opacity-40">
+          <MoltenMetal color1="#0b8a74" color2="#c9571c" color3="#5b4bb7" speed={0.18} scale={1.6} glow={0.5} />
+        </div>
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 -top-24 -z-10 h-[440px] bg-[radial-gradient(ellipse_at_center,transparent_20%,var(--background)_72%)]" />
         <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-center text-[13px] leading-snug text-muted-foreground">
           <StatusDot tone="active" size="sm" animate className="shrink-0" />
           <span className="text-balance">
@@ -83,8 +104,22 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </p>
       </div>
 
-      <div className="mt-20 w-full sm:mt-24">
-        <BrowseResources resources={resources} labels={browseLabels} />
+      <div className="mt-20 w-full px-5 sm:mt-24">
+        <BorderGlow
+          className="mx-auto w-full max-w-5xl"
+          glowColor="#22a18c"
+          borderRadius={14}
+          glowIntensity={0.6}
+          backgroundColor="transparent"
+        >
+          <div className="px-1 py-8 sm:px-2">
+            <BrowseResources resources={resources} labels={browseLabels} />
+          </div>
+        </BorderGlow>
+      </div>
+
+      <div className="mt-24 w-full max-w-6xl px-5">
+        <HomeSections cards={sectionCards} dockLabel={tn("home")} />
       </div>
 
       <div className="mt-24 w-full border-t border-border pt-16 sm:mt-28">
