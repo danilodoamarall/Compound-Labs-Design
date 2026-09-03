@@ -3,6 +3,8 @@ import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath, coverOrder, coverInitialIndex } from "@/lib/site";
 import { HomeCoverFlow, type HomeSection } from "@/components/site/home-coverflow";
 import { BrowseResources } from "@/components/site/browse-resources";
+import { RevealText } from "@/components/ui/reveal-text";
+import StatusDot from "@/components/ui/status-dot";
 import { TAG_ORDER, type Resource, type ResourceTag } from "@/lib/resources";
 import index from "../../../content/resources.json";
 
@@ -52,15 +54,15 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     clearAll: tb("clearAll"),
     tags: Object.fromEntries(TAG_ORDER.map((k) => [k, tb(`tags.${k}` as "tags.read")])) as Record<ResourceTag, string>,
     empty: tb("empty"),
-    countAll: tb("countAll"),
-    countFiltered: tb("countFiltered"),
+    items: tb("items"),
+    of: tb("of"),
   };
 
   return (
     <main className="flex flex-1 flex-col items-center pb-24 pt-16 sm:pt-24">
       <div className="flex flex-col items-center px-5">
         <p className="inline-flex max-w-full items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-center text-[13px] leading-snug text-muted-foreground">
-          <span aria-hidden className="size-1.5 shrink-0 rounded-full bg-teal" />
+          <StatusDot tone="active" size="sm" animate className="shrink-0" />
           <span className="text-balance">
             <span className="text-foreground">{ts("author")}</span>
             <span className="mx-1.5 text-muted-foreground/50">·</span>
@@ -68,9 +70,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </span>
         </p>
 
-        <h1 className="font-display mt-9 max-w-4xl text-center text-[2.75rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl">
-          {t("title")}
-        </h1>
+        <RevealText
+          text={t("title")}
+          as="h1"
+          split="word"
+          stagger={0.06}
+          className="font-display mt-9 max-w-4xl text-center text-[2.75rem] font-semibold leading-[1.02] tracking-tight sm:text-6xl md:text-7xl"
+        />
 
         <p className="mt-7 max-w-xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl">
           {t("dek")}

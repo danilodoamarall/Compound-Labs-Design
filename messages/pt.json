@@ -195,7 +195,7 @@
       "apply": "Apply"
     },
     "empty": "Nada com esses filtros. Tente limpar um deles.",
-    "countAll": "{total} itens",
-    "countFiltered": "{n} de {total} itens"
+    "items": "itens",
+    "of": "de"
   }
 }

@@ -195,7 +195,7 @@
       "apply": "Apply"
     },
     "empty": "Nothing matches those filters. Try clearing one.",
-    "countAll": "{total} items",
-    "countFiltered": "{n} of {total} items"
+    "items": "items",
+    "of": "of"
   }
 }

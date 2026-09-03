@@ -46,6 +46,6 @@ export type BrowseLabels = {
   clearAll: string;
   tags: Record<ResourceTag, string>;
   empty: string;
-  countAll: string;
-  countFiltered: string;
+  items: string;
+  of: string;
 };
