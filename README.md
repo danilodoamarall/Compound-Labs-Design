@@ -60,13 +60,18 @@ separador decimal no arquivo; o número é formatado por idioma na renderizaçã
 Componentes disponíveis no MDX: `Slide`, `Stats`, `Stat`, `Chart`, `Callout`,
 `Question`, `Two`. Os gráficos vêm de `src/components/charts/Chart.tsx`.
 
-## Verificar os números
+## Verificações
 
 ```bash
-node scripts/check-numbers.mjs
+npm run check:mdx      # roda sozinho antes de todo build
+npm run check:numbers
 ```
 
-Compara todo percentual citado nos artigos com o JSON da pesquisa.
+`check:mdx` compila cada artigo com e sem o bloqueio de JavaScript e compara: se
+algo foi descartado em silêncio, o build para e a mensagem aponta a linha. O porquê
+está em [docs/adr/0001](docs/adr/0001-pipeline-de-conteudo-mdx.md).
+
+`check:numbers` compara todo percentual citado nos artigos com o JSON da pesquisa.
 
 ## Fonte dos dados
 
