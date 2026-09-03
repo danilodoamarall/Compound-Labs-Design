@@ -71,7 +71,9 @@
     "slideOf": "Slide {n} de {total}",
     "speakerNotes": "Notas do apresentador",
     "viewTable": "Ver tabela",
-    "publishedOn": "Publicado em {date}"
+    "publishedOn": "Publicado em {date}",
+    "index": "A série",
+    "indexDek": "Cinco artigos, em ordem. Cada um abre em leitura ou em apresentação."
   },
   "Radar": {
     "title": "Radar de Ferramentas",
@@ -199,5 +201,17 @@
     "empty": "Nada com esses filtros. Tente limpar um deles.",
     "items": "itens",
     "of": "de"
+  },
+  "Subscribe": {
+    "title": "Receba antes",
+    "dek": "Deixe seu e-mail e o próximo artigo chega até você antes de ficar público, com o deck e os dados junto.",
+    "placeholder": "seu@email.com",
+    "cta": "Quero receber",
+    "sending": "Enviando...",
+    "success": "Pronto. Confira sua caixa de entrada para confirmar.",
+    "errorInvalid": "Esse e-mail não parece válido.",
+    "errorGeneric": "Não consegui inscrever agora. Tente de novo em alguns minutos.",
+    "errorNotConfigured": "A inscrição ainda não está ligada. Volte em breve.",
+    "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique."
   }
 }

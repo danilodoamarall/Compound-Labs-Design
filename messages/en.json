@@ -71,7 +71,9 @@
     "slideOf": "Slide {n} of {total}",
     "speakerNotes": "Speaker notes",
     "viewTable": "View table",
-    "publishedOn": "Published on {date}"
+    "publishedOn": "Published on {date}",
+    "index": "The series",
+    "indexDek": "Five articles, in order. Each opens in reading or presentation mode."
   },
   "Radar": {
     "title": "Tools Radar",
@@ -199,5 +201,17 @@
     "empty": "Nothing matches those filters. Try clearing one.",
     "items": "items",
     "of": "of"
+  },
+  "Subscribe": {
+    "title": "Get it first",
+    "dek": "Leave your email and the next article reaches you before it goes public, with the deck and the data.",
+    "placeholder": "you@email.com",
+    "cta": "Subscribe",
+    "sending": "Sending...",
+    "success": "Done. Check your inbox to confirm.",
+    "errorInvalid": "That email does not look valid.",
+    "errorGeneric": "Could not subscribe right now. Try again in a few minutes.",
+    "errorNotConfigured": "Subscriptions are not wired up yet. Check back soon.",
+    "privacy": "Just the email, nothing else. Leave whenever you want, in one click."
   }
 }

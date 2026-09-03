@@ -1,12 +1,18 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath, coverOrder, coverInitialIndex } from "@/lib/site";
+import { listArticles } from "@/lib/articles";
 import { HomeCoverFlow, type HomeSection } from "@/components/site/home-coverflow";
 import { BrowseResources } from "@/components/site/browse-resources";
 import { RevealText } from "@/components/ui/reveal-text";
 import MoltenMetal from "@/components/reactbits/MoltenMetal";
 import BorderGlow from "@/components/reactbits/BorderGlow";
 import { HomeSections, type SectionCard } from "@/components/site/home-sections";
+import { Manifesto } from "@/components/site/manifesto";
+import { ArticleIndex } from "@/components/site/article-index";
+import { HowItWorks } from "@/components/site/how-it-works";
+import { AuthorCard } from "@/components/site/author-card";
+import home from "../../../content/home.json";
 import StatusDot from "@/components/ui/status-dot";
 import { TAG_ORDER, type Resource, type ResourceTag } from "@/lib/resources";
 import index from "../../../content/resources.json";
@@ -19,6 +25,19 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const ts = await getTranslations("Site");
   const tn = await getTranslations("Nav");
   const tb = await getTranslations("Browse");
+  const ta = await getTranslations("Articles");
+  const tsub = await getTranslations("Subscribe");
+  const articles = listArticles(locale);
+  const hm = home.manifesto[locale];
+  const hw = home.howItWorks[locale];
+  const ha = home.author[locale];
+
+  const subscribeLabels = {
+    placeholder: tsub("placeholder"), cta: tsub("cta"), sending: tsub("sending"),
+    success: tsub("success"), errorInvalid: tsub("errorInvalid"),
+    errorGeneric: tsub("errorGeneric"), errorNotConfigured: tsub("errorNotConfigured"),
+    privacy: tsub("privacy"),
+  };
 
   const covers: HomeSection[] = coverOrder.map((key) => {
     const s = sections.find((x) => x.key === key)!;
@@ -104,7 +123,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </p>
       </div>
 
-      <div className="mt-20 w-full px-5 sm:mt-24">
+      <div className="mt-24 w-full sm:mt-28">
+        <Manifesto question={hm.question} paragraphs={hm.paragraphs} signature={hm.signature} role={ts("authorRole")} />
+      </div>
+
+      <div className="mt-24 w-full sm:mt-28">
+        <ArticleIndex
+          articles={articles}
+          labels={{
+            title: ta("index"),
+            dek: ta("indexDek"),
+            slides: (count) => ta("slides", { count }),
+            minutes: (n) => ta("readingTime", { minutes: n }),
+            present: ta("present"),
+          }}
+        />
+      </div>
+
+      <div className="mt-24 w-full px-5 sm:mt-28">
         <BorderGlow
           className="mx-auto w-full max-w-5xl"
           glowColor="#22a18c"
@@ -118,8 +154,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </BorderGlow>
       </div>
 
-      <div className="mt-24 w-full max-w-6xl px-5">
+      <div className="mt-24 w-full sm:mt-28">
+        <HowItWorks
+          title={hw.title}
+          dek={hw.dek}
+          cadence={hw.cadence}
+          items={hw.items}
+          subscribeTitle={tsub("title")}
+          subscribeDek={tsub("dek")}
+          subscribeLabels={subscribeLabels}
+        />
+      </div>
+
+      <div className="mt-24 w-full max-w-6xl px-5 sm:mt-28">
         <HomeSections cards={sectionCards} dockLabel={tn("home")} />
+      </div>
+
+      <div className="mt-24 w-full sm:mt-28">
+        <AuthorCard greeting={ha.greeting} paragraphs={ha.paragraphs} links={ha.links} role={ts("authorRole")} />
       </div>
 
       <div className="mt-24 w-full border-t border-border pt-16 sm:mt-28">
