@@ -11,7 +11,7 @@ export function GET() {
     {
       serverInfo: { name: "Compound Design Skills", version: "1.1.0" },
       description:
-        "Catálogo de skills de design engineering. Mesmo registro do CLI e da página de skills.",
+        "Catálogo de skills de design engineering do Compound Design, o framework AI native de Danilo do Amaral. Mesmo registro do CLI e da página de skills.",
       url: MCP_URL,
       transport: { type: "streamable-http", endpoint: MCP_URL },
       capabilities: { tools: true },

@@ -1,7 +1,7 @@
 {
   "Site": {
     "name": "Compound Design",
-    "tagline": "Cada coisa que se aprende torna a próxima mais fácil.",
+    "tagline": "Um framework AI native de design engineering: cada coisa que se aprende torna a próxima mais fácil.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer no Pitang Labs",
     "madeBy": "Feito por",
@@ -11,7 +11,8 @@
     "draft": "Rascunho",
     "draftHint": "Conteúdo inicial gerado para revisão. Vai mudar.",
     "github": "Ver o projeto no GitHub e dar uma estrela",
-    "linkedin": "LinkedIn de Danilo do Amaral"
+    "linkedin": "LinkedIn de Danilo do Amaral",
+    "kind": "Framework AI native"
   },
   "Nav": {
     "home": "Início",
@@ -23,7 +24,7 @@
     "workflow": "Workflow",
     "groups": {
       "content": "Conteúdo",
-      "hub": "O hub",
+      "hub": "O framework",
       "skills": "Skills"
     },
     "openMenu": "Abrir o menu",
@@ -31,14 +32,14 @@
     "research": "Research",
     "spotlightEyebrow": "Comece por aqui",
     "spotlightCta": "Ler o artigo",
-    "menuLabel": "Seções do hub",
+    "menuLabel": "Seções do framework",
     "cli": "CLI",
     "mcp": "MCP",
     "browse": "Explorar"
   },
   "Home": {
-    "title": "O que vale adotar em IA para design.",
-    "dek": "Cinco anos de IA, design e código, acumulados em aberto. Escolha por onde começar.",
+    "title": "Um framework AI native para design engineering.",
+    "dek": "Cinco anos de IA, design e código, acumulados em aberto num método e nas ferramentas para praticá-lo. Escolha por onde começar.",
     "coverHint": "Clique na capa central para abrir · Arraste · Setas do teclado",
     "sections": {
       "articles": {
@@ -60,7 +61,7 @@
         "short": "A pesquisa que originou a série"
       },
       "about": {
-        "short": "Quem escreve e por quê"
+        "short": "O método, o autor e por quê"
       },
       "cli": {
         "short": "Rode o catálogo pelo terminal"
@@ -110,7 +111,7 @@
     "source": "Código",
     "all": "Tudo",
     "filterType": "Tipo",
-    "provenance": "{hosted} skills estão hospedadas aqui, sob licença permissiva e com crédito. As outras {pointer} não declaram licença, então o hub aponta para a origem em vez de copiar.",
+    "provenance": "{hosted} skills estão hospedadas aqui, sob licença permissiva e com crédito. As outras {pointer} não declaram licença, então o catálogo aponta para a origem em vez de copiar.",
     "agentStart": "Agente, comece por aqui",
     "cliCard": "Rode o catálogo pelo terminal.",
     "mcpCard": "Conecte o seu agente ao catálogo.",
@@ -150,21 +151,21 @@
     "copyCommand": "Copiar comando"
   },
   "About": {
-    "title": "Sobre este hub",
-    "dek": "O nome é uma tese. A maior parte do trabalho fica mais difícil com o tempo: cada coisa nova negocia com as antigas. Aqui é o contrário. Cada coisa aprendida em IA, design e código vira um artefato que torna a próxima mais fácil — como juros compostos.",
-    "purposeTitle": "Por que existe",
-    "purpose": "Este hub reúne artigos com dados, um catálogo de skills de design engineering com licença verificada, e as ferramentas para o seu agente usá-lo. Tudo aberto: qualquer pessoa pode ler, citar e reutilizar.",
+    "title": "Sobre o framework",
+    "dek": "Compound Design é o framework autoral de Danilo do Amaral para trabalhar com IA em design e código. AI native: feito para pessoas e agentes lerem com o mesmo cuidado. O nome é a tese. A maior parte do trabalho fica mais difícil com o tempo: cada coisa nova negocia com as antigas. Aqui é o contrário. Cada coisa aprendida vira um artefato que torna a próxima mais fácil — como juros compostos.",
+    "purposeTitle": "O que é o framework",
+    "purpose": "Um método em quatro passos (planejar, fazer, revisar, acumular) e os artefatos que ele produz: artigos com dados, um catálogo de skills de design engineering com licença verificada, e o CLI e o MCP que colocam tudo isso na mão do seu agente. AI native quer dizer que cada parte existe em duas formas, uma para ler na tela e outra para um agente consumir, e que o próprio framework foi construído com o método que descreve. Tudo aberto: qualquer pessoa pode ler, citar e reutilizar.",
     "authorTitle": "Quem faz",
-    "authorBio": "Danilo do Amaral é Design Engineer no Pitang Labs, há cinco anos na interseção de IA, design e desenvolvimento. Pós-graduado em UX & UI pela EBAC e em UX Engineering pela PUC Minas. Desenha e constrói protótipos, ferramentas internas e agentes, e escreve sobre o que aprende no caminho.",
+    "authorBio": "Danilo do Amaral é o autor do Compound Design. Design Engineer no Pitang Labs, há cinco anos na interseção de IA, design e desenvolvimento. Pós-graduado em UX & UI pela EBAC e em UX Engineering pela PUC Minas. Desenha e constrói protótipos, ferramentas internas e agentes, e escreve sobre o que aprende no caminho.",
     "howTitle": "Como contribuir",
     "how": "Comente nas apresentações, proponha uma skill para o catálogo ou um artigo. O conteúdo marcado como rascunho está aberto para revisão.",
     "licenseTitle": "Licenças e fontes",
-    "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos deste hub são de Danilo do Amaral.",
+    "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos do framework são de Danilo do Amaral.",
     "philosophyTitle": "A filosofia: acumular",
     "philosophy": "O ciclo tem quatro passos: planejar, fazer, revisar, acumular. Os três primeiros qualquer pessoa que trabalha com IA já faz. O quarto é o que separa acumular de só produzir: o que se aprendeu vira algo reutilizável e encontrável — um artigo, uma skill, uma regra que o próprio sistema passa a conferir. Aqui, cada correção que se repetiu virou uma checagem que quebra o build; cada decisão virou um registro; cada skill boa de terceiros entrou no catálogo com crédito. A maior parte do tempo vai para planejar e revisar, não para digitar. É uma filosofia aberta: o código, as decisões e as regras estão no repositório para quem quiser copiar."
   },
   "Footer": {
-    "rights": "Compound Design · por Danilo do Amaral",
+    "rights": "Compound Design · framework AI native por Danilo do Amaral",
     "source": "Dados: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Construído com Next.js e React Bits"
   },
@@ -175,7 +176,7 @@
   },
   "Docs": {
     "title": "Documentação",
-    "dek": "O que é isto, para quem é, e como usar, explicado do zero. Se você nunca abriu um agente de IA, comece aqui.",
+    "dek": "O que é o framework, para quem é, e como usar, explicado do zero. Se você nunca abriu um agente de IA, comece aqui.",
     "onThisPage": "Nesta página",
     "stepsLabel": "Passo a passo"
   },
@@ -206,7 +207,7 @@
     },
     "visit": "Abrir site",
     "count": "{count} ferramentas",
-    "sourceNote": "A ordem por etapa e as descrições são deste hub."
+    "sourceNote": "A ordem por etapa e as descrições são do Compound Design."
   },
   "Browse": {
     "heading": "Explorar",
@@ -244,8 +245,8 @@
     "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique."
   },
   "Stage": {
-    "subtitle": "Aprenda a construir com IA sem baixar o seu padrão. Artigos com dados, um catálogo de skills com licença verificada, e um CLI e um MCP para o seu agente usar o catálogo.",
-    "resourcesTitle": "Artigos, skills e as ferramentas para usá-las.",
+    "subtitle": "Um método para construir com IA sem baixar o seu padrão, e o que ele produz: artigos com dados, um catálogo de skills com licença verificada, e um CLI e um MCP para o seu agente usar tudo isso.",
+    "resourcesTitle": "As peças do framework.",
     "resourcesDek": "Cada bloco resolve uma coisa: entender o cenário, achar a skill certa, e ligar o seu agente ao catálogo pelo terminal ou por MCP.",
     "articlesTitle": "Cinco artigos sobre o que a pesquisa mostrou.",
     "articlesDek": "A série lê os dados de 1.478 respostas e discute o que muda no trabalho de quem projeta. Cada um abre em leitura ou apresentação.",
@@ -270,10 +271,10 @@
     "subscribeCadence": "Artigo novo a cada duas semanas · Resumo do catálogo uma vez por mês",
     "browseCard": "Explorar",
     "browseCardDesc": "Tudo que está publicado, do mais recente ao mais antigo, com busca e filtro por tipo.",
-    "curator": "Por Danilo do Amaral",
+    "curator": "Framework autoral de Danilo do Amaral",
     "curatorRole": "Design Engineer no Pitang Labs",
-    "badge": "Compound Design",
-    "heroTitle": "IA para designers, engenheiros e quem constrói.",
+    "badge": "Framework AI native",
+    "heroTitle": "O framework AI native para quem projeta com IA.",
     "ctaPrimary": "Instalar o CLI",
     "ctaSecondary": "Conectar por MCP",
     "docsCta": "Novo por aqui? Leia a documentação"
@@ -282,9 +283,9 @@
     "trigger": "Buscar",
     "placeholder": "Busque artigos, ferramentas, skills...",
     "empty": "Nada encontrado. Tente outro termo.",
-    "noQuery": "Digite para buscar em todo o hub.",
+    "noQuery": "Digite para buscar em todo o framework.",
     "results": "%n resultados",
-    "a11yTitle": "Busca do hub",
+    "a11yTitle": "Busca do Compound Design",
     "a11yDescription": "Busque e navegue pelos resultados com o teclado.",
     "close": "Fechar a busca",
     "groupSections": "Seções",

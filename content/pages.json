@@ -6,8 +6,9 @@
         "group": "Comece aqui",
         "title": "O que é o Compound Design",
         "body": [
-          "O Compound Design é um lugar aberto onde o que se aprende em inteligência artificial, design e programação se acumula e fica disponível para qualquer pessoa usar.",
-          "Não é uma lista de ferramentas. É um catálogo de conhecimento pronto para uso: artigos com dados, um catálogo de skills (instruções que ensinam um assistente de IA a fazer algo bem) e duas formas de ligar esse catálogo ao seu assistente.",
+          "Compound Design é um framework autoral de Danilo do Amaral para trabalhar com inteligência artificial em design e programação. Framework, aqui, quer dizer um jeito de trabalhar com nome, regras e ferramentas, que qualquer pessoa pode adotar.",
+          "Ele é AI native: foi feito para pessoas e para agentes de IA usarem com o mesmo cuidado. Cada parte existe em duas formas, uma para ler na tela e outra para um assistente consumir, e o próprio framework foi construído com o método que ensina.",
+          "Não é uma lista de ferramentas. É um método (planejar, fazer, revisar, acumular) e o que ele produz: artigos com dados, um catálogo de skills (instruções que ensinam um assistente de IA a fazer algo bem) e duas formas de ligar esse catálogo ao seu assistente.",
           "O nome é uma tese, não só uma analogia: cada coisa que se aprende deve tornar a próxima mais fácil, não mais difícil. Como juros compostos. A seção seguinte explica como isso funciona na prática."
         ]
       },
@@ -194,8 +195,9 @@
         "group": "Start here",
         "title": "What Compound Design is",
         "body": [
-          "Compound Design is an open place where what one learns in artificial intelligence, design and programming accrues and stays available for anyone to use.",
-          "It is not a list of tools. It is a catalogue of knowledge ready to use: data-backed articles, a catalogue of skills (instructions that teach an AI assistant to do something well) and two ways to connect that catalogue to your assistant.",
+          "Compound Design is Danilo do Amaral's own framework for working with artificial intelligence in design and programming. Framework, here, means a way of working with a name, rules and tools that anyone can adopt.",
+          "It is AI-native: made for people and for AI agents to use with the same care. Every part exists in two forms, one to read on screen and one for an assistant to consume, and the framework itself was built with the method it teaches.",
+          "It is not a list of tools. It is a method (plan, do, review, compound) and what it produces: data-backed articles, a catalogue of skills (instructions that teach an AI assistant to do something well) and two ways to connect that catalogue to your assistant.",
           "The name is a thesis, not just an analogy: each thing learned should make the next one easier, not harder. Like compound interest. The next section explains how that works in practice."
         ]
       },

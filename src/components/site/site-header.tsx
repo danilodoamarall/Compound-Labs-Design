@@ -85,6 +85,11 @@ export function SiteHeader({
             {/* Abaixo de 420px a marca sozinha carrega a identidade: o nome
                 inteiro mais o bloco da direita não cabem num telefone. */}
             <span className="max-[419px]:sr-only">{t("Site.name")}</span>
+            {/* O descritor do que a marca é. Só a partir de 1024px: no meio
+                termo ele disputa com os gatilhos do menu. */}
+            <span className="ml-1 hidden font-mono text-[10.5px] font-normal uppercase tracking-[0.12em] text-muted-foreground lg:inline">
+              {t("Site.kind")}
+            </span>
           </Link>
         }
         actions={

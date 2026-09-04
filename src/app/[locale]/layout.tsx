@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { Newsreader, IBM_Plex_Sans, IBM_Plex_Mono, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -54,11 +55,25 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Omit<LayoutProps<"/[locale]">, "children">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Site" });
+  // O título padrão leva o descritor: é o que aparece na aba e na prévia do
+  // link quando alguém compartilha a home. As páginas internas mantêm só o nome
+  // no sufixo, senão cada título ficaria com quatro segmentos.
   return {
-    title: { default: t("name"), template: `%s · ${t("name")}` },
+    metadataBase: new URL(SITE_URL),
+    title: { default: `${t("name")} · ${t("kind")}`, template: `%s · ${t("name")}` },
     description: t("tagline"),
+    applicationName: t("name"),
     authors: [{ name: t("author") }],
     creator: t("author"),
+    openGraph: {
+      type: "website",
+      siteName: t("name"),
+      title: `${t("name")} · ${t("kind")}`,
+      description: t("tagline"),
+      locale: locale === "pt" ? "pt_BR" : "en_US",
+      url: `${SITE_URL}/${locale}`,
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 

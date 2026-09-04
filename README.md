@@ -1,8 +1,17 @@
 # Compound Design
 
-Hub aberto de design engineering com IA. Artigos que também são apresentação, um
-catálogo de skills com licença verificada repositório a repositório, e um CLI e um
-servidor MCP para o seu agente usar esse catálogo.
+**Compound Design é um framework autoral de Danilo do Amaral para trabalhar com
+IA em design e código. AI native: feito para pessoas e para agentes usarem com o
+mesmo cuidado.** Um método em quatro passos e o que ele produz: artigos que
+também são apresentação, um catálogo de skills com licença verificada repositório
+a repositório, e um CLI e um servidor MCP para o seu agente usar esse catálogo.
+
+AI native quer dizer duas coisas concretas. Cada parte existe em duas formas, uma
+para ler na tela e outra para um agente consumir: o catálogo é página, CLI e MCP;
+cada skill tem ficha e markdown; o servidor publica o próprio cartão. E o
+framework foi construído com o método que descreve, o que a tabela abaixo mostra.
+
+Site: https://compounddesign.vercel.app
 
 ## A filosofia
 
