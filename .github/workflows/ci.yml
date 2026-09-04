@@ -69,6 +69,9 @@ jobs:
       VERCEL_ORG_ID: team_52WCkqpHdjlc0elwXFcNdKED
       VERCEL_PROJECT_ID: prj_QLC2rqJyzQMv01a9TF1rNMsthH4X
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      # O runner do GitHub resolve IPv6 primeiro e a conexão com a Vercel
+      # estourava em ETIMEDOUT no upload. IPv4 primeiro evita isso.
+      NODE_OPTIONS: --dns-result-order=ipv4first
     steps:
       - name: Há token de deploy?
         id: token
@@ -107,4 +110,12 @@ jobs:
 
       - name: Publica o build já pronto
         if: steps.token.outputs.ok == 'true'
-        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
+        # Três tentativas: o upload é a única etapa que depende da rede entre o
+        # runner e a Vercel, e um timeout isolado não deve derrubar o deploy.
+        run: |
+          for tentativa in 1 2 3; do
+            if vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"; then exit 0; fi
+            echo "tentativa $tentativa falhou; aguardando 20s"
+            sleep 20
+          done
+          exit 1
