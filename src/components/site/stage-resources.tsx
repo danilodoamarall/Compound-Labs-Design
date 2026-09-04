@@ -103,7 +103,7 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
     if (!ul) return;
     const cartas = () => Array.from(ul.querySelectorAll<HTMLElement>("[data-bento-card]"));
 
-    const aoMover = (e: PointerEvent) => {
+    const aplicar = (e: PointerEvent) => {
       spotX.set(e.clientX);
       spotY.set(e.clientY);
       const g = ul.getBoundingClientRect();
@@ -137,10 +137,38 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
       cartas().forEach((c) => c.style.setProperty("--glow-intensity", "0"));
     };
 
-    document.addEventListener("pointermove", aoMover, { passive: true });
+    // Um cálculo por quadro, não por evento: o ponteiro dispara mais eventos
+    // que a tela pinta, e cada cálculo mede cinco retângulos.
+    let ultimo: PointerEvent | null = null;
+    let quadro = 0;
+    const aoMover = (e: PointerEvent) => {
+      ultimo = e;
+      if (!quadro) {
+        quadro = requestAnimationFrame(() => {
+          quadro = 0;
+          if (ultimo) aplicar(ultimo);
+        });
+      }
+    };
+
+    // O listener global só existe enquanto a grade está perto da tela. Fora
+    // dela, o ponteiro pode se mover à vontade sem custar nada.
+    const ligar = () => document.addEventListener("pointermove", aoMover, { passive: true });
+    const desligar = () => {
+      document.removeEventListener("pointermove", aoMover);
+      if (quadro) cancelAnimationFrame(quadro);
+      quadro = 0;
+      aoSair();
+    };
+    const observador = new IntersectionObserver(
+      ([entrada]) => (entrada.isIntersecting ? ligar() : desligar()),
+      { rootMargin: "200px" },
+    );
+    observador.observe(ul);
     ul.addEventListener("pointerleave", aoSair);
     return () => {
-      document.removeEventListener("pointermove", aoMover);
+      observador.disconnect();
+      desligar();
       ul.removeEventListener("pointerleave", aoSair);
     };
   }, [comPonteiro, spotX, spotY, spotOpacidade]);

@@ -1,5 +1,8 @@
 import { ImageResponse } from "next/og";
+import { notFound } from "next/navigation";
+import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import { DOME_BOX, DOME_PATH, DOME_STOPS } from "@/lib/brand";
 import { SITE_URL } from "@/lib/site-url";
 
@@ -15,6 +18,9 @@ export const contentType = "image/png";
 
 export default async function Image({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  // O layout não envolve esta rota, então a guarda de idioma é daqui: sem ela,
+  // /xx/opengraph-image derrubava a função em vez de responder 404.
+  if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({ locale, namespace: "Site" });
   const dominio = SITE_URL.replace(/^https?:\/\//, "");
 
