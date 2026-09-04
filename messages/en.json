@@ -124,7 +124,7 @@
     "searchPlaceholder": "Search by name, author or topic...",
     "count": "skills",
     "of": "of",
-    "empty": "Nothing matches those filters.",
+    "empty": "No skills match those filters. Clear a filter or search another term.",
     "hostedHint": "hosted",
     "pointerHint": "at source",
     "readAtSource": "Read at the source",
@@ -189,7 +189,7 @@
     "title": "FAQ",
     "dek": "What people ask about the data, the curation and reusing the content.",
     "searchPlaceholder": "Search the questions...",
-    "noResults": "No question matches that term."
+    "noResults": "No question matches that term. Try another word or read the full list below."
   },
   "Workflow": {
     "title": "Workflow",
@@ -240,14 +240,15 @@
   "Subscribe": {
     "title": "Get it first",
     "dek": "Leave your email and the next article reaches you before it goes public, with the deck and the data.",
-    "placeholder": "you@email.com",
+    "placeholder": "name@example.com",
     "cta": "Subscribe",
     "sending": "Sending...",
     "success": "Done. You're on the list.",
-    "errorInvalid": "That email does not look valid.",
+    "errorInvalid": "Enter a valid email, like name@example.com.",
     "errorGeneric": "Could not subscribe right now. Try again in a few minutes.",
     "errorNotConfigured": "Subscriptions are not wired up yet. Check back soon.",
-    "privacy": "Just the email, nothing else. Leave whenever you want, in one click."
+    "privacy": "Just the email, nothing else. Leave whenever you want, in one click.",
+    "emailLabel": "Email"
   },
   "Stage": {
     "subtitle": "A method for building with AI without lowering your bar, and what it produces: data-backed articles, a skills catalogue with verified licences, and a CLI and an MCP so your agent can use all of it.",
@@ -281,7 +282,7 @@
     "badge": "AI-native framework",
     "heroTitle": "The AI-native framework for people who design with AI.",
     "ctaPrimary": "See the AI tools",
-    "ctaSecondary": "How to use",
+    "ctaSecondary": "See how to use it",
     "docsCta": "New here? Read the documentation"
   },
   "Search": {

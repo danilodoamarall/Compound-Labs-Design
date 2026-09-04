@@ -498,7 +498,7 @@
               "nav": "workflow"
             },
             {
-              "text": "Abra uma skill e leia o texto na tela: é uma instrução em linguagem clara para um assistente.",
+              "text": "Abra uma skill e leia o texto na tela: é uma instrução em linguagem clara para um agente.",
               "nav": "skillsAgents"
             }
           ]
@@ -589,7 +589,7 @@
               "nav": "workflow"
             },
             {
-              "text": "Open a skill and read it on screen: it is a plain-language instruction for an assistant.",
+              "text": "Open a skill and read it on screen: it is a plain-language instruction for an agent.",
               "nav": "skillsAgents"
             }
           ]

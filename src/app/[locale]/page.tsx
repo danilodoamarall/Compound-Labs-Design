@@ -38,7 +38,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const articles = listArticles(locale);
 
   const subscribeLabels = {
-    placeholder: tsub("placeholder"), cta: tsub("cta"), sending: tsub("sending"),
+    emailLabel: tsub("emailLabel"), placeholder: tsub("placeholder"), cta: tsub("cta"), sending: tsub("sending"),
     success: tsub("success"), errorInvalid: tsub("errorInvalid"),
     errorGeneric: tsub("errorGeneric"), errorNotConfigured: tsub("errorNotConfigured"),
     privacy: tsub("privacy"),

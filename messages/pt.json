@@ -124,7 +124,7 @@
     "searchPlaceholder": "Busque por nome, autor ou assunto...",
     "count": "skills",
     "of": "de",
-    "empty": "Nada com esses filtros.",
+    "empty": "Nenhuma skill com esses filtros. Limpe um filtro ou busque outro termo.",
     "hostedHint": "hospedada",
     "pointerHint": "na origem",
     "readAtSource": "Ler na origem",
@@ -189,7 +189,7 @@
     "title": "FAQ",
     "dek": "O que perguntam sobre os dados, a curadoria e o uso do conteúdo.",
     "searchPlaceholder": "Buscar nas perguntas...",
-    "noResults": "Nenhuma pergunta com esse termo."
+    "noResults": "Nenhuma pergunta com esse termo. Tente outra palavra ou leia a lista completa abaixo."
   },
   "Workflow": {
     "title": "Workflow",
@@ -240,14 +240,15 @@
   "Subscribe": {
     "title": "Receba antes",
     "dek": "Deixe seu e-mail e o próximo artigo chega até você antes de ficar público, com o deck e os dados junto.",
-    "placeholder": "seu@email.com",
+    "placeholder": "nome@exemplo.com",
     "cta": "Quero receber",
     "sending": "Enviando...",
     "success": "Pronto. Você está na lista.",
-    "errorInvalid": "Esse e-mail não parece válido.",
-    "errorGeneric": "Não consegui inscrever agora. Tente de novo em alguns minutos.",
+    "errorInvalid": "Digite um e-mail válido, como nome@exemplo.com.",
+    "errorGeneric": "Não foi possível inscrever agora. Tente de novo em alguns minutos.",
     "errorNotConfigured": "A inscrição ainda não está ligada. Volte em breve.",
-    "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique."
+    "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique.",
+    "emailLabel": "E-mail"
   },
   "Stage": {
     "subtitle": "Um método para construir com IA sem baixar o seu padrão, e o que ele produz: artigos com dados, um catálogo de skills com licença verificada, e um CLI e um MCP para o seu agente usar tudo isso.",
@@ -281,7 +282,7 @@
     "badge": "Framework AI native",
     "heroTitle": "O framework AI native para quem projeta com IA.",
     "ctaPrimary": "Ver as AI Tools",
-    "ctaSecondary": "Como usar",
+    "ctaSecondary": "Ver como usar",
     "docsCta": "Novo por aqui? Leia a documentação"
   },
   "Search": {

@@ -4,6 +4,8 @@ import { useState, type FormEvent } from "react";
 import { ArrowRight, Check } from "lucide-react";
 
 export type SubscribeLabels = {
+  /** O rótulo do campo ("E-mail"). O placeholder é só o exemplo do formato. */
+  emailLabel: string;
   placeholder: string;
   cta: string;
   sending: string;
@@ -72,7 +74,7 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
   return (
     <form onSubmit={enviar} noValidate className="space-y-3">
       <div className="flex gap-2">
-        <label className="sr-only" htmlFor="subscribe-email">{labels.placeholder}</label>
+        <label className="sr-only" htmlFor="subscribe-email">{labels.emailLabel}</label>
         <input
           id="subscribe-email"
           type="email"
