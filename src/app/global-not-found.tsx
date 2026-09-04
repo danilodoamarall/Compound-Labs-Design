@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { DOME_PATH, DOME_STOPS, DOME_BOX } from "@/lib/brand";
 
 export const metadata: Metadata = { title: "404 · Compound Design" };
@@ -52,12 +53,12 @@ export default function GlobalNotFound() {
             Page not found — the address doesn&apos;t exist or has moved.
           </p>
           <span style={{ display: "inline-flex", gap: 20, fontSize: 15 }}>
-            <a href="/pt" style={{ color: "#5cc5b2", textDecoration: "underline", textUnderlineOffset: 4 }}>
+            <Link href="/pt" style={{ color: "#5cc5b2", textDecoration: "underline", textUnderlineOffset: 4 }}>
               Voltar ao início
-            </a>
-            <a href="/en" style={{ color: "#5cc5b2", textDecoration: "underline", textUnderlineOffset: 4 }}>
+            </Link>
+            <Link href="/en" style={{ color: "#5cc5b2", textDecoration: "underline", textUnderlineOffset: 4 }}>
               Back home
-            </a>
+            </Link>
           </span>
         </main>
       </body>
