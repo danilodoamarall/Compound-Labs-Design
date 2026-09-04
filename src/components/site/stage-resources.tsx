@@ -56,11 +56,12 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
                 style={{ background: `radial-gradient(120% 90% at 50% 0%, ${card.cover[0]}, ${card.cover[1]} 70%, transparent)` }}
               />
               {card.visual}
-              {/* Desvanecimento na base, para o visual não encostar no texto. */}
-              <span
-                className="absolute inset-x-0 bottom-0 h-16"
-                style={{ background: "linear-gradient(to top, rgba(18,15,23,0.9), transparent)" }}
-              />
+              {/* Desvanecimento na base, para o visual não encostar no texto.
+                  As paradas seguem uma curva de easing em vez de linear: o
+                  gradiente linear cru deixa uma borda dura visível no ponto em
+                  que ele começa. O plugin easing-gradients redistribui as
+                  paradas e emite em oklch, que é o espaço do nosso Tailwind. */}
+              <span className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[rgba(18,15,23,0.95)] to-transparent gradient-ease-out" />
             </span>
 
             <span className="relative p-5">

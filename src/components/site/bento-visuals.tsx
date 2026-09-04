@@ -4,10 +4,12 @@ import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { BookOpen, Boxes, Code2, FileText, Image as ImageIcon, Layers, PenTool, Sparkles, Terminal } from "lucide-react";
 
-/** Curvas do easing.dev. Entrada com desaceleração longa, e uma mais seca para
- *  microinterações. Ficam nomeadas aqui para não virarem números soltos. */
-const ENTRADA = [0.22, 1, 0.36, 1] as const;
-const SECA = [0.4, 0, 0.2, 1] as const;
+import { EASE } from "@/lib/easing";
+
+// Curvas do easing.dev, pelo nome. A de entrada é a snappyOut, que começa rápido
+// e assenta devagar; a seca é a outCubic, para microinterações.
+const ENTRADA = EASE.snappyOut;
+const SECA = EASE.outCubic;
 
 /** Cada visual respeita quem pediu menos movimento: em vez de não renderizar,
  *  entra já no estado final. O card continua completo, só não anima. */

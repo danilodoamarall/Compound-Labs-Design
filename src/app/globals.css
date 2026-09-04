@@ -2,6 +2,11 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Distribui as paradas do gradiente por uma curva de easing. O gradiente linear
+   cru cria uma borda dura no começo e no fim, que é o que aparecia no véu da
+   base dos cards do bento. Plugin MIT, nativo em oklch. */
+@plugin "easing-gradients";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
