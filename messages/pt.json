@@ -1,6 +1,6 @@
 {
   "Site": {
-    "name": "Compound Labs Design",
+    "name": "AI Builders Lab",
     "tagline": "O que adotar, testar e ignorar em IA.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer & AI Builder · Labs",
@@ -155,7 +155,7 @@
     "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos deste hub são de Danilo do Amaral."
   },
   "Footer": {
-    "rights": "Compound Labs Design · conteúdo por Danilo do Amaral",
+    "rights": "AI Builders Lab · conteúdo por Danilo do Amaral",
     "source": "Dados: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Construído com Next.js e React Bits"
   },

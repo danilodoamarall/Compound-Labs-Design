@@ -1,22 +1,34 @@
-/** Marca do Labs: um corpo orgânico cortado por um canal em S, deixando duas
-    lobas entrelaçadas. Material herdado do ícone: gradiente iridescente frio a
-    quente, do azul ao magenta, passando pelo teal do hub.
+import { DOME_BOX, DOME_PATH, DOME_STOPS } from "@/lib/brand";
 
-    Os ids de gradiente e máscara são globais no documento, então cada uso na
-    mesma página precisa de um `idPrefix` próprio. É uma prop e não useId para
-    o componente continuar servindo Server e Client Components. */
+/** Marca do AI Builders Lab: um domo com a base côncava, como um sol nascendo
+    por trás de uma curva. O material é iridescente e vai do azul frio na
+    esquerda ao creme no alto e ao laranja na direita, com granulado por cima.
+
+    O caminho e as paradas de cor vêm de `src/lib/brand.ts`, que também gera os
+    SVGs de `public/brand` e o ícone do aplicativo. Uma fonte só: mudar a marca
+    é rodar `node scripts/build-brand.mjs .` e os três acompanham.
+
+    Os ids de gradiente, filtro e máscara são globais no documento, então cada
+    uso na mesma página precisa de um `idPrefix` próprio. É prop e não `useId`
+    para o componente continuar servindo Server e Client Components. */
 export function LabsMark({
   size = 22,
   idPrefix = "labs",
   className,
   title,
+  /** O granulado custa um filtro por instância. Em tamanhos pequenos ele não
+      aparece e só pesa, então some abaixo de 40px. */
+  grain,
 }: {
   size?: number;
   idPrefix?: string;
   className?: string;
   title?: string;
+  grain?: boolean;
 }) {
   const id = (name: string) => `${idPrefix}-${name}`;
+  const comGrao = grain ?? size >= 40;
+
   return (
     <svg
       viewBox="0 0 1024 1024"
@@ -30,50 +42,56 @@ export function LabsMark({
     >
       {title ? <title>{title}</title> : null}
       <defs>
-        <linearGradient id={id("base")} x1="0.06" y1="0.1" x2="0.95" y2="0.9">
-          <stop offset="0" stopColor="#8fb7ea" />
-          <stop offset="0.22" stopColor="#4cc4b4" />
-          <stop offset="0.45" stopColor="#e9dfc6" />
-          <stop offset="0.66" stopColor="#f2b45f" />
-          <stop offset="0.85" stopColor="#e87f6d" />
-          <stop offset="1" stopColor="#cf6499" />
+        {/* Ancorado no desenho, não na caixa de 1024: na caixa cheia o azul do
+            começo caía fora do domo e a marca saía inteira quente. */}
+        <linearGradient
+          id={id("mat")}
+          gradientUnits="userSpaceOnUse"
+          x1={DOME_BOX.x0}
+          y1={430}
+          x2={DOME_BOX.x1}
+          y2={560}
+        >
+          {DOME_STOPS.map(([offset, color]) => (
+            <stop key={offset} offset={offset} stopColor={color} />
+          ))}
         </linearGradient>
-        <radialGradient id={id("violet")} cx="0.14" cy="0.18" r="0.5">
-          <stop offset="0" stopColor="#7b62dd" stopOpacity="0.6" />
-          <stop offset="1" stopColor="#7b62dd" stopOpacity="0" />
+
+        {/* O brilho alto, deslocado para cima e para a esquerda do centro. */}
+        <radialGradient id={id("luz")} gradientUnits="userSpaceOnUse" cx={430} cy={350} r={255}>
+          <stop offset="0" stopColor="#fffdf6" stopOpacity="0.5" />
+          <stop offset="1" stopColor="#fffdf6" stopOpacity="0" />
         </radialGradient>
-        <radialGradient id={id("teal")} cx="0.2" cy="0.74" r="0.55">
-          <stop offset="0" stopColor="#16a98c" stopOpacity="0.85" />
-          <stop offset="1" stopColor="#16a98c" stopOpacity="0" />
+
+        {/* A sombra que dá volume à base côncava. */}
+        <radialGradient id={id("fundo")} gradientUnits="userSpaceOnUse" cx={512} cy={785} r={300}>
+          <stop offset="0" stopColor="#4b3f5e" stopOpacity="0.34" />
+          <stop offset="1" stopColor="#4b3f5e" stopOpacity="0" />
         </radialGradient>
-        <radialGradient id={id("magenta")} cx="0.88" cy="0.84" r="0.5">
-          <stop offset="0" stopColor="#d63c8a" stopOpacity="0.7" />
-          <stop offset="1" stopColor="#d63c8a" stopOpacity="0" />
-        </radialGradient>
-        <radialGradient id={id("glow")} cx="0.48" cy="0.4" r="0.34">
-          <stop offset="0" stopColor="#fffaf0" stopOpacity="0.75" />
-          <stop offset="1" stopColor="#fffaf0" stopOpacity="0" />
-        </radialGradient>
-        <mask id={id("split")}>
-          <path
-            fill="#fff"
-            d="M512 168 C 646 168 856 306 856 512 C 856 702 698 856 512 856 C 322 856 168 694 168 512 C 168 314 378 168 512 168 Z"
-          />
-          <path
-            fill="none"
-            stroke="#000"
-            strokeWidth="86"
-            strokeLinecap="round"
-            d="M520 112 C 706 300 660 424 512 512 C 364 600 318 726 504 912"
-          />
-        </mask>
+
+        {comGrao ? (
+          <filter id={id("grao")} x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" result="ruido" />
+            <feColorMatrix in="ruido" type="saturate" values="0" result="cinza" />
+            <feComponentTransfer in="cinza" result="grao">
+              <feFuncA type="linear" slope="0.17" intercept="0" />
+            </feComponentTransfer>
+            <feComposite in="grao" in2="SourceGraphic" operator="in" />
+          </filter>
+        ) : null}
+
+        <clipPath id={id("domo")}>
+          <path d={DOME_PATH} />
+        </clipPath>
       </defs>
-      <g mask={`url(#${id("split")})`}>
-        <rect width="1024" height="1024" fill={`url(#${id("base")})`} />
-        <rect width="1024" height="1024" fill={`url(#${id("violet")})`} />
-        <rect width="1024" height="1024" fill={`url(#${id("teal")})`} />
-        <rect width="1024" height="1024" fill={`url(#${id("magenta")})`} />
-        <rect width="1024" height="1024" fill={`url(#${id("glow")})`} />
+
+      <g clipPath={`url(#${id("domo")})`}>
+        <rect width="1024" height="1024" fill={`url(#${id("mat")})`} />
+        <rect width="1024" height="1024" fill={`url(#${id("fundo")})`} />
+        <rect width="1024" height="1024" fill={`url(#${id("luz")})`} />
+        {comGrao ? (
+          <rect width="1024" height="1024" fill="#fff" filter={`url(#${id("grao")})`} opacity="0.5" />
+        ) : null}
       </g>
     </svg>
   );
