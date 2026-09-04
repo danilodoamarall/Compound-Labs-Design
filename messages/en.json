@@ -36,7 +36,8 @@
     "menuLabel": "Framework sections",
     "cli": "CLI",
     "mcp": "MCP",
-    "browse": "Browse"
+    "browse": "Browse",
+    "howTo": "How to use"
   },
   "Home": {
     "title": "An AI-native framework for design engineering.",
@@ -50,7 +51,7 @@
         "short": "Skills catalogue with verified licences"
       },
       "docs": {
-        "short": "What the framework is and how to use it, from scratch"
+        "short": "What the framework is, explained from scratch"
       },
       "faq": {
         "short": "Questions about data, licences and reuse"
@@ -72,6 +73,9 @@
       },
       "browse": {
         "short": "Everything published, searchable and dated"
+      },
+      "howTo": {
+        "short": "Where to start, for your role"
       }
     }
   },
@@ -278,7 +282,7 @@
     "heroTitle": "The AI-native framework for people who design with AI.",
     "ctaPrimary": "Install the CLI",
     "ctaSecondary": "Connect over MCP",
-    "docsCta": "New here? Read the documentation"
+    "docsCta": "New here? See how to use it"
   },
   "Search": {
     "trigger": "Search",
@@ -390,5 +394,13 @@
     "pagingBody": "The whole catalogue in one response came to 157 KB, roughly 40,000 tokens landing in the context of an agent that only wanted to know what exists. Listings come in pages of 40 and say how much was left out, with the offset for the next. Nothing is trimmed in silence.",
     "limits": "Limits",
     "limitsBody": "No authentication, with a ceiling of 120 calls per minute per address. A normal session makes about a dozen; the ceiling is there to catch an agent stuck in a loop."
+  },
+  "HowTo": {
+    "title": "How to use",
+    "dek": "Pick your role and follow three steps. Each step leads to a real page. A two-minute read.",
+    "summaryTitle": "In two minutes",
+    "stepsLabel": "Three steps",
+    "notYou": "None of these fit?",
+    "notYouCta": "The documentation explains everything from scratch"
   }
 }

@@ -14,6 +14,7 @@ export const routing = defineRouting({
     "/skills-agents/mcp": "/skills-agents/mcp",
     "/skills-agents/[skill]": "/skills-agents/[skill]",
     "/sobre": { pt: "/sobre", en: "/about" },
+    "/como-usar": { pt: "/como-usar", en: "/how-to-use" },
     "/workflow": "/workflow",
     "/explorar": { pt: "/explorar", en: "/browse" },
     "/r/[key]": "/r/[key]",

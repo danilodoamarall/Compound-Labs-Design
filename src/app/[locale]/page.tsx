@@ -89,9 +89,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           // conteúdo: quem chega aqui está a um comando de usar o catálogo.
           primary={{ label: t("ctaPrimary"), href: navPath("cli", locale) }}
           secondary={{ label: t("ctaSecondary"), href: navPath("mcp", locale) }}
-          // Quem chegou sem saber o que é um agente precisa da documentação
-          // antes de qualquer comando. O terceiro caminho é para essa pessoa.
-          tertiary={{ label: t("docsCta"), href: navPath("docs", locale) }}
+          // Quem chegou sem saber o que é um agente precisa de um mapa antes de
+          // qualquer comando. O terceiro caminho leva ao "Como usar": três
+          // passos por papel, com a documentação a um clique de lá.
+          tertiary={{ label: t("docsCta"), href: navPath("howTo", locale) }}
         />
       </div>
 

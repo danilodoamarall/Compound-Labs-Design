@@ -102,7 +102,7 @@
       },
       {
         "id": "usar-no-claude-code",
-        "group": "Como usar",
+        "group": "Na prática",
         "title": "Ligar o catálogo ao Claude Code",
         "body": [
           "O Claude Code é o agente da Anthropic que roda no terminal. Ele fala MCP. Um comando conecta os dois; depois disso, o catálogo aparece para ele como um conjunto de ferramentas."
@@ -116,7 +116,7 @@
       },
       {
         "id": "usar-em-outros-agentes",
-        "group": "Como usar",
+        "group": "Na prática",
         "title": "Usar em outros agentes",
         "body": [
           "Se o seu agente não fala MCP, ou se você prefere ver antes o que vai entregar a ele, use o CLI. O comando abaixo imprime o texto de uma skill no terminal; copie e cole na conversa com o agente.",
@@ -126,7 +126,7 @@
       },
       {
         "id": "artigos",
-        "group": "Como usar",
+        "group": "Na prática",
         "title": "Artigos que também são slides",
         "body": [
           "Cada artigo existe em dois modos. Leitura, como um texto normal. Apresentação, em que os mesmos blocos viram slides, com os gráficos em tela cheia, para você usar numa reunião.",
@@ -135,7 +135,7 @@
       },
       {
         "id": "graficos",
-        "group": "Como usar",
+        "group": "Na prática",
         "title": "Como ler os gráficos",
         "body": [
           "Todo gráfico dos artigos lê os dados diretamente da pesquisa. Nenhum valor é digitado à mão. Quando um artigo cita \"82,6%\", esse número veio do mesmo arquivo que desenhou a barra ao lado.",
@@ -291,7 +291,7 @@
       },
       {
         "id": "usar-no-claude-code",
-        "group": "How to use",
+        "group": "In practice",
         "title": "Connect the catalogue to Claude Code",
         "body": [
           "Claude Code is Anthropic's agent that runs in the terminal. It speaks MCP. One command connects the two; after that, the catalogue shows up to it as a set of tools."
@@ -305,7 +305,7 @@
       },
       {
         "id": "usar-em-outros-agentes",
-        "group": "How to use",
+        "group": "In practice",
         "title": "Use it in other agents",
         "body": [
           "If your agent does not speak MCP, or if you prefer to see what you are handing it first, use the CLI. The command below prints the text of a skill in the terminal; copy it and paste it into the conversation with the agent.",
@@ -315,7 +315,7 @@
       },
       {
         "id": "artigos",
-        "group": "How to use",
+        "group": "In practice",
         "title": "Articles that are also slides",
         "body": [
           "Each article exists in two modes. Reading, as a normal text. Presenting, where the same blocks become slides, with the charts full screen, for you to use in a meeting.",
@@ -324,7 +324,7 @@
       },
       {
         "id": "graficos",
-        "group": "How to use",
+        "group": "In practice",
         "title": "How to read the charts",
         "body": [
           "Each chart in the articles reads its data straight from the survey. No value is typed by hand. When an article cites \"82.6%\", that number came from the same file that drew the bar beside it.",
@@ -474,5 +474,189 @@
         "a": "The survey data is CC BY 4.0 and asks for attribution to UX Tools. The texts and charts here are mine; use them freely inside the company, and cite them when they go outside."
       }
     ]
+  },
+  "howTo": {
+    "pt": {
+      "summary": [
+        "Compound Design é um framework para trabalhar com IA em design e código: um método e o que ele produz.",
+        "Você recebe artigos com dados, um catálogo de skills com licença verificada, e um CLI e um MCP para o seu agente usar o catálogo.",
+        "Escolha o seu papel abaixo e siga três passos. Nenhum exige conta, instalação ou cartão."
+      ],
+      "personas": [
+        {
+          "id": "designer",
+          "nav": "articles",
+          "role": "Designer",
+          "gain": "Entenda o cenário e escolha ferramentas sem programar.",
+          "steps": [
+            {
+              "text": "Leia o primeiro artigo da série, com os dados da pesquisa.",
+              "nav": "articles"
+            },
+            {
+              "text": "Veja as ferramentas por etapa do trabalho, de desenhar a publicar.",
+              "nav": "workflow"
+            },
+            {
+              "text": "Abra uma skill e leia o texto na tela: é uma instrução em linguagem clara para um assistente.",
+              "nav": "skillsAgents"
+            }
+          ]
+        },
+        {
+          "id": "design-engineer",
+          "nav": "mcp",
+          "role": "Design engineer",
+          "gain": "Ligue o seu agente ao catálogo e peça a skill certa na hora.",
+          "steps": [
+            {
+              "text": "Conecte o MCP no Claude Code ou em outro agente, com o comando abaixo.",
+              "nav": "mcp"
+            },
+            {
+              "text": "Peça ao agente uma skill pelo assunto: ele usa list_skills e get_skill sozinho.",
+              "nav": "mcp"
+            },
+            {
+              "text": "Confira a procedência e a licença no placar antes de adotar.",
+              "nav": "skillsAgents"
+            }
+          ],
+          "code": "claude mcp add --transport http compound-design https://compounddesign.vercel.app/mcp"
+        },
+        {
+          "id": "front-end",
+          "nav": "cli",
+          "role": "Desenvolvedor front-end",
+          "gain": "Use o catálogo pelo terminal, sem instalar nada.",
+          "steps": [
+            {
+              "text": "Rode o CLI e comece pela skill de roteamento, com o comando abaixo.",
+              "nav": "cli"
+            },
+            {
+              "text": "Leia uma skill completa com get e cole no seu agente.",
+              "nav": "cli"
+            },
+            {
+              "text": "Filtre por tópico, como motion ou acessibilidade, quando precisar.",
+              "nav": "skillsAgents"
+            }
+          ],
+          "code": "npx @compound-design/skills start"
+        },
+        {
+          "id": "lideranca",
+          "nav": "research",
+          "role": "Líder de design ou de produto",
+          "gain": "Apresente o cenário para o time com dados abertos.",
+          "steps": [
+            {
+              "text": "Abra um artigo em modo apresentação: o mesmo texto vira slides.",
+              "nav": "articles"
+            },
+            {
+              "text": "Use a pesquisa com os números abertos e o CSV tratado.",
+              "nav": "research"
+            },
+            {
+              "text": "Veja as licenças e o que pode ser reutilizado.",
+              "nav": "faq"
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "summary": [
+        "Compound Design is a framework for working with AI in design and code: a method and what it produces.",
+        "You get data-backed articles, a catalogue of skills with verified licences, and a CLI and an MCP so your agent can use the catalogue.",
+        "Pick your role below and follow three steps. None requires an account, an install or a card."
+      ],
+      "personas": [
+        {
+          "id": "designer",
+          "nav": "articles",
+          "role": "Designer",
+          "gain": "Understand the landscape and pick tools without coding.",
+          "steps": [
+            {
+              "text": "Read the first article in the series, with the survey data.",
+              "nav": "articles"
+            },
+            {
+              "text": "See the tools by stage of the work, from design to ship.",
+              "nav": "workflow"
+            },
+            {
+              "text": "Open a skill and read it on screen: it is a plain-language instruction for an assistant.",
+              "nav": "skillsAgents"
+            }
+          ]
+        },
+        {
+          "id": "design-engineer",
+          "nav": "mcp",
+          "role": "Design engineer",
+          "gain": "Connect your agent to the catalogue and ask for the right skill on the spot.",
+          "steps": [
+            {
+              "text": "Connect the MCP in Claude Code or another agent, with the command below.",
+              "nav": "mcp"
+            },
+            {
+              "text": "Ask the agent for a skill by topic: it uses list_skills and get_skill on its own.",
+              "nav": "mcp"
+            },
+            {
+              "text": "Check provenance and licence on the leaderboard before adopting.",
+              "nav": "skillsAgents"
+            }
+          ],
+          "code": "claude mcp add --transport http compound-design https://compounddesign.vercel.app/mcp"
+        },
+        {
+          "id": "front-end",
+          "nav": "cli",
+          "role": "Front-end developer",
+          "gain": "Use the catalogue from the terminal, nothing to install.",
+          "steps": [
+            {
+              "text": "Run the CLI and start with the routing skill, with the command below.",
+              "nav": "cli"
+            },
+            {
+              "text": "Read a full skill with get and paste it into your agent.",
+              "nav": "cli"
+            },
+            {
+              "text": "Filter by topic, such as motion or accessibility, when you need to.",
+              "nav": "skillsAgents"
+            }
+          ],
+          "code": "npx @compound-design/skills start"
+        },
+        {
+          "id": "lideranca",
+          "nav": "research",
+          "role": "Design or product lead",
+          "gain": "Present the landscape to your team with open data.",
+          "steps": [
+            {
+              "text": "Open an article in presentation mode: the same text becomes slides.",
+              "nav": "articles"
+            },
+            {
+              "text": "Use the survey with the open numbers and the treated CSV.",
+              "nav": "research"
+            },
+            {
+              "text": "See the licences and what can be reused.",
+              "nav": "faq"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

@@ -58,7 +58,7 @@ export const NAV_GROUPS = [
   { key: "studies", itens: ["articles", "research"] },
   { key: "resources", itens: ["skillsAgents", "workflow", "browse"] },
   { key: "aiTools", itens: ["cli", "mcp"] },
-  { key: "framework", itens: ["docs", "about", "faq"] },
+  { key: "framework", itens: ["howTo", "docs", "about", "faq"] },
 ] as const;
 
 export type NavKey = (typeof NAV_GROUPS)[number]["itens"][number];
@@ -74,6 +74,7 @@ export const NAV_HREF: Record<NavKey, { pt: string; en: string }> = {
   docs: { pt: "/docs", en: "/docs" },
   faq: { pt: "/faq", en: "/faq" },
   about: { pt: "/sobre", en: "/about" },
+  howTo: { pt: "/como-usar", en: "/how-to-use" },
 };
 
 export function navPath(key: NavKey, locale: Locale) {

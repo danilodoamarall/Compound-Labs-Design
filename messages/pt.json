@@ -36,7 +36,8 @@
     "menuLabel": "Seções do framework",
     "cli": "CLI",
     "mcp": "MCP",
-    "browse": "Explorar"
+    "browse": "Explorar",
+    "howTo": "Como usar"
   },
   "Home": {
     "title": "Um framework AI native para design engineering.",
@@ -50,7 +51,7 @@
         "short": "Catálogo de skills com licença verificada"
       },
       "docs": {
-        "short": "O que é o framework e como usar, do zero"
+        "short": "O que é o framework, explicado do zero"
       },
       "faq": {
         "short": "Perguntas sobre dados, licenças e uso"
@@ -72,6 +73,9 @@
       },
       "browse": {
         "short": "Tudo que está publicado, com busca e data"
+      },
+      "howTo": {
+        "short": "Por onde começar, para o seu papel"
       }
     }
   },
@@ -278,7 +282,7 @@
     "heroTitle": "O framework AI native para quem projeta com IA.",
     "ctaPrimary": "Instalar o CLI",
     "ctaSecondary": "Conectar por MCP",
-    "docsCta": "Novo por aqui? Leia a documentação"
+    "docsCta": "Novo por aqui? Veja como usar"
   },
   "Search": {
     "trigger": "Buscar",
@@ -390,5 +394,13 @@
     "pagingBody": "O catálogo inteiro numa resposta dava 157 KB, cerca de 40 mil tokens entrando no contexto de um agente que só queria saber o que existe. A listagem vem em páginas de 40 e diz quanto ficou de fora, com o offset da próxima. Nada é cortado em silêncio.",
     "limits": "Limites",
     "limitsBody": "Sem autenticação, com teto de 120 chamadas por minuto por endereço. Uma sessão normal faz uma dezena; o teto existe para conter agente preso em laço."
+  },
+  "HowTo": {
+    "title": "Como usar",
+    "dek": "Escolha o seu papel e siga três passos. Cada passo leva a uma página real. Leitura de dois minutos.",
+    "summaryTitle": "Em dois minutos",
+    "stepsLabel": "Três passos",
+    "notYou": "Não se encaixou em nenhum?",
+    "notYouCta": "A documentação explica tudo do zero"
   }
 }
