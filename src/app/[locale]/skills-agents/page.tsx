@@ -74,7 +74,7 @@ export default async function SkillsPage({ params, searchParams }: PageProps<"/[
           <a
             key={chave}
             href={`/${locale}/skills-agents/${chave}`}
-            className="rounded-xl border border-border p-5 outline-none transition-colors hover:border-teal/40 focus-visible:ring-2 focus-visible:ring-ring"
+            className="rounded-xl border border-border p-5 outline-hidden transition-colors hover:border-teal/40 focus-visible:ring-2 focus-visible:ring-ring"
           >
             <span className="flex items-center gap-2">
               <Icone size={16} aria-hidden className="text-muted-foreground" />

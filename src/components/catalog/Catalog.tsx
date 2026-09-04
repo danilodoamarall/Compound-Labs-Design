@@ -43,7 +43,7 @@ export function Catalog({ items, groups, groupLabels, allLabel, filterLabel, dra
               {i.badge ? <p className="mt-1 font-mono text-xs text-muted-foreground">{i.badge}</p> : null}
               <div className="mt-3 text-sm leading-relaxed text-muted-foreground">{i.body}</div>
               {i.footer ? <div className="mt-4 border-t border-border pt-3 text-sm">{i.footer}</div> : null}
-              {i.draft ? <p className="mt-3 inline-block rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-warm">{draftLabel}</p> : null}
+              {i.draft ? <p className="mt-3 inline-block rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-warm-text">{draftLabel}</p> : null}
             </SpotlightCard>
           </li>
         ))}

@@ -60,7 +60,7 @@ export default async function WorkflowPage({ params }: PageProps<"/[locale]/work
                     </span>
                     <span className="text-[15px] leading-relaxed text-muted-foreground">
                       {locale === "pt" ? tool.pt : tool.en}
-                      <span className="ml-2 font-mono text-[11px] uppercase tracking-wide text-muted-foreground/60">
+                      <span className="ml-2 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
                         {tool.category}
                       </span>
                     </span>

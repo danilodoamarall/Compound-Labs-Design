@@ -71,7 +71,7 @@ const inputShellClassName = cn(
 );
 
 const inputControlClassName = cn(
-  "h-full w-full min-w-0 flex-1 bg-transparent text-[16px] text-foreground outline-none placeholder:text-muted-foreground sm:text-sm",
+  "h-full w-full min-w-0 flex-1 bg-transparent text-[16px] text-foreground outline-hidden placeholder:text-muted-foreground sm:text-sm",
   "[-webkit-tap-highlight-color:transparent] read-only:cursor-default disabled:cursor-not-allowed"
 );
 
@@ -81,7 +81,7 @@ const inputSizeClassNames = {
 } as const;
 
 const inputActionClassName =
-  "flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-md text-muted-foreground/70 transition-colors hover:bg-accent/60 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 disabled:cursor-not-allowed disabled:opacity-50";
+  "flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-md text-muted-foreground/70 transition-colors hover:bg-accent/60 hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring/30 disabled:cursor-not-allowed disabled:opacity-50";
 
 type InputSize = keyof typeof inputSizeClassNames;
 

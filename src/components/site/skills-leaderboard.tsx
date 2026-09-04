@@ -81,7 +81,7 @@ function agrupar(linhas: LinhaSkill[]): Grupo[] {
 function Celulas({ linha, rotulos }: { linha: LinhaSkill; rotulos: RotulosPlacar }) {
   return (
     <>
-      <span className="shrink-0 pt-0.5 text-right font-mono text-[13px] tabular-nums text-muted-foreground/70 sm:w-9">
+      <span className="shrink-0 pt-0.5 text-right font-mono text-[13px] tabular-nums text-muted-foreground sm:w-9">
         {linha.rank}
       </span>
 
@@ -122,7 +122,7 @@ function Linha({ linha, rotulos }: { linha: LinhaSkill; rotulos: RotulosPlacar }
         href={linha.href}
         target={linha.externo ? "_blank" : undefined}
         rel={linha.externo ? "noreferrer" : undefined}
-        className="flex items-start gap-3 rounded-lg px-2 py-3 outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring sm:gap-4"
+        className="flex items-start gap-3 rounded-lg px-2 py-3 outline-hidden transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring sm:gap-4"
       >
         <Celulas linha={linha} rotulos={rotulos} />
       </a>
@@ -182,7 +182,7 @@ export function SkillsLeaderboard({
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
             placeholder={rotulos.searchPlaceholder}
-            className="h-10 w-full rounded-lg border border-border bg-card pl-9 pr-3 text-[14px] outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="h-10 w-full rounded-lg border border-border bg-card pl-9 pr-3 text-[16px] sm:text-[14px] outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
           />
         </label>
         <span className="font-mono text-[12px] tabular-nums text-muted-foreground">
@@ -227,7 +227,6 @@ export function SkillsLeaderboard({
           {/* O cabeçalho da tabela, na chave do skills.sh: mono, versalete,
               esmaecido. É o que dá o tom técnico sem precisar de cor. */}
           <div
-            aria-hidden
             className="mt-6 flex items-center gap-3 border-b border-border px-2 pb-2 font-mono text-[11.5px] uppercase tracking-[0.08em] text-muted-foreground sm:gap-4"
           >
             <span className="shrink-0 text-right sm:w-9">#</span>
@@ -247,7 +246,7 @@ export function SkillsLeaderboard({
                     type="button"
                     onClick={() => alternar(g.repo)}
                     aria-expanded={abertos.has(g.repo)}
-                    className="flex w-full items-center gap-2 rounded-lg px-2 py-2.5 text-left font-mono text-[12.5px] text-muted-foreground outline-none transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+                    className="flex w-full items-center gap-2 rounded-lg px-2 py-2.5 text-left font-mono text-[12.5px] text-muted-foreground outline-hidden transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <ChevronDown
                       size={13}

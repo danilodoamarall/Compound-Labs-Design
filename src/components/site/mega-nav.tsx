@@ -94,7 +94,7 @@ export function MegaNav({
                 onMouseEnter={() => setAberto(g.key)}
                 onFocus={() => setAberto(g.key)}
                 onClick={() => setAberto(on ? null : g.key)}
-                className={`inline-flex h-9 items-center gap-1.5 rounded-md px-3 text-[13.5px] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-current ${
+                className={`inline-flex h-9 items-center gap-1.5 rounded-md px-3 text-[13.5px] outline-hidden transition-colors focus-visible:ring-2 focus-visible:ring-current ${
                   on ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -118,7 +118,7 @@ export function MegaNav({
             aria-controls={`${painelId}-sanfona`}
             aria-label={mobile ? labels.close : labels.open}
             onClick={() => setMobile((v) => !v)}
-            className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground outline-none focus-visible:ring-2 focus-visible:ring-current md:hidden"
+            className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground outline-hidden focus-visible:ring-2 focus-visible:ring-current md:hidden"
           >
             {mobile ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -156,7 +156,7 @@ export function MegaNav({
                       <a
                         href={l.href}
                         onClick={() => setAberto(null)}
-                        className="group block rounded-lg p-3 outline-none transition-colors hover:bg-accent focus-visible:ring-2 focus-visible:ring-current"
+                        className="group block rounded-lg p-3 outline-hidden transition-colors hover:bg-accent focus-visible:ring-2 focus-visible:ring-current"
                       >
                         <span className="flex items-center gap-1.5 text-[14px] font-medium">
                           {l.label}
@@ -202,7 +202,7 @@ export function MegaNav({
                       type="button"
                       aria-expanded={on}
                       onClick={() => setSanfona(on ? null : g.key)}
-                      className="flex w-full items-center justify-between py-3 text-left text-[15px] font-medium outline-none focus-visible:ring-2 focus-visible:ring-current"
+                      className="flex w-full items-center justify-between py-3 text-left text-[15px] font-medium outline-hidden focus-visible:ring-2 focus-visible:ring-current"
                     >
                       {g.label}
                       <ChevronDown
@@ -226,7 +226,7 @@ export function MegaNav({
                               <a
                                 href={l.href}
                                 onClick={() => { setMobile(false); setSanfona(null); }}
-                                className="block rounded-md px-2 py-2.5 text-[14px] text-muted-foreground outline-none hover:text-foreground focus-visible:ring-2 focus-visible:ring-current"
+                                className="block rounded-md px-2 py-2.5 text-[14px] text-muted-foreground outline-hidden hover:text-foreground focus-visible:ring-2 focus-visible:ring-current"
                               >
                                 {l.label}
                               </a>
@@ -242,7 +242,7 @@ export function MegaNav({
               <a
                 href={spotlight.href}
                 onClick={() => setMobile(false)}
-                className="mt-4 flex items-center justify-between rounded-lg border border-border p-3 outline-none focus-visible:ring-2 focus-visible:ring-current"
+                className="mt-4 flex items-center justify-between rounded-lg border border-border p-3 outline-hidden focus-visible:ring-2 focus-visible:ring-current"
               >
                 <span>
                   <span className="eyebrow">{spotlight.eyebrow}</span>
@@ -273,7 +273,7 @@ function Destaque({
     <a
       href={spotlight.href}
       onClick={onNavigate}
-      className={`group relative hidden overflow-hidden rounded-xl border outline-none transition-colors focus-visible:ring-2 focus-visible:ring-current lg:block ${
+      className={`group relative hidden overflow-hidden rounded-xl border outline-hidden transition-colors focus-visible:ring-2 focus-visible:ring-current lg:block ${
         dark ? "border-white/[0.08] hover:border-white/20" : "border-border hover:border-teal/40"
       }`}
     >

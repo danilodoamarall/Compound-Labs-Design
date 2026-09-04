@@ -146,7 +146,7 @@ export function BrowseResources({
                     </>
                   ) : null}
                 </span>
-                <span className="hidden shrink-0 font-mono text-[11px] uppercase tracking-wide text-muted-foreground/70 md:block">
+                <span className="hidden shrink-0 font-mono text-[11px] uppercase tracking-wide text-muted-foreground md:block">
                   {r.meta}
                 </span>
                 {/* A data, no formato curto. Vazia quando a fonte

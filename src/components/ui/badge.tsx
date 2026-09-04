@@ -154,7 +154,7 @@ const badgeVariants = cva(
         lg: "h-7 text-[13px]",
       },
       interactive: {
-        true: "cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+        true: "cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         false: "",
       },
     },
@@ -220,7 +220,7 @@ function BadgeDismissButton({
     <button
       aria-label={dismissLabel ?? "Remove"}
       className={cn(
-        "relative z-20 inline-flex shrink-0 items-center justify-center rounded-full text-current/70 transition-colors hover:bg-[color-mix(in_srgb,currentColor_12%,transparent)] hover:text-current focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring",
+        "relative z-20 inline-flex shrink-0 items-center justify-center rounded-full text-current/70 transition-colors hover:bg-[color-mix(in_srgb,currentColor_12%,transparent)] hover:text-current focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring",
         badgeDismissButtonSizes[size]
       )}
       onClick={(event) => {

@@ -45,7 +45,7 @@ export function StageArticles({
           <li key={a.slug}>
             <a
               href={`/${locale}/${locale === "pt" ? "artigos" : "articles"}/${a.slug}`}
-              className="group relative flex h-full flex-col overflow-hidden rounded-2xl border-[0.67px] border-[var(--stage-line)] bg-black/40 outline-none transition-colors hover:border-white/25 focus-visible:ring-2 focus-visible:ring-white/60"
+              className="group relative flex h-full flex-col overflow-hidden rounded-2xl border-[0.67px] border-[var(--stage-line)] bg-black/40 outline-hidden transition-colors hover:border-white/25 focus-visible:ring-2 focus-visible:ring-white/60"
             >
               <span aria-hidden className="relative aspect-[4/3] overflow-hidden">
                 <span
@@ -60,7 +60,7 @@ export function StageArticles({
                 <span className="absolute left-4 top-3.5 font-mono text-[10px] uppercase tracking-[0.14em] text-white/55">
                   {a.chart || a.series}
                 </span>
-                <span className="absolute right-4 top-3 font-mono text-[13px] font-medium tabular-nums text-white/45">
+                <span className="absolute right-4 top-3 font-mono text-[13px] font-medium tabular-nums text-white/70">
                   {n}
                 </span>
               </span>

@@ -25,7 +25,7 @@ export async function SiteFooter() {
               target="_blank"
               rel="noreferrer me"
               aria-label={t("Site.linkedin")}
-              className="font-medium underline decoration-border underline-offset-4 transition-colors hover:text-teal hover:decoration-teal"
+              className="font-medium underline decoration-border underline-offset-4 transition-colors hover:text-teal-deep hover:decoration-teal-deep"
             >
               {t("Site.author")}
             </a>

@@ -213,7 +213,7 @@ function CopyButton({
     <motion.button
       aria-label={copied ? "Copied" : "Copy code"}
       className={cn(
-        "flex h-7 items-center gap-1.5 rounded-md px-2 font-medium text-xs outline-none transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-ring/60",
+        "flex h-7 items-center gap-1.5 rounded-md px-2 font-medium text-xs outline-hidden transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-ring/60",
         floating &&
           "border border-border/70 bg-background/85 shadow-sm backdrop-blur-sm",
         copied

@@ -46,7 +46,7 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
         <li key={card.key} className={SPAN[card.span] ?? "lg:col-span-4"}>
           <a
             href={card.path}
-            className="group relative flex h-[268px] flex-col overflow-hidden rounded-2xl border-[0.67px] border-white/[0.08] bg-[rgba(18,15,23,0.45)] outline-none transition-colors hover:border-white/20 focus-visible:ring-2 focus-visible:ring-white/60 sm:h-[288px]"
+            className="group relative flex h-[268px] flex-col overflow-hidden rounded-2xl border-[0.67px] border-white/[0.08] bg-[rgba(18,15,23,0.45)] outline-hidden transition-colors hover:border-white/20 focus-visible:ring-2 focus-visible:ring-white/60 sm:h-[288px]"
           >
             <span aria-hidden className="relative flex-1 overflow-hidden">
               {/* Gradiente da seção, esmaecido: é o pano de fundo da composição,
@@ -73,7 +73,7 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
                   className="shrink-0 translate-y-px text-white/50 opacity-0 transition-opacity group-hover:opacity-100"
                 />
                 {card.count ? (
-                  <span className="ml-auto font-mono text-[11px] text-white/40">{card.count}</span>
+                  <span className="ml-auto font-mono text-[11px] text-white/55">{card.count}</span>
                 ) : null}
               </span>
               <span className="mt-1.5 block text-[13px] leading-[20px] text-white/50">{card.desc}</span>

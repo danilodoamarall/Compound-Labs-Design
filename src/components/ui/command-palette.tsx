@@ -28,7 +28,7 @@ const commandItemHighlightClassName =
   "absolute inset-0 -z-10 rounded-lg bg-accent/60";
 
 const dialogClassName =
-  "fixed inset-x-4 top-[calc(var(--nav-stack-height-mobile,0px)+0.75rem+env(safe-area-inset-top,0px))] z-[401] flex w-auto min-h-[12rem] max-h-[min(560px,calc(100dvh-var(--nav-stack-height-mobile,0px)-1.5rem-env(safe-area-inset-top,0px)-env(safe-area-inset-bottom,0px)))] flex-col overflow-hidden rounded-2xl border border-border/80 bg-background shadow-[0_28px_90px_rgba(10,10,10,0.12)] outline-none sm:inset-x-6 lg:inset-x-auto lg:top-[calc(var(--nav-stack-height-desktop,0px)+1rem+env(safe-area-inset-top,0px))] lg:left-1/2 lg:w-[min(680px,calc(100vw-2rem))] lg:max-h-[min(560px,calc(100dvh-var(--nav-stack-height-desktop,0px)-2rem-env(safe-area-inset-top,0px)-env(safe-area-inset-bottom,0px)))] lg:-translate-x-1/2";
+  "fixed inset-x-4 top-[calc(var(--nav-stack-height-mobile,0px)+0.75rem+env(safe-area-inset-top,0px))] z-[401] flex w-auto min-h-[12rem] max-h-[min(560px,calc(100dvh-var(--nav-stack-height-mobile,0px)-1.5rem-env(safe-area-inset-top,0px)-env(safe-area-inset-bottom,0px)))] flex-col overflow-hidden rounded-2xl border border-border/80 bg-background shadow-[0_28px_90px_rgba(10,10,10,0.12)] outline-hidden sm:inset-x-6 lg:inset-x-auto lg:top-[calc(var(--nav-stack-height-desktop,0px)+1rem+env(safe-area-inset-top,0px))] lg:left-1/2 lg:w-[min(680px,calc(100vw-2rem))] lg:max-h-[min(560px,calc(100dvh-var(--nav-stack-height-desktop,0px)-2rem-env(safe-area-inset-top,0px)-env(safe-area-inset-bottom,0px)))] lg:-translate-x-1/2";
 
 const resultsClassName = "max-h-[min(420px,50dvh)]";
 
@@ -878,7 +878,7 @@ function CommandPaletteView({
       <button
         aria-selected={isActive}
         className={cn(
-          "relative isolate flex w-full items-start gap-3 rounded-lg px-3 py-2.5 text-left text-foreground text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+          "relative isolate flex w-full items-start gap-3 rounded-lg px-3 py-2.5 text-left text-foreground text-sm transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
           item.disabled && "cursor-not-allowed opacity-50"
         )}
         data-slot="command-palette-option"
@@ -1005,7 +1005,7 @@ function CommandPaletteView({
                 aria-expanded={open}
                 autoCapitalize="off"
                 autoCorrect="off"
-                className="w-full min-w-0 touch-manipulation bg-transparent text-[16px] text-foreground leading-normal outline-none placeholder:text-muted-foreground md:text-sm"
+                className="w-full min-w-0 touch-manipulation bg-transparent text-[16px] text-foreground leading-normal outline-hidden placeholder:text-muted-foreground md:text-sm"
                 data-slot="command-palette-input"
                 onChange={(event) => setQuery(event.target.value)}
                 onKeyDown={handleListKeyDown}
@@ -1024,7 +1024,7 @@ function CommandPaletteView({
               <DialogPrimitive.Close asChild>
                 <button
                   aria-label={closeLabel}
-                  className="inline-flex size-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="inline-flex size-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
                   type="button"
                 >
                   <X className="size-4" />

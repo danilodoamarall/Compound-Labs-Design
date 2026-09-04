@@ -39,7 +39,7 @@ export function CopyCommand({ command, copyLabel }: { command: string; copyLabel
         type="button"
         onClick={copiar}
         aria-label={copyLabel}
-        className="mr-2 shrink-0 rounded-md p-2 text-muted-foreground outline-none transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
+        className="mr-2 shrink-0 rounded-md p-2 text-muted-foreground outline-hidden transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring"
       >
         {copiado ? <Check size={14} aria-hidden /> : <Copy size={14} aria-hidden />}
       </button>

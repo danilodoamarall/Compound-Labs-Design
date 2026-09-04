@@ -83,7 +83,7 @@ export function SiteSearch({ items, labels }: { items: SearchItem[]; labels: Sea
         <button
           type="button"
           aria-label={labels.trigger}
-          className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-2.5 text-[13px] text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-2.5 text-[13px] text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
         >
           <Search size={15} aria-hidden />
           <span className="hidden lg:inline">{labels.trigger}</span>

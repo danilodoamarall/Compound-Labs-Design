@@ -98,7 +98,7 @@ export default async function SkillPage({ params }: PageProps<"/[locale]/skills-
                   <li key={s.pathSlug}>
                     <a
                       href={`/${locale}/skills-agents/${encodeURIComponent(paraParam(s.pathSlug))}`}
-                      className="flex items-baseline gap-3 rounded-lg px-2 py-3 outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
+                      className="flex items-baseline gap-3 rounded-lg px-2 py-3 outline-hidden transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
                     >
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-[14.5px] font-medium">{s.name}</span>
@@ -131,7 +131,7 @@ export default async function SkillPage({ params }: PageProps<"/[locale]/skills-
                 href={skill.source.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-baseline gap-1 font-mono text-[12.5px] break-all transition-colors hover:text-teal"
+                className="inline-flex items-baseline gap-1 font-mono text-[12.5px] break-all transition-colors hover:text-teal-deep"
               >
                 {skill.source.author}/{skill.source.repo}
                 <ArrowUpRight size={11} aria-hidden className="shrink-0 translate-y-0.5" />
@@ -170,7 +170,7 @@ export default async function SkillPage({ params }: PageProps<"/[locale]/skills-
                     href={skill.pinned}
                     target="_blank"
                     rel="noreferrer"
-                    className="font-mono text-[12.5px] transition-colors hover:text-teal"
+                    className="font-mono text-[12.5px] transition-colors hover:text-teal-deep"
                   >
                     {skill.commit.slice(0, 10)}
                   </a>

@@ -38,9 +38,9 @@ const panelCopyCloseTransition: Transition = {
 const instantTransition: Transition = { duration: 0 };
 
 const searchInputClassName = cn(
-  "h-12 w-full appearance-none rounded-full border-[0.5px] border-border bg-card px-5 pr-11 text-[15px] text-foreground",
+  "h-12 w-full appearance-none rounded-full border-[0.5px] border-border bg-card px-5 pr-11 text-[16px] sm:text-[15px] text-foreground",
   "placeholder:text-muted-foreground",
-  "outline-none focus-visible:ring-2 focus-visible:ring-ring",
+  "outline-hidden focus-visible:ring-2 focus-visible:ring-ring",
   "[&::-webkit-search-cancel-button]:appearance-none",
   "[&::-webkit-search-decoration]:appearance-none"
 );
@@ -48,7 +48,7 @@ const searchInputClassName = cn(
 const itemClassName = "overflow-hidden rounded-lg bg-muted/70 dark:bg-muted/50";
 
 const triggerClassName =
-  "flex w-full items-start justify-between gap-4 px-5 py-4 text-left outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset disabled:cursor-not-allowed";
+  "flex w-full items-start justify-between gap-4 px-5 py-4 text-left outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset disabled:cursor-not-allowed";
 
 const answerClassName = "px-5 pb-5 text-[14px] text-muted-foreground leading-6";
 
@@ -530,7 +530,7 @@ const FaqPro = React.forwardRef<HTMLDivElement, FaqProProps>(
             {query ? (
               <button
                 aria-label="Clear search"
-                className="absolute top-1/2 right-3 inline-flex size-7 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="absolute top-1/2 right-3 inline-flex size-7 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent/60 hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
                 onClick={() => {
                   updateQuery("");
                   inputRef.current?.focus();

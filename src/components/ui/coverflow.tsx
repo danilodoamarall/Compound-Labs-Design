@@ -360,7 +360,7 @@ export function CoverFlow({
       )}
       <motion.div
         ref={containerRef}
-        className={`group/cf relative w-full h-full flex flex-col justify-center items-center overflow-hidden bg-transparent focus:outline-none touch-pan-y ${
+        className={`group/cf relative w-full h-full flex flex-col justify-center items-center overflow-hidden bg-transparent focus:outline-hidden touch-pan-y ${
           isDragging ? 'is-dragging cursor-grabbing' : 'cursor-grab'
         } ${className ?? ''}`}
         style={{ perspective: 1000 }}

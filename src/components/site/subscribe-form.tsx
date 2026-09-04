@@ -85,7 +85,7 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
           placeholder={labels.placeholder}
           aria-invalid={estado === "error" ? true : undefined}
           aria-describedby={erro ? "subscribe-erro" : undefined}
-          className="h-[46px] min-w-0 flex-1 rounded-xl border border-white/[0.14] bg-white/[0.06] px-4 text-[15px] text-[#EDEDED] outline-none placeholder:text-white/40 focus-visible:ring-2 focus-visible:ring-white/60"
+          className="h-[46px] min-w-0 flex-1 rounded-xl border border-white/[0.14] bg-white/[0.06] px-4 text-[16px] sm:text-[15px] text-[#EDEDED] outline-hidden placeholder:text-white/55 focus-visible:ring-2 focus-visible:ring-white/60"
         />
         <button
           type="submit"
@@ -102,7 +102,7 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
           {erro}
         </p>
       ) : (
-        <p className="text-[12.5px] text-white/45">{labels.privacy}</p>
+        <p className="text-[12.5px] text-white/70">{labels.privacy}</p>
       )}
     </form>
   );

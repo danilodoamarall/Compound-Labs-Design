@@ -31,7 +31,7 @@ export default async function ArticlesPage({ params }: PageProps<"/[locale]/arti
             <div>
               <h2 className="font-display text-2xl font-medium leading-tight sm:text-3xl">
                 <Link href={{ pathname: "/artigos/[slug]", params: { slug: a.slug } }} className="hover:underline hover:underline-offset-4">{a.title}</Link>
-                {a.draft ? <span className="ml-3 align-middle rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[11px] text-warm">draft</span> : null}
+                {a.draft ? <span className="ml-3 align-middle rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[11px] text-warm-text">draft</span> : null}
               </h2>
               <p className="mt-3 max-w-2xl text-muted-foreground">{a.dek}</p>
               <p className="mt-3 font-mono text-xs text-muted-foreground">{t("readingTime", { minutes: a.readingMinutes })} · {t("slides", { count: a.slideCount })}</p>

@@ -50,11 +50,11 @@ export async function ArticleView({ slug, locale, mode }: { slug: string; locale
   if (mode === "present") return body;
 
   return (
-    <article className="mx-auto w-full max-w-4xl px-5 pb-16 pt-12">
+    <main className="mx-auto w-full max-w-4xl px-5 pb-16 pt-12">
       <header className="mb-12 border-b border-border pb-10">
         <p className="eyebrow">
           {article.series} · {t("part", { n: article.order, total: article.total })}
-          {article.draft ? <span className="ml-3 rounded bg-warm/15 px-1.5 py-0.5 text-warm">draft</span> : null}
+          {article.draft ? <span className="ml-3 rounded bg-warm/15 px-1.5 py-0.5 text-warm-text">draft</span> : null}
         </p>
         <h1 className="font-display mt-4 text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">{article.title}</h1>
         <p className="font-display mt-6 max-w-3xl text-xl leading-snug text-muted-foreground sm:text-2xl">{article.dek}</p>
@@ -95,6 +95,6 @@ export async function ArticleView({ slug, locale, mode }: { slug: string; locale
         ) : null}
       </nav>
       <p className="mt-8"><Link href="/artigos" className="text-sm text-teal-deep underline underline-offset-4">{t("backToList")}</Link></p>
-    </article>
+    </main>
   );
 }

@@ -75,14 +75,14 @@ export function HeroCard({
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
           <a
             href={primary.href}
-            className="inline-flex h-[46px] items-center gap-2 rounded-xl bg-white px-6 text-[14px] font-medium text-[#120F17] outline-none transition-colors hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0A]"
+            className="inline-flex h-[46px] items-center gap-2 rounded-xl bg-white px-6 text-[14px] font-medium text-[#120F17] outline-hidden transition-colors hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0A]"
           >
             {primary.label}
             <ArrowRight size={15} aria-hidden />
           </a>
           <a
             href={secondary.href}
-            className="inline-flex h-[46px] items-center rounded-xl bg-white/[0.07] px-6 text-[14px] font-medium text-white outline-none transition-colors hover:bg-white/[0.12] focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0A]"
+            className="inline-flex h-[46px] items-center rounded-xl bg-white/[0.07] px-6 text-[14px] font-medium text-white outline-hidden transition-colors hover:bg-white/[0.12] focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0A]"
           >
             {secondary.label}
           </a>
@@ -91,14 +91,14 @@ export function HeroCard({
         {tertiary ? (
           <a
             href={tertiary.href}
-            className="mt-5 inline-flex items-center gap-1.5 text-[13.5px] text-white/60 underline decoration-white/20 underline-offset-4 outline-none transition-colors hover:text-white hover:decoration-white/50 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-white/70"
+            className="mt-5 inline-flex items-center gap-1.5 text-[13.5px] text-white/60 underline decoration-white/20 underline-offset-4 outline-hidden transition-colors hover:text-white hover:decoration-white/50 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-white/70"
           >
             {tertiary.label}
             <ArrowRight size={13} aria-hidden />
           </a>
         ) : null}
 
-        <p className="mt-8 text-[13px] text-white/45">
+        <p className="mt-8 text-[13px] text-white/70">
           {curatorHref ? (
             <a
               href={curatorHref}

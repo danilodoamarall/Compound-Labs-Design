@@ -1,6 +1,6 @@
 "use client";
 
-import { useInView, useMotionValue, useSpring } from 'motion/react';
+import { useInView, useMotionValue, useReducedMotion, useSpring } from 'motion/react';
 import { useCallback, useEffect, useRef } from 'react';
 
 interface CountUpProps {
@@ -42,6 +42,7 @@ export default function CountUp({
   });
 
   const isInView = useInView(ref, { once: true, margin: '0px' });
+  const reduced = useReducedMotion();
 
   const getDecimalPlaces = (num: number): number => {
     const str = num.toString();
@@ -80,7 +81,7 @@ export default function CountUp({
   }, [from, to, direction, formatValue]);
 
   useEffect(() => {
-    if (isInView && startWhen) {
+    if (isInView && startWhen && !reduced) {
       if (typeof onStart === 'function') {
         onStart();
       }
@@ -103,7 +104,7 @@ export default function CountUp({
         clearTimeout(durationTimeoutId);
       };
     }
-  }, [isInView, startWhen, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
+  }, [isInView, startWhen, reduced, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
 
   useEffect(() => {
     const unsubscribe = springValue.on('change', (latest: number) => {
@@ -115,5 +116,10 @@ export default function CountUp({
     return () => unsubscribe();
   }, [springValue, formatValue]);
 
-  return <span className={className} ref={ref} />;
+  // O valor final vai no HTML do servidor: sem JS, o número já está certo.
+  return (
+    <span className={className} ref={ref}>
+      {formatValue(direction === 'down' ? from : to)}
+    </span>
+  );
 }

@@ -17,5 +17,9 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/artigos/
 export default async function PresentPage({ params }: PageProps<"/[locale]/artigos/[slug]/apresentar">) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  return <ArticleView slug={slug} locale={locale as Locale} mode="present" />;
+  return (
+    <main>
+      <ArticleView slug={slug} locale={locale as Locale} mode="present" />
+    </main>
+  );
 }
