@@ -99,7 +99,7 @@ export function BandChart({ segments, groups, locale, ariaLabel }: { segments: B
           <title>{`${s.label} — ${fmtPct(s.value, locale)}${s.n ? ` · n=${fmtNum(s.n, locale)}` : ""}`}</title>
           <rect x={s.x} y={top} width={s.w} height={bandH} rx={3} fill={s.color} />
           {s.w > 64 ? (
-            <text x={s.x + s.w / 2} y={top + bandH / 2} textAnchor="middle" dominantBaseline="central" fontFamily={FONT} fontSize={15} fontWeight={500} fill="#fff" style={{ fontVariantNumeric: "tabular-nums" }}>
+            <text x={s.x + s.w / 2} y={top + bandH / 2} textAnchor="middle" dominantBaseline="central" fontFamily={FONT} fontSize={15} fontWeight={500} fill="#fff" stroke="rgba(0,0,0,0.38)" strokeWidth={3} paintOrder="stroke" style={{ fontVariantNumeric: "tabular-nums" }}>
               {fmtPct(s.value, locale)}
             </text>
           ) : null}

@@ -56,7 +56,7 @@ function BandaEmpilhada({ serie, cor, animar, reduced }: Props) {
             style={{
               width: `${(d.pct / total) * 100}%`,
               background: cor,
-              opacity: 1 - i * 0.28,
+              opacity: Math.max(0.4, 1 - i * 0.15),
               transformOrigin: "left center",
             }}
             initial={reduced ? false : { scaleX: 0 }}

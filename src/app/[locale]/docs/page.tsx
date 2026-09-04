@@ -51,7 +51,34 @@ export default async function DocsPage({ params }: PageProps<"/[locale]/docs">) 
       <p className="measure mt-5 text-lg leading-relaxed text-muted-foreground">{t("dek")}</p>
 
       <div className="mt-14 grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)] lg:items-start">
-        <nav aria-label={t("onThisPage")} className="lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
+        {/* No telefone e no tablet, o índice de 18 itens recolhe num acordeão
+            nativo para não empurrar o conteúdo para baixo da dobra. No desktop,
+            fica fixo na coluna lateral. */}
+        <details className="rounded-lg border border-border lg:hidden">
+          <summary className="cursor-pointer px-4 py-3 text-sm font-medium">{t("onThisPage")}</summary>
+          <nav aria-label={t("onThisPage")} className="px-4 pb-4">
+          <ul className="space-y-6 text-sm">
+            {grupos.map((g) => (
+              <li key={g.nome}>
+                <p className="eyebrow mb-2">{g.nome}</p>
+                <ul className="space-y-1.5 border-l border-border">
+                  {g.itens.map((s) => (
+                    <li key={s.id}>
+                      <a
+                        href={`#${s.id}`}
+                        className="-ml-px block border-l border-transparent pl-3 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
+                      >
+                        {s.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          </nav>
+        </details>
+        <nav aria-label={t("onThisPage")} className="hidden lg:block lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto">
           <ul className="space-y-6 text-sm">
             {grupos.map((g) => (
               <li key={g.nome}>
