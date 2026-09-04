@@ -168,14 +168,26 @@ honrar (aiforui, Vercel, React Bits, skills.sh, ui-skills, Emil, Jakub, Iconiq,
 motion.dev, easing.dev, easing-gradients, oklch.fyi), o que cada uma ensina de
 forma medível, e os sete portões que toda interface passa.
 
-1. [ ] **Pesquisa profunda** (em curso): 10 agentes, um por parte do produto,
-       produzem `docs/diretrizes.md` — propósito, princípios com fonte, fatos
-       medidos, faça/não faça, problemas abertos.
-2. [ ] **As 12 skills do jakubkrehel aplicadas** (em curso, na mesma rodada):
-       `better-interface`, `better-ui`, `make-interfaces-feel-better`,
-       `better-typography`, `better-colors`, `better-accessibility`,
-       `better-layout`, `better-writing`, `interface-review`, `break`, `variant`,
-       `explain-interface`. Findings de prioridade alta corrigidos na rodada.
+1. [x] **Pesquisa profunda**: 22 análises (10 partes do produto + 12 skills do
+       jakubkrehel), 171 findings (35 alta / 88 média / 48 baixa). Entregue em
+       `docs/diretrizes.md`.
+2. [x] **Correções de prioridade alta aplicadas e publicadas** (as visíveis e as
+       de contraste/a11y medidas contra WCAG):
+       - i18n: filtros do /explorar estavam em inglês no pt.json.
+       - /research: contadores presos em zero (SSR + reduced-motion) e cores
+         cruas do palco (rótulos invisíveis no claro).
+       - Contraste: alfa removido de texto secundário; texto do palco 40-45%→55-70%;
+         selo de rascunho → --warm-text; teal claro escurecido para 4,5:1.
+       - a11y: cabeçalho do placar deixa de ser aria-hidden; inputs 16px no mobile;
+         <main> nos artigos; outline-none→outline-hidden (37); troca de tema sem piscar.
+       - 404 localizado com cabeçalho e status 404 (globalNotFound + catch-all).
+       - Página da skill: markdown renderizado (react-markdown), não <pre> cru.
+       - Gráficos: opacidade da capa com piso; rótulo do BandChart com contorno.
+       - /docs: índice recolhe em acordeão no mobile.
+       Restam, de menor risco/visibilidade, para uma próxima rodada: anel de foco
+       de 3 componentes de UI que redefinem --color-ring; teclado do mega-menu
+       (onFocus); overflow do cabeçalho em 320px; alvos de 44px (os atuais de 36px
+       já passam no AA). Listados em docs/diretrizes.md.
 3. [~] Fundações: **paleta convertida para OKLCH** (107 tokens, sem perda: o
        round-trip oklch→sRGB reproduz cada hex com desvio ≤ 1/255; o hex fica em
        comentário ao lado). A leitura de L por papel já mostra `teal` 57 e `warm`
