@@ -130,7 +130,7 @@
   },
   "Skills": {
     "title": "AI Skills & Agents",
-    "dek": "Skills e agents do Claude que construímos e usamos. Cada card diz quando usar, como instalar e mostra o código.",
+    "dek": "Um catálogo de skills de design engineering para humanos e agentes. Cada uma é de quem escreveu.",
     "types": {
       "skill": "Skill",
       "agent": "Agent",
@@ -139,8 +139,23 @@
     "whenToUse": "Quando usar",
     "install": "Como instalar",
     "source": "Código",
-    "all": "Todos",
-    "filterType": "Tipo"
+    "all": "Tudo",
+    "filterType": "Tipo",
+    "provenance": "{hosted} skills estão hospedadas aqui, sob licença permissiva e com crédito. As outras {pointer} não declaram licença, então o hub aponta para a origem em vez de copiar.",
+    "agentStart": "Agente, comece por aqui",
+    "cliCard": "Rode o catálogo pelo terminal.",
+    "mcpCard": "Conecte o seu agente ao catálogo.",
+    "catalog": "Skills",
+    "searchPlaceholder": "Busque por nome, autor ou assunto...",
+    "count": "skills",
+    "of": "de",
+    "empty": "Nada com esses filtros.",
+    "hostedHint": "hospedada",
+    "pointerHint": "na origem",
+    "readAtSource": "Ler na origem",
+    "writtenBy": "Escrito por",
+    "license": "Licença:",
+    "copiedAt": "Copiado em"
   },
   "About": {
     "title": "Sobre este hub",
@@ -317,5 +332,57 @@
       "ship": "Entregar",
       "run": "Operar"
     }
+  },
+  "SkillsCli": {
+    "title": "CLI",
+    "dek": "Navegue e busque as skills do catálogo pelo terminal. Lê o mesmo registro da página e do servidor MCP.",
+    "install": "Instalação",
+    "noDeps": "Um arquivo de JavaScript, zero dependências. Não instala framework nenhum para imprimir um markdown.",
+    "commands": "Comandos",
+    "attribution": "Atribuição",
+    "attributionBody": "O `get` entrega o markdown com o autor e a licença junto. Das {hosted} hospedadas, o conteúdo vem daqui; para as outras {pointer} o comando devolve a ficha e o endereço da origem, porque sem licença declarada só o autor pode redistribuir.",
+    "cmd": {
+      "start": {
+        "title": "Comece por aqui",
+        "desc": "Imprime a skill de roteamento, que ajuda o agente a escolher a menor skill útil."
+      },
+      "topics": {
+        "title": "Listar tópicos",
+        "desc": "Todos os tópicos do catálogo, com a contagem de cada um."
+      },
+      "list": {
+        "title": "Listar skills",
+        "desc": "Todas as skills, com tópicos e descrição. A seta marca as que estão na origem."
+      },
+      "filter": {
+        "title": "Filtrar por tópico",
+        "desc": "Só as de um tópico, como motion."
+      },
+      "search": {
+        "title": "Buscar por texto",
+        "desc": "Termos em qualquer ordem, sobre nome, descrição e autor."
+      },
+      "get": {
+        "title": "Ler uma skill",
+        "desc": "O markdown completo. Use autor/slug quando o nome se repetir."
+      },
+      "licenses": {
+        "title": "Ver as licenças",
+        "desc": "A distribuição de licenças do catálogo."
+      }
+    }
+  },
+  "SkillsMcp": {
+    "title": "MCP",
+    "dek": "Conecte agentes ao catálogo pelo Model Context Protocol. O servidor expõe o mesmo registro do CLI.",
+    "endpoint": "Endereço",
+    "serverCard": "Cartão do servidor",
+    "howToConnect": "Como conectar",
+    "connectBody": "Transporte HTTP, sem autenticação. No Claude Code, adicione ao arquivo de configuração de MCP:",
+    "tools": "Ferramentas",
+    "listSkills": "Lista as skills do catálogo. Aceita filtro por texto livre e por tópico. Cada item vem com autor e licença, não só nome e descrição.",
+    "getSkill": "Busca o markdown de uma skill por nome, slug ou autor/slug. Quando o nome existe em mais de um autor, devolve as opções em vez de escolher sozinho.",
+    "provenance": "Procedência",
+    "provenanceBody": "As {hosted} hospedadas voltam com o texto e a atribuição. As outras {pointer} voltam com a ficha e o endereço da origem: sem licença declarada, servir o texto seria redistribuir o que não é nosso."
   }
 }

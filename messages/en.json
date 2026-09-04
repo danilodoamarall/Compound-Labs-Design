@@ -130,7 +130,7 @@
   },
   "Skills": {
     "title": "AI Skills & Agents",
-    "dek": "Claude skills and agents we build and use. Each card says when to use it, how to install it and shows the code.",
+    "dek": "A catalogue of design-engineering skills for humans and agents. Each one belongs to whoever wrote it.",
     "types": {
       "skill": "Skill",
       "agent": "Agent",
@@ -140,7 +140,22 @@
     "install": "How to install",
     "source": "Code",
     "all": "All",
-    "filterType": "Type"
+    "filterType": "Type",
+    "provenance": "{hosted} skills are hosted here, under a permissive licence and with credit. The other {pointer} declare no licence, so the hub points to the source instead of copying.",
+    "agentStart": "Agent, start here",
+    "cliCard": "Run the catalogue from your terminal.",
+    "mcpCard": "Connect your agent to the catalogue.",
+    "catalog": "Skills",
+    "searchPlaceholder": "Search by name, author or topic...",
+    "count": "skills",
+    "of": "of",
+    "empty": "Nothing matches those filters.",
+    "hostedHint": "hosted",
+    "pointerHint": "at source",
+    "readAtSource": "Read at the source",
+    "writtenBy": "Written by",
+    "license": "Licence:",
+    "copiedAt": "Copied on"
   },
   "About": {
     "title": "About this hub",
@@ -317,5 +332,57 @@
       "ship": "Ship",
       "run": "Run"
     }
+  },
+  "SkillsCli": {
+    "title": "CLI",
+    "dek": "Browse and fetch catalogue skills from your terminal. Reads the same registry as the page and the MCP server.",
+    "install": "Install",
+    "noDeps": "One JavaScript file, zero dependencies. It installs no framework to print a markdown file.",
+    "commands": "Commands",
+    "attribution": "Attribution",
+    "attributionBody": "`get` returns the markdown with the author and licence attached. For the {hosted} hosted ones the content comes from here; for the other {pointer} the command returns the card and the source address, because without a declared licence only the author may redistribute.",
+    "cmd": {
+      "start": {
+        "title": "Start here",
+        "desc": "Prints the routing skill, which helps the agent pick the smallest useful skill."
+      },
+      "topics": {
+        "title": "List topics",
+        "desc": "Every topic in the catalogue, with its count."
+      },
+      "list": {
+        "title": "List skills",
+        "desc": "Every skill, with topics and description. The arrow marks the ones held at source."
+      },
+      "filter": {
+        "title": "Filter by topic",
+        "desc": "Only the ones in a topic, such as motion."
+      },
+      "search": {
+        "title": "Search by text",
+        "desc": "Terms in any order, across name, description and author."
+      },
+      "get": {
+        "title": "Read a skill",
+        "desc": "The full markdown. Use author/slug when the name repeats."
+      },
+      "licenses": {
+        "title": "See the licences",
+        "desc": "The licence breakdown of the catalogue."
+      }
+    }
+  },
+  "SkillsMcp": {
+    "title": "MCP",
+    "dek": "Connect agents to the catalogue over Model Context Protocol. The server exposes the same registry as the CLI.",
+    "endpoint": "Endpoint",
+    "serverCard": "Server card",
+    "howToConnect": "How to connect",
+    "connectBody": "HTTP transport, no authentication. In Claude Code, add this to your MCP configuration file:",
+    "tools": "Tools",
+    "listSkills": "Lists the catalogue skills. Takes a free-text filter and a topic. Each item carries author and licence, not just name and description.",
+    "getSkill": "Fetches a skill's markdown by name, slug or author/slug. When a name exists under more than one author, it returns the options instead of choosing for you.",
+    "provenance": "Provenance",
+    "provenanceBody": "The {hosted} hosted ones come back with the text and the attribution. The other {pointer} come back with the card and the source address: without a declared licence, serving the text would mean redistributing what is not ours."
   }
 }

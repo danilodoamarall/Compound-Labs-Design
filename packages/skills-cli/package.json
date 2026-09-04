@@ -1,0 +1,20 @@
+{
+  "name": "@ai-builders-lab/skills",
+  "version": "1.0.0",
+  "description": "Navegue e busque skills de design engineering do catálogo do AI Builders Lab, direto do terminal.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ai-skills": "bin/cli.js"
+  },
+  "files": ["bin"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["ai", "skills", "design-engineering", "claude", "agent"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilodoamarall/Compound-Labs-Design.git",
+    "directory": "packages/skills-cli"
+  }
+}

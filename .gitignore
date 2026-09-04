@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Trabalho temporário da ingestão de skills
+.tmp-skills/

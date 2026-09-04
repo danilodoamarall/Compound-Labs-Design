@@ -6,5 +6,9 @@ export default createMiddleware(routing);
 
 export const config = {
   // Ignora rotas internas, API e arquivos estáticos (qualquer caminho com extensão).
-  matcher: "/((?!api|_next|_vercel|.*\\..*).*)",
+  //
+  // `mcp` e `.well-known` entram na exclusão porque são endereços de máquina,
+  // não de leitura: um cliente MCP pede `/mcp` e não pode ser redirecionado
+  // para `/pt/mcp`. Sem isto o servidor responde o caminho em vez do protocolo.
+  matcher: "/((?!api|mcp|\\.well-known|_next|_vercel|.*\\..*).*)",
 };
