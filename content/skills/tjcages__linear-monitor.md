@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-monitor/SKILL.md
-  Autor:   tjcages
-  Licença: MIT
-  Commit:  09f07637b5e7b122b312dba0480386974173922b
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: linear-monitor
 version: 1.0.2
 description: >-
@@ -15,9 +9,17 @@ description: >-
   NOT for bootstrap (linear-setup) or full rescue (linear-sync).
 ---
 
+<!--
+  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-monitor/SKILL.md
+  Autor:   tjcages
+  Licença: MIT
+  Commit:  09f07637b5e7b122b312dba0480386974173922b
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Linear monitor
 
-Chat rules: [RESPONSE.md](./RESPONSE.md). Auth: [AUTH.md](./AUTH.md). Cadence: [METHODOLOGY.md](./METHODOLOGY.md) §6, §9, §20. Automation recipe: [AUTOMATION.md](./AUTOMATION.md).
+Chat rules: [RESPONSE.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-monitor/RESPONSE.md). Auth: [AUTH.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-monitor/AUTH.md). Cadence: [METHODOLOGY.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-monitor/METHODOLOGY.md) §6, §9, §20. Automation recipe: [AUTOMATION.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-monitor/AUTOMATION.md).
 
 ## Step 0 — auth
 

@@ -1,15 +1,17 @@
+---
+name: bencium-innovative-ux-designer
+description: Develop an independent visual language and turn the human-chosen direction into a production-ready graphic, brand, campaign, publication, web, or product system. Use when originality and differentiation matter enough to escape generic AI and Big Tech aesthetics. Guides a minimum-evidence start, ten isolated typography-led HTML design directions made only from type, color, and space, visual-first human judgement, explicit commitment, and concrete Round 2 production. Do not use for routine UI fixes, small components, or applying an existing design system.
+metadata:
+  version: 3.1.5
+---
+
 <!--
   Origem:  https://github.com/bencium/bencium-marketplace/blob/main/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/SKILL.md
   Autor:   bencium
   Licença: MIT
   Commit:  8b152ec07240cf671340b96cea6bb3442f697205
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: bencium-innovative-ux-designer
-description: Develop an independent visual language and turn the human-chosen direction into a production-ready graphic, brand, campaign, publication, web, or product system. Use when originality and differentiation matter enough to escape generic AI and Big Tech aesthetics. Guides a minimum-evidence start, ten isolated typography-led HTML design directions made only from type, color, and space, visual-first human judgement, explicit commitment, and concrete Round 2 production. Do not use for routine UI fixes, small components, or applying an existing design system.
-metadata:
-  version: 3.1.5
----
+-->
 
 # Innovative UX Designer V3
 
@@ -40,7 +42,7 @@ Create a visual language that could only have emerged from this subject and cont
 13. **Carry the concept forward as text.** Every round-one direction has a concise written concept capsule created alongside it. Keep those capsules out of the first visual encounter, then use the human-locked capsule as the governing context for Round 2.
 14. **Round-one visual judgement is human-only.** After writing A through J, do not open, render, screenshot, inspect, compare, or judge them with Claude in Chrome, Chrome, browser automation, Computer Use, image analysis, or any other rendering tool. Claude may check source only; the human opens the HTML and supplies the first visual judgement.
 
-Read [references/ISOLATION-PROTOCOL.md](references/ISOLATION-PROTOCOL.md) before collecting creative evidence or looking for fonts. Read [references/CONCEPT-ROUNDS.md](references/CONCEPT-ROUNDS.md) before checking evidence or generating directions. Read [references/PRODUCTION-SYSTEM.md](references/PRODUCTION-SYSTEM.md) only after one direction has been explicitly locked. Read [references/VERIFICATION.md](references/VERIFICATION.md) before showing the Round 1 HTML files or claiming a Round 2 production result is complete.
+Read [references/ISOLATION-PROTOCOL.md](https://github.com/bencium/bencium-marketplace/blob/8b152ec07240cf671340b96cea6bb3442f697205/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/references/ISOLATION-PROTOCOL.md) before collecting creative evidence or looking for fonts. Read [references/CONCEPT-ROUNDS.md](https://github.com/bencium/bencium-marketplace/blob/8b152ec07240cf671340b96cea6bb3442f697205/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/references/CONCEPT-ROUNDS.md) before checking evidence or generating directions. Read [references/PRODUCTION-SYSTEM.md](https://github.com/bencium/bencium-marketplace/blob/8b152ec07240cf671340b96cea6bb3442f697205/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/references/PRODUCTION-SYSTEM.md) only after one direction has been explicitly locked. Read [references/VERIFICATION.md](https://github.com/bencium/bencium-marketplace/blob/8b152ec07240cf671340b96cea6bb3442f697205/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/references/VERIFICATION.md) before showing the Round 1 HTML files or claiming a Round 2 production result is complete.
 
 ## Track state privately
 

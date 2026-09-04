@@ -1,14 +1,16 @@
+---
+name: ascii-animation
+description: This skill should be used when the user asks to "make an ASCII animation", "build a terminal/CLI intro or loader", "convert an image or video to ASCII art", "add an ASCII shader/post-effect to a canvas or Three.js scene", "create retro/hacker text-character motion", or "animate text characters with a brightness ramp". Covers generative ASCII fields, image/video/3D-to-ASCII, and animated character art for both web and terminal.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/ascii-animation/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: ascii-animation
-description: This skill should be used when the user asks to "make an ASCII animation", "build a terminal/CLI intro or loader", "convert an image or video to ASCII art", "add an ASCII shader/post-effect to a canvas or Three.js scene", "create retro/hacker text-character motion", or "animate text characters with a brightness ramp". Covers generative ASCII fields, image/video/3D-to-ASCII, and animated character art for both web and terminal.
-version: 0.1.0
----
+-->
 
 # ASCII Animation
 

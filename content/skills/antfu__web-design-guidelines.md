@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/antfu/skills/blob/main/skills/web-design-guidelines/SKILL.md
-  Autor:   antfu
-  Licença: MIT
-  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: web-design-guidelines
 description: Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "audit design", "review UX", or "check my site against best practices".
 metadata:
@@ -12,6 +6,14 @@ metadata:
   version: "1.0.0"
   argument-hint: <file-or-pattern>
 ---
+
+<!--
+  Origem:  https://github.com/antfu/skills/blob/main/skills/web-design-guidelines/SKILL.md
+  Autor:   antfu
+  Licença: MIT
+  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Web Interface Guidelines
 

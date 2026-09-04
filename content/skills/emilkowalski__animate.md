@@ -1,13 +1,15 @@
+---
+name: animate
+description: Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.
+---
+
 <!--
   Origem:  https://github.com/emilkowalski/skills/blob/main/skills/animate/SKILL.md
   Autor:   emilkowalski
   Licença: MIT
   Commit:  d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: animate
-description: Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.
----
+-->
 
 # Building Animations
 
@@ -168,7 +170,7 @@ Reduced motion means **fewer and gentler** animations, not zero — keep transit
 
 ## Recipes
 
-For ready-to-build implementations of the common cases — button press, dropdown, tooltip, modal, drawer, toast, accordion, stagger, hold-to-confirm, tab indicator, scroll reveal, drag-to-dismiss — see [RECIPES.md](RECIPES.md). Load it whenever the request matches one of those components; start from the recipe rather than from a blank file.
+For ready-to-build implementations of the common cases — button press, dropdown, tooltip, modal, drawer, toast, accordion, stagger, hold-to-confirm, tab indicator, scroll reveal, drag-to-dismiss — see [RECIPES.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/animate/RECIPES.md). Load it whenever the request matches one of those components; start from the recipe rather than from a blank file.
 
 ## Never Ship
 

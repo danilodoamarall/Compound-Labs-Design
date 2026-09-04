@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->> **Additional context needed**: quality bar and shipping constraints.
+-->
+
+> **Additional context needed**: quality bar and shipping constraints.
 
 Polish is refinement, never concealed redesign. Preserve the incumbent visual world, content, behavior, and everything outside scope. If the concept itself is wrong, say so and recommend redesign or `bolder` instead of smuggling in a replacement.
 

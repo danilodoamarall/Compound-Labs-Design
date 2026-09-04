@@ -1,13 +1,15 @@
+---
+name: create-voice
+description: Generate screen reader accessibility specifications for VoiceOver (iOS), TalkBack (Android), and ARIA (Web). Use when the user mentions "voice", "voiceover", "screen reader", "accessibility spec", "talkback", "aria", or wants to create accessibility documentation for a UI component.
+---
+
 <!--
   Origem:  https://github.com/redongreen/uSpec/blob/main/skills/create-voice/SKILL.md
   Autor:   redongreen
   Licença: MIT
   Commit:  1e25e9b8bc2e694689ba0489594f38807a341f14
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: create-voice
-description: Generate screen reader accessibility specifications for VoiceOver (iOS), TalkBack (Android), and ARIA (Web). Use when the user mentions "voice", "voiceover", "screen reader", "accessibility spec", "talkback", "aria", or wants to create accessibility documentation for a UI component.
----
+-->
 
 # Create Voice Reader Specification
 

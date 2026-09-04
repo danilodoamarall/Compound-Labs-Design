@@ -4,11 +4,13 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->> **Additional context needed**: target platforms/devices and usage contexts.
+-->
+
+> **Additional context needed**: target platforms/devices and usage contexts.
 
 Adapt an existing design to a different context: another screen size, device, platform, or use case. The trap is treating adaptation as scaling. The job is rethinking the experience for the new context.
 
-**Web only** (mobile web included). Native platforms (`ios` / `android` / `adaptive`) route to [adapt.native.md](adapt.native.md) instead; if the project is native, switch to it now.
+**Web only** (mobile web included). Native platforms (`ios` / `android` / `adaptive`) route to [adapt.native.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/adapt.native.md) instead; if the project is native, switch to it now.
 
 ---
 

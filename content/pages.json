@@ -3,118 +3,342 @@
     "pt": [
       {
         "id": "o-que-e",
-        "title": "O que é este hub",
+        "group": "Comece aqui",
+        "title": "O que é o Compound Design",
         "body": [
-          "Um radar público de IA para design. Reúne o que aprendo construindo protótipos, ferramentas internas e agents, em quatro formatos: artigos que também são apresentação, um radar de ferramentas, um catálogo de AI tools e um catálogo de skills e agents.",
-          "Tudo é aberto. Qualquer pessoa da empresa, ou de fora, pode ler, citar e reaproveitar."
+          "O Compound Design é um lugar aberto onde o que se aprende em inteligência artificial, design e programação se acumula e fica disponível para qualquer pessoa usar.",
+          "Não é uma lista de ferramentas. É um catálogo de conhecimento pronto para uso: artigos com dados, um catálogo de skills (instruções que ensinam um assistente de IA a fazer algo bem) e duas formas de ligar esse catálogo ao seu assistente.",
+          "O nome é uma analogia com juros compostos. O que você aprende em design rende sobre o que sabe de código; o que aprende de IA rende sobre os dois. Cinco anos disso, acumulados em aberto."
         ]
+      },
+      {
+        "id": "para-quem",
+        "group": "Comece aqui",
+        "title": "Para quem é",
+        "body": [
+          "Para quem desenha ou constrói interfaces e quer usar IA sem baixar o próprio padrão de qualidade. Você não precisa saber programar para ler os artigos nem para entender o catálogo.",
+          "Se você nunca usou um assistente de IA para programar, comece pela seção \"Conceitos, sem jargão\". Ela define agente, skill, CLI e MCP em uma frase cada. Depois disso, o resto do site faz sentido."
+        ]
+      },
+      {
+        "id": "em-cinco-minutos",
+        "group": "Comece aqui",
+        "title": "Os primeiros cinco minutos",
+        "body": [
+          "Três coisas para fazer agora, em ordem. Nenhuma exige instalar nada."
+        ],
+        "steps": [
+          "Leia um artigo. Abra Artigos e escolha o primeiro da série. Ele lê os dados de uma pesquisa com 1.478 designers e diz o que muda no seu trabalho.",
+          "Abra uma skill. Vá em Skills, clique em qualquer linha do placar. Você vai ver o texto que ensina o assistente, quem escreveu, sob qual licença e de onde veio.",
+          "Copie um comando. Na página da skill há um botão de copiar. Se você usa um assistente de IA no terminal, cole o comando lá e ele baixa a skill. Se não usa, tudo bem: o texto está na tela para ler."
+        ]
+      },
+      {
+        "id": "agente",
+        "group": "Conceitos, sem jargão",
+        "title": "O que é um agente de IA",
+        "body": [
+          "Um agente de IA é um programa que usa um modelo de linguagem (como o Claude ou o GPT) para executar tarefas no seu computador, e não só responder perguntas. Ele lê seus arquivos, escreve código, roda comandos e corrige o que errou.",
+          "Claude Code, Cursor e Codex são agentes. Quando este site diz \"o seu agente\", é disso que fala: o assistente que você usa para construir interfaces.",
+          "Um agente é tão bom quanto o contexto que recebe. Sem instruções, ele produz o genérico. Com as instruções certas, produz algo à altura do seu padrão. As skills são essas instruções."
+        ]
+      },
+      {
+        "id": "skill",
+        "group": "Conceitos, sem jargão",
+        "title": "O que é uma skill",
+        "body": [
+          "Uma skill é um arquivo de texto, escrito por uma pessoa, que ensina o agente a fazer uma coisa bem. Por exemplo: como animar uma interface sem exagerar, como escolher tipografia, como revisar acessibilidade.",
+          "Não é um programa. Não instala nada no seu computador. É conhecimento em forma de texto, no formato que o agente entende, e o agente passa a seguir aquelas instruções enquanto trabalha.",
+          "Cada skill deste catálogo é de quem a escreveu. O nome do autor, a licença e o endereço original aparecem ao lado do texto, sempre."
+        ]
+      },
+      {
+        "id": "catalogo",
+        "group": "Conceitos, sem jargão",
+        "title": "O que é o catálogo",
+        "body": [
+          "O catálogo reúne skills de design engineering escritas por dezenas de autores, num lugar só, com busca e filtro por assunto. A lista é um placar: as skills aparecem ordenadas pelas estrelas que o repositório de origem tem no GitHub, um sinal público de quantas pessoas o consideraram útil.",
+          "Algumas skills abrem aqui mesmo, com o texto completo. Outras abrem no site de origem. A diferença é a licença: só servimos o texto de quem autorizou redistribuir. As demais mostram a ficha e levam você ao original."
+        ]
+      },
+      {
+        "id": "cli",
+        "group": "Conceitos, sem jargão",
+        "title": "O que é o CLI",
+        "body": [
+          "CLI quer dizer interface de linha de comando: uma ferramenta que você usa digitando comandos no terminal, aquela janela de texto do computador, em vez de clicar em botões.",
+          "O CLI do Compound Design serve para buscar skills sem abrir o site. Você digita um comando, ele responde com a lista ou com o texto da skill. É útil principalmente para o agente, que vive no terminal, mas funciona para pessoas também.",
+          "Não precisa instalar. O comando abaixo baixa e roda na hora."
+        ],
+        "code": "npx @compound-design/skills start"
+      },
+      {
+        "id": "mcp",
+        "group": "Conceitos, sem jargão",
+        "title": "O que é MCP",
+        "body": [
+          "MCP é a sigla de Model Context Protocol: um jeito padronizado de um agente de IA conversar com uma fonte externa de informação, como se ela fosse parte dele.",
+          "Pense numa tomada. Antes do MCP, cada agente precisava de um adaptador diferente para cada fonte. Com MCP, qualquer agente que fale o protocolo se conecta a qualquer fonte que também fale.",
+          "Conectar o MCP do Compound Design ao seu agente significa que ele passa a enxergar o catálogo inteiro: pode listar assuntos, procurar skills e ler o texto de uma, sem você copiar nada à mão."
+        ]
+      },
+      {
+        "id": "usar-no-claude-code",
+        "group": "Como usar",
+        "title": "Ligar o catálogo ao Claude Code",
+        "body": [
+          "O Claude Code é o agente da Anthropic que roda no terminal. Ele fala MCP. Um comando conecta os dois; depois disso, o catálogo aparece para ele como um conjunto de ferramentas."
+        ],
+        "steps": [
+          "Abra o terminal na pasta do seu projeto.",
+          "Cole o comando abaixo e aperte Enter. Ele registra o catálogo como um servidor MCP chamado compound-design.",
+          "Peça ao Claude Code, em português mesmo: \"procure uma skill sobre animação e use\". Ele vai listar, escolher e carregar."
+        ],
+        "code": "claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp"
+      },
+      {
+        "id": "usar-em-outros-agentes",
+        "group": "Como usar",
+        "title": "Usar em outros agentes",
+        "body": [
+          "Se o seu agente não fala MCP, ou se você prefere ver antes o que vai entregar a ele, use o CLI. O comando abaixo imprime o texto de uma skill no terminal; copie e cole na conversa com o agente.",
+          "Troque emilkowalski/animate pelo nome de qualquer skill do catálogo. O nome está no topo da página dela e no botão de copiar."
+        ],
+        "code": "npx @compound-design/skills get emilkowalski/animate"
       },
       {
         "id": "artigos",
+        "group": "Como usar",
         "title": "Artigos que também são slides",
         "body": [
-          "Cada artigo abre em dois modos. Em Leitura, é um texto corrido. Em Apresentação, o mesmo conteúdo vira slides em tela cheia, sem duplicar arquivo nenhum.",
-          "No modo apresentação: setas ou espaço navegam, F entra em tela cheia, N mostra as notas do apresentador e Esc volta para a leitura. O endereço guarda o número do slide, então dá para abrir direto em um ponto e recarregar sem perder o lugar."
-        ]
-      },
-      {
-        "id": "dados",
-        "title": "De onde vêm os dados",
-        "body": [
-          "A série inicial usa a State of Prototyping Spring 2026, pesquisa da UX Tools com 1.478 designers e builders, coletada entre 14 de março e 6 de abril de 2026 em 18 regiões, sob licença CC BY 4.0.",
-          "O CSV agregado da pesquisa fica versionado no repositório. Um script o converte em JSON e calcula os valores derivados, como os três grupos de vibe coding e os saldos de sentimento por papel. Os gráficos leem esse JSON, então nenhum número é digitado à mão dentro de um artigo.",
-          "Uma segunda verificação compara todo percentual citado nos textos com o dataset. Hoje são 204 números conferidos, com zero divergências."
+          "Cada artigo existe em dois modos. Leitura, como um texto normal. Apresentação, em que os mesmos blocos viram slides, com os gráficos em tela cheia, para você usar numa reunião.",
+          "O texto e os slides são o mesmo arquivo. Se um número muda no artigo, muda no slide. Nada é digitado duas vezes."
         ]
       },
       {
         "id": "graficos",
+        "group": "Como usar",
         "title": "Como ler os gráficos",
         "body": [
-          "Os gráficos são SVG renderizado no servidor, então funcionam sem JavaScript e imprimem bem. Cada um traz o nome da tabela de origem e o n da amostra logo abaixo do título.",
-          "Todo gráfico tem uma tabela equivalente atrás de \"Ver tabela\", porque cor sozinha nunca deve carregar informação. A paleta foi validada para os tipos comuns de daltonismo, nos temas claro e escuro."
+          "Todo gráfico dos artigos lê os dados diretamente da pesquisa. Nenhum valor é digitado à mão. Quando um artigo cita \"82,6%\", esse número veio do mesmo arquivo que desenhou a barra ao lado.",
+          "Uma verificação automática compara todo percentual citado nos textos com o conjunto de dados, e o site não publica se algum divergir."
         ]
       },
       {
-        "id": "curadoria",
-        "title": "Radar e catálogos",
+        "id": "procedencia",
+        "group": "Como funciona por dentro",
+        "title": "De onde vêm as skills",
         "body": [
-          "No radar, o percentual ao lado de cada ferramenta é o uso semanal medido pela pesquisa. A posição no anel, entre adotar, testar, avaliar e evitar, é curadoria do Labs, não um dado da pesquisa. Os dois nunca se misturam.",
-          "Itens marcados como rascunho aparecem com etiqueta. Significa que a posição é inicial e está aberta a discussão."
+          "Cada skill do catálogo é de quem a escreveu. A licença do repositório de origem foi verificada uma a uma. As de licença permissiva, a maioria, são servidas daqui, sempre com autor, licença e o commit exato de onde vieram, para você saber que está lendo a mesma versão que o autor publicou.",
+          "As que não declaram licença aparecem no catálogo, mas abrem na origem. Sem licença declarada, todos os direitos ficam com o autor, e servir o texto daqui seria redistribuir o que não é nosso."
+        ]
+      },
+      {
+        "id": "estrelas",
+        "group": "Como funciona por dentro",
+        "title": "Por que ordenamos por estrelas",
+        "body": [
+          "O placar ordena pelas estrelas do repositório de origem no GitHub. Estrela é o jeito de alguém marcar um projeto como útil; é um sinal público, que qualquer pessoa confere.",
+          "Não medimos quantas vezes uma skill foi instalada. Nada é instalado através daqui, então esse número não existe, e inventá-lo seria o contrário do que este catálogo defende. Um repositório muito estrelado aparece no máximo duas vezes seguidas na lista; o resto fica recolhido, senão um só autor ocuparia o topo inteiro."
+        ]
+      },
+      {
+        "id": "dados",
+        "group": "Como funciona por dentro",
+        "title": "De onde vêm os dados",
+        "body": [
+          "A série de artigos usa a State of Prototyping Spring 2026, pesquisa da UX Tools com 1.478 designers e builders, coletada entre 14 de março e 6 de abril de 2026 em 18 regiões, sob licença CC BY 4.0.",
+          "Os dados agregados ficam versionados no repositório. Um script os converte para o formato que os gráficos leem e calcula os valores derivados, como os três grupos de vibe coding. Hoje são 204 números conferidos, com zero divergências."
         ]
       },
       {
         "id": "contribuir",
+        "group": "Participe",
         "title": "Como contribuir",
         "body": [
-          "Comente nas apresentações, mande ferramentas para o radar ou proponha um artigo. O conteúdo com etiqueta de rascunho é justamente o que está esperando revisão.",
-          "O conteúdo mora em arquivos de texto no repositório: artigos em MDX, radar e catálogos em JSON. Editar não exige mexer em código."
+          "Comente nas apresentações, proponha uma skill para o catálogo ou um artigo. O conteúdo com etiqueta de rascunho é justamente o que está esperando revisão.",
+          "O conteúdo mora em arquivos de texto no repositório: artigos em MDX, o catálogo e o índice em JSON. Editar não exige mexer em código."
         ]
       },
       {
         "id": "licenca",
+        "group": "Participe",
         "title": "Licenças",
         "body": [
-          "Os dados da State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Citação sugerida: UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co",
-          "Os textos, gráficos e a curadoria deste hub são de Danilo do Amaral."
+          "Os dados da pesquisa são da UX Tools, sob CC BY 4.0. Os textos deste site são de Danilo do Amaral e podem ser citados com crédito. Cada skill do catálogo tem a licença do próprio autor, mostrada ao lado do texto.",
+          "O código do CLI é MIT. O código do site é aberto no repositório."
         ]
       }
     ],
     "en": [
       {
         "id": "o-que-e",
-        "title": "What this hub is",
+        "group": "Start here",
+        "title": "What Compound Design is",
         "body": [
-          "A public AI radar for design. It gathers what I learn building prototypes, internal tools and agents, in four formats: articles that double as presentations, a tools radar, an AI tools catalog and a catalog of skills and agents.",
-          "Everything is open. Anyone in the company, or outside it, can read, cite and reuse it."
+          "Compound Design is an open place where what one learns in artificial intelligence, design and programming accrues and stays available for anyone to use.",
+          "It is not a list of tools. It is a catalogue of knowledge ready to use: data-backed articles, a catalogue of skills (instructions that teach an AI assistant to do something well) and two ways to connect that catalogue to your assistant.",
+          "The name is an analogy with compound interest. What you learn in design earns on top of what you know about code; what you learn about AI earns on top of both. Five years of that, accruing in the open."
         ]
+      },
+      {
+        "id": "para-quem",
+        "group": "Start here",
+        "title": "Who it is for",
+        "body": [
+          "For people who design or build interfaces and want to use AI without lowering their own bar. You do not need to know how to code to read the articles or to understand the catalogue.",
+          "If you have never used an AI assistant to write code, start with \"Concepts, no jargon\". It defines agent, skill, CLI and MCP in one sentence each. After that, the rest of the site makes sense."
+        ]
+      },
+      {
+        "id": "em-cinco-minutos",
+        "group": "Start here",
+        "title": "The first five minutes",
+        "body": [
+          "Three things to do right now, in order. None requires installing anything."
+        ],
+        "steps": [
+          "Read an article. Open Articles and pick the first in the series. It reads the data from a survey of 1,478 designers and says what changes in your work.",
+          "Open a skill. Go to Skills and click any row of the leaderboard. You will see the text that teaches the assistant, who wrote it, under which licence, and where it came from.",
+          "Copy a command. The skill page has a copy button. If you use an AI assistant in the terminal, paste the command there and it fetches the skill. If you do not, that is fine: the text is on screen to read."
+        ]
+      },
+      {
+        "id": "agente",
+        "group": "Concepts, no jargon",
+        "title": "What an AI agent is",
+        "body": [
+          "An AI agent is a program that uses a language model (such as Claude or GPT) to carry out tasks on your computer, not just answer questions. It reads your files, writes code, runs commands and fixes what it got wrong.",
+          "Claude Code, Cursor and Codex are agents. When this site says \"your agent\", that is what it means: the assistant you use to build interfaces.",
+          "An agent is only as good as the context it receives. Without instructions it produces the generic. With the right instructions it produces something up to your standard. Skills are those instructions."
+        ]
+      },
+      {
+        "id": "skill",
+        "group": "Concepts, no jargon",
+        "title": "What a skill is",
+        "body": [
+          "A skill is a text file, written by a person, that teaches the agent to do one thing well. For example: how to animate an interface without overdoing it, how to choose typography, how to review accessibility.",
+          "It is not a program. It installs nothing on your computer. It is knowledge in text form, in the format the agent understands, and the agent follows those instructions while it works.",
+          "Every skill in this catalogue belongs to whoever wrote it. The author's name, the licence and the original address appear next to the text, always."
+        ]
+      },
+      {
+        "id": "catalogo",
+        "group": "Concepts, no jargon",
+        "title": "What the catalogue is",
+        "body": [
+          "The catalogue gathers design-engineering skills written by dozens of authors in one place, with search and filter by topic. The list is a leaderboard: skills appear ranked by the stars their source repository has on GitHub, a public signal of how many people found it useful.",
+          "Some skills open right here, with the full text. Others open at the source site. The difference is the licence: we only serve the text of those who allowed redistribution. The rest show the card and take you to the original."
+        ]
+      },
+      {
+        "id": "cli",
+        "group": "Concepts, no jargon",
+        "title": "What the CLI is",
+        "body": [
+          "CLI stands for command-line interface: a tool you use by typing commands in the terminal, the text window of your computer, instead of clicking buttons.",
+          "The Compound Design CLI is for fetching skills without opening the site. You type a command, it answers with the list or with the text of a skill. It is mostly useful for the agent, which lives in the terminal, but it works for people too.",
+          "No install needed. The command below downloads and runs on the spot."
+        ],
+        "code": "npx @compound-design/skills start"
+      },
+      {
+        "id": "mcp",
+        "group": "Concepts, no jargon",
+        "title": "What MCP is",
+        "body": [
+          "MCP stands for Model Context Protocol: a standard way for an AI agent to talk to an external source of information as if it were part of the agent.",
+          "Think of a power socket. Before MCP, each agent needed a different adapter for each source. With MCP, any agent that speaks the protocol connects to any source that speaks it too.",
+          "Connecting the Compound Design MCP to your agent means it can see the whole catalogue: list topics, search skills and read the text of one, without you copying anything by hand."
+        ]
+      },
+      {
+        "id": "usar-no-claude-code",
+        "group": "How to use",
+        "title": "Connect the catalogue to Claude Code",
+        "body": [
+          "Claude Code is Anthropic's agent that runs in the terminal. It speaks MCP. One command connects the two; after that, the catalogue shows up to it as a set of tools."
+        ],
+        "steps": [
+          "Open the terminal in your project folder.",
+          "Paste the command below and press Enter. It registers the catalogue as an MCP server named compound-design.",
+          "Ask Claude Code, in plain language: \"find a skill about animation and use it\". It will list, choose and load."
+        ],
+        "code": "claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp"
+      },
+      {
+        "id": "usar-em-outros-agentes",
+        "group": "How to use",
+        "title": "Use it in other agents",
+        "body": [
+          "If your agent does not speak MCP, or if you prefer to see what you are handing it first, use the CLI. The command below prints the text of a skill in the terminal; copy it and paste it into the conversation with the agent.",
+          "Replace emilkowalski/animate with the name of any skill in the catalogue. The name is at the top of its page and in the copy button."
+        ],
+        "code": "npx @compound-design/skills get emilkowalski/animate"
       },
       {
         "id": "artigos",
+        "group": "How to use",
         "title": "Articles that are also slides",
         "body": [
-          "Every article opens in two modes. In Reading, it is flowing text. In Presentation, the same content becomes full-screen slides, with no duplicated file.",
-          "In presentation mode: arrows or space navigate, F goes full screen, N shows the speaker notes and Esc returns to reading. The address keeps the slide number, so you can open at a specific point and reload without losing your place."
-        ]
-      },
-      {
-        "id": "dados",
-        "title": "Where the data comes from",
-        "body": [
-          "The opening series uses State of Prototyping Spring 2026, a UX Tools survey of 1,478 designers and builders, collected between March 14 and April 6, 2026 across 18 regions, under CC BY 4.0.",
-          "The survey's aggregate CSV is versioned in the repository. A script converts it to JSON and computes the derived values, such as the three vibe-coding groups and the sentiment net per role. The charts read that JSON, so no number is typed by hand inside an article.",
-          "A second check compares every percentage cited in the texts against the dataset. Today that is 204 numbers verified, with zero divergences."
+          "Each article exists in two modes. Reading, as a normal text. Presenting, where the same blocks become slides, with the charts full screen, for you to use in a meeting.",
+          "The text and the slides are the same file. If a number changes in the article, it changes in the slide. Nothing is typed twice."
         ]
       },
       {
         "id": "graficos",
+        "group": "How to use",
         "title": "How to read the charts",
         "body": [
-          "Charts are server-rendered SVG, so they work without JavaScript and print well. Each one carries its source table name and the sample n right under the title.",
-          "Every chart has an equivalent table behind \"View table\", because color alone should never carry information. The palette was validated for the common types of color blindness, in both light and dark themes."
+          "Every chart in the articles reads its data straight from the survey. No value is typed by hand. When an article cites \"82.6%\", that number came from the same file that drew the bar beside it.",
+          "An automatic check compares every percentage cited in the texts against the dataset, and the site does not publish if any diverges."
         ]
       },
       {
-        "id": "curadoria",
-        "title": "Radar and catalogs",
+        "id": "procedencia",
+        "group": "How it works inside",
+        "title": "Where the skills come from",
         "body": [
-          "On the radar, the percentage beside each tool is the weekly usage measured by the survey. The ring position, among adopt, trial, assess and hold, is Labs curation, not survey data. The two never mix.",
-          "Items marked as draft carry a label. It means the position is a starting point and open to discussion."
+          "Every skill in the catalogue belongs to whoever wrote it. The licence of each source repository was checked one by one. The permissively licensed ones, the majority, are served from here, always with author, licence and the exact commit they came from, so you know you are reading the same version the author published.",
+          "The ones that declare no licence appear in the catalogue but open at the source. Without a declared licence all rights stay with the author, and serving the text from here would mean redistributing what is not ours."
+        ]
+      },
+      {
+        "id": "estrelas",
+        "group": "How it works inside",
+        "title": "Why we rank by stars",
+        "body": [
+          "The leaderboard ranks by the source repository's stars on GitHub. A star is how someone marks a project as useful; it is a public signal anyone can check.",
+          "We do not measure how many times a skill was installed. Nothing is installed through here, so that number does not exist, and inventing it would be the opposite of what this catalogue stands for. A heavily starred repository appears at most twice in a row; the rest is collapsed, or a single author would take the whole top."
+        ]
+      },
+      {
+        "id": "dados",
+        "group": "How it works inside",
+        "title": "Where the data comes from",
+        "body": [
+          "The article series uses State of Prototyping Spring 2026, a UX Tools survey of 1,478 designers and builders, collected between March 14 and April 6, 2026 across 18 regions, under CC BY 4.0.",
+          "The aggregate data is versioned in the repository. A script converts it to the format the charts read and computes the derived values, such as the three vibe-coding groups. Today that is 204 numbers verified, with zero divergences."
         ]
       },
       {
         "id": "contribuir",
+        "group": "Take part",
         "title": "How to contribute",
         "body": [
-          "Comment on the presentations, send tools for the radar or propose an article. Content with a draft label is exactly what is waiting for review.",
-          "Content lives in text files in the repository: articles in MDX, radar and catalogs in JSON. Editing does not require touching code."
+          "Comment on the presentations, propose a skill for the catalogue or an article. Content with a draft label is exactly what is waiting for review.",
+          "Content lives in text files in the repository: articles in MDX, the catalogue and the index in JSON. Editing does not require touching code."
         ]
       },
       {
         "id": "licenca",
-        "title": "Licenses",
+        "group": "Take part",
+        "title": "Licences",
         "body": [
-          "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. Suggested citation: UX Tools. (2026). State of Prototyping Spring 2026. https://survey.uxtools.co",
-          "The texts, charts and curation in this hub are by Danilo do Amaral."
+          "The survey data belongs to UX Tools, under CC BY 4.0. The texts on this site are by Danilo do Amaral and may be cited with credit. Each skill in the catalogue carries its own author's licence, shown next to the text.",
+          "The CLI code is MIT. The site code is open in the repository."
         ]
       }
     ]
@@ -122,9 +346,9 @@
   "faq": {
     "pt": [
       {
-        "id": "radar-publico",
-        "q": "O que quer dizer \"radar público de IA\"?",
-        "a": "Público porque qualquer pessoa acessa, sem login. Radar porque a proposta não é listar tudo que existe, é dizer o que vale adotar agora, o que vale testar, o que só vale acompanhar e o que é melhor evitar. É uma posição, não um inventário."
+        "id": "origem",
+        "q": "Por que algumas skills abrem na origem em vez de aqui?",
+        "a": "Porque o repositório de onde vieram não declara licença. Sem licença declarada, todos os direitos ficam com o autor, e servir o texto daqui seria redistribuir o que não é nosso. O catálogo mostra a ficha e leva você ao arquivo original. As que têm licença permissiva, a maioria, abrem aqui mesmo, com o crédito junto."
       },
       {
         "id": "quem-escreve",
@@ -159,7 +383,7 @@
       {
         "id": "atualizacao",
         "q": "Com que frequência isto muda?",
-        "a": "A série de artigos tem data de publicação em cada peça. O radar e os catálogos mudam quando a curadoria muda, e trazem a data da última revisão no topo. Ranking de ferramenta é a parte que envelhece mais rápido."
+        "a": "A série de artigos tem data de publicação em cada peça. O catálogo de skills muda quando a ingestão roda, e cada skill traz a data em que foi copiada e o commit de origem. O índice do Explorar ordena tudo do mais recente ao mais antigo."
       },
       {
         "id": "reusar",
@@ -169,9 +393,9 @@
     ],
     "en": [
       {
-        "id": "radar-publico",
-        "q": "What does \"public AI radar\" mean?",
-        "a": "Public because anyone can open it, with no login. Radar because the goal is not to list everything that exists, it is to say what is worth adopting now, what is worth trialing, what is worth only watching and what is better avoided. It is a position, not an inventory."
+        "id": "origem",
+        "q": "Why do some skills open at the source instead of here?",
+        "a": "Because the repository they came from declares no licence. Without one, all rights stay with the author, and serving the text from here would mean redistributing what is not ours. The catalogue shows the card and takes you to the original file. The permissively licensed ones, the majority, open right here with the credit attached."
       },
       {
         "id": "quem-escreve",
@@ -206,7 +430,7 @@
       {
         "id": "atualizacao",
         "q": "How often does this change?",
-        "a": "The article series carries a publication date on each piece. The radar and catalogs change when the curation changes, and show the last revision date at the top. Tool rankings are the part that ages fastest."
+        "a": "The article series carries a publication date on each piece. The skills catalogue changes when ingestion runs, and each skill carries the date it was copied and the source commit. The Browse index orders everything newest first."
       },
       {
         "id": "reusar",

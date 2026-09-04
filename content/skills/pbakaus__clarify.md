@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->> **Additional context needed**: audience knowledge and emotional state.
+-->
+
+> **Additional context needed**: audience knowledge and emotional state.
 
 Rewrite unclear interface text so users understand what happened, what matters, and what to do next. Preserve factual meaning, product terminology, and brand voice.
 

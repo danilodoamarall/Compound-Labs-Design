@@ -1,13 +1,15 @@
+---
+name: container-lines
+description: Add vertical container-size guide lines with mini corner squares for precise, structured web layouts. Use when asked for container lines, measured layout guides, vertical boundary lines, editorial grid markers, or small corner-square frame details.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/container-lines/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: container-lines
-description: Add vertical container-size guide lines with mini corner squares for precise, structured web layouts. Use when asked for container lines, measured layout guides, vertical boundary lines, editorial grid markers, or small corner-square frame details.
----
+-->
 
 # Container Lines
 

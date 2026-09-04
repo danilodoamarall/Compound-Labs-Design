@@ -1,13 +1,15 @@
+---
+name: better-typography
+description: Focuses on type scale, spacing, sizing, variable fonts, OpenType features, wrapping, truncation and other details that make typography feel great across your product.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/better-typography/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: better-typography
-description: Focuses on type scale, spacing, sizing, variable fonts, OpenType features, wrapping, truncation and other details that make typography feel great across your product.
----
+-->
 
 # Typography
 
@@ -15,7 +17,7 @@ Typography is mostly restraint: a sensible scale, comfortable spacing, enough co
 
 When reviewing, read the rendered page instead of scanning the code. Bad wrapping, widows and truncation only show up at real content lengths.
 
-Write every fix in the project's styling system, and use the exact values below rather than familiar-looking equivalents. The [cheat sheet](css-cheat-sheet.md) maps each declaration to its Tailwind equivalent.
+Write every fix in the project's styling system, and use the exact values below rather than familiar-looking equivalents. The [cheat sheet](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/css-cheat-sheet.md) maps each declaration to its Tailwind equivalent.
 
 The words themselves belong to `better-writing`. Semantic heading structure belongs to `better-accessibility`. Spatial RTL layout and logical properties belong to `better-layout`. Contrast measurement belongs to `better-colors`. This skill owns how text renders, wraps and behaves in mixed-direction content.
 
@@ -27,7 +29,7 @@ Use `.woff2` on the web, for Brotli compression and broad support. `.woff` is a 
 
 When a CSS property exists, use it. `font-weight: 650` instead of `font-variation-settings: "wght" 650`. `font-optical-sizing: auto` instead of `"opsz"`. `font-variant-numeric: tabular-nums` instead of `font-feature-settings: "tnum" 1`.
 
-Properties keep working when a non-variable fallback renders. Reserve raw tags for custom axes (`"GRAD" 80`) and niche features (`"ss01" 1`) with no property of their own. Axes and feature tags are listed in [variable-fonts-and-opentype.md](variable-fonts-and-opentype.md).
+Properties keep working when a non-variable fallback renders. Reserve raw tags for custom axes (`"GRAD" 80`) and niche features (`"ss01" 1`) with no property of their own. Axes and feature tags are listed in [variable-fonts-and-opentype.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/variable-fonts-and-opentype.md).
 
 ## Load intended weights and styles
 
@@ -39,13 +41,13 @@ Browsers synthesize a weight or style the active family doesn't provide, distort
 
 Rarely use more than three fonts. Weight and size define hierarchy; overusing them hurts readability fast. Pair for contrast, not similarity: a serif headline over a sans body reads as deliberate, two near-identical sans-serifs read as a mistake.
 
-Below `18px`, stay at weight `400` or heavier. Weights under `300` are display-only at `28px`+; they disappear at text sizes. Pairing guidance is in [choosing-fonts.md](choosing-fonts.md).
+Below `18px`, stay at weight `400` or heavier. Weights under `300` are display-only at `28px`+; they disappear at text sizes. Pairing guidance is in [choosing-fonts.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/choosing-fonts.md).
 
 ## Use a type scale with semantic names
 
 Define a small set of sizes and deviate from it as little as possible. Hard-coded sizes with no system behind them break down at scale.
 
-Solo, default names like `text-sm` are fine when the usage rules are clear. On a team, name sizes by use (`text-body-sm`) so the rules survive other people. Scale construction is in [spacing-and-sizing.md](spacing-and-sizing.md).
+Solo, default names like `text-sm` are fine when the usage rules are clear. On a team, name sizes by use (`text-body-sm`) so the rules survive other people. Scale construction is in [spacing-and-sizing.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/spacing-and-sizing.md).
 
 ## Heading sizes descend with level
 
@@ -63,7 +65,7 @@ Large headings often look better with slightly negative letter-spacing. Small up
 
 ## Cap the measure
 
-Long lines make it hard for the eye to find the next one. Cap long-form text around 60–75 characters per line. Any unit works, as long as a cap exists and the line length lands in range. See [unit choices and the pixel equivalents](wrapping-and-punctuation.md#measure-line-length).
+Long lines make it hard for the eye to find the next one. Cap long-form text around 60–75 characters per line. Any unit works, as long as a cap exists and the line length lands in range. See [unit choices and the pixel equivalents](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/wrapping-and-punctuation.md#measure-line-length).
 
 ## Wrap deliberately
 
@@ -111,7 +113,7 @@ iOS Safari zooms the whole page when an input's text is smaller than `16px`. Two
 - Size the input up on mobile (`text-base sm:text-sm`). Changes how it looks on small screens.
 - Keep `font-size: 16px` and render the intended size with `transform: scale()`, compensating width and `line-height`. Identical at every viewport, more code to maintain.
 
-Both recipes are in [details-and-accessibility.md](details-and-accessibility.md).
+Both recipes are in [details-and-accessibility.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-typography/details-and-accessibility.md).
 
 ## Size and contrast floors
 

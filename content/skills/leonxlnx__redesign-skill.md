@@ -1,13 +1,15 @@
+---
+name: redesign-existing-projects
+description: Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.
+---
+
 <!--
   Origem:  https://github.com/Leonxlnx/taste-skill/blob/main/skills/redesign-skill/SKILL.md
   Autor:   Leonxlnx
   Licença: MIT
   Commit:  ccbc15639c97057cbfcf32ecebc38ef716e4bb37
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: redesign-existing-projects
-description: Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.
----
+-->
 
 # Redesign Skill
 

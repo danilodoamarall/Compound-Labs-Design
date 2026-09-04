@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->Quiet design is harder than bold design. Subtlety needs precision. Reduce visual intensity in designs that are too loud, aggressive, or overstimulating without losing personality or making the result generic.
+-->
+
+Quiet design is harder than bold design. Subtlety needs precision. Reduce visual intensity in designs that are too loud, aggressive, or overstimulating without losing personality or making the result generic.
 
 ---
 

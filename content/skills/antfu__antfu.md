@@ -1,16 +1,18 @@
-<!--
-  Origem:  https://github.com/antfu/skills/blob/main/skills/antfu/SKILL.md
-  Autor:   antfu
-  Licença: MIT
-  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: antfu
 description: Anthony Fu's opinionated tooling and conventions for JavaScript/TypeScript projects. Use when setting up new projects, configuring ESLint/Prettier alternatives, monorepos, library publishing, or when the user mentions Anthony Fu's preferences.
 metadata:
   author: Anthony Fu
   version: "2026.06.22"
 ---
+
+<!--
+  Origem:  https://github.com/antfu/skills/blob/main/skills/antfu/SKILL.md
+  Autor:   antfu
+  Licença: MIT
+  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 ## Coding Practices
 
@@ -40,7 +42,7 @@ metadata:
 
 Favor explicit, traceable code over implicit "magic". A reader (human or agent) should be able to follow where every name comes from without running tooling.
 
-- **Explicit imports**: Prefer explicit `import` statements. Avoid auto-imports — when a framework provides them (e.g. Nuxt/Nitro), turn them off for new projects (see [app-development](references/app-development.md)).
+- **Explicit imports**: Prefer explicit `import` statements. Avoid auto-imports — when a framework provides them (e.g. Nuxt/Nitro), turn them off for new projects (see [app-development](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/app-development.md)).
 - **No path aliases by default**: Use relative imports (`./foo`, `../bar`). Only use path aliases (`@/`, `~/`, `#imports`, etc.) when they are *already* configured in the project; don't introduce new ones for greenfield code.
 
 ### Comments
@@ -115,7 +117,7 @@ export default antfu()
 
 When completing tasks, run `pnpm run lint --fix` to format the code and fix coding style.
 
-For detailed configuration options: [antfu-eslint-config](references/antfu-eslint-config.md)
+For detailed configuration options: [antfu-eslint-config](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/antfu-eslint-config.md)
 
 ### Git Hooks
 
@@ -150,8 +152,8 @@ Avoid the default catalog. Catalog names can be adjusted per project needs.
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| ESLint Config | Framework support, formatters, rule overrides, VS Code settings | [antfu-eslint-config](references/antfu-eslint-config.md) |
-| Project Setup | .gitignore, GitHub Actions, VS Code extensions | [setting-up](references/setting-up.md) |
-| App Development | Vue/Nuxt/UnoCSS conventions, auto-import control, Storybook component testing | [app-development](references/app-development.md) |
-| Library Development | tsdown bundling, pure ESM publishing | [library-development](references/library-development.md) |
-| Monorepo | pnpm workspaces, centralized alias, Turborepo | [monorepo](references/monorepo.md) |
+| ESLint Config | Framework support, formatters, rule overrides, VS Code settings | [antfu-eslint-config](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/antfu-eslint-config.md) |
+| Project Setup | .gitignore, GitHub Actions, VS Code extensions | [setting-up](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/setting-up.md) |
+| App Development | Vue/Nuxt/UnoCSS conventions, auto-import control, Storybook component testing | [app-development](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/app-development.md) |
+| Library Development | tsdown bundling, pure ESM publishing | [library-development](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/library-development.md) |
+| Monorepo | pnpm workspaces, centralized alias, Turborepo | [monorepo](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu/references/monorepo.md) |

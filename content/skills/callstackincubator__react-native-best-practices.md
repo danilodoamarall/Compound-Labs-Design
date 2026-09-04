@@ -1,14 +1,16 @@
+---
+name: react-native-best-practices
+description: Provides React Native performance optimization guidelines for FPS, TTI, bundle size, memory leaks, re-renders, and animations. Applies to tasks involving Hermes optimization, JS thread blocking, bridge overhead, FlashList, native modules, or debugging jank and frame drops.
+license: MIT
+---
+
 <!--
   Origem:  https://github.com/callstackincubator/agent-skills/blob/main/skills/react-native-best-practices/SKILL.md
   Autor:   callstackincubator
   Licença: MIT
   Commit:  2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: react-native-best-practices
-description: Provides React Native performance optimization guidelines for FPS, TTI, bundle size, memory leaks, re-renders, and animations. Applies to tasks involving Hermes optimization, JS thread blocking, bridge overhead, FlashList, native modules, or debugging jank and frame drops.
-license: MIT
----
+-->
 
 # React Native Best Practices
 
@@ -208,36 +210,36 @@ Full documentation with code examples in [references/][references]:
 | Native module slow | [native-turbo-modules.md][native-turbo-modules] → [native-threading-model.md][native-threading-model] |
 | Native library alignment issue | [native-android-16kb-alignment.md][native-android-16kb-alignment] |
 
-[references]: references/
-[js-lists-flatlist-flashlist]: references/js-lists-flatlist-flashlist.md
-[js-profile-react]: references/js-profile-react.md
-[js-measure-fps]: references/js-measure-fps.md
-[js-memory-leaks]: references/js-memory-leaks.md
-[js-atomic-state]: references/js-atomic-state.md
-[js-concurrent-react]: references/js-concurrent-react.md
-[js-react-compiler]: references/js-react-compiler.md
-[js-animations-reanimated]: references/js-animations-reanimated.md
-[js-bottomsheet]: references/js-bottomsheet.md
-[js-uncontrolled-components]: references/js-uncontrolled-components.md
-[native-turbo-modules]: references/native-turbo-modules.md
-[native-sdks-over-polyfills]: references/native-sdks-over-polyfills.md
-[native-measure-tti]: references/native-measure-tti.md
-[native-threading-model]: references/native-threading-model.md
-[native-profiling]: references/native-profiling.md
-[native-platform-setup]: references/native-platform-setup.md
-[native-view-flattening]: references/native-view-flattening.md
-[native-memory-patterns]: references/native-memory-patterns.md
-[native-memory-leaks]: references/native-memory-leaks.md
-[native-android-16kb-alignment]: references/native-android-16kb-alignment.md
-[bundle-barrel-exports]: references/bundle-barrel-exports.md
-[bundle-analyze-js]: references/bundle-analyze-js.md
-[bundle-tree-shaking]: references/bundle-tree-shaking.md
-[bundle-analyze-app]: references/bundle-analyze-app.md
-[bundle-r8-android]: references/bundle-r8-android.md
-[bundle-hermes-mmap]: references/bundle-hermes-mmap.md
-[bundle-native-assets]: references/bundle-native-assets.md
-[bundle-library-size]: references/bundle-library-size.md
-[bundle-code-splitting]: references/bundle-code-splitting.md
+[references]: https://github.com/callstackincubator/agent-skills/tree/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references
+[js-lists-flatlist-flashlist]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-lists-flatlist-flashlist.md
+[js-profile-react]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-profile-react.md
+[js-measure-fps]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-measure-fps.md
+[js-memory-leaks]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-memory-leaks.md
+[js-atomic-state]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-atomic-state.md
+[js-concurrent-react]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-concurrent-react.md
+[js-react-compiler]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-react-compiler.md
+[js-animations-reanimated]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-animations-reanimated.md
+[js-bottomsheet]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-bottomsheet.md
+[js-uncontrolled-components]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/js-uncontrolled-components.md
+[native-turbo-modules]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-turbo-modules.md
+[native-sdks-over-polyfills]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-sdks-over-polyfills.md
+[native-measure-tti]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-measure-tti.md
+[native-threading-model]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-threading-model.md
+[native-profiling]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-profiling.md
+[native-platform-setup]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-platform-setup.md
+[native-view-flattening]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-view-flattening.md
+[native-memory-patterns]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-memory-patterns.md
+[native-memory-leaks]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-memory-leaks.md
+[native-android-16kb-alignment]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/native-android-16kb-alignment.md
+[bundle-barrel-exports]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-barrel-exports.md
+[bundle-analyze-js]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-analyze-js.md
+[bundle-tree-shaking]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-tree-shaking.md
+[bundle-analyze-app]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-analyze-app.md
+[bundle-r8-android]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-r8-android.md
+[bundle-hermes-mmap]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-hermes-mmap.md
+[bundle-native-assets]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-native-assets.md
+[bundle-library-size]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-library-size.md
+[bundle-code-splitting]: https://github.com/callstackincubator/agent-skills/blob/2766baa46ca0fe7c16cc5ab4d0077ccec2e95fb9/skills/react-native-best-practices/references/bundle-code-splitting.md
 
 ## Attribution
 

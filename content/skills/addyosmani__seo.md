@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/seo/SKILL.md
-  Autor:   addyosmani
-  Licença: MIT
-  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: seo
 description: Optimize for search engine visibility and ranking. Use when asked to "improve SEO", "optimize for search", "fix meta tags", "add structured data", "sitemap optimization", or "search engine optimization".
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: web-quality-skills
   version: "2.0"
 ---
+
+<!--
+  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/seo/SKILL.md
+  Autor:   addyosmani
+  Licença: MIT
+  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # SEO optimization
 
@@ -259,7 +261,7 @@ Treat title-link rewriting separately from truncation. Google may build a differ
 
 ## Structured data (JSON-LD)
 
-Read [the structured data reference](references/STRUCTURED-DATA.md) when the user requests schema markup or an audit surfaces a structured-data issue. It contains Organization, Article, Product, FAQ, and Breadcrumb examples plus validation links.
+Read [the structured data reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/seo/references/STRUCTURED-DATA.md) when the user requests schema markup or an audit surfaces a structured-data issue. It contains Organization, Article, Product, FAQ, and Breadcrumb examples plus validation links.
 
 * **Describe visible, accurate content.** Do not add a type or claim solely to obtain a rich result.
 * **Use the most specific applicable type.** Keep identifiers and absolute URLs stable across renders.
@@ -411,5 +413,5 @@ body {
 
 - [Google Search Central](https://developers.google.com/search)
 - [Schema.org](https://schema.org/)
-- [Core Web Vitals](../core-web-vitals/SKILL.md)
-- [Web Quality Audit](../web-quality-audit/SKILL.md)
+- [Core Web Vitals](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/SKILL.md)
+- [Web Quality Audit](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/web-quality-audit/SKILL.md)

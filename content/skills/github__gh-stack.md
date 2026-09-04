@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/github/gh-stack/blob/main/skills/gh-stack/SKILL.md
-  Autor:   github
-  Licença: MIT
-  Commit:  2bd699a544a09cb5c45a013d03416e0894b0454e
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: gh-stack
 description: >
   Manages stacked PRs and splits multi-part work into reviewable branches with gh-stack.
@@ -15,6 +9,14 @@ metadata:
   author: github
   version: "0.1.0"
 ---
+
+<!--
+  Origem:  https://github.com/github/gh-stack/blob/main/skills/gh-stack/SKILL.md
+  Autor:   github
+  Licença: MIT
+  Commit:  2bd699a544a09cb5c45a013d03416e0894b0454e
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # gh-stack
 

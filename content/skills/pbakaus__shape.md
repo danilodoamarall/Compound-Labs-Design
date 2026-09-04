@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
---># Shape
+-->
+
+# Shape
 
 Discover what should be made and how it should work, then return a confirmed design brief without code.
 
@@ -42,7 +44,7 @@ Never ask for CSS values or canned aesthetic lanes. New-work owns visual-world a
 
 ## Phase 2: Resolve the design direction
 
-For new surfaces, brand expansion, or replacement, follow [new-work.md](new-work.md) through visual authority, any world workshop, and concept choice. Reuse discovery, then return before its contract, persistence, or implementation. Inside an established world, use its concept process only when composition or interaction remains materially open.
+For new surfaces, brand expansion, or replacement, follow [new-work.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/new-work.md) through visual authority, any world workshop, and concept choice. Reuse discovery, then return before its contract, persistence, or implementation. Inside an established world, use its concept process only when composition or interaction remains materially open.
 
 ## Phase 3: Write the brief
 

@@ -4,11 +4,13 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->Run systematic **technical** quality checks and generate a comprehensive report. Don't fix issues; document them for other commands to address.
+-->
+
+Run systematic **technical** quality checks and generate a comprehensive report. Don't fix issues; document them for other commands to address.
 
 This is a code-level audit, not a design critique. Check what's measurable and verifiable in the implementation.
 
-**Web only.** Native platforms (`ios` / `android` / `adaptive`) route to [audit.native.md](audit.native.md) instead; if the project is native, switch to it now.
+**Web only.** Native platforms (`ios` / `android` / `adaptive`) route to [audit.native.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/audit.native.md) instead; if the project is native, switch to it now.
 
 ## Diagnostic Scan
 

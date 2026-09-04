@@ -1,13 +1,15 @@
+---
+name: text-to-lottie
+description: Create, edit, or fix Lottie/Bodymovin JSON animations for the local Skia Skottie player. Use for text-to-Lottie, SVG/logo/type animation, loaders/icons, state feedback, UI microinteractions, lower thirds, diagrams, data/stat/chart animations, product promos, scene/camera motion, visual effects, scene edits, slots/controls, and Skottie debugging.
+---
+
 <!--
   Origem:  https://github.com/diffusionstudio/lottie/blob/main/skills/text-to-lottie/SKILL.md
   Autor:   diffusionstudio
   Licença: MIT
   Commit:  3c72912fad543897f90045ed4d355813837927fc
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: text-to-lottie
-description: Create, edit, or fix Lottie/Bodymovin JSON animations for the local Skia Skottie player. Use for text-to-Lottie, SVG/logo/type animation, loaders/icons, state feedback, UI microinteractions, lower thirds, diagrams, data/stat/chart animations, product promos, scene/camera motion, visual effects, scene edits, slots/controls, and Skottie debugging.
----
+-->
 
 # Text To Lottie
 

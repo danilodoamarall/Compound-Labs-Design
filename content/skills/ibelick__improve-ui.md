@@ -1,13 +1,15 @@
+---
+name: improve-ui
+description: Audit an existing product surface against its own design evidence, identify verified UI problems, and write self-contained implementation plans for another agent. Strictly read-only on product source. Use when asked to review, refine, improve, or clean up an interface without replacing its identity; investigate design-system drift; or prepare a design handoff.
+---
+
 <!--
   Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/improve-ui/SKILL.md
   Autor:   ibelick
   Licença: MIT
   Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: improve-ui
-description: Audit an existing product surface against its own design evidence, identify verified UI problems, and write self-contained implementation plans for another agent. Strictly read-only on product source. Use when asked to review, refine, improve, or clean up an interface without replacing its identity; investigate design-system drift; or prepare a design handoff.
----
+-->
 
 # Improve UI
 
@@ -113,7 +115,7 @@ If findings survive, stop and ask which to turn into plans. If the user already 
 
 ## 6. Specify selected changes
 
-Read [references/plan-template.md](references/plan-template.md). Write one plan per selected change, never one per symptom.
+Read [references/plan-template.md](https://github.com/ibelick/ui-skills/blob/9f140de767e6e2d4adc3970eb68d24b3ec896f99/skills/improve-ui/references/plan-template.md). Write one plan per selected change, never one per symptom.
 
 Before writing, re-open every cited source, record the current commit when available, identify exact reusable primitives and exemplars, and trace affected surfaces. Reconcile an existing plan instead of duplicating it.
 

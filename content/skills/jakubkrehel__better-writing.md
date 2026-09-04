@@ -1,13 +1,15 @@
+---
+name: better-writing
+description: Focuses on improving product copy in your project.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/better-writing/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: better-writing
-description: Focuses on improving product copy in your project.
----
+-->
 
 # Interface writing
 

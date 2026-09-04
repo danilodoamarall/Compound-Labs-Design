@@ -1,13 +1,15 @@
+---
+name: animation-systems
+description: Use when designing or implementing product-grade web motion like Stripe, Linear, Apple, and Vercel. Covers motion principles, easing/duration defaults, choreography patterns, scroll/hover interactions, performance, accessibility (reduced motion), and implementation guidance.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/animation-systems/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: animation-systems
-description: Use when designing or implementing product-grade web motion like Stripe, Linear, Apple, and Vercel. Covers motion principles, easing/duration defaults, choreography patterns, scroll/hover interactions, performance, accessibility (reduced motion), and implementation guidance.
----
+-->
 
 # Animation Systems (Stripe × Linear × Apple × Vercel)
 

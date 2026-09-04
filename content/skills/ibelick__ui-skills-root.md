@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/ui-skills-root/SKILL.md
-  Autor:   ibelick
-  Licença: MIT
-  Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: ui-skills-root
 description: Use before UI-related work to select the smallest useful UI Skills context through the ui-skills CLI.
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: ibelick
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/ui-skills-root/SKILL.md
+  Autor:   ibelick
+  Licença: MIT
+  Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # UI Skills Root
 

@@ -1,13 +1,15 @@
+---
+name: diagnosing-bugs
+description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
+---
+
 <!--
   Origem:  https://github.com/mattpocock/skills/blob/main/skills/engineering/diagnosing-bugs/SKILL.md
   Autor:   mattpocock
   Licença: MIT
   Commit:  6654f6b60cd9d5be8b54c6fafe44346dabeb3b76
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: diagnosing-bugs
-description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
----
+-->
 
 # Diagnosing Bugs
 

@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->Layout turns product priority into reading order, grouping, rhythm, and usable space. Diagnose the structural problem before moving boxes.
+-->
+
+Layout turns product priority into reading order, grouping, rhythm, and usable space. Diagnose the structural problem before moving boxes.
 
 ---
 
@@ -12,9 +14,9 @@
 
 - **Persuade + Experience:** composition may be asymmetric, fluid, or intentionally disruptive when the selected world earns it.
 - **Operate + Read:** predictable structure, stable density, and navigable linearity are affordances.
-- **Native:** follow [ios.md](ios.md) or [android.md](android.md) for navigation, insets, adaptation, and touch targets.
+- **Native:** follow [ios.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/ios.md) or [android.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/android.md) for navigation, insets, adaptation, and touch targets.
 
-Preserve the established visual world. A layout command changes structure inside it; identity replacement belongs to [new-work.md](new-work.md).
+Preserve the established visual world. A layout command changes structure inside it; identity replacement belongs to [new-work.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/new-work.md).
 
 ## Two isolated assessments
 
@@ -87,4 +89,4 @@ Every variant declares a coarse `density` parameter and authors spacing against 
 {"id":"density","kind":"range","min":0.6,"max":1.4,"step":0.05,"default":1,"label":"Density"}
 ```
 
-Add one structural parameter only when the topology genuinely branches. Follow [live.md](live.md)'s parameter contract.
+Add one structural parameter only when the topology genuinely branches. Follow [live.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/live.md)'s parameter contract.

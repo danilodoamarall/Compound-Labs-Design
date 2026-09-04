@@ -24,14 +24,25 @@ export function HeroCard({
   subtitle,
   primary,
   secondary,
+  tertiary,
   curator,
+  curatorRole,
+  curatorHref,
 }: {
   badge: string;
   title: string;
   subtitle: string;
   primary: HeroCta;
   secondary: HeroCta;
+  /** Um terceiro caminho, discreto: texto com seta sob os botões. É a porta
+   *  para quem chegou sem saber o que é um agente e precisa da documentação
+   *  antes de qualquer comando. */
+  tertiary?: HeroCta;
   curator: string;
+  /** O cargo, ao lado do nome. */
+  curatorRole?: string;
+  /** Para onde o nome leva. O crédito tem de ir até a pessoa, não parar no texto. */
+  curatorHref?: string;
 }) {
   return (
     <section className="w-full px-4 pt-6 sm:px-6">
@@ -77,7 +88,36 @@ export function HeroCard({
           </a>
         </div>
 
-        <p className="mt-8 text-[13px] text-white/45">{curator}</p>
+        {tertiary ? (
+          <a
+            href={tertiary.href}
+            className="mt-5 inline-flex items-center gap-1.5 text-[13.5px] text-white/60 underline decoration-white/20 underline-offset-4 outline-none transition-colors hover:text-white hover:decoration-white/50 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-white/70"
+          >
+            {tertiary.label}
+            <ArrowRight size={13} aria-hidden />
+          </a>
+        ) : null}
+
+        <p className="mt-8 text-[13px] text-white/45">
+          {curatorHref ? (
+            <a
+              href={curatorHref}
+              target="_blank"
+              rel="noreferrer me"
+              className="text-white/70 underline decoration-white/25 underline-offset-4 transition-colors hover:text-white hover:decoration-white/60"
+            >
+              {curator}
+            </a>
+          ) : (
+            curator
+          )}
+          {curatorRole ? (
+            <>
+              <span aria-hidden className="mx-2 text-white/25">·</span>
+              {curatorRole}
+            </>
+          ) : null}
+        </p>
       </div>
     </section>
   );

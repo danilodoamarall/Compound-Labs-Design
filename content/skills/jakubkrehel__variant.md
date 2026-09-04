@@ -1,14 +1,16 @@
+---
+name: variant
+description: Builds multiple variants of a component you're working on and helps you iterate and pick one.
+disable-model-invocation: true
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/variant/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: variant
-description: Builds multiple variants of a component you're working on and helps you iterate and pick one.
-disable-model-invocation: true
----
+-->
 
 # Variants
 
@@ -71,7 +73,7 @@ This step is done when no two variants share a position and you can state each o
 
 A variant looks fine in isolation, which is why isolation is the wrong place to judge it. Host the variants on the page that will actually contain the piece, with the real chrome, the real neighbours and realistic data.
 
-Select with a URL search param (`?variant=quiet`), so every variant is a link you can send someone. A floating control sets it; [picker.md](picker.md) holds the spec.
+Select with a URL search param (`?variant=quiet`), so every variant is a link you can send someone. A floating control sets it; [picker.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/variant/picker.md) holds the spec.
 
 Render one variant at a time, full size. Thumbnails distort spacing and scale, and spacing is usually the thing you are choosing between.
 

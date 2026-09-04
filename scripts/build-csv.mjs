@@ -59,7 +59,7 @@ const header = [
   `# fonte: ${meta.url ?? ""}`,
   `# licenca: ${meta.license ?? ""}`,
   `# n=${meta.n ?? ""} coleta=${meta.collected?.from ?? ""} a ${meta.collected?.to ?? ""}`,
-  `# tratamento: AI Builders Lab`,
+  `# tratamento: Compound Design`,
 ].join("\n");
 
 const csv = header + "\n" + rows.map((r) => r.map(cell).join(",")).join("\n") + "\n";

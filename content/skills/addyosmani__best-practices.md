@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/best-practices/SKILL.md
-  Autor:   addyosmani
-  Licença: MIT
-  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: best-practices
 description: Apply modern web development best practices for security, compatibility, and code quality. Use when asked to "apply best practices", "security audit", "modernize code", "code quality review", or "check for vulnerabilities".
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: web-quality-skills
   version: "2.0"
 ---
+
+<!--
+  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/best-practices/SKILL.md
+  Autor:   addyosmani
+  Licença: MIT
+  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Best practices
 
@@ -30,7 +32,7 @@ If live tools are unavailable, use the Lighthouse CLI plus focused dependency an
 
 ## Security
 
-Read [the security reference](references/SECURITY.md) when security is in scope or a live audit surfaces a related failure. It covers HTTPS/HSTS, CSP and Trusted Types, Subresource Integrity, headers, dependencies, sanitization, and cookies.
+Read [the security reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/best-practices/references/SECURITY.md) when security is in scope or a live audit surfaces a related failure. It covers HTTPS/HSTS, CSP and Trusted Types, Subresource Integrity, headers, dependencies, sanitization, and cookies.
 
 At minimum:
 
@@ -483,4 +485,4 @@ findNearbyButton.addEventListener('click', async () => {
 
 - [MDN Web Security](https://developer.mozilla.org/en-US/docs/Web/Security)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [Web Quality Audit](../web-quality-audit/SKILL.md)
+- [Web Quality Audit](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/web-quality-audit/SKILL.md)

@@ -1,14 +1,16 @@
+---
+name: svg-animation
+description: This skill should be used when the user asks to "animate an SVG", "make a line draw itself on", "do a stroke draw-on / signature animation", "morph one shape into another", "move an element along a path", "animate an icon/logo", or "animate an SVG gradient or filter". Covers stroke-dashoffset draw-on, path morphing, motion-along-path, and animated icons/gradients/filters via CSS, SMIL, and GSAP.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/svg-animation/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: svg-animation
-description: This skill should be used when the user asks to "animate an SVG", "make a line draw itself on", "do a stroke draw-on / signature animation", "morph one shape into another", "move an element along a path", "animate an icon/logo", or "animate an SVG gradient or filter". Covers stroke-dashoffset draw-on, path morphing, motion-along-path, and animated icons/gradients/filters via CSS, SMIL, and GSAP.
-version: 0.1.0
----
+-->
 
 # SVG Animation
 

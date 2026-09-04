@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/core-web-vitals/SKILL.md
-  Autor:   addyosmani
-  Licença: MIT
-  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: core-web-vitals
 description: Optimize Core Web Vitals (LCP, INP, CLS) for better page experience using field and lab evidence. Use when asked to "improve Core Web Vitals", "fix LCP", "reduce CLS", "optimize INP", "page experience optimization", or "fix layout shifts".
 license: MIT
@@ -13,13 +7,21 @@ metadata:
   version: "2.0"
 ---
 
+<!--
+  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/core-web-vitals/SKILL.md
+  Autor:   addyosmani
+  Licença: MIT
+  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Core Web Vitals optimization
 
 Targeted optimization for the three Core Web Vitals using field data to identify user impact and browser traces to diagnose causes.
 
 ## Measure before optimizing
 
-When a runnable URL is available, read [the performance measurement workflow](../performance/references/MEASUREMENT.md). Prefer this sequence:
+When a runnable URL is available, read [the performance measurement workflow](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/MEASUREMENT.md). Prefer this sequence:
 
 1. Check page-level CrUX p75 data, with a clearly labeled origin fallback when page data is unavailable.
 2. Record a browser performance trace under stated conditions. With Chrome DevTools MCP, trace summaries can include CrUX alongside the observed lab metrics.
@@ -157,7 +159,7 @@ new PerformanceObserver((list) => {
 
 INP measures responsiveness across clicks, taps, and key presses during a visit. Diagnose its input delay, processing time, and presentation delay separately; a slow interaction may involve main-thread contention before the handler, expensive application work, or delayed rendering after it.
 
-When field INP is poor or a trace identifies a slow interaction, read [the INP reference](references/INP.md) for trace interpretation, yielding patterns, third-party and rendering causes, a single-session observer, and first-party attribution.
+When field INP is poor or a trace identifies a slow interaction, read [the INP reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/references/INP.md) for trace interpretation, yielding patterns, third-party and rendering causes, a single-session observer, and first-party attribution.
 
 ---
 
@@ -165,7 +167,7 @@ When field INP is poor or a trace identifies a slow interaction, read [the INP r
 
 CLS measures unexpected layout shifts across a page visit. Use field attribution or a trace to identify the shifted node and the trigger; do not assume the visible victim caused the shift.
 
-When field CLS is poor or a trace reports shifts, read [the CLS reference](references/CLS.md) for reserved-space patterns, dynamic content, font and animation fixes, a debugging observer, and a verification checklist.
+When field CLS is poor or a trace reports shifts, read [the CLS reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/references/CLS.md) for reserved-space patterns, dynamic content, font and animation fixes, a debugging observer, and a verification checklist.
 
 ---
 
@@ -181,7 +183,7 @@ When field CLS is poor or a trace reports shifts, read [the CLS reference](refer
 
 Do not route performance through Chrome DevTools MCP's `lighthouse_audit`; that capability intentionally covers non-performance Lighthouse categories. Do not compare a single lab value directly with a field p75 as if they were equivalent samples.
 
-When adding or reviewing production collection, read [the first-party RUM reference](../performance/references/RUM.md). Prefer the `web-vitals` library because raw browser APIs do not by themselves implement every Core Web Vital's lifecycle and reporting rules.
+When adding or reviewing production collection, read [the first-party RUM reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/RUM.md). Prefer the `web-vitals` library because raw browser APIs do not by themselves implement every Core Web Vital's lifecycle and reporting rules.
 
 ---
 
@@ -225,10 +227,10 @@ startTransition(() => setExpensiveState(newValue));
 
 ## References
 
-- [Detailed LCP optimization](references/LCP.md) — read when an LCP trace points to discovery, loading, or render delay
-- [Detailed INP optimization](references/INP.md) — read when a trace or field attribution identifies a slow interaction
-- [Detailed CLS optimization](references/CLS.md) — read when a trace or field attribution identifies unexpected shifts
+- [Detailed LCP optimization](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/references/LCP.md) — read when an LCP trace points to discovery, loading, or render delay
+- [Detailed INP optimization](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/references/INP.md) — read when a trace or field attribution identifies a slow interaction
+- [Detailed CLS optimization](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/references/CLS.md) — read when a trace or field attribution identifies unexpected shifts
 - [web.dev LCP](https://web.dev/articles/lcp)
 - [web.dev INP](https://web.dev/articles/inp)
 - [web.dev CLS](https://web.dev/articles/cls)
-- [Performance skill](../performance/SKILL.md)
+- [Performance skill](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/SKILL.md)

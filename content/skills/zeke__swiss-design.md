@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/zeke/swiss-design-skill/blob/main/swiss-design/SKILL.md
-  Autor:   zeke
-  Licença: MIT
-  Commit:  d4e8daee5d051d81271b2a561d1a582e7d0e2d40
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: swiss-design
 description: Apply a Swiss International Style design system using Tailwind CSS. Use when asked to style a webpage, clean up a UI, apply a design system, make something look great, or when the user references Swiss design, grotesque fonts, Helvetica, grid systems, modernist typography, or 1960s/1950s design aesthetics. Implements IBM Plex Sans typography, stone color palette, opacity-based hierarchy, generous whitespace, and structured grid layouts.
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: zeke
   version: "1.0"
 ---
+
+<!--
+  Origem:  https://github.com/zeke/swiss-design-skill/blob/main/swiss-design/SKILL.md
+  Autor:   zeke
+  Licença: MIT
+  Commit:  d4e8daee5d051d81271b2a561d1a582e7d0e2d40
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Swiss Design System
 

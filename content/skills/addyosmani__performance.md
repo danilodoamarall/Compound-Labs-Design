@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/performance/SKILL.md
-  Autor:   addyosmani
-  Licença: MIT
-  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: performance
 description: Optimize web performance for faster loading and better user experience. Use when asked to "speed up my site", "optimize performance", "reduce load time", "fix slow loading", "improve page speed", or "performance audit".
 license: MIT
@@ -13,13 +7,21 @@ metadata:
   version: "2.0"
 ---
 
+<!--
+  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/performance/SKILL.md
+  Autor:   addyosmani
+  Licença: MIT
+  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Performance optimization
 
 Evidence-led performance optimization using real-user signals for prioritization and browser traces for diagnosis. Focuses on loading speed, runtime responsiveness, and resource delivery.
 
 ## How it works
 
-1. If a page can run, read [the measurement workflow](references/MEASUREMENT.md) and establish a field-plus-lab baseline before editing.
+1. If a page can run, read [the measurement workflow](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/MEASUREMENT.md) and establish a field-plus-lab baseline before editing.
 2. Prioritize poor real-user Core Web Vitals. Use a DevTools performance trace and its focused insights to find the cause.
 3. Inspect and change only the code or assets connected to measured bottlenecks.
 4. Re-run equivalent lab measurements and report before/after values, conditions, and uncertainty. Field verification remains pending until enough new user data arrives.
@@ -81,7 +83,7 @@ Preload only resources whose late discovery is visible in the trace. Each preloa
 }
 </script>
 ```
-`moderate` waits for a stronger intent signal than eager modes. Measure prediction hit rate, transferred bytes, and server cost; a wrong prerender is roughly an unused navigation. See [core-web-vitals → LCP](../core-web-vitals/SKILL.md#lcp-largest-contentful-paint) for the tradeoffs and the `prerenderingchange` gating needed for analytics.
+`moderate` waits for a stronger intent signal than eager modes. Measure prediction hit rate, transferred bytes, and server cost; a wrong prerender is roughly an unused navigation. See [core-web-vitals → LCP](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/SKILL.md#lcp-largest-contentful-paint) for the tradeoffs and the `prerenderingchange` gating needed for analytics.
 
 **Defer non-critical CSS:**
 ```html
@@ -389,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Measurement
 
-Use [the measurement workflow](references/MEASUREMENT.md) whenever a URL is runnable. It defines Chrome DevTools MCP routing, CrUX and fallback sources, repeatable lab conditions, and a compact evidence format.
+Use [the measurement workflow](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/MEASUREMENT.md) whenever a URL is runnable. It defines Chrome DevTools MCP routing, CrUX and fallback sources, repeatable lab conditions, and a compact evidence format.
 
 | Metric | Kind | Interpretation |
 |--------|------|----------------|
@@ -398,8 +400,8 @@ Use [the measurement workflow](references/MEASUREMENT.md) whenever a URL is runn
 | TBT | Lab | Main-thread blocking diagnostic and a rough INP proxy, not field INP |
 | FCP, Speed Index | Lab | Loading diagnostics, not Core Web Vitals |
 
-Raw `PerformanceObserver` snippets are useful for the current browser session but are not real-user data by themselves. When the user wants production telemetry, read [the first-party RUM reference](references/RUM.md) and prefer `web-vitals` over a hand-rolled metric implementation.
+Raw `PerformanceObserver` snippets are useful for the current browser session but are not real-user data by themselves. When the user wants production telemetry, read [the first-party RUM reference](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/RUM.md) and prefer `web-vitals` over a hand-rolled metric implementation.
 
 ## References
 
-For Core Web Vitals specific optimizations, see [Core Web Vitals](../core-web-vitals/SKILL.md).
+For Core Web Vitals specific optimizations, see [Core Web Vitals](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/SKILL.md).

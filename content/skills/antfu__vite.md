@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/antfu/skills/blob/main/skills/vite/SKILL.md
-  Autor:   antfu
-  Licença: MIT
-  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: vite
 description: Vite build tool configuration, plugin API, SSR, and Vite 8 Rolldown migration. Use when working with Vite projects, vite.config.ts, Vite plugins, or building libraries/SSR apps with Vite.
 metadata:
@@ -12,6 +6,14 @@ metadata:
   version: "2026.1.31"
   source: Generated from https://github.com/vitejs/vite, scripts at https://github.com/antfu/skills
 ---
+
+<!--
+  Origem:  https://github.com/antfu/skills/blob/main/skills/vite/SKILL.md
+  Autor:   antfu
+  Licença: MIT
+  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Vite
 
@@ -28,22 +30,22 @@ Vite is a next-generation frontend build tool with fast dev server (native ESM +
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Configuration | `vite.config.ts`, `defineConfig`, conditional configs, `loadEnv` | [core-config](references/core-config.md) |
-| Features | `import.meta.glob`, asset queries (`?raw`, `?url`), `import.meta.env`, HMR API | [core-features](references/core-features.md) |
-| Plugin API | Vite-specific hooks, virtual modules, plugin ordering | [core-plugin-api](references/core-plugin-api.md) |
+| Configuration | `vite.config.ts`, `defineConfig`, conditional configs, `loadEnv` | [core-config](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/core-config.md) |
+| Features | `import.meta.glob`, asset queries (`?raw`, `?url`), `import.meta.env`, HMR API | [core-features](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/core-features.md) |
+| Plugin API | Vite-specific hooks, virtual modules, plugin ordering | [core-plugin-api](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/core-plugin-api.md) |
 
 ## Build & SSR
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Build & SSR | Library mode, SSR middleware mode, `ssrLoadModule`, JavaScript API | [build-and-ssr](references/build-and-ssr.md) |
+| Build & SSR | Library mode, SSR middleware mode, `ssrLoadModule`, JavaScript API | [build-and-ssr](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/build-and-ssr.md) |
 
 ## Advanced
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Environment API | Vite 6+ multi-environment support, custom runtimes | [environment-api](references/environment-api.md) |
-| Rolldown Migration | Vite 8 changes: Rolldown bundler, Oxc transformer, config migration | [rolldown-migration](references/rolldown-migration.md) |
+| Environment API | Vite 6+ multi-environment support, custom runtimes | [environment-api](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/environment-api.md) |
+| Rolldown Migration | Vite 8 changes: Rolldown bundler, Oxc transformer, config migration | [rolldown-migration](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vite/references/rolldown-migration.md) |
 
 ## Quick Reference
 

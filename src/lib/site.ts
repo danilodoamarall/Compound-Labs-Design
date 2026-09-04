@@ -6,21 +6,28 @@ import type { Locale } from "@/i18n/routing";
 export const githubRepo = process.env.NEXT_PUBLIC_GITHUB_REPO ?? "danilodoamarall/Compound-Labs-Design";
 export const githubUrl = githubRepo ? `https://github.com/${githubRepo}` : "https://github.com";
 
-/** As seções do hub. Uma fonte só, consumida pelo menu, pelo carrossel da home e
- *  pelo rodapé, para que os três nunca discordem. */
+/** Quem faz o Compound Design. O nome aparece no rodapé, no hero e na página
+ *  Sobre, e em todos eles leva ao perfil: o produto tem de dar o crédito a quem
+ *  o constrói, não só assiná-lo. */
+export const authorLinkedIn = "https://www.linkedin.com/in/danilodoamaral/";
+
+/** As seções do hub com página própria. Uma fonte só, consumida pelo menu,
+ *  pela busca e pelo rodapé, para que os três nunca discordem.
+ *
+ *  Radar e AI Tools saíram daqui em setembro de 2026. As duas eram listas de
+ *  uma linha por ferramenta, 100% marcadas como rascunho, e juntas somavam
+ *  menos texto que um único artigo. Os dados continuam em content/ como acervo
+ *  do /explorar; só a página e o lugar no menu acabaram. */
 export type Section = {
   key: string;
-  href:
-    | "/artigos" | "/radar" | "/ai-tools" | "/skills-agents" | "/workflow" | "/docs" | "/faq";
-  /** Par de cores da capa no carrossel: do topo à base. */
+  href: "/artigos" | "/skills-agents" | "/workflow" | "/docs" | "/faq";
+  /** Par de cores da capa: do topo à base. */
   cover: [string, string];
   inNav: boolean;
 };
 
 export const sections = [
   { key: "articles", href: "/artigos", cover: ["#0b8a74", "#0d3b3a"], inNav: true },
-  { key: "radar", href: "/radar", cover: ["#1f7a8c", "#123049"], inNav: true },
-  { key: "aiTools", href: "/ai-tools", cover: ["#c9571c", "#7a2f14"], inNav: true },
   { key: "skillsAgents", href: "/skills-agents", cover: ["#5b4bb7", "#241f4d"], inNav: true },
   { key: "workflow", href: "/workflow", cover: ["#a8802a", "#3a2a08"], inNav: true },
   { key: "docs", href: "/docs", cover: ["#3f4a52", "#171c1b"], inNav: true },
@@ -29,21 +36,43 @@ export const sections = [
 
 export type SectionKey = (typeof sections)[number]["key"];
 
-/** Ordem das capas no carrossel da home, diferente da ordem do menu: põe Artigos
- *  no centro, para o leque abrir dos dois lados como na referência. */
-export const coverOrder = ["docs", "radar", "workflow", "articles", "aiTools", "skillsAgents", "faq"] as const;
-export const coverInitialIndex = coverOrder.indexOf("articles");
-
 /** Caminho já com o prefixo de idioma, para uso fora do <Link> tipado. */
 export function sectionPath(href: Section["href"], locale: Locale) {
   const translated: Record<Section["href"], Record<Locale, string>> = {
     "/artigos": { pt: "/artigos", en: "/articles" },
-    "/radar": { pt: "/radar", en: "/radar" },
-    "/ai-tools": { pt: "/ai-tools", en: "/ai-tools" },
     "/skills-agents": { pt: "/skills-agents", en: "/skills-agents" },
     "/workflow": { pt: "/workflow", en: "/workflow" },
     "/docs": { pt: "/docs", en: "/docs" },
     "/faq": { pt: "/faq", en: "/faq" },
   };
   return `/${locale}${translated[href][locale]}`;
+}
+
+/** Os destinos do menu, em três grupos. Inclui rotas que não são seções do hub
+ *  (Research, Sobre, Explorar, CLI, MCP), por isso mora aqui e não em
+ *  `sections`. Uma fonte só para o cabeçalho, o rodapé e a checagem de
+ *  contagens. */
+export const NAV_GROUPS = [
+  { key: "content", itens: ["articles", "research"] },
+  { key: "skills", itens: ["skillsAgents", "cli", "mcp"] },
+  { key: "hub", itens: ["browse", "workflow", "docs", "faq", "about"] },
+] as const;
+
+export type NavKey = (typeof NAV_GROUPS)[number]["itens"][number];
+
+export const NAV_HREF: Record<NavKey, { pt: string; en: string }> = {
+  articles: { pt: "/artigos", en: "/articles" },
+  research: { pt: "/research", en: "/research" },
+  skillsAgents: { pt: "/skills-agents", en: "/skills-agents" },
+  cli: { pt: "/skills-agents/cli", en: "/skills-agents/cli" },
+  mcp: { pt: "/skills-agents/mcp", en: "/skills-agents/mcp" },
+  browse: { pt: "/explorar", en: "/browse" },
+  workflow: { pt: "/workflow", en: "/workflow" },
+  docs: { pt: "/docs", en: "/docs" },
+  faq: { pt: "/faq", en: "/faq" },
+  about: { pt: "/sobre", en: "/about" },
+};
+
+export function navPath(key: NavKey, locale: Locale) {
+  return `/${locale}${NAV_HREF[key][locale]}`;
 }

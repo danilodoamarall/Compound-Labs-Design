@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { registry } from "@/lib/skills";
+import { MCP_URL, SERVER_CARD_URL } from "@/lib/site-url";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/skills-agents/mcp">): Promise<Metadata> {
   const { locale } = await params;
@@ -9,11 +10,13 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/skills-a
   return { title: t("title"), description: t("dek") };
 }
 
+/*  O endereço vem de `@/lib/site-url`, não escrito à mão: a página que ensina
+ *  a conectar é o pior lugar para uma URL divergir. */
 const CONFIG = `{
   "mcpServers": {
-    "ai-builders-lab": {
+    "compound-design": {
       "type": "http",
-      "url": "https://labs-hub-five.vercel.app/mcp"
+      "url": "${MCP_URL}"
     }
   }
 }`;
@@ -24,6 +27,12 @@ export default async function McpPage({ params }: PageProps<"/[locale]/skills-ag
   setRequestLocale(locale);
   const t = await getTranslations("SkillsMcp");
   const ts = await getTranslations("Skills");
+
+  const ferramentas = [
+    { nome: "list_topics", texto: t("listTopics") },
+    { nome: "list_skills", texto: t("listSkills") },
+    { nome: "get_skill", texto: t("getSkill") },
+  ];
 
   return (
     <main className="mx-auto w-full max-w-3xl px-5 pb-20 pt-12">
@@ -36,10 +45,10 @@ export default async function McpPage({ params }: PageProps<"/[locale]/skills-ag
       <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t("dek")}</p>
 
       <h2 className="eyebrow mt-12">{t("endpoint")}</h2>
-      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>https://labs-hub-five.vercel.app/mcp</code></pre>
+      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>{MCP_URL}</code></pre>
 
       <h2 className="eyebrow mt-8">{t("serverCard")}</h2>
-      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>https://labs-hub-five.vercel.app/.well-known/mcp/server-card.json</code></pre>
+      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>{SERVER_CARD_URL}</code></pre>
 
       {/* O ui-skills não documenta a configuração em lugar nenhum: quem integra
           precisa adivinhar. Aqui ela está escrita. */}
@@ -49,15 +58,19 @@ export default async function McpPage({ params }: PageProps<"/[locale]/skills-ag
 
       <h2 className="eyebrow mt-12">{t("tools")}</h2>
       <div className="mt-4 space-y-6">
-        <div>
-          <h3 className="font-mono font-medium">list_skills</h3>
-          <p className="mt-1 text-[14px] text-muted-foreground">{t("listSkills")}</p>
-        </div>
-        <div>
-          <h3 className="font-mono font-medium">get_skill</h3>
-          <p className="mt-1 text-[14px] text-muted-foreground">{t("getSkill")}</p>
-        </div>
+        {ferramentas.map((f) => (
+          <div key={f.nome}>
+            <h3 className="font-mono font-medium">{f.nome}</h3>
+            <p className="mt-1 text-[14px] leading-relaxed text-muted-foreground">{f.texto}</p>
+          </div>
+        ))}
       </div>
+
+      <h2 className="eyebrow mt-12">{t("paging")}</h2>
+      <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">{t("pagingBody")}</p>
+
+      <h2 className="eyebrow mt-12">{t("limits")}</h2>
+      <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">{t("limitsBody")}</p>
 
       <h2 className="eyebrow mt-12">{t("provenance")}</h2>
       <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">

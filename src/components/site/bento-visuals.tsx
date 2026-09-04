@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "motion/react";
-import { BookOpen, Boxes, Code2, FileText, Image as ImageIcon, Layers, PenTool, Sparkles, Terminal } from "lucide-react";
+import { BookOpen, Layers } from "lucide-react";
 
 import { EASE } from "@/lib/easing";
 
@@ -43,106 +43,6 @@ export function VisualArtigos({ titles }: { titles: string[] }) {
             <span className="truncate text-[11.5px] text-white/70">{t}</span>
           </motion.div>
         ))}
-      </div>
-    </div>
-  );
-}
-
-/** RADAR — os quatro anéis com pontos pousados neles. É o desenho da própria
- *  seção: adotar, testar, avaliar, evitar. */
-export function VisualRadar() {
-  const { ref, reduced, animate } = useMotionSettings();
-  const aneis = [30, 48, 66, 84];
-  const pontos = [
-    { r: 30, a: -40, c: "#22a18c" }, { r: 30, a: 130, c: "#22a18c" },
-    { r: 48, a: 30, c: "#3fb6d8" }, { r: 48, a: -150, c: "#3fb6d8" },
-    { r: 66, a: 80, c: "#e0913a" }, { r: 84, a: -95, c: "#e8735e" },
-  ];
-  return (
-    <div ref={ref} className={palco}>
-      <svg viewBox="0 0 200 200" className="absolute left-1/2 top-1/2 size-[190px] -translate-x-1/2 -translate-y-1/2">
-        {aneis.map((r, i) => (
-          <motion.circle
-            key={r} cx="100" cy="100" r={r} fill="none" stroke="#fff"
-            strokeOpacity={0.13 - i * 0.02}
-            initial={reduced ? false : { scale: 0.82, opacity: 0 }}
-            animate={animate ? { scale: 1, opacity: 1 } : undefined}
-            transition={{ duration: 0.7, delay: i * 0.08, ease: ENTRADA }}
-            style={{ transformOrigin: "100px 100px" }}
-          />
-        ))}
-        {pontos.map((p, i) => {
-          const rad = (p.a * Math.PI) / 180;
-          return (
-            <motion.circle
-              key={i} cx={100 + p.r * Math.cos(rad)} cy={100 + p.r * Math.sin(rad)} r="3.2" fill={p.c}
-              initial={reduced ? false : { opacity: 0, scale: 0 }}
-              animate={animate ? { opacity: 0.9, scale: 1 } : undefined}
-              transition={{ duration: 0.4, delay: 0.35 + i * 0.06, ease: ENTRADA }}
-            />
-          );
-        })}
-      </svg>
-    </div>
-  );
-}
-
-/** AI TOOLS — os ícones orbitam um centro, como o "Well Organized" da
- *  referência. Diz que são muitas ferramentas em volta de um mesmo trabalho. */
-export function VisualAiTools() {
-  const { ref, reduced, animate } = useMotionSettings();
-  const orbita = [PenTool, Code2, ImageIcon, Terminal, Boxes, FileText];
-  return (
-    <div ref={ref} className={palco}>
-      <div className="absolute left-1/2 top-1/2 size-[176px] -translate-x-1/2 -translate-y-1/2">
-        <motion.div
-          className="absolute inset-0 rounded-full border border-white/[0.07]"
-          initial={reduced ? false : { opacity: 0, scale: 0.9 }}
-          animate={animate ? { opacity: 1, scale: 1 } : undefined}
-          transition={{ duration: 0.6, ease: ENTRADA }}
-        />
-        <motion.div
-          className="absolute inset-[26px] rounded-full border border-white/[0.05]"
-          initial={reduced ? false : { opacity: 0, scale: 0.9 }}
-          animate={animate ? { opacity: 1, scale: 1 } : undefined}
-          transition={{ duration: 0.6, delay: 0.08, ease: ENTRADA }}
-        />
-        {/* A órbita gira devagar; parada para quem pediu menos movimento. */}
-        <motion.div
-          className="absolute inset-0"
-          animate={reduced ? undefined : { rotate: 360 }}
-          transition={{ duration: 46, repeat: Infinity, ease: "linear" }}
-        >
-          {orbita.map((Icone, i) => {
-            const a = (i / orbita.length) * Math.PI * 2;
-            const raio = 76;
-            return (
-              <motion.span
-                key={i}
-                className="absolute grid size-8 place-items-center rounded-full border border-white/10 bg-[#141414]"
-                style={{
-                  left: `calc(50% + ${Math.cos(a) * raio}px - 16px)`,
-                  top: `calc(50% + ${Math.sin(a) * raio}px - 16px)`,
-                }}
-                initial={reduced ? false : { opacity: 0, scale: 0.6 }}
-                animate={animate ? { opacity: 1, scale: 1 } : undefined}
-                transition={{ duration: 0.45, delay: 0.2 + i * 0.06, ease: ENTRADA }}
-              >
-                {/* Contra-rotação: o ícone acompanha a órbita sem virar de cabeça
-                    para baixo no caminho. */}
-                <motion.span
-                  animate={reduced ? undefined : { rotate: -360 }}
-                  transition={{ duration: 46, repeat: Infinity, ease: "linear" }}
-                >
-                  <Icone size={14} className="text-white/60" />
-                </motion.span>
-              </motion.span>
-            );
-          })}
-        </motion.div>
-        <span className="absolute left-1/2 top-1/2 grid size-10 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-[#181818]">
-          <Sparkles size={16} className="text-white/75" />
-        </span>
       </div>
     </div>
   );
@@ -322,6 +222,102 @@ export function VisualPadrao() {
       >
         <Layers size={20} className="text-white/55" />
       </motion.span>
+    </div>
+  );
+}
+
+/** CLI — o terminal rodando o catálogo. O comando é o de verdade, com o pacote
+ *  publicado, e a resposta são três linhas do placar: o card mostra o que o
+ *  leitor vai ver ao rodar, não uma metáfora. */
+export function VisualCli() {
+  const { ref, reduced, animate } = useMotionSettings();
+  const comando = "npx @compound-design/skills list --topic motion";
+  const linhas = ["emilkowalski/animate", "mengto/gsap", "jakubkrehel/motion"];
+  return (
+    <div ref={ref} className={palco}>
+      <div className="absolute inset-x-5 top-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-white/[0.08] bg-[#0d0d0d]">
+        <div className="flex items-center gap-1.5 border-b border-white/[0.06] px-3 py-2">
+          {["#e8735e", "#e0913a", "#4ec2a6"].map((c) => (
+            <span key={c} className="size-[6px] rounded-full" style={{ background: c, opacity: 0.55 }} />
+          ))}
+          <span className="ml-1.5 font-mono text-[9.5px] text-white/35">ai-skills</span>
+        </div>
+        <div className="px-3 py-2.5 font-mono text-[10.5px] leading-[1.7]">
+          <div className="truncate">
+            <span className="text-white/35">$ </span>
+            {comando.split("").map((ch, i) => (
+              <motion.span
+                key={i}
+                className="text-white/75"
+                initial={reduced ? false : { opacity: 0 }}
+                animate={animate ? { opacity: 1 } : undefined}
+                transition={{ duration: 0.01, delay: 0.2 + i * 0.022 }}
+              >
+                {ch}
+              </motion.span>
+            ))}
+          </div>
+          {linhas.map((l, i) => (
+            <motion.div
+              key={l}
+              className="truncate text-white/50"
+              initial={reduced ? false : { opacity: 0, x: -4 }}
+              animate={animate ? { opacity: 1, x: 0 } : undefined}
+              transition={{ duration: 0.3, delay: 1.4 + i * 0.12, ease: ENTRADA }}
+            >
+              <span className="text-white/25">  </span>{l}
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** MCP — o agente de um lado, o catálogo do outro, e as três ferramentas
+ *  atravessando a ligação. É o que o servidor expõe, com os nomes reais. */
+export function VisualMcp() {
+  const { ref, reduced, animate } = useMotionSettings();
+  const ferramentas = ["list_topics", "list_skills", "get_skill"];
+  return (
+    <div ref={ref} className={palco}>
+      <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 items-center gap-3">
+        <div className="shrink-0 rounded-md border border-white/[0.1] bg-white/[0.04] px-2.5 py-2 font-mono text-[10px] text-white/70">
+          agent
+        </div>
+        <div className="relative min-w-0 flex-1">
+          <svg viewBox="0 0 200 8" className="h-2 w-full" preserveAspectRatio="none" aria-hidden>
+            <motion.line
+              x1="0" y1="4" x2="200" y2="4"
+              stroke="rgba(255,255,255,0.18)" strokeWidth="1" strokeDasharray="3 4"
+              initial={reduced ? false : { pathLength: 0 }}
+              animate={animate ? { pathLength: 1 } : undefined}
+              transition={{ duration: 0.6, ease: ENTRADA }}
+            />
+          </svg>
+          <div className="absolute inset-x-0 -top-8 flex flex-col items-center gap-1">
+            {ferramentas.map((f, i) => (
+              <motion.span
+                key={f}
+                className="rounded-full border border-teal/40 bg-teal/10 px-2 py-0.5 font-mono text-[9px] text-white/80"
+                initial={reduced ? false : { opacity: 0, y: 6 }}
+                animate={animate ? { opacity: 1, y: [6, 0, 0, 6], x: [-70, 0, 70, 70] } : undefined}
+                transition={
+                  reduced
+                    ? undefined
+                    : { duration: 2.6, delay: 0.5 + i * 0.45, repeat: Infinity, repeatDelay: 1.2, ease: SECA, times: [0, 0.3, 0.75, 1] }
+                }
+                style={{ position: "absolute", top: i * 12 }}
+              >
+                {f}
+              </motion.span>
+            ))}
+          </div>
+        </div>
+        <div className="shrink-0 rounded-md border border-white/[0.1] bg-white/[0.04] px-2.5 py-2 font-mono text-[10px] text-white/70">
+          /mcp
+        </div>
+      </div>
     </div>
   );
 }

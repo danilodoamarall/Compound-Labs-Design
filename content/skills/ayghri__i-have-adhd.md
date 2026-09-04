@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
-  Autor:   ayghri
-  Licença: MIT
-  Commit:  58494af57962b2d7a996b4d419474380a299af5e
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: i-have-adhd
 description: 'Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until "stop adhd mode".'
 disable-model-invocation: true
@@ -13,6 +7,14 @@ metadata:
   tags: "ADHD, Output Style, Productivity, Formatting"
   category: "productivity"
 ---
+
+<!--
+  Origem:  https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+  Autor:   ayghri
+  Licença: MIT
+  Commit:  58494af57962b2d7a996b4d419474380a299af5e
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # i-have-adhd
 

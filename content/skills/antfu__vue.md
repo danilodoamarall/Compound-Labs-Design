@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/antfu/skills/blob/main/skills/vue/SKILL.md
-  Autor:   antfu
-  Licença: MIT
-  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: vue
 description: Vue 3 Composition API, script setup macros, reactivity system, and built-in components. Use when writing Vue SFCs, defineProps/defineEmits/defineModel, watchers, or using Transition/Teleport/Suspense/KeepAlive.
 metadata:
@@ -12,6 +6,14 @@ metadata:
   version: "2026.1.31"
   source: Generated from https://github.com/vuejs/docs, scripts at https://github.com/antfu/skills
 ---
+
+<!--
+  Origem:  https://github.com/antfu/skills/blob/main/skills/vue/SKILL.md
+  Autor:   antfu
+  Licença: MIT
+  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Vue
 
@@ -29,14 +31,14 @@ metadata:
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Script Setup & Macros | `<script setup>`, defineProps, defineEmits, defineModel, defineExpose, defineOptions, defineSlots, generics | [script-setup-macros](references/script-setup-macros.md) |
-| Reactivity & Lifecycle | ref, shallowRef, computed, watch, watchEffect, effectScope, lifecycle hooks, composables | [core-new-apis](references/core-new-apis.md) |
+| Script Setup & Macros | `<script setup>`, defineProps, defineEmits, defineModel, defineExpose, defineOptions, defineSlots, generics | [script-setup-macros](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vue/references/script-setup-macros.md) |
+| Reactivity & Lifecycle | ref, shallowRef, computed, watch, watchEffect, effectScope, lifecycle hooks, composables | [core-new-apis](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vue/references/core-new-apis.md) |
 
 ## Features
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Built-in Components & Directives | Transition, Teleport, Suspense, KeepAlive, v-memo, custom directives | [advanced-patterns](references/advanced-patterns.md) |
+| Built-in Components & Directives | Transition, Teleport, Suspense, KeepAlive, v-memo, custom directives | [advanced-patterns](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/vue/references/advanced-patterns.md) |
 
 ## Quick Reference
 

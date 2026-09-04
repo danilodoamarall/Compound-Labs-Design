@@ -1,0 +1,423 @@
+{
+ "0xdesign/design-plugin": {
+  "stars": 752,
+  "pushedAt": "2026-05-06",
+  "archived": false
+ },
+ "Aboudjem/humanizer-skill": {
+  "stars": 214,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "AccessLint/claude-marketplace": {
+  "stars": 93,
+  "pushedAt": "2026-08-25",
+  "archived": false
+ },
+ "AminBlg/SimpleEnglish": {
+  "stars": 3152,
+  "pushedAt": "2026-09-02",
+  "archived": false
+ },
+ "CaliCastle/skills": {
+  "stars": 93,
+  "pushedAt": "2026-07-24",
+  "archived": false
+ },
+ "Dammyjay93/interface-design": {
+  "stars": 5652,
+  "pushedAt": "2026-06-20",
+  "archived": false
+ },
+ "Danilaa1/compact-landing-skill": {
+  "stars": 31,
+  "pushedAt": "2026-07-11",
+  "archived": false
+ },
+ "Jakubantalik/transitions-dev": {
+  "stars": 43,
+  "pushedAt": "2026-05-20",
+  "archived": false
+ },
+ "Jakubantalik/transitions.dev": {
+  "stars": 3470,
+  "pushedAt": "2026-09-02",
+  "archived": false
+ },
+ "Jane-xiaoer/claude-skill-web-clone": {
+  "stars": 984,
+  "pushedAt": "2026-06-30",
+  "archived": false
+ },
+ "Leonxlnx/taste-skill": {
+  "stars": 84062,
+  "pushedAt": "2026-08-24",
+  "archived": false
+ },
+ "Leonxlnx/unlazy": {
+  "stars": 3018,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "LiamGvchi/gc-minimal-zine-poster": {
+  "stars": 6898,
+  "pushedAt": "2026-08-13",
+  "archived": false
+ },
+ "MengTo/Skills": {
+  "stars": 5772,
+  "pushedAt": "2026-08-28",
+  "archived": false
+ },
+ "PrototyperAI/prototyper-ui": {
+  "stars": 6,
+  "pushedAt": "2026-05-21",
+  "archived": false
+ },
+ "Superfuture/design-review": {
+  "stars": 4,
+  "pushedAt": "2026-08-20",
+  "archived": false
+ },
+ "aashaexo/soundshuman": {
+  "stars": 291,
+  "pushedAt": "2026-08-07",
+  "archived": false
+ },
+ "addyosmani/agent-skills": {
+  "stars": 92046,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "addyosmani/web-quality-skills": {
+  "stars": 2745,
+  "pushedAt": "2026-08-24",
+  "archived": false
+ },
+ "antfu/skills": {
+  "stars": 5841,
+  "pushedAt": "2026-06-23",
+  "archived": false
+ },
+ "anthropics/skills": {
+  "stars": 173682,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "arifszn/slide-wright": {
+  "stars": 41,
+  "pushedAt": "2026-08-19",
+  "archived": false
+ },
+ "ayghri/i-have-adhd": {
+  "stars": 26970,
+  "pushedAt": "2026-09-01",
+  "archived": false
+ },
+ "bencium/bencium-marketplace": {
+  "stars": 413,
+  "pushedAt": "2026-08-30",
+  "archived": false
+ },
+ "blader/humanizer": {
+  "stars": 41544,
+  "pushedAt": "2026-08-19",
+  "archived": false
+ },
+ "callstackincubator/agent-skills": {
+  "stars": 1634,
+  "pushedAt": "2026-08-08",
+  "archived": false
+ },
+ "cloudai-x/threejs-skills": {
+  "stars": 3233,
+  "pushedAt": "2026-07-09",
+  "archived": false
+ },
+ "cursor/plugins": {
+  "stars": 6783,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "diffusionstudio/lottie": {
+  "stars": 5398,
+  "pushedAt": "2026-07-25",
+  "archived": false
+ },
+ "dimillian/skills": {
+  "stars": 3940,
+  "pushedAt": "2026-03-29",
+  "archived": false
+ },
+ "edenspiekermann/Skills": {
+  "stars": 64,
+  "pushedAt": "2026-03-24",
+  "archived": false
+ },
+ "ehmo/slopkit": {
+  "stars": 98,
+  "pushedAt": "2026-07-22",
+  "archived": false
+ },
+ "elayadesign/ai-design-skills": {
+  "stars": 1719,
+  "pushedAt": "2026-07-29",
+  "archived": false
+ },
+ "elithrar/dotfiles": {
+  "stars": 203,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "emilkowalski/skills": {
+  "stars": 35166,
+  "pushedAt": "2026-08-21",
+  "archived": false
+ },
+ "ericzakariasson/scandinavian-design": {
+  "stars": 371,
+  "pushedAt": "2026-08-22",
+  "archived": false
+ },
+ "figma/mcp-server-guide": {
+  "stars": 1957,
+  "pushedAt": "2026-09-01",
+  "archived": false
+ },
+ "firebenders/sync-figma-token-skill": {
+  "stars": 26,
+  "pushedAt": "2026-03-24",
+  "archived": false
+ },
+ "flornkm/shadow-plugin": {
+  "stars": 133,
+  "pushedAt": "2026-08-04",
+  "archived": false
+ },
+ "flornkm/skills": {
+  "stars": 107,
+  "pushedAt": "2026-08-20",
+  "archived": false
+ },
+ "github/gh-stack": {
+  "stars": 1444,
+  "pushedAt": "2026-09-02",
+  "archived": false
+ },
+ "greensock/gsap-skills": {
+  "stars": 14881,
+  "pushedAt": "2026-07-29",
+  "archived": false
+ },
+ "hardikpandya/stop-slop": {
+  "stars": 16767,
+  "pushedAt": "2026-03-17",
+  "archived": false
+ },
+ "iannuttall/seo": {
+  "stars": 445,
+  "pushedAt": "2026-08-31",
+  "archived": false
+ },
+ "iart-ai/web-animation-skills": {
+  "stars": 17,
+  "pushedAt": "2026-06-22",
+  "archived": false
+ },
+ "ibelick/ui-skills": {
+  "stars": 8060,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "jakubkrehel/make-interfaces-feel-better": {
+  "stars": 3170,
+  "pushedAt": "2026-08-29",
+  "archived": false
+ },
+ "jakubkrehel/oklch-skill": {
+  "stars": 232,
+  "pushedAt": "2026-08-29",
+  "archived": false
+ },
+ "jakubkrehel/skills": {
+  "stars": 5045,
+  "pushedAt": "2026-08-29",
+  "archived": false
+ },
+ "jalaalrd/anti-ai-slop-writing": {
+  "stars": 435,
+  "pushedAt": "2026-04-18",
+  "archived": false
+ },
+ "kitlangton/skills": {
+  "stars": 316,
+  "pushedAt": "2026-08-29",
+  "archived": false
+ },
+ "latent-spaces/brag": {
+  "stars": 1158,
+  "pushedAt": "2026-08-17",
+  "archived": false
+ },
+ "luchasarie/bro-skill": {
+  "stars": 328,
+  "pushedAt": "2026-08-27",
+  "archived": false
+ },
+ "mattpocock/skills": {
+  "stars": 247523,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "microsoft/playwright-cli": {
+  "stars": 13052,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "millionco/react-doctor": {
+  "stars": 14708,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "millionco/skills": {
+  "stars": 33,
+  "pushedAt": "2026-06-30",
+  "archived": false
+ },
+ "mrstev3n/balise-skills": {
+  "stars": 11,
+  "pushedAt": "2026-08-19",
+  "archived": false
+ },
+ "nextlevelbuilder/ui-ux-pro-max-skill": {
+  "stars": 124702,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "nolanperk/rad-spacing": {
+  "stars": 13,
+  "pushedAt": "2026-03-23",
+  "archived": false
+ },
+ "nvillapiano/component-contracts-figma": {
+  "stars": 32,
+  "pushedAt": "2026-03-22",
+  "archived": false
+ },
+ "openai/skills": {
+  "stars": 25388,
+  "pushedAt": "2026-07-14",
+  "archived": false
+ },
+ "oso95/scroll-world": {
+  "stars": 8965,
+  "pushedAt": "2026-07-29",
+  "archived": false
+ },
+ "pbakaus/impeccable": {
+  "stars": 65357,
+  "pushedAt": "2026-09-04",
+  "archived": false
+ },
+ "petergyang/human-review": {
+  "stars": 1219,
+  "pushedAt": "2026-09-04",
+  "archived": false
+ },
+ "petergyang/no-ai-slop": {
+  "stars": 7046,
+  "pushedAt": "2026-09-02",
+  "archived": false
+ },
+ "rams/rams-ai": {
+  "stars": null,
+  "pushedAt": null,
+  "archived": false,
+  "error": "Command failed: gh repo view rams/rams-ai --json stargazerCount,pushedAt,isArchi"
+ },
+ "raphaelsalaja/skill": {
+  "stars": 35,
+  "pushedAt": "2026-03-17",
+  "archived": false
+ },
+ "redongreen/uSpec": {
+  "stars": 241,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "remix-run/agent-skills": {
+  "stars": 137,
+  "pushedAt": "2026-06-18",
+  "archived": true
+ },
+ "remotion-dev/skills": {
+  "stars": 4483,
+  "pushedAt": "2026-09-01",
+  "archived": false
+ },
+ "saadeghi/daisyui": {
+  "stars": 42283,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "shadcn-ui/ui": {
+  "stars": 122954,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "shadcn/improve": {
+  "stars": 9068,
+  "pushedAt": "2026-06-15",
+  "archived": false
+ },
+ "stephenturner/skills": {
+  "stars": 8,
+  "pushedAt": "2026-03-26",
+  "archived": false
+ },
+ "sveltejs/ai-tools": {
+  "stars": 316,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "tjcages/linear": {
+  "stars": 8,
+  "pushedAt": "2026-07-29",
+  "archived": false
+ },
+ "vercel-labs/agent-browser": {
+  "stars": 41889,
+  "pushedAt": "2026-09-03",
+  "archived": false
+ },
+ "vercel-labs/agent-skills": {
+  "stars": 30798,
+  "pushedAt": "2026-08-28",
+  "archived": false
+ },
+ "vercel/next.js": {
+  "stars": 142084,
+  "pushedAt": "2026-09-04",
+  "archived": false
+ },
+ "vuejs-ai/skills": {
+  "stars": 2821,
+  "pushedAt": "2026-05-30",
+  "archived": false
+ },
+ "wshobson/agents": {
+  "stars": 39393,
+  "pushedAt": "2026-09-01",
+  "archived": false
+ },
+ "zarazhangrui/frontend-slides": {
+  "stars": 28690,
+  "pushedAt": "2026-06-23",
+  "archived": false
+ },
+ "zeke/swiss-design-skill": {
+  "stars": 138,
+  "pushedAt": "2026-06-29",
+  "archived": false
+ }
+}

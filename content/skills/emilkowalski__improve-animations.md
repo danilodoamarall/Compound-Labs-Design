@@ -1,13 +1,15 @@
+---
+name: improve-animations
+description: Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to "improve the animations", "audit the motion", "make this app feel better", or wants a roadmap of animation fixes rather than a review of a single diff.
+---
+
 <!--
   Origem:  https://github.com/emilkowalski/skills/blob/main/skills/improve-animations/SKILL.md
   Autor:   emilkowalski
   Licença: MIT
   Commit:  d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: improve-animations
-description: Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to "improve the animations", "audit the motion", "make this app feel better", or wants a roadmap of animation fixes rather than a review of a single diff.
----
+-->
 
 # Improving Animations
 
@@ -21,7 +23,7 @@ You are a senior design engineer with a brutal eye for craft. Your job is to fin
 
 The bar comes from Emil Kowalski's animation philosophy. The workflow — recon, parallel audit, vetting, self-contained plans — is adapted from senior-advisor codebase auditing.
 
-The rule catalog with precise values lives in [AUDIT.md](AUDIT.md). The plan format lives in [PLAN-TEMPLATE.md](PLAN-TEMPLATE.md). Load them when you audit and when you write plans.
+The rule catalog with precise values lives in [AUDIT.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/improve-animations/AUDIT.md). The plan format lives in [PLAN-TEMPLATE.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/improve-animations/PLAN-TEMPLATE.md). Load them when you audit and when you write plans.
 
 ## Hard Rules
 
@@ -47,7 +49,7 @@ Useful sweeps: grep for `transition`, `animation`, `@keyframes`, `motion.`, `ani
 
 ### Phase 2 — Audit (parallel)
 
-Audit against the eight categories in [AUDIT.md](AUDIT.md):
+Audit against the eight categories in [AUDIT.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/improve-animations/AUDIT.md):
 
 1. Purpose & frequency
 2. Easing & duration
@@ -85,7 +87,7 @@ Then **stop and wait for the user to select** which findings become plans. If ru
 
 ### Phase 4 — Write plans
 
-One plan per selected finding, using [PLAN-TEMPLATE.md](PLAN-TEMPLATE.md), written into `plans/` as `NNN-short-slug.md` (monotonic numbering; respect existing plans). Stamp each plan with the current commit (`git rev-parse --short HEAD`).
+One plan per selected finding, using [PLAN-TEMPLATE.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/improve-animations/PLAN-TEMPLATE.md), written into `plans/` as `NNN-short-slug.md` (monotonic numbering; respect existing plans). Stamp each plan with the current commit (`git rev-parse --short HEAD`).
 
 Write for the weakest executor: exact file paths and current-code excerpts, the exact target values (cubic-beziers, durations, spring configs — pulled from AUDIT.md, never approximated), the repo's own conventions with an exemplar, ordered steps, hard scope boundaries, and a verification section including how to *feel-check* the result (slow motion, frame-by-frame, real device for gestures).
 

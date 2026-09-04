@@ -1,13 +1,15 @@
+---
+name: baseline-ui
+description: Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.
+---
+
 <!--
   Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/baseline-ui/SKILL.md
   Autor:   ibelick
   Licença: MIT
   Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: baseline-ui
-description: Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.
----
+-->
 
 # Baseline UI
 

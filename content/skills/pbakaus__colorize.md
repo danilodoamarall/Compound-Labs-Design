@@ -4,7 +4,9 @@
   Licença: Apache-2.0
   Commit:  fbc5c95355c92db8d61e2fb6287815783318a8d6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->> **Additional context needed**: existing brand colors.
+-->
+
+> **Additional context needed**: existing brand colors.
 
 Introduce color as hierarchy, meaning, and atmosphere. Preserve confirmed brand and semantic conventions; do not replace a visual world under the guise of colorizing it.
 
@@ -26,7 +28,7 @@ Read DESIGN.md, tokens, assets, current themes, and representative states. Ident
 - light/dark or data-visualization requirements;
 - whether the task asks for more color or a new identity.
 
-If a new identity is required, use [new-work.md](new-work.md). Ask only when a binding brand decision cannot be inferred.
+If a new identity is required, use [new-work.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/new-work.md). Ask only when a binding brand decision cannot be inferred.
 
 ## Choose a strategy
 
@@ -89,4 +91,4 @@ When invoked from live mode, every variant declares a `color-amount` parameter. 
 {"id":"color-amount","kind":"range","min":0,"max":1,"step":0.05,"default":0.5,"label":"Color amount"}
 ```
 
-Add at most two variant-specific parameters, such as palette, temperature, or tint behavior. Follow [live.md](live.md)'s parameter contract.
+Add at most two variant-specific parameters, such as palette, temperature, or tint behavior. Follow [live.md](https://github.com/pbakaus/impeccable/blob/fbc5c95355c92db8d61e2fb6287815783318a8d6/skill/reference/live.md)'s parameter contract.

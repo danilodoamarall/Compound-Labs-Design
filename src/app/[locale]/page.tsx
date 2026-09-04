@@ -1,29 +1,30 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { sections, sectionPath } from "@/lib/site";
+import { authorLinkedIn, navPath } from "@/lib/site";
 import { listArticles } from "@/lib/articles";
 import { HeroCard } from "@/components/site/hero-card";
 import { StageSection } from "@/components/site/stage-section";
 import { StageResources, type StageCard } from "@/components/site/stage-resources";
-import {
-  VisualArtigos, VisualRadar, VisualAiTools, VisualSkills,
-  VisualWorkflow, VisualDocs, VisualFaq, VisualBrowse, VisualPadrao,
-} from "@/components/site/bento-visuals";
-import pages from "../../../content/pages.json";
+import { VisualArtigos, VisualSkills, VisualCli, VisualMcp, VisualBrowse } from "@/components/site/bento-visuals";
 import survey from "../../../content/data/state-of-prototyping-2026.json";
-import workflow from "../../../content/workflow.json";
 import { StageArticles } from "@/components/site/stage-articles";
 import { StageSubscribe } from "@/components/site/stage-subscribe";
 import index from "../../../content/resources.json";
 
-/** Os spans somam 12 em cada linha, então nenhuma seção sobra sozinha no fim:
- *  5+3+4, depois 4+4+4. Artigos e Radar ficam maiores por serem a porta de
- *  entrada do hub. */
-const SPAN: Record<string, number> = {
-  articles: 5, radar: 3, aiTools: 4,
-  skillsAgents: 4, workflow: 4, docs: 4,
-  faq: 6, browse: 6,
-};
+/** Os cinco cards do bento, nas duas linhas de 12 colunas: 8+4 e 4+4+4.
+ *
+ *  São os cinco lugares em que o hub tem substância, medida em conteúdo
+ *  próprio: os artigos (68 KB de MDX com slides), o catálogo de skills (2,2 MB
+ *  de markdown com licença verificada), o CLI e o MCP que dão acesso a ele, e o
+ *  índice que reúne tudo. Workflow, Docs e FAQ continuam no menu e no rodapé;
+ *  saíram só da vitrine, porque juntos somam menos texto que um artigo. */
+const BENTO = [
+  { key: "articles", span: 8, cover: ["#0b8a74", "#0d3b3a"] },
+  { key: "skillsAgents", span: 4, cover: ["#5b4bb7", "#241f4d"] },
+  { key: "cli", span: 4, cover: ["#1f7a8c", "#123049"] },
+  { key: "mcp", span: 4, cover: ["#c9571c", "#7a2f14"] },
+  { key: "browse", span: 4, cover: ["#3f4a52", "#171c1b"] },
+] as const;
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale: l } = await params;
@@ -55,40 +56,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     blockers: paraSerie(survey.blockers),
   };
 
-  const etapas = [...new Set(workflow.tools.map((t) => t.stage))];
-  const perguntas = pages.faq[locale].map((f) => f.q);
-
-  const visuais: Record<string, React.ReactNode> = {
+  const visuais: Record<(typeof BENTO)[number]["key"], React.ReactNode> = {
     articles: <VisualArtigos titles={articles.map((a) => a.title)} />,
-    radar: <VisualRadar />,
-    aiTools: <VisualAiTools />,
     skillsAgents: <VisualSkills />,
-    workflow: <VisualWorkflow stages={etapas} />,
-    docs: <VisualDocs />,
-    faq: <VisualFaq questions={perguntas} />,
+    cli: <VisualCli />,
+    mcp: <VisualMcp />,
+    browse: <VisualBrowse total={index.resources.length} />,
   };
 
-  const cards: StageCard[] = [
-    ...sections.map((s) => ({
-      key: s.key,
-      title: tn(s.key as "articles"),
-      desc: th(`sections.${s.key}.short` as "sections.articles.short"),
-      path: sectionPath(s.href, locale),
-      cover: [...s.cover] as [string, string],
-      span: SPAN[s.key] ?? 4,
-      visual: visuais[s.key] ?? <VisualPadrao />,
-    })),
-    {
-      key: "browse",
-      title: t("browseCard"),
-      desc: t("browseCardDesc"),
-      path: `/${locale}/${locale === "pt" ? "explorar" : "browse"}`,
-      cover: ["#3f4a52", "#171c1b"] as [string, string],
-      count: String(index.resources.length),
-      visual: <VisualBrowse total={index.resources.length} />,
-      span: SPAN.browse,
-    },
-  ];
+  const cards: StageCard[] = BENTO.map((b) => ({
+    key: b.key,
+    title: tn(b.key as "articles"),
+    desc: th(`sections.${b.key}.short` as "sections.articles.short"),
+    path: navPath(b.key, locale),
+    cover: [...b.cover] as [string, string],
+    span: b.span,
+    visual: visuais[b.key],
+    count: b.key === "browse" ? String(index.resources.length) : undefined,
+  }));
 
   return (
     <main className="stage flex w-full flex-col">
@@ -98,8 +83,15 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           title={t("heroTitle")}
           subtitle={t("subtitle")}
           curator={t("curator")}
-          primary={{ label: t("ctaPrimary"), href: `/${locale}/${locale === "pt" ? "explorar" : "browse"}` }}
-          secondary={{ label: t("ctaSecondary"), href: `/${locale}/${locale === "pt" ? "artigos" : "articles"}` }}
+          curatorRole={t("curatorRole")}
+          curatorHref={authorLinkedIn}
+          // Os dois caminhos de entrada da ferramenta, não duas seções de
+          // conteúdo: quem chega aqui está a um comando de usar o catálogo.
+          primary={{ label: t("ctaPrimary"), href: navPath("cli", locale) }}
+          secondary={{ label: t("ctaSecondary"), href: navPath("mcp", locale) }}
+          // Quem chegou sem saber o que é um agente precisa da documentação
+          // antes de qualquer comando. O terceiro caminho é para essa pessoa.
+          tertiary={{ label: t("docsCta"), href: navPath("docs", locale) }}
         />
       </div>
 

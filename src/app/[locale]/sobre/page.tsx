@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ArrowUpRight } from "lucide-react";
+import { authorLinkedIn } from "@/lib/site";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/sobre">): Promise<Metadata> {
   const { locale } = await params;
@@ -31,6 +33,16 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/sobre">
           <div className="rounded-lg border border-border bg-card p-5">
             <p className="font-display text-2xl font-semibold leading-tight">{ts("author")}</p>
             <p className="mt-1 text-sm text-muted-foreground">{ts("authorRole")}</p>
+            {/* O crédito leva a quem faz: o nome sozinho não leva a lugar nenhum. */}
+            <a
+              href={authorLinkedIn}
+              target="_blank"
+              rel="noreferrer me"
+              className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-teal transition-colors hover:text-teal-deep"
+            >
+              LinkedIn
+              <ArrowUpRight size={14} aria-hidden />
+            </a>
           </div>
         </aside>
         <div className="space-y-10">

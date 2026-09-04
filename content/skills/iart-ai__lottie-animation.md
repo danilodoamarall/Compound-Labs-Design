@@ -1,14 +1,16 @@
+---
+name: lottie-animation
+description: This skill should be used when the user asks to "add a Lottie animation", "play a .lottie or .json animation", "integrate a Bodymovin/After Effects animation on web or mobile", "control Lottie playback / segments", "make a scroll-driven Lottie", "recolor a Lottie at runtime", or "export an AE animation to Lottie". Covers dotLottie/lottie-web integration, playback control, interactivity, theming, and the AE export checklist.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/lottie-animation/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: lottie-animation
-description: This skill should be used when the user asks to "add a Lottie animation", "play a .lottie or .json animation", "integrate a Bodymovin/After Effects animation on web or mobile", "control Lottie playback / segments", "make a scroll-driven Lottie", "recolor a Lottie at runtime", or "export an AE animation to Lottie". Covers dotLottie/lottie-web integration, playback control, interactivity, theming, and the AE export checklist.
-version: 0.1.0
----
+-->
 
 # Lottie Animation
 

@@ -1,8 +1,19 @@
-# AI Builders Lab
+# Compound Design
 
-Hub público de conhecimento do Labs. Artigos em formato de apresentação, radar de
-ferramentas e catálogos de AI tools, skills e agents. Conteúdo por Danilo do Amaral,
-Design Engineer & AI Builder.
+Hub aberto de design engineering com IA. Artigos que também são apresentação, um
+catálogo de skills com licença verificada repositório a repositório, e um CLI e um
+servidor MCP para o seu agente usar esse catálogo.
+
+O nome é uma analogia: o que se aprende em IA, design e código rende sobre o que
+já se sabia, como juros compostos. Por [Danilo do Amaral](https://www.linkedin.com/in/danilodoamaral/),
+Design Engineer no Pitang Labs, pós-graduado em UX & UI pela EBAC e em UX
+Engineering pela PUC Minas.
+
+Fluxos de usuário e histórias com critérios de aceite: `docs/fluxos-e-historias.md`.
+O que falta para fechar a v1, por fase: `docs/plano-fechamento-v1.md`.
+A régua de craft que toda interface passa, com as referências medidas: `docs/plano-craft.md`.
+Como contribuir: `CONTRIBUTING.md`.
+Decisões de arquitetura: `docs/adr/`.
 
 Bilíngue (pt-BR padrão, en). Next.js App Router + Tailwind + React Bits.
 
@@ -38,9 +49,11 @@ O código instalado fica versionado no repositório, então o deploy não precis
 |---|---|
 | `content/artigos/<slug>.<locale>.mdx` | artigos; cada `<Slide>` vira um slide na apresentação |
 | `content/data/state-of-prototyping-2026.json` | dados da pesquisa, gerados do CSV |
-| `content/radar.json` | radar de ferramentas |
-| `content/ai-tools.json` | catálogo de AI tools |
-| `content/skills-agents.json` | catálogo de skills e agents |
+| `content/skills/*.md` + `content/skills-registry.json` | o catálogo de skills: 207 copiadas com procedência, 62 apontadas |
+| `content/repo-stars.json` | estrelas e último push dos repositórios de origem (`scripts/fetch-repo-stars.mjs`) |
+| `content/resources.json` | o índice do Explorar, gerado por `scripts/build-resources.mjs` |
+| `content/radar.json`, `content/ai-tools.json` | acervo de ferramentas: alimentam o índice, não têm mais página própria |
+| `content/skills-agents.json` | skills curadas à mão, também só no índice |
 | `messages/pt.json`, `messages/en.json` | textos de interface |
 
 Itens com `"draft": true` aparecem com a etiqueta de rascunho no site.

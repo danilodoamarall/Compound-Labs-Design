@@ -1,13 +1,15 @@
+---
+name: create-design-md
+description: Create or update a DESIGN.md from an existing product repository or public website. Use when asked to document an interface's design language, reconstruct its visual system, extract design tokens and guidance from current evidence, or give coding agents persistent UI context. Do not modify product source or promote accidental implementation patterns into design decisions.
+---
+
 <!--
   Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/create-design-md/SKILL.md
   Autor:   ibelick
   Licença: MIT
   Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: create-design-md
-description: Create or update a DESIGN.md from an existing product repository or public website. Use when asked to document an interface's design language, reconstruct its visual system, extract design tokens and guidance from current evidence, or give coding agents persistent UI context. Do not modify product source or promote accidental implementation patterns into design decisions.
----
+-->
 
 # Create DESIGN.md
 

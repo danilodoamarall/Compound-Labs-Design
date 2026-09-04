@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/PrototyperAI/prototyper-ui/blob/main/apps/docs/skill/build-primitive/SKILL.md
-  Autor:   PrototyperAI
-  Licença: MIT
-  Commit:  eff1e06fa43a1fc3ba4e940b43b7ba0fa5b72339
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: build-primitive
 description: >
   Guide for building foundational Prototyper UI components from scratch when no
@@ -13,6 +7,14 @@ description: >
   form integration, or animation lifecycle — all without an existing Base UI wrapper.
 tools: [Read, Glob, Grep, Write, Edit, Bash]
 ---
+
+<!--
+  Origem:  https://github.com/PrototyperAI/prototyper-ui/blob/main/apps/docs/skill/build-primitive/SKILL.md
+  Autor:   PrototyperAI
+  Licença: MIT
+  Commit:  eff1e06fa43a1fc3ba4e940b43b7ba0fa5b72339
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Prototyper UI — Building Primitive Components
 

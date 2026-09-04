@@ -1,14 +1,16 @@
+---
+name: slopbeth
+version: 1.4.1
+description: Use when drafting, editing, reviewing, or benchmarking prose to remove AI-writing tells while preserving meaning, voice, and density. Trigger this skill for requests about AI slop, humanizing AI-assisted writing, detector-facing validation, unsummarizable prose, voice preservation, or writing that should not sound generic.
+---
+
 <!--
   Origem:  https://github.com/ehmo/slopkit/blob/main/plugins/slopbeth/skills/slopbeth/SKILL.md
   Autor:   ehmo
   Licença: MIT
   Commit:  b33718bb9283c11b09567dc714f92d90ffb7bd16
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: slopbeth
-version: 1.4.1
-description: Use when drafting, editing, reviewing, or benchmarking prose to remove AI-writing tells while preserving meaning, voice, and density. Trigger this skill for requests about AI slop, humanizing AI-assisted writing, detector-facing validation, unsummarizable prose, voice preservation, or writing that should not sound generic.
----
+-->
 
 # Slopbeth
 

@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/Danilaa1/compact-landing-skill/blob/main/skills/compact-landing/SKILL.md
-  Autor:   Danilaa1
-  Licença: MIT
-  Commit:  1d79ea7832d16b88151ccf48e05d97014d139ebb
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: compact-landing
 description: >-
   Build compact, distinctive landing pages and product skeletons without repeating
@@ -14,6 +8,14 @@ description: >-
   palette, typography, radius, surfaces, motifs, and safe motion while preserving
   clear actions, accessibility, responsive behavior, and zero layout shift.
 ---
+
+<!--
+  Origem:  https://github.com/Danilaa1/compact-landing-skill/blob/main/skills/compact-landing/SKILL.md
+  Autor:   Danilaa1
+  Licença: MIT
+  Commit:  1d79ea7832d16b88151ccf48e05d97014d139ebb
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Compact Landing
 

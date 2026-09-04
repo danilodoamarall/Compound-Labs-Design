@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-mdx.mjs && node scripts/build-csv.mjs && node scripts/build-brand.mjs .",
+    "prebuild": "node scripts/check-mdx.mjs && node scripts/build-csv.mjs && node scripts/build-brand.mjs . && node scripts/build-resources.mjs && node scripts/check-skill-links.mjs && node scripts/check-counts.mjs",
+    "check:counts": "node scripts/check-counts.mjs",
+    "check:links": "node scripts/check-skill-links.mjs",
+    "build:resources": "node scripts/build-resources.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

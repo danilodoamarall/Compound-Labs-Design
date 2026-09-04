@@ -1,14 +1,16 @@
+---
+name: 60fps-animation
+description: This skill should be used when the user asks to "fix janky CSS animation", "make animation 60fps", "stop layout thrashing", "animate width/height/top/left smoothly", "convert animation to transform", "animate box-shadow performantly", "animate height auto", "FLIP animation", or "why is my scroll/hover animation choppy".
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/60fps-animation/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: 60fps-animation
-description: This skill should be used when the user asks to "fix janky CSS animation", "make animation 60fps", "stop layout thrashing", "animate width/height/top/left smoothly", "convert animation to transform", "animate box-shadow performantly", "animate height auto", "FLIP animation", or "why is my scroll/hover animation choppy".
-version: 0.1.0
----
+-->
 
 # Performant Web Animation
 

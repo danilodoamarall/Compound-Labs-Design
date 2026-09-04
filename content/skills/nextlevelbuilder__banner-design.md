@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/banner-design/SKILL.md
-  Autor:   nextlevelbuilder
-  Licença: MIT
-  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: banner-design
 description: "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage."
 argument-hint: "[platform] [style] [dimensions]"
@@ -13,6 +7,14 @@ metadata:
   author: claudekit
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/banner-design/SKILL.md
+  Autor:   nextlevelbuilder
+  Licença: MIT
+  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Banner Design - Multi-Format Creative Banner System
 

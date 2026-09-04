@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/oso95/scroll-world/blob/main/skills/scroll-world/SKILL.md
-  Autor:   oso95
-  Licença: MIT
-  Commit:  71cc36d3bb150248ae36a2c552f9cbf88802a79c
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: scroll-world
 description: >
   Build an immersive scroll-scrubbed "fly through the world" landing page for any
@@ -21,6 +15,14 @@ description: >
   turn a business into a scrollable world.
 allowed-tools: Bash, Read, Write, Edit, AskUserQuestion, Skill
 ---
+
+<!--
+  Origem:  https://github.com/oso95/scroll-world/blob/main/skills/scroll-world/SKILL.md
+  Autor:   oso95
+  Licença: MIT
+  Commit:  71cc36d3bb150248ae36a2c552f9cbf88802a79c
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # scroll-world
 

@@ -1,13 +1,15 @@
+---
+name: seo
+description: Use and read this skill immediately if the user request is in any way related to SEO or a site's organic search or AI search presence. That includes site audits, rankings, keyword research, competitors, backlinks, click or traffic changes, indexing problems, crawling, redirects, sitemaps, metadata, structured data, Core Web Vitals, internal links, content opportunities, programmatic SEO, local search, Search Console, Google Analytics or Clicky questions, Google update impact, llms.txt, AI search visibility in ChatGPT, Claude, Perplexity, or Google AI Overviews, and client SEO reporting. Routes to evidence-backed local reports through the SEO CLI and MCP server.
+---
+
 <!--
   Origem:  https://github.com/iannuttall/seo/blob/main/skills/seo/SKILL.md
   Autor:   iannuttall
   Licença: Apache-2.0
   Commit:  52f10012021131c2405cddfb976d583a6af3b490
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: seo
-description: Use and read this skill immediately if the user request is in any way related to SEO or a site's organic search or AI search presence. That includes site audits, rankings, keyword research, competitors, backlinks, click or traffic changes, indexing problems, crawling, redirects, sitemaps, metadata, structured data, Core Web Vitals, internal links, content opportunities, programmatic SEO, local search, Search Console, Google Analytics or Clicky questions, Google update impact, llms.txt, AI search visibility in ChatGPT, Claude, Perplexity, or Google AI Overviews, and client SEO reporting. Routes to evidence-backed local reports through the SEO CLI and MCP server.
----
+-->
 
 # seo
 

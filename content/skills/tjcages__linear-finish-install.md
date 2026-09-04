@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-finish-install/SKILL.md
-  Autor:   tjcages
-  Licença: MIT
-  Commit:  09f07637b5e7b122b312dba0480386974173922b
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: linear-finish-install
 version: 1.0.2
 description: >-
@@ -15,9 +9,17 @@ description: >-
   after skills add", or right after installing the pack.
 ---
 
+<!--
+  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-finish-install/SKILL.md
+  Autor:   tjcages
+  Licença: MIT
+  Commit:  09f07637b5e7b122b312dba0480386974173922b
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Finish Linear tracking install
 
-Chat: [RESPONSE.md](./RESPONSE.md). Auth: [AUTH.md](./AUTH.md). Snippet: [ALWAYS_ON.md](./ALWAYS_ON.md). Optional weekly health: [AUTOMATION.md](./AUTOMATION.md).
+Chat: [RESPONSE.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-finish-install/RESPONSE.md). Auth: [AUTH.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-finish-install/AUTH.md). Snippet: [ALWAYS_ON.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-finish-install/ALWAYS_ON.md). Optional weekly health: [AUTOMATION.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-finish-install/AUTOMATION.md).
 
 **Install is complete** when always-on is loaded and Linear MCP auth works. Same skills + same SoT assumption on every harness. Cursor Automation is optional.
 
@@ -52,7 +54,7 @@ Useful links:
 
 ## 3. Monitor Automation (optional — Cursor only)
 
-If this is Cursor and the user wants a weekly digest: open Automations (`open_automation`) and point at [AUTOMATION.md](./AUTOMATION.md). Default schedule Monday **7:00 AM local** (convert cron to UTC — see AUTOMATION.md).
+If this is Cursor and the user wants a weekly digest: open Automations (`open_automation`) and point at [AUTOMATION.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-finish-install/AUTOMATION.md). Default schedule Monday **7:00 AM local** (convert cron to UTC — see AUTOMATION.md).
 
 Non-Cursor: skip. They can run `/linear-monitor` anytime.
 

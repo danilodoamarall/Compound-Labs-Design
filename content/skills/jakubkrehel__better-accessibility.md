@@ -1,13 +1,15 @@
+---
+name: better-accessibility
+description: Helps your project comply with accessibility standards and best practices.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/better-accessibility/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: better-accessibility
-description: Helps your project comply with accessibility standards and best practices.
----
+-->
 
 # Accessibility
 
@@ -21,13 +23,13 @@ Contrast measurement and color fixes belong to `better-colors`. Text sizing and 
 
 ## Native elements first
 
-The first rule of ARIA: don't use ARIA when a native element exists. `<button>` for actions, `<a href>` for navigation, never `<div onClick>`. A real link must support Cmd/Ctrl/middle-click. No ARIA is better than bad ARIA. See [semantics-and-aria.md](semantics-and-aria.md) for landmarks, button-vs-link and disabled states.
+The first rule of ARIA: don't use ARIA when a native element exists. `<button>` for actions, `<a href>` for navigation, never `<div onClick>`. A real link must support Cmd/Ctrl/middle-click. No ARIA is better than bad ARIA. See [semantics-and-aria.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/semantics-and-aria.md) for landmarks, button-vs-link and disabled states.
 
 ## Visible focus rings
 
 Style `:focus-visible`, not bare `:focus`. Keyboard users get a ring and mouse users usually don't. Prefer the browser's unmodified indicator.
 
-A custom ring needs a project focus token or another explicit color. Verify the whole indicator against every adjacent color it crosses, `currentColor` included. Use at least a `2px` solid perimeter or an equivalent visible area. Never use `outline: none` without a verified replacement, and preserve system colors in forced-colors mode. Recipes are in [focus-and-keyboard.md](focus-and-keyboard.md).
+A custom ring needs a project focus token or another explicit color. Verify the whole indicator against every adjacent color it crosses, `currentColor` included. Use at least a `2px` solid perimeter or an equivalent visible area. Never use `outline: none` without a verified replacement, and preserve system colors in forced-colors mode. Recipes are in [focus-and-keyboard.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/focus-and-keyboard.md).
 
 ## Full keyboard support
 
@@ -43,13 +45,13 @@ Modals set `inert` on the background content, move focus inside on open and retu
 
 WCAG 2.5.8's Level AA baseline is a 24×24 CSS-pixel target, or one of its spacing, equivalent-control, inline, user-agent and essential exceptions. Aim for 44×44px on touch and 40×40px on desktop where density permits. Extend with a pseudo-element when the visible element should stay smaller.
 
-Never let extended hit areas overlap. Give decorative layers `pointer-events: none`, so a glow never swallows the clicks meant for the control beneath it. Sizes and collision rules are in [hit-areas.md](hit-areas.md).
+Never let extended hit areas overlap. Give decorative layers `pointer-events: none`, so a glow never swallows the clicks meant for the control beneath it. Sizes and collision rules are in [hit-areas.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/hit-areas.md).
 
 ## Label and type every control
 
 Every input gets a `<label for>` or a wrapping `<label>`. A placeholder is never a label. Label and control share one hit target, with no dead zone between a checkbox and its text.
 
-Add `autocomplete` with a meaningful `name`, plus the `type` and `inputmode` that summon the right keyboard. Never block paste; users paste passwords and one-time codes. See [forms.md](forms.md).
+Add `autocomplete` with a meaningful `name`, plus the `type` and `inputmode` that summon the right keyboard. Never block paste; users paste passwords and one-time codes. See [forms.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/forms.md).
 
 ## Errors that announce
 
@@ -69,13 +71,13 @@ Status needs a redundant cue: an icon, text, or an underline alongside the color
 
 Wrap motion in `@media (prefers-reduced-motion: no-preference)` so it is opt-in. Under reduced motion, replace slides and scales with opacity crossfades, and kill parallax and autoplay entirely.
 
-Two rules hold regardless of the preference. Autoplaying media needs a visible pause control, and toasts carrying an action or an error stay until dismissed. See [motion-and-zoom.md](motion-and-zoom.md).
+Two rules hold regardless of the preference. Autoplaying media needs a visible pause control, and toasts carrying an action or an error stay until dismissed. See [motion-and-zoom.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/motion-and-zoom.md).
 
 ## Announce dynamic content
 
 Three mechanisms, three jobs. `aria-describedby` carries field-specific validation. A polite live region (`role="status"`) carries non-urgent updates not tied to a control, such as toasts and result counts. `role="alert"` carries urgent untied errors and nothing else.
 
-Repeated polite announcements need a stable empty region rendered before its text updates. Dynamically inserted alerts vary in support, so test them on the screen readers you target. See [screen-readers.md](screen-readers.md).
+Repeated polite announcements need a stable empty region rendered before its text updates. Dynamically inserted alerts vary in support, so test them on the screen readers you target. See [screen-readers.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-accessibility/screen-readers.md).
 
 ## Alt text by purpose
 

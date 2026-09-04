@@ -50,6 +50,7 @@
   --color-teal: var(--teal);
   --color-teal-deep: var(--teal-deep);
   --color-warm: var(--warm);
+  --color-warm-text: var(--warm-text);
   --color-neutral-mark: var(--neutral-mark);
   --color-wash: var(--wash);
   --radius-sm: calc(var(--radius) * 0.6);
@@ -89,6 +90,9 @@
   --teal: #0b8a74;
   --teal-deep: #075f50;
   --warm: #c9571c;
+  /* Texto pequeno sobre fundo claro: o --warm dá 4,3:1 sobre branco, abaixo dos
+     4,5:1 que o selo de rascunho em 10px precisa. Este dá 7,4:1. */
+  --warm-text: #8f3a0f;
   --neutral-mark: #b8c2bf;
   --wash: #eaf3f0;
   --radius: 0.5rem;
@@ -130,6 +134,7 @@
   --teal: #22a18c;
   --teal-deep: #5cc5b2;
   --warm: #d06a30;
+  --warm-text: #e08a55;
   --neutral-mark: #4b5654;
   --wash: #1b2624;
   --sidebar: #171c1b;

@@ -1,17 +1,19 @@
+---
+name: ask-sonner
+description: Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.
+---
+
 <!--
   Origem:  https://github.com/emilkowalski/skills/blob/main/skills/ask-sonner/SKILL.md
   Autor:   emilkowalski
   Licença: MIT
   Commit:  d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: ask-sonner
-description: Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.
----
+-->
 
 # Working With Sonner
 
-A guide skill for [Sonner](https://sonner.emilkowal.ski), the toast library. When a task involves Sonner — wiring it up, rendering toasts, styling them, or fixing them — answer from this file first. Full prop tables for `<Toaster />` and `toast()` live in [API.md](API.md); read it when you need an exact prop name, type, or default.
+A guide skill for [Sonner](https://sonner.emilkowal.ski), the toast library. When a task involves Sonner — wiring it up, rendering toasts, styling them, or fixing them — answer from this file first. Full prop tables for `<Toaster />` and `toast()` live in [API.md](https://github.com/emilkowalski/skills/blob/d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7/skills/ask-sonner/API.md); read it when you need an exact prop name, type, or default.
 
 ## Setup
 

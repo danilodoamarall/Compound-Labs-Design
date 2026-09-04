@@ -57,16 +57,16 @@ const corpo = (p) => `  <g clip-path="url(#${p}domo)">
     <rect width="1024" height="1024" fill="#fff" filter="url(#${p}grao)" opacity="0.5"/>
   </g>`;
 
-const marca = `<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Builders Lab">
-  <title>AI Builders Lab</title>
+const marca = `<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compound Design">
+  <title>Compound Design</title>
   <defs>${defs("")}
   </defs>
 ${corpo("")}
 </svg>
 `;
 
-const icone = `<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Builders Lab">
-  <title>AI Builders Lab</title>
+const icone = `<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compound Design">
+  <title>Compound Design</title>
   <defs>${defs("i")}
   </defs>
   <rect width="1024" height="1024" rx="232" fill="#3a3a3a"/>

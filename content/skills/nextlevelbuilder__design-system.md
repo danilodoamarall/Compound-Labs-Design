@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design-system/SKILL.md
-  Autor:   nextlevelbuilder
-  Licença: MIT
-  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: design-system
 description: Token architecture, component specifications, and slide generation. Three-layer tokens (primitive→semantic→component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.
 argument-hint: "[component or token]"
@@ -13,6 +7,14 @@ metadata:
   author: claudekit
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/design-system/SKILL.md
+  Autor:   nextlevelbuilder
+  Licença: MIT
+  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Design System
 

@@ -1,13 +1,15 @@
+---
+name: brag
+description: Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says "/brag", "let's brag about this", "make a launch video", "turn this into a video", or wants to share what they built. Reads the project code directly — no live URL or screenshots needed.
+---
+
 <!--
   Origem:  https://github.com/latent-spaces/brag/blob/main/skills/brag/SKILL.md
   Autor:   latent-spaces
   Licença: MIT
   Commit:  1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: brag
-description: Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says "/brag", "let's brag about this", "make a launch video", "turn this into a video", or wants to share what they built. Reads the project code directly — no live URL or screenshots needed.
----
+-->
 
 # /brag
 
@@ -89,7 +91,7 @@ Generate the timestamp at the start of the run (`YYYY-MM-DD-HHmmss`) and use it 
 
 ## Step 1: Inspect the project
 
-**Read:** [references/step-1-inspect.md](references/step-1-inspect.md)
+**Read:** [references/step-1-inspect.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/step-1-inspect.md)
 
 Scan the project directory and extract the information needed to plan the brag video.
 
@@ -99,7 +101,7 @@ Scan the project directory and extract the information needed to plan the brag v
 
 ## Step 2: Plan and storyboard
 
-**Read:** [references/step-2-plan.md](references/step-2-plan.md)
+**Read:** [references/step-2-plan.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/step-2-plan.md)
 
 Write `<output-dir>/brag-plan.md` (where `<output-dir>` is `brag-output/` or the timestamped variant chosen above). Answer the planning rubric. Commit to a creative angle. Write the beat-by-beat storyboard including scenes, text, timing, transitions, and SFX cues.
 
@@ -112,8 +114,8 @@ When music is selected, include a compact `Music cue guidance` section: read the
 ## Step 3: Hand off to Hyperframes
 
 **Read:** The Hyperframes domain skills — `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative`, `hyperframes-keyframes`, `hyperframes-cli`. /brag is its own workflow: do not enter the `hyperframes` entry-point intent interview or route into its generic promo / launch-video workflow.
-**Read:** [references/step-3-compose.md](references/step-3-compose.md)
-**Read:** [references/audio.md](references/audio.md)
+**Read:** [references/step-3-compose.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/step-3-compose.md)
+**Read:** [references/audio.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/audio.md)
 
 Write the composition brief and use Hyperframes to create the video implementation in `<output-dir>/composition/`.
 
@@ -125,7 +127,7 @@ Write the composition brief and use Hyperframes to create the video implementati
 
 ## Step 4: Validate, render, and deliver
 
-**Read:** [references/step-4-deliver.md](references/step-4-deliver.md)
+**Read:** [references/step-4-deliver.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/step-4-deliver.md)
 
 Validate, preview, render to `<output-dir>/brag.mp4`, pick the best poster frame into `<output-dir>/brag.jpg`, bake that poster as the video's frame 0 so it's the idle thumbnail everywhere, and write `<output-dir>/share-copy.txt`.
 
@@ -137,7 +139,7 @@ Validate, preview, render to `<output-dir>/brag.mp4`, pick the best poster frame
 
 Seven tone presets ship with `/brag`. Each changes scripting energy, pacing, typography personality, and transition style. Presets are defaults, not limits.
 
-Full definitions: [references/tones.md](references/tones.md)
+Full definitions: [references/tones.md](https://github.com/latent-spaces/brag/blob/1f8d9ade17d0ad4419cca9305fbc1398a4dd5b39/skills/brag/references/tones.md)
 
 | Tone | Energy | One-liner |
 |---|---|---|

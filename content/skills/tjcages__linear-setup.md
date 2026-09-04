@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-setup/SKILL.md
-  Autor:   tjcages
-  Licença: MIT
-  Commit:  09f07637b5e7b122b312dba0480386974173922b
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: linear-setup
 version: 1.0.2
 description: >-
@@ -16,9 +10,17 @@ description: >-
   NOT for one-off issue create/comment — Linear MCP handles that.
 ---
 
+<!--
+  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-setup/SKILL.md
+  Autor:   tjcages
+  Licença: MIT
+  Commit:  09f07637b5e7b122b312dba0480386974173922b
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Linear setup
 
-Chat rules: [RESPONSE.md](./RESPONSE.md). Auth: [AUTH.md](./AUTH.md). Full method: [METHODOLOGY.md](./METHODOLOGY.md).
+Chat rules: [RESPONSE.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-setup/RESPONSE.md). Auth: [AUTH.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-setup/AUTH.md). Full method: [METHODOLOGY.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-setup/METHODOLOGY.md).
 
 ## Step 0 — auth
 
@@ -69,4 +71,4 @@ Rubric ≥16/20 with no load-bearing 0, or full §26 audit.
 
 ## After setup
 
-Point user to always-on (if missing) via `finish linear-tracking install`. Optional Cursor weekly health: [AUTOMATION.md](./AUTOMATION.md). One next action.
+Point user to always-on (if missing) via `finish linear-tracking install`. Optional Cursor weekly health: [AUTOMATION.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-setup/AUTOMATION.md). One next action.

@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/AminBlg/SimpleEnglish/blob/main/skills/simple-english/SKILL.md
-  Autor:   AminBlg
-  Licença: MIT
-  Commit:  5204f6d97fd3fef9e586d953fe3ad9315cb69a9d
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: simple-english
 description: |
   Write or rewrite text in plain, layman-readable English in the spirit of
@@ -26,6 +20,14 @@ metadata:
   version: "2.0.0"
   standard: ASD-STE100 Issue 9 (2025-01-15)
 ---
+
+<!--
+  Origem:  https://github.com/AminBlg/SimpleEnglish/blob/main/skills/simple-english/SKILL.md
+  Autor:   AminBlg
+  Licença: MIT
+  Commit:  5204f6d97fd3fef9e586d953fe3ad9315cb69a9d
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Simple English: Plain Words, Aerospace Discipline
 

@@ -1,14 +1,16 @@
+---
+name: make-interfaces-feel-better
+description: >-
+  Design engineering principles for making interfaces feel polished. Use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, typography, icons, micro-interactions, enter/exit animations, or any visual detail work. Supports quick and full review modes. Triggers on UI polish, design details, "make it feel better", "feels off", stagger animations, border radius, optical alignment, font smoothing, tabular numbers, image outlines, box shadows, icons, icon stroke weight, icon states, motion restraint.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/make-interfaces-feel-better/blob/main/skills/make-interfaces-feel-better/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  35545ea1512ad59fa463e6b1f95ca9c052981fe6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: make-interfaces-feel-better
-description: >-
-  Design engineering principles for making interfaces feel polished. Use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, typography, icons, micro-interactions, enter/exit animations, or any visual detail work. Supports quick and full review modes. Triggers on UI polish, design details, "make it feel better", "feels off", stagger animations, border radius, optical alignment, font smoothing, tabular numbers, image outlines, box shadows, icons, icon stroke weight, icon states, motion restraint.
----
+-->
 
 # Details that make interfaces feel better
 
@@ -20,11 +22,11 @@ When reviewing, slow the interface down: replay motion at 10% speed in the brows
 
 | Category | When to Use |
 | --- | --- |
-| [Typography](typography.md) | Text wrapping, font smoothing, tabular numbers |
-| [Surfaces](surfaces.md) | Border radius, optical alignment, shadows, image outlines, hit areas |
-| [Animations](animations.md) | Interruptible animations, enter/exit transitions, icon animations, scale on press, motion restraint |
-| [Icons](icons.md) | Icon stroke weight, states via `currentColor`, outline vs fill, sizing, RTL flipping |
-| [Performance](performance.md) | Transition specificity, `will-change` usage |
+| [Typography](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better/typography.md) | Text wrapping, font smoothing, tabular numbers |
+| [Surfaces](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better/surfaces.md) | Border radius, optical alignment, shadows, image outlines, hit areas |
+| [Animations](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better/animations.md) | Interruptible animations, enter/exit transitions, icon animations, scale on press, motion restraint |
+| [Icons](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better/icons.md) | Icon stroke weight, states via `currentColor`, outline vs fill, sizing, RTL flipping |
+| [Performance](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/35545ea1512ad59fa463e6b1f95ca9c052981fe6/skills/make-interfaces-feel-better/performance.md) | Transition specificity, `will-change` usage |
 
 ## Core Principles
 

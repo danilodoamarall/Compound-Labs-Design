@@ -1,13 +1,15 @@
+---
+name: interface-design
+description: Craft-first interface design for dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, and interactive products. Use when designing, building, reviewing, auditing, or refining product UI where visual craft, layout hierarchy, tokens, states, visual direction, or design-system consistency matter. Not for marketing pages, landing pages, campaigns, or brand-only work.
+---
+
 <!--
   Origem:  https://github.com/Dammyjay93/interface-design/blob/main/.claude/skills/interface-design/SKILL.md
   Autor:   Dammyjay93
   Licença: MIT
   Commit:  2f9be3206855bcb2d1d0af262c8bae25cba6658d
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: interface-design
-description: Craft-first interface design for dashboards, admin panels, SaaS apps, tools, settings pages, data interfaces, and interactive products. Use when designing, building, reviewing, auditing, or refining product UI where visual craft, layout hierarchy, tokens, states, visual direction, or design-system consistency matter. Not for marketing pages, landing pages, campaigns, or brand-only work.
----
+-->
 
 # Interface Design
 

@@ -1,13 +1,15 @@
+---
+name: masked-reveal
+description: Create masked staggered word reveals on scroll with GSAP ScrollTrigger. Use when headings, hero copy, section titles, or editorial text should reveal word-by-word through an overflow mask as they enter the viewport.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/masked-reveal/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: masked-reveal
-description: Create masked staggered word reveals on scroll with GSAP ScrollTrigger. Use when headings, hero copy, section titles, or editorial text should reveal word-by-word through an overflow mask as they enter the viewport.
----
+-->
 
 # Masked Reveal
 

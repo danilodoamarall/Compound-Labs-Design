@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-styling/SKILL.md
-  Autor:   nextlevelbuilder
-  Licença: MIT
-  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: ui-styling
 description: Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.
 argument-hint: "[component or layout]"
@@ -13,6 +7,14 @@ metadata:
   author: claudekit
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-styling/SKILL.md
+  Autor:   nextlevelbuilder
+  Licença: MIT
+  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # UI Styling Skill
 

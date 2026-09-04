@@ -1,14 +1,16 @@
+---
+name: glassmorphism
+description: This skill should be used when the user asks to "add a glassmorphism effect", "frosted glass UI", "Apple liquid glass style", "frosted blur card", "translucent glass panel animation", "make a frosted nav bar", "build a glass modal/dialog", "animate a glass card on hover", or "add a refracting liquid-glass hero". Covers frosted translucent panels with backdrop-filter blur, edge/specular highlights, SVG liquid-glass refraction, motion on hover/scroll/enter, and accessible reduced-transparency fallbacks.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/glassmorphism/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: glassmorphism
-description: This skill should be used when the user asks to "add a glassmorphism effect", "frosted glass UI", "Apple liquid glass style", "frosted blur card", "translucent glass panel animation", "make a frosted nav bar", "build a glass modal/dialog", "animate a glass card on hover", or "add a refracting liquid-glass hero". Covers frosted translucent panels with backdrop-filter blur, edge/specular highlights, SVG liquid-glass refraction, motion on hover/scroll/enter, and accessible reduced-transparency fallbacks.
-version: 0.1.0
----
+-->
 
 # Glassmorphism (Frosted & Liquid Glass)
 

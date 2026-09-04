@@ -1,3 +1,4 @@
+import { CLI_PACKAGE } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
@@ -10,13 +11,14 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/skills-a
 }
 
 const COMANDOS = [
-  { key: "start", cmd: "npx @ai-builders-lab/skills start" },
-  { key: "topics", cmd: "npx @ai-builders-lab/skills topics" },
-  { key: "list", cmd: "npx @ai-builders-lab/skills list" },
-  { key: "filter", cmd: "npx @ai-builders-lab/skills list --topic motion" },
-  { key: "search", cmd: "npx @ai-builders-lab/skills list --query shadow" },
-  { key: "get", cmd: "npx @ai-builders-lab/skills get emilkowalski/animate" },
-  { key: "licenses", cmd: "npx @ai-builders-lab/skills licenses" },
+  { key: "start", cmd: `npx ${CLI_PACKAGE} start` },
+  { key: "topics", cmd: `npx ${CLI_PACKAGE} topics` },
+  { key: "list", cmd: `npx ${CLI_PACKAGE} list --limit 40` },
+  { key: "filter", cmd: `npx ${CLI_PACKAGE} list --topic motion` },
+  { key: "search", cmd: `npx ${CLI_PACKAGE} list --query shadow` },
+  { key: "get", cmd: `npx ${CLI_PACKAGE} get emilkowalski/animate` },
+  { key: "licenses", cmd: `npx ${CLI_PACKAGE} licenses` },
+  { key: "version", cmd: `npx ${CLI_PACKAGE} --version` },
 ] as const;
 
 export default async function CliPage({ params }: PageProps<"/[locale]/skills-agents/cli">) {
@@ -37,7 +39,7 @@ export default async function CliPage({ params }: PageProps<"/[locale]/skills-ag
       <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t("dek")}</p>
 
       <h2 className="eyebrow mt-12">{t("install")}</h2>
-      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>npx @ai-builders-lab/skills</code></pre>
+      <pre className="mt-3 overflow-x-auto rounded-lg border border-border bg-card p-4 font-mono text-[13px]"><code>{`npx ${CLI_PACKAGE}`}</code></pre>
       <p className="mt-3 text-sm text-muted-foreground">{t("noDeps")}</p>
 
       <h2 className="eyebrow mt-12">{t("commands")}</h2>
@@ -55,7 +57,13 @@ export default async function CliPage({ params }: PageProps<"/[locale]/skills-ag
 
       <h2 className="eyebrow mt-12">{t("attribution")}</h2>
       <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground">
-        {t("attributionBody", { hosted: registry.counts.hosted, pointer: registry.counts.pointer })}
+        {/* t.rich e não t: a mensagem traz <code>get</code>, e o t simples
+            imprimia a tag crua no parágrafo. */}
+        {t.rich("attributionBody", {
+          hosted: registry.counts.hosted,
+          pointer: registry.counts.pointer,
+          code: (c) => <code className="rounded bg-muted px-1 py-0.5 font-mono text-[13px]">{c}</code>,
+        })}
       </p>
     </main>
   );

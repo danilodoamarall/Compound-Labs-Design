@@ -1,16 +1,34 @@
 "use client";
 
 import { useDeferredValue, useMemo, useState } from "react";
-import { Search, X } from "lucide-react";
+import { Search, Shuffle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/r-togglegroup";
-import { TAG_ORDER, TAG_DOT, type Resource, type ResourceTag, type BrowseLabels } from "@/lib/resources";
+import {
+  TAG_ORDER,
+  TAG_DOT,
+  formatResourceDate,
+  type Resource,
+  type ResourceTag,
+  type BrowseLabels,
+} from "@/lib/resources";
 
 function normalize(s: string) {
   return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 }
 
-export function BrowseResources({ resources, labels }: { resources: Resource[]; labels: BrowseLabels }) {
+/** A lista do índice, uma linha por item: nome • descrição numa linha,
+ *  a data à direita, ponto colorido da tag à esquerda. Sem data, a coluna fica
+ *  vazia em vez de inventar uma. */
+export function BrowseResources({
+  resources,
+  labels,
+  locale,
+}: {
+  resources: Resource[];
+  labels: BrowseLabels;
+  locale: "pt" | "en";
+}) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<ResourceTag[]>([]);
   const deferred = useDeferredValue(query);
@@ -37,6 +55,14 @@ export function BrowseResources({ resources, labels }: { resources: Resource[]; 
   }, [resources, deferred, active]);
 
   const dirty = active.length > 0 || query.length > 0;
+
+  /*  Um ao acaso, dentro do filtro atual. Navegação plena, não estado: o
+   *  botão é um jeito de descobrir, e a URL de destino é a mesma da linha. */
+  const aoAcaso = () => {
+    if (!filtered.length) return;
+    const alvo = filtered[Math.floor(Math.random() * filtered.length)];
+    window.location.assign(alvo.href);
+  };
 
   return (
     <section className="w-full">
@@ -65,10 +91,20 @@ export function BrowseResources({ resources, labels }: { resources: Resource[]; 
             <ToggleGroupItem key={tag} value={tag} variant="outline" size="lg" aria-label={labels.tags[tag]} className="gap-2 px-3.5">
               <span aria-hidden className="size-2 rounded-full" style={{ background: TAG_DOT[tag] }} />
               {labels.tags[tag]}
-              <span className="font-mono text-[11px] text-muted-foreground tabular">{counts[tag]}</span>
+              <span className="font-mono text-[11px] text-muted-foreground tabular-nums">{counts[tag]}</span>
             </ToggleGroupItem>
           ))}
         </ToggleGroup>
+
+        <button
+          type="button"
+          onClick={aoAcaso}
+          disabled={!filtered.length}
+          className="inline-flex h-10 items-center gap-1.5 rounded-md border border-border px-3 text-[14px] text-muted-foreground transition-colors hover:border-teal/50 hover:text-foreground disabled:opacity-40"
+        >
+          <Shuffle size={14} aria-hidden />
+          {labels.random}
+        </button>
 
         {dirty ? (
           <button
@@ -91,14 +127,14 @@ export function BrowseResources({ resources, labels }: { resources: Resource[]; 
       {filtered.length === 0 ? (
         <p className="mt-10 text-muted-foreground">{labels.empty}</p>
       ) : (
-        <ul className="mt-4">
+        <ul className="mt-4 divide-y divide-border/60">
           {filtered.map((r) => (
             <li key={r.key}>
               <a
                 href={r.href}
                 target={r.external ? "_blank" : undefined}
                 rel={r.external ? "noreferrer" : undefined}
-                className="group flex items-baseline gap-3 rounded-md px-2 py-2 transition-colors hover:bg-wash"
+                className="group flex items-baseline gap-3 rounded-md px-2 py-2.5 transition-colors hover:bg-wash"
               >
                 <span aria-hidden className="size-2 shrink-0 self-center rounded-full" style={{ background: TAG_DOT[r.tags[0]] }} />
                 <span className="min-w-0 flex-1 truncate">
@@ -110,8 +146,14 @@ export function BrowseResources({ resources, labels }: { resources: Resource[]; 
                     </>
                   ) : null}
                 </span>
-                <span aria-hidden className="hidden w-16 shrink-0 self-center border-b border-dotted border-border sm:block" />
-                <span className="shrink-0 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">{r.meta}</span>
+                <span className="hidden shrink-0 font-mono text-[11px] uppercase tracking-wide text-muted-foreground/70 md:block">
+                  {r.meta}
+                </span>
+                {/* A data, no formato curto. Vazia quando a fonte
+                    não tem uma: coluna em branco é honesta, data inventada não. */}
+                <span className="w-[9ch] shrink-0 text-right font-mono text-[11px] uppercase tabular-nums text-muted-foreground">
+                  {r.date ? formatResourceDate(r.date, locale) : ""}
+                </span>
               </a>
             </li>
           ))}

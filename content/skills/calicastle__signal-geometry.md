@@ -1,13 +1,15 @@
+---
+name: signal-geometry
+description: Create Signal Geometry abstract illustrations and posters from concepts or briefs. Use when the user asks for sparse geometric visuals, editorial posters, spatial systems, or prompt-only image recipes.
+---
+
 <!--
   Origem:  https://github.com/CaliCastle/skills/blob/main/skills/signal-geometry/SKILL.md
   Autor:   CaliCastle
   Licença: MIT
   Commit:  4833b159104951e1d042fa50f8faae85355608ee
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: signal-geometry
-description: Create Signal Geometry abstract illustrations and posters from concepts or briefs. Use when the user asks for sparse geometric visuals, editorial posters, spatial systems, or prompt-only image recipes.
----
+-->
 
 # Signal Geometry
 
@@ -67,7 +69,7 @@ Completion criterion: the image can be described in one sentence without listing
 
 ### 3. Lock quality anchors
 
-Read [references/example-index.md](references/example-index.md) and select one or two matching entries. Inspect each linked image when image inspection is available; otherwise use the entry description as the quality anchor. For every selected anchor, record one anchor delta:
+Read [references/example-index.md](https://github.com/CaliCastle/skills/blob/4833b159104951e1d042fa50f8faae85355608ee/skills/signal-geometry/references/example-index.md) and select one or two matching entries. Inspect each linked image when image inspection is available; otherwise use the entry description as the quality anchor. For every selected anchor, record one anchor delta:
 
 - three invariants to preserve;
 - three axes to change across format, topology, composition, viewpoint, polarity, motion, scaffold, or accent.
@@ -117,7 +119,7 @@ Completion criterion: one inspectable candidate exists at the requested ratio.
 
 View the candidate at full size and thumbnail size before presenting it. Check every critical gate below. Treat the first render as a candidate, not an automatic final.
 
-If any gate fails, read [references/repair-playbook.md](references/repair-playbook.md), identify the single largest defect, tighten only the relevant prompt fields, and regenerate once.
+If any gate fails, read [references/repair-playbook.md](https://github.com/CaliCastle/skills/blob/4833b159104951e1d042fa50f8faae85355608ee/skills/signal-geometry/references/repair-playbook.md), identify the single largest defect, tighten only the relevant prompt fields, and regenerate once.
 
 Completion criterion: every critical gate passes. If the repaired candidate still misses a gate, label the result `DONE_WITH_CONCERNS` and name the remaining defect.
 

@@ -1,13 +1,15 @@
+---
+name: better-interface
+description: Combines all of the `better-*` skills into a single review across accessibility, layout, writing, typography, color and UI polish.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/better-interface/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: better-interface
-description: Combines all of the `better-*` skills into a single review across accessibility, layout, writing, typography, color and UI polish.
----
+-->
 
 # Interface review
 
@@ -140,4 +142,4 @@ Treat a review request as read-only. Do not edit source unless the user also ask
 
 ## Review output format
 
-The format lives in [review-format.md](review-format.md): scope and coverage, the findings table, verification and the verdict. A review is not finished until its findings are reported there.
+The format lives in [review-format.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-interface/review-format.md): scope and coverage, the findings table, verification and the verdict. A review is not finished until its findings are reported there.

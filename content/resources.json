@@ -1,4 +1,5 @@
 {
+  "updated": "2026-09-04",
   "sections": {
     "artigos": {
       "pt": "Artigos",
@@ -6,23 +7,8 @@
       "path": {
         "pt": "/artigos",
         "en": "/articles"
-      }
-    },
-    "radar": {
-      "pt": "Radar",
-      "en": "Radar",
-      "path": {
-        "pt": "/radar",
-        "en": "/radar"
-      }
-    },
-    "ai-tools": {
-      "pt": "AI Tools",
-      "en": "AI Tools",
-      "path": {
-        "pt": "/ai-tools",
-        "en": "/ai-tools"
-      }
+      },
+      "navigable": true
     },
     "skills-agents": {
       "pt": "Skills",
@@ -30,7 +16,8 @@
       "path": {
         "pt": "/skills-agents",
         "en": "/skills-agents"
-      }
+      },
+      "navigable": true
     },
     "workflow": {
       "pt": "Workflow",
@@ -38,17 +25,28 @@
       "path": {
         "pt": "/workflow",
         "en": "/workflow"
-      }
+      },
+      "navigable": true
+    },
+    "ferramentas": {
+      "pt": "Ferramentas",
+      "en": "Tools",
+      "navigable": false
+    },
+    "ferramentas-ia": {
+      "pt": "Ferramentas de IA",
+      "en": "AI tools",
+      "navigable": false
     }
   },
   "resources": [
     {
-      "key": "artigo-as-tres-tribos-do-vibe-coding",
-      "name": "As três tribos do vibe coding",
-      "nameEn": "The three tribes of vibe coding",
+      "key": "artigo-reclamam-do-excesso-planejam-mais",
+      "name": "Reclamam do excesso, planejam mais",
+      "nameEn": "They complain about the excess, then plan for more",
       "desc": {
-        "pt": "A profissão não migrou para a IA em bloco. Ela se dividiu em três grupos que convivem nas mesmas equipes, e a adoção sobe com a senioridade, não com a juventude.",
-        "en": "The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth."
+        "pt": "O gargalo do workflow de design em 2026 é cognitivo, não orçamentário. E a profissão que reclama de ferramentas demais é a mesma que planeja adicionar mais.",
+        "en": "The bottleneck in the 2026 design workflow is cognitive, not budgetary. And the profession complaining about too many tools is the same one planning to add more."
       },
       "tags": [
         "read"
@@ -57,59 +55,12 @@
       "sections": [
         "artigos"
       ],
-      "order": 1,
+      "order": 5,
+      "date": "2026-10-01",
       "notes": {
         "artigos": {
-          "pt": "A profissão não migrou para a IA em bloco. Ela se dividiu em três grupos que convivem nas mesmas equipes, e a adoção sobe com a senioridade, não com a juventude.",
-          "en": "The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth."
-        }
-      },
-      "facts": {}
-    },
-    {
-      "key": "artigo-prototipar-nao-e-entregar",
-      "name": "Prototipar não é entregar",
-      "nameEn": "Prototyping is not shipping",
-      "desc": {
-        "pt": "Quase metade dos designers gera metade ou mais da produção com IA, e só 1,4% confiam nessa saída sem revisar. Isso não é contradição. É a definição de protótipo.",
-        "en": "Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype."
-      },
-      "tags": [
-        "read"
-      ],
-      "kind": "article",
-      "sections": [
-        "artigos"
-      ],
-      "order": 2,
-      "notes": {
-        "artigos": {
-          "pt": "Quase metade dos designers gera metade ou mais da produção com IA, e só 1,4% confiam nessa saída sem revisar. Isso não é contradição. É a definição de protótipo.",
-          "en": "Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype."
-        }
-      },
-      "facts": {}
-    },
-    {
-      "key": "artigo-o-centro-ansioso",
-      "name": "O centro ansioso",
-      "nameEn": "The anxious middle",
-      "desc": {
-        "pt": "Quem mais codifica com IA se sente mais valioso. IC Designers, 58% da profissão, são o único grupo entre designers com mais medo do que confiança. Isso é um problema de gestão, não de indivíduo.",
-        "en": "The people who code most with AI feel more valuable. IC Designers, 58% of the profession, are the only group among designers with more fear than confidence. That's a management problem, not an individual one."
-      },
-      "tags": [
-        "read"
-      ],
-      "kind": "article",
-      "sections": [
-        "artigos"
-      ],
-      "order": 3,
-      "notes": {
-        "artigos": {
-          "pt": "Quem mais codifica com IA se sente mais valioso. IC Designers, 58% da profissão, são o único grupo entre designers com mais medo do que confiança. Isso é um problema de gestão, não de indivíduo.",
-          "en": "The people who code most with AI feel more valuable. IC Designers, 58% of the profession, are the only group among designers with more fear than confidence. That's a management problem, not an individual one."
+          "pt": "O gargalo do workflow de design em 2026 é cognitivo, não orçamentário. E a profissão que reclama de ferramentas demais é a mesma que planeja adicionar mais.",
+          "en": "The bottleneck in the 2026 design workflow is cognitive, not budgetary. And the profession complaining about too many tools is the same one planning to add more."
         }
       },
       "facts": {}
@@ -130,6 +81,7 @@
         "artigos"
       ],
       "order": 4,
+      "date": "2026-09-24",
       "notes": {
         "artigos": {
           "pt": "Designers planejam investir mais em design systems e tokens do que em ferramentas de canvas. Faz sentido. Tokens são a interface entre a intenção de design e o código que a IA gera.",
@@ -139,12 +91,12 @@
       "facts": {}
     },
     {
-      "key": "artigo-reclamam-do-excesso-planejam-mais",
-      "name": "Reclamam do excesso, planejam mais",
-      "nameEn": "They complain about the excess, then plan for more",
+      "key": "artigo-o-centro-ansioso",
+      "name": "O centro ansioso",
+      "nameEn": "The anxious middle",
       "desc": {
-        "pt": "O gargalo do workflow de design em 2026 é cognitivo, não orçamentário. E a profissão que reclama de ferramentas demais é a mesma que planeja adicionar mais.",
-        "en": "The bottleneck in the 2026 design workflow is cognitive, not budgetary. And the profession complaining about too many tools is the same one planning to add more."
+        "pt": "Quem mais codifica com IA se sente mais valioso. IC Designers, 58% da profissão, são o único grupo entre designers com mais medo do que confiança. Isso é um problema de gestão, não de indivíduo.",
+        "en": "The people who code most with AI feel more valuable. IC Designers, 58% of the profession, are the only group among designers with more fear than confidence. That's a management problem, not an individual one."
       },
       "tags": [
         "read"
@@ -153,14 +105,1677 @@
       "sections": [
         "artigos"
       ],
-      "order": 5,
+      "order": 3,
+      "date": "2026-09-17",
       "notes": {
         "artigos": {
-          "pt": "O gargalo do workflow de design em 2026 é cognitivo, não orçamentário. E a profissão que reclama de ferramentas demais é a mesma que planeja adicionar mais.",
-          "en": "The bottleneck in the 2026 design workflow is cognitive, not budgetary. And the profession complaining about too many tools is the same one planning to add more."
+          "pt": "Quem mais codifica com IA se sente mais valioso. IC Designers, 58% da profissão, são o único grupo entre designers com mais medo do que confiança. Isso é um problema de gestão, não de indivíduo.",
+          "en": "The people who code most with AI feel more valuable. IC Designers, 58% of the profession, are the only group among designers with more fear than confidence. That's a management problem, not an individual one."
         }
       },
       "facts": {}
+    },
+    {
+      "key": "artigo-prototipar-nao-e-entregar",
+      "name": "Prototipar não é entregar",
+      "nameEn": "Prototyping is not shipping",
+      "desc": {
+        "pt": "Quase metade dos designers gera metade ou mais da produção com IA, e só 1,4% confiam nessa saída sem revisar. Isso não é contradição. É a definição de protótipo.",
+        "en": "Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype."
+      },
+      "tags": [
+        "read"
+      ],
+      "kind": "article",
+      "sections": [
+        "artigos"
+      ],
+      "order": 2,
+      "date": "2026-09-10",
+      "notes": {
+        "artigos": {
+          "pt": "Quase metade dos designers gera metade ou mais da produção com IA, e só 1,4% confiam nessa saída sem revisar. Isso não é contradição. É a definição de protótipo.",
+          "en": "Almost half of designers generate half or more of their output with AI, and only 1.4% trust that output without reviewing it. That's not a contradiction. It's the definition of a prototype."
+        }
+      },
+      "facts": {}
+    },
+    {
+      "key": "skills-pbakaus-impeccable",
+      "name": "pbakaus/impeccable",
+      "nameEn": "pbakaus/impeccable",
+      "desc": {
+        "pt": "18 skills de design engineering, sob Apache-2.0.",
+        "en": "18 design-engineering skills, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/pbakaus/impeccable",
+        "license": "Apache-2.0",
+        "stars": 65357,
+        "skillCount": 18,
+        "catalogQuery": "pbakaus"
+      }
+    },
+    {
+      "key": "skills-petergyang-human-review",
+      "name": "petergyang/human-review",
+      "nameEn": "petergyang/human-review",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/petergyang/human-review",
+        "license": "MIT",
+        "stars": 1219,
+        "skillCount": 1,
+        "catalogQuery": "petergyang"
+      }
+    },
+    {
+      "key": "skills-vercel-next-js",
+      "name": "vercel/next.js",
+      "nameEn": "vercel/next.js",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/vercel/next.js",
+        "license": "MIT",
+        "stars": 142084,
+        "skillCount": 2,
+        "catalogQuery": "vercel"
+      }
+    },
+    {
+      "key": "skills-aboudjem-humanizer-skill",
+      "name": "Aboudjem/humanizer-skill",
+      "nameEn": "Aboudjem/humanizer-skill",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Aboudjem/humanizer-skill",
+        "license": "MIT",
+        "stars": 214,
+        "skillCount": 1,
+        "catalogQuery": "Aboudjem"
+      }
+    },
+    {
+      "key": "skills-addyosmani-agent-skills",
+      "name": "addyosmani/agent-skills",
+      "nameEn": "addyosmani/agent-skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/addyosmani/agent-skills",
+        "license": "MIT",
+        "stars": 92046,
+        "skillCount": 1,
+        "catalogQuery": "addyosmani"
+      }
+    },
+    {
+      "key": "artigo-as-tres-tribos-do-vibe-coding",
+      "name": "As três tribos do vibe coding",
+      "nameEn": "The three tribes of vibe coding",
+      "desc": {
+        "pt": "A profissão não migrou para a IA em bloco. Ela se dividiu em três grupos que convivem nas mesmas equipes, e a adoção sobe com a senioridade, não com a juventude.",
+        "en": "The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth."
+      },
+      "tags": [
+        "read"
+      ],
+      "kind": "article",
+      "sections": [
+        "artigos"
+      ],
+      "order": 1,
+      "date": "2026-09-03",
+      "notes": {
+        "artigos": {
+          "pt": "A profissão não migrou para a IA em bloco. Ela se dividiu em três grupos que convivem nas mesmas equipes, e a adoção sobe com a senioridade, não com a juventude.",
+          "en": "The profession didn't migrate to AI as a block. It split into three groups that coexist on the same teams, and adoption rises with seniority, not with youth."
+        }
+      },
+      "facts": {}
+    },
+    {
+      "key": "skills-elithrar-dotfiles",
+      "name": "elithrar/dotfiles",
+      "nameEn": "elithrar/dotfiles",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/elithrar/dotfiles",
+        "license": "MIT",
+        "stars": 203,
+        "skillCount": 1,
+        "catalogQuery": "elithrar"
+      }
+    },
+    {
+      "key": "skills-ibelick-ui-skills",
+      "name": "ibelick/ui-skills",
+      "nameEn": "ibelick/ui-skills",
+      "desc": {
+        "pt": "7 skills de design engineering, sob MIT.",
+        "en": "7 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/ibelick/ui-skills",
+        "license": "MIT",
+        "stars": 8060,
+        "skillCount": 7,
+        "catalogQuery": "ibelick"
+      }
+    },
+    {
+      "key": "skills-leonxlnx-unlazy",
+      "name": "Leonxlnx/unlazy",
+      "nameEn": "Leonxlnx/unlazy",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Leonxlnx/unlazy",
+        "license": "MIT",
+        "stars": 3018,
+        "skillCount": 1,
+        "catalogQuery": "Leonxlnx"
+      }
+    },
+    {
+      "key": "skills-mattpocock-skills",
+      "name": "mattpocock/skills",
+      "nameEn": "mattpocock/skills",
+      "desc": {
+        "pt": "13 skills de design engineering, sob MIT.",
+        "en": "13 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/mattpocock/skills",
+        "license": "MIT",
+        "stars": 247523,
+        "skillCount": 13,
+        "catalogQuery": "mattpocock"
+      }
+    },
+    {
+      "key": "skills-microsoft-playwright-cli",
+      "name": "microsoft/playwright-cli",
+      "nameEn": "microsoft/playwright-cli",
+      "desc": {
+        "pt": "1 skill de design engineering, sob Apache-2.0.",
+        "en": "1 design-engineering skill, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/microsoft/playwright-cli",
+        "license": "Apache-2.0",
+        "stars": 13052,
+        "skillCount": 1,
+        "catalogQuery": "microsoft"
+      }
+    },
+    {
+      "key": "skills-nextlevelbuilder-ui-ux-pro-max-skill",
+      "name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "nameEn": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "desc": {
+        "pt": "7 skills de design engineering, sob MIT.",
+        "en": "7 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+        "license": "MIT",
+        "stars": 124702,
+        "skillCount": 7,
+        "catalogQuery": "nextlevelbuilder"
+      }
+    },
+    {
+      "key": "skills-redongreen-uspec",
+      "name": "redongreen/uSpec",
+      "nameEn": "redongreen/uSpec",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/redongreen/uSpec",
+        "license": "MIT",
+        "stars": 241,
+        "skillCount": 2,
+        "catalogQuery": "redongreen"
+      }
+    },
+    {
+      "key": "skills-saadeghi-daisyui",
+      "name": "saadeghi/daisyui",
+      "nameEn": "saadeghi/daisyui",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/saadeghi/daisyui",
+        "license": "MIT",
+        "stars": 42283,
+        "skillCount": 1,
+        "catalogQuery": "saadeghi"
+      }
+    },
+    {
+      "key": "skills-shadcn-ui-ui",
+      "name": "shadcn-ui/ui",
+      "nameEn": "shadcn-ui/ui",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/shadcn-ui/ui",
+        "license": "MIT",
+        "stars": 122954,
+        "skillCount": 1,
+        "catalogQuery": "shadcn-ui"
+      }
+    },
+    {
+      "key": "skills-sveltejs-ai-tools",
+      "name": "sveltejs/ai-tools",
+      "nameEn": "sveltejs/ai-tools",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/sveltejs/ai-tools",
+        "license": "MIT",
+        "stars": 316,
+        "skillCount": 1,
+        "catalogQuery": "sveltejs"
+      }
+    },
+    {
+      "key": "skills-vercel-labs-agent-browser",
+      "name": "vercel-labs/agent-browser",
+      "nameEn": "vercel-labs/agent-browser",
+      "desc": {
+        "pt": "1 skill de design engineering, sob Apache-2.0.",
+        "en": "1 design-engineering skill, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-03",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "license": "Apache-2.0",
+        "stars": 41889,
+        "skillCount": 1,
+        "catalogQuery": "vercel-labs"
+      }
+    },
+    {
+      "key": "skills-aminblg-simpleenglish",
+      "name": "AminBlg/SimpleEnglish",
+      "nameEn": "AminBlg/SimpleEnglish",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-02",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/AminBlg/SimpleEnglish",
+        "license": "MIT",
+        "stars": 3152,
+        "skillCount": 1,
+        "catalogQuery": "AminBlg"
+      }
+    },
+    {
+      "key": "skills-github-gh-stack",
+      "name": "github/gh-stack",
+      "nameEn": "github/gh-stack",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-02",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/github/gh-stack",
+        "license": "MIT",
+        "stars": 1444,
+        "skillCount": 1,
+        "catalogQuery": "github"
+      }
+    },
+    {
+      "key": "skills-petergyang-no-ai-slop",
+      "name": "petergyang/no-ai-slop",
+      "nameEn": "petergyang/no-ai-slop",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-02",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "license": "MIT",
+        "stars": 7046,
+        "skillCount": 1,
+        "catalogQuery": "petergyang"
+      }
+    },
+    {
+      "key": "skills-ayghri-i-have-adhd",
+      "name": "ayghri/i-have-adhd",
+      "nameEn": "ayghri/i-have-adhd",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-01",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/ayghri/i-have-adhd",
+        "license": "MIT",
+        "stars": 26970,
+        "skillCount": 1,
+        "catalogQuery": "ayghri"
+      }
+    },
+    {
+      "key": "skills-wshobson-agents",
+      "name": "wshobson/agents",
+      "nameEn": "wshobson/agents",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-01",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/wshobson/agents",
+        "license": "MIT",
+        "stars": 39393,
+        "skillCount": 2,
+        "catalogQuery": "wshobson"
+      }
+    },
+    {
+      "key": "skills-iannuttall-seo",
+      "name": "iannuttall/seo",
+      "nameEn": "iannuttall/seo",
+      "desc": {
+        "pt": "1 skill de design engineering, sob Apache-2.0.",
+        "en": "1 design-engineering skill, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-31",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/iannuttall/seo",
+        "license": "Apache-2.0",
+        "stars": 445,
+        "skillCount": 1,
+        "catalogQuery": "iannuttall"
+      }
+    },
+    {
+      "key": "skills-bencium-bencium-marketplace",
+      "name": "bencium/bencium-marketplace",
+      "nameEn": "bencium/bencium-marketplace",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-30",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/bencium/bencium-marketplace",
+        "license": "MIT",
+        "stars": 413,
+        "skillCount": 1,
+        "catalogQuery": "bencium"
+      }
+    },
+    {
+      "key": "skills-jakubkrehel-make-interfaces-feel-better",
+      "name": "jakubkrehel/make-interfaces-feel-better",
+      "nameEn": "jakubkrehel/make-interfaces-feel-better",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/jakubkrehel/make-interfaces-feel-better",
+        "license": "MIT",
+        "stars": 3170,
+        "skillCount": 1,
+        "catalogQuery": "jakubkrehel"
+      }
+    },
+    {
+      "key": "skills-jakubkrehel-skills",
+      "name": "jakubkrehel/skills",
+      "nameEn": "jakubkrehel/skills",
+      "desc": {
+        "pt": "11 skills de design engineering, sob MIT.",
+        "en": "11 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/jakubkrehel/skills",
+        "license": "MIT",
+        "stars": 5045,
+        "skillCount": 11,
+        "catalogQuery": "jakubkrehel"
+      }
+    },
+    {
+      "key": "skills-kitlangton-skills",
+      "name": "kitlangton/skills",
+      "nameEn": "kitlangton/skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/kitlangton/skills",
+        "license": "MIT",
+        "stars": 316,
+        "skillCount": 1,
+        "catalogQuery": "kitlangton"
+      }
+    },
+    {
+      "key": "skills-mengto-skills",
+      "name": "MengTo/Skills",
+      "nameEn": "MengTo/Skills",
+      "desc": {
+        "pt": "18 skills de design engineering, sob MIT.",
+        "en": "18 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-28",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/MengTo/Skills",
+        "license": "MIT",
+        "stars": 5772,
+        "skillCount": 18,
+        "catalogQuery": "MengTo"
+      }
+    },
+    {
+      "key": "skills-luchasarie-bro-skill",
+      "name": "luchasarie/bro-skill",
+      "nameEn": "luchasarie/bro-skill",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-27",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/luchasarie/bro-skill",
+        "license": "MIT",
+        "stars": 328,
+        "skillCount": 1,
+        "catalogQuery": "luchasarie"
+      }
+    },
+    {
+      "key": "skills-addyosmani-web-quality-skills",
+      "name": "addyosmani/web-quality-skills",
+      "nameEn": "addyosmani/web-quality-skills",
+      "desc": {
+        "pt": "6 skills de design engineering, sob MIT.",
+        "en": "6 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-24",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/addyosmani/web-quality-skills",
+        "license": "MIT",
+        "stars": 2745,
+        "skillCount": 6,
+        "catalogQuery": "addyosmani"
+      }
+    },
+    {
+      "key": "skills-leonxlnx-taste-skill",
+      "name": "Leonxlnx/taste-skill",
+      "nameEn": "Leonxlnx/taste-skill",
+      "desc": {
+        "pt": "13 skills de design engineering, sob MIT.",
+        "en": "13 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-24",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Leonxlnx/taste-skill",
+        "license": "MIT",
+        "stars": 84062,
+        "skillCount": 13,
+        "catalogQuery": "Leonxlnx"
+      }
+    },
+    {
+      "key": "skills-emilkowalski-skills",
+      "name": "emilkowalski/skills",
+      "nameEn": "emilkowalski/skills",
+      "desc": {
+        "pt": "12 skills de design engineering, sob MIT.",
+        "en": "12 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-21",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/emilkowalski/skills",
+        "license": "MIT",
+        "stars": 35166,
+        "skillCount": 12,
+        "catalogQuery": "emilkowalski"
+      }
+    },
+    {
+      "key": "skills-flornkm-skills",
+      "name": "flornkm/skills",
+      "nameEn": "flornkm/skills",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-20",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/flornkm/skills",
+        "license": "MIT",
+        "stars": 107,
+        "skillCount": 2,
+        "catalogQuery": "flornkm"
+      }
+    },
+    {
+      "key": "skills-arifszn-slide-wright",
+      "name": "arifszn/slide-wright",
+      "nameEn": "arifszn/slide-wright",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-19",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/arifszn/slide-wright",
+        "license": "MIT",
+        "stars": 41,
+        "skillCount": 1,
+        "catalogQuery": "arifszn"
+      }
+    },
+    {
+      "key": "skills-blader-humanizer",
+      "name": "blader/humanizer",
+      "nameEn": "blader/humanizer",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-19",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/blader/humanizer",
+        "license": "MIT",
+        "stars": 41544,
+        "skillCount": 1,
+        "catalogQuery": "blader"
+      }
+    },
+    {
+      "key": "skills-mrstev3n-balise-skills",
+      "name": "mrstev3n/balise-skills",
+      "nameEn": "mrstev3n/balise-skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob Apache-2.0.",
+        "en": "1 design-engineering skill, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-19",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/mrstev3n/balise-skills",
+        "license": "Apache-2.0",
+        "stars": 11,
+        "skillCount": 1,
+        "catalogQuery": "mrstev3n"
+      }
+    },
+    {
+      "key": "skills-latent-spaces-brag",
+      "name": "latent-spaces/brag",
+      "nameEn": "latent-spaces/brag",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-17",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/latent-spaces/brag",
+        "license": "MIT",
+        "stars": 1158,
+        "skillCount": 1,
+        "catalogQuery": "latent-spaces"
+      }
+    },
+    {
+      "key": "skills-liamgvchi-gc-minimal-zine-poster",
+      "name": "LiamGvchi/gc-minimal-zine-poster",
+      "nameEn": "LiamGvchi/gc-minimal-zine-poster",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-13",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+        "license": "MIT",
+        "stars": 6898,
+        "skillCount": 1,
+        "catalogQuery": "LiamGvchi"
+      }
+    },
+    {
+      "key": "skills-callstackincubator-agent-skills",
+      "name": "callstackincubator/agent-skills",
+      "nameEn": "callstackincubator/agent-skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-08",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/callstackincubator/agent-skills",
+        "license": "MIT",
+        "stars": 1634,
+        "skillCount": 1,
+        "catalogQuery": "callstackincubator"
+      }
+    },
+    {
+      "key": "skills-flornkm-shadow-plugin",
+      "name": "flornkm/shadow-plugin",
+      "nameEn": "flornkm/shadow-plugin",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-08-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/flornkm/shadow-plugin",
+        "license": "MIT",
+        "stars": 133,
+        "skillCount": 1,
+        "catalogQuery": "flornkm"
+      }
+    },
+    {
+      "key": "skills-elayadesign-ai-design-skills",
+      "name": "elayadesign/ai-design-skills",
+      "nameEn": "elayadesign/ai-design-skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/elayadesign/ai-design-skills",
+        "license": "MIT",
+        "stars": 1719,
+        "skillCount": 1,
+        "catalogQuery": "elayadesign"
+      }
+    },
+    {
+      "key": "skills-greensock-gsap-skills",
+      "name": "greensock/gsap-skills",
+      "nameEn": "greensock/gsap-skills",
+      "desc": {
+        "pt": "8 skills de design engineering, sob MIT.",
+        "en": "8 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/greensock/gsap-skills",
+        "license": "MIT",
+        "stars": 14881,
+        "skillCount": 8,
+        "catalogQuery": "greensock"
+      }
+    },
+    {
+      "key": "skills-oso95-scroll-world",
+      "name": "oso95/scroll-world",
+      "nameEn": "oso95/scroll-world",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/oso95/scroll-world",
+        "license": "MIT",
+        "stars": 8965,
+        "skillCount": 1,
+        "catalogQuery": "oso95"
+      }
+    },
+    {
+      "key": "skills-tjcages-linear",
+      "name": "tjcages/linear",
+      "nameEn": "tjcages/linear",
+      "desc": {
+        "pt": "6 skills de design engineering, sob MIT.",
+        "en": "6 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/tjcages/linear",
+        "license": "MIT",
+        "stars": 8,
+        "skillCount": 6,
+        "catalogQuery": "tjcages"
+      }
+    },
+    {
+      "key": "skills-diffusionstudio-lottie",
+      "name": "diffusionstudio/lottie",
+      "nameEn": "diffusionstudio/lottie",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-25",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/diffusionstudio/lottie",
+        "license": "MIT",
+        "stars": 5398,
+        "skillCount": 1,
+        "catalogQuery": "diffusionstudio"
+      }
+    },
+    {
+      "key": "skills-calicastle-skills",
+      "name": "CaliCastle/skills",
+      "nameEn": "CaliCastle/skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-24",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/CaliCastle/skills",
+        "license": "MIT",
+        "stars": 93,
+        "skillCount": 1,
+        "catalogQuery": "CaliCastle"
+      }
+    },
+    {
+      "key": "skills-ehmo-slopkit",
+      "name": "ehmo/slopkit",
+      "nameEn": "ehmo/slopkit",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-22",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/ehmo/slopkit",
+        "license": "MIT",
+        "stars": 98,
+        "skillCount": 1,
+        "catalogQuery": "ehmo"
+      }
+    },
+    {
+      "key": "skills-danilaa1-compact-landing-skill",
+      "name": "Danilaa1/compact-landing-skill",
+      "nameEn": "Danilaa1/compact-landing-skill",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-07-11",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Danilaa1/compact-landing-skill",
+        "license": "MIT",
+        "stars": 31,
+        "skillCount": 1,
+        "catalogQuery": "Danilaa1"
+      }
+    },
+    {
+      "key": "skills-jane-xiaoer-claude-skill-web-clone",
+      "name": "Jane-xiaoer/claude-skill-web-clone",
+      "nameEn": "Jane-xiaoer/claude-skill-web-clone",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-30",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Jane-xiaoer/claude-skill-web-clone",
+        "license": "MIT",
+        "stars": 984,
+        "skillCount": 1,
+        "catalogQuery": "Jane-xiaoer"
+      }
+    },
+    {
+      "key": "skills-millionco-skills",
+      "name": "millionco/skills",
+      "nameEn": "millionco/skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-30",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/millionco/skills",
+        "license": "MIT",
+        "stars": 33,
+        "skillCount": 1,
+        "catalogQuery": "millionco"
+      }
+    },
+    {
+      "key": "skills-zeke-swiss-design-skill",
+      "name": "zeke/swiss-design-skill",
+      "nameEn": "zeke/swiss-design-skill",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/zeke/swiss-design-skill",
+        "license": "MIT",
+        "stars": 138,
+        "skillCount": 1,
+        "catalogQuery": "zeke"
+      }
+    },
+    {
+      "key": "skills-antfu-skills",
+      "name": "antfu/skills",
+      "nameEn": "antfu/skills",
+      "desc": {
+        "pt": "19 skills de design engineering, sob MIT.",
+        "en": "19 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-23",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/antfu/skills",
+        "license": "MIT",
+        "stars": 5841,
+        "skillCount": 19,
+        "catalogQuery": "antfu"
+      }
+    },
+    {
+      "key": "skills-zarazhangrui-frontend-slides",
+      "name": "zarazhangrui/frontend-slides",
+      "nameEn": "zarazhangrui/frontend-slides",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-23",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/zarazhangrui/frontend-slides",
+        "license": "MIT",
+        "stars": 28690,
+        "skillCount": 1,
+        "catalogQuery": "zarazhangrui"
+      }
+    },
+    {
+      "key": "skills-iart-ai-web-animation-skills",
+      "name": "iart-ai/web-animation-skills",
+      "nameEn": "iart-ai/web-animation-skills",
+      "desc": {
+        "pt": "9 skills de design engineering, sob MIT.",
+        "en": "9 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-22",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/iart-ai/web-animation-skills",
+        "license": "MIT",
+        "stars": 17,
+        "skillCount": 9,
+        "catalogQuery": "iart-ai"
+      }
+    },
+    {
+      "key": "skills-dammyjay93-interface-design",
+      "name": "Dammyjay93/interface-design",
+      "nameEn": "Dammyjay93/interface-design",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-20",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Dammyjay93/interface-design",
+        "license": "MIT",
+        "stars": 5652,
+        "skillCount": 1,
+        "catalogQuery": "Dammyjay93"
+      }
+    },
+    {
+      "key": "skills-remix-run-agent-skills",
+      "name": "remix-run/agent-skills",
+      "nameEn": "remix-run/agent-skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-18",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/remix-run/agent-skills",
+        "license": "MIT",
+        "stars": 137,
+        "skillCount": 1,
+        "catalogQuery": "remix-run"
+      }
+    },
+    {
+      "key": "skills-shadcn-improve",
+      "name": "shadcn/improve",
+      "nameEn": "shadcn/improve",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-06-15",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/shadcn/improve",
+        "license": "MIT",
+        "stars": 9068,
+        "skillCount": 1,
+        "catalogQuery": "shadcn"
+      }
+    },
+    {
+      "key": "skills-vuejs-ai-skills",
+      "name": "vuejs-ai/skills",
+      "nameEn": "vuejs-ai/skills",
+      "desc": {
+        "pt": "8 skills de design engineering, sob MIT.",
+        "en": "8 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-05-30",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/vuejs-ai/skills",
+        "license": "MIT",
+        "stars": 2821,
+        "skillCount": 8,
+        "catalogQuery": "vuejs-ai"
+      }
+    },
+    {
+      "key": "skills-prototyperai-prototyper-ui",
+      "name": "PrototyperAI/prototyper-ui",
+      "nameEn": "PrototyperAI/prototyper-ui",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-05-21",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/PrototyperAI/prototyper-ui",
+        "license": "MIT",
+        "stars": 6,
+        "skillCount": 1,
+        "catalogQuery": "PrototyperAI"
+      }
+    },
+    {
+      "key": "skills-jakubantalik-transitions-dev",
+      "name": "Jakubantalik/transitions-dev",
+      "nameEn": "Jakubantalik/transitions-dev",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-05-20",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/Jakubantalik/transitions-dev",
+        "license": "MIT",
+        "stars": 43,
+        "skillCount": 1,
+        "catalogQuery": "Jakubantalik"
+      }
+    },
+    {
+      "key": "skills-dimillian-skills",
+      "name": "dimillian/skills",
+      "nameEn": "dimillian/skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-03-29",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/dimillian/skills",
+        "license": "MIT",
+        "stars": 3940,
+        "skillCount": 1,
+        "catalogQuery": "dimillian"
+      }
+    },
+    {
+      "key": "skills-stephenturner-skills",
+      "name": "stephenturner/skills",
+      "nameEn": "stephenturner/skills",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-03-26",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/stephenturner/skills",
+        "license": "MIT",
+        "stars": 8,
+        "skillCount": 1,
+        "catalogQuery": "stephenturner"
+      }
+    },
+    {
+      "key": "skills-hardikpandya-stop-slop",
+      "name": "hardikpandya/stop-slop",
+      "nameEn": "hardikpandya/stop-slop",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-03-17",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/hardikpandya/stop-slop",
+        "license": "MIT",
+        "stars": 16767,
+        "skillCount": 1,
+        "catalogQuery": "hardikpandya"
+      }
     },
     {
       "key": "agentation",
@@ -178,6 +1793,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Marca o elemento na tela, escreve a nota e o agente de código recebe seletor e caminho exatos.",
@@ -206,6 +1822,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Ícones com peso e raio de canto ajustáveis, disponíveis no Figma e como pacotes React.",
@@ -231,16 +1848,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Segunda opinião, geração de imagem e tarefas rápidas.",
           "en": "Second opinion, image generation and quick tasks."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "2,6 pontos atrás do Claude entre designers. Útil como segunda opinião e para imagem.",
           "en": "2.6 points behind Claude among designers. Useful as a second opinion and for images."
         }
@@ -250,9 +1868,7 @@
         "category": "assistant",
         "pricing": "freemium",
         "surveyPct": 48.2,
-        "draft": true,
-        "ring": "trial",
-        "quadrant": "assistants"
+        "draft": true
       }
     },
     {
@@ -268,16 +1884,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Escrever, analisar dados, revisar textos e pensar junto. Assistente padrão do Labs.",
           "en": "Writing, data analysis, text review and thinking partner. Labs' default assistant."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Ferramenta nº 2 da pesquisa, atrás só do Figma. Assistente padrão do Labs para escrita, análise e raciocínio.",
           "en": "The survey's #2 tool, behind only Figma. Labs' default assistant for writing, analysis and reasoning."
         }
@@ -287,9 +1904,7 @@
         "category": "assistant",
         "pricing": "freemium",
         "surveyPct": 50.8,
-        "draft": true,
-        "ring": "adopt",
-        "quadrant": "assistants"
+        "draft": true
       }
     },
     {
@@ -306,20 +1921,21 @@
       "kind": "tool",
       "sections": [
         "workflow",
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Agente de codificação da Anthropic que roda no terminal, entende o repositório inteiro, edita arquivos e executa comandos.",
           "en": "Anthropic's coding agent that lives in the terminal, understands the whole codebase, edits files and runs commands."
         },
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Construir protótipos, ferramentas internas e este hub a partir do terminal, com skills e agents.",
           "en": "Building prototypes, internal tools and this hub from the terminal, with skills and agents."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Um terminal com agente mais presente no dia a dia do designer do que FigJam e Figma Make. Este hub foi construído com ele.",
           "en": "An agentic terminal more present in designers' weeks than FigJam or Figma Make. This hub was built with it."
         }
@@ -330,9 +1946,7 @@
         "category": "Agent",
         "pricing": "paid",
         "surveyPct": 38.4,
-        "draft": true,
-        "ring": "adopt",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -351,6 +1965,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Captura, anota e grava a tela no Mac, com link na nuvem para mostrar o que já funciona.",
@@ -379,6 +1994,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Terminal nativo do macOS com abas verticais e navegador embutido para rodar vários agentes de código em paralelo.",
@@ -407,6 +2023,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Compressor nativo de macOS que reduz vídeos, imagens, GIFs e PDFs, deixando gravações de tela leves para compartilhar.",
@@ -435,6 +2052,7 @@
         "skills-agents"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "skills-agents": {
           "pt": "Servidor MCP que entrega documentação versionada de milhares de bibliotecas direto no contexto do agente.",
@@ -471,6 +2089,7 @@
         "skills-agents"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "skills-agents": {
           "pt": "Versão do find-docs que usa as ferramentas MCP do Context7 (resolve-library-id e query-docs) em vez da CLI.",
@@ -505,20 +2124,21 @@
       "kind": "tool",
       "sections": [
         "workflow",
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Editor baseado no VS Code, com autocomplete, edições em vários arquivos e agentes que leem o repositório.",
           "en": "AI-native editor built on VS Code: completion, multi-file edits, and agents that read the whole codebase."
         },
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Editar código com IA quando o fluxo pede um editor em vez de terminal.",
           "en": "AI-assisted code editing when the flow calls for an editor rather than a terminal."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "IDE com IA. Alternativa quando o time prefere editor a terminal.",
           "en": "AI IDE. The alternative when the team prefers an editor over a terminal."
         }
@@ -528,9 +2148,7 @@
         "stage": "build",
         "category": "IDE",
         "pricing": "freemium",
-        "draft": true,
-        "ring": "trial",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -549,6 +2167,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Navegador com IA na barra lateral: conversa com as abas abertas, resume páginas e acelera a pesquisa.",
@@ -577,6 +2196,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Plugin do Tailwind que aplica easing aos stops do gradiente, suavizando bordas duras em fades e overlays.",
@@ -605,6 +2225,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Catálogo visual de curvas de easing: você compara o ritmo da animação e copia o código pronto.",
@@ -630,11 +2251,12 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools"
+        "ferramentas-ia"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Voz sintética para protótipos com áudio e demos.",
           "en": "Synthetic voice for audio prototypes and demos."
         }
@@ -659,19 +2281,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Whiteboard padrão para descoberta e workshops. Perdeu para o Claude Code em uso semanal.",
           "en": "Default whiteboard for discovery and workshops. Now below Claude Code in weekly use."
         }
       },
       "facts": {
         "url": "https://www.figma.com/figjam/",
-        "ring": "adopt",
-        "quadrant": "canvas",
         "surveyPct": 34,
         "draft": true
       }
@@ -690,15 +2311,16 @@
       "kind": "tool",
       "sections": [
         "workflow",
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Editor colaborativo de interface no navegador: é onde layout, tipografia e cor são decididos antes de existir código.",
           "en": "Collaborative interface editor in the browser, where layout, type, and color get decided before any code exists."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Hegemônico: 82,6% usam toda semana. Continua sendo a fonte de verdade visual, mesmo com a IA gerando código.",
           "en": "Hegemonic: 82.6% use it weekly. Still the visual source of truth even as AI generates the code."
         }
@@ -707,8 +2329,6 @@
         "url": "https://www.figma.com/",
         "stage": "design",
         "category": "Design",
-        "ring": "adopt",
-        "quadrant": "canvas",
         "surveyPct": 82.6,
         "draft": true
       }
@@ -726,16 +2346,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Protótipos interativos a partir de designs no Figma, para testar fluxo antes de codar.",
           "en": "Interactive prototypes from Figma designs, to test flows before coding."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Prototipagem com IA dentro do Figma. Bom para protótipos descartáveis a partir de designs existentes.",
           "en": "AI prototyping inside Figma. Good for throwaway prototypes from existing designs."
         }
@@ -745,9 +2366,7 @@
         "category": "prototyping",
         "pricing": "paid",
         "surveyPct": 34.8,
-        "draft": true,
-        "ring": "trial",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -766,6 +2385,7 @@
         "skills-agents"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "skills-agents": {
           "pt": "Busca documentação atualizada, referências de API e exemplos de código de qualquer biblioteca, framework, SDK ou CLI usando o Context7.",
@@ -799,19 +2419,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Bom para sites de marketing publicáveis. Vale entender antes de escolher para landing pages.",
           "en": "Good for publishable marketing sites. Worth understanding before picking it for landing pages."
         }
       },
       "facts": {
         "url": "https://www.framer.com",
-        "ring": "assess",
-        "quadrant": "canvas",
         "draft": true
       }
     },
@@ -828,16 +2447,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Contexto longo e integração com documentos do Google Workspace.",
           "en": "Long context and integration with Google Workspace documents."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Forte em contexto longo e integração com o Google Workspace. Avaliar caso a caso.",
           "en": "Strong on long context and Google Workspace integration. Assess case by case."
         }
@@ -847,9 +2467,7 @@
         "category": "assistant",
         "pricing": "freemium",
         "surveyPct": 32.3,
-        "draft": true,
-        "ring": "assess",
-        "quadrant": "assistants"
+        "draft": true
       }
     },
     {
@@ -868,6 +2486,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Emulador de terminal nativo e acelerado por GPU: onde rodam comandos, builds e as CLIs de agentes.",
@@ -893,16 +2512,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Autocomplete e revisão de PR dentro do GitHub.",
           "en": "Autocomplete and PR review inside GitHub."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Autocomplete e agente no GitHub. Depende do stack do time de engenharia.",
           "en": "Autocomplete and agent inside GitHub. Depends on the engineering team's stack."
         }
@@ -911,9 +2531,7 @@
         "url": "https://github.com/features/copilot",
         "category": "coding",
         "pricing": "paid",
-        "draft": true,
-        "ring": "assess",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -929,19 +2547,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Reuniões. Sem discussão.",
           "en": "Meetings. No debate."
         }
       },
       "facts": {
         "url": "https://meet.google.com",
-        "ring": "adopt",
-        "quadrant": "delivery",
         "surveyPct": 24.8,
         "draft": true
       }
@@ -962,6 +2579,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Monitora o app em produção, detecta comportamentos quebrados antes dos usuários reclamarem e aponta a causa no código.",
@@ -990,6 +2608,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Plataforma de e-mail para SaaS: transacional, marketing e fluxos de ciclo de vida na mesma base e API.",
@@ -1015,16 +2634,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Validar uma ideia de produto com um app funcional em uma tarde.",
           "en": "Validating a product idea with a working app in an afternoon."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "App completo a partir de prompt. Bom para validar ideia; frágil para manter.",
           "en": "Full app from a prompt. Good to validate an idea; fragile to maintain."
         }
@@ -1033,9 +2653,7 @@
         "url": "https://lovable.dev",
         "category": "prototyping",
         "pricing": "freemium",
-        "draft": true,
-        "ring": "assess",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -1051,11 +2669,12 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools"
+        "ferramentas-ia"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Imagens de referência e moodboards. Só 14,7% dos designers planejam investir em geração de imagem.",
           "en": "Reference imagery and moodboards. Only 14.7% of designers plan to invest in image generation."
         }
@@ -1080,19 +2699,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Sobrepõe o FigJam. Só vale se o cliente já usa.",
           "en": "Overlaps with FigJam. Only worth it if the client already uses it."
         }
       },
       "facts": {
         "url": "https://miro.com",
-        "ring": "assess",
-        "quadrant": "delivery",
         "draft": true
       }
     },
@@ -1112,6 +2730,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Biblioteca de animação para React, JavaScript e Vue: springs, gestos, layout e scroll direto no código da interface.",
@@ -1137,16 +2756,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Sintetizar entrevistas, relatórios e PDFs em um corpus fechado.",
           "en": "Synthesizing interviews, reports and PDFs in a closed corpus."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Sintetiza um corpus fechado de documentos. Útil para síntese de pesquisa.",
           "en": "Synthesizes a closed corpus of documents. Useful for research synthesis."
         }
@@ -1155,9 +2775,7 @@
         "url": "https://notebooklm.google",
         "category": "research",
         "pricing": "free",
-        "draft": true,
-        "ring": "trial",
-        "quadrant": "assistants"
+        "draft": true
       }
     },
     {
@@ -1173,19 +2791,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Documentação e wikis. Vale testar como base de conhecimento de time.",
           "en": "Docs and wikis. Worth trialing as a team knowledge base."
         }
       },
       "facts": {
         "url": "https://www.notion.so",
-        "ring": "trial",
-        "quadrant": "delivery",
         "surveyPct": 24.5,
         "draft": true
       }
@@ -1206,6 +2823,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Calendário rápido e todo navegável por teclado; reúne Google, Outlook e bases do Notion na mesma agenda.",
@@ -1234,6 +2852,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Escolhe, converte e gera cores em OKLCH, montando paletas de luminosidade uniforme para exportar em CSS ou Tailwind.",
@@ -1262,6 +2881,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Canvas de design feito de HTML e CSS reais, que exporta código e conversa com agentes via MCP.",
@@ -1287,19 +2907,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Alternativa open source ao Figma com tokens nativos. Acompanhar.",
           "en": "Open-source Figma alternative with native tokens. Keep an eye on it."
         }
       },
       "facts": {
         "url": "https://penpot.app",
-        "ring": "assess",
-        "quadrant": "canvas",
         "draft": true
       }
     },
@@ -1316,16 +2935,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Desk research com fontes citadas.",
           "en": "Desk research with cited sources."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Pesquisa com fontes citadas. Bom para desk research rápido.",
           "en": "Search with cited sources. Good for quick desk research."
         }
@@ -1334,9 +2954,7 @@
         "url": "https://www.perplexity.ai",
         "category": "research",
         "pricing": "freemium",
-        "draft": true,
-        "ring": "trial",
-        "quadrant": "assistants"
+        "draft": true
       }
     },
     {
@@ -1355,6 +2973,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Plataforma de cobrança e merchant of record: checkout, assinaturas e cobrança por uso, com impostos resolvidos.",
@@ -1383,6 +3002,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "API de e-mail para quem programa: dispara transacionais e marketing do produto, com templates escritos em React.",
@@ -1408,11 +3028,12 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools"
+        "ferramentas-ia"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Vídeo gerado para conceitos e apresentações.",
           "en": "Generated video for concepts and presentations."
         }
@@ -1440,6 +3061,7 @@
         "skills-agents"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "skills-agents": {
           "pt": "Espaço reservado para os agents do Labs. Substitua este card pelo primeiro agent real: nome, quando usar, ferramentas permitidas e prompt.",
@@ -1473,19 +3095,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Sem motivo para começar projeto novo nele em 2026.",
           "en": "No reason to start a new project on it in 2026."
         }
       },
       "facts": {
         "url": "https://www.sketch.com",
-        "ring": "hold",
-        "quadrant": "canvas",
         "draft": true
       }
     },
@@ -1502,19 +3123,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Comunicação do dia a dia. Abaixo de três assistentes de IA em uso semanal.",
           "en": "Day-to-day communication. Below three AI assistants in weekly use."
         }
       },
       "facts": {
         "url": "https://slack.com",
-        "ring": "adopt",
-        "quadrant": "delivery",
         "surveyPct": 32.7,
         "draft": true
       }
@@ -1532,19 +3152,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Vitrine viva de componentes. Onde design system e código gerado se encontram.",
           "en": "Living component showcase. Where design system and generated code meet."
         }
       },
       "facts": {
         "url": "https://storybook.js.org",
-        "ring": "adopt",
-        "quadrant": "delivery",
         "draft": true
       }
     },
@@ -1564,6 +3183,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Infraestrutura de pagamentos via API: é como um produto lançado passa a cobrar assinaturas e vendas avulsas.",
@@ -1592,6 +3212,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Backend em cima do Postgres: banco, autenticação, storage e funções serverless para o produto ir ao ar.",
@@ -1620,6 +3241,7 @@
         "skills-agents"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "skills-agents": {
           "pt": "Rascunho de skill: transforma um CSV agregado de pesquisa em um relatório HTML com gráficos validados para daltonismo, tensões e limitações metodológicas. Foi o processo usado para o deep dive da State of Prototyping 2026.",
@@ -1656,6 +3278,7 @@
         "workflow"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Gerenciador de tarefas para Mac, iPhone e iPad: mantém ideias, entregas e prazos organizados por projeto.",
@@ -1681,19 +3304,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Tokens de design do Figma para código. Peça central para IA gerar telas com a cara do produto.",
           "en": "Design tokens from Figma to code. Central piece for AI to generate on-brand screens."
         }
       },
       "facts": {
         "url": "https://tokens.studio",
-        "ring": "trial",
-        "quadrant": "delivery",
         "draft": true
       }
     },
@@ -1710,16 +3332,17 @@
       ],
       "kind": "tool",
       "sections": [
-        "ai-tools",
-        "radar"
+        "ferramentas-ia",
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "ai-tools": {
+        "ferramentas-ia": {
           "pt": "Telas React geradas por prompt para exploração rápida de UI.",
           "en": "Prompt-generated React screens for quick UI exploration."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "UI gerada a partir de prompt, com deploy na Vercel. Avaliar para telas de exploração.",
           "en": "Prompt-to-UI with Vercel deploys. Assess for exploratory screens."
         }
@@ -1728,9 +3351,7 @@
         "url": "https://v0.app",
         "category": "prototyping",
         "pricing": "freemium",
-        "draft": true,
-        "ring": "assess",
-        "quadrant": "coding"
+        "draft": true
       }
     },
     {
@@ -1747,15 +3368,16 @@
       "kind": "tool",
       "sections": [
         "workflow",
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
         "workflow": {
           "pt": "Hospedagem conectada ao Git: cada push vira um deploy com URL de preview, domínio e CDN global.",
           "en": "Git-connected hosting: every push becomes a deploy with a preview URL, custom domains, and a global CDN."
         },
-        "radar": {
+        "ferramentas": {
           "pt": "Deploy de protótipos e sites em minutos. Este hub roda aqui.",
           "en": "Prototype and site deploys in minutes. This hub runs here."
         }
@@ -1764,8 +3386,6 @@
         "url": "https://vercel.com/",
         "stage": "ship",
         "category": "Hosting",
-        "ring": "adopt",
-        "quadrant": "delivery",
         "draft": true
       }
     },
@@ -1782,19 +3402,18 @@
       ],
       "kind": "tool",
       "sections": [
-        "radar"
+        "ferramentas"
       ],
       "order": null,
+      "date": null,
       "notes": {
-        "radar": {
+        "ferramentas": {
           "pt": "Documentação de design system. Avaliar contra Storybook + MDX.",
           "en": "Design system documentation. Assess against Storybook + MDX."
         }
       },
       "facts": {
         "url": "https://zeroheight.com",
-        "ring": "assess",
-        "quadrant": "delivery",
         "draft": true
       }
     }

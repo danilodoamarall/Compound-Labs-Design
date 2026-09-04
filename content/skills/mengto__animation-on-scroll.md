@@ -1,13 +1,15 @@
+---
+name: animation-on-scroll
+description: Create an on-scroll animation trigger using IntersectionObserver with Tailwind-friendly animation classes and keyframes. Use when asked for scroll-reveal, animate-on-scroll, or sequencing element animations when they enter the viewport.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/animation-on-scroll/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: animation-on-scroll
-description: Create an on-scroll animation trigger using IntersectionObserver with Tailwind-friendly animation classes and keyframes. Use when asked for scroll-reveal, animate-on-scroll, or sequencing element animations when they enter the viewport.
----
+-->
 
 # Animation On Scroll Skill
 

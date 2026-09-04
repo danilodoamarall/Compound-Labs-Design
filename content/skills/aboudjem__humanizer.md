@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/Aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md
-  Autor:   Aboudjem
-  Licença: MIT
-  Commit:  4a48d90c6904451453f45d3e7bb73424fd55b9ef
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: humanizer
 description: Detects 55 AI writing patterns and rewrites text in five voice profiles so it reads like a specific human wrote it, with an optional 0-100 AI-tell score. Use when text sounds AI-generated or like a chatbot, when preparing a blog post, README, or LinkedIn post for publication, when auditing prose for AI tells, or when editing a Markdown file in place. Triggers on phrases like "humanize this", "make this sound less AI", "make this sound human", "remove AI tells", "does this read like ChatGPT", and "rewrite so it does not sound AI-generated". Pure Markdown, zero dependencies, no network calls.
 user-invocable: true
@@ -17,6 +11,14 @@ allowed-tools:
   - Glob
   - AskUserQuestion
 ---
+
+<!--
+  Origem:  https://github.com/Aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md
+  Autor:   Aboudjem
+  Licença: MIT
+  Commit:  4a48d90c6904451453f45d3e7bb73424fd55b9ef
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Humanizer: Make Text Sound Like a Human Wrote It
 
@@ -65,7 +67,7 @@ Take text that smells like a chatbot wrote it and rewrite it as a specific, opin
 | `--ignore-code` | Mask fenced code blocks before detect/score (do not flag inside them) |
 | `--ignore-quotes` | Mask blockquotes before detect/score (do not rewrite quoted text) |
 
-Deep dives and full trigger lists for every pattern live in [`references/patterns.md`](references/patterns.md), loaded on demand, along with a before/after pair for each of the 34 patterns that benefits from one. A provisional native-Chinese appendix is in [`references/patterns.zh.md`](references/patterns.zh.md). This file is standalone and needs neither.
+Deep dives and full trigger lists for every pattern live in [`references/patterns.md`](https://github.com/Aboudjem/humanizer-skill/blob/4a48d90c6904451453f45d3e7bb73424fd55b9ef/skills/humanizer/references/patterns.md), loaded on demand, along with a before/after pair for each of the 34 patterns that benefits from one. A provisional native-Chinese appendix is in [`references/patterns.zh.md`](https://github.com/Aboudjem/humanizer-skill/blob/4a48d90c6904451453f45d3e7bb73424fd55b9ef/skills/humanizer/references/patterns.zh.md). This file is standalone and needs neither.
 
 ## When to use this skill
 
@@ -143,7 +145,7 @@ Store parsed values. Proceed to Step 2.
 
 ## Step 2: Detect AI Patterns
 
-Scan the input text for all 55 patterns below. Track each match with its location and category. Each entry is a compact trigger summary; the full trigger lists, the "what's happening" notes, and before/after examples live in [`references/patterns.md`](references/patterns.md).
+Scan the input text for all 55 patterns below. Track each match with its location and category. Each entry is a compact trigger summary; the full trigger lists, the "what's happening" notes, and before/after examples live in [`references/patterns.md`](https://github.com/Aboudjem/humanizer-skill/blob/4a48d90c6904451453f45d3e7bb73424fd55b9ef/skills/humanizer/references/patterns.md).
 
 ### CONTENT PATTERNS
 
@@ -436,13 +438,13 @@ A model grading its own output in the same session tends to inflate the result. 
 
 After producing the rewrite, re-run Step 2 (Detect) on the output. If patterns_hit > 0 AND iteration_count < N, recurse with the rewritten text as the new input. Stop when patterns_hit == 0 OR iteration_count == N. In the final change summary, note how many iterations ran (e.g., "Converged in 2 iterations").
 
-Worked before/after examples for technical docs, blog posts, and LinkedIn are in [`references/patterns.md`](references/patterns.md).
+Worked before/after examples for technical docs, blog posts, and LinkedIn are in [`references/patterns.md`](https://github.com/Aboudjem/humanizer-skill/blob/4a48d90c6904451453f45d3e7bb73424fd55b9ef/skills/humanizer/references/patterns.md).
 
 ---
 
 ## Always-On Mode
 
-To make an agent write clean by default, not only when you invoke `/humanizer`, bake the core rules into its standing instructions. Ready copy-paste blocks for `CLAUDE.md`, `SOUL.md`, a system prompt, and ChatGPT custom instructions live in [`references/always-on-templates.md`](references/always-on-templates.md). This keeps the skill on-demand while giving power users an always-on option.
+To make an agent write clean by default, not only when you invoke `/humanizer`, bake the core rules into its standing instructions. Ready copy-paste blocks for `CLAUDE.md`, `SOUL.md`, a system prompt, and ChatGPT custom instructions live in [`references/always-on-templates.md`](https://github.com/Aboudjem/humanizer-skill/blob/4a48d90c6904451453f45d3e7bb73424fd55b9ef/skills/humanizer/references/always-on-templates.md). This keeps the skill on-demand while giving power users an always-on option.
 
 ---
 

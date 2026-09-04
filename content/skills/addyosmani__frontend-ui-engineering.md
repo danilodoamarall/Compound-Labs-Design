@@ -1,13 +1,15 @@
+---
+name: frontend-ui-engineering
+description: Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.
+---
+
 <!--
   Origem:  https://github.com/addyosmani/agent-skills/blob/main/skills/frontend-ui-engineering/SKILL.md
   Autor:   addyosmani
   Licença: MIT
   Commit:  020ec10a788f5703108d093a4bd3d9a7c3847d36
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: frontend-ui-engineering
-description: Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.
----
+-->
 
 # Frontend UI Engineering
 

@@ -1,14 +1,16 @@
+---
+name: break
+description: Renders a component you choose in every state and scenario on a temporary page and stress tests it.
+disable-model-invocation: true
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/break/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: break
-description: Renders a component you choose in every state and scenario on a temporary page and stress tests it.
-disable-model-invocation: true
----
+-->
 
 # Break
 
@@ -30,7 +32,7 @@ Restate what the component is in one sentence: what it accepts, what it renders 
 
 Stress only what varies. A scenario earns a slot when the component accepts something that can take that shape in production. So read the component first: its props, its slots, its states and the data it renders.
 
-[scenarios.md](scenarios.md) holds the axes, the values on each and the cue that says whether an axis applies. Walk it against the component and keep only the axes whose cue matches. A text input gets content length and states, never item quantity. A static icon button with a fixed label gets container and environment, never long text.
+[scenarios.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/break/scenarios.md) holds the axes, the values on each and the cue that says whether an axis applies. Walk it against the component and keep only the axes whose cue matches. A text input gets content length and states, never item quantity. A static icon button with a fixed label gets container and environment, never long text.
 
 Write the kept scenarios down before building, one line each, so the harness renders a planned set rather than whatever came to mind. Then say which axes you dropped and why, in one line, so a wrong inference is cheap to catch.
 

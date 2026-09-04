@@ -1,13 +1,15 @@
+---
+name: slide-wright
+description: Create beautiful, animated web presentations from a topic, rough notes, or an outline, and edit decks afterward — adding, removing, or revising slides. Generates a custom theme and a short two-slide preview, then builds the full deck only once the user confirms the direction; edits to an existing deck skip that flow and apply in place. Use when the user wants to make slides, a presentation, a talk deck, a pitch deck, or to add/remove/change a slide in one that already exists.
+---
+
 <!--
   Origem:  https://github.com/arifszn/slide-wright/blob/main/SKILL.md
   Autor:   arifszn
   Licença: MIT
   Commit:  a9b7da1543a95900f8ddc32078a5575736b540c1
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: slide-wright
-description: Create beautiful, animated web presentations from a topic, rough notes, or an outline, and edit decks afterward — adding, removing, or revising slides. Generates a custom theme and a short two-slide preview, then builds the full deck only once the user confirms the direction; edits to an existing deck skip that flow and apply in place. Use when the user wants to make slides, a presentation, a talk deck, a pitch deck, or to add/remove/change a slide in one that already exists.
----
+-->
 
 # slide-wright
 

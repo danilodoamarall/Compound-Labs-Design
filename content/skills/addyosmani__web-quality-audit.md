@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/web-quality-audit/SKILL.md
-  Autor:   addyosmani
-  Licença: MIT
-  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: web-quality-audit
 description: Run an evidence-led web quality audit covering performance, accessibility, SEO, best practices, and agentic browsing. Use when asked to "audit my site", "review web quality", "run lighthouse audit", "check page quality", or "optimize my website".
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: web-quality-skills
   version: "2.0"
 ---
+
+<!--
+  Origem:  https://github.com/addyosmani/web-quality-skills/blob/main/skills/web-quality-audit/SKILL.md
+  Autor:   addyosmani
+  Licença: MIT
+  Commit:  afa8da942115f2961fdbfa80807ea0b232ff6c00
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Web quality audit
 
@@ -22,7 +24,7 @@ Comprehensive quality review that combines live browser evidence with source ins
 ## How it works
 
 1. Establish the audit target: representative URLs, important states and journeys, public versus authenticated access, and mobile/desktop scope.
-2. If a page can run, read [the measurement workflow](../performance/references/MEASUREMENT.md) and collect a minimal live baseline before searching the codebase broadly.
+2. If a page can run, read [the measurement workflow](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/references/MEASUREMENT.md) and collect a minimal live baseline before searching the codebase broadly.
 3. Use runtime failures to localize source inspection. Keep measured findings separate from hypotheses found only in code.
 4. Categorize by user impact and confidence, then make or recommend specific fixes.
 5. Re-run equivalent automated checks and the affected manual flows. Report what is verified and what still needs field or human validation.
@@ -208,8 +210,8 @@ When performing an audit, structure findings as:
 ## References
 
 For detailed guidelines on specific areas:
-- [Performance Optimization](../performance/SKILL.md)
-- [Core Web Vitals](../core-web-vitals/SKILL.md)
-- [Accessibility](../accessibility/SKILL.md)
-- [SEO](../seo/SKILL.md)
-- [Best Practices](../best-practices/SKILL.md)
+- [Performance Optimization](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/performance/SKILL.md)
+- [Core Web Vitals](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/core-web-vitals/SKILL.md)
+- [Accessibility](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/accessibility/SKILL.md)
+- [SEO](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/seo/SKILL.md)
+- [Best Practices](https://github.com/addyosmani/web-quality-skills/blob/afa8da942115f2961fdbfa80807ea0b232ff6c00/skills/best-practices/SKILL.md)

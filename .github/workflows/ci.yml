@@ -1,0 +1,52 @@
+# O que o build protege, rodando a cada push e pull request.
+#
+# Substitui o workflow de modelo ("Hello, world!") que não fazia nada. Aqui roda
+# exatamente o que se roda antes de publicar: lint, tipos, os testes dos scripts
+# e o build — que traz no prebuild a checagem dos números citados nos artigos,
+# a geração do índice, a checagem de links das skills e a checagem de contagens
+# na prosa. Se algo divergir, o CI para e diz onde.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verificar:
+    name: lint, tipos, testes e build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npx eslint src
+
+      - name: Tipos
+        # Os tipos PageProps/LayoutProps são gerados pelo build; sem ele o tsc
+        # não os encontra. Por isso o build vem antes.
+        run: npm run build && npx tsc --noEmit
+        env:
+          # A data de geração do índice, fixa para o build ser reprodutível no CI.
+          BUILD_DATE: 2026-09-04
+
+      - name: Testes dos scripts
+        run: node --test 'scripts/lib/*.test.mjs'
+
+      - name: CLI empacota sem dependências
+        working-directory: packages/skills-cli
+        run: |
+          node -e "const p=require('./package.json'); if (Object.keys(p.dependencies||{}).length) { console.error('o CLI ganhou dependência:', p.dependencies); process.exit(1) }"
+          npm pack --dry-run

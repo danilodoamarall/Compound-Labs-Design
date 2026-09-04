@@ -1,13 +1,15 @@
+---
+name: prefer-container-queries
+description: "Enforce Tailwind container queries over viewport breakpoints for responsive components. Use when writing or reviewing responsive Tailwind code, when a component needs to adapt to its available space (cards, sidebars, lists, panels, anything reused in different layouts), or when migrating sm:/md:/lg: classes to @container variants."
+---
+
 <!--
   Origem:  https://github.com/flornkm/skills/blob/main/skills/prefer-container-queries/SKILL.md
   Autor:   flornkm
   Licença: MIT
   Commit:  cf1c0094e1826230623ecdb6e7b3c44bdfc593c3
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: prefer-container-queries
-description: "Enforce Tailwind container queries over viewport breakpoints for responsive components. Use when writing or reviewing responsive Tailwind code, when a component needs to adapt to its available space (cards, sidebars, lists, panels, anything reused in different layouts), or when migrating sm:/md:/lg: classes to @container variants."
----
+-->
 
 # Prefer Container Queries
 

@@ -1,13 +1,15 @@
+---
+name: budge
+description: Use when making single-property CSS or Tailwind visual changes in Next.js App Router projects. Presents a floating control widget on the page so the user can tweak the value before it is persisted. Covers atomic style changes, live preview, and cleanup. Triggers on single CSS value or single Tailwind utility class modifications.
+---
+
 <!--
   Origem:  https://github.com/millionco/skills/blob/main/skills/budge/SKILL.md
   Autor:   millionco
   Licença: MIT
   Commit:  462b78424e14ba6895a717733e1d57191dd9912f
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: budge
-description: Use when making single-property CSS or Tailwind visual changes in Next.js App Router projects. Presents a floating control widget on the page so the user can tweak the value before it is persisted. Covers atomic style changes, live preview, and cleanup. Triggers on single CSS value or single Tailwind utility class modifications.
----
+-->
 
 # Budge
 

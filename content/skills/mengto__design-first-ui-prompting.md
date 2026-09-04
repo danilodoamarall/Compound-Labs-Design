@@ -1,13 +1,15 @@
+---
+name: design-first-ui-prompting
+description: Use when you need design-first, spec-driven, skimmable prompts for UI generation. Covers prompt structure, constraints, variations, typography/spacing rules, and iteration workflow for consistent UI outputs.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/ui/design-first-ui-prompting/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: design-first-ui-prompting
-description: Use when you need design-first, spec-driven, skimmable prompts for UI generation. Covers prompt structure, constraints, variations, typography/spacing rules, and iteration workflow for consistent UI outputs.
----
+-->
 
 # Design-First UI Prompting Skill
 

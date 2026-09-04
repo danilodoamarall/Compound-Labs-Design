@@ -1,13 +1,15 @@
+---
+name: tsdown
+description: Bundle TypeScript and JavaScript libraries with blazing-fast speed powered by Rolldown. Use when building libraries, generating type declarations, bundling for multiple formats, or migrating from tsup.
+---
+
 <!--
   Origem:  https://github.com/antfu/skills/blob/main/skills/tsdown/SKILL.md
   Autor:   antfu
   Licença: MIT
   Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: tsdown
-description: Bundle TypeScript and JavaScript libraries with blazing-fast speed powered by Rolldown. Use when building libraries, generating type declarations, bundling for multiple formats, or migrating from tsup.
----
+-->
 
 # tsdown - The Elegant Library Bundler
 
@@ -15,7 +17,7 @@ Blazing-fast bundler for TypeScript/JavaScript libraries powered by Rolldown and
 
 ## Runtime Requirement
 
-`tsdown` requires **Node.js 22.18.0 or higher to run** (build-time only). However, the bundled output can target much lower Node.js versions via the [`target`](references/option-target.md) option, so libraries built with tsdown are **not locked to Node.js 22+ at runtime**.
+`tsdown` requires **Node.js 22.18.0 or higher to run** (build-time only). However, the bundled output can target much lower Node.js versions via the [`target`](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-target.md) option, so libraries built with tsdown are **not locked to Node.js 22+ at runtime**.
 
 If your package needs to support Node.js 18 / 20:
 
@@ -67,69 +69,69 @@ export default defineConfig({
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Getting Started | Installation, first bundle, CLI basics | [guide-getting-started](references/guide-getting-started.md) |
-| Configuration File | Config file formats, multiple configs, workspace | [option-config-file](references/option-config-file.md) |
-| CLI Reference | All CLI commands and options | [reference-cli](references/reference-cli.md) |
-| Migrate from tsup | Migration guide and compatibility notes | [guide-migrate-from-tsup](references/guide-migrate-from-tsup.md) |
-| Plugins | Rolldown, Rollup, Unplugin support | [advanced-plugins](references/advanced-plugins.md) |
+| Getting Started | Installation, first bundle, CLI basics | [guide-getting-started](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/guide-getting-started.md) |
+| Configuration File | Config file formats, multiple configs, workspace | [option-config-file](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-config-file.md) |
+| CLI Reference | All CLI commands and options | [reference-cli](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/reference-cli.md) |
+| Migrate from tsup | Migration guide and compatibility notes | [guide-migrate-from-tsup](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/guide-migrate-from-tsup.md) |
+| Plugins | Rolldown, Rollup, Unplugin support | [advanced-plugins](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/advanced-plugins.md) |
 
-> For comprehensive migration assistance with complete option mappings, install the dedicated [`tsdown-migrate`](../tsdown-migrate/SKILL.md) skill: `npx skills add rolldown/tsdown --skill tsdown-migrate`
-| Hooks | Lifecycle hooks for custom logic | [advanced-hooks](references/advanced-hooks.md) |
-| Programmatic API | Build from Node.js scripts | [advanced-programmatic](references/advanced-programmatic.md) |
-| Rolldown Options | Pass options directly to Rolldown | [advanced-rolldown-options](references/advanced-rolldown-options.md) |
-| CI Environment | CI detection, `'ci-only'` / `'local-only'` values | [advanced-ci](references/advanced-ci.md) |
+> For comprehensive migration assistance with complete option mappings, install the dedicated [`tsdown-migrate`](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown-migrate/SKILL.md) skill: `npx skills add rolldown/tsdown --skill tsdown-migrate`
+| Hooks | Lifecycle hooks for custom logic | [advanced-hooks](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/advanced-hooks.md) |
+| Programmatic API | Build from Node.js scripts | [advanced-programmatic](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/advanced-programmatic.md) |
+| Rolldown Options | Pass options directly to Rolldown | [advanced-rolldown-options](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/advanced-rolldown-options.md) |
+| CI Environment | CI detection, `'ci-only'` / `'local-only'` values | [advanced-ci](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/advanced-ci.md) |
 
 ## Build Options
 
 | Option | Usage | Reference |
 |--------|-------|-----------|
-| Entry points | `entry: ['src/*.ts', '!**/*.test.ts']` | [option-entry](references/option-entry.md) |
-| Output formats | `format: ['esm', 'cjs', 'iife', 'umd']` | [option-output-format](references/option-output-format.md) |
-| Output directory | `outDir: 'dist'`, `outExtensions` | [option-output-directory](references/option-output-directory.md) |
-| Type declarations | `dts: true`, `dts: { sourcemap, compilerOptions, vue }` | [option-dts](references/option-dts.md) |
-| Target environment | `target: 'es2020'`, `target: 'esnext'` | [option-target](references/option-target.md) |
-| Platform | `platform: 'node'`, `platform: 'browser'` | [option-platform](references/option-platform.md) |
-| Tree shaking | `treeshake: true`, custom options | [option-tree-shaking](references/option-tree-shaking.md) |
-| Minification | `minify: true`, `minify: 'dce-only'` | [option-minification](references/option-minification.md) |
-| Source maps | `sourcemap: true`, `'inline'`, `'hidden'` | [option-sourcemap](references/option-sourcemap.md) |
-| Watch mode | `watch: true`, watch options | [option-watch-mode](references/option-watch-mode.md) |
-| Cleaning | `clean: true`, clean patterns | [option-cleaning](references/option-cleaning.md) |
-| Log level | `logLevel: 'silent'`, `failOnWarn: false` | [option-log-level](references/option-log-level.md) |
+| Entry points | `entry: ['src/*.ts', '!**/*.test.ts']` | [option-entry](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-entry.md) |
+| Output formats | `format: ['esm', 'cjs', 'iife', 'umd']` | [option-output-format](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-output-format.md) |
+| Output directory | `outDir: 'dist'`, `outExtensions` | [option-output-directory](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-output-directory.md) |
+| Type declarations | `dts: true`, `dts: { sourcemap, compilerOptions, vue }` | [option-dts](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dts.md) |
+| Target environment | `target: 'es2020'`, `target: 'esnext'` | [option-target](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-target.md) |
+| Platform | `platform: 'node'`, `platform: 'browser'` | [option-platform](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-platform.md) |
+| Tree shaking | `treeshake: true`, custom options | [option-tree-shaking](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-tree-shaking.md) |
+| Minification | `minify: true`, `minify: 'dce-only'` | [option-minification](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-minification.md) |
+| Source maps | `sourcemap: true`, `'inline'`, `'hidden'` | [option-sourcemap](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-sourcemap.md) |
+| Watch mode | `watch: true`, watch options | [option-watch-mode](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-watch-mode.md) |
+| Cleaning | `clean: true`, clean patterns | [option-cleaning](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-cleaning.md) |
+| Log level | `logLevel: 'silent'`, `failOnWarn: false` | [option-log-level](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-log-level.md) |
 
 ## Dependency Handling
 
 | Feature | Usage | Reference |
 |---------|-------|-----------|
-| Never bundle | `deps: { neverBundle: ['react', /^@myorg\//] }` | [option-dependencies](references/option-dependencies.md) |
-| Always bundle | `deps: { alwaysBundle: ['dep-to-bundle'] }` | [option-dependencies](references/option-dependencies.md) |
-| Only bundle | `deps: { onlyBundle: ['cac', 'bumpp'] }` - Whitelist | [option-dependencies](references/option-dependencies.md) |
-| Skip node_modules | `deps: { skipNodeModulesBundle: true }` | [option-dependencies](references/option-dependencies.md) |
-| Auto external | Automatic dependency/peer/optional externalization | [option-dependencies](references/option-dependencies.md) |
+| Never bundle | `deps: { neverBundle: ['react', /^@myorg\//] }` | [option-dependencies](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dependencies.md) |
+| Always bundle | `deps: { alwaysBundle: ['dep-to-bundle'] }` | [option-dependencies](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dependencies.md) |
+| Only bundle | `deps: { onlyBundle: ['cac', 'bumpp'] }` - Whitelist | [option-dependencies](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dependencies.md) |
+| Skip node_modules | `deps: { skipNodeModulesBundle: true }` | [option-dependencies](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dependencies.md) |
+| Auto external | Automatic dependency/peer/optional externalization | [option-dependencies](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-dependencies.md) |
 
 ## Output Enhancement
 
 | Feature | Usage | Reference |
 |---------|-------|-----------|
-| Shims | `shims: true` - Add ESM/CJS compatibility | [option-shims](references/option-shims.md) |
-| CJS default | `cjsDefault: true` (default) / `false` | [option-cjs-default](references/option-cjs-default.md) |
-| Package exports | `exports: true` - Generate exports field | [option-package-exports](references/option-package-exports.md) |
-| CSS handling | **[experimental]** `css: { ... }` — full pipeline with preprocessors, Lightning CSS, PostCSS, CSS modules, code splitting; requires `@tsdown/css` | [option-css](references/option-css.md) |
-| CSS modules | `css: { modules: { localsConvention: 'camelCase' } }` — scoped class names for `.module.css` files | [option-css](references/option-css.md) |
-| CSS inject | `css: { inject: true }` — preserve CSS imports in JS output | [option-css](references/option-css.md) |
-| Unbundle mode | `unbundle: true` - Preserve directory structure | [option-unbundle](references/option-unbundle.md) |
-| Root directory | `root: 'src'` - Control output directory mapping | [option-root](references/option-root.md) |
-| Executable | **[experimental]** `exe: true` - Bundle as standalone executable, cross-platform via `@tsdown/exe` | [option-exe](references/option-exe.md) |
-| Package validation | `publint: true`, `attw: true` - Validate package | [option-lint](references/option-lint.md) |
+| Shims | `shims: true` - Add ESM/CJS compatibility | [option-shims](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-shims.md) |
+| CJS default | `cjsDefault: true` (default) / `false` | [option-cjs-default](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-cjs-default.md) |
+| Package exports | `exports: true` - Generate exports field | [option-package-exports](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-package-exports.md) |
+| CSS handling | **[experimental]** `css: { ... }` — full pipeline with preprocessors, Lightning CSS, PostCSS, CSS modules, code splitting; requires `@tsdown/css` | [option-css](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-css.md) |
+| CSS modules | `css: { modules: { localsConvention: 'camelCase' } }` — scoped class names for `.module.css` files | [option-css](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-css.md) |
+| CSS inject | `css: { inject: true }` — preserve CSS imports in JS output | [option-css](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-css.md) |
+| Unbundle mode | `unbundle: true` - Preserve directory structure | [option-unbundle](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-unbundle.md) |
+| Root directory | `root: 'src'` - Control output directory mapping | [option-root](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-root.md) |
+| Executable | **[experimental]** `exe: true` - Bundle as standalone executable, cross-platform via `@tsdown/exe` | [option-exe](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-exe.md) |
+| Package validation | `publint: true`, `attw: true` - Validate package | [option-lint](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/option-lint.md) |
 
 ## Framework & Runtime Support
 
 | Framework | Guide | Reference |
 |-----------|-------|-----------|
-| React | JSX transform, React Compiler | [recipe-react](references/recipe-react.md) |
-| Vue | SFC support, JSX | [recipe-vue](references/recipe-vue.md) |
-| Solid | SolidJS JSX transform | [recipe-solid](references/recipe-solid.md) |
-| Svelte | Svelte component libraries (source distribution recommended) | [recipe-svelte](references/recipe-svelte.md) |
-| WASM | WebAssembly modules via `rolldown-plugin-wasm` | [recipe-wasm](references/recipe-wasm.md) |
+| React | JSX transform, React Compiler | [recipe-react](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/recipe-react.md) |
+| Vue | SFC support, JSX | [recipe-vue](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/recipe-vue.md) |
+| Solid | SolidJS JSX transform | [recipe-solid](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/recipe-solid.md) |
+| Svelte | Svelte component libraries (source distribution recommended) | [recipe-svelte](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/recipe-svelte.md) |
+| WASM | WebAssembly modules via `rolldown-plugin-wasm` | [recipe-wasm](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/tsdown/references/recipe-wasm.md) |
 
 ## Common Patterns
 

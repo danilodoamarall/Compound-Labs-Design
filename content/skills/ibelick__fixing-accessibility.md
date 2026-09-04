@@ -1,13 +1,15 @@
+---
+name: fixing-accessibility
+description: Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.
+---
+
 <!--
   Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/fixing-accessibility/SKILL.md
   Autor:   ibelick
   Licença: MIT
   Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: fixing-accessibility
-description: Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.
----
+-->
 
 # fixing-accessibility
 

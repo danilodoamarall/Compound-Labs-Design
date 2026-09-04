@@ -1,13 +1,15 @@
+---
+name: balise-ux-writing
+description: Reviews, rewrites, creates, harmonizes, and implements user-centered interface copy across design files, screenshots, product specifications, source code, localization catalogs, prototypes, and rendered applications. Use for buttons, navigation, forms, errors, empty states, onboarding, confirmations, settings, consent, notifications, help, and system feedback while preserving product behavior, terminology, voice, accessibility, localization, legal meaning, component structure, and implementation constraints.
+---
+
 <!--
   Origem:  https://github.com/mrstev3n/balise-skills/blob/main/skills/balise-ux-writing/SKILL.md
   Autor:   mrstev3n
   Licença: Apache-2.0
   Commit:  f596a61fa8f4471054b1ed75d17bc6699db4572d
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: balise-ux-writing
-description: Reviews, rewrites, creates, harmonizes, and implements user-centered interface copy across design files, screenshots, product specifications, source code, localization catalogs, prototypes, and rendered applications. Use for buttons, navigation, forms, errors, empty states, onboarding, confirmations, settings, consent, notifications, help, and system feedback while preserving product behavior, terminology, voice, accessibility, localization, legal meaning, component structure, and implementation constraints.
----
+-->
 
 # UX Writing
 
@@ -32,13 +34,13 @@ Write in the language of the artifact or the user’s request. When multiple loc
 
 Read only the references required for the task:
 
-- Read [interface-patterns.md](references/interface-patterns.md) for buttons, navigation, forms, errors, empty states, onboarding, help, feedback, settings, confirmations, consent, and sensitive content.
-- Read [voice-tone-terminology.md](references/voice-tone-terminology.md) for voice systems, tone, terminology, style rules, harmonization, and content governance.
-- Read [localization-accessibility.md](references/localization-accessibility.md) for translation, international products, inclusive language, text expansion, accessible labels, instructions, and assistive-technology boundaries.
-- Read [source-runtime-workflow.md](references/source-runtime-workflow.md) before editing source code, localization catalogs, component stories, content schemas, or rendered applications.
-- Read [research-measurement.md](references/research-measurement.md) when the task involves personas, user research, content hypotheses, usability testing, A/B testing, analytics, or success metrics.
+- Read [interface-patterns.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/references/interface-patterns.md) for buttons, navigation, forms, errors, empty states, onboarding, help, feedback, settings, confirmations, consent, and sensitive content.
+- Read [voice-tone-terminology.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/references/voice-tone-terminology.md) for voice systems, tone, terminology, style rules, harmonization, and content governance.
+- Read [localization-accessibility.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/references/localization-accessibility.md) for translation, international products, inclusive language, text expansion, accessible labels, instructions, and assistive-technology boundaries.
+- Read [source-runtime-workflow.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/references/source-runtime-workflow.md) before editing source code, localization catalogs, component stories, content schemas, or rendered applications.
+- Read [research-measurement.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/references/research-measurement.md) when the task involves personas, user research, content hypotheses, usability testing, A/B testing, analytics, or success metrics.
 
-When the user requests a persistent audit or handoff document, use [balise-ux-writing-review-template.md](assets/balise-ux-writing-review-template.md). Do not create an extra file when a concise conversational result is sufficient.
+When the user requests a persistent audit or handoff document, use [balise-ux-writing-review-template.md](https://github.com/mrstev3n/balise-skills/blob/f596a61fa8f4471054b1ed75d17bc6699db4572d/skills/balise-ux-writing/assets/balise-ux-writing-review-template.md). Do not create an extra file when a concise conversational result is sufficient.
 
 ## Determine the Mode
 

@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/brand/SKILL.md
-  Autor:   nextlevelbuilder
-  Licença: MIT
-  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: brand
 description: Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.
 argument-hint: "[update|review|create] [args]"
@@ -12,6 +6,14 @@ metadata:
   author: claudekit
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/brand/SKILL.md
+  Autor:   nextlevelbuilder
+  Licença: MIT
+  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Brand
 

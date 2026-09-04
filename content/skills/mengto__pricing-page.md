@@ -1,13 +1,15 @@
+---
+name: pricing-page
+description: Use when designing or rewriting a high-converting SaaS pricing page (structure, plan design, copywriting, SEO/AEO, FAQs, layout patterns, experiments). Includes checklists, templates, and common pitfalls.
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/pricing-page/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: pricing-page
-description: Use when designing or rewriting a high-converting SaaS pricing page (structure, plan design, copywriting, SEO/AEO, FAQs, layout patterns, experiments). Includes checklists, templates, and common pitfalls.
----
+-->
 
 # Pricing Page (High‑Conversion) — Web Design Skill
 

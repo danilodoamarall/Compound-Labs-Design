@@ -1,70 +1,75 @@
 {
   "Site": {
-    "name": "AI Builders Lab",
-    "tagline": "What to adopt, trial and ignore in AI.",
+    "name": "Compound Design",
+    "tagline": "AI, design and code that compound.",
     "author": "Danilo do Amaral",
-    "authorRole": "Design Engineer & AI Builder · Labs",
+    "authorRole": "Design Engineer at Pitang Labs",
     "madeBy": "Made by",
     "skipToContent": "Skip to content",
     "toggleTheme": "Toggle theme",
     "language": "Language",
     "draft": "Draft",
     "draftHint": "Initial content generated for review. It will change.",
-    "github": "See the project on GitHub and star it"
+    "github": "See the project on GitHub and star it",
+    "linkedin": "Danilo do Amaral on LinkedIn"
   },
   "Nav": {
     "home": "Home",
     "articles": "Articles",
-    "radar": "Radar",
-    "aiTools": "AI Tools",
     "skillsAgents": "Skills & Agents",
-    "docs": "Docs",
+    "docs": "Documentation",
     "faq": "FAQ",
     "about": "About",
     "workflow": "Workflow",
     "groups": {
       "content": "Content",
-      "tools": "Tools",
-      "hub": "The hub"
+      "hub": "The hub",
+      "skills": "Skills"
     },
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "research": "Research",
     "spotlightEyebrow": "Start here",
     "spotlightCta": "Read the article",
-    "menuLabel": "Hub sections"
+    "menuLabel": "Hub sections",
+    "cli": "CLI",
+    "mcp": "MCP",
+    "browse": "Browse"
   },
   "Home": {
     "title": "What is worth adopting in AI for design.",
-    "dek": "What I learn building with AI at Labs, in the open. Pick where to start.",
+    "dek": "Five years of AI, design and code, compounding in the open. Pick where to start.",
     "coverHint": "Click the centered cover to open · Drag · Arrow keys",
     "sections": {
       "articles": {
         "short": "State of Design 2026 series"
       },
-      "radar": {
-        "short": "Adopt, trial, assess, hold"
-      },
-      "aiTools": {
-        "short": "What we use and why"
-      },
       "skillsAgents": {
-        "short": "Claude skills and agents"
+        "short": "Catalogue with verified licences"
       },
       "docs": {
-        "short": "How the hub works"
+        "short": "What this is and how to use it, from scratch"
       },
       "faq": {
         "short": "Questions about the data"
       },
       "workflow": {
-        "short": "The tools in my day"
+        "short": "Tools by stage of the work"
       },
       "research": {
         "short": "The survey behind the series"
       },
       "about": {
         "short": "Who writes this, and why"
+      },
+      "cli": {
+        "short": "Run the catalogue from your terminal"
+      },
+      "mcp": {
+        "short": "Connect your agent to the catalogue"
+      },
+      "browse": {
+        "short": "Everything published, searchable and dated"
       }
     }
   },
@@ -92,42 +97,6 @@
     "index": "The series",
     "indexDek": "Five articles, in order. Each opens in reading or presentation mode."
   },
-  "Radar": {
-    "title": "Tools Radar",
-    "dek": "Design, AI and delivery tools organized by ring and quadrant. The percentage is weekly usage measured by State of Prototyping 2026; the ring position is Labs curation.",
-    "rings": {
-      "adopt": "Adopt",
-      "trial": "Trial",
-      "assess": "Assess",
-      "hold": "Hold"
-    },
-    "ringHints": {
-      "adopt": "Default at Labs. Use without asking.",
-      "trial": "Worth using on a real project to learn.",
-      "assess": "Worth understanding. Not yet worth team time.",
-      "hold": "Do not start anything new with it."
-    },
-    "quadrants": {
-      "canvas": "Canvas & Design",
-      "assistants": "AI Assistants",
-      "coding": "AI for Code",
-      "delivery": "Collaboration & Delivery"
-    },
-    "weeklyUse": "weekly use",
-    "all": "All",
-    "filterQuadrant": "Filter by quadrant",
-    "legend": "Legend",
-    "notInSurvey": "Not measured in the survey"
-  },
-  "AiTools": {
-    "title": "AI Tools",
-    "dek": "The AI tools we use at Labs, what they are for and what they cost. Work in progress.",
-    "filterCategory": "Category",
-    "all": "All",
-    "pricing": "Pricing",
-    "visit": "Open site",
-    "usedFor": "We use it for"
-  },
   "Skills": {
     "title": "AI Skills & Agents",
     "dek": "A catalogue of design-engineering skills for humans and agents. Each one belongs to whoever wrote it.",
@@ -154,23 +123,46 @@
     "pointerHint": "at source",
     "readAtSource": "Read at the source",
     "writtenBy": "Written by",
-    "license": "Licence:",
-    "copiedAt": "Copied on"
+    "license": "Licence",
+    "copiedAt": "Copied on",
+    "colSkill": "skill",
+    "colStars": "stars",
+    "colLicense": "licence",
+    "resultados": "results",
+    "maisDe": "+%n more from %repo",
+    "criterio": "Ranked by the source repository's stars",
+    "criterioBody": "We do not measure installs: nothing is installed through here, and an invented number would be the opposite of what this catalogue stands for. The stars belong to the repository the skill came from, fetched from the GitHub API. A heavily starred repository appears at most twice in a row and the rest is collapsed, or a single author would take the whole top.",
+    "installation": "Installation",
+    "repository": "Repository",
+    "stars": "Stars",
+    "lastPush": "Last push",
+    "archived": "archived",
+    "commit": "Commit",
+    "provenanceLabel": "Provenance",
+    "hostedHere": "Hosted here",
+    "atSource": "Read at the source",
+    "hostedWhy": "Permissive licence, copied with credit and a pinned commit.",
+    "atSourceWhy": "No declared licence. Only the author may redistribute.",
+    "related": "Related",
+    "noStars": "no data",
+    "content": "Content",
+    "colTopics": "topics",
+    "copyCommand": "Copy command"
   },
   "About": {
     "title": "About this hub",
-    "dek": "A place to move knowledge from Labs to the company, open to anyone who arrives from the web.",
+    "dek": "The name is an analogy. What you learn in AI, design and code earns on top of what you already knew, like compound interest. This hub is where five years of that accrue in the open.",
     "purposeTitle": "Why it exists",
-    "purpose": "Much of what we learn at Labs stays in conversations, prototypes and internal talks. This hub turns that into articles, radars and catalogs that anyone in the company, or outside it, can read, cite and reuse.",
+    "purpose": "This hub gathers data-backed articles, a catalogue of design-engineering skills with verified licences, and the tools for your agent to use it. All open: anyone can read, cite and reuse it.",
     "authorTitle": "Who makes it",
-    "authorBio": "Danilo do Amaral, Design Engineer and AI Builder at Labs. I design and build prototypes, internal tools and AI agents. I present what I learn at our internal tech talks and write it down here.",
+    "authorBio": "Danilo do Amaral is a Design Engineer at Pitang Labs, five years into the intersection of AI, design and development. Postgraduate in UX & UI at EBAC and in UX Engineering at PUC Minas. He designs and builds prototypes, internal tools and agents, and writes about what he learns along the way.",
     "howTitle": "How to contribute",
-    "how": "Comment on the presentations, send tools for the radar or propose an article. Content marked as draft is open for review.",
+    "how": "Comment on the presentations, propose a skill for the catalogue or an article. Content marked as draft is open for review.",
     "licenseTitle": "Licenses and sources",
     "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral."
   },
   "Footer": {
-    "rights": "AI Builders Lab · content by Danilo do Amaral",
+    "rights": "Compound Design · by Danilo do Amaral",
     "source": "Data: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Built with Next.js and React Bits"
   },
@@ -180,9 +172,10 @@
     "home": "Back to home"
   },
   "Docs": {
-    "title": "Docs",
-    "dek": "How this hub works, where the data comes from and how to use the articles in a talk.",
-    "onThisPage": "On this page"
+    "title": "Documentation",
+    "dek": "What this is, who it is for, and how to use it, explained from scratch. If you have never opened an AI agent, start here.",
+    "onThisPage": "On this page",
+    "stepsLabel": "Step by step"
   },
   "Faq": {
     "title": "FAQ",
@@ -192,7 +185,7 @@
   },
   "Workflow": {
     "title": "Workflow",
-    "dek": "The tools I keep close for designing, prototyping, building and working with agents.",
+    "dek": "Tools for designing, prototyping, building and working with agents, organised by stage.",
     "stages": {
       "design": "Design",
       "prototype": "Prototype",
@@ -211,11 +204,10 @@
     },
     "visit": "Open site",
     "count": "{count} tools",
-    "sourceNote": "Same list as my personal site. The staging and the descriptions are this hub own."
+    "sourceNote": "The staging and the descriptions are this hub's own."
   },
   "Browse": {
     "heading": "Browse",
-    "headingAccent": "Resources:",
     "searchPlaceholder": "Search here...",
     "clearAll": "Clear All",
     "tags": {
@@ -234,7 +226,8 @@
     "items": "items",
     "of": "of",
     "eyebrow": "Index",
-    "dek": "Everything published on the hub, in one place. Filter by type or search by name."
+    "dek": "Everything published, newest first. Filter by type, search by name, or open one at random.",
+    "random": "Random one"
   },
   "Subscribe": {
     "title": "Get it first",
@@ -242,16 +235,16 @@
     "placeholder": "you@email.com",
     "cta": "Subscribe",
     "sending": "Sending...",
-    "success": "Done. Check your inbox to confirm.",
+    "success": "Done. You're on the list.",
     "errorInvalid": "That email does not look valid.",
     "errorGeneric": "Could not subscribe right now. Try again in a few minutes.",
     "errorNotConfigured": "Subscriptions are not wired up yet. Check back soon.",
     "privacy": "Just the email, nothing else. Leave whenever you want, in one click."
   },
   "Stage": {
-    "subtitle": "Learn to build with AI without lowering your bar. Articles, tools, skills and agents I test, curate and explain.",
-    "resourcesTitle": "Resources I maintain and use every day.",
-    "resourcesDek": "Each section is a short, opinionated list, revised only when something actually changes. No catalogue for its own sake.",
+    "subtitle": "Learn to build with AI without lowering your bar. Data-backed articles, a skills catalogue with verified licences, and a CLI and an MCP so your agent can use it.",
+    "resourcesTitle": "Articles, skills and the tools to use them.",
+    "resourcesDek": "Each block does one job: understand the landscape, find the right skill, and connect your agent to the catalogue from the terminal or over MCP.",
     "articlesTitle": "Five articles on what the survey showed.",
     "articlesDek": "The series reads the data from 1,478 responses and asks what changes for people who design. Each one opens to read or to present.",
     "articleWord": "Article",
@@ -271,16 +264,17 @@
     "subscribeBefore": "Want this ",
     "subscribeMark": "before",
     "subscribeAfter": " everyone else?",
-    "subscribeDek": "One email when a new article ships, plus a monthly digest of what moved on the radar. Nothing on the site is locked.",
-    "subscribeCadence": "New article every two weeks · Radar digest once a month",
-    "browseCard": "Everything published",
-    "browseCardDesc": "Search and filter by tag across everything on the hub.",
-    "curator": "Curated by Danilo do Amaral",
-    "curatorRole": "Design Engineer at Labs, Pitang",
-    "badge": "Labs AI radar",
+    "subscribeDek": "One email when a new article ships, plus a monthly digest of what joined the catalogue. Nothing on the site is locked.",
+    "subscribeCadence": "New article every two weeks · Catalogue digest once a month",
+    "browseCard": "Browse",
+    "browseCardDesc": "Everything published, newest first, with search and filter by type.",
+    "curator": "By Danilo do Amaral",
+    "curatorRole": "Design Engineer at Pitang Labs",
+    "badge": "Compound Design",
     "heroTitle": "AI for designers, engineers and people who build.",
-    "ctaPrimary": "Explore resources",
-    "ctaSecondary": "Read the series"
+    "ctaPrimary": "Install the CLI",
+    "ctaSecondary": "Connect over MCP",
+    "docsCta": "New here? Read the documentation"
   },
   "Search": {
     "trigger": "Search",
@@ -306,18 +300,16 @@
     "previous": "Previous",
     "next": "Next",
     "facts": {
-      "ring": "On the radar:",
       "stage": "Stage:",
       "type": "Type:",
       "pricing": "Pricing:",
       "category": "Category:",
-      "surveyPct": "In the survey:"
+      "surveyPct": "In the survey:",
+      "stars": "Stars:",
+      "skillCount": "Skills:",
+      "license": "Licence:"
     },
     "values": {
-      "adopt": "Adopt",
-      "trial": "Trial",
-      "assess": "Assess",
-      "hold": "Hold",
       "free": "Free",
       "freemium": "Freemium",
       "paid": "Paid",
@@ -331,7 +323,8 @@
       "agents": "Agents",
       "ship": "Ship",
       "run": "Run"
-    }
+    },
+    "openCatalog": "See in the catalogue"
   },
   "SkillsCli": {
     "title": "CLI",
@@ -340,11 +333,11 @@
     "noDeps": "One JavaScript file, zero dependencies. It installs no framework to print a markdown file.",
     "commands": "Commands",
     "attribution": "Attribution",
-    "attributionBody": "`get` returns the markdown with the author and licence attached. For the {hosted} hosted ones the content comes from here; for the other {pointer} the command returns the card and the source address, because without a declared licence only the author may redistribute.",
+    "attributionBody": "<code>get</code> returns the markdown with the author and licence attached. For the {hosted} hosted ones the content comes from here; for the other {pointer} the command returns the card and the source address, because without a declared licence only the author may redistribute.",
     "cmd": {
       "start": {
         "title": "Start here",
-        "desc": "Prints the routing skill, which helps the agent pick the smallest useful skill."
+        "desc": "The catalogue's routing skill, generated from our own registry: it helps the agent pick the smallest useful skill."
       },
       "topics": {
         "title": "List topics",
@@ -352,7 +345,7 @@
       },
       "list": {
         "title": "List skills",
-        "desc": "Every skill, with topics and description. The arrow marks the ones held at source."
+        "desc": "In pages of 40. The arrow marks the ones held at source. Use --limit, --offset or --all."
       },
       "filter": {
         "title": "Filter by topic",
@@ -369,6 +362,10 @@
       "licenses": {
         "title": "See the licences",
         "desc": "The licence breakdown of the catalogue."
+      },
+      "version": {
+        "title": "See the version",
+        "desc": "The version of this CLI."
       }
     }
   },
@@ -380,9 +377,14 @@
     "howToConnect": "How to connect",
     "connectBody": "HTTP transport, no authentication. In Claude Code, add this to your MCP configuration file:",
     "tools": "Tools",
-    "listSkills": "Lists the catalogue skills. Takes a free-text filter and a topic. Each item carries author and licence, not just name and description.",
-    "getSkill": "Fetches a skill's markdown by name, slug or author/slug. When a name exists under more than one author, it returns the options instead of choosing for you.",
+    "listSkills": "Lists the skills, in pages of 40. Filters by free text and by topic, and takes limit and offset. Each item carries author and licence, not just name and description.",
+    "getSkill": "Fetches a skill's markdown by name, slug or author/slug. Use name: \"start\" for the routing skill. When a name exists under more than one author, it returns the options instead of choosing for you.",
     "provenance": "Provenance",
-    "provenanceBody": "The {hosted} hosted ones come back with the text and the attribution. The other {pointer} come back with the card and the source address: without a declared licence, serving the text would mean redistributing what is not ours."
+    "provenanceBody": "The {hosted} hosted ones come back with the text and the attribution. The other {pointer} come back with the card and the source address: without a declared licence, serving the text would mean redistributing what is not ours.",
+    "listTopics": "The catalogue's topics, with how many skills each holds. Use it before listing: there are hundreds of entries, and picking a topic keeps the agent's context from filling up for nothing.",
+    "paging": "Why it comes paginated",
+    "pagingBody": "The whole catalogue in one response came to 157 KB, roughly 40,000 tokens landing in the context of an agent that only wanted to know what exists. Listings come in pages of 40 and say how much was left out, with the offset for the next. Nothing is trimmed in silence.",
+    "limits": "Limits",
+    "limitsBody": "No authentication, with a ceiling of 120 calls per minute per address. A normal session makes about a dozen; the ceiling is there to catch an agent stuck in a loop."
   }
 }

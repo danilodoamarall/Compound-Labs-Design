@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/hardikpandya/stop-slop/blob/main/SKILL.md
-  Autor:   hardikpandya
-  Licença: MIT
-  Commit:  8da1f030185bdfe8471220585162991eaeb970e9
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: stop-slop
 description: Remove AI writing patterns from prose. Use when drafting, editing, or reviewing text to eliminate predictable AI tells.
 metadata:
@@ -12,15 +6,23 @@ metadata:
   author: Hardik Pandya (https://hvpandya.com)
 ---
 
+<!--
+  Origem:  https://github.com/hardikpandya/stop-slop/blob/main/SKILL.md
+  Autor:   hardikpandya
+  Licença: MIT
+  Commit:  8da1f030185bdfe8471220585162991eaeb970e9
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Stop Slop
 
 Eliminate predictable AI writing patterns from prose.
 
 ## Core Rules
 
-1. **Cut filler phrases.** Remove throat-clearing openers, emphasis crutches, and all adverbs. See [references/phrases.md](references/phrases.md).
+1. **Cut filler phrases.** Remove throat-clearing openers, emphasis crutches, and all adverbs. See [references/phrases.md](https://github.com/hardikpandya/stop-slop/blob/8da1f030185bdfe8471220585162991eaeb970e9/references/phrases.md).
 
-2. **Break formulaic structures.** Avoid binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency. See [references/structures.md](references/structures.md).
+2. **Break formulaic structures.** Avoid binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency. See [references/structures.md](https://github.com/hardikpandya/stop-slop/blob/8da1f030185bdfe8471220585162991eaeb970e9/references/structures.md).
 
 3. **Use active voice.** Every sentence needs a human subject doing something. No passive constructions. No inanimate objects performing human actions ("the complaint becomes a fix").
 
@@ -67,7 +69,7 @@ Below 35/50: revise.
 
 ## Examples
 
-See [references/examples.md](references/examples.md) for before/after transformations.
+See [references/examples.md](https://github.com/hardikpandya/stop-slop/blob/8da1f030185bdfe8471220585162991eaeb970e9/references/examples.md) for before/after transformations.
 
 ## License
 

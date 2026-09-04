@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/slides/SKILL.md
-  Autor:   nextlevelbuilder
-  Licença: MIT
-  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: slides
 description: Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies.
 argument-hint: "[topic] [slide-count]"
@@ -12,6 +6,14 @@ metadata:
   author: claudekit
   version: "1.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/slides/SKILL.md
+  Autor:   nextlevelbuilder
+  Licença: MIT
+  Commit:  f3ac195224eac1eb0dfe1a3059c2a6add78ffbe3
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Slides
 

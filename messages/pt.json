@@ -1,70 +1,75 @@
 {
   "Site": {
-    "name": "AI Builders Lab",
-    "tagline": "O que adotar, testar e ignorar em IA.",
+    "name": "Compound Design",
+    "tagline": "IA, design e código que se acumulam.",
     "author": "Danilo do Amaral",
-    "authorRole": "Design Engineer & AI Builder · Labs",
+    "authorRole": "Design Engineer no Pitang Labs",
     "madeBy": "Feito por",
     "skipToContent": "Pular para o conteúdo",
     "toggleTheme": "Alternar tema",
     "language": "Idioma",
     "draft": "Rascunho",
     "draftHint": "Conteúdo inicial gerado para revisão. Vai mudar.",
-    "github": "Ver o projeto no GitHub e dar uma estrela"
+    "github": "Ver o projeto no GitHub e dar uma estrela",
+    "linkedin": "LinkedIn de Danilo do Amaral"
   },
   "Nav": {
     "home": "Início",
     "articles": "Artigos",
-    "radar": "Radar",
-    "aiTools": "AI Tools",
     "skillsAgents": "Skills & Agents",
-    "docs": "Docs",
+    "docs": "Documentação",
     "faq": "FAQ",
     "about": "Sobre",
     "workflow": "Workflow",
     "groups": {
       "content": "Conteúdo",
-      "tools": "Ferramentas",
-      "hub": "O hub"
+      "hub": "O hub",
+      "skills": "Skills"
     },
     "openMenu": "Abrir o menu",
     "closeMenu": "Fechar o menu",
     "research": "Research",
     "spotlightEyebrow": "Comece por aqui",
     "spotlightCta": "Ler o artigo",
-    "menuLabel": "Seções do hub"
+    "menuLabel": "Seções do hub",
+    "cli": "CLI",
+    "mcp": "MCP",
+    "browse": "Explorar"
   },
   "Home": {
     "title": "O que vale adotar em IA para design.",
-    "dek": "O que aprendo construindo com IA no Labs, em aberto. Escolha por onde começar.",
+    "dek": "Cinco anos de IA, design e código, acumulados em aberto. Escolha por onde começar.",
     "coverHint": "Clique na capa central para abrir · Arraste · Setas do teclado",
     "sections": {
       "articles": {
         "short": "Série Estado do Design 2026"
       },
-      "radar": {
-        "short": "Adotar, testar, avaliar, evitar"
-      },
-      "aiTools": {
-        "short": "O que usamos e para quê"
-      },
       "skillsAgents": {
-        "short": "Skills e agents do Claude"
+        "short": "Catálogo com licença verificada"
       },
       "docs": {
-        "short": "Como o hub funciona"
+        "short": "O que é isto e como usar, do zero"
       },
       "faq": {
         "short": "Perguntas sobre os dados"
       },
       "workflow": {
-        "short": "As ferramentas do meu dia"
+        "short": "Ferramentas por etapa do trabalho"
       },
       "research": {
         "short": "A pesquisa que originou a série"
       },
       "about": {
         "short": "Quem escreve e por quê"
+      },
+      "cli": {
+        "short": "Rode o catálogo pelo terminal"
+      },
+      "mcp": {
+        "short": "Conecte seu agente ao catálogo"
+      },
+      "browse": {
+        "short": "Tudo que está publicado, com busca e data"
       }
     }
   },
@@ -92,42 +97,6 @@
     "index": "A série",
     "indexDek": "Cinco artigos, em ordem. Cada um abre em leitura ou em apresentação."
   },
-  "Radar": {
-    "title": "Radar de Ferramentas",
-    "dek": "Ferramentas de design, IA e entrega organizadas por anel e quadrante. O percentual é o uso semanal medido pela State of Prototyping 2026; a posição no anel é curadoria do Labs.",
-    "rings": {
-      "adopt": "Adotar",
-      "trial": "Testar",
-      "assess": "Avaliar",
-      "hold": "Evitar"
-    },
-    "ringHints": {
-      "adopt": "Padrão no Labs. Use sem pedir permissão.",
-      "trial": "Vale usar em um projeto real para aprender.",
-      "assess": "Vale entender. Ainda não vale investir tempo de time.",
-      "hold": "Não comece nada novo com isso."
-    },
-    "quadrants": {
-      "canvas": "Canvas & Design",
-      "assistants": "Assistentes de IA",
-      "coding": "IA para código",
-      "delivery": "Colaboração & Entrega"
-    },
-    "weeklyUse": "uso semanal",
-    "all": "Todos",
-    "filterQuadrant": "Filtrar por quadrante",
-    "legend": "Legenda",
-    "notInSurvey": "Não medido na pesquisa"
-  },
-  "AiTools": {
-    "title": "AI Tools",
-    "dek": "As ferramentas de IA que usamos no Labs, para que servem e quanto custam. Lista em construção.",
-    "filterCategory": "Categoria",
-    "all": "Todas",
-    "pricing": "Preço",
-    "visit": "Abrir site",
-    "usedFor": "Usamos para"
-  },
   "Skills": {
     "title": "AI Skills & Agents",
     "dek": "Um catálogo de skills de design engineering para humanos e agentes. Cada uma é de quem escreveu.",
@@ -154,23 +123,46 @@
     "pointerHint": "na origem",
     "readAtSource": "Ler na origem",
     "writtenBy": "Escrito por",
-    "license": "Licença:",
-    "copiedAt": "Copiado em"
+    "license": "Licença",
+    "copiedAt": "Copiado em",
+    "colSkill": "skill",
+    "colStars": "estrelas",
+    "colLicense": "licença",
+    "resultados": "resultados",
+    "maisDe": "+%n mais de %repo",
+    "criterio": "Ordenado pelas estrelas do repositório de origem",
+    "criterioBody": "Não medimos instalações: nada é instalado através daqui, e um número inventado seria o contrário do que este catálogo defende. As estrelas são do repositório de onde a skill veio, buscadas na API do GitHub. Um repositório muito estrelado aparece no máximo duas vezes seguidas, e o resto fica recolhido, senão um só autor ocuparia o topo inteiro.",
+    "installation": "Instalação",
+    "repository": "Repositório",
+    "stars": "Estrelas",
+    "lastPush": "Último push",
+    "archived": "arquivado",
+    "commit": "Commit",
+    "provenanceLabel": "Procedência",
+    "hostedHere": "Hospedada aqui",
+    "atSource": "Lida na origem",
+    "hostedWhy": "Licença permissiva, copiada com crédito e commit fixado.",
+    "atSourceWhy": "Sem licença declarada. Só o autor pode redistribuir.",
+    "related": "Relacionadas",
+    "noStars": "sem dado",
+    "content": "Conteúdo",
+    "colTopics": "tópicos",
+    "copyCommand": "Copiar comando"
   },
   "About": {
     "title": "Sobre este hub",
-    "dek": "Um lugar para escoar conhecimento do Labs para a empresa, aberto para quem chegar pela web.",
+    "dek": "O nome é uma analogia. O que se aprende em IA, design e código rende sobre o que já se sabia, como juros compostos. Este hub é onde cinco anos disso se acumulam em aberto.",
     "purposeTitle": "Por que existe",
-    "purpose": "Muito do que aprendemos no Labs fica em conversas, protótipos e apresentações internas. Este hub transforma isso em artigos, radares e catálogos que qualquer pessoa da empresa, ou de fora, pode ler, citar e reutilizar.",
+    "purpose": "Este hub reúne artigos com dados, um catálogo de skills de design engineering com licença verificada, e as ferramentas para o seu agente usá-lo. Tudo aberto: qualquer pessoa pode ler, citar e reutilizar.",
     "authorTitle": "Quem faz",
-    "authorBio": "Danilo do Amaral, Design Engineer e AI Builder no Labs. Desenho e construo protótipos, ferramentas internas e agents de IA. Apresento o que aprendo no Intervalo Técnico e escrevo aqui.",
+    "authorBio": "Danilo do Amaral é Design Engineer no Pitang Labs, há cinco anos na interseção de IA, design e desenvolvimento. Pós-graduado em UX & UI pela EBAC e em UX Engineering pela PUC Minas. Desenha e constrói protótipos, ferramentas internas e agentes, e escreve sobre o que aprende no caminho.",
     "howTitle": "Como contribuir",
-    "how": "Comente nas apresentações, mande ferramentas para o radar ou proponha um artigo. O conteúdo marcado como rascunho está aberto para revisão.",
+    "how": "Comente nas apresentações, proponha uma skill para o catálogo ou um artigo. O conteúdo marcado como rascunho está aberto para revisão.",
     "licenseTitle": "Licenças e fontes",
     "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos deste hub são de Danilo do Amaral."
   },
   "Footer": {
-    "rights": "AI Builders Lab · conteúdo por Danilo do Amaral",
+    "rights": "Compound Design · por Danilo do Amaral",
     "source": "Dados: UX Tools, State of Prototyping Spring 2026 (CC BY 4.0)",
     "builtWith": "Construído com Next.js e React Bits"
   },
@@ -180,9 +172,10 @@
     "home": "Voltar ao início"
   },
   "Docs": {
-    "title": "Docs",
-    "dek": "Como este hub funciona, de onde vêm os dados e como usar os artigos numa apresentação.",
-    "onThisPage": "Nesta página"
+    "title": "Documentação",
+    "dek": "O que é isto, para quem é, e como usar, explicado do zero. Se você nunca abriu um agente de IA, comece aqui.",
+    "onThisPage": "Nesta página",
+    "stepsLabel": "Passo a passo"
   },
   "Faq": {
     "title": "FAQ",
@@ -192,7 +185,7 @@
   },
   "Workflow": {
     "title": "Workflow",
-    "dek": "As ferramentas que eu mantenho por perto para desenhar, prototipar, construir e trabalhar com agentes.",
+    "dek": "Ferramentas para desenhar, prototipar, construir e trabalhar com agentes, organizadas por etapa.",
     "stages": {
       "design": "Desenhar",
       "prototype": "Prototipar",
@@ -211,11 +204,10 @@
     },
     "visit": "Abrir site",
     "count": "{count} ferramentas",
-    "sourceNote": "Mesma lista do meu site pessoal. A ordem por etapa e as descrições são deste hub."
+    "sourceNote": "A ordem por etapa e as descrições são deste hub."
   },
   "Browse": {
-    "heading": "Explore o",
-    "headingAccent": "conteúdo:",
+    "heading": "Explorar",
     "searchPlaceholder": "Buscar aqui...",
     "clearAll": "Limpar tudo",
     "tags": {
@@ -234,7 +226,8 @@
     "items": "itens",
     "of": "de",
     "eyebrow": "Índice",
-    "dek": "Tudo que está publicado no hub, num lugar só. Filtre por tipo ou busque pelo nome."
+    "dek": "Tudo que está publicado, do mais recente ao mais antigo. Filtre por tipo, busque pelo nome ou abra um ao acaso.",
+    "random": "Um ao acaso"
   },
   "Subscribe": {
     "title": "Receba antes",
@@ -242,16 +235,16 @@
     "placeholder": "seu@email.com",
     "cta": "Quero receber",
     "sending": "Enviando...",
-    "success": "Pronto. Confira sua caixa de entrada para confirmar.",
+    "success": "Pronto. Você está na lista.",
     "errorInvalid": "Esse e-mail não parece válido.",
     "errorGeneric": "Não consegui inscrever agora. Tente de novo em alguns minutos.",
     "errorNotConfigured": "A inscrição ainda não está ligada. Volte em breve.",
     "privacy": "Só o e-mail, nada mais. Você sai quando quiser, em um clique."
   },
   "Stage": {
-    "subtitle": "Aprenda a construir com IA sem baixar o seu padrão. Artigos, ferramentas, skills e agents que eu testo, curo e explico.",
-    "resourcesTitle": "Recursos que eu mantenho e uso todo dia.",
-    "resourcesDek": "Cada seção é uma lista curta e opinativa, revisada quando muda de verdade. Sem catálogo por catálogo.",
+    "subtitle": "Aprenda a construir com IA sem baixar o seu padrão. Artigos com dados, um catálogo de skills com licença verificada, e um CLI e um MCP para o seu agente usar o catálogo.",
+    "resourcesTitle": "Artigos, skills e as ferramentas para usá-las.",
+    "resourcesDek": "Cada bloco resolve uma coisa: entender o cenário, achar a skill certa, e ligar o seu agente ao catálogo pelo terminal ou por MCP.",
     "articlesTitle": "Cinco artigos sobre o que a pesquisa mostrou.",
     "articlesDek": "A série lê os dados de 1.478 respostas e discute o que muda no trabalho de quem projeta. Cada um abre em leitura ou apresentação.",
     "articleWord": "Artigo",
@@ -271,16 +264,17 @@
     "subscribeBefore": "Quer receber isso ",
     "subscribeMark": "antes",
     "subscribeAfter": " de todo mundo?",
-    "subscribeDek": "Um e-mail quando sai artigo novo, mais o resumo do mês do que mudou no radar. Nada fica trancado no site.",
-    "subscribeCadence": "Artigo novo a cada duas semanas · Resumo do radar uma vez por mês",
-    "browseCard": "Todo o conteúdo",
-    "browseCardDesc": "Busca e filtro por tag em tudo que está publicado no hub.",
-    "curator": "Curado por Danilo do Amaral",
-    "curatorRole": "Design Engineer no Labs, Pitang",
-    "badge": "Radar de IA do Labs",
+    "subscribeDek": "Um e-mail quando sai artigo novo, mais o resumo do mês do que entrou no catálogo. Nada fica trancado no site.",
+    "subscribeCadence": "Artigo novo a cada duas semanas · Resumo do catálogo uma vez por mês",
+    "browseCard": "Explorar",
+    "browseCardDesc": "Tudo que está publicado, do mais recente ao mais antigo, com busca e filtro por tipo.",
+    "curator": "Por Danilo do Amaral",
+    "curatorRole": "Design Engineer no Pitang Labs",
+    "badge": "Compound Design",
     "heroTitle": "IA para designers, engenheiros e quem constrói.",
-    "ctaPrimary": "Explorar recursos",
-    "ctaSecondary": "Ler a série"
+    "ctaPrimary": "Instalar o CLI",
+    "ctaSecondary": "Conectar por MCP",
+    "docsCta": "Novo por aqui? Leia a documentação"
   },
   "Search": {
     "trigger": "Buscar",
@@ -306,18 +300,16 @@
     "previous": "Anterior",
     "next": "Próximo",
     "facts": {
-      "ring": "No radar:",
       "stage": "Etapa:",
       "type": "Tipo:",
       "pricing": "Preço:",
       "category": "Categoria:",
-      "surveyPct": "Na pesquisa:"
+      "surveyPct": "Na pesquisa:",
+      "stars": "Estrelas:",
+      "skillCount": "Skills:",
+      "license": "Licença:"
     },
     "values": {
-      "adopt": "Adotar",
-      "trial": "Testar",
-      "assess": "Avaliar",
-      "hold": "Evitar",
       "free": "Gratuito",
       "freemium": "Freemium",
       "paid": "Pago",
@@ -331,7 +323,8 @@
       "agents": "Agentes",
       "ship": "Entregar",
       "run": "Operar"
-    }
+    },
+    "openCatalog": "Ver no catálogo"
   },
   "SkillsCli": {
     "title": "CLI",
@@ -340,11 +333,11 @@
     "noDeps": "Um arquivo de JavaScript, zero dependências. Não instala framework nenhum para imprimir um markdown.",
     "commands": "Comandos",
     "attribution": "Atribuição",
-    "attributionBody": "O `get` entrega o markdown com o autor e a licença junto. Das {hosted} hospedadas, o conteúdo vem daqui; para as outras {pointer} o comando devolve a ficha e o endereço da origem, porque sem licença declarada só o autor pode redistribuir.",
+    "attributionBody": "O <code>get</code> entrega o markdown com o autor e a licença junto. Das {hosted} hospedadas, o conteúdo vem daqui; para as outras {pointer} o comando devolve a ficha e o endereço da origem, porque sem licença declarada só o autor pode redistribuir.",
     "cmd": {
       "start": {
         "title": "Comece por aqui",
-        "desc": "Imprime a skill de roteamento, que ajuda o agente a escolher a menor skill útil."
+        "desc": "A skill de roteamento do catálogo, gerada do nosso registro: ajuda o agente a escolher a menor skill útil."
       },
       "topics": {
         "title": "Listar tópicos",
@@ -352,7 +345,7 @@
       },
       "list": {
         "title": "Listar skills",
-        "desc": "Todas as skills, com tópicos e descrição. A seta marca as que estão na origem."
+        "desc": "Em páginas de 40. A seta marca as que estão na origem. Use --limit, --offset ou --all."
       },
       "filter": {
         "title": "Filtrar por tópico",
@@ -369,6 +362,10 @@
       "licenses": {
         "title": "Ver as licenças",
         "desc": "A distribuição de licenças do catálogo."
+      },
+      "version": {
+        "title": "Ver a versão",
+        "desc": "A versão deste CLI."
       }
     }
   },
@@ -380,9 +377,14 @@
     "howToConnect": "Como conectar",
     "connectBody": "Transporte HTTP, sem autenticação. No Claude Code, adicione ao arquivo de configuração de MCP:",
     "tools": "Ferramentas",
-    "listSkills": "Lista as skills do catálogo. Aceita filtro por texto livre e por tópico. Cada item vem com autor e licença, não só nome e descrição.",
-    "getSkill": "Busca o markdown de uma skill por nome, slug ou autor/slug. Quando o nome existe em mais de um autor, devolve as opções em vez de escolher sozinho.",
+    "listSkills": "Lista as skills, em páginas de 40. Filtra por texto livre e por tópico, e aceita limit e offset. Cada item vem com autor e licença, não só nome e descrição.",
+    "getSkill": "Busca o markdown de uma skill por nome, slug ou autor/slug. Use name: \"start\" para a skill de roteamento. Quando o nome existe em mais de um autor, devolve as opções em vez de escolher sozinho.",
     "provenance": "Procedência",
-    "provenanceBody": "As {hosted} hospedadas voltam com o texto e a atribuição. As outras {pointer} voltam com a ficha e o endereço da origem: sem licença declarada, servir o texto seria redistribuir o que não é nosso."
+    "provenanceBody": "As {hosted} hospedadas voltam com o texto e a atribuição. As outras {pointer} voltam com a ficha e o endereço da origem: sem licença declarada, servir o texto seria redistribuir o que não é nosso.",
+    "listTopics": "Os tópicos do catálogo, com quantas skills há em cada um. Use antes de listar: são centenas de entradas, e escolher um tópico evita encher o contexto do agente à toa.",
+    "paging": "Por que vem paginado",
+    "pagingBody": "O catálogo inteiro numa resposta dava 157 KB, cerca de 40 mil tokens entrando no contexto de um agente que só queria saber o que existe. A listagem vem em páginas de 40 e diz quanto ficou de fora, com o offset da próxima. Nada é cortado em silêncio.",
+    "limits": "Limites",
+    "limitsBody": "Sem autenticação, com teto de 120 chamadas por minuto por endereço. Uma sessão normal faz uma dezena; o teto existe para conter agente preso em laço."
   }
 }

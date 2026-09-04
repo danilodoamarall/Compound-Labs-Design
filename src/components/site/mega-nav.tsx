@@ -81,7 +81,7 @@ export function MegaNav({
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-5">
         {logo}
 
-        {/* Os três gatilhos. Em vez de nove nomes em linha, três. */}
+        {/* Um gatilho por grupo, em vez de cada destino em linha. */}
         <nav aria-label={labels.nav} className="ml-auto hidden items-center gap-0.5 md:flex">
           {groups.map((g) => {
             const on = aberto === g.key;

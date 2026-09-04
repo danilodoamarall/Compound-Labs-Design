@@ -1,13 +1,15 @@
+---
+name: unlazy
+description: Enforces completion discipline for substantial autonomous work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
+---
+
 <!--
   Origem:  https://github.com/Leonxlnx/unlazy/blob/main/SKILL.md
   Autor:   Leonxlnx
   Licença: MIT
   Commit:  16671491f6679ad9378f52604d3bc2415b4120c7
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: unlazy
-description: Enforces completion discipline for substantial autonomous work by writing acceptance gates before execution, decomposing work with the Depth Tree, running approved checks, and re-verifying evidence before reporting. Use when an agent faces a long or multi-part task, work that has returned half-done, an exhaustive audit or build, parallel leaves or pipelines, or explicit triggers such as /unlazy, $unlazy, "tree N", "gates", and "do not stop until it is done".
----
+-->
 
 # Unlazy
 

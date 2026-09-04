@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/blader/humanizer/blob/main/SKILL.md
-  Autor:   blader
-  Licença: MIT
-  Commit:  e2e92e7b4b8229253ed5c8e81dc65463fdeddda5
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: humanizer
 description: |
   Rewrite AI-sounding text so it reads naturally without changing what it says.
@@ -15,6 +9,14 @@ license: MIT
 metadata:
   version: "2.11.2"
 ---
+
+<!--
+  Origem:  https://github.com/blader/humanizer/blob/main/SKILL.md
+  Autor:   blader
+  Licença: MIT
+  Commit:  e2e92e7b4b8229253ed5c8e81dc65463fdeddda5
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Humanizer: remove AI writing patterns
 

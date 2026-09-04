@@ -1,13 +1,15 @@
+---
+name: interaction-design
+description: Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.
+---
+
 <!--
   Origem:  https://github.com/wshobson/agents/blob/main/plugins/ui-design/skills/interaction-design/SKILL.md
   Autor:   wshobson
   Licença: MIT
   Commit:  a30778f8c4e6b0a87567941b7cca4f534bf642b6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: interaction-design
-description: Design and implement microinteractions, motion design, transitions, and user feedback patterns. Use when adding polish to UI interactions, implementing loading states, or creating delightful user experiences.
----
+-->
 
 # Interaction Design
 

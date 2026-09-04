@@ -1,13 +1,15 @@
+---
+name: human-review
+description: Open an HTML file, Markdown file, or localhost page in the browser so the user can edit text directly and leave comments on specific parts, then send all edits and comments back to you. Use after writing or updating something the user will read — specs, plans, reports, newsletter drafts, landing pages, slide decks, and locally running web pages.
+---
+
 <!--
   Origem:  https://github.com/petergyang/human-review/blob/main/src/SKILL.md
   Autor:   petergyang
   Licença: MIT
   Commit:  bccc18df203c5dd18d2c390fd8d3715330ae33dc
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: human-review
-description: Open an HTML file, Markdown file, or localhost page in the browser so the user can edit text directly and leave comments on specific parts, then send all edits and comments back to you. Use after writing or updating something the user will read — specs, plans, reports, newsletter drafts, landing pages, slide decks, and locally running web pages.
----
+-->
 
 # human-review
 

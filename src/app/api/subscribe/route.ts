@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { clientIp, rateLimited } from "@/lib/rate-limit";
 
 /** Inscrição na lista. Guarda o contato numa audiência do Resend.
  *
@@ -9,29 +10,17 @@ import { NextResponse } from "next/server";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-/** Limite por IP, na memória do processo. Não sobrevive a um restart nem é
- *  compartilhado entre instâncias, e isso basta: serve para conter repetição
- *  boba de formulário, não ataque distribuído. */
-const WINDOW_MS = 60_000;
-const MAX_PER_WINDOW = 5;
-const hits = new Map<string, number[]>();
-
-function rateLimited(ip: string) {
-  const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < WINDOW_MS);
-  recent.push(now);
-  hits.set(ip, recent);
-  if (hits.size > 5_000) hits.clear();
-  return recent.length > MAX_PER_WINDOW;
-}
+/** Cinco inscrições por minuto por IP. Segura repetição boba de formulário, não
+ *  ataque distribuído: a contagem vive na memória da instância.
+ *
+ *  A implementação saiu daqui para `@/lib/rate-limit`, porque o servidor MCP
+ *  precisa da mesma coisa. A versão compartilhada também corrige um defeito que
+ *  estava nesta: ao passar de 5000 IPs, a antiga chamava `hits.clear()` e
+ *  zerava o histórico de todo mundo, inclusive de quem estava sendo contido. */
+const TETO = { max: 5, windowMs: 60_000 };
 
 export async function POST(request: Request) {
-  const ip =
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
-    request.headers.get("x-real-ip") ??
-    "unknown";
-
-  if (rateLimited(ip)) {
+  if (rateLimited(`subscribe:${clientIp(request)}`, TETO)) {
     return NextResponse.json({ error: "rate_limited" }, { status: 429 });
   }
 

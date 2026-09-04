@@ -12,9 +12,10 @@ export type ResourceLabels = {
   updated: string;
   previous: string;
   next: string;
-  /** Rótulos dos fatos, já traduzidos: anel, etapa, preço, tipo, adoção. */
+  openCatalog: string;
+  /** Rótulos dos fatos, já traduzidos: etapa, preço, tipo, adoção, estrelas. */
   facts: Record<string, string>;
-  /** Valores enumerados traduzidos: adopt/trial/assess/hold, free/freemium/paid… */
+  /** Valores enumerados traduzidos: free/freemium/paid, design/prototype… */
   values: Record<string, string>;
 };
 
@@ -26,9 +27,12 @@ export type Sibling = { key: string; name: string; href: string } | null;
  *  contexto e status, título, resumo, uma linha de metadados que termina numa
  *  ação, o corpo, a procedência, e navegação entre irmãos.
  *
- *  Todo slot é condicional. As quatro fontes de conteúdo têm campos diferentes,
- *  e um gabarito que renderizasse tudo mostraria rótulos vazios na metade das
- *  páginas. Aqui só aparece o que o item de fato tem. */
+ *  Todo slot é condicional. As fontes de conteúdo têm campos diferentes, e um
+ *  gabarito que renderizasse tudo mostraria rótulos vazios na metade das
+ *  páginas. Aqui só aparece o que o item de fato tem.
+ *
+ *  As seções sem página (o acervo) aparecem pelo nome, sem link: `sectionHrefs`
+ *  só traz as navegáveis, e o rótulo vira texto quando não há destino. */
 export function ResourceView({
   item,
   locale,
@@ -36,6 +40,7 @@ export function ResourceView({
   sectionHrefs,
   labels,
   updated,
+  catalogHref,
   previous,
   next,
 }: {
@@ -45,21 +50,26 @@ export function ResourceView({
   sectionHrefs: Record<string, string>;
   labels: ResourceLabels;
   updated: string;
+  /** O placar de skills, para os itens que são um repositório do catálogo. */
+  catalogHref: string;
   previous: Sibling;
   next: Sibling;
 }) {
   const name = locale === "pt" ? item.name : item.nameEn;
   const home = item.sections[0];
   const f = item.facts;
+  const numero = (n: number) => n.toLocaleString(locale === "pt" ? "pt-BR" : "en-US");
 
   // Cada fato vira uma linha só se existir. A ordem é a mesma em toda página,
   // para que o leitor aprenda onde olhar depois do primeiro recurso.
   const meta: { label: string; value: string }[] = [];
-  if (f.ring) meta.push({ label: labels.facts.ring, value: labels.values[f.ring] ?? f.ring });
   if (f.stage) meta.push({ label: labels.facts.stage, value: labels.values[f.stage] ?? f.stage });
   if (f.type) meta.push({ label: labels.facts.type, value: labels.values[f.type] ?? f.type });
   if (f.pricing) meta.push({ label: labels.facts.pricing, value: labels.values[f.pricing] ?? f.pricing });
   if (f.category) meta.push({ label: labels.facts.category, value: f.category });
+  if (f.license) meta.push({ label: labels.facts.license, value: f.license });
+  if (typeof f.skillCount === "number") meta.push({ label: labels.facts.skillCount, value: numero(f.skillCount) });
+  if (typeof f.stars === "number") meta.push({ label: labels.facts.stars, value: numero(f.stars) });
   if (typeof f.surveyPct === "number") {
     meta.push({
       label: labels.facts.surveyPct,
@@ -69,17 +79,20 @@ export function ResourceView({
 
   const whenToUse = f.whenToUse?.[locale];
   const install = f.install?.[locale];
-  // As notas de outras seções: o mesmo item visto de outro ângulo. Antes elas
-  // eram descartadas no merge do índice.
+  // As notas de outras seções: o mesmo item visto de outro ângulo.
   const otherNotes = item.sections
     .filter((s) => s !== home && item.notes[s]?.[locale])
     .map((s) => ({ section: s, text: item.notes[s][locale] }));
+
+  const rotulo = (section: string, className?: string) => (
+    <SectionLabel section={section} className={className} hrefs={sectionHrefs} labels={sectionLabels} />
+  );
 
   return (
     <article className="mx-auto w-full max-w-3xl px-5 pb-20 pt-12">
       <header className="border-b border-border pb-8">
         <p className="eyebrow flex flex-wrap items-center gap-x-2 gap-y-1">
-          <a href={sectionHrefs[home]} className="hover:text-foreground">{sectionLabels[home]}</a>
+          {rotulo(home)}
           <span aria-hidden className="text-muted-foreground/40">·</span>
           <span>{labels.values[item.kind] ?? item.kind}</span>
           {f.draft ? <DraftBadge label={labels.draft} /> : null}
@@ -93,24 +106,37 @@ export function ResourceView({
           {item.desc[locale]}
         </p>
 
-        {meta.length || f.url ? (
+        {meta.length || f.url || f.catalogQuery ? (
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
             {meta.map((m) => (
               <span key={m.label} className="text-muted-foreground">
-                {m.label} <span className="text-foreground">{m.value}</span>
+                {m.label} <span className="text-foreground tabular-nums">{m.value}</span>
               </span>
             ))}
-            {f.url ? (
-              <a
-                href={f.url}
-                target="_blank"
-                rel="noreferrer"
-                className="ml-auto inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 transition-colors hover:border-teal/50 hover:text-foreground"
-              >
-                {labels.visit}
-                <ArrowUpRight size={14} aria-hidden />
-              </a>
-            ) : null}
+            <span className="ml-auto flex items-center gap-2">
+              {/* Um repositório do catálogo leva ao placar já filtrado pelo
+                  autor: é lá que as skills dele estão, uma a uma. */}
+              {f.catalogQuery ? (
+                <a
+                  href={`${catalogHref}?q=${encodeURIComponent(f.catalogQuery)}`}
+                  className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-3 py-1.5 text-background transition-opacity hover:opacity-90"
+                >
+                  {labels.openCatalog}
+                  <ArrowRight size={14} aria-hidden />
+                </a>
+              ) : null}
+              {f.url ? (
+                <a
+                  href={f.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 transition-colors hover:border-teal/50 hover:text-foreground"
+                >
+                  {labels.visit}
+                  <ArrowUpRight size={14} aria-hidden />
+                </a>
+              ) : null}
+            </span>
           </div>
         ) : null}
       </header>
@@ -126,9 +152,7 @@ export function ResourceView({
           <ul className="space-y-4">
             {otherNotes.map((n) => (
               <li key={n.section}>
-                <a href={sectionHrefs[n.section]} className="eyebrow hover:text-foreground">
-                  {sectionLabels[n.section]}
-                </a>
+                {rotulo(n.section, "eyebrow")}
                 <p className="mt-1.5 text-[17px] leading-relaxed text-muted-foreground">{n.text}</p>
               </li>
             ))}
@@ -153,7 +177,7 @@ export function ResourceView({
       <p className="mt-14 border-t border-border pt-6 text-sm text-muted-foreground">
         {labels.source} <span className="text-foreground">{sectionLabels[home]}</span>
         <span aria-hidden className="mx-2 text-muted-foreground/40">·</span>
-        {labels.updated} <span className="tabular">{updated}</span>
+        {labels.updated} <span className="tabular-nums">{item.date ?? updated}</span>
       </p>
 
       {previous || next ? (
@@ -182,6 +206,26 @@ export function ResourceView({
   );
 }
 
+/** O nome de uma seção: link quando ela tem página, texto quando é acervo.
+ *  Fora do componente principal para não ser recriado a cada render. */
+function SectionLabel({
+  section,
+  className,
+  hrefs,
+  labels,
+}: {
+  section: string;
+  className?: string;
+  hrefs: Record<string, string>;
+  labels: Record<string, string>;
+}) {
+  return hrefs[section] ? (
+    <a href={hrefs[section]} className={`${className ?? ""} hover:text-foreground`}>{labels[section]}</a>
+  ) : (
+    <span className={className}>{labels[section]}</span>
+  );
+}
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mt-12">
@@ -195,7 +239,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
  *  tamanhos. Agora é um só. */
 export function DraftBadge({ label }: { label: string }) {
   return (
-    <span className="rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-warm">
+    <span className="rounded bg-warm/15 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wide text-warm-text">
       {label}
     </span>
   );

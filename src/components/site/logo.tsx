@@ -1,6 +1,6 @@
 import { DOME_BOX, DOME_PATH, DOME_STOPS } from "@/lib/brand";
 
-/** Marca do AI Builders Lab: um domo com a base côncava, como um sol nascendo
+/** Marca do Compound Design: um domo com a base côncava, como um sol nascendo
     por trás de uma curva. O material é iridescente e vai do azul frio na
     esquerda ao creme no alto e ao laranja na direita, com granulado por cima.
 

@@ -1,13 +1,15 @@
+---
+name: fixing-motion-performance
+description: Audit and fix animation performance issues including layout thrashing, compositor properties, scroll-linked motion, and blur effects. Use when animations stutter, transitions jank, or reviewing CSS/JS animation performance.
+---
+
 <!--
   Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/fixing-motion-performance/SKILL.md
   Autor:   ibelick
   Licença: MIT
   Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: fixing-motion-performance
-description: Audit and fix animation performance issues including layout thrashing, compositor properties, scroll-linked motion, and blur effects. Use when animations stutter, transitions jank, or reviewing CSS/JS animation performance.
----
+-->
 
 # fixing-motion-performance
 

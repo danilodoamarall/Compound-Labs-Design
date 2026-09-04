@@ -1,4 +1,5 @@
-import { attribution, findSkill, readSkillBody } from "@/lib/skills";
+import { attributionHeader, findSkill, readSkillBody } from "@/lib/skills";
+import { routingSkill } from "@/lib/routing-skill";
 
 /** O markdown de uma skill, em texto puro. É o que o CLI e o MCP entregam.
  *
@@ -7,6 +8,24 @@ import { attribution, findSkill, readSkillBody } from "@/lib/skills";
 export async function GET(_req: Request, ctx: { params: Promise<{ path: string }> }) {
   const { path } = await ctx.params;
   const termo = decodeURIComponent(path).replace(/__/g, "/").replace(/\.(md|txt)$/, "");
+
+  /*  O ponto de entrada do catálogo.
+   *
+   *  Antes o `start` do CLI servia `ibelick/ui-skills-root`, que é a skill de
+   *  roteamento do ui-skills. É MIT e podíamos redistribuir, mas o texto manda
+   *  o agente rodar `npx ui-skills categories` e `npx ui-skills get`: nosso CLI
+   *  estava ensinando a usar a ferramenta de outro projeto. Esta é gerada do
+   *  nosso registro, com os nossos comandos e os nossos números. */
+  if (termo.toLowerCase() === "start") {
+    return new Response(routingSkill(), {
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+        "x-skill-hosted": "true",
+        "x-skill-license": "MIT",
+        "cache-control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+      },
+    });
+  }
 
   const achado = findSkill(termo);
 
@@ -53,7 +72,7 @@ export async function GET(_req: Request, ctx: { params: Promise<{ path: string }
       "content-type": "text/plain; charset=utf-8",
       "x-skill-hosted": "true",
       "x-skill-license": skill.source.license ?? "",
-      "x-skill-attribution": attribution(skill),
+      "x-skill-attribution": attributionHeader(skill),
       "cache-control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
     },
   });

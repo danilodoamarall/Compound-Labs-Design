@@ -1,14 +1,16 @@
+---
+name: to-spec
+description: "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed."
+disable-model-invocation: true
+---
+
 <!--
   Origem:  https://github.com/mattpocock/skills/blob/main/skills/engineering/to-spec/SKILL.md
   Autor:   mattpocock
   Licença: MIT
   Commit:  6654f6b60cd9d5be8b54c6fafe44346dabeb3b76
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: to-spec
-description: "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed."
-disable-model-invocation: true
----
+-->
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 

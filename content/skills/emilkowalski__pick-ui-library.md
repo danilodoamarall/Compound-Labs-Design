@@ -1,14 +1,16 @@
+---
+name: pick-ui-library
+description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
+disable-model-invocation: true
+---
+
 <!--
   Origem:  https://github.com/emilkowalski/skills/blob/main/skills/pick-ui-library/SKILL.md
   Autor:   emilkowalski
   Licença: MIT
   Commit:  d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: pick-ui-library
-description: Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.
-disable-model-invocation: true
----
+-->
 
 # Picking The Right Library
 

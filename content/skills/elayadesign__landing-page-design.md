@@ -1,13 +1,15 @@
+---
+name: landing-page-design
+description: "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions."
+---
+
 <!--
   Origem:  https://github.com/elayadesign/ai-design-skills/blob/main/skills/landing-page-design/SKILL.md
   Autor:   elayadesign
   Licença: MIT
   Commit:  1c1e97cb9878e236552c772092dda7adcdddbcb2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: landing-page-design
-description: "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions."
----
+-->
 
 # Landing Page Design
 

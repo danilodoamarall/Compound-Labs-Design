@@ -1,8 +1,13 @@
 # ADR-0002: Catálogo de skills com CLI e servidor MCP próprios
 
-**Status:** Proposto
-**Data:** 3 de setembro de 2026
+**Status:** Aceito (Opção C, com a cópia licenciada da Opção A — ver adendo)
+**Data:** 3 de setembro de 2026 · adendo em 4 de setembro
 **Deciders:** Danilo do Amaral (Labs)
+
+> Os números no corpo deste ADR ("cinco itens", "cerca de 180") são os do dia da
+> decisão e ficam como registro. Os números atuais — 269 entradas, 207 hospedadas,
+> 62 apontadas — estão no adendo do fim e são conferidos pelo `check-counts` no
+> prebuild.
 
 ## Contexto
 
@@ -172,23 +177,23 @@ um chama: precisa de limite de taxa antes de ir para produção.
 
 ## Itens de ação
 
-1. [ ] **Decidir a opção.** Sem isso o resto não começa.
-2. [ ] Expor o registro em `/api/skills/registry.json` e o markdown de cada skill
+1. [x] **Decidir a opção.** Sem isso o resto não começa.
+2. [x] Expor o registro em `/api/skills/registry.json` e o markdown de cada skill
        em `/api/skills/[key]/llms.txt`, servidos do `content/skills-agents.json`
        que já existe.
-3. [ ] Servidor MCP em `src/app/mcp/route.ts` com `mcp-handler` e `zod`, expondo
+3. [x] Servidor MCP em `src/app/mcp/route.ts` com `mcp-handler` e `zod`, expondo
        `list_skills` e `get_skill`, mais o cartão em
        `/.well-known/mcp/server-card.json`.
-4. [ ] Limite de taxa por IP no MCP, no mesmo formato do que já existe em
+4. [x] Limite de taxa por IP no MCP, no mesmo formato do que já existe em
        `/api/subscribe`.
-5. [ ] Refazer `/skills-agents` na composição do ui-skills: descrição, bloco
+5. [x] Refazer `/skills-agents` na composição do ui-skills: descrição, bloco
        "comece por aqui" com os dois cards, e a grade de skills com crédito.
-6. [ ] Páginas `/skills-agents/cli` e `/skills-agents/mcp`, no gabarito de
+6. [x] Páginas `/skills-agents/cli` e `/skills-agents/mcp`, no gabarito de
        recurso que já padronizamos.
-7. [ ] CLI num pacote separado, publicado no npm sob um escopo seu. Comandos
+7. [x] CLI num pacote separado, publicado no npm sob um escopo seu. Comandos
        espelhando os deles: `start`, `categories`, `list`, `list --category`,
        `get`.
-8. [ ] **Escrever as skills.** É o item que dá trabalho e o único que define se
+8. [x] **Escrever as skills.** É o item que dá trabalho e o único que define se
        o catálogo vale alguma coisa. As cinco de hoje precisam virar documentos.
 
 ## Nota sobre o `npx ui-skills`
@@ -198,3 +203,75 @@ execução. Ele declara `astro`, `react`, `tailwindcss` e `motion` em
 `dependencies`, e não em `devDependencies`: o `npx` baixa a stack inteira do site
 para imprimir um arquivo de markdown. O nosso CLI deve ser um pacote pequeno, sem
 dependência de framework.
+
+---
+
+## Adendo, 04/09/2026: o que a implementação mudou
+
+Quatro decisões que só apareceram depois de medir o que estava no ar.
+
+### A listagem passa a ser paginada
+
+`list_skills` sem filtro devolvia **157 KB** de JSON, cerca de 40 mil tokens
+entrando no contexto de um agente que só queria saber o que existe. O ui-skills
+tem o mesmo comportamento, e não é generosidade: é despejo.
+
+A listagem vem em páginas de 40, com teto de 200, e a resposta carrega `total`,
+`returned`, `offset`, `hasMore` e `nextOffset`. Quando corta, **diz que cortou** e
+diz como pedir o resto. Corte silencioso é pior que resposta grande, porque faz a
+listagem parecer completa quando não é.
+
+Uma ferramenta nova, `list_topics`, existe para que dê para escolher um filtro
+antes de pedir a listagem. Sem ela, paginar só empurra o problema.
+
+| Resposta | Antes | Depois |
+|---|---|---|
+| `/api/skills` | 160.817 B | 12.316 B |
+| `list_skills` sem filtro | 160.817 B | 17.357 B |
+
+### O `start` passa a ser nosso
+
+O comando servia `ibelick/ui-skills-root`, a skill de roteamento do ui-skills.
+É MIT e podíamos redistribuir, mas o texto manda o agente rodar
+`npx ui-skills categories` e `npx ui-skills get`. **Nosso CLI estava ensinando a
+usar a ferramenta de outro projeto.**
+
+Agora é gerada em `src/lib/routing-skill.ts`, a partir do registro, então os
+tópicos e as contagens nunca divergem do catálogo que ela descreve.
+
+### O frontmatter estava ilegível nos 207 arquivos
+
+O comentário de procedência era escrito **antes** do frontmatter, colado no `---`
+da primeira linha. Nenhum leitor de YAML lê um frontmatter que não começa na
+primeira linha, então nome, descrição e licença de cada skill ficaram invisíveis
+para quem carregasse o arquivo — justamente o que a procedência queria preservar.
+
+Dois defeitos na mesma função: o `.filter(Boolean)` também comia as linhas em
+branco do separador, colando `-->` em `---`.
+
+A regra virou módulo, `scripts/lib/provenance.mjs`, usado pelo script de
+ingestão e pelo de reparo, para os dois não divergirem de novo. Os 207 arquivos
+foram reparados no lugar, sem rebuscar nada: o texto já estava aqui, só na ordem
+errada. 189 têm frontmatter e agora abrem com ele; 18 são markdown puro e nunca
+tiveram um.
+
+### O endereço do site vira uma constante
+
+Estava escrito à mão em sete arquivos, incluindo a página que ensina a conectar
+ao MCP. Agora sai de `src/lib/site-url.ts`, que prefere
+`VERCEL_PROJECT_PRODUCTION_URL` à URL do deploy atual: um preview não deve se
+anunciar como endereço canônico do servidor, senão quem salvar o cartão fica
+apontado para uma URL efêmera.
+
+### Limite de taxa
+
+Feito, e vale registrar o que ele não faz. A contagem vive na memória da
+instância, então numa função sem estado o limite é por instância, não global.
+Não segura ataque coordenado — para isso o lugar é a borda. Segura o caso real:
+agente preso em laço. São 120 chamadas por minuto no MCP, contra as dez de uma
+sessão honesta.
+
+A implementação saiu de dentro de `/api/subscribe` para `src/lib/rate-limit.ts`,
+e no caminho corrigiu um defeito: a versão antiga chamava `hits.clear()` ao
+passar de 5000 endereços, zerando o histórico de todo mundo, inclusive de quem
+estava sendo contido.

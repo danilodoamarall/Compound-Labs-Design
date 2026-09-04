@@ -1,25 +1,40 @@
-# @ai-builders-lab/skills
+# @compound-design/skills
 
 Navegue e busque skills de design engineering pelo terminal.
 
 ```bash
-npx @ai-builders-lab/skills
+npx @compound-design/skills
 ```
 
 Um arquivo de JavaScript, zero dependências. Lê o mesmo registro que a página e
-o servidor MCP do [AI Builders Lab](https://labs-hub-five.vercel.app/pt/skills-agents).
+o servidor MCP do [Compound Design](https://labs-hub-five.vercel.app/pt/skills-agents).
 
 ## Comandos
 
 ```bash
-npx @ai-builders-lab/skills start                       # a skill de roteamento
-npx @ai-builders-lab/skills topics                      # os tópicos do catálogo
-npx @ai-builders-lab/skills list                        # todas as skills
-npx @ai-builders-lab/skills list --topic motion         # filtra por tópico
-npx @ai-builders-lab/skills list --query shadow         # busca por texto
-npx @ai-builders-lab/skills get emilkowalski/animate    # lê uma skill
-npx @ai-builders-lab/skills licenses                    # as licenças do catálogo
+npx @compound-design/skills start                       # a skill de roteamento
+npx @compound-design/skills topics                      # os tópicos, com a contagem
+npx @compound-design/skills list --topic motion         # filtra por tópico
+npx @compound-design/skills list --query shadow         # busca por texto
+npx @compound-design/skills get emilkowalski/animate    # lê uma skill
+npx @compound-design/skills licenses                    # as licenças do catálogo
+npx @compound-design/skills --version
 ```
+
+### Paginação
+
+`list` devolve 40 por vez. O catálogo tem 269 entradas, e despejar tudo numa
+resposta são cerca de 40 mil tokens no contexto de quem só queria saber o que
+existe.
+
+```bash
+npx @compound-design/skills list --limit 100
+npx @compound-design/skills list --offset 40
+npx @compound-design/skills list --all       # o teto de uma vez
+```
+
+Quando a listagem é cortada, o aviso vai para **stderr**, não para stdout. Assim
+o corte nunca passa despercebido, e um `| grep` ou `> arquivo` continua limpo.
 
 ## De quem são as skills
 
@@ -40,24 +55,25 @@ A lista completa de autores está em
 | Código | Quando |
 |---|---|
 | `0` | Deu certo |
-| `1` | Faltou argumento ou valor de opção |
+| `1` | Faltou argumento, ou uma opção recebeu valor inválido |
 | `2` | Comando desconhecido |
 | `3` | Skill não encontrada, ou nome ambíguo entre autores |
-| `4` | Falha de rede |
+| `4` | Falha de rede, ou o servidor pediu para desacelerar |
 
 ## Apontar para outro servidor
 
 ```bash
-AI_SKILLS_SITE_URL=http://localhost:3000 npx @ai-builders-lab/skills list
+AI_SKILLS_SITE_URL=http://localhost:3000 npx @compound-design/skills list
 ```
 
 ## Também há um servidor MCP
 
 ```bash
-claude mcp add --transport http ai-builders-lab https://labs-hub-five.vercel.app/mcp
+claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp
 ```
 
-Duas ferramentas: `list_skills` e `get_skill`. Documentação em
+Três ferramentas: `list_topics`, `list_skills` e `get_skill`. Comece por
+`get_skill` com `name: "start"`. Documentação em
 [/skills-agents/mcp](https://labs-hub-five.vercel.app/pt/skills-agents/mcp).
 
 ## Licença

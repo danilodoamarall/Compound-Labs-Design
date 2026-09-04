@@ -1,14 +1,16 @@
+---
+name: react-router-framework-mode
+description: Build full-stack React applications using React Router's framework mode. Use when configuring routes, working with loaders and actions, handling forms, handling navigation, pending/optimistic UI, error boundaries, or working with react-router.config.ts or other react router conventions.
+license: MIT
+---
+
 <!--
   Origem:  https://github.com/remix-run/agent-skills/blob/main/skills/react-router-framework-mode/SKILL.md
   Autor:   remix-run
   Licença: MIT
   Commit:  33578aae4aa36a90c9f8f602105a1ccb0f4efe45
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: react-router-framework-mode
-description: Build full-stack React applications using React Router's framework mode. Use when configuring routes, working with loaders and actions, handling forms, handling navigation, pending/optimistic UI, error boundaries, or working with react-router.config.ts or other react router conventions.
-license: MIT
----
+-->
 
 # React Router Framework Mode
 

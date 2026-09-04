@@ -974,7 +974,7 @@
   {
    "slug": "next-cache-components",
    "pathSlug": "vercel/next-cache-components",
-   "name": "next-cache-components",
+   "name": "next-cache-components-adoption",
    "description": "Enable Cache Components in a Next.js app and resolve blocking routes surfaced during adoption.",
    "topics": [
     "nextjs",
@@ -993,7 +993,7 @@
    "bytes": 32931,
    "fetchedAt": "2026-09-04",
    "commit": "6b56068f38110b3ee43036d952f4f1cf01918067",
-   "pinned": "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-cache-components-adoption/SKILL.md"
+   "pinned": "https://raw.githubusercontent.com/vercel/next.js/6b56068f38110b3ee43036d952f4f1cf01918067/skills/next-cache-components-adoption/SKILL.md"
   },
   {
    "slug": "next-cache-components-optimizer",
@@ -1017,7 +1017,7 @@
    "bytes": 24936,
    "fetchedAt": "2026-09-04",
    "commit": "6b56068f38110b3ee43036d952f4f1cf01918067",
-   "pinned": "https://raw.githubusercontent.com/vercel/next.js/canary/skills/next-cache-components-optimizer/SKILL.md"
+   "pinned": "https://raw.githubusercontent.com/vercel/next.js/6b56068f38110b3ee43036d952f4f1cf01918067/skills/next-cache-components-optimizer/SKILL.md"
   },
   {
    "slug": "agent-browser",
@@ -2254,13 +2254,13 @@
    "source": {
     "author": "rams",
     "repo": "rams-ai",
-    "url": "",
+    "url": "https://www.rams.ai/rams.md",
     "license": null,
     "licenseName": null
    },
    "hosted": false,
    "reason": "sem-licenca-declarada",
-   "readAt": ""
+   "readAt": "https://www.rams.ai/rams.md"
   },
   {
    "slug": "bencium-innovative-ux-designer",
@@ -3770,7 +3770,7 @@
   {
    "slug": "to-issues",
    "pathSlug": "mattpocock/to-issues",
-   "name": "to-issues",
+   "name": "to-tickets",
    "description": "Breaks a plan or PRD into independently actionable issues.",
    "topics": [
     "architecture",
@@ -3794,7 +3794,7 @@
   {
    "slug": "to-prd",
    "pathSlug": "mattpocock/to-prd",
-   "name": "to-prd",
+   "name": "to-spec",
    "description": "Turns a conversation into a PRD and publishes it to the issue tracker.",
    "topics": [
     "architecture",
@@ -3972,13 +3972,13 @@
    "source": {
     "author": "cursor",
     "repo": "plugins",
-    "url": "",
+    "url": "https://github.com/cursor/plugins/blob/main/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md",
     "license": null,
     "licenseName": null
    },
    "hosted": false,
    "reason": "sem-licenca-declarada",
-   "readAt": ""
+   "readAt": "https://github.com/cursor/plugins/blob/main/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md"
   },
   {
    "slug": "effect",
@@ -4367,7 +4367,7 @@
   {
    "slug": "gc-minimal-zine-poster-v0-1",
    "pathSlug": "liamgvchi/gc-minimal-zine-poster-v0-1",
-   "name": "gc-minimal-zine-poster-v0-1",
+   "name": "gc-minimal-zine-poster-v0-3",
    "description": "Generate quiet minimal zine-style editorial poster prompts and matching raster images from themes, moods, objects, photos, or content briefs.",
    "topics": [
     "visual",
@@ -6163,7 +6163,7 @@
   {
    "slug": "image-to-code-skill",
    "pathSlug": "leonxlnx/image-to-code-skill",
-   "name": "image-to-code-skill",
+   "name": "image-to-code",
    "description": "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section-specific images instead of tiny compressed boards, generate fresh standalone images for sections or detail views instead of cropping old ones, avoid lazy under-generation, avoid cards-inside-cards-inside-cards UI, and keep the hero clean, spacious, readable, and visible on a small laptop.",
    "topics": [
     "visual",
@@ -6235,7 +6235,7 @@
   {
    "slug": "taste-skill-v1",
    "pathSlug": "leonxlnx/taste-skill-v1",
-   "name": "taste-skill-v1",
+   "name": "design-taste-frontend-v1",
    "description": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which is a substantial rewrite. Use this v1 install name only if you need exact backward compatibility.",
    "topics": [
     "visual",

@@ -1,13 +1,15 @@
+---
+name: deslop
+description: Remove AI writing patterns from prose. Use this skill when writing, drafting, editing, reviewing, or revising any text to eliminate predictable AI tells, slop, and formulaic patterns. Trigger this skill whenever the user asks to "deslop", "de-AI", "make it sound human," "remove AI patterns," "remove AI tropes," "clean up AI writing," fix "slop," "deslop" text, or review prose for authenticity. Also use when the user asks you to write or draft anything and wants it to sound natural rather than AI-generated. Common use cases include scientific writing (manuscripts, abstracts, cover letters, grant narratives, discussion sections, peer review responses), blog posts, newsletters, memos, reports, and any other substantial prose.
+---
+
 <!--
   Origem:  https://github.com/stephenturner/skills/blob/main/deslop/SKILL.md
   Autor:   stephenturner
   Licença: MIT
   Commit:  48287d806e61534bc14939b55b72c3f3f11a7db5
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: deslop
-description: Remove AI writing patterns from prose. Use this skill when writing, drafting, editing, reviewing, or revising any text to eliminate predictable AI tells, slop, and formulaic patterns. Trigger this skill whenever the user asks to "deslop", "de-AI", "make it sound human," "remove AI patterns," "remove AI tropes," "clean up AI writing," fix "slop," "deslop" text, or review prose for authenticity. Also use when the user asks you to write or draft anything and wants it to sound natural rather than AI-generated. Common use cases include scientific writing (manuscripts, abstracts, cover letters, grant narratives, discussion sections, peer review responses), blog posts, newsletters, memos, reports, and any other substantial prose.
----
+-->
 
 # Deslop: Remove AI Writing Patterns from Prose
 
@@ -24,15 +26,15 @@ Strip predictable AI patterns from writing. Make prose sound like a specific hum
 
 ### 1. Cut filler phrases
 
-Remove throat-clearing openers ("Here's the thing:"), emphasis crutches ("Let that sink in."), business jargon ("navigate the landscape"), and meta-commentary ("In this section, we'll explore..."). See [references/phrases.md](references/phrases.md) for the full catalog.
+Remove throat-clearing openers ("Here's the thing:"), emphasis crutches ("Let that sink in."), business jargon ("navigate the landscape"), and meta-commentary ("In this section, we'll explore..."). See [references/phrases.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/phrases.md) for the full catalog.
 
 ### 2. Break formulaic structures
 
-Avoid binary contrasts ("Not X. Y."), negative listings ("Not a X. Not a Y. A Z."), dramatic fragmentation ("Speed. That's it. That's the tradeoff."), self-posed rhetorical questions ("The result? Devastating."), and anaphora/tricolon abuse. See [references/structures.md](references/structures.md) for patterns and fixes.
+Avoid binary contrasts ("Not X. Y."), negative listings ("Not a X. Not a Y. A Z."), dramatic fragmentation ("Speed. That's it. That's the tradeoff."), self-posed rhetorical questions ("The result? Devastating."), and anaphora/tricolon abuse. See [references/structures.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/structures.md) for patterns and fixes.
 
 ### 3. Eliminate AI tropes
 
-Watch for the full catalog of AI writing tells: "quietly" and other magic adverbs, "delve" and its cousins, the "serves as" dodge, false ranges ("from X to Y" where the range is meaningless), superficial participle analyses ("highlighting its importance"), invented concept labels ("the supervision paradox"), grandiose stakes inflation, patronizing analogies, and false vulnerability. See [references/tropes.md](references/tropes.md) for the complete list with examples.
+Watch for the full catalog of AI writing tells: "quietly" and other magic adverbs, "delve" and its cousins, the "serves as" dodge, false ranges ("from X to Y" where the range is meaningless), superficial participle analyses ("highlighting its importance"), invented concept labels ("the supervision paradox"), grandiose stakes inflation, patronizing analogies, and false vulnerability. See [references/tropes.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/tropes.md) for the complete list with examples.
 
 ### 4. Use active voice with human subjects
 
@@ -106,14 +108,14 @@ Below 35/50: revise.
 
 Consult these for detailed catalogs when writing or editing:
 
-- [references/phrases.md](references/phrases.md): Phrases to remove or replace (throat-clearing, emphasis crutches, business jargon, adverbs, meta-commentary, vague declaratives)
-- [references/structures.md](references/structures.md): Structural patterns to avoid (binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency, passive voice, rhythm problems)
-- [references/tropes.md](references/tropes.md): Full catalog of AI writing tropes (word choice, sentence structure, paragraph structure, tone, formatting, composition)
-- [references/examples.md](references/examples.md): Before/after transformations showing how to fix common patterns
+- [references/phrases.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/phrases.md): Phrases to remove or replace (throat-clearing, emphasis crutches, business jargon, adverbs, meta-commentary, vague declaratives)
+- [references/structures.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/structures.md): Structural patterns to avoid (binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency, passive voice, rhythm problems)
+- [references/tropes.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/tropes.md): Full catalog of AI writing tropes (word choice, sentence structure, paragraph structure, tone, formatting, composition)
+- [references/examples.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/examples.md): Before/after transformations showing how to fix common patterns
 
 ## Examples
 
-See [references/examples.md](references/examples.md) for before/after transformations.
+See [references/examples.md](https://github.com/stephenturner/skills/blob/48287d806e61534bc14939b55b72c3f3f11a7db5/deslop/references/examples.md) for before/after transformations.
 
 **Quick inline example (scientific writing):**
 

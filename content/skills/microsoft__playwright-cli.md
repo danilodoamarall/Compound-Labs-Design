@@ -1,14 +1,16 @@
+---
+name: playwright-cli
+description: Automate browser interactions, test web pages and work with Playwright tests.
+allowed-tools: Bash(playwright-cli:*) Bash(npx:*) Bash(npm:*)
+---
+
 <!--
   Origem:  https://github.com/microsoft/playwright-cli/blob/main/skills/playwright-cli/SKILL.md
   Autor:   microsoft
   Licença: Apache-2.0
   Commit:  655530f6d0dc71a0d6bf46ae165877d3c7311099
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: playwright-cli
-description: Automate browser interactions, test web pages and work with Playwright tests.
-allowed-tools: Bash(playwright-cli:*) Bash(npx:*) Bash(npm:*)
----
+-->
 
 # Browser Automation with playwright-cli
 
@@ -420,12 +422,12 @@ playwright-cli show --annotate
 
 ## Specific tasks
 
-* **Running and Debugging Playwright tests** [references/playwright-tests.md](references/playwright-tests.md)
-* **Request mocking** [references/request-mocking.md](references/request-mocking.md)
-* **Running Playwright code** [references/running-code.md](references/running-code.md)
-* **Browser session management** [references/session-management.md](references/session-management.md)
-* **Storage state (cookies, localStorage)** [references/storage-state.md](references/storage-state.md)
-* **Test generation (plan / generate / heal)** [references/test-generation.md](references/test-generation.md)
-* **Tracing** [references/tracing.md](references/tracing.md)
-* **Video recording** [references/video-recording.md](references/video-recording.md)
-* **Inspecting element attributes** [references/element-attributes.md](references/element-attributes.md)
+* **Running and Debugging Playwright tests** [references/playwright-tests.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/playwright-tests.md)
+* **Request mocking** [references/request-mocking.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/request-mocking.md)
+* **Running Playwright code** [references/running-code.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/running-code.md)
+* **Browser session management** [references/session-management.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/session-management.md)
+* **Storage state (cookies, localStorage)** [references/storage-state.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/storage-state.md)
+* **Test generation (plan / generate / heal)** [references/test-generation.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/test-generation.md)
+* **Tracing** [references/tracing.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/tracing.md)
+* **Video recording** [references/video-recording.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/video-recording.md)
+* **Inspecting element attributes** [references/element-attributes.md](https://github.com/microsoft/playwright-cli/blob/655530f6d0dc71a0d6bf46ae165877d3c7311099/skills/playwright-cli/references/element-attributes.md)

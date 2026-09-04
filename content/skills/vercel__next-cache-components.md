@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/vercel/next.js/blob/canary/skills/next-cache-components-adoption/SKILL.md
-  Autor:   vercel
-  Licença: MIT
-  Commit:  6b56068f38110b3ee43036d952f4f1cf01918067
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: next-cache-components-adoption
 description: >
   Turn on Cache Components in a Next.js app and resolve the blocking routes it
@@ -14,6 +8,14 @@ description: >
   `cache-components-instant-false` codemod, or decide between opting routes out
   with `export const instant = false` and fixing them in place.
 ---
+
+<!--
+  Origem:  https://github.com/vercel/next.js/blob/canary/skills/next-cache-components-adoption/SKILL.md
+  Autor:   vercel
+  Licença: MIT
+  Commit:  6b56068f38110b3ee43036d952f4f1cf01918067
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # next-cache-components-adoption
 
@@ -208,7 +210,7 @@ Per route:
 ### loop notes
 
 - The [three blocker classes from background](#background) often get missed when fixing in place. Caching a downstream fetch (`getThing(id)`) doesn't clear an `await params` at the top of the page body — push the param promise into the `<Suspense>`-wrapped child.
-- Ambiguous calls are user check-ins, not agent judgment. When you're not sure which fix fits, the blocking code looks security-sensitive, or the user might want to keep the route blocking on purpose — read [references/per-page-decisions.md](./references/per-page-decisions.md) before editing. Show the route while you ask: the `next-dev-loop` session runs the browser headed, so drive to the page and leave it on screen so the user is looking at the thing they're deciding about, with a screenshot as the fallback when a headed browser isn't possible. "Should this stay blocking?" is much easier to answer while looking at the page than at a file path.
+- Ambiguous calls are user check-ins, not agent judgment. When you're not sure which fix fits, the blocking code looks security-sensitive, or the user might want to keep the route blocking on purpose — read [references/per-page-decisions.md](https://github.com/vercel/next.js/blob/6b56068f38110b3ee43036d952f4f1cf01918067/skills/next-cache-components-adoption/references/per-page-decisions.md) before editing. Show the route while you ask: the `next-dev-loop` session runs the browser headed, so drive to the page and leave it on screen so the user is looking at the thing they're deciding about, with a screenshot as the fallback when a headed browser isn't possible. "Should this stay blocking?" is much easier to answer while looking at the page than at a file path.
 - Don't narrate the refactor with comments. The only comment the codemod (or you) should leave is `// TODO: Cache Components adoption` on opt-outs, and the user's existing comments. Don't annotate every `<Suspense>` boundary or `"use cache"` call with what it does — the code says that. Drop a comment only when the _why_ isn't clear from the code (e.g. a deliberate Block with a reason).
 - For many routes with the same mechanical fix, verify one representative route first. Then batch disjoint route groups using the same recipe, and run the shared build and browser checks together.
 
@@ -219,7 +221,7 @@ Keep a todo list of the feature's routes. When every route in the feature is cle
 Checklist before checking in with the user:
 
 - `next build` completes without blocking-route errors.
-- No bare TODOs in the feature: `grep -rn "TODO: Cache Components adoption"` finds both the codemod's opt-out comments and the sync-IO unblocks from the pre-step. Any `instant = false` left behind is a deliberate, documented Block — comment rewritten to a reason (see [references/per-page-decisions.md](./references/per-page-decisions.md) → "when to leave a Block in place"). Any `await io()` or `await connection()` left behind has been reviewed and kept on purpose, not left over from the pre-step.
+- No bare TODOs in the feature: `grep -rn "TODO: Cache Components adoption"` finds both the codemod's opt-out comments and the sync-IO unblocks from the pre-step. Any `instant = false` left behind is a deliberate, documented Block — comment rewritten to a reason (see [references/per-page-decisions.md](https://github.com/vercel/next.js/blob/6b56068f38110b3ee43036d952f4f1cf01918067/skills/next-cache-components-adoption/references/per-page-decisions.md) → "when to leave a Block in place"). Any `await io()` or `await connection()` left behind has been reviewed and kept on purpose, not left over from the pre-step.
 - Each route visited in the browser: confirm the static shell renders first and every `<Suspense>` fallback resolves to its real content. Capture both states if you can — the fallback (mid-stream) and the final paint — so you have a streaming-experience demo to show the user. Throttle the network in the browser if streaming is too fast to observe.
 - If runtime verification fails, reproduce the same route on the pre-adoption branch or with its opt-out restored. A failure that already exists is an environment or data problem, not an adoption regression.
 
@@ -245,7 +247,7 @@ When the loop has run on every feature — every remaining `instant = false` sit
 
 The work below is optional and lives in the docs — link the user to them and let them decide which to take on next. Don't walk these through inside this skill.
 
-- [Sweep for more instant navigations](./references/dev-only-validations.md) — an optional follow-up once adoption is done, never required. A passing build is not the last word, because dev validates every route on each page load (simulating both page loads and client navigations) and catches what the build's first-error exit and descendant shadowing skipped. Offer it as the smaller path to instant navigation for a user who doesn't want to adopt Partial Prefetching. Adopting Partial Prefetching (below) runs the same kind of loop and meets these insights anyway, so recommend both and let the user pick which, or whether. The reference is the loop to execute.
+- [Sweep for more instant navigations](https://github.com/vercel/next.js/blob/6b56068f38110b3ee43036d952f4f1cf01918067/skills/next-cache-components-adoption/references/dev-only-validations.md) — an optional follow-up once adoption is done, never required. A passing build is not the last word, because dev validates every route on each page load (simulating both page loads and client navigations) and catches what the build's first-error exit and descendant shadowing skipped. Offer it as the smaller path to instant navigation for a user who doesn't want to adopt Partial Prefetching. Adopting Partial Prefetching (below) runs the same kind of loop and meets these insights anyway, so recommend both and let the user pick which, or whether. The reference is the loop to execute.
 - [`next-partial-prefetching-adoption`](https://github.com/vercel/next.js/tree/canary/skills/next-partial-prefetching-adoption) — the follow-up skill that adopts Partial Prefetching: it enables `partialPrefetching` and audits every `<Link prefetch={true}>` against a decision table (or adopts incrementally with the flag off, driven by the `instant-link-prefetch-partial` insight). It sequences this the same way this skill sequences Cache Components, but the insights are dev-only, so it's a browser click-through, not a build loop. Recommended after instant navigation, since those fixes feed directly into how much of each route the shell can prefetch. Concepts live in the [Adopting Partial Prefetching guide](https://nextjs.org/docs/app/guides/adopting-partial-prefetching).
 - [Prevent regressions with e2e tests](https://nextjs.org/docs/app/guides/instant-navigation#prevent-regressions-with-e2e-tests) — the `@next/playwright` [`instant()`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config/instant#testing-instant-navigation) helper asserts on the UI that's available immediately on navigation, so regressions surface in CI. Recommend it once a route is instant: `next-dev-loop` confirms it _now_; an `instant()` test keeps it that way.
 - [`next-cache-components-optimizer`](https://github.com/vercel/next.js/tree/canary/skills/next-cache-components-optimizer) — a separate skill that grows each route's static shell so more of the page prerenders and less streams in. Pure optimization, not part of adoption.

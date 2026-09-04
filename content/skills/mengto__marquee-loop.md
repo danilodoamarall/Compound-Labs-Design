@@ -1,13 +1,15 @@
+---
+name: marquee-loop
+description: "Apply seamless infinite marquee loops using duplicated items."
+---
+
 <!--
   Origem:  https://github.com/MengTo/Skills/blob/main/agent-skills/web-design/marquee-loop/SKILL.md
   Autor:   MengTo
   Licença: MIT
   Commit:  321c769739b823de5eb94eb3a52aa1974fe783a2
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: marquee-loop
-description: "Apply seamless infinite marquee loops using duplicated items."
----
+-->
 
 # Marquee Skill
 

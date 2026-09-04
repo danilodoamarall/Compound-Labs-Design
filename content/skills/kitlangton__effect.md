@@ -1,16 +1,18 @@
-<!--
-  Origem:  https://github.com/kitlangton/skills/blob/main/skills/effect/SKILL.md
-  Autor:   kitlangton
-  Licença: MIT
-  Commit:  22c35cb7fd29f931789253fc3c8eb142f2863a8a
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: effect
 description: |
   Opinionated guide for building production TypeScript applications with Effect v4. Use when implementing Effect workflows, services, layers, schemas, configuration, schedules, caches, streams, HTTP clients, or tests.
 license: MIT
 compatibility: Requires Effect v4. Examples are reviewed against the version documented in this repository.
 ---
+
+<!--
+  Origem:  https://github.com/kitlangton/skills/blob/main/skills/effect/SKILL.md
+  Autor:   kitlangton
+  Licença: MIT
+  Commit:  22c35cb7fd29f931789253fc3c8eb142f2863a8a
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Effect
 

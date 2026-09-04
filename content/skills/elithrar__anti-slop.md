@@ -1,13 +1,15 @@
+---
+name: anti-slop
+description: Detect and remove AI writing tells ("slop") from prose while preserving the author's voice. Load when drafting or reviewing prose, blog posts, essays, white papers, marketing copy, emails, docs, or reports, and when a human asks to make writing sound less AI-generated or to review someone else's writing for AI tells. Triggers on "sounds like AI", "slop", "AI tell", "make this more human", "editorial pass", or "review my writing".
+---
+
 <!--
   Origem:  https://github.com/elithrar/dotfiles/blob/main/.agents/skills/anti-slop/SKILL.md
   Autor:   elithrar
   Licença: MIT
   Commit:  c07901a05907eeed2c8a47a3a81c79be66e5e42d
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: anti-slop
-description: Detect and remove AI writing tells ("slop") from prose while preserving the author's voice. Load when drafting or reviewing prose, blog posts, essays, white papers, marketing copy, emails, docs, or reports, and when a human asks to make writing sound less AI-generated or to review someone else's writing for AI tells. Triggers on "sounds like AI", "slop", "AI tell", "make this more human", "editorial pass", or "review my writing".
----
+-->
 
 ## Anti-Slop: Writing and Reviewing Human-Sounding Prose
 

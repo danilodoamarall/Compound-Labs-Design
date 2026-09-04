@@ -1,16 +1,18 @@
-<!--
-  Origem:  https://github.com/antfu/skills/blob/main/skills/antfu-design/SKILL.md
-  Autor:   antfu
-  Licença: MIT
-  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: antfu-design
 description: antfu-style design conventions, broadened. UnoCSS-first, class-based semantic tokens with dual light/dark for tooling and devtools UIs, plus design-read, anti-slop, and micro-interaction polish for landing pages and product surfaces. Use when building or refactoring any interface with UnoCSS.
 metadata:
   author: Anthony Fu
   version: "2026.06.22"
 ---
+
+<!--
+  Origem:  https://github.com/antfu/skills/blob/main/skills/antfu-design/SKILL.md
+  Autor:   antfu
+  Licença: MIT
+  Commit:  a74f281a27dadc02397bc1a174b0f2c97531b6ae
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 Use this when building interfaces with UnoCSS in any framework (React, Vue, Svelte, Solid, or plain HTML), from dense devtools panels to landing pages. Read core-design-read first to set the direction, then apply the token system plus the polish and anti-slop rules.
 
@@ -58,34 +60,34 @@ shortcuts: [
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Core Principles | Semantic tokens, dark mode parity, z-index naming, class-first output | [core-principles](references/core-principles.md) |
-| Starter Kit | Copy-paste UnoCSS starter config and base light/dark styles | [core-starter-kit](references/core-starter-kit.md) |
-| Tokens and Combos | Token families, reusable class combinations, mobile-safe shell tokens | [core-tokens-and-combinations](references/core-tokens-and-combinations.md) |
-| Design Read and Dials | Read the brief, declare a design read, set variance/motion/density dials | [core-design-read](references/core-design-read.md) |
+| Core Principles | Semantic tokens, dark mode parity, z-index naming, class-first output | [core-principles](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/core-principles.md) |
+| Starter Kit | Copy-paste UnoCSS starter config and base light/dark styles | [core-starter-kit](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/core-starter-kit.md) |
+| Tokens and Combos | Token families, reusable class combinations, mobile-safe shell tokens | [core-tokens-and-combinations](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/core-tokens-and-combinations.md) |
+| Design Read and Dials | Read the brief, declare a design read, set variance/motion/density dials | [core-design-read](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/core-design-read.md) |
 
 ## Best Practices
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Strict Rules and Pre-Flight | Do/don't checklist and the consolidated pre-flight | [best-practices-strict-rules](references/best-practices-strict-rules.md) |
-| Class over Attributify | Why generated code uses class utilities, with conversions | [best-practices-class-utilities-over-attributify](references/best-practices-class-utilities-over-attributify.md) |
-| Anti-Slop Hygiene | The dash ban and the AI-tell forbidden patterns | [best-practices-anti-slop](references/best-practices-anti-slop.md) |
-| Bias Correction | Typography, color, layout, and materiality defaults to override | [best-practices-bias-correction](references/best-practices-bias-correction.md) |
+| Strict Rules and Pre-Flight | Do/don't checklist and the consolidated pre-flight | [best-practices-strict-rules](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/best-practices-strict-rules.md) |
+| Class over Attributify | Why generated code uses class utilities, with conversions | [best-practices-class-utilities-over-attributify](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/best-practices-class-utilities-over-attributify.md) |
+| Anti-Slop Hygiene | The dash ban and the AI-tell forbidden patterns | [best-practices-anti-slop](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/best-practices-anti-slop.md) |
+| Bias Correction | Typography, color, layout, and materiality defaults to override | [best-practices-bias-correction](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/best-practices-bias-correction.md) |
 
 ## Features
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Data Presentation | Paths, icons, time, date, numbers, badges, buttons | [features-data-presentation](references/features-data-presentation.md) |
-| Micro-Interactions | Radius, alignment, shadows, animation, numbers, outlines, hit areas | [features-micro-interactions](references/features-micro-interactions.md) |
-| Floating Vue Overrides | Shared Floating Vue setup and popper styling | [features-floating-vue-overrides](references/features-floating-vue-overrides.md) |
+| Data Presentation | Paths, icons, time, date, numbers, badges, buttons | [features-data-presentation](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/features-data-presentation.md) |
+| Micro-Interactions | Radius, alignment, shadows, animation, numbers, outlines, hit areas | [features-micro-interactions](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/features-micro-interactions.md) |
+| Floating Vue Overrides | Shared Floating Vue setup and popper styling | [features-floating-vue-overrides](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/features-floating-vue-overrides.md) |
 
 ## Advanced
 
 | Topic | Description | Reference |
 |-------|-------------|-----------|
-| Pattern Vocabulary | Named UI patterns to recognize and reach for | [advanced-pattern-vocabulary](references/advanced-pattern-vocabulary.md) |
-| Redesign Protocol | Detect mode, audit first, preserve IA and SEO | [advanced-redesign-protocol](references/advanced-redesign-protocol.md) |
+| Pattern Vocabulary | Named UI patterns to recognize and reach for | [advanced-pattern-vocabulary](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/advanced-pattern-vocabulary.md) |
+| Redesign Protocol | Detect mode, audit first, preserve IA and SEO | [advanced-redesign-protocol](https://github.com/antfu/skills/blob/a74f281a27dadc02397bc1a174b0f2c97531b6ae/skills/antfu-design/references/advanced-redesign-protocol.md) |
 
 <!--
 Source references:

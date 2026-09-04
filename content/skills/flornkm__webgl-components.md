@@ -1,13 +1,15 @@
+---
+name: webgl-components
+description: "Build small, always-on WebGL visuals (identity avatars, ambient orbs, glass and iridescent surfaces, animated textures) that ship inside a normal web app UI without wrecking performance, accessibility, SSR, or layout. Use whenever a shader-, GLSL-, or canvas-driven decorative element is added to a product UI, especially one rendered many times per page or per list; when reviewing or optimizing one; or when debugging one that renders blurry, aliased, all-black, or paints over the surrounding UI on machines without hardware acceleration."
+---
+
 <!--
   Origem:  https://github.com/flornkm/skills/blob/main/skills/webgl-components/SKILL.md
   Autor:   flornkm
   Licença: MIT
   Commit:  cf1c0094e1826230623ecdb6e7b3c44bdfc593c3
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: webgl-components
-description: "Build small, always-on WebGL visuals (identity avatars, ambient orbs, glass and iridescent surfaces, animated textures) that ship inside a normal web app UI without wrecking performance, accessibility, SSR, or layout. Use whenever a shader-, GLSL-, or canvas-driven decorative element is added to a product UI, especially one rendered many times per page or per list; when reviewing or optimizing one; or when debugging one that renders blurry, aliased, all-black, or paints over the surrounding UI on machines without hardware acceleration."
----
+-->
 
 # WebGL Components
 
@@ -120,7 +122,7 @@ Optimizing the shader first is what earns the sharper rendering. Decide the cap 
 ## Verifying without eyeballs
 
 - Shader logic is plain math, so **port it to NumPy or PIL and assert on statistics**: mean luminance, percentile spread, and local-gradient detail metrics per variant. This catches "all variants render near-black" or "contrast collapsed" without opening a browser.
-- **Settle which branch a machine takes by measuring, not by reasoning from documentation.** [`scripts/gpu-probe.html`](scripts/gpu-probe.html) answers it directly: the strict-context result, whether WebGL exists at all, the live context cap, and the blit orientation. Edit `CONTEXT_OPTIONS` at the top of the file to match your component's real options first, because the answer only transfers if the options match. Serve it and read the JSON:
+- **Settle which branch a machine takes by measuring, not by reasoning from documentation.** [`scripts/gpu-probe.html`](https://github.com/flornkm/skills/blob/cf1c0094e1826230623ecdb6e7b3c44bdfc593c3/skills/webgl-components/scripts/gpu-probe.html) answers it directly: the strict-context result, whether WebGL exists at all, the live context cap, and the blit orientation. Edit `CONTEXT_OPTIONS` at the top of the file to match your component's real options first, because the answer only transfers if the options match. Serve it and read the JSON:
 
 ```bash
 python3 -m http.server 8000 --directory scripts

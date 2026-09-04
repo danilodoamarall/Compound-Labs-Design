@@ -5,9 +5,11 @@ import { routing, type Locale } from "@/i18n/routing";
 import { ResourceView, type Sibling } from "@/components/site/resource-view";
 import type { IndexedResource } from "@/lib/resources";
 import index from "../../../../../content/resources.json";
-import radar from "../../../../../content/radar.json";
+
+type SectionMeta = { pt: string; en: string; navigable: boolean; path?: Record<string, string> };
 
 const RESOURCES = index.resources as unknown as IndexedResource[];
+const SECTIONS = index.sections as unknown as Record<string, SectionMeta>;
 
 /** Só ferramentas e skills ganham página aqui. Os artigos já têm a própria, com
  *  modo leitura e modo apresentação, que é mais rica que este gabarito. */
@@ -41,15 +43,16 @@ export default async function ResourcePage({ params }: PageProps<"/[locale]/r/[k
   if (!item) notFound();
 
   const t = await getTranslations("Resource");
-  const tn = await getTranslations("Nav");
 
+  /*  Rótulo para toda seção; link só para as navegáveis. As do acervo (as
+   *  antigas Radar e AI Tools) continuam como origem do dado e aparecem pelo
+   *  nome, mas não têm mais página para onde mandar o leitor. */
   const sectionLabels: Record<string, string> = {};
   const sectionHrefs: Record<string, string> = {};
-  for (const [id, meta] of Object.entries(index.sections)) {
-    sectionLabels[id] = (meta as { pt: string; en: string })[locale];
-    sectionHrefs[id] = `/${locale}${(meta as { path: Record<string, string> }).path[locale]}`;
+  for (const [id, meta] of Object.entries(SECTIONS)) {
+    sectionLabels[id] = meta[locale];
+    if (meta.navigable && meta.path) sectionHrefs[id] = `/${locale}${meta.path[locale]}`;
   }
-  void tn;
 
   // Irmãos dentro da mesma seção, para o leitor seguir sem voltar à lista.
   const home = item.sections[0];
@@ -69,17 +72,18 @@ export default async function ResourcePage({ params }: PageProps<"/[locale]/r/[k
     updated: t("updated"),
     previous: t("previous"),
     next: t("next"),
+    openCatalog: t("openCatalog"),
     facts: {
-      ring: t("facts.ring"),
       stage: t("facts.stage"),
       type: t("facts.type"),
       pricing: t("facts.pricing"),
       category: t("facts.category"),
       surveyPct: t("facts.surveyPct"),
+      stars: t("facts.stars"),
+      skillCount: t("facts.skillCount"),
+      license: t("facts.license"),
     },
     values: {
-      adopt: t("values.adopt"), trial: t("values.trial"),
-      assess: t("values.assess"), hold: t("values.hold"),
       free: t("values.free"), freemium: t("values.freemium"), paid: t("values.paid"),
       skill: t("values.skill"), agent: t("values.agent"), mcp: t("values.mcp"),
       tool: t("values.tool"),
@@ -97,7 +101,11 @@ export default async function ResourcePage({ params }: PageProps<"/[locale]/r/[k
         sectionLabels={sectionLabels}
         sectionHrefs={sectionHrefs}
         labels={labels}
-        updated={radar.updated}
+        // A data do índice, não a de um arquivo de seção: antes vinha de
+        // radar.json e valia para todo recurso, inclusive os que nada tinham
+        // a ver com o radar.
+        updated={index.updated}
+        catalogHref={`/${locale}/skills-agents`}
         previous={toSibling(family[i - 1])}
         next={toSibling(family[i + 1])}
       />

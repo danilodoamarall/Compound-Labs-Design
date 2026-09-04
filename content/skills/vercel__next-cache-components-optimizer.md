@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/vercel/next.js/blob/canary/skills/next-cache-components-optimizer/SKILL.md
-  Autor:   vercel
-  Licença: MIT
-  Commit:  6b56068f38110b3ee43036d952f4f1cf01918067
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: next-cache-components-optimizer
 description: >
   Drive a Next.js route to instant navigation by setting up an agentic loop,
@@ -18,6 +12,14 @@ description: >
   keeps a route out of its static shell, or write the instant() e2e guard for
   one. Requires Next.js 16.3+ with cacheComponents; directs an upgrade if older.
 ---
+
+<!--
+  Origem:  https://github.com/vercel/next.js/blob/canary/skills/next-cache-components-optimizer/SKILL.md
+  Autor:   vercel
+  Licença: MIT
+  Commit:  6b56068f38110b3ee43036d952f4f1cf01918067
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # next-cache-components-optimizer
 

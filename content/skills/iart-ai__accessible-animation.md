@@ -1,14 +1,16 @@
+---
+name: accessible-animation
+description: This skill should be used when the user asks to "respect prefers-reduced-motion", "honor reduced motion", "make my animations accessible", "fix vestibular / motion-sickness issues", "add a useReducedMotion hook", "gate GSAP / Framer Motion / Lenis for reduced motion", or "meet WCAG 2.3.3 / C39". Provides tiered (not all-or-nothing) reduced-motion patterns in CSS and JS.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/accessible-animation/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: accessible-animation
-description: This skill should be used when the user asks to "respect prefers-reduced-motion", "honor reduced motion", "make my animations accessible", "fix vestibular / motion-sickness issues", "add a useReducedMotion hook", "gate GSAP / Framer Motion / Lenis for reduced motion", or "meet WCAG 2.3.3 / C39". Provides tiered (not all-or-nothing) reduced-motion patterns in CSS and JS.
-version: 0.1.0
----
+-->
 
 # Accessible Animation (Reduced Motion, Tiered)
 

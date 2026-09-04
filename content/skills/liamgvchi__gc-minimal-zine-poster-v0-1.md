@@ -1,13 +1,15 @@
+---
+name: gc-minimal-zine-poster-v0-3
+description: Generate or analyze poetic paper-texture minimal zine posters with large negative space, a small editorial collage or focal element, experimental typography, and one clear color accent. Use when the user gives a theme, sentence, article, mood, object, photo, content brief, reference images, or an image folder and wants a final poster image, a production-ready image prompt, reusable style rules, or varied layouts that stay in one visual family.
+---
+
 <!--
   Origem:  https://github.com/LiamGvchi/gc-minimal-zine-poster/blob/main/SKILL.md
   Autor:   LiamGvchi
   Licença: MIT
   Commit:  ddb0d66b24a94f9c4fdd1f02835a836a2db3774e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: gc-minimal-zine-poster-v0-3
-description: Generate or analyze poetic paper-texture minimal zine posters with large negative space, a small editorial collage or focal element, experimental typography, and one clear color accent. Use when the user gives a theme, sentence, article, mood, object, photo, content brief, reference images, or an image folder and wants a final poster image, a production-ready image prompt, reusable style rules, or varied layouts that stay in one visual family.
----
+-->
 
 # Minimal Zine Poster v0.3.1
 

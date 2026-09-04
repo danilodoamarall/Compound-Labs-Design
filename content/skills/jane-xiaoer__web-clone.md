@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/Jane-xiaoer/claude-skill-web-clone/blob/main/SKILL.md
-  Autor:   Jane-xiaoer
-  Licença: MIT
-  Commit:  0269e0e08a3783184ec641d341e7d57065d4a5f8
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: web-clone
 description: >
   网站复刻 / 克隆方法论。USE WHEN 用户说 复刻网站、克隆网站、clone website、抄个站、仿站、
@@ -17,6 +11,14 @@ metadata:
   version: "1.6.0"
   use_case: 个人本地复刻/学习网站，沉淀自 website-clones 克隆中枢
 ---
+
+<!--
+  Origem:  https://github.com/Jane-xiaoer/claude-skill-web-clone/blob/main/SKILL.md
+  Autor:   Jane-xiaoer
+  Licença: MIT
+  Commit:  0269e0e08a3783184ec641d341e7d57065d4a5f8
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Web Clone · 网站复刻方法论
 

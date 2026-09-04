@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-discipline/SKILL.md
-  Autor:   tjcages
-  Licença: MIT
-  Commit:  09f07637b5e7b122b312dba0480386974173922b
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: linear-discipline
 version: 1.0.2
 description: >-
@@ -16,9 +10,17 @@ description: >-
   close-the-loop. NOT for full bootstrap, sync, or monitor runs.
 ---
 
+<!--
+  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-discipline/SKILL.md
+  Autor:   tjcages
+  Licença: MIT
+  Commit:  09f07637b5e7b122b312dba0480386974173922b
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Linear discipline (always-on)
 
-Chat rules: [RESPONSE.md](./RESPONSE.md). Auth before Linear calls: [AUTH.md](./AUTH.md).
+Chat rules: [RESPONSE.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-discipline/RESPONSE.md). Auth before Linear calls: [AUTH.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-discipline/AUTH.md).
 
 ## Detect tracking
 

@@ -1,13 +1,15 @@
+---
+name: transitions-dev
+description: Production-ready CSS transitions for web apps. Use when implementing notification badges, dropdowns, modals, panel reveals, page transitions, card resizes, number pop-ins, text swaps, icon swaps, success checks, avatar group hovers, or error state shakes. Triggers on "add a transition", "animate the dropdown", "make the modal open smoothly", "swap icon", "page slide", "stagger animation", "open / close transition", "make it animate", "tween the size", "fade between", "smooth open", "smooth close", "success animation", "checkmark animation", "confirmation animation", "form error", "shake on invalid", "validation feedback", "hover lift", "avatar stack hover", "chip group hover".
+---
+
 <!--
   Origem:  https://github.com/Jakubantalik/transitions-dev/blob/main/skills/transitions-dev/SKILL.md
   Autor:   Jakubantalik
   Licença: MIT
   Commit:  038b0bdc75375c2beed51d1e824c98cdc7b86f8c
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: transitions-dev
-description: Production-ready CSS transitions for web apps. Use when implementing notification badges, dropdowns, modals, panel reveals, page transitions, card resizes, number pop-ins, text swaps, icon swaps, success checks, avatar group hovers, or error state shakes. Triggers on "add a transition", "animate the dropdown", "make the modal open smoothly", "swap icon", "page slide", "stagger animation", "open / close transition", "make it animate", "tween the size", "fade between", "smooth open", "smooth close", "success animation", "checkmark animation", "confirmation animation", "form error", "shake on invalid", "validation feedback", "hover lift", "avatar stack hover", "chip group hover".
----
+-->
 
 # Transitions.dev
 
@@ -17,18 +19,18 @@ Twelve portable CSS transitions, each namespaced under `t-*` selectors with sema
 
 | Transition | When to use | Reference |
 | --- | --- | --- |
-| **Card resize** | Tween a container's width or height when its layout state changes. | [01-card-resize.md](./01-card-resize.md) |
-| **Number pop-in** | Re-enter each digit with a blurred slide when a number updates. | [02-number-pop-in.md](./02-number-pop-in.md) |
-| **Notification badge** | Slide a small badge onto a trigger and pop the dot. | [03-notification-badge.md](./03-notification-badge.md) |
-| **Text states swap** | Swap text in place with a blurred up-and-down transition. | [04-text-states-swap.md](./04-text-states-swap.md) |
-| **Menu dropdown** | Open an origin-aware dropdown that grows from its trigger. | [05-menu-dropdown.md](./05-menu-dropdown.md) |
-| **Modal open / close** | Scale-up modal dialog with a softer scale-down on close. | [06-modal.md](./06-modal.md) |
-| **Panel reveal** | Slide a panel into a region with a cross-blur. | [07-panel-reveal.md](./07-panel-reveal.md) |
-| **Page side-by-side** | Slide between two side-by-side pages (list ↔ detail, step 1 ↔ step 2). | [08-page-side-by-side.md](./08-page-side-by-side.md) |
-| **Icon swap** | Cross-fade two icons in the same slot with blur and scale. | [09-icon-swap.md](./09-icon-swap.md) |
-| **Success check** | Compose fade + rotate + Y-bob + path stroke-draw to celebrate a completed action. | [10-success-check.md](./10-success-check.md) |
-| **Avatar group hover** | Distance-falloff lift on a row of items with a bouncy spring on return. | [11-avatar-group-hover.md](./11-avatar-group-hover.md) |
-| **Error state shake** | Per-segment cubic-bezier shake with auto-reverting border + message. | [12-error-state-shake.md](./12-error-state-shake.md) |
+| **Card resize** | Tween a container's width or height when its layout state changes. | [01-card-resize.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/01-card-resize.md) |
+| **Number pop-in** | Re-enter each digit with a blurred slide when a number updates. | [02-number-pop-in.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/02-number-pop-in.md) |
+| **Notification badge** | Slide a small badge onto a trigger and pop the dot. | [03-notification-badge.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/03-notification-badge.md) |
+| **Text states swap** | Swap text in place with a blurred up-and-down transition. | [04-text-states-swap.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/04-text-states-swap.md) |
+| **Menu dropdown** | Open an origin-aware dropdown that grows from its trigger. | [05-menu-dropdown.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/05-menu-dropdown.md) |
+| **Modal open / close** | Scale-up modal dialog with a softer scale-down on close. | [06-modal.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/06-modal.md) |
+| **Panel reveal** | Slide a panel into a region with a cross-blur. | [07-panel-reveal.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/07-panel-reveal.md) |
+| **Page side-by-side** | Slide between two side-by-side pages (list ↔ detail, step 1 ↔ step 2). | [08-page-side-by-side.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/08-page-side-by-side.md) |
+| **Icon swap** | Cross-fade two icons in the same slot with blur and scale. | [09-icon-swap.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/09-icon-swap.md) |
+| **Success check** | Compose fade + rotate + Y-bob + path stroke-draw to celebrate a completed action. | [10-success-check.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/10-success-check.md) |
+| **Avatar group hover** | Distance-falloff lift on a row of items with a bouncy spring on return. | [11-avatar-group-hover.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/11-avatar-group-hover.md) |
+| **Error state shake** | Per-segment cubic-bezier shake with auto-reverting border + message. | [12-error-state-shake.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/12-error-state-shake.md) |
 
 ## Decision rules
 
@@ -175,16 +177,16 @@ Keep the diff small: only edit the files needed to introduce the transition. Don
 
 ## Reference files
 
-- [01-card-resize.md](./01-card-resize.md) — Card resize
-- [02-number-pop-in.md](./02-number-pop-in.md) — Number pop-in
-- [03-notification-badge.md](./03-notification-badge.md) — Notification badge
-- [04-text-states-swap.md](./04-text-states-swap.md) — Text states swap
-- [05-menu-dropdown.md](./05-menu-dropdown.md) — Menu dropdown
-- [06-modal.md](./06-modal.md) — Modal open / close
-- [07-panel-reveal.md](./07-panel-reveal.md) — Panel reveal
-- [08-page-side-by-side.md](./08-page-side-by-side.md) — Page side-by-side
-- [09-icon-swap.md](./09-icon-swap.md) — Icon swap
-- [10-success-check.md](./10-success-check.md) — Success check
-- [11-avatar-group-hover.md](./11-avatar-group-hover.md) — Avatar group hover
-- [12-error-state-shake.md](./12-error-state-shake.md) — Error state shake
-- [_root.css](./_root.css) — the universal install block on its own, ready to import directly.
+- [01-card-resize.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/01-card-resize.md) — Card resize
+- [02-number-pop-in.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/02-number-pop-in.md) — Number pop-in
+- [03-notification-badge.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/03-notification-badge.md) — Notification badge
+- [04-text-states-swap.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/04-text-states-swap.md) — Text states swap
+- [05-menu-dropdown.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/05-menu-dropdown.md) — Menu dropdown
+- [06-modal.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/06-modal.md) — Modal open / close
+- [07-panel-reveal.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/07-panel-reveal.md) — Panel reveal
+- [08-page-side-by-side.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/08-page-side-by-side.md) — Page side-by-side
+- [09-icon-swap.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/09-icon-swap.md) — Icon swap
+- [10-success-check.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/10-success-check.md) — Success check
+- [11-avatar-group-hover.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/11-avatar-group-hover.md) — Avatar group hover
+- [12-error-state-shake.md](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/12-error-state-shake.md) — Error state shake
+- [_root.css](https://github.com/Jakubantalik/transitions-dev/blob/038b0bdc75375c2beed51d1e824c98cdc7b86f8c/skills/transitions-dev/_root.css) — the universal install block on its own, ready to import directly.

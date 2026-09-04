@@ -1,14 +1,16 @@
+---
+name: gsap-web
+description: This skill should be used when the user asks to "build a scroll animation", "add ScrollTrigger", "pin a section while scrolling", "scrub an animation to scroll", "create a hero timeline", "do a horizontal scroll section", "split text and animate words", "animate a layout change with GSAP Flip", "sync ScrollTrigger with Lenis", "Lenis smooth scroll jittery", "ScrollTrigger markers drift", "ScrollTrigger pins break with Lenis/Locomotive", or "set up smooth scroll with GSAP pinning". Covers GSAP timelines, ScrollTrigger, SplitText, Flip, and Lenis/Locomotive smooth-scroll sync for code-driven web motion.
+version: 0.1.0
+---
+
 <!--
   Origem:  https://github.com/iart-ai/web-animation-skills/blob/main/skills/gsap-web/SKILL.md
   Autor:   iart-ai
   Licença: MIT
   Commit:  b6dba3eb759726845a44163ff0bad70dd9e7fbb6
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: gsap-web
-description: This skill should be used when the user asks to "build a scroll animation", "add ScrollTrigger", "pin a section while scrolling", "scrub an animation to scroll", "create a hero timeline", "do a horizontal scroll section", "split text and animate words", "animate a layout change with GSAP Flip", "sync ScrollTrigger with Lenis", "Lenis smooth scroll jittery", "ScrollTrigger markers drift", "ScrollTrigger pins break with Lenis/Locomotive", or "set up smooth scroll with GSAP pinning". Covers GSAP timelines, ScrollTrigger, SplitText, Flip, and Lenis/Locomotive smooth-scroll sync for code-driven web motion.
-version: 0.1.0
----
+-->
 
 # GSAP for the Web
 

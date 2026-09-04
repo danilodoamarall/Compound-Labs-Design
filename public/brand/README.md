@@ -1,4 +1,4 @@
-# Marca do AI Builders Lab
+# Marca do Compound Design
 
 Estes arquivos são **gerados**. Não edite à mão.
 

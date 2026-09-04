@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/fixing-metadata/SKILL.md
-  Autor:   ibelick
-  Licença: MIT
-  Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: fixing-metadata
 description: >
   Audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, Open Graph
@@ -14,6 +8,14 @@ description: >
 version: 1.0.1
 license: MIT
 ---
+
+<!--
+  Origem:  https://github.com/ibelick/ui-skills/blob/main/skills/fixing-metadata/SKILL.md
+  Autor:   ibelick
+  Licença: MIT
+  Commit:  9f140de767e6e2d4adc3970eb68d24b3ec896f99
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 ## Workflow
 

@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/vuejs-ai/skills/blob/main/skills/vue-best-practices/SKILL.md
-  Autor:   vuejs-ai
-  Licença: MIT
-  Commit:  c9d355ff23f654309dd02006be671859df0a134c
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: vue-best-practices
 description: MUST be used for Vue.js tasks. Strongly recommends Composition API with `<script setup>` and TypeScript as the standard approach. Covers Vue 3, SSR, Volar, vue-tsc. Load for any Vue, .vue files, Vue Router, Pinia, or Vite with Vue work. ALWAYS use Composition API unless the project explicitly requires Options API.
 license: MIT
@@ -12,6 +6,14 @@ metadata:
   author: github.com/vuejs-ai
   version: "18.0.0"
 ---
+
+<!--
+  Origem:  https://github.com/vuejs-ai/skills/blob/main/skills/vue-best-practices/SKILL.md
+  Autor:   vuejs-ai
+  Licença: MIT
+  Commit:  c9d355ff23f654309dd02006be671859df0a134c
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
 
 # Vue Best Practices Workflow
 
@@ -55,14 +57,14 @@ These are essential, must-know foundations. Apply all of them in every Vue task 
 
 ### Reactivity
 
-- Must-read reference from `1.1`: [reactivity](references/reactivity.md)
+- Must-read reference from `1.1`: [reactivity](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/reactivity.md)
 - Keep source state minimal (`ref`/`reactive`), derive everything possible with `computed`.
 - Use watchers for side effects if needed.
 - Avoid recomputing expensive logic in templates.
 
 ### SFC structure and template safety
 
-- Must-read reference from `1.1`: [sfc](references/sfc.md)
+- Must-read reference from `1.1`: [sfc](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/sfc.md)
 - Keep SFC sections in this order: `<script>` → `<template>` → `<style>`.
 - Keep SFC responsibilities focused; split large components.
 - Keep templates declarative; move branching/derivation to script.
@@ -95,7 +97,7 @@ Entry/root and route view rule:
 
 ### Component data flow
 
-- Must-read reference from `1.1`: [component-data-flow](references/component-data-flow.md)
+- Must-read reference from `1.1`: [component-data-flow](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-data-flow.md)
 - Use props down, events up as the primary model.
 - Use `v-model` only for true two-way component contracts.
 - Use provide/inject only for deep-tree dependencies or shared context.
@@ -103,7 +105,7 @@ Entry/root and route view rule:
 
 ### Composables
 
-- Must-read reference from `1.1`: [composables](references/composables.md)
+- Must-read reference from `1.1`: [composables](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/composables.md)
 - Extract logic into composables when it is reused, stateful, or side-effect heavy.
 - Keep composable APIs small, typed, and predictable.
 - Separate feature logic from presentational components.
@@ -114,35 +116,35 @@ Entry/root and route view rule:
 
 Do not add these by default. Load the matching reference only when the requirement exists.
 
-- Slots: parent needs to control child content/layout -> [component-slots](references/component-slots.md)
-- Fallthrough attributes: wrapper/base components must forward attrs/events safely -> [component-fallthrough-attrs](references/component-fallthrough-attrs.md)
-- Built-in component `<KeepAlive>` for stateful view caching -> [component-keep-alive](references/component-keep-alive.md)
-- Built-in component `<Teleport>` for overlays/portals -> [component-teleport](references/component-teleport.md)
-- Built-in component `<Suspense>` for async subtree fallback boundaries -> [component-suspense](references/component-suspense.md)
+- Slots: parent needs to control child content/layout -> [component-slots](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-slots.md)
+- Fallthrough attributes: wrapper/base components must forward attrs/events safely -> [component-fallthrough-attrs](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-fallthrough-attrs.md)
+- Built-in component `<KeepAlive>` for stateful view caching -> [component-keep-alive](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-keep-alive.md)
+- Built-in component `<Teleport>` for overlays/portals -> [component-teleport](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-teleport.md)
+- Built-in component `<Suspense>` for async subtree fallback boundaries -> [component-suspense](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-suspense.md)
 - Animation-related features: pick the simplest approach that matches the required motion behavior.
-  - Built-in component `<Transition>` for enter/leave effects -> [transition](references/component-transition.md)
-  - Built-in component `<TransitionGroup>` for animated list mutations -> [transition-group](references/component-transition-group.md)
-  - Class-based animation for non-enter/leave effects -> [animation-class-based-technique](references/animation-class-based-technique.md)
-  - State-driven animation for user-input-driven animation -> [animation-state-driven-technique](references/animation-state-driven-technique.md)
+  - Built-in component `<Transition>` for enter/leave effects -> [transition](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-transition.md)
+  - Built-in component `<TransitionGroup>` for animated list mutations -> [transition-group](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-transition-group.md)
+  - Class-based animation for non-enter/leave effects -> [animation-class-based-technique](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/animation-class-based-technique.md)
+  - State-driven animation for user-input-driven animation -> [animation-state-driven-technique](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/animation-state-driven-technique.md)
 
 ### 3.2 Less-common optional features
 
 Use these only when there is explicit product or technical need.
 
-- Directives: behavior is DOM-specific and not a good composable/component fit -> [directives](references/directives.md)
-- Async components: heavy/rarely-used UI should be lazy loaded -> [component-async](references/component-async.md)
-- Render functions only when templates cannot express the requirement -> [render-functions](references/render-functions.md)
-- Plugins when behavior must be installed app-wide -> [plugins](references/plugins.md)
-- State management patterns: app-wide shared state crosses feature boundaries -> [state-management](references/state-management.md)
+- Directives: behavior is DOM-specific and not a good composable/component fit -> [directives](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/directives.md)
+- Async components: heavy/rarely-used UI should be lazy loaded -> [component-async](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/component-async.md)
+- Render functions only when templates cannot express the requirement -> [render-functions](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/render-functions.md)
+- Plugins when behavior must be installed app-wide -> [plugins](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/plugins.md)
+- State management patterns: app-wide shared state crosses feature boundaries -> [state-management](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/state-management.md)
 
 ## 4) Run performance optimization after behavior is correct
 
 Performance work is a post-functionality pass. Do not optimize before core behavior is implemented and verified.
 
-- Large list rendering bottlenecks -> [perf-virtualize-large-lists](references/perf-virtualize-large-lists.md)
-- Static subtrees re-rendering unnecessarily -> [perf-v-once-v-memo-directives](references/perf-v-once-v-memo-directives.md)
-- Over-abstraction in hot list paths -> [perf-avoid-component-abstraction-in-lists](references/perf-avoid-component-abstraction-in-lists.md)
-- Expensive updates triggered too often -> [updated-hook-performance](references/updated-hook-performance.md)
+- Large list rendering bottlenecks -> [perf-virtualize-large-lists](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/perf-virtualize-large-lists.md)
+- Static subtrees re-rendering unnecessarily -> [perf-v-once-v-memo-directives](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/perf-v-once-v-memo-directives.md)
+- Over-abstraction in hot list paths -> [perf-avoid-component-abstraction-in-lists](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/perf-avoid-component-abstraction-in-lists.md)
+- Expensive updates triggered too often -> [updated-hook-performance](https://github.com/vuejs-ai/skills/blob/c9d355ff23f654309dd02006be671859df0a134c/skills/vue-best-practices/references/updated-hook-performance.md)
 
 ## 5) Final self-check before finishing
 

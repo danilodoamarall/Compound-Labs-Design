@@ -1,14 +1,16 @@
+---
+name: bro
+description: "Re-explain the previous assistant message in a much simpler way — for when the reply made you go 'bro what'. Use /bro to get a plain-language version of the last answer."
+license: MIT
+---
+
 <!--
   Origem:  https://github.com/luchasarie/bro-skill/blob/main/SKILL.md
   Autor:   luchasarie
   Licença: MIT
   Commit:  3aa8c40b1241111f73ab5360e770f7512193a20e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: bro
-description: "Re-explain the previous assistant message in a much simpler way — for when the reply made you go 'bro what'. Use /bro to get a plain-language version of the last answer."
-license: MIT
----
+-->
 
 # /bro — say it simpler
 

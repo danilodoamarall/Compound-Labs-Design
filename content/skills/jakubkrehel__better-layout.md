@@ -1,13 +1,15 @@
+---
+name: better-layout
+description: Helps with grouping, alignment, reading order, progressive disclosure and other details that make a good layout.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/better-layout/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: better-layout
-description: Helps with grouping, alignment, reading order, progressive disclosure and other details that make a good layout.
----
+-->
 
 # Layout
 
@@ -19,7 +21,7 @@ Hit areas and focus behavior belong to `better-accessibility`. Radius, shadows a
 
 ## Group with space, not lines
 
-Space groups first, background shapes second, separator lines last and only where space alone can't carry the structure. The gap between groups must be at least 2× the gap within one (`8px` intra-group to `16px`+ inter-group), or the grouping reads as noise. Alignment edges and importance ordering are in [grouping-and-alignment.md](grouping-and-alignment.md).
+Space groups first, background shapes second, separator lines last and only where space alone can't carry the structure. The gap between groups must be at least 2× the gap within one (`8px` intra-group to `16px`+ inter-group), or the grouping reads as noise. Alignment edges and importance ordering are in [grouping-and-alignment.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-layout/grouping-and-alignment.md).
 
 ## Keep controls distinct from content
 
@@ -41,7 +43,7 @@ Progressive disclosure needs a visible affordance. Use the project's established
 
 ## Breathing room between targets
 
-Without an established density system, start with `12px` between adjacent bordered or filled controls and `24px` around borderless text- and icon-only ones. Compact layouts may use less, as long as `better-accessibility` hit areas don't overlap and the controls stay distinct. Layout margins and breakpoint recipes are in [spacing-and-adaptivity.md](spacing-and-adaptivity.md).
+Without an established density system, start with `12px` between adjacent bordered or filled controls and `24px` around borderless text- and icon-only ones. Compact layouts may use less, as long as `better-accessibility` hit areas don't overlap and the controls stay distinct. Layout margins and breakpoint recipes are in [spacing-and-adaptivity.md](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-layout/spacing-and-adaptivity.md).
 
 ## Inset buttons from the edges
 

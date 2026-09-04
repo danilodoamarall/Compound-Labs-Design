@@ -10,11 +10,16 @@
 //     para /main/, então o conteúdo muda debaixo do catálogo sem aviso.
 //  3. Só entra conteúdo de licença permissiva. Sem licença declarada significa
 //     todos os direitos reservados, e esses ficam como ponteiro.
+//  4. Os links relativos do SKILL.md (`references/…`, `../outra/SKILL.md`) são
+//     reescritos para a URL absoluta no commit fixado. Os arquivos vizinhos não
+//     vêm na cópia; sem isso, o agente é mandado abrir arquivos que não existem.
 //
 // Uso: node scripts/ingest-skills.mjs
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { join } from "node:path";
+import { blocoProcedencia, comProcedencia } from "./lib/provenance.mjs";
+import { enderecoLegivel, fixarNoCommit, reescreverLinks } from "./lib/links.mjs";
 
 /** O slug se repete entre autores (oito casos nas 269), então o nome do arquivo
  *  sai do pathSlug, que é único. Sem isso uma skill sobrescreve a outra. */
@@ -76,11 +81,18 @@ const notices = new Map();
 let copiadas = 0;
 let apontadas = 0;
 let falhas = 0;
+let linksReescritos = 0;
 
 for (const [i, s] of skills.entries()) {
   const repo = `${s.user}/${s.repo}`;
   const lic = porRepo.get(repo);
   const podeCopiar = lic?.balde === "copiar";
+
+  /*  Onde ler a skill na origem. O registro upstream deixa `githubUrl` vazio
+   *  quando a origem não é o GitHub (rams.ai) ou quando esqueceu de preencher
+   *  (cursor/plugins); nesses casos deriva-se da `rawUrl`. Nunca fica string
+   *  vazia: um ponteiro sem endereço não aponta para nada. */
+  const endereco = s.githubUrl || enderecoLegivel(s.rawUrl) || null;
 
   const base = {
     slug: s.slug,
@@ -92,7 +104,7 @@ for (const [i, s] of skills.entries()) {
     source: {
       author: s.user,
       repo: s.repo,
-      url: s.githubUrl,
+      url: endereco,
       license: lic?.spdx ?? null,
       licenseName: lic?.nome ?? null,
     },
@@ -104,7 +116,7 @@ for (const [i, s] of skills.entries()) {
       hosted: false,
       reason: lic?.spdx ? "licenca-restritiva" : "sem-licenca-declarada",
       // Sem conteúdo hospedado, o leitor vai à origem.
-      readAt: s.githubUrl,
+      readAt: endereco,
     });
     apontadas++;
     process.stdout.write(`\r  ${i + 1}/${skills.length}  ponteiro  ${s.slug.slice(0, 32).padEnd(32)}`);
@@ -118,38 +130,47 @@ for (const [i, s] of skills.entries()) {
   }
 
   try {
-    const res = await fetch(s.rawUrl, { headers: { "User-Agent": "ai-builders-lab-ingest" } });
+    const res = await fetch(s.rawUrl, { headers: { "User-Agent": "compound-design-ingest" } });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const md = await res.text();
 
-    // Procedência colada no arquivo: viaja junto se alguém copiar solto.
-    const cabecalho = [
-      "<!--",
-      `  Origem:  ${s.githubUrl}`,
-      `  Autor:   ${s.user}`,
-      `  Licença: ${lic.spdx}`,
-      sha ? `  Commit:  ${sha}` : null,
-      `  Copiado: ${HOJE} por scripts/ingest-skills.mjs`,
-      "-->",
-      "",
-      "",
-    ].filter(Boolean).join("\n");
+    /*  Procedência colada no arquivo: viaja junto se alguém copiar solto.
+     *
+     *  Vai DEPOIS do frontmatter, não antes. Um comentário antes do `---` da
+     *  primeira linha faz todo leitor de YAML desistir, e a skill perde nome,
+     *  descrição e licença para quem a carrega. */
+    const cabecalho = blocoProcedencia({
+      origem: s.githubUrl,
+      autor: s.user,
+      licenca: lic.spdx,
+      commit: sha,
+      data: HOJE,
+    });
 
-    writeFileSync(join(DESTINO, nomeArquivo(s.pathSlug)), cabecalho + md);
+    // A URL fixada no commit, para reproduzir a cópia exata. Troca o SEGMENTO
+    // do ref, seja ele main, master, canary ou qualquer outro branch.
+    const pinned = fixarNoCommit(s.rawUrl, sha);
+
+    // Links relativos viram URL absoluta no commit fixado (lib/links.mjs). Sem
+    // sha, resolvem contra o branch: pior que o commit, melhor que um arquivo
+    // que não existe.
+    const { texto, reescritos } = reescreverLinks(md, pinned ?? s.rawUrl);
+    linksReescritos += reescritos;
+
+    writeFileSync(join(DESTINO, nomeArquivo(s.pathSlug)), comProcedencia(texto, cabecalho));
     entradas.push({
       ...base,
       hosted: true,
       file: nomeArquivo(s.pathSlug),
-      bytes: md.length,
+      bytes: md.length, // o tamanho do original na origem
       fetchedAt: HOJE,
       commit: sha,
-      // A URL fixada no commit, para reproduzir a cópia exata.
-      pinned: sha ? s.rawUrl.replace("/main/", `/${sha}/`).replace("/master/", `/${sha}/`) : null,
+      pinned,
     });
     copiadas++;
     process.stdout.write(`\r  ${i + 1}/${skills.length}  copiada   ${s.slug.slice(0, 32).padEnd(32)}`);
   } catch (e) {
-    entradas.push({ ...base, hosted: false, reason: "falha-ao-buscar", error: String(e.message).slice(0, 60), readAt: s.githubUrl });
+    entradas.push({ ...base, hosted: false, reason: "falha-ao-buscar", error: String(e.message).slice(0, 60), readAt: endereco });
     falhas++;
     process.stdout.write(`\r  ${i + 1}/${skills.length}  FALHOU    ${s.slug.slice(0, 32).padEnd(32)}`);
   }
@@ -232,6 +253,7 @@ console.log(`copiadas:  ${copiadas}`);
 console.log(`ponteiros: ${apontadas}`);
 console.log(`falhas:    ${falhas}`);
 console.log(`peso:      ${(bytes / 1024).toFixed(0)} KB`);
+console.log(`links:     ${linksReescritos} relativos reescritos para o commit fixado`);
 console.log(`licenças:  ${Object.entries(porLicenca).map(([k, n]) => `${k} ${n}`).join(" · ")}`);
 console.log(`\nregistro:  content/skills-registry.json`);
 console.log(`atribuição: content/skills/ATTRIBUTION.md`);

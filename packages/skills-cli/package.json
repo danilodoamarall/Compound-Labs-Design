@@ -1,7 +1,7 @@
 {
-  "name": "@ai-builders-lab/skills",
-  "version": "1.0.0",
-  "description": "Navegue e busque skills de design engineering do catálogo do AI Builders Lab, direto do terminal.",
+  "name": "@compound-design/skills",
+  "version": "1.1.0",
+  "description": "Navegue e busque skills de design engineering do catálogo do Compound Design, direto do terminal.",
   "license": "MIT",
   "type": "module",
   "bin": {

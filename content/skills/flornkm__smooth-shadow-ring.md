@@ -1,13 +1,15 @@
+---
+name: smooth-shadow-ring
+description: Use when styling any elevated surface (card, dialog, popover, dropdown, menu, tooltip, sheet, toast) in a Tailwind project that has shadow-plugin installed. Prevents the double-border artifact caused by pairing a border/ring with a shadow, by routing elevation through the smooth-shadow-ring-* utilities.
+---
+
 <!--
   Origem:  https://github.com/flornkm/shadow-plugin/blob/main/.claude/skills/smooth-shadow-ring/SKILL.md
   Autor:   flornkm
   Licença: MIT
   Commit:  58886afd602555601abe2c1fb5f161a31662ea8b
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: smooth-shadow-ring
-description: Use when styling any elevated surface (card, dialog, popover, dropdown, menu, tooltip, sheet, toast) in a Tailwind project that has shadow-plugin installed. Prevents the double-border artifact caused by pairing a border/ring with a shadow, by routing elevation through the smooth-shadow-ring-* utilities.
----
+-->
 
 # Elevated surfaces: use smooth-shadow-ring, never border + shadow
 

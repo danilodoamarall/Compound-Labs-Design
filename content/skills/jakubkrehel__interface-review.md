@@ -1,14 +1,16 @@
+---
+name: interface-review
+disable-model-invocation: true
+description: Reviews your work across multiple categories like UI, typography, layout, color, writing and accessibility and gives you a detailed analysis of the findings.
+---
+
 <!--
   Origem:  https://github.com/jakubkrehel/skills/blob/main/skills/interface-review/SKILL.md
   Autor:   jakubkrehel
   Licença: MIT
   Commit:  267330e1adfc66a718fb65fa6918c1f06d0a689e
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: interface-review
-disable-model-invocation: true
-description: Reviews your work across multiple categories like UI, typography, layout, color, writing and accessibility and gives you a detailed analysis of the findings.
----
+-->
 
 # Change review
 
@@ -28,7 +30,7 @@ Read the change before forming an opinion of it. The stated intent decides what 
 
 ### 1. Resolve the change scope first
 
-The whole invocation is the target, so `/interface-review pr 482` reviews pull request 482. [Scope resolution](scope-resolution.md) holds the accepted targets and how each resolves.
+The whole invocation is the target, so `/interface-review pr 482` reviews pull request 482. [Scope resolution](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/interface-review/scope-resolution.md) holds the accepted targets and how each resolves.
 
 With no target supplied, resolve in this order and stop at the first match:
 
@@ -44,7 +46,7 @@ Exclude lockfiles, snapshots, generated output, vendored code and binaries, and 
 
 A clean tree with nothing ahead of the merge base means the user asked to review a change that does not exist. Never fall back to `HEAD~1..HEAD` on your own. The last commit is whatever happened to land, often a merge, often someone else's work, and a report on it is indistinguishable from a report on what the user meant.
 
-State the repository facts you found, then offer the routes and wait. [Nothing to review](scope-resolution.md#nothing-to-review) holds the facts to gather:
+State the repository facts you found, then offer the routes and wait. [Nothing to review](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/interface-review/scope-resolution.md#nothing-to-review) holds the facts to gather:
 
 - **The last commit**, `HEAD~1..HEAD`, named by short SHA and subject, so the user sees what they would get before choosing it.
 - **A target they name**: `pr <n>`, a branch, a ref, or a range, resolved per **Resolve the change scope first**.
@@ -60,11 +62,11 @@ A changed file is evidence, not the review subject. Its **blast radius** is the 
 
 Expand the blast radius one hop by default: the direct importers and callers. Expand a second hop only for design tokens, theme values and shared primitives, where one line reaches the whole product.
 
-Review at most five consumers, ordered by [the rule in Scope resolution](scope-resolution.md#expanding-to-consumers), then state how many you did not expand. A sweep with no bound cannot support the coverage it claims, and an unstated cutoff reads as completeness.
+Review at most five consumers, ordered by [the rule in Scope resolution](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/interface-review/scope-resolution.md#expanding-to-consumers), then state how many you did not expand. A sweep with no bound cannot support the coverage it claims, and an unstated cutoff reads as completeness.
 
 ### 4. Read the removed lines
 
-Regressions are invisible in the post-change state. Read the `-` side of every hunk against [Removed signals](removed-signals.md).
+Regressions are invisible in the post-change state. Read the `-` side of every hunk against [Removed signals](https://github.com/jakubkrehel/skills/blob/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/interface-review/removed-signals.md).
 
 A signal is a lead, not a finding. A removal is only a regression when nothing in the change replaces it, and the domain skill owns that judgement. Route each unmatched removal to its owner, report only what that skill confirms and status it `Regression`. That tells the author they broke something that worked rather than made a new mistake.
 

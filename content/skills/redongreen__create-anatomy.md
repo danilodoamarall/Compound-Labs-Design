@@ -1,13 +1,15 @@
+---
+name: create-anatomy
+description: Generate a visual anatomy annotation in Figma showing numbered markers on a component instance with an attribute table. Use when the user mentions "anatomy", "anatomy annotation", "component anatomy", "create anatomy", or wants to annotate a component's structural elements.
+---
+
 <!--
   Origem:  https://github.com/redongreen/uSpec/blob/main/skills/create-anatomy/SKILL.md
   Autor:   redongreen
   Licença: MIT
   Commit:  1e25e9b8bc2e694689ba0489594f38807a341f14
   Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
-name: create-anatomy
-description: Generate a visual anatomy annotation in Figma showing numbered markers on a component instance with an attribute table. Use when the user mentions "anatomy", "anatomy annotation", "component anatomy", "create anatomy", or wants to annotate a component's structural elements.
----
+-->
 
 # Create Anatomy Annotation
 

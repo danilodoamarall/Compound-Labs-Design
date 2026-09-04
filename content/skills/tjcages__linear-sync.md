@@ -1,10 +1,4 @@
-<!--
-  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-sync/SKILL.md
-  Autor:   tjcages
-  Licença: MIT
-  Commit:  09f07637b5e7b122b312dba0480386974173922b
-  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
--->---
+---
 name: linear-sync
 version: 1.0.2
 description: >-
@@ -15,9 +9,17 @@ description: >-
   NOT for first-time bootstrap (use linear-setup) or one-off CRUD.
 ---
 
+<!--
+  Origem:  https://github.com/tjcages/linear/blob/main/skills/linear-sync/SKILL.md
+  Autor:   tjcages
+  Licença: MIT
+  Commit:  09f07637b5e7b122b312dba0480386974173922b
+  Copiado: 2026-09-04 por scripts/ingest-skills.mjs
+-->
+
 # Linear sync
 
-Chat rules: [RESPONSE.md](./RESPONSE.md). Auth: [AUTH.md](./AUTH.md). Playbooks: [METHODOLOGY.md](./METHODOLOGY.md) §1a, §18, §21–§22, §26. Examples: [EXAMPLES.md](./EXAMPLES.md).
+Chat rules: [RESPONSE.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-sync/RESPONSE.md). Auth: [AUTH.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-sync/AUTH.md). Playbooks: [METHODOLOGY.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-sync/METHODOLOGY.md) §1a, §18, §21–§22, §26. Examples: [EXAMPLES.md](https://github.com/tjcages/linear/blob/09f07637b5e7b122b312dba0480386974173922b/skills/linear-sync/EXAMPLES.md).
 
 ## Step 0 — auth
 

@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 import { sections, sectionPath } from "@/lib/site";
-import { resourceHref } from "@/lib/resources";
+import { resourceHref, type IndexedResource, type IndexedSection } from "@/lib/resources";
 import index from "../../content/resources.json";
 
 export type SearchItem = {
@@ -37,15 +37,18 @@ export function buildSearchIndex(
     });
   }
 
-  for (const r of index.resources) {
-    const home = r.sections[0] as keyof typeof index.sections;
-    const section = index.sections[home];
+  const sectionsMeta = index.sections as unknown as Record<string, IndexedSection>;
+  for (const r of index.resources as unknown as IndexedResource[]) {
+    const home = r.sections[0];
+    const section = sectionsMeta[home];
     items.push({
       id: r.key,
-      group: labels.groups[home] ?? section[locale],
+      // O grupo é o rótulo da seção de origem, tenha ela página ou não: para a
+      // busca, "de onde veio" é informação; "para onde ir" é o href.
+      group: labels.groups[home] ?? section?.[locale] ?? home,
       label: locale === "pt" ? r.name : r.nameEn,
       desc: locale === "pt" ? r.desc.pt : r.desc.en,
-      href: resourceHref(r, locale, index.sections as never, home),
+      href: resourceHref(r, locale, sectionsMeta, home),
       keywords: `${r.tags.join(" ")} ${r.sections.join(" ")}`,
     });
   }
