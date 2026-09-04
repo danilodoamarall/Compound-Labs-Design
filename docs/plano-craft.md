@@ -38,7 +38,8 @@ Nenhum item é opinião. Cada um tem como medir.
 
 ### 2. Cor e contraste
 - [ ] Todo texto ≥ 4,5:1 (normal) ou 3:1 (≥ 24px), **medido em OKLab com composição de alpha**, nos dois temas. O script de auditoria já existe; roda por página.
-- [ ] Tokens em OKLCH com L uniforme por papel (texto, muted, borda). `--warm-text` foi o primeiro; a paleta inteira segue.
+- [x] Tokens em OKLCH: os 107 convertidos sem perda em 4 de setembro (hex em comentário ao lado, para quem procurar a cor antiga).
+- [ ] L uniforme por papel (texto, muted, borda) nos dois temas, ajustado com as medições de contraste — a leitura já existe (`teal` 57, `warm` 59; textos secundários 45/44/46 no claro).
 - [ ] Nenhuma cor escrita fora de `globals.css`, exceto as capas dos cards, que são dado (`cover` em `site.ts`).
 
 ### 3. Movimento

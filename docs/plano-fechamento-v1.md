@@ -176,8 +176,12 @@ forma medível, e os sete portões que toda interface passa.
        `better-typography`, `better-colors`, `better-accessibility`,
        `better-layout`, `better-writing`, `interface-review`, `break`, `variant`,
        `explain-interface`. Findings de prioridade alta corrigidos na rodada.
-3. [ ] Fundações: paleta em OKLCH com L uniforme; escala tipográfica declarada e
-       auditada por página.
+3. [~] Fundações: **paleta convertida para OKLCH** (107 tokens, sem perda: o
+       round-trip oklch→sRGB reproduz cada hex com desvio ≤ 1/255; o hex fica em
+       comentário ao lado). A leitura de L por papel já mostra `teal` 57 e `warm`
+       59 no tema claro — pesos visuais quase iguais, como o oklch.fyi pede.
+       Falta: ajustar L em passos uniformes por papel depois das medições de
+       contraste da pesquisa, e declarar/auditar a escala tipográfica por página.
 4. [x] Repositório: LICENSE (MIT para o código; conteúdo e skills com as próprias
        licenças), CONTRIBUTING, CI real (lint, tipos, testes, build com as
        checagens) no lugar do workflow de modelo, `.nvmrc`, descrição e homepage
