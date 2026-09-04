@@ -5,14 +5,15 @@ import { listArticles } from "@/lib/articles";
 import { HeroCard } from "@/components/site/hero-card";
 import { StageSection } from "@/components/site/stage-section";
 import { StageResources, type StageCard } from "@/components/site/stage-resources";
+import {
+  VisualArtigos, VisualRadar, VisualAiTools, VisualSkills,
+  VisualWorkflow, VisualDocs, VisualFaq, VisualBrowse, VisualPadrao,
+} from "@/components/site/bento-visuals";
+import pages from "../../../content/pages.json";
+import workflow from "../../../content/workflow.json";
 import { StageArticles } from "@/components/site/stage-articles";
 import { StageSubscribe } from "@/components/site/stage-subscribe";
 import index from "../../../content/resources.json";
-
-const ICON: Record<string, string> = {
-  articles: "A", radar: "R", aiTools: "AI", skillsAgents: "S",
-  workflow: "W", docs: "D", faq: "?",
-};
 
 /** Os spans somam 12 em cada linha, então nenhuma seção sobra sozinha no fim:
  *  5+3+4, depois 4+4+4. Artigos e Radar ficam maiores por serem a porta de
@@ -41,6 +42,19 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     privacy: tsub("privacy"),
   };
 
+  const etapas = [...new Set(workflow.tools.map((t) => t.stage))];
+  const perguntas = pages.faq[locale].map((f) => f.q);
+
+  const visuais: Record<string, React.ReactNode> = {
+    articles: <VisualArtigos titles={articles.map((a) => a.title)} />,
+    radar: <VisualRadar />,
+    aiTools: <VisualAiTools />,
+    skillsAgents: <VisualSkills />,
+    workflow: <VisualWorkflow stages={etapas} />,
+    docs: <VisualDocs />,
+    faq: <VisualFaq questions={perguntas} />,
+  };
+
   const cards: StageCard[] = [
     ...sections.map((s) => ({
       key: s.key,
@@ -48,8 +62,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       desc: th(`sections.${s.key}.short` as "sections.articles.short"),
       path: sectionPath(s.href, locale),
       cover: [...s.cover] as [string, string],
-      icon: ICON[s.key] ?? "•",
       span: SPAN[s.key] ?? 4,
+      visual: visuais[s.key] ?? <VisualPadrao />,
     })),
     {
       key: "browse",
@@ -57,8 +71,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       desc: t("browseCardDesc"),
       path: `/${locale}/${locale === "pt" ? "explorar" : "browse"}`,
       cover: ["#3f4a52", "#171c1b"] as [string, string],
-      icon: "∗",
       count: String(index.resources.length),
+      visual: <VisualBrowse total={index.resources.length} />,
       span: SPAN.browse,
     },
   ];
