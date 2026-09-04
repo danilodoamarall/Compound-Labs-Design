@@ -325,7 +325,7 @@ function BentoCard({
           <span className="flex items-baseline gap-2">
             {/* O indice em mono da a grade uma ordem de leitura e um segundo
                 nivel tipografico, como o rotulo dos cards da referencia. */}
-            <span className="font-mono text-[10.5px] tabular-nums text-[var(--stage-faint)]">
+            <span className="font-mono text-[11px] tabular-nums text-[var(--stage-faint)]">
               {String(indice).padStart(2, "0")}
             </span>
             <span className="text-[15px] font-semibold text-[var(--stage-fg)]">{card.title}</span>
@@ -338,7 +338,7 @@ function BentoCard({
               <span className="ml-auto font-mono text-[11px] tabular-nums text-[var(--stage-dim)]">{card.count}</span>
             ) : null}
           </span>
-          <span className="mt-1.5 block text-[13px] leading-[20px] text-[var(--stage-dim)]">{card.desc}</span>
+          <span className="mt-1.5 block text-[13px] leading-[20px] text-pretty text-[var(--stage-dim)]">{card.desc}</span>
         </span>
       </motion.a>
     </motion.li>

@@ -26,7 +26,7 @@ export function StageSection({
           {headingExtra}
           <h2 className="stage-h2 relative max-w-[46rem] text-balance">{title}</h2>
           {dek ? (
-            <p className="relative mt-4 max-w-[540px] text-[16px] leading-[26px] text-[var(--stage-dim)] sm:text-[18px] sm:leading-[28px]">
+            <p className="relative mt-4 max-w-[540px] text-[16px] leading-[26px] text-pretty text-[var(--stage-dim)] sm:text-[18px] sm:leading-[28px]">
               {dek}
             </p>
           ) : null}

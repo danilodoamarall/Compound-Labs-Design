@@ -17,7 +17,7 @@ export async function SiteFooter() {
             <LabsMark size={24} idPrefix="ftr" />
             {t("Site.name")}
           </p>
-          <p className="mt-1.5 font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">{t("Site.kind")}</p>
+          <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">{t("Site.kind")}</p>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">{t("Site.tagline")}</p>
           <p className="mt-4 text-sm">
             <span className="text-muted-foreground">{t("Site.madeBy")} </span>

@@ -280,9 +280,9 @@
     "curatorRole": "Design Engineer at Pitang Labs",
     "badge": "AI-native framework",
     "heroTitle": "The AI-native framework for people who design with AI.",
-    "ctaPrimary": "Install the CLI",
-    "ctaSecondary": "Connect over MCP",
-    "docsCta": "New here? See how to use it"
+    "ctaPrimary": "See the AI tools",
+    "ctaSecondary": "How to use",
+    "docsCta": "New here? Read the documentation"
   },
   "Search": {
     "trigger": "Search",

@@ -180,6 +180,8 @@
   }
   .measure {
     max-width: 68ch;
+    /* Evita a palavra sozinha na última linha dos parágrafos e deks. */
+    text-wrap: pretty;
   }
   .tabular {
     font-variant-numeric: tabular-nums;

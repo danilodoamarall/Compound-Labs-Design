@@ -68,7 +68,8 @@ export default async function SkillsPage({ params, searchParams }: PageProps<"/[
         {t("provenance", { hosted: registry.counts.hosted, pointer: registry.counts.pointer })}
       </p>
 
-      <h2 className="eyebrow mt-12">{t("agentStart")}</h2>
+      {/* Âncora do CTA "AI Tools" do hero: as duas portas para o agente. */}
+      <h2 id="agente" className="eyebrow mt-12 scroll-mt-24">{t("agentStart")}</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {portas.map(({ chave, rotulo, Icone, texto }) => (
           <a

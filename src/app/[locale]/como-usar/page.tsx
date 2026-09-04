@@ -59,7 +59,7 @@ export default async function ComoUsarPage({ params }: PageProps<"/[locale]/como
           saber que acabou em três. */}
       <section aria-labelledby="resumo" className="mt-12 rounded-2xl border border-border bg-card p-6 sm:p-8">
         <h2 id="resumo" className="eyebrow">{t("summaryTitle")}</h2>
-        <ol className="mt-4 space-y-3">
+        <ol className="mt-4 max-w-[68ch] space-y-3">
           {conteudo.summary.map((frase, i) => (
             <li key={i} className="flex gap-3 text-[17px] leading-[27px]">
               <span className="mt-[5px] flex size-6 shrink-0 items-center justify-center rounded-full border border-border font-mono text-[11.5px] tabular-nums text-muted-foreground">

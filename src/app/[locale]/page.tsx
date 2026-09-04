@@ -85,14 +85,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           curator={t("curator")}
           curatorRole={t("curatorRole")}
           curatorHref={authorLinkedIn}
-          // Os dois caminhos de entrada da ferramenta, não duas seções de
-          // conteúdo: quem chega aqui está a um comando de usar o catálogo.
-          primary={{ label: t("ctaPrimary"), href: navPath("cli", locale) }}
-          secondary={{ label: t("ctaSecondary"), href: navPath("mcp", locale) }}
-          // Quem chegou sem saber o que é um agente precisa de um mapa antes de
-          // qualquer comando. O terceiro caminho leva ao "Como usar": três
-          // passos por papel, com a documentação a um clique de lá.
-          tertiary={{ label: t("docsCta"), href: navPath("howTo", locale) }}
+          // Duas portas: as AI Tools (CLI e MCP, na seção "Agente, comece por
+          // aqui" do catálogo) para quem já tem um agente, e o "Como usar" para
+          // quem quer o mapa em três passos antes de qualquer comando.
+          primary={{ label: t("ctaPrimary"), href: `${navPath("skillsAgents", locale)}#agente` }}
+          secondary={{ label: t("ctaSecondary"), href: navPath("howTo", locale) }}
+          // A documentação completa fica como terceiro caminho, discreto.
+          tertiary={{ label: t("docsCta"), href: navPath("docs", locale) }}
         />
       </div>
 
