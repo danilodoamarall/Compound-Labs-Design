@@ -96,25 +96,17 @@ jobs:
         if: steps.token.outputs.ok == 'true'
         run: npm i -g vercel@latest
 
-      - name: Puxa configuração e variáveis de produção
+      - name: Publica em produção
         if: steps.token.outputs.ok == 'true'
-        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
-
-      - name: Build de produção
-        if: steps.token.outputs.ok == 'true'
-        # O token do Actions autentica a chamada à API do GitHub que conta as
-        # estrelas do repositório, para o build não cair no limite por IP.
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: vercel build --prod --token="$VERCEL_TOKEN"
-
-      - name: Publica o build já pronto
-        if: steps.token.outputs.ok == 'true'
+        # Envia a fonte num único .tgz e deixa a Vercel construir. O build
+        # pré-pronto (--prebuilt) subia milhares de arquivos novos por execução
+        # e estourava o limite de 5.000 arquivos por dia do plano gratuito
+        # ("api-upload-free"). O CI já validou o mesmo código no job anterior.
         # Três tentativas: o upload é a única etapa que depende da rede entre o
         # runner e a Vercel, e um timeout isolado não deve derrubar o deploy.
         run: |
           for tentativa in 1 2 3; do
-            if vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"; then exit 0; fi
+            if vercel deploy --prod --yes --archive=tgz --token="$VERCEL_TOKEN"; then exit 0; fi
             echo "tentativa $tentativa falhou; aguardando 20s"
             sleep 20
           done
