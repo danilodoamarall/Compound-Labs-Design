@@ -6,6 +6,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { attribution, findSkill, formatStars, rankedSkills, readSkillBody, registry, repoSinais } from "@/lib/skills";
 import { CLI_PACKAGE } from "@/lib/site-url";
 import { CopyCommand } from "@/components/site/copy-command";
+import { SkillMarkdown } from "@/components/site/skill-markdown";
 
 const HOSPEDADAS = registry.skills.filter((s) => s.hosted);
 const paraParam = (pathSlug: string) => pathSlug.replace("/", "__");
@@ -86,9 +87,9 @@ export default async function SkillPage({ params }: PageProps<"/[locale]/skills-
           </div>
 
           <h2 className="eyebrow mt-10">{t("content")}</h2>
-          <pre className="mt-3 overflow-x-auto whitespace-pre-wrap rounded-lg border border-border bg-card p-5 font-mono text-[12.5px] leading-relaxed">
-            <code>{markdown}</code>
-          </pre>
+          <div className="mt-4">
+            <SkillMarkdown>{markdown}</SkillMarkdown>
+          </div>
 
           {relacionadas.length > 0 ? (
             <>

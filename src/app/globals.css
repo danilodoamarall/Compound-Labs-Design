@@ -265,6 +265,31 @@
   .prose-hub p { max-width: 68ch; margin: 0 0 1.1em; line-height: 1.65; }
   .prose-hub ul { max-width: 68ch; padding-left: 1.2em; margin: 0 0 1.1em; }
   .prose-hub li { margin: 0 0 0.5em; }
+
+  /* Leitura de uma skill: markdown de terceiros como texto, nao como <pre>. */
+  .skill-md { font-size: 16px; line-height: 1.65; color: var(--foreground); max-width: 68ch; }
+  .skill-md > :first-child { margin-top: 0; }
+  .skill-md h1, .skill-md h2, .skill-md h3, .skill-md h4 { font-family: var(--font-serif); font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; margin: 1.8em 0 0.6em; }
+  .skill-md h1 { font-size: 1.6em; }
+  .skill-md h2 { font-size: 1.3em; }
+  .skill-md h3 { font-size: 1.1em; }
+  .skill-md h4 { font-size: 1em; text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--font-mono); color: var(--muted-foreground); }
+  .skill-md p { margin: 0 0 1.1em; }
+  .skill-md ul, .skill-md ol { padding-left: 1.4em; margin: 0 0 1.1em; }
+  .skill-md li { margin: 0 0 0.4em; }
+  .skill-md li > ul, .skill-md li > ol { margin: 0.4em 0 0.4em; }
+  .skill-md strong { font-weight: 600; }
+  .skill-md :not(pre) > code { font-family: var(--font-mono); font-size: 0.86em; background: var(--muted); padding: 0.12em 0.36em; border-radius: 4px; word-break: break-word; }
+  .skill-md pre { font-family: var(--font-mono); font-size: 13px; line-height: 1.55; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1em 1.15em; overflow-x: auto; margin: 0 0 1.2em; }
+  .skill-md pre code { background: none; padding: 0; font-size: inherit; }
+  .skill-md blockquote { border-left: 3px solid var(--border); padding-left: 1em; margin: 0 0 1.1em; color: var(--muted-foreground); }
+  .skill-md hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+  .skill-md-table { overflow-x: auto; margin: 0 0 1.2em; border: 1px solid var(--border); border-radius: 10px; }
+  .skill-md-table table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  .skill-md-table th, .skill-md-table td { text-align: left; padding: 0.55em 0.85em; border-bottom: 1px solid var(--border); }
+  .skill-md-table th { font-weight: 600; background: var(--muted); white-space: nowrap; }
+  .skill-md-table tr:last-child td { border-bottom: 0; }
+  .skill-md img { border-radius: 8px; margin: 0.5em 0 1.1em; }
 }
 
 /* ===== Palco do topo, no modelo de vercel.com/design ===== */
