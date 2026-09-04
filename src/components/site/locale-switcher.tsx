@@ -24,14 +24,16 @@ export function LocaleSwitcher({ label }: { label: string }) {
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   return (
-    <nav aria-label={label} className="flex items-center gap-1 font-mono text-xs">
+    // Controle segmentado de 40px, com 4 de respiro interno: raio externo 8,
+    // interno 4, concêntricos. É um controle, então tem borda como a busca.
+    <nav aria-label={label} className="flex h-10 items-center gap-1 rounded-lg border border-border p-[3px] font-mono text-[12px]">
       {routing.locales.map((l) => (
         <Link
           key={l}
           href={switchLocalePath(pathname, locale, l)}
           hrefLang={l === "pt" ? "pt-BR" : "en"}
           aria-current={l === locale ? "true" : undefined}
-          className={`rounded px-2 py-1 uppercase tracking-wide transition-colors ${l === locale ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:text-foreground"}`}
+          className={`inline-flex h-full items-center rounded px-2 uppercase tracking-wide transition-colors ${l === locale ? "bg-accent text-accent-foreground" : "text-muted-foreground hover:text-foreground"}`}
         >
           {l === "pt" ? "PT" : "EN"}
         </Link>

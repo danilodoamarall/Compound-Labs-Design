@@ -401,6 +401,9 @@
     "summaryTitle": "Em dois minutos",
     "stepsLabel": "Três passos",
     "notYou": "Não se encaixou em nenhum?",
-    "notYouCta": "A documentação explica tudo do zero"
+    "notYouCta": "A documentação explica tudo do zero",
+    "progressLabel": "Passos",
+    "open": "Abrir",
+    "pathPages": "Páginas deste caminho"
   }
 }

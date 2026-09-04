@@ -33,7 +33,7 @@ export default async function ResearchPage({ params }: PageProps<"/[locale]/rese
   }));
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 pb-20 pt-14">
+    <main className="mx-auto w-full max-w-5xl px-6 pb-20 pt-14">
       <p className="eyebrow">{survey.meta.title}</p>
       <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
         {t("researchTitle")}

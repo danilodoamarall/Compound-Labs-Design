@@ -20,7 +20,7 @@ export function StageSection({
   headingExtra?: ReactNode;
 }) {
   return (
-    <section id={id} className="stage-anchor relative w-full px-5 py-14 sm:py-20">
+    <section id={id} className="stage-anchor relative w-full px-6 py-14 sm:py-20">
       <div className="mx-auto w-full max-w-[1185px]">
         <div className="relative">
           {headingExtra}

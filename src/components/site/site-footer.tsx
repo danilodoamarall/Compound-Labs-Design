@@ -11,7 +11,7 @@ export async function SiteFooter() {
 
   return (
     <footer className="mt-24 border-t border-border">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <p className="flex items-center gap-2 font-display text-xl font-semibold">
             <LabsMark size={24} idPrefix="ftr" />

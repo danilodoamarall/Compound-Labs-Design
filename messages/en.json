@@ -401,6 +401,9 @@
     "summaryTitle": "In two minutes",
     "stepsLabel": "Three steps",
     "notYou": "None of these fit?",
-    "notYouCta": "The documentation explains everything from scratch"
+    "notYouCta": "The documentation explains everything from scratch",
+    "progressLabel": "Steps",
+    "open": "Open",
+    "pathPages": "Pages on this path"
   }
 }

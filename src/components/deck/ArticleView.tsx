@@ -50,7 +50,7 @@ export async function ArticleView({ slug, locale, mode }: { slug: string; locale
   if (mode === "present") return body;
 
   return (
-    <main className="mx-auto w-full max-w-4xl px-5 pb-16 pt-12">
+    <main className="mx-auto w-full max-w-4xl px-6 pb-16 pt-12">
       <header className="mb-12 border-b border-border pb-10">
         <p className="eyebrow">
           {article.series} · {t("part", { n: article.order, total: article.total })}

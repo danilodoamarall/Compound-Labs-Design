@@ -15,7 +15,7 @@ export function ThemeToggle({ label }: { label: string }) {
       type="button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       aria-label={label}
-      className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+      className="inline-flex size-10 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
     >
       <span className="relative grid size-[18px] place-items-center">
         <Moon size={18} aria-hidden className="col-start-1 row-start-1 transition-opacity duration-200 dark:opacity-0" />

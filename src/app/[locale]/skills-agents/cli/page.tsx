@@ -29,7 +29,7 @@ export default async function CliPage({ params }: PageProps<"/[locale]/skills-ag
   const ts = await getTranslations("Skills");
 
   return (
-    <main className="mx-auto w-full max-w-3xl px-5 pb-20 pt-12">
+    <main className="mx-auto w-full max-w-3xl px-6 pb-20 pt-12">
       <p className="eyebrow">
         <a href={`/${locale}/skills-agents`} className="hover:text-foreground">{ts("title")}</a>
         <span aria-hidden className="mx-2 text-muted-foreground/40">/</span>

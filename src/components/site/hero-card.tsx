@@ -46,7 +46,7 @@ export function HeroCard({
 }) {
   return (
     <section className="w-full px-4 pt-6 sm:px-6">
-      <div className="relative isolate mx-auto flex w-full max-w-[1217px] flex-col items-center justify-center overflow-hidden rounded-[30px] px-5 py-16 text-center sm:py-20">
+      <div className="relative isolate mx-auto flex w-full max-w-[1217px] flex-col items-center justify-center overflow-hidden rounded-[30px] px-6 py-16 text-center sm:py-20">
         <MoltenBackdrop className="-z-10" color1="#0b8a74" color2="#1f7a8c" color3="#c9571c" />
 
         {/* Véu com piso, não com desvanecimento até zero.

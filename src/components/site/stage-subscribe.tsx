@@ -23,7 +23,7 @@ export function StageSubscribe({
   labels: SubscribeLabels;
 }) {
   return (
-    <section id={id} className="stage-anchor relative w-full overflow-hidden px-5 py-16 sm:py-24">
+    <section id={id} className="stage-anchor relative w-full overflow-hidden px-6 py-16 sm:py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.55]"

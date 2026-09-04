@@ -25,7 +25,7 @@ export default async function WorkflowPage({ params }: PageProps<"/[locale]/work
   })).filter((g) => g.items.length > 0);
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 pb-20 pt-14">
+    <main className="mx-auto w-full max-w-5xl px-6 pb-20 pt-14">
       <p className="eyebrow">{t("title")} · {t("count", { count: workflow.tools.length })}</p>
       <h1 className="font-display mt-3 text-4xl font-semibold sm:text-5xl">{t("title")}</h1>
       <p className="measure mt-5 text-lg text-muted-foreground">{t("dek")}</p>

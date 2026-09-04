@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowUpRight } from "lucide-react";
 import type { Locale } from "@/i18n/routing";
 import { navPath, sections, type NavKey } from "@/lib/site";
-import { CopyCommand } from "@/components/site/copy-command";
+import { HowToPersona } from "@/components/site/howto-persona";
+import { Marker } from "@/components/ui/marker";
 import pages from "../../../../content/pages.json";
 
 type Passo = { text: string; nav: NavKey };
@@ -43,13 +43,16 @@ export default async function ComoUsarPage({ params }: PageProps<"/[locale]/como
   setRequestLocale(locale);
   const t = await getTranslations("HowTo");
   const tn = await getTranslations("Nav");
-  const ts = await getTranslations("Skills");
   const conteudo = pages.howTo[locale] as ComoUsar;
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 pb-24 pt-14">
+    <main className="mx-auto w-full max-w-5xl px-6 pb-24 pt-14">
       <p className="eyebrow">{t("title")}</p>
-      <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{t("title")}</h1>
+      {/* O sublinhado à mão do Iconiq se desenha ao entrar na tela: é o único
+          gesto do título, e diz que a página é um mapa, não a documentação. */}
+      <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
+        <Marker variant="underline" color="text-teal">{t("title")}</Marker>
+      </h1>
       <p className="measure mt-5 text-lg leading-relaxed text-muted-foreground">{t("dek")}</p>
 
       {/* O resumo: três frases, uma ideia por linha, numeradas para o olho
@@ -70,51 +73,29 @@ export default async function ComoUsarPage({ params }: PageProps<"/[locale]/como
 
       {/* Um cartão por papel. A cor da seção de destino entra como um ponto ao
           lado do papel: pista, não decoração. */}
+      {/* Um cartão por papel, no Setup Checklist do Iconiq: a pessoa marca os
+          passos que já fez. min-w-0 na célula: sem isso o comando longo dita a
+          largura mínima da coluna e o card estoura a grade no telefone. */}
       <ul className="mt-6 grid gap-4 md:grid-cols-2">
-        {conteudo.personas.map((p) => {
-          const cor = CORES[p.nav] ?? ["#3f4a52", "#171c1b"];
-          // min-w-0: sem isso o comando longo dita a largura mínima da coluna
-          // e o card estoura a grade no telefone.
-          return (
-            <li key={p.id} id={p.id} className="flex min-w-0 flex-col rounded-2xl border border-border bg-card p-6 scroll-mt-24 sm:p-7">
-              <p className="flex items-center gap-2">
-                <span
-                  aria-hidden
-                  className="size-2.5 shrink-0 rounded-full"
-                  style={{ background: `linear-gradient(150deg, ${cor[0]}, ${cor[1]})` }}
-                />
-                <span className="eyebrow">{p.role}</span>
-              </p>
-              <h2 className="font-display mt-3 text-[22px] font-semibold leading-snug tracking-tight text-balance">{p.gain}</h2>
-
-              <ol className="mt-5 space-y-3" aria-label={t("stepsLabel")}>
-                {p.steps.map((passo, i) => (
-                  <li key={i} className="flex gap-3">
-                    <span className="mt-[3px] flex size-6 shrink-0 items-center justify-center rounded-full border border-border font-mono text-[11.5px] tabular-nums text-muted-foreground">
-                      {i + 1}
-                    </span>
-                    <span className="text-[15px] leading-[24px]">
-                      {passo.text}{" "}
-                      <a
-                        href={navPath(passo.nav, locale)}
-                        className="inline-flex items-center gap-0.5 whitespace-nowrap text-teal-deep underline decoration-teal-deep/30 underline-offset-4 transition-colors hover:decoration-teal-deep"
-                      >
-                        {tn(passo.nav as "articles")}
-                        <ArrowUpRight size={12} aria-hidden />
-                      </a>
-                    </span>
-                  </li>
-                ))}
-              </ol>
-
-              {p.code ? (
-                <div className="mt-5 min-w-0 max-w-full overflow-x-auto">
-                  <CopyCommand command={p.code} copyLabel={ts("copyCommand")} />
-                </div>
-              ) : null}
-            </li>
-          );
-        })}
+        {conteudo.personas.map((p) => (
+          <li key={p.id} id={p.id} className="min-w-0 scroll-mt-24">
+            <HowToPersona
+              id={p.id}
+              role={p.role}
+              gain={p.gain}
+              cor={CORES[p.nav] ?? ["#3f4a52", "#171c1b"]}
+              steps={p.steps.map((passo, i) => ({
+                id: String(i + 1),
+                title: passo.text,
+                page: tn(passo.nav as "articles"),
+                href: navPath(passo.nav, locale),
+              }))}
+              code={p.code}
+              cta={{ label: `${t("open")} ${tn(p.nav as "articles")}`, href: navPath(p.nav, locale) }}
+              labels={{ progress: t("progressLabel"), steps: t("stepsLabel"), pathPages: t("pathPages") }}
+            />
+          </li>
+        ))}
       </ul>
 
       <p className="mt-10 text-[16px] leading-[26px] text-muted-foreground">

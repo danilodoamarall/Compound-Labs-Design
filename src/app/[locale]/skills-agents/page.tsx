@@ -59,7 +59,7 @@ export default async function SkillsPage({ params, searchParams }: PageProps<"/[
   ];
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-5 pb-20 pt-14">
+    <main className="mx-auto w-full max-w-5xl px-6 pb-20 pt-14">
       <p className="eyebrow">{t("title")}</p>
       <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{t("title")}</h1>
       <p className="measure mt-5 text-lg text-muted-foreground">{t("dek")}</p>

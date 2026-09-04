@@ -78,11 +78,17 @@ export function MegaNav({
 
   return (
     <div ref={raiz} className="relative" onMouseLeave={() => setAberto(null)}>
-      <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-3 px-5">
+      {/* Barra no grid de 8: 56 de altura, controles de 40 (8 acima e abaixo),
+          8 entre controles, 24 de margem lateral. Dentro dos controles a meia
+          unidade (4 e 12) vale para o espaço entre ícone e texto e o padding. */}
+      <div className="mx-auto flex h-14 w-full max-w-6xl items-center gap-4 px-6">
         {logo}
 
-        {/* Um gatilho por grupo, em vez de cada destino em linha. */}
-        <nav aria-label={labels.nav} className="ml-auto hidden items-center gap-0.5 md:flex">
+        {/* Um gatilho por grupo, em vez de cada destino em linha. O menu de
+            mesa entra em 1024px, que é onde os quatro rótulos cabem numa linha
+            só; abaixo disso a sanfona assume. Os rótulos nunca quebram: se não
+            couberem, o ponto de quebra está errado, não o texto. */}
+        <nav aria-label={labels.nav} className="ml-auto hidden items-center gap-1 lg:flex">
           {groups.map((g) => {
             const on = aberto === g.key;
             return (
@@ -94,23 +100,26 @@ export function MegaNav({
                 onMouseEnter={() => setAberto(g.key)}
                 onFocus={() => setAberto(g.key)}
                 onClick={() => setAberto(on ? null : g.key)}
-                className={`inline-flex h-9 items-center gap-1.5 rounded-md px-3 text-[13.5px] outline-hidden transition-colors focus-visible:ring-2 focus-visible:ring-current ${
-                  on ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                className={`inline-flex h-10 items-center gap-1 whitespace-nowrap rounded-lg px-2 text-[14px] outline-hidden transition-colors focus-visible:ring-2 focus-visible:ring-current xl:px-3 ${
+                  on ? "bg-accent text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {g.label}
                 <ChevronDown
-                  size={13}
+                  size={14}
+                  strokeWidth={1.75}
                   aria-hidden
-                  className="transition-transform duration-200"
-                  style={{ transform: on ? "rotate(180deg)" : undefined }}
+                  // Meio pixel para baixo: a seta é assimétrica e, centrada na
+                  // geometria, parece alta ao lado da linha de base do texto.
+                  className="translate-y-px transition-transform duration-200"
+                  style={{ transform: on ? "translateY(1px) rotate(180deg)" : undefined }}
                 />
               </button>
             );
           })}
         </nav>
 
-        <div className="ml-auto flex items-center gap-1.5 md:ml-3">
+        <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-4">
           {actions}
           <button
             type="button"
@@ -118,7 +127,7 @@ export function MegaNav({
             aria-controls={`${painelId}-sanfona`}
             aria-label={mobile ? labels.close : labels.open}
             onClick={() => setMobile((v) => !v)}
-            className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground outline-hidden focus-visible:ring-2 focus-visible:ring-current md:hidden"
+            className="inline-flex size-10 items-center justify-center rounded-lg text-muted-foreground outline-hidden transition-colors hover:bg-accent hover:text-foreground focus-visible:ring-2 focus-visible:ring-current lg:hidden"
           >
             {mobile ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -136,11 +145,11 @@ export function MegaNav({
             animate={{ opacity: 1, y: 0 }}
             exit={reduced ? { opacity: 0 } : { opacity: 0, y: -6 }}
             transition={{ duration: duracao, ease: EASE.quickOut }}
-            className={`absolute inset-x-0 top-full hidden border-t md:block ${
+            className={`absolute inset-x-0 top-full hidden border-t lg:block ${
               dark ? "border-white/[0.07] bg-[#0d0d0d]/95" : "border-border bg-card/95"
             } backdrop-blur-xl`}
           >
-            <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-8 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]">
+            <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-8 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]">
               {/* O conteúdo do grupo troca sem o painel piscar. */}
               <AnimatePresence mode="wait">
                 <motion.ul
@@ -156,7 +165,7 @@ export function MegaNav({
                       <a
                         href={l.href}
                         onClick={() => setAberto(null)}
-                        className="group block rounded-lg p-3 outline-hidden transition-colors hover:bg-accent focus-visible:ring-2 focus-visible:ring-current"
+                        className="group block rounded-lg p-4 outline-hidden transition-colors hover:bg-accent focus-visible:ring-2 focus-visible:ring-current"
                       >
                         <span className="flex items-center gap-1.5 text-[14px] font-medium">
                           {l.label}
@@ -191,9 +200,9 @@ export function MegaNav({
             animate={{ height: "auto", opacity: 1 }}
             exit={reduced ? { opacity: 0 } : { height: 0, opacity: 0 }}
             transition={{ duration: reduced ? 0 : 0.3, ease: EASE.quickOut }}
-            className={`overflow-hidden border-t md:hidden ${dark ? "border-white/[0.07]" : "border-border"}`}
+            className={`overflow-hidden border-t lg:hidden ${dark ? "border-white/[0.07]" : "border-border"}`}
           >
-            <div className="px-5 py-3">
+            <div className="px-6 py-4">
               {groups.map((g) => {
                 const on = sanfona === g.key;
                 return (
@@ -202,7 +211,7 @@ export function MegaNav({
                       type="button"
                       aria-expanded={on}
                       onClick={() => setSanfona(on ? null : g.key)}
-                      className="flex w-full items-center justify-between py-3 text-left text-[15px] font-medium outline-hidden focus-visible:ring-2 focus-visible:ring-current"
+                      className="flex h-12 w-full items-center justify-between text-left text-[15px] font-medium outline-hidden focus-visible:ring-2 focus-visible:ring-current"
                     >
                       {g.label}
                       <ChevronDown
@@ -226,7 +235,7 @@ export function MegaNav({
                               <a
                                 href={l.href}
                                 onClick={() => { setMobile(false); setSanfona(null); }}
-                                className="block rounded-md px-2 py-2.5 text-[14px] text-muted-foreground outline-hidden hover:text-foreground focus-visible:ring-2 focus-visible:ring-current"
+                                className="flex h-10 items-center rounded-md px-2 text-[14px] text-muted-foreground outline-hidden hover:text-foreground focus-visible:ring-2 focus-visible:ring-current"
                               >
                                 {l.label}
                               </a>
@@ -242,7 +251,7 @@ export function MegaNav({
               <a
                 href={spotlight.href}
                 onClick={() => setMobile(false)}
-                className="mt-4 flex items-center justify-between rounded-lg border border-border p-3 outline-hidden focus-visible:ring-2 focus-visible:ring-current"
+                className="mt-4 flex items-center justify-between rounded-lg border border-border p-4 outline-hidden focus-visible:ring-2 focus-visible:ring-current"
               >
                 <span>
                   <span className="eyebrow">{spotlight.eyebrow}</span>

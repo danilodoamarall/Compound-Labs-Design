@@ -90,7 +90,7 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
         <button
           type="submit"
           disabled={estado === "sending"}
-          className="inline-flex h-[46px] shrink-0 items-center gap-2 rounded-xl bg-[var(--stage-fg)] px-5 text-[15px] font-medium text-[var(--stage-bg)] transition-[opacity,scale] duration-150 hover:opacity-90 active:scale-[0.96] disabled:opacity-60"
+          className="inline-flex h-[46px] shrink-0 items-center gap-2 rounded-xl bg-[var(--stage-fg)] px-6 text-[15px] font-medium text-[var(--stage-bg)] transition-[opacity,scale] duration-150 hover:opacity-90 active:scale-[0.96] disabled:opacity-60"
         >
           {estado === "sending" ? labels.sending : labels.cta}
           <ArrowRight size={15} aria-hidden />

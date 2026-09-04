@@ -89,7 +89,7 @@ export function ResourceView({
   );
 
   return (
-    <article className="mx-auto w-full max-w-3xl px-5 pb-20 pt-12">
+    <article className="mx-auto w-full max-w-3xl px-6 pb-20 pt-12">
       <header className="border-b border-border pb-8">
         <p className="eyebrow flex flex-wrap items-center gap-x-2 gap-y-1">
           {rotulo(home)}

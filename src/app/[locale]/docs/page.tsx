@@ -45,7 +45,7 @@ export default async function DocsPage({ params }: PageProps<"/[locale]/docs">) 
   }
 
   return (
-    <main className="mx-auto w-full max-w-6xl px-5 pb-24 pt-14">
+    <main className="mx-auto w-full max-w-6xl px-6 pb-24 pt-14">
       <p className="eyebrow">{t("title")}</p>
       <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{t("title")}</h1>
       <p className="measure mt-5 text-lg leading-relaxed text-muted-foreground">{t("dek")}</p>

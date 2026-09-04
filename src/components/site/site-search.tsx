@@ -83,13 +83,13 @@ export function SiteSearch({ items, labels }: { items: SearchItem[]; labels: Sea
         <button
           type="button"
           aria-label={labels.trigger}
-          className="inline-flex h-9 items-center gap-2 rounded-md border border-border px-2.5 text-[13px] text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
+          className="inline-flex h-10 items-center gap-2 rounded-lg border border-border px-3 text-[14px] text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <Search size={15} aria-hidden />
-          <span className="hidden lg:inline">{labels.trigger}</span>
+          <Search size={16} strokeWidth={1.75} aria-hidden />
+          <span className="hidden xl:inline">{labels.trigger}</span>
           <kbd
             aria-hidden
-            className="ml-1 hidden rounded border border-border px-1.5 py-0.5 font-mono text-[10.5px] leading-none lg:inline"
+            className="ml-1 hidden h-5 items-center rounded border border-border px-1.5 font-mono text-[11px] leading-none xl:inline-flex"
           >
             Ctrl K
           </kbd>
