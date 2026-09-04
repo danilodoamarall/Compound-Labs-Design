@@ -7,14 +7,32 @@
   "bin": {
     "ai-skills": "bin/cli.js"
   },
-  "files": ["bin"],
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["ai", "skills", "design-engineering", "claude", "agent"],
+  "keywords": [
+    "ai",
+    "skills",
+    "design-engineering",
+    "claude",
+    "agent"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danilodoamarall/Compound-Labs-Design.git",
     "directory": "packages/skills-cli"
+  },
+  "homepage": "https://labs-hub-five.vercel.app/pt/skills-agents",
+  "bugs": {
+    "url": "https://github.com/danilodoamarall/Compound-Labs-Design/issues"
+  },
+  "author": "Danilo do Amaral",
+  "publishConfig": {
+    "access": "public"
   }
 }
