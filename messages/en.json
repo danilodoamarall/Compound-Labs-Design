@@ -21,7 +21,15 @@
     "docs": "Docs",
     "faq": "FAQ",
     "about": "About",
-    "workflow": "Workflow"
+    "workflow": "Workflow",
+    "groups": {
+      "content": "Content",
+      "tools": "Tools",
+      "hub": "The hub"
+    },
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "research": "Research"
   },
   "Home": {
     "title": "What is worth adopting in AI for design.",

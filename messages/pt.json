@@ -21,7 +21,15 @@
     "docs": "Docs",
     "faq": "FAQ",
     "about": "Sobre",
-    "workflow": "Workflow"
+    "workflow": "Workflow",
+    "groups": {
+      "content": "Conteúdo",
+      "tools": "Ferramentas",
+      "hub": "O hub"
+    },
+    "openMenu": "Abrir o menu",
+    "closeMenu": "Fechar o menu",
+    "research": "Research"
   },
   "Home": {
     "title": "O que vale adotar em IA para design.",
