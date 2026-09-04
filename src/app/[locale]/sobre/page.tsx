@@ -17,6 +17,8 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/sobre">
 
   const blocks = [
     ["purposeTitle", "purpose"],
+    // A filosofia vem antes da biografia: é a tese do produto, e explica o nome.
+    ["philosophyTitle", "philosophy"],
     ["authorTitle", "authorBio"],
     ["howTitle", "how"],
     ["licenseTitle", "license"],

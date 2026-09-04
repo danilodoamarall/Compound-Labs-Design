@@ -8,7 +8,23 @@
         "body": [
           "O Compound Design é um lugar aberto onde o que se aprende em inteligência artificial, design e programação se acumula e fica disponível para qualquer pessoa usar.",
           "Não é uma lista de ferramentas. É um catálogo de conhecimento pronto para uso: artigos com dados, um catálogo de skills (instruções que ensinam um assistente de IA a fazer algo bem) e duas formas de ligar esse catálogo ao seu assistente.",
-          "O nome é uma analogia com juros compostos. O que você aprende em design rende sobre o que sabe de código; o que aprende de IA rende sobre os dois. Cinco anos disso, acumulados em aberto."
+          "O nome é uma tese, não só uma analogia: cada coisa que se aprende deve tornar a próxima mais fácil, não mais difícil. Como juros compostos. A seção seguinte explica como isso funciona na prática."
+        ]
+      },
+      {
+        "id": "filosofia",
+        "group": "Comece aqui",
+        "title": "A filosofia: acumular",
+        "body": [
+          "A maior parte do trabalho fica mais difícil com o tempo. Cada coisa nova que entra negocia com as antigas, e depois de alguns anos gasta-se mais tempo brigando com o que existe do que construindo em cima. Isso vale para código, para design e para o próprio jeito de trabalhar com IA.",
+          "Acumular é inverter isso. Em vez de cada coisa nova adicionar complexidade, ela ensina algo ao sistema. Um erro corrigido elimina uma categoria inteira de erros futuros. Um padrão que funcionou vira ferramenta. Com o tempo, o conjunto fica mais fácil de entender, de mudar e de confiar.",
+          "O ciclo tem quatro passos, e vale para consertar um detalhe em cinco minutos ou construir algo em uma semana:"
+        ],
+        "steps": [
+          "Planejar. Entender o que está sendo feito e por quê; ver como o que já existe funciona; desenhar a solução antes de tocar em nada.",
+          "Fazer. Executar o plano — hoje, na maior parte, com um agente de IA executando e uma pessoa acompanhando.",
+          "Revisar. Conferir o resultado com mais de um olhar, priorizar o que precisa mudar, e anotar o que deu errado para não repetir.",
+          "Acumular. O passo que a maioria pula. O que se aprendeu vira algo reutilizável e encontrável: um artigo, uma skill, uma regra que o sistema passa a conferir sozinho. Se pular este passo, foi só trabalho com IA; não acumulou nada."
         ]
       },
       {
@@ -131,7 +147,8 @@
         "title": "De onde vêm as skills",
         "body": [
           "Cada skill do catálogo é de quem a escreveu. A licença do repositório de origem foi verificada uma a uma. As de licença permissiva, a maioria, são servidas daqui, sempre com autor, licença e o commit exato de onde vieram, para você saber que está lendo a mesma versão que o autor publicou.",
-          "As que não declaram licença aparecem no catálogo, mas abrem na origem. Sem licença declarada, todos os direitos ficam com o autor, e servir o texto daqui seria redistribuir o que não é nosso."
+          "As que não declaram licença aparecem no catálogo, mas abrem na origem. Sem licença declarada, todos os direitos ficam com o autor, e servir o texto daqui seria redistribuir o que não é nosso.",
+          "Este site pratica o que descreve. Cada correção que se repetiu virou uma checagem que roda antes de publicar e quebra o build se algo divergir: os números citados nos artigos, os links das skills, as contagens escritas na prosa. Cada decisão de arquitetura tem um registro em docs/adr. É o passo de acumular, aplicado ao próprio produto."
         ]
       },
       {
@@ -179,7 +196,23 @@
         "body": [
           "Compound Design is an open place where what one learns in artificial intelligence, design and programming accrues and stays available for anyone to use.",
           "It is not a list of tools. It is a catalogue of knowledge ready to use: data-backed articles, a catalogue of skills (instructions that teach an AI assistant to do something well) and two ways to connect that catalogue to your assistant.",
-          "The name is an analogy with compound interest. What you learn in design earns on top of what you know about code; what you learn about AI earns on top of both. Five years of that, accruing in the open."
+          "The name is a thesis, not just an analogy: each thing learned should make the next one easier, not harder. Like compound interest. The next section explains how that works in practice."
+        ]
+      },
+      {
+        "id": "filosofia",
+        "group": "Start here",
+        "title": "The philosophy: compounding",
+        "body": [
+          "Most work gets harder over time. Each new thing that comes in negotiates with the old ones, and after a few years more time goes into fighting what exists than building on it. That holds for code, for design and for the way one works with AI itself.",
+          "Compounding is flipping that. Instead of each new thing adding complexity, it teaches the system something. A fixed bug eliminates a whole category of future bugs. A pattern that worked becomes a tool. Over time the whole becomes easier to understand, to change and to trust.",
+          "The loop has four steps, and it holds whether you are fixing a detail in five minutes or building something over a week:"
+        ],
+        "steps": [
+          "Plan. Understand what is being made and why; see how what already exists works; design the solution before touching anything.",
+          "Do. Execute the plan — today, mostly, with an AI agent executing and a person watching.",
+          "Review. Check the result with more than one pair of eyes, prioritise what needs to change, and note what went wrong so it does not repeat.",
+          "Compound. The step most people skip. What was learned becomes something reusable and findable: an article, a skill, a rule the system starts to check on its own. Skip this step and it was just work with AI; nothing accrued."
         ]
       },
       {
@@ -221,7 +254,7 @@
         "body": [
           "A skill is a text file, written by a person, that teaches the agent to do one thing well. For example: how to animate an interface without overdoing it, how to choose typography, how to review accessibility.",
           "It is not a program. It installs nothing on your computer. It is knowledge in text form, in the format the agent understands, and the agent follows those instructions while it works.",
-          "Every skill in this catalogue belongs to whoever wrote it. The author's name, the licence and the original address appear next to the text, always."
+          "Each skill in this catalogue belongs to whoever wrote it. The author's name, the licence and the original address appear next to the text, always."
         ]
       },
       {
@@ -292,7 +325,7 @@
         "group": "How to use",
         "title": "How to read the charts",
         "body": [
-          "Every chart in the articles reads its data straight from the survey. No value is typed by hand. When an article cites \"82.6%\", that number came from the same file that drew the bar beside it.",
+          "Each chart in the articles reads its data straight from the survey. No value is typed by hand. When an article cites \"82.6%\", that number came from the same file that drew the bar beside it.",
           "An automatic check compares every percentage cited in the texts against the dataset, and the site does not publish if any diverges."
         ]
       },
@@ -301,8 +334,9 @@
         "group": "How it works inside",
         "title": "Where the skills come from",
         "body": [
-          "Every skill in the catalogue belongs to whoever wrote it. The licence of each source repository was checked one by one. The permissively licensed ones, the majority, are served from here, always with author, licence and the exact commit they came from, so you know you are reading the same version the author published.",
-          "The ones that declare no licence appear in the catalogue but open at the source. Without a declared licence all rights stay with the author, and serving the text from here would mean redistributing what is not ours."
+          "Each skill in the catalogue belongs to whoever wrote it. The licence of each source repository was checked one by one. The permissively licensed ones, the majority, are served from here, always with author, licence and the exact commit they came from, so you know you are reading the same version the author published.",
+          "The ones that declare no licence appear in the catalogue but open at the source. Without a declared licence all rights stay with the author, and serving the text from here would mean redistributing what is not ours.",
+          "This site practises what it describes. Each fix that repeated became a check that runs before publishing and breaks the build if anything diverges: the numbers cited in the articles, the skill links, the counts written in the prose. Each architecture decision has a record in docs/adr. It is the compounding step, applied to the product itself."
         ]
       },
       {

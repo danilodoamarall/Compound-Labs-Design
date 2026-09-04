@@ -1,7 +1,7 @@
 {
   "Site": {
     "name": "Compound Design",
-    "tagline": "IA, design e código que se acumulam.",
+    "tagline": "Cada coisa que se aprende torna a próxima mais fácil.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer no Pitang Labs",
     "madeBy": "Feito por",
@@ -151,7 +151,7 @@
   },
   "About": {
     "title": "Sobre este hub",
-    "dek": "O nome é uma analogia. O que se aprende em IA, design e código rende sobre o que já se sabia, como juros compostos. Este hub é onde cinco anos disso se acumulam em aberto.",
+    "dek": "O nome é uma tese. A maior parte do trabalho fica mais difícil com o tempo: cada coisa nova negocia com as antigas. Aqui é o contrário. Cada coisa aprendida em IA, design e código vira um artefato que torna a próxima mais fácil — como juros compostos.",
     "purposeTitle": "Por que existe",
     "purpose": "Este hub reúne artigos com dados, um catálogo de skills de design engineering com licença verificada, e as ferramentas para o seu agente usá-lo. Tudo aberto: qualquer pessoa pode ler, citar e reutilizar.",
     "authorTitle": "Quem faz",
@@ -159,7 +159,9 @@
     "howTitle": "Como contribuir",
     "how": "Comente nas apresentações, proponha uma skill para o catálogo ou um artigo. O conteúdo marcado como rascunho está aberto para revisão.",
     "licenseTitle": "Licenças e fontes",
-    "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos deste hub são de Danilo do Amaral."
+    "license": "Os dados da pesquisa State of Prototyping Spring 2026 são da UX Tools, sob CC BY 4.0. Os textos deste hub são de Danilo do Amaral.",
+    "philosophyTitle": "A filosofia: acumular",
+    "philosophy": "O ciclo tem quatro passos: planejar, fazer, revisar, acumular. Os três primeiros qualquer pessoa que trabalha com IA já faz. O quarto é o que separa acumular de só produzir: o que se aprendeu vira algo reutilizável e encontrável — um artigo, uma skill, uma regra que o próprio sistema passa a conferir. Aqui, cada correção que se repetiu virou uma checagem que quebra o build; cada decisão virou um registro; cada skill boa de terceiros entrou no catálogo com crédito. A maior parte do tempo vai para planejar e revisar, não para digitar. É uma filosofia aberta: o código, as decisões e as regras estão no repositório para quem quiser copiar."
   },
   "Footer": {
     "rights": "Compound Design · por Danilo do Amaral",

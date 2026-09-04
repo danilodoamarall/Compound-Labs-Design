@@ -1,7 +1,7 @@
 {
   "Site": {
     "name": "Compound Design",
-    "tagline": "AI, design and code that compound.",
+    "tagline": "Each thing learned makes the next one easier.",
     "author": "Danilo do Amaral",
     "authorRole": "Design Engineer at Pitang Labs",
     "madeBy": "Made by",
@@ -151,7 +151,7 @@
   },
   "About": {
     "title": "About this hub",
-    "dek": "The name is an analogy. What you learn in AI, design and code earns on top of what you already knew, like compound interest. This hub is where five years of that accrue in the open.",
+    "dek": "The name is a thesis. Most work gets harder over time: each new thing negotiates with the old ones. Here it is the opposite. Each thing learned in AI, design and code becomes an artefact that makes the next one easier — like compound interest.",
     "purposeTitle": "Why it exists",
     "purpose": "This hub gathers data-backed articles, a catalogue of design-engineering skills with verified licences, and the tools for your agent to use it. All open: anyone can read, cite and reuse it.",
     "authorTitle": "Who makes it",
@@ -159,7 +159,9 @@
     "howTitle": "How to contribute",
     "how": "Comment on the presentations, propose a skill for the catalogue or an article. Content marked as draft is open for review.",
     "licenseTitle": "Licenses and sources",
-    "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral."
+    "license": "State of Prototyping Spring 2026 data belongs to UX Tools, under CC BY 4.0. The texts in this hub are by Danilo do Amaral.",
+    "philosophyTitle": "The philosophy: compounding",
+    "philosophy": "The loop has four steps: plan, do, review, compound. Anyone working with AI already does the first three. The fourth is what separates compounding from merely producing: what was learned becomes something reusable and findable — an article, a skill, a rule the system itself starts to check. Here, every fix that repeated became a check that breaks the build; every decision became a record; every good third-party skill entered the catalogue with credit. Most of the time goes to planning and reviewing, not typing. It is an open philosophy: the code, the decisions and the rules are in the repository for anyone to copy."
   },
   "Footer": {
     "rights": "Compound Design · by Danilo do Amaral",
@@ -341,7 +343,7 @@
       },
       "topics": {
         "title": "List topics",
-        "desc": "Every topic in the catalogue, with its count."
+        "desc": "Each topic in the catalogue, with its count."
       },
       "list": {
         "title": "List skills",

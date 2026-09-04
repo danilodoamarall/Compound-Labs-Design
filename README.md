@@ -4,8 +4,33 @@ Hub aberto de design engineering com IA. Artigos que também são apresentação
 catálogo de skills com licença verificada repositório a repositório, e um CLI e um
 servidor MCP para o seu agente usar esse catálogo.
 
-O nome é uma analogia: o que se aprende em IA, design e código rende sobre o que
-já se sabia, como juros compostos. Por [Danilo do Amaral](https://www.linkedin.com/in/danilodoamaral/),
+## A filosofia
+
+O nome é uma tese: **cada coisa que se aprende deve tornar a próxima mais fácil,
+não mais difícil.** Como juros compostos.
+
+A maior parte do trabalho vai no sentido contrário. Cada coisa nova negocia com
+as antigas, e depois de alguns anos gasta-se mais tempo brigando com o que
+existe do que construindo em cima. Acumular é inverter isso: em vez de adicionar
+complexidade, cada coisa nova ensina algo ao sistema.
+
+O ciclo tem quatro passos — **planejar, fazer, revisar, acumular**. Os três
+primeiros qualquer pessoa que trabalha com IA já faz. O quarto é o que separa
+acumular de só produzir: o que se aprendeu vira algo reutilizável e encontrável.
+Pule esse passo e foi só trabalho com IA.
+
+Este repositório pratica o que descreve, e por isso é aberto:
+
+| O que se aprendeu | O que virou |
+|---|---|
+| Números escritos à mão divergiam do produto | `scripts/check-counts.mjs`, que quebra o build |
+| Skills copiadas mandavam abrir arquivos inexistentes | `scripts/check-skill-links.mjs`, 1.183 links reescritos |
+| Percentuais dos artigos podiam mentir | `scripts/check-numbers.mjs`, 204 números conferidos |
+| Decisões se perdiam na conversa | `docs/adr/` |
+| Craft dependia de memória | `docs/plano-craft.md`, sete portões medidos |
+| Boas práticas de terceiros se perdiam | o catálogo de 269 skills, com crédito e licença |
+
+Por [Danilo do Amaral](https://www.linkedin.com/in/danilodoamaral/),
 Design Engineer no Pitang Labs, pós-graduado em UX & UI pela EBAC e em UX
 Engineering pela PUC Minas.
 
