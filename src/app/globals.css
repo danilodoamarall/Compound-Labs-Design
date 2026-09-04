@@ -333,27 +333,66 @@
     .stage-lens { display: none; }
   }
 
-  /* O palco herda a fonte da referencia e fixa a paleta neutra escura, para
-     nao depender do tema do resto do hub. */
+  /* O palco herda a fonte da referencia e segue o tema do resto do site. No
+     claro, os tokens do palco apontam para os tokens globais; no escuro, o
+     bloco `.dark .stage` abaixo troca pela paleta neutra medida na referencia
+     (#0A0A0A), mais funda que o escuro padrao do site. O hero continua um
+     cartaz escuro nos dois temas: e um cartao fechado, com fundo proprio.
+
+     Os cards do bento usam sombra em camadas no lugar de borda (o anel de 1px
+     e a primeira camada), e no escuro um so anel branco mais um realce
+     interno no topo, que e o que se le como volume sobre fundo preto. */
   .stage {
     font-family: var(--font-stage), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    --stage-bg: var(--background);
+    --stage-fg: var(--foreground);
+    --stage-dim: var(--muted-foreground);
+    --stage-faint: color-mix(in oklab, var(--muted-foreground) 78%, transparent);
+    --stage-line: var(--border);
+    --stage-surface: color-mix(in oklab, var(--card) 72%, transparent);
+    --stage-card: var(--card);
+    --stage-pill: var(--muted);
+    --stage-pill-active: var(--accent);
+    --stage-pill-idle: var(--muted-foreground);
+    --bento-bg: linear-gradient(180deg, oklch(100% 0 0 / 0.85), oklch(100% 0 0 / 0.6));
+    --bento-shadow:
+      0 0 0 1px oklch(0 0 0 / 0.06),
+      0 1px 2px -1px oklch(0 0 0 / 0.06),
+      0 2px 4px 0 oklch(0 0 0 / 0.04);
+    --bento-shadow-hover:
+      0 0 0 1px oklch(0 0 0 / 0.09),
+      0 1px 2px -1px oklch(0 0 0 / 0.08),
+      0 12px 32px -12px oklch(0 0 0 / 0.18);
+    --bento-scrim: oklch(100% 0 0 / 0.92);
+    background: var(--stage-bg);
+    color: var(--stage-fg);
+  }
+
+  .dark .stage {
     --stage-bg: oklch(14.5% 0 0); /* #0A0A0A */
     --stage-fg: oklch(98.5% 0 0); /* #FAFAFA */
     --stage-dim: oklch(70.9% 0 0); /* #A1A1A1 */
     --stage-faint: oklch(62.7% 0 0); /* #888888 */
     --stage-line: oklch(32.1% 0 0); /* #333333 */
     --stage-surface: rgba(22, 22, 22, 0.3);
+    --stage-card: oklch(20.0% 0 0); /* #161616 */
     --stage-pill: oklch(17.8% 0 0); /* #111111 */
     --stage-pill-active: oklch(26.0% 0 0); /* #242424 */
     --stage-pill-idle: oklch(65.0% 0 0); /* #8F8F8F */
-    background: var(--stage-bg);
-    color: var(--stage-fg);
+    --bento-bg: linear-gradient(180deg, rgba(24, 21, 30, 0.6), rgba(18, 15, 23, 0.45));
+    --bento-shadow:
+      0 0 0 1px oklch(1 0 0 / 0.08),
+      inset 0 1px 0 0 oklch(1 0 0 / 0.05);
+    --bento-shadow-hover:
+      0 0 0 1px oklch(1 0 0 / 0.14),
+      inset 0 1px 0 0 oklch(1 0 0 / 0.08),
+      0 16px 40px -16px oklch(0 0 0 / 0.65);
+    --bento-scrim: rgba(18, 15, 23, 0.95);
     color-scheme: dark;
 
-    /* Redefine os tokens do sistema dentro do palco. Sem isto, qualquer
+    /* Redefine os tokens do sistema dentro do palco escuro. Sem isto, qualquer
        componente tematico colocado aqui (o formulario de inscricao, o campo
-       de e-mail) resolve as cores do tema claro sobre fundo preto: foi assim
-       que a linha de privacidade caiu para 2,64:1 na auditoria. */
+       de e-mail) resolve as cores do escuro padrao sobre fundo #0A0A0A. */
     --background: oklch(14.5% 0 0); /* #0A0A0A */
     --foreground: oklch(98.5% 0 0); /* #FAFAFA */
     --card: oklch(20.0% 0 0); /* #161616 */
@@ -403,7 +442,7 @@
   /* Preenchimento em gradiente de corte duro: a palavra comeca apagada e
      acende quando entra na tela. Sem movimento, entra ja acesa. */
   .stage-fill {
-    background-image: linear-gradient(to left, var(--stage-fg) 50%, #999999 50%);
+    background-image: linear-gradient(to left, var(--stage-fg) 50%, var(--stage-faint) 50%);
     background-size: 200% 100%;
     background-position: 100% 0;
     -webkit-background-clip: text;
@@ -427,19 +466,18 @@
     }
   }
 
-  /* Quando a pagina traz o palco, a pagina inteira e escura. Usa :has() para
-     nao precisar saber a rota num layout de servidor, e redefine os tokens no
-     rodape para que as classes tematicas dele resolvam escuro sem duplicacao. */
-  body:has(main.stage) {
-    background: #0A0A0A;
-    color-scheme: dark;
-  }
-
-  body:has(main.stage) > footer {
+  /* No tema escuro, a pagina que traz o palco fica inteira em #0A0A0A, do
+     cabecalho ao rodape: os tokens sao redefinidos no <body>, e cabecalho e
+     rodape herdam sem duplicacao. Usa :has() para nao precisar saber a rota num
+     layout de servidor. No tema claro nada disto se aplica, e a pagina segue os
+     tokens globais. */
+  .dark body:has(main.stage) {
     --background: oklch(14.5% 0 0); /* #0A0A0A */
     --foreground: oklch(98.5% 0 0); /* #FAFAFA */
     --card: oklch(17.8% 0 0); /* #111111 */
     --card-foreground: oklch(94.6% 0 0); /* #EDEDED */
+    --popover: oklch(17.8% 0 0); /* #111111 */
+    --popover-foreground: oklch(94.6% 0 0); /* #EDEDED */
     --muted: oklch(20.0% 0 0); /* #161616 */
     --muted-foreground: oklch(70.9% 0 0); /* #A1A1A1 */
     --border: oklch(32.1% 0 0); /* #333333 */
@@ -447,7 +485,25 @@
     --accent-foreground: oklch(98.5% 0 0); /* #FAFAFA */
     background: #0A0A0A;
     color: #EDEDED;
-    border-top-color: #333333;
+    color-scheme: dark;
+  }
+
+  /* O card do bento: superficie com gradiente leve e sombra em camadas no lugar
+     de borda. A transicao e de CSS, e nao de biblioteca, para ser interrompivel
+     quando o ponteiro entra e sai antes de terminar. */
+  .bento-card {
+    background: var(--bento-bg);
+    box-shadow: var(--bento-shadow);
+    transition-property: box-shadow, scale;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .bento-card:hover,
+  .bento-card:focus-visible {
+    box-shadow: var(--bento-shadow-hover);
+  }
+  .bento-card:active {
+    scale: 0.96;
   }
 
   /* A barra ja nasce com a largura certa; a animacao so encolhe e solta, para

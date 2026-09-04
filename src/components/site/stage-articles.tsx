@@ -45,7 +45,7 @@ export function StageArticles({
           <li key={a.slug}>
             <a
               href={`/${locale}/${locale === "pt" ? "artigos" : "articles"}/${a.slug}`}
-              className="group relative flex h-full flex-col overflow-hidden rounded-2xl border-[0.67px] border-[var(--stage-line)] bg-black/40 outline-hidden transition-colors hover:border-white/25 focus-visible:ring-2 focus-visible:ring-white/60"
+              className="bento-card group relative flex h-full flex-col overflow-hidden rounded-2xl outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span aria-hidden className="relative aspect-[4/3] overflow-hidden">
                 <span
@@ -66,7 +66,7 @@ export function StageArticles({
               </span>
 
               <span className="flex flex-1 flex-col gap-1 border-t border-[var(--stage-line)] p-4">
-                <span className="text-[14px] font-medium leading-snug text-[#EDEDED]">{a.title}</span>
+                <span className="text-[14px] font-medium leading-snug text-[var(--stage-fg)]">{a.title}</span>
                 <span className="mt-auto flex items-baseline gap-3 pt-3">
                   <span className="font-mono text-[12px] text-[var(--stage-dim)]">
                     {labels.article} {n} {labels.of} {String(a.total).padStart(2, "0")}

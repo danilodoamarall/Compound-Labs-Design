@@ -29,7 +29,7 @@ export function StageSubscribe({
         className="pointer-events-none absolute inset-0 -z-10 opacity-[0.55]"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(0deg, rgba(255,255,255,0.045) 0 1px, transparent 1px 64px), repeating-linear-gradient(90deg, rgba(255,255,255,0.045) 0 1px, transparent 1px 64px)",
+            "repeating-linear-gradient(0deg, color-mix(in oklab, var(--stage-fg) 6%, transparent) 0 1px, transparent 1px 64px), repeating-linear-gradient(90deg, color-mix(in oklab, var(--stage-fg) 6%, transparent) 0 1px, transparent 1px 64px)",
           maskImage: "radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 78%)",
         }}
       />

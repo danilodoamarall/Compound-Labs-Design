@@ -155,8 +155,8 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
         viewport={{ once: true, margin: "-60px" }}
         variants={{ fora: {}, dentro: { transition: { delayChildren: stagger(0.07) } } }}
       >
-        {cards.map((card) => (
-          <BentoCard key={card.key} card={card} reduced={reduced} comPonteiro={comPonteiro} />
+        {cards.map((card, i) => (
+          <BentoCard key={card.key} card={card} indice={i + 1} reduced={reduced} comPonteiro={comPonteiro} />
         ))}
       </motion.ul>
 
@@ -168,7 +168,7 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
             <motion.div
               ref={holofote}
               aria-hidden
-              className="pointer-events-none fixed left-0 top-0 z-30 rounded-full mix-blend-screen"
+              className="pointer-events-none fixed left-0 top-0 z-30 rounded-full dark:mix-blend-screen"
               style={{
                 width: RAIO * 2,
                 height: RAIO * 2,
@@ -188,9 +188,18 @@ export function StageResources({ cards }: { cards: StageCard[] }) {
 
 type Particula = { id: number; left: number; top: number; dx: number; dy: number; dur: number; atraso: number };
 
-function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: boolean; comPonteiro: boolean }) {
+function BentoCard({
+  card,
+  indice,
+  reduced,
+  comPonteiro,
+}: {
+  card: StageCard;
+  indice: number;
+  reduced: boolean;
+  comPonteiro: boolean;
+}) {
   const cor = useMemo(() => rgb(card.cover[0]), [card.cover]);
-  const [sob, setSob] = useState(false);
 
   // Inclinação e magnetismo com mola: o card segue o ponteiro, e uma mola
   // assenta sem pular quando a mão muda de direção. Rígida e bem amortecida,
@@ -213,7 +222,6 @@ function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: b
     my.set(y * MAGNETISMO);
   };
   const aoSair = () => {
-    setSob(false);
     setParticulas([]);
     rx.set(0);
     ry.set(0);
@@ -228,7 +236,6 @@ function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: b
   const [particulas, setParticulas] = useState<Particula[]>([]);
   const aoEntrar = () => {
     if (!interativo) return;
-    setSob(true);
     setParticulas(
       Array.from({ length: PARTICULAS }, (_, i) => ({
         id: i,
@@ -268,13 +275,9 @@ function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: b
         onPointerMove={aoMover}
         onPointerLeave={aoSair}
         style={{ rotateX: rx, rotateY: ry, x: mx, y: my, transformStyle: "preserve-3d" }}
-        animate={{
-          boxShadow: sob
-            ? `0 12px 32px rgba(0, 0, 0, 0.35), 0 0 30px rgba(${cor}, 0.18)`
-            : "0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0)",
-        }}
-        transition={{ duration: 0.3, ease: EASE.outCubic }}
-        className="group relative flex h-[268px] flex-col overflow-hidden rounded-2xl border-[0.67px] border-white/[0.08] bg-[rgba(18,15,23,0.45)] outline-hidden transition-colors hover:border-white/20 focus-visible:ring-2 focus-visible:ring-white/60 sm:h-[288px]"
+        // Superficie, anel e sombra vem de .bento-card em globals.css, com
+        // transicao de CSS: interrompivel, e com valores proprios por tema.
+        className="bento-card group relative flex h-[268px] flex-col overflow-hidden rounded-2xl outline-hidden focus-visible:ring-2 focus-visible:ring-ring sm:h-[288px]"
       >
         {/* A borda que acende no ponto mais perto do ponteiro. A máscara recorta
             o gradiente para só a borda de 1px ficar visível. */}
@@ -287,7 +290,11 @@ function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: b
             className="absolute inset-0 opacity-[0.13] transition-opacity duration-500 group-hover:opacity-[0.22]"
             style={{ background: `radial-gradient(120% 90% at 50% 0%, ${card.cover[0]}, ${card.cover[1]} 70%, transparent)` }}
           />
-          {card.visual}
+          {/* A composicao sobe 4px no hover, junto com a inclinacao: o conteudo
+              responde, nao so a moldura. */}
+          <span className="absolute inset-0 transition-transform duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)] group-hover:-translate-y-1">
+            {card.visual}
+          </span>
 
           {/* Partículas na cor da seção, enquanto o card está sob o ponteiro.
               Sobem devagar e somem; ao sair, encolhem em 250ms, mais rápido do
@@ -311,22 +318,27 @@ function BentoCard({ card, reduced, comPonteiro }: { card: StageCard; reduced: b
               gradiente linear cru deixa uma borda dura visível no ponto em
               que ele começa. O plugin easing-gradients redistribui as
               paradas e emite em oklch, que é o espaço do nosso Tailwind. */}
-          <span className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[rgba(18,15,23,0.95)] to-transparent gradient-ease-out" />
+          <span className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[var(--bento-scrim)] to-transparent gradient-ease-out" />
         </span>
 
         <span className="relative p-5">
           <span className="flex items-baseline gap-2">
-            <span className="text-[15px] font-semibold text-white">{card.title}</span>
+            {/* O indice em mono da a grade uma ordem de leitura e um segundo
+                nivel tipografico, como o rotulo dos cards da referencia. */}
+            <span className="font-mono text-[10.5px] tabular-nums text-[var(--stage-faint)]">
+              {String(indice).padStart(2, "0")}
+            </span>
+            <span className="text-[15px] font-semibold text-[var(--stage-fg)]">{card.title}</span>
             <ArrowUpRight
               size={13}
               aria-hidden
-              className="shrink-0 translate-y-px text-white/50 opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:opacity-100"
+              className="shrink-0 translate-y-px text-[var(--stage-dim)] opacity-0 transition-[opacity,translate] duration-300 ease-[cubic-bezier(0.215,0.61,0.355,1)] group-hover:translate-x-0.5 group-hover:opacity-100"
             />
             {card.count ? (
-              <span className="ml-auto font-mono text-[11px] text-white/55">{card.count}</span>
+              <span className="ml-auto font-mono text-[11px] tabular-nums text-[var(--stage-dim)]">{card.count}</span>
             ) : null}
           </span>
-          <span className="mt-1.5 block text-[13px] leading-[20px] text-white/50">{card.desc}</span>
+          <span className="mt-1.5 block text-[13px] leading-[20px] text-[var(--stage-dim)]">{card.desc}</span>
         </span>
       </motion.a>
     </motion.li>

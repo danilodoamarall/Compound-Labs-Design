@@ -23,9 +23,10 @@
     "about": "About",
     "workflow": "Workflow",
     "groups": {
-      "content": "Content",
-      "hub": "The framework",
-      "skills": "Skills"
+      "studies": "Articles & studies",
+      "resources": "Resources",
+      "aiTools": "AI tools",
+      "framework": "The framework"
     },
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -43,22 +44,22 @@
     "coverHint": "Click the centered cover to open · Drag · Arrow keys",
     "sections": {
       "articles": {
-        "short": "State of Design 2026 series"
+        "short": "The State of Design 2026 series, with data"
       },
       "skillsAgents": {
-        "short": "Catalogue with verified licences"
+        "short": "Skills catalogue with verified licences"
       },
       "docs": {
-        "short": "What this is and how to use it, from scratch"
+        "short": "What the framework is and how to use it, from scratch"
       },
       "faq": {
-        "short": "Questions about the data"
+        "short": "Questions about data, licences and reuse"
       },
       "workflow": {
         "short": "Tools by stage of the work"
       },
       "research": {
-        "short": "The survey behind the series"
+        "short": "The numbers behind the series, in the open"
       },
       "about": {
         "short": "The method, the author, and why"

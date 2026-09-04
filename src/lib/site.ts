@@ -48,14 +48,17 @@ export function sectionPath(href: Section["href"], locale: Locale) {
   return `/${locale}${translated[href][locale]}`;
 }
 
-/** Os destinos do menu, em três grupos. Inclui rotas que não são seções do hub
- *  (Research, Sobre, Explorar, CLI, MCP), por isso mora aqui e não em
- *  `sections`. Uma fonte só para o cabeçalho, o rodapé e a checagem de
- *  contagens. */
+/** Os destinos do menu, em quatro grupos, agrupados pelo que a pessoa veio
+ *  fazer: ler (artigos e a pesquisa), achar um recurso (catálogo, workflow,
+ *  índice), ligar um agente (CLI, MCP) e entender o framework (docs, sobre,
+ *  FAQ). Inclui rotas que não são seções (Research, Sobre, Explorar, CLI, MCP),
+ *  por isso mora aqui e não em `sections`. Uma fonte só para o cabeçalho, o
+ *  rodapé e a checagem de contagens. */
 export const NAV_GROUPS = [
-  { key: "content", itens: ["articles", "research"] },
-  { key: "skills", itens: ["skillsAgents", "cli", "mcp"] },
-  { key: "hub", itens: ["browse", "workflow", "docs", "faq", "about"] },
+  { key: "studies", itens: ["articles", "research"] },
+  { key: "resources", itens: ["skillsAgents", "workflow", "browse"] },
+  { key: "aiTools", itens: ["cli", "mcp"] },
+  { key: "framework", itens: ["docs", "about", "faq"] },
 ] as const;
 
 export type NavKey = (typeof NAV_GROUPS)[number]["itens"][number];

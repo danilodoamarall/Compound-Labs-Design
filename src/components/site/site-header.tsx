@@ -51,8 +51,11 @@ export function SiteHeader({
     <header
       data-over-stage={overStage ? "" : undefined}
       className={
+        // Sobre o palco o cabecalho nao tem linha de baixo: o palco segue o
+        // tema e os tokens ja resolvem claro ou escuro (no escuro, o <body>
+        // com palco redefine --background para #0A0A0A).
         overStage
-          ? "dark sticky top-0 z-40 bg-[#0A0A0A]/80 text-[#EDEDED] backdrop-blur-xl"
+          ? "sticky top-0 z-40 bg-background/80 backdrop-blur-xl"
           : "sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/65"
       }
     >
@@ -65,7 +68,7 @@ export function SiteHeader({
 
       <MegaNav
         groups={groups}
-        dark={overStage}
+        dark={false}
         labels={{ open: t("Nav.openMenu"), close: t("Nav.closeMenu"), nav: t("Nav.menuLabel") }}
         spotlight={{
           eyebrow: t("Nav.spotlightEyebrow"),

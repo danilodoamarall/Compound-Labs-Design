@@ -11,7 +11,7 @@ lido da imagem):
 | Referência | O que ensina | Valor que adotamos |
 |---|---|---|
 | **aiforui.dev** (Emil Kowalski) | A escala tipográfica e o espaçamento do primeiro dobra: título, subtítulo, respiro | Título 44/48 peso 500 tracking −0,88; subtítulo 14–18/22–28 a 65% de opacidade; 12px entre eles |
-| **vercel.com/design** | Arquitetura da informação: achar qualquer coisa em dois cliques; guidelines como produto | Menu em 3 grupos com descrição por destino; rodapé como mapa; busca com índice único |
+| **vercel.com/design** | Arquitetura da informação: achar qualquer coisa em dois cliques; guidelines como produto | Menu em 4 grupos, pelo que a pessoa veio fazer, com descrição por destino; rodapé como mapa; busca com índice único |
 | **reactbits.dev / pro** | O card do hero e o "What's inside": raio 30, botões 46px, grade de 12 colunas com spans 5/3/4, cards 288px com composição animada própria | Já é o nosso bento e o nosso hero; a regra é **um efeito forte por bloco** |
 | **skills.sh** | Placar com procedência: rótulos mono em versalete 14/500, valor grande 30/600, badges 12px, sidebar de governança | Já é o nosso placar e o trilho de procedência; sem número inventado |
 | **ui-skills.com** | "Agent, start here": CLI e MCP como duas portas iguais; docs de conexão escritas | Já são nossas páginas /cli e /mcp; nós documentamos a configuração, eles não |
@@ -94,7 +94,7 @@ verificação de 4 de setembro confirmou; "falta" é o que a pesquisa em curso
 | Explorar | desengs | data, verbos, um ao acaso, repositórios | coluna de data vazia comunica? (`better-layout`); densidade em 390px |
 | Docs | shadcn/ui intro | 17 seções, 5 grupos, código com copiar, linguagem definida | "Nesta página" fixo em desktop; leitura em 390px |
 | CLI e MCP (páginas) | ui-skills | duas portas iguais, config escrita | exemplos de saída real do CLI na página |
-| Menu e rodapé | Vercel /design | 3 grupos, 10 destinos, uma fonte | descoberta sem abrir o painel (`better-layout`); foco ao abrir/fechar |
+| Menu e rodapé | Vercel /design | 4 grupos por intenção (ler, achar, ligar um agente, entender), 10 destinos, uma fonte | descoberta sem abrir o painel (`better-layout`); foco ao abrir/fechar |
 | Formulário de inscrição | Jakub `break` | inválido/503/sucesso honestos | foco no erro; 429 com mensagem |
 | Fundações | oklch.fyi, easing.dev, motion.dev | curvas nomeadas, hook de reduced-motion, tokens centralizados | **paleta para OKLCH**; escala tipográfica declarada e auditada |
 

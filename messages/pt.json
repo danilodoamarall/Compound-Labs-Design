@@ -23,13 +23,14 @@
     "about": "Sobre",
     "workflow": "Workflow",
     "groups": {
-      "content": "Conteúdo",
-      "hub": "O framework",
-      "skills": "Skills"
+      "studies": "Artigos e estudos",
+      "resources": "Recursos",
+      "aiTools": "AI Tools",
+      "framework": "O framework"
     },
     "openMenu": "Abrir o menu",
     "closeMenu": "Fechar o menu",
-    "research": "Research",
+    "research": "Pesquisa",
     "spotlightEyebrow": "Comece por aqui",
     "spotlightCta": "Ler o artigo",
     "menuLabel": "Seções do framework",
@@ -43,22 +44,22 @@
     "coverHint": "Clique na capa central para abrir · Arraste · Setas do teclado",
     "sections": {
       "articles": {
-        "short": "Série Estado do Design 2026"
+        "short": "A série Estado do Design 2026, com dados"
       },
       "skillsAgents": {
-        "short": "Catálogo com licença verificada"
+        "short": "Catálogo de skills com licença verificada"
       },
       "docs": {
-        "short": "O que é isto e como usar, do zero"
+        "short": "O que é o framework e como usar, do zero"
       },
       "faq": {
-        "short": "Perguntas sobre os dados"
+        "short": "Perguntas sobre dados, licenças e uso"
       },
       "workflow": {
         "short": "Ferramentas por etapa do trabalho"
       },
       "research": {
-        "short": "A pesquisa que originou a série"
+        "short": "Os números por trás da série, abertos"
       },
       "about": {
         "short": "O método, o autor e por quê"

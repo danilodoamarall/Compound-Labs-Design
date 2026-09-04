@@ -35,12 +35,12 @@ export function VisualArtigos({ titles }: { titles: string[] }) {
             initial={reduced ? false : { opacity: 0, x: -14 }}
             animate={animate ? { opacity: i === 0 ? 1 : 0.42 - i * 0.06, x: 0 } : undefined}
             transition={{ duration: 0.5, delay: i * 0.07, ease: ENTRADA }}
-            className="flex items-center gap-2.5 rounded-lg border border-white/[0.07] bg-white/[0.03] px-3 py-2"
+            className="flex items-center gap-2.5 rounded-lg border border-foreground/[0.08] bg-foreground/[0.03] px-3 py-2"
           >
-            <span className="font-mono text-[10px] tabular-nums text-white/45">
+            <span className="font-mono text-[10px] tabular-nums text-foreground/45">
               {String(i + 1).padStart(2, "0")}
             </span>
-            <span className="truncate text-[11.5px] text-white/70">{t}</span>
+            <span className="truncate text-[11.5px] text-foreground/70">{t}</span>
           </motion.div>
         ))}
       </div>
@@ -55,7 +55,7 @@ export function VisualSkills() {
   const comando = "/find-docs";
   return (
     <div ref={ref} className={palco}>
-      <div className="absolute inset-x-5 top-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-white/[0.08] bg-[#0d0d0d]">
+      <div className="absolute inset-x-5 top-1/2 -translate-y-1/2 overflow-hidden rounded-lg bg-[#0d0d0d] shadow-[0_0_0_1px_oklch(0_0_0/0.14)] dark:shadow-[0_0_0_1px_oklch(1_0_0/0.08)]">
         <div className="flex items-center gap-1.5 border-b border-white/[0.06] px-3 py-2">
           {["#e8735e", "#e0913a", "#4ec2a6"].map((c) => (
             <span key={c} className="size-[6px] rounded-full" style={{ background: c, opacity: 0.55 }} />
@@ -188,7 +188,7 @@ export function VisualBrowse({ total }: { total: number }) {
     <div ref={ref} className={palco}>
       <div className="absolute inset-x-5 top-1/2 -translate-y-1/2">
         <motion.p
-          className="font-mono text-[52px] font-medium leading-none tracking-[-0.05em] tabular-nums text-white/85"
+          className="font-mono text-[52px] font-medium leading-none tracking-[-0.05em] tabular-nums text-foreground/85"
           initial={reduced ? false : { opacity: 0, y: 12 }}
           animate={animate ? { opacity: 1, y: 0 } : undefined}
           transition={{ duration: 0.55, ease: ENTRADA }}
@@ -235,7 +235,7 @@ export function VisualCli() {
   const linhas = ["emilkowalski/animate", "mengto/gsap", "jakubkrehel/motion"];
   return (
     <div ref={ref} className={palco}>
-      <div className="absolute inset-x-5 top-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-white/[0.08] bg-[#0d0d0d]">
+      <div className="absolute inset-x-5 top-1/2 -translate-y-1/2 overflow-hidden rounded-lg bg-[#0d0d0d] shadow-[0_0_0_1px_oklch(0_0_0/0.14)] dark:shadow-[0_0_0_1px_oklch(1_0_0/0.08)]">
         <div className="flex items-center gap-1.5 border-b border-white/[0.06] px-3 py-2">
           {["#e8735e", "#e0913a", "#4ec2a6"].map((c) => (
             <span key={c} className="size-[6px] rounded-full" style={{ background: c, opacity: 0.55 }} />
@@ -282,7 +282,7 @@ export function VisualMcp() {
   return (
     <div ref={ref} className={palco}>
       <div className="absolute inset-x-5 top-1/2 flex -translate-y-1/2 items-center gap-3">
-        <div className="shrink-0 rounded-md border border-white/[0.1] bg-white/[0.04] px-2.5 py-2 font-mono text-[10px] text-white/70">
+        <div className="shrink-0 rounded-md border border-foreground/[0.12] bg-foreground/[0.04] px-2.5 py-2 font-mono text-[10px] text-foreground/70">
           agent
         </div>
         <div className="relative min-w-0 flex-1">
@@ -299,7 +299,7 @@ export function VisualMcp() {
             {ferramentas.map((f, i) => (
               <motion.span
                 key={f}
-                className="rounded-full border border-teal/40 bg-teal/10 px-2 py-0.5 font-mono text-[9px] text-white/80"
+                className="rounded-full border border-teal/40 bg-teal/10 px-2 py-0.5 font-mono text-[9px] text-foreground/80"
                 initial={reduced ? false : { opacity: 0, y: 6 }}
                 animate={animate ? { opacity: 1, y: [6, 0, 0, 6], x: [-70, 0, 70, 70] } : undefined}
                 transition={
@@ -314,7 +314,7 @@ export function VisualMcp() {
             ))}
           </div>
         </div>
-        <div className="shrink-0 rounded-md border border-white/[0.1] bg-white/[0.04] px-2.5 py-2 font-mono text-[10px] text-white/70">
+        <div className="shrink-0 rounded-md border border-foreground/[0.12] bg-foreground/[0.04] px-2.5 py-2 font-mono text-[10px] text-foreground/70">
           /mcp
         </div>
       </div>

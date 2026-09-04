@@ -62,7 +62,7 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
 
   if (estado === "success") {
     return (
-      <p role="status" className="flex items-center gap-2 rounded-lg border border-white/[0.12] bg-white/[0.05] px-4 py-3 text-[15px] text-[#EDEDED]">
+      <p role="status" className="flex items-center gap-2 rounded-lg border border-[var(--stage-line)] bg-[var(--stage-surface)] px-4 py-3 text-[15px] text-[var(--stage-fg)]">
         <Check size={16} aria-hidden className="shrink-0 text-teal" />
         {labels.success}
       </p>
@@ -85,12 +85,12 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
           placeholder={labels.placeholder}
           aria-invalid={estado === "error" ? true : undefined}
           aria-describedby={erro ? "subscribe-erro" : undefined}
-          className="h-[46px] min-w-0 flex-1 rounded-xl border border-white/[0.14] bg-white/[0.06] px-4 text-[16px] sm:text-[15px] text-[#EDEDED] outline-hidden placeholder:text-white/55 focus-visible:ring-2 focus-visible:ring-white/60"
+          className="h-[46px] min-w-0 flex-1 rounded-xl border border-[var(--stage-line)] bg-[var(--stage-surface)] px-4 text-[16px] sm:text-[15px] text-[var(--stage-fg)] outline-hidden placeholder:text-[var(--stage-dim)] focus-visible:ring-2 focus-visible:ring-ring"
         />
         <button
           type="submit"
           disabled={estado === "sending"}
-          className="inline-flex h-[46px] shrink-0 items-center gap-2 rounded-xl bg-white px-5 text-[15px] font-medium text-[#120F17] transition-opacity hover:opacity-90 disabled:opacity-60"
+          className="inline-flex h-[46px] shrink-0 items-center gap-2 rounded-xl bg-[var(--stage-fg)] px-5 text-[15px] font-medium text-[var(--stage-bg)] transition-[opacity,scale] duration-150 hover:opacity-90 active:scale-[0.96] disabled:opacity-60"
         >
           {estado === "sending" ? labels.sending : labels.cta}
           <ArrowRight size={15} aria-hidden />
@@ -98,11 +98,11 @@ export function SubscribeForm({ labels }: { labels: SubscribeLabels }) {
       </div>
 
       {erro ? (
-        <p id="subscribe-erro" role="alert" className="text-[13.5px] text-[#f0a48a]">
+        <p id="subscribe-erro" role="alert" className="text-[13.5px] text-[#b3462a] dark:text-[#f0a48a]">
           {erro}
         </p>
       ) : (
-        <p className="text-[12.5px] text-white/70">{labels.privacy}</p>
+        <p className="text-[12.5px] text-[var(--stage-dim)]">{labels.privacy}</p>
       )}
     </form>
   );

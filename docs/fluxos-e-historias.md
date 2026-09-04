@@ -61,7 +61,7 @@ Como visitante, quero saber em segundos o que há aqui e para quem é.
 ### US-1.2 Navegar por qualquer destino a partir de qualquer página
 Como visitante, quero achar qualquer parte do hub pelo menu.
 
-- [ ] O menu tem três grupos e dez destinos: Conteúdo (Artigos, Research), Skills (Catálogo, CLI, MCP), Hub (Explorar, Workflow, Docs, FAQ, Sobre).
+- [ ] O menu tem quatro grupos e dez destinos: Artigos e estudos (Artigos, Pesquisa), Recursos (Skills & Agents, Workflow, Explorar), AI Tools (CLI, MCP), O framework (Documentação, Sobre, FAQ). O rodapé lista os mesmos dez, da mesma fonte.
 - [ ] O rodapé lista os mesmos dez, da mesma fonte (`src/lib/site.ts`).
 - [ ] `/pt/radar` e `/pt/ai-tools` respondem 404.
 - [ ] Nenhum texto visível menciona "radar" em nenhum idioma.
