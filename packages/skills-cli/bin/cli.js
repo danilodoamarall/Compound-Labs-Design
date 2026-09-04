@@ -11,7 +11,7 @@
  */
 import { readFileSync } from "node:fs";
 
-const SITE = (process.env.AI_SKILLS_SITE_URL ?? "https://labs-hub-five.vercel.app").replace(/\/+$/, "");
+const SITE = (process.env.AI_SKILLS_SITE_URL ?? "https://compounddesign.vercel.app").replace(/\/+$/, "");
 
 const VERSAO = (() => {
   try {

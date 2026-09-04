@@ -1,20 +1,41 @@
 import { Star } from "lucide-react";
 import { githubRepo, githubUrl } from "@/lib/site";
+import estrelasBrutas from "../../../content/repo-stars.json";
 
-/** Contagem de estrelas do repositório. Revalida a cada 6 horas; se a chamada
-    falhar ou o repositório não estiver configurado, o botão vira só um link. */
+/** O número gravado pelo `fetch-repo-stars.mjs`, que também guarda o repositório
+ *  do próprio hub. É o que aparece quando a API do GitHub nega a chamada, o que
+ *  acontece com frequência na Vercel: o build e as funções saem de IPs
+ *  compartilhados, e o limite sem token é de 60 chamadas por hora por IP. Sem
+ *  isto o botão ficava sem número nenhum, como se o repositório não tivesse
+ *  estrela, e não era verdade. */
+function estrelasGravadas(): number | null {
+  const tabela = estrelasBrutas as Record<string, { stars: number | null }>;
+  const registro = githubRepo ? tabela[githubRepo] : undefined;
+  return typeof registro?.stars === "number" ? registro.stars : null;
+}
+
+/** Contagem de estrelas do repositório. Tenta a API a cada hora; com
+ *  `GITHUB_TOKEN` no ambiente a chamada é autenticada e não cai no limite. Se
+ *  falhar, usa o número gravado; se nem isso houver, o botão vira só um link. */
 async function starCount(): Promise<number | null> {
   if (!githubRepo) return null;
+  const gravado = estrelasGravadas();
   try {
+    const token = process.env.GITHUB_TOKEN?.trim();
     const res = await fetch(`https://api.github.com/repos/${githubRepo}`, {
-      headers: { Accept: "application/vnd.github+json" },
-      next: { revalidate: 21600 },
+      headers: {
+        Accept: "application/vnd.github+json",
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      },
+      next: { revalidate: 3600 },
     });
-    if (!res.ok) return null;
+    if (!res.ok) return gravado;
     const data = (await res.json()) as { stargazers_count?: number };
-    return typeof data.stargazers_count === "number" ? data.stargazers_count : null;
+    // O número vivo vale mais que o gravado, inclusive quando é menor: alguém
+    // pode ter tirado a estrela, e o hub não inventa contagem.
+    return typeof data.stargazers_count === "number" ? data.stargazers_count : gravado;
   } catch {
-    return null;
+    return gravado;
   }
 }
 

@@ -141,84 +141,6 @@
       "facts": {}
     },
     {
-      "key": "skills-pbakaus-impeccable",
-      "name": "pbakaus/impeccable",
-      "nameEn": "pbakaus/impeccable",
-      "desc": {
-        "pt": "18 skills de design engineering, sob Apache-2.0.",
-        "en": "18 design-engineering skills, under Apache-2.0."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-04",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/pbakaus/impeccable",
-        "license": "Apache-2.0",
-        "stars": 65357,
-        "skillCount": 18,
-        "catalogQuery": "pbakaus"
-      }
-    },
-    {
-      "key": "skills-petergyang-human-review",
-      "name": "petergyang/human-review",
-      "nameEn": "petergyang/human-review",
-      "desc": {
-        "pt": "1 skill de design engineering, sob MIT.",
-        "en": "1 design-engineering skill, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-04",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/petergyang/human-review",
-        "license": "MIT",
-        "stars": 1219,
-        "skillCount": 1,
-        "catalogQuery": "petergyang"
-      }
-    },
-    {
-      "key": "skills-vercel-next-js",
-      "name": "vercel/next.js",
-      "nameEn": "vercel/next.js",
-      "desc": {
-        "pt": "2 skills de design engineering, sob MIT.",
-        "en": "2 design-engineering skills, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-04",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/vercel/next.js",
-        "license": "MIT",
-        "stars": 142084,
-        "skillCount": 2,
-        "catalogQuery": "vercel"
-      }
-    },
-    {
       "key": "skills-aboudjem-humanizer-skill",
       "name": "Aboudjem/humanizer-skill",
       "nameEn": "Aboudjem/humanizer-skill",
@@ -234,7 +156,7 @@
         "skills-agents"
       ],
       "order": null,
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "notes": {},
       "facts": {
         "url": "https://github.com/Aboudjem/humanizer-skill",
@@ -260,14 +182,222 @@
         "skills-agents"
       ],
       "order": null,
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "notes": {},
       "facts": {
         "url": "https://github.com/addyosmani/agent-skills",
         "license": "MIT",
-        "stars": 92046,
+        "stars": 92198,
         "skillCount": 1,
         "catalogQuery": "addyosmani"
+      }
+    },
+    {
+      "key": "skills-elithrar-dotfiles",
+      "name": "elithrar/dotfiles",
+      "nameEn": "elithrar/dotfiles",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/elithrar/dotfiles",
+        "license": "MIT",
+        "stars": 203,
+        "skillCount": 1,
+        "catalogQuery": "elithrar"
+      }
+    },
+    {
+      "key": "skills-mattpocock-skills",
+      "name": "mattpocock/skills",
+      "nameEn": "mattpocock/skills",
+      "desc": {
+        "pt": "13 skills de design engineering, sob MIT.",
+        "en": "13 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/mattpocock/skills",
+        "license": "MIT",
+        "stars": 248953,
+        "skillCount": 13,
+        "catalogQuery": "mattpocock"
+      }
+    },
+    {
+      "key": "skills-pbakaus-impeccable",
+      "name": "pbakaus/impeccable",
+      "nameEn": "pbakaus/impeccable",
+      "desc": {
+        "pt": "18 skills de design engineering, sob Apache-2.0.",
+        "en": "18 design-engineering skills, under Apache-2.0."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/pbakaus/impeccable",
+        "license": "Apache-2.0",
+        "stars": 65498,
+        "skillCount": 18,
+        "catalogQuery": "pbakaus"
+      }
+    },
+    {
+      "key": "skills-petergyang-human-review",
+      "name": "petergyang/human-review",
+      "nameEn": "petergyang/human-review",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/petergyang/human-review",
+        "license": "MIT",
+        "stars": 1223,
+        "skillCount": 1,
+        "catalogQuery": "petergyang"
+      }
+    },
+    {
+      "key": "skills-redongreen-uspec",
+      "name": "redongreen/uSpec",
+      "nameEn": "redongreen/uSpec",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/redongreen/uSpec",
+        "license": "MIT",
+        "stars": 241,
+        "skillCount": 2,
+        "catalogQuery": "redongreen"
+      }
+    },
+    {
+      "key": "skills-shadcn-ui-ui",
+      "name": "shadcn-ui/ui",
+      "nameEn": "shadcn-ui/ui",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/shadcn-ui/ui",
+        "license": "MIT",
+        "stars": 122996,
+        "skillCount": 1,
+        "catalogQuery": "shadcn-ui"
+      }
+    },
+    {
+      "key": "skills-sveltejs-ai-tools",
+      "name": "sveltejs/ai-tools",
+      "nameEn": "sveltejs/ai-tools",
+      "desc": {
+        "pt": "1 skill de design engineering, sob MIT.",
+        "en": "1 design-engineering skill, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/sveltejs/ai-tools",
+        "license": "MIT",
+        "stars": 316,
+        "skillCount": 1,
+        "catalogQuery": "sveltejs"
+      }
+    },
+    {
+      "key": "skills-vercel-next-js",
+      "name": "vercel/next.js",
+      "nameEn": "vercel/next.js",
+      "desc": {
+        "pt": "2 skills de design engineering, sob MIT.",
+        "en": "2 design-engineering skills, under MIT."
+      },
+      "tags": [
+        "build"
+      ],
+      "kind": "skill",
+      "sections": [
+        "skills-agents"
+      ],
+      "order": null,
+      "date": "2026-09-04",
+      "notes": {},
+      "facts": {
+        "url": "https://github.com/vercel/next.js",
+        "license": "MIT",
+        "stars": 142090,
+        "skillCount": 2,
+        "catalogQuery": "vercel"
       }
     },
     {
@@ -296,32 +426,6 @@
       "facts": {}
     },
     {
-      "key": "skills-elithrar-dotfiles",
-      "name": "elithrar/dotfiles",
-      "nameEn": "elithrar/dotfiles",
-      "desc": {
-        "pt": "1 skill de design engineering, sob MIT.",
-        "en": "1 design-engineering skill, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-03",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/elithrar/dotfiles",
-        "license": "MIT",
-        "stars": 203,
-        "skillCount": 1,
-        "catalogQuery": "elithrar"
-      }
-    },
-    {
       "key": "skills-ibelick-ui-skills",
       "name": "ibelick/ui-skills",
       "nameEn": "ibelick/ui-skills",
@@ -342,7 +446,7 @@
       "facts": {
         "url": "https://github.com/ibelick/ui-skills",
         "license": "MIT",
-        "stars": 8060,
+        "stars": 8083,
         "skillCount": 7,
         "catalogQuery": "ibelick"
       }
@@ -368,35 +472,9 @@
       "facts": {
         "url": "https://github.com/Leonxlnx/unlazy",
         "license": "MIT",
-        "stars": 3018,
+        "stars": 3038,
         "skillCount": 1,
         "catalogQuery": "Leonxlnx"
-      }
-    },
-    {
-      "key": "skills-mattpocock-skills",
-      "name": "mattpocock/skills",
-      "nameEn": "mattpocock/skills",
-      "desc": {
-        "pt": "13 skills de design engineering, sob MIT.",
-        "en": "13 design-engineering skills, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-03",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/mattpocock/skills",
-        "license": "MIT",
-        "stars": 247523,
-        "skillCount": 13,
-        "catalogQuery": "mattpocock"
       }
     },
     {
@@ -420,7 +498,7 @@
       "facts": {
         "url": "https://github.com/microsoft/playwright-cli",
         "license": "Apache-2.0",
-        "stars": 13052,
+        "stars": 13063,
         "skillCount": 1,
         "catalogQuery": "microsoft"
       }
@@ -446,35 +524,9 @@
       "facts": {
         "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
         "license": "MIT",
-        "stars": 124702,
+        "stars": 124877,
         "skillCount": 7,
         "catalogQuery": "nextlevelbuilder"
-      }
-    },
-    {
-      "key": "skills-redongreen-uspec",
-      "name": "redongreen/uSpec",
-      "nameEn": "redongreen/uSpec",
-      "desc": {
-        "pt": "2 skills de design engineering, sob MIT.",
-        "en": "2 design-engineering skills, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-03",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/redongreen/uSpec",
-        "license": "MIT",
-        "stars": 241,
-        "skillCount": 2,
-        "catalogQuery": "redongreen"
       }
     },
     {
@@ -498,61 +550,9 @@
       "facts": {
         "url": "https://github.com/saadeghi/daisyui",
         "license": "MIT",
-        "stars": 42283,
+        "stars": 42291,
         "skillCount": 1,
         "catalogQuery": "saadeghi"
-      }
-    },
-    {
-      "key": "skills-shadcn-ui-ui",
-      "name": "shadcn-ui/ui",
-      "nameEn": "shadcn-ui/ui",
-      "desc": {
-        "pt": "1 skill de design engineering, sob MIT.",
-        "en": "1 design-engineering skill, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-03",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/shadcn-ui/ui",
-        "license": "MIT",
-        "stars": 122954,
-        "skillCount": 1,
-        "catalogQuery": "shadcn-ui"
-      }
-    },
-    {
-      "key": "skills-sveltejs-ai-tools",
-      "name": "sveltejs/ai-tools",
-      "nameEn": "sveltejs/ai-tools",
-      "desc": {
-        "pt": "1 skill de design engineering, sob MIT.",
-        "en": "1 design-engineering skill, under MIT."
-      },
-      "tags": [
-        "build"
-      ],
-      "kind": "skill",
-      "sections": [
-        "skills-agents"
-      ],
-      "order": null,
-      "date": "2026-09-03",
-      "notes": {},
-      "facts": {
-        "url": "https://github.com/sveltejs/ai-tools",
-        "license": "MIT",
-        "stars": 316,
-        "skillCount": 1,
-        "catalogQuery": "sveltejs"
       }
     },
     {
@@ -576,7 +576,7 @@
       "facts": {
         "url": "https://github.com/vercel-labs/agent-browser",
         "license": "Apache-2.0",
-        "stars": 41889,
+        "stars": 41931,
         "skillCount": 1,
         "catalogQuery": "vercel-labs"
       }
@@ -602,7 +602,7 @@
       "facts": {
         "url": "https://github.com/AminBlg/SimpleEnglish",
         "license": "MIT",
-        "stars": 3152,
+        "stars": 3159,
         "skillCount": 1,
         "catalogQuery": "AminBlg"
       }
@@ -628,7 +628,7 @@
       "facts": {
         "url": "https://github.com/github/gh-stack",
         "license": "MIT",
-        "stars": 1444,
+        "stars": 1457,
         "skillCount": 1,
         "catalogQuery": "github"
       }
@@ -654,7 +654,7 @@
       "facts": {
         "url": "https://github.com/petergyang/no-ai-slop",
         "license": "MIT",
-        "stars": 7046,
+        "stars": 7116,
         "skillCount": 1,
         "catalogQuery": "petergyang"
       }
@@ -680,7 +680,7 @@
       "facts": {
         "url": "https://github.com/ayghri/i-have-adhd",
         "license": "MIT",
-        "stars": 26970,
+        "stars": 27055,
         "skillCount": 1,
         "catalogQuery": "ayghri"
       }
@@ -706,7 +706,7 @@
       "facts": {
         "url": "https://github.com/wshobson/agents",
         "license": "MIT",
-        "stars": 39393,
+        "stars": 39407,
         "skillCount": 2,
         "catalogQuery": "wshobson"
       }
@@ -732,7 +732,7 @@
       "facts": {
         "url": "https://github.com/iannuttall/seo",
         "license": "Apache-2.0",
-        "stars": 445,
+        "stars": 455,
         "skillCount": 1,
         "catalogQuery": "iannuttall"
       }
@@ -784,7 +784,7 @@
       "facts": {
         "url": "https://github.com/jakubkrehel/make-interfaces-feel-better",
         "license": "MIT",
-        "stars": 3170,
+        "stars": 3266,
         "skillCount": 1,
         "catalogQuery": "jakubkrehel"
       }
@@ -810,7 +810,7 @@
       "facts": {
         "url": "https://github.com/jakubkrehel/skills",
         "license": "MIT",
-        "stars": 5045,
+        "stars": 5447,
         "skillCount": 11,
         "catalogQuery": "jakubkrehel"
       }
@@ -862,7 +862,7 @@
       "facts": {
         "url": "https://github.com/MengTo/Skills",
         "license": "MIT",
-        "stars": 5772,
+        "stars": 5786,
         "skillCount": 18,
         "catalogQuery": "MengTo"
       }
@@ -888,7 +888,7 @@
       "facts": {
         "url": "https://github.com/luchasarie/bro-skill",
         "license": "MIT",
-        "stars": 328,
+        "stars": 329,
         "skillCount": 1,
         "catalogQuery": "luchasarie"
       }
@@ -914,7 +914,7 @@
       "facts": {
         "url": "https://github.com/addyosmani/web-quality-skills",
         "license": "MIT",
-        "stars": 2745,
+        "stars": 2747,
         "skillCount": 6,
         "catalogQuery": "addyosmani"
       }
@@ -940,7 +940,7 @@
       "facts": {
         "url": "https://github.com/Leonxlnx/taste-skill",
         "license": "MIT",
-        "stars": 84062,
+        "stars": 84225,
         "skillCount": 13,
         "catalogQuery": "Leonxlnx"
       }
@@ -966,7 +966,7 @@
       "facts": {
         "url": "https://github.com/emilkowalski/skills",
         "license": "MIT",
-        "stars": 35166,
+        "stars": 35282,
         "skillCount": 12,
         "catalogQuery": "emilkowalski"
       }
@@ -1044,7 +1044,7 @@
       "facts": {
         "url": "https://github.com/blader/humanizer",
         "license": "MIT",
-        "stars": 41544,
+        "stars": 42165,
         "skillCount": 1,
         "catalogQuery": "blader"
       }
@@ -1122,7 +1122,7 @@
       "facts": {
         "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
         "license": "MIT",
-        "stars": 6898,
+        "stars": 6910,
         "skillCount": 1,
         "catalogQuery": "LiamGvchi"
       }
@@ -1148,7 +1148,7 @@
       "facts": {
         "url": "https://github.com/callstackincubator/agent-skills",
         "license": "MIT",
-        "stars": 1634,
+        "stars": 1638,
         "skillCount": 1,
         "catalogQuery": "callstackincubator"
       }
@@ -1200,7 +1200,7 @@
       "facts": {
         "url": "https://github.com/elayadesign/ai-design-skills",
         "license": "MIT",
-        "stars": 1719,
+        "stars": 1726,
         "skillCount": 1,
         "catalogQuery": "elayadesign"
       }
@@ -1226,7 +1226,7 @@
       "facts": {
         "url": "https://github.com/greensock/gsap-skills",
         "license": "MIT",
-        "stars": 14881,
+        "stars": 14908,
         "skillCount": 8,
         "catalogQuery": "greensock"
       }
@@ -1252,7 +1252,7 @@
       "facts": {
         "url": "https://github.com/oso95/scroll-world",
         "license": "MIT",
-        "stars": 8965,
+        "stars": 8976,
         "skillCount": 1,
         "catalogQuery": "oso95"
       }
@@ -1304,7 +1304,7 @@
       "facts": {
         "url": "https://github.com/diffusionstudio/lottie",
         "license": "MIT",
-        "stars": 5398,
+        "stars": 5400,
         "skillCount": 1,
         "catalogQuery": "diffusionstudio"
       }
@@ -1408,7 +1408,7 @@
       "facts": {
         "url": "https://github.com/Jane-xiaoer/claude-skill-web-clone",
         "license": "MIT",
-        "stars": 984,
+        "stars": 986,
         "skillCount": 1,
         "catalogQuery": "Jane-xiaoer"
       }
@@ -1486,7 +1486,7 @@
       "facts": {
         "url": "https://github.com/antfu/skills",
         "license": "MIT",
-        "stars": 5841,
+        "stars": 5844,
         "skillCount": 19,
         "catalogQuery": "antfu"
       }
@@ -1512,7 +1512,7 @@
       "facts": {
         "url": "https://github.com/zarazhangrui/frontend-slides",
         "license": "MIT",
-        "stars": 28690,
+        "stars": 28722,
         "skillCount": 1,
         "catalogQuery": "zarazhangrui"
       }
@@ -1564,7 +1564,7 @@
       "facts": {
         "url": "https://github.com/Dammyjay93/interface-design",
         "license": "MIT",
-        "stars": 5652,
+        "stars": 5655,
         "skillCount": 1,
         "catalogQuery": "Dammyjay93"
       }
@@ -1642,7 +1642,7 @@
       "facts": {
         "url": "https://github.com/vuejs-ai/skills",
         "license": "MIT",
-        "stars": 2821,
+        "stars": 2822,
         "skillCount": 8,
         "catalogQuery": "vuejs-ai"
       }
@@ -1720,7 +1720,7 @@
       "facts": {
         "url": "https://github.com/dimillian/skills",
         "license": "MIT",
-        "stars": 3940,
+        "stars": 3941,
         "skillCount": 1,
         "catalogQuery": "dimillian"
       }
@@ -1772,7 +1772,7 @@
       "facts": {
         "url": "https://github.com/hardikpandya/stop-slop",
         "license": "MIT",
-        "stars": 16767,
+        "stars": 16788,
         "skillCount": 1,
         "catalogQuery": "hardikpandya"
       }

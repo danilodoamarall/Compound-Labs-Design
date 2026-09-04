@@ -6,7 +6,7 @@
  },
  "Aboudjem/humanizer-skill": {
   "stars": 214,
-  "pushedAt": "2026-09-03",
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "AccessLint/claude-marketplace": {
@@ -15,7 +15,7 @@
   "archived": false
  },
  "AminBlg/SimpleEnglish": {
-  "stars": 3152,
+  "stars": 3159,
   "pushedAt": "2026-09-02",
   "archived": false
  },
@@ -25,7 +25,7 @@
   "archived": false
  },
  "Dammyjay93/interface-design": {
-  "stars": 5652,
+  "stars": 5655,
   "pushedAt": "2026-06-20",
   "archived": false
  },
@@ -40,32 +40,32 @@
   "archived": false
  },
  "Jakubantalik/transitions.dev": {
-  "stars": 3470,
+  "stars": 3474,
   "pushedAt": "2026-09-02",
   "archived": false
  },
  "Jane-xiaoer/claude-skill-web-clone": {
-  "stars": 984,
+  "stars": 986,
   "pushedAt": "2026-06-30",
   "archived": false
  },
  "Leonxlnx/taste-skill": {
-  "stars": 84062,
+  "stars": 84225,
   "pushedAt": "2026-08-24",
   "archived": false
  },
  "Leonxlnx/unlazy": {
-  "stars": 3018,
+  "stars": 3038,
   "pushedAt": "2026-09-03",
   "archived": false
  },
  "LiamGvchi/gc-minimal-zine-poster": {
-  "stars": 6898,
+  "stars": 6910,
   "pushedAt": "2026-08-13",
   "archived": false
  },
  "MengTo/Skills": {
-  "stars": 5772,
+  "stars": 5786,
   "pushedAt": "2026-08-28",
   "archived": false
  },
@@ -85,22 +85,22 @@
   "archived": false
  },
  "addyosmani/agent-skills": {
-  "stars": 92046,
-  "pushedAt": "2026-09-03",
+  "stars": 92198,
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "addyosmani/web-quality-skills": {
-  "stars": 2745,
+  "stars": 2747,
   "pushedAt": "2026-08-24",
   "archived": false
  },
  "antfu/skills": {
-  "stars": 5841,
+  "stars": 5844,
   "pushedAt": "2026-06-23",
   "archived": false
  },
  "anthropics/skills": {
-  "stars": 173682,
+  "stars": 173920,
   "pushedAt": "2026-09-03",
   "archived": false
  },
@@ -110,7 +110,7 @@
   "archived": false
  },
  "ayghri/i-have-adhd": {
-  "stars": 26970,
+  "stars": 27055,
   "pushedAt": "2026-09-01",
   "archived": false
  },
@@ -120,32 +120,37 @@
   "archived": false
  },
  "blader/humanizer": {
-  "stars": 41544,
+  "stars": 42165,
   "pushedAt": "2026-08-19",
   "archived": false
  },
  "callstackincubator/agent-skills": {
-  "stars": 1634,
+  "stars": 1638,
   "pushedAt": "2026-08-08",
   "archived": false
  },
  "cloudai-x/threejs-skills": {
-  "stars": 3233,
+  "stars": 3238,
   "pushedAt": "2026-07-09",
   "archived": false
  },
  "cursor/plugins": {
-  "stars": 6783,
-  "pushedAt": "2026-09-03",
+  "stars": 6832,
+  "pushedAt": "2026-09-04",
+  "archived": false
+ },
+ "danilodoamarall/Compound-Labs-Design": {
+  "stars": 3,
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "diffusionstudio/lottie": {
-  "stars": 5398,
+  "stars": 5400,
   "pushedAt": "2026-07-25",
   "archived": false
  },
  "dimillian/skills": {
-  "stars": 3940,
+  "stars": 3941,
   "pushedAt": "2026-03-29",
   "archived": false
  },
@@ -160,22 +165,22 @@
   "archived": false
  },
  "elayadesign/ai-design-skills": {
-  "stars": 1719,
+  "stars": 1726,
   "pushedAt": "2026-07-29",
   "archived": false
  },
  "elithrar/dotfiles": {
   "stars": 203,
-  "pushedAt": "2026-09-03",
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "emilkowalski/skills": {
-  "stars": 35166,
+  "stars": 35282,
   "pushedAt": "2026-08-21",
   "archived": false
  },
  "ericzakariasson/scandinavian-design": {
-  "stars": 371,
+  "stars": 372,
   "pushedAt": "2026-08-22",
   "archived": false
  },
@@ -200,22 +205,22 @@
   "archived": false
  },
  "github/gh-stack": {
-  "stars": 1444,
+  "stars": 1457,
   "pushedAt": "2026-09-02",
   "archived": false
  },
  "greensock/gsap-skills": {
-  "stars": 14881,
+  "stars": 14908,
   "pushedAt": "2026-07-29",
   "archived": false
  },
  "hardikpandya/stop-slop": {
-  "stars": 16767,
+  "stars": 16788,
   "pushedAt": "2026-03-17",
   "archived": false
  },
  "iannuttall/seo": {
-  "stars": 445,
+  "stars": 455,
   "pushedAt": "2026-08-31",
   "archived": false
  },
@@ -225,27 +230,27 @@
   "archived": false
  },
  "ibelick/ui-skills": {
-  "stars": 8060,
+  "stars": 8083,
   "pushedAt": "2026-09-03",
   "archived": false
  },
  "jakubkrehel/make-interfaces-feel-better": {
-  "stars": 3170,
+  "stars": 3266,
   "pushedAt": "2026-08-29",
   "archived": false
  },
  "jakubkrehel/oklch-skill": {
-  "stars": 232,
+  "stars": 234,
   "pushedAt": "2026-08-29",
   "archived": false
  },
  "jakubkrehel/skills": {
-  "stars": 5045,
+  "stars": 5447,
   "pushedAt": "2026-08-29",
   "archived": false
  },
  "jalaalrd/anti-ai-slop-writing": {
-  "stars": 435,
+  "stars": 439,
   "pushedAt": "2026-04-18",
   "archived": false
  },
@@ -260,22 +265,22 @@
   "archived": false
  },
  "luchasarie/bro-skill": {
-  "stars": 328,
+  "stars": 329,
   "pushedAt": "2026-08-27",
   "archived": false
  },
  "mattpocock/skills": {
-  "stars": 247523,
-  "pushedAt": "2026-09-03",
+  "stars": 248953,
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "microsoft/playwright-cli": {
-  "stars": 13052,
+  "stars": 13063,
   "pushedAt": "2026-09-03",
   "archived": false
  },
  "millionco/react-doctor": {
-  "stars": 14708,
+  "stars": 14711,
   "pushedAt": "2026-09-03",
   "archived": false
  },
@@ -290,7 +295,7 @@
   "archived": false
  },
  "nextlevelbuilder/ui-ux-pro-max-skill": {
-  "stars": 124702,
+  "stars": 124877,
   "pushedAt": "2026-09-03",
   "archived": false
  },
@@ -305,27 +310,27 @@
   "archived": false
  },
  "openai/skills": {
-  "stars": 25388,
+  "stars": 25399,
   "pushedAt": "2026-07-14",
   "archived": false
  },
  "oso95/scroll-world": {
-  "stars": 8965,
+  "stars": 8976,
   "pushedAt": "2026-07-29",
   "archived": false
  },
  "pbakaus/impeccable": {
-  "stars": 65357,
+  "stars": 65498,
   "pushedAt": "2026-09-04",
   "archived": false
  },
  "petergyang/human-review": {
-  "stars": 1219,
+  "stars": 1223,
   "pushedAt": "2026-09-04",
   "archived": false
  },
  "petergyang/no-ai-slop": {
-  "stars": 7046,
+  "stars": 7116,
   "pushedAt": "2026-09-02",
   "archived": false
  },
@@ -342,7 +347,7 @@
  },
  "redongreen/uSpec": {
   "stars": 241,
-  "pushedAt": "2026-09-03",
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "remix-run/agent-skills": {
@@ -351,18 +356,18 @@
   "archived": true
  },
  "remotion-dev/skills": {
-  "stars": 4483,
+  "stars": 4485,
   "pushedAt": "2026-09-01",
   "archived": false
  },
  "saadeghi/daisyui": {
-  "stars": 42283,
+  "stars": 42291,
   "pushedAt": "2026-09-03",
   "archived": false
  },
  "shadcn-ui/ui": {
-  "stars": 122954,
-  "pushedAt": "2026-09-03",
+  "stars": 122996,
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "shadcn/improve": {
@@ -377,7 +382,7 @@
  },
  "sveltejs/ai-tools": {
   "stars": 316,
-  "pushedAt": "2026-09-03",
+  "pushedAt": "2026-09-04",
   "archived": false
  },
  "tjcages/linear": {
@@ -386,32 +391,32 @@
   "archived": false
  },
  "vercel-labs/agent-browser": {
-  "stars": 41889,
+  "stars": 41931,
   "pushedAt": "2026-09-03",
   "archived": false
  },
  "vercel-labs/agent-skills": {
-  "stars": 30798,
+  "stars": 30826,
   "pushedAt": "2026-08-28",
   "archived": false
  },
  "vercel/next.js": {
-  "stars": 142084,
+  "stars": 142090,
   "pushedAt": "2026-09-04",
   "archived": false
  },
  "vuejs-ai/skills": {
-  "stars": 2821,
+  "stars": 2822,
   "pushedAt": "2026-05-30",
   "archived": false
  },
  "wshobson/agents": {
-  "stars": 39393,
+  "stars": 39407,
   "pushedAt": "2026-09-01",
   "archived": false
  },
  "zarazhangrui/frontend-slides": {
-  "stars": 28690,
+  "stars": 28722,
   "pushedAt": "2026-06-23",
   "archived": false
  },

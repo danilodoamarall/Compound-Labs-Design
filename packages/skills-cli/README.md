@@ -7,7 +7,7 @@ npx @compound-design/skills
 ```
 
 Um arquivo de JavaScript, zero dependências. Lê o mesmo registro que a página e
-o servidor MCP do [Compound Design](https://labs-hub-five.vercel.app/pt/skills-agents).
+o servidor MCP do [Compound Design](https://compounddesign.vercel.app/pt/skills-agents).
 
 ## Comandos
 
@@ -69,12 +69,12 @@ AI_SKILLS_SITE_URL=http://localhost:3000 npx @compound-design/skills list
 ## Também há um servidor MCP
 
 ```bash
-claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp
+claude mcp add --transport http compound-design https://compounddesign.vercel.app/mcp
 ```
 
 Três ferramentas: `list_topics`, `list_skills` e `get_skill`. Comece por
 `get_skill` com `name: "start"`. Documentação em
-[/skills-agents/mcp](https://labs-hub-five.vercel.app/pt/skills-agents/mcp).
+[/skills-agents/mcp](https://compounddesign.vercel.app/pt/skills-agents/mcp).
 
 ## Licença
 

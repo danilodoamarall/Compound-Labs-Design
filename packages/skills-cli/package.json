@@ -27,7 +27,7 @@
     "url": "git+https://github.com/danilodoamarall/Compound-Labs-Design.git",
     "directory": "packages/skills-cli"
   },
-  "homepage": "https://labs-hub-five.vercel.app/pt/skills-agents",
+  "homepage": "https://compounddesign.vercel.app/pt/skills-agents",
   "bugs": {
     "url": "https://github.com/danilodoamarall/Compound-Labs-Design/issues"
   },

@@ -21,7 +21,7 @@ export const SITE_URL = (() => {
   const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
   if (vercel) return `https://${vercel.replace(/^https?:\/\//, "").replace(/\/+$/, "")}`;
 
-  return "https://labs-hub-five.vercel.app";
+  return "https://compounddesign.vercel.app";
 })();
 
 export const MCP_URL = `${SITE_URL}/mcp`;

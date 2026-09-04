@@ -86,7 +86,7 @@ verificação de 4 de setembro confirmou; "falta" é o que a pesquisa em curso
 | Interface | Referência-mãe | Passa hoje | Falta medir/fazer |
 |---|---|---|---|
 | Home: hero | aiforui + React Bits Pro | escala, véu 0,62 medido, 46px, reduced-motion, CTA de docs, byline com link | migrar véu e capas para OKLCH; conferir viúva do título em 390px |
-| Home: bento | React Bits "What's inside" | 12 col fechadas, 5 composições próprias, scrim em curva | `break` em cada visual: reduced-motion, 390px, sem dados |
+| Home: bento | React Bits "What's inside" + MagicBento | 12 col fechadas, 5 composições próprias, scrim em curva; **sistema do MagicBento refeito em motion** (holofote de 300px que segue o ponteiro na cor do card mais próximo, borda que acende no ponto mais perto, inclinação 5° e magnetismo 4% com mola, 8 partículas na cor da seção, entrada em cascata); desliga em toque e em reduced-motion | `break` em cada visual: 390px, sem dados |
 | Artigos: leitura | Vercel guidelines, Emil (escrita) | medida ≤ 75ch, números conferidos | escala do corpo vs aiforui; gráficos em 390px |
 | Artigos: apresentação | — | slides do mesmo arquivo | foco/teclado entre slides; reduced-motion nas transições |
 | Catálogo (placar) | skills.sh | rótulos mono, colapso por repo, ordenação honesta, `?q=` | cabeçalho não é `aria-hidden` (é informação); linhas em 390px; foco na linha |

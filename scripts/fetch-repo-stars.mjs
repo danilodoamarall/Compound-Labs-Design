@@ -20,7 +20,11 @@ const DESTINO = join(RAIZ, "content", "repo-stars.json");
 
 const registro = JSON.parse(readFileSync(REGISTRO, "utf8"));
 
-const repos = [...new Set(registro.skills.map((s) => `${s.source.author}/${s.source.repo}`))].sort();
+/** O repositório do próprio hub entra na mesma tabela: o botão de estrela do
+ *  cabeçalho usa este número quando a API do GitHub nega a chamada em produção. */
+const HUB = process.env.NEXT_PUBLIC_GITHUB_REPO ?? "danilodoamarall/Compound-Labs-Design";
+
+const repos = [...new Set([HUB, ...registro.skills.map((s) => `${s.source.author}/${s.source.repo}`)])].sort();
 console.log(`${repos.length} repositórios de origem\n`);
 
 /** O que a API devolve por repositório. `pushedAt` é a atividade real: um repo

@@ -111,7 +111,7 @@
           "Cole o comando abaixo e aperte Enter. Ele registra o catálogo como um servidor MCP chamado compound-design.",
           "Peça ao Claude Code, em português mesmo: \"procure uma skill sobre animação e use\". Ele vai listar, escolher e carregar."
         ],
-        "code": "claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp"
+        "code": "claude mcp add --transport http compound-design https://compounddesign.vercel.app/mcp"
       },
       {
         "id": "usar-em-outros-agentes",
@@ -299,7 +299,7 @@
           "Paste the command below and press Enter. It registers the catalogue as an MCP server named compound-design.",
           "Ask Claude Code, in plain language: \"find a skill about animation and use it\". It will list, choose and load."
         ],
-        "code": "claude mcp add --transport http compound-design https://labs-hub-five.vercel.app/mcp"
+        "code": "claude mcp add --transport http compound-design https://compounddesign.vercel.app/mcp"
       },
       {
         "id": "usar-em-outros-agentes",

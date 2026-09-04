@@ -1,7 +1,7 @@
 # Plano de fechamento da v1
 
 **Data:** 4 de setembro de 2026
-**Estado:** a reestruturação está publicada em https://labs-hub-five.vercel.app. Este
+**Estado:** a reestruturação está publicada em https://compounddesign.vercel.app. Este
 plano lista o que falta para chamar de v1 fechada, em ordem, com o critério de
 "pronto" de cada item e quem destrava.
 
