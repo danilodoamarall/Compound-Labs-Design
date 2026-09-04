@@ -50,3 +50,61 @@ jobs:
         run: |
           node -e "const p=require('./package.json'); if (Object.keys(p.dependencies||{}).length) { console.error('o CLI ganhou dependência:', p.dependencies); process.exit(1) }"
           npm pack --dry-run
+
+  # Produção só sai daqui, e só depois de tudo acima passar: é o portão "só
+  # publica se estiver ok". Não depende da integração Git da Vercel (que exige
+  # a mesma conta no GitHub e na Vercel): usa a CLI com um token de deploy
+  # guardado como segredo do repositório (VERCEL_TOKEN). Enquanto o segredo não
+  # existir, o job avisa e termina verde, sem publicar.
+  publicar:
+    name: deploy de produção na Vercel
+    needs: verificar
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: deploy-producao
+      cancel-in-progress: false
+    env:
+      VERCEL_ORG_ID: team_52WCkqpHdjlc0elwXFcNdKED
+      VERCEL_PROJECT_ID: prj_QLC2rqJyzQMv01a9TF1rNMsthH4X
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - name: Há token de deploy?
+        id: token
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::notice::Sem VERCEL_TOKEN nos segredos do repositório; deploy pulado. Crie em https://vercel.com/account/tokens e adicione em Settings → Secrets → Actions."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.token.outputs.ok == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.token.outputs.ok == 'true'
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Instala a CLI da Vercel
+        if: steps.token.outputs.ok == 'true'
+        run: npm i -g vercel@latest
+
+      - name: Puxa configuração e variáveis de produção
+        if: steps.token.outputs.ok == 'true'
+        run: vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Build de produção
+        if: steps.token.outputs.ok == 'true'
+        # O token do Actions autentica a chamada à API do GitHub que conta as
+        # estrelas do repositório, para o build não cair no limite por IP.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
+
+      - name: Publica o build já pronto
+        if: steps.token.outputs.ok == 'true'
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
