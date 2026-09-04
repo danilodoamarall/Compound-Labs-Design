@@ -9,6 +9,7 @@ import { SiteHeader } from "@/components/site/site-header";
 import { GithubStar } from "@/components/site/github-star";
 import { SiteSearch } from "@/components/site/site-search";
 import { buildSearchIndex } from "@/lib/search";
+import { listArticles } from "@/lib/articles";
 import { sections } from "@/lib/site";
 import { SiteFooter } from "@/components/site/site-footer";
 import "../globals.css";
@@ -81,6 +82,16 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     ),
   });
 
+  // O destaque do painel é o primeiro artigo da série: é a porta de entrada,
+  // não o mais recente.
+  const primeiro = listArticles(locale as Locale)[0];
+  const destaque = {
+    title: primeiro?.title ?? "",
+    desc: primeiro?.dek ?? "",
+    slug: primeiro?.slug ?? "",
+    badge: primeiro ? `${primeiro.readingMinutes} min` : "",
+  };
+
   const searchLabels = {
     trigger: tq("trigger"), placeholder: tq("placeholder"), empty: tq("empty"),
     noQuery: tq("noQuery"), results: tq("results"), resultsOne: tq("resultsOne"),
@@ -100,6 +111,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             <SiteHeader
               searchSlot={<SiteSearch items={searchItems} labels={searchLabels} />}
               githubSlot={<GithubStar label={t("github")} />}
+              spotlight={destaque}
             />
             <div id="conteudo" className="flex flex-1 flex-col">{children}</div>
             <SiteFooter />

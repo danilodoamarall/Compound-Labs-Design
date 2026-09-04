@@ -29,7 +29,10 @@
     },
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "research": "Research"
+    "research": "Research",
+    "spotlightEyebrow": "Start here",
+    "spotlightCta": "Read the article",
+    "menuLabel": "Hub sections"
   },
   "Home": {
     "title": "What is worth adopting in AI for design.",
@@ -56,6 +59,12 @@
       },
       "workflow": {
         "short": "The tools in my day"
+      },
+      "research": {
+        "short": "The survey behind the series"
+      },
+      "about": {
+        "short": "Who writes this, and why"
       }
     }
   },

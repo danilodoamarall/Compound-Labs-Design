@@ -10,6 +10,7 @@ import {
   VisualWorkflow, VisualDocs, VisualFaq, VisualBrowse, VisualPadrao,
 } from "@/components/site/bento-visuals";
 import pages from "../../../content/pages.json";
+import survey from "../../../content/data/state-of-prototyping-2026.json";
 import workflow from "../../../content/workflow.json";
 import { StageArticles } from "@/components/site/stage-articles";
 import { StageSubscribe } from "@/components/site/stage-subscribe";
@@ -40,6 +41,18 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     success: tsub("success"), errorInvalid: tsub("errorInvalid"),
     errorGeneric: tsub("errorGeneric"), errorNotConfigured: tsub("errorNotConfigured"),
     privacy: tsub("privacy"),
+  };
+
+  // Cada artigo declara um gráfico no frontmatter, e o nome aponta para uma
+  // série de verdade da pesquisa. A capa passa a mostrar esse dado.
+  const paraSerie = (arr: { pt: string; en: string; pct?: number | null }[]) =>
+    arr.map((d) => ({ label: locale === "pt" ? d.pt : d.en, pct: typeof d.pct === "number" ? d.pct : 0 }));
+  const seriesPorGrafico = {
+    "vibe-band": paraSerie(survey.vibe),
+    trust: paraSerie(survey.trust),
+    outlook: paraSerie(survey.outlook),
+    investing: paraSerie(survey.investing).slice(0, 7),
+    blockers: paraSerie(survey.blockers),
   };
 
   const etapas = [...new Set(workflow.tools.map((t) => t.stage))];
@@ -99,6 +112,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           articles={articles}
           locale={locale}
           labels={{ of: t("of"), slides: t("of"), minutes: t("minutes"), article: t("articleWord") }}
+          series={seriesPorGrafico}
         />
       </StageSection>
 

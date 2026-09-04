@@ -29,7 +29,10 @@
     },
     "openMenu": "Abrir o menu",
     "closeMenu": "Fechar o menu",
-    "research": "Research"
+    "research": "Research",
+    "spotlightEyebrow": "Comece por aqui",
+    "spotlightCta": "Ler o artigo",
+    "menuLabel": "Seções do hub"
   },
   "Home": {
     "title": "O que vale adotar em IA para design.",
@@ -56,6 +59,12 @@
       },
       "workflow": {
         "short": "As ferramentas do meu dia"
+      },
+      "research": {
+        "short": "A pesquisa que originou a série"
+      },
+      "about": {
+        "short": "Quem escreve e por quê"
       }
     }
   },
