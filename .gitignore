@@ -49,3 +49,4 @@ next-env.d.ts
 
 # Trabalho temporário da ingestão de skills
 .tmp-skills/
+.env*
